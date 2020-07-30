@@ -184,6 +184,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcriptionInfo": null,
   "toneInfo": null
 }
 ```
@@ -387,6 +388,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcriptionInfo": null,
   "toneInfo": null
 }
 ```
@@ -645,6 +647,11 @@ Content-Type: application/json
         "displayName": "Bob"
       }
     },
+   "transcriptioninfo": {
+    "@odata.type": "#microsoft.graph.transcriptionInfo",
+     "state":"active",
+     "stateUpdatedTime":"2020-05-28T00:10:54.104318Z"
+  },
     "allowConversationWithoutHost": true
   },
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
@@ -734,20 +741,11 @@ Content-Type: application/json
           "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
           "messageId": "0"
         },
-        "meetingInfo": {
-          "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-          "organizer": {
-            "@odata.type": "#microsoft.graph.identitySet",
-            "user": {
-              "@odata.type": "#microsoft.graph.identity",
-              "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-              "displayName": "Bob"
-            }
-          },
           "allowConversationWithoutHost": true
         },
         "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92"
       }
+      
     }
   ]
 }
@@ -886,6 +884,7 @@ Content-Type: application/json
         "displayName": "Bob"
       }
     },
+    
     "allowConversationWithoutHost": true
   }
 }
