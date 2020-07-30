@@ -580,7 +580,14 @@ Content-Type: application/json
       }
     },
     "allowConversationWithoutHost": true
-  }
+  },
+	 "TranscriptionInfo": {
+  	"@odata.type": "#microsoft.graph.transcriptioninfo",
+    	"state":"inactive",
+      	"stateUpdatedTime":"2020-05-28T00:10:54.104318Z"
+},
+	
+	
 }
 ```
 ##### Response
