@@ -1,6 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Graph documentation
+summary: Microsoft Graph provides a unified programmability model that you can use to access data in Microsoft 365, Windows 10, and Enterprise Mobility + Security.
 brand: m365
 metadata:
   title: Microsoft Graph documentation
@@ -9,7 +10,7 @@ metadata:
   ms.prod: ms-graph
   author: CelesteDG
   ms.author: celested
-  ms.date: 02/28/2020
+  ms.date: 08/03/2020
   featureFlags:
   - clicktale
 
@@ -36,80 +37,178 @@ highlightedContent:
       url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
 
 conceptualContent:
+  title: Learn
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: Explore
+    - title: Business applications
       links:
-        - url: /graph/users-you-can-reach
+        - url: /graph/booking-concept-overview
+          itemType: overview
+          text: Customer bookings
+        - url: /graph/education-concept-overview
+          itemType: overview
+          text: Education
+        - url: /graph/dynamics-business-central-concept-overview
+          itemType: overview
+          text: Financials
+        - url: /graph/reportroot-concept-overview
+          itemType: overview
+          text: Reporting
+    - title: Collaboration
+      links:
+        - url: /graph/cloud-communications-concept-overview
+          itemType: overview
+          text: Cloud Communications
+        - url: /graph/sharepoint-concept-overview
+          itemType: overview
+          text: Sites
+        - url: /graph/teams-concept-overview
+          itemType: overview
+          text: Teams
+    - title: Devices and apps
+      links:
+        - url: /graph/cross-device-concept-overview
+          itemType: overview
+          text: Cross-device experiences
+        - url: /graph/intune-concept-overview
+          itemType: overview
+          text: Corporate management
+        - url: /graph/universal-print-concept-overview
+          itemType: overview
+          text: Universal Print
+        - url: /graph/notifications-concept-overview
+          itemType: overview
+          text: User Notifications
+    - title: Documents
+      links:
+        - url: /graph/onedrive-concept-overview
+          itemType: overview
+          text: Files
+        - url: /graph/integrate-with-onenote
+          itemType: overview
+          text: OneNote
+        - url: /graph/excel-concept-overview
+          itemType: overview
+          text: Workbooks and Charts
+    - title: Identity and Access
+      links:
+        - url: /graph/azuread-identity-access-management-concept-overview
+          itemType: overview
+          text: Azure AD
+        - url: /graph/security-concept-overview
+          itemType: overview
+          text: Security
+    - title: People and workplace intelligence
+      links:
+        - url: /graph/social-intel-concept-overview
+          itemType: overview
+          text: People
+        - url: /graph/add-properties-profilecard
+          itemType: overview
+          text: Profile
+        - url: /graph/insights-customize-item-insights-privacy
+          itemType: overview
+          text: Insights
+        - url: 
           itemType: concept
-          text: Users you can reach
-        - url: /graph/data-connect-overview
+          text: Analytics
+    - title: Productivity
+      links:
+        - url: /graph/outlook-calendar-concept-overview
+          itemType: overview
+          text: Calendar
+        - url: 
           itemType: concept
-          text: Microsoft Graph data connect
-        - url: https://developer.microsoft.com/graph/quick-start
-          itemType: quickstart
-          text: Quickstarts
-        - url: /graph/tutorials
-          itemType: tutorial
-          text: Tutorials
-    - title: Learn
+          text: Places
+        - url: /graph/outlook-mail-concept-overview
+          itemType: overview
+          text: Mail
+        - url: /graph/search-concept-overview
+          itemType: overview
+          text: Search
+        - url: /graph/planner-concept-overview
+          itemType: overview
+          text: Tasks and Plans
+        - url: 
+          itemType: concept
+          text: Todo
+    - title: Use the API
+      links:
+        - url: /graph/webhooks
+          itemType: overview
+          text: Change notifications
+        - url: /graph/data-connect-concept-overview
+          itemType: overview
+          text: Data Connect
+        - url: /en-us/graph/extensibility-overview
+          itemType: overview
+          text: Extensions
+        - url: /graph/toolkit/overview
+          itemType: overview
+          text: Microsoft Graph Toolkit
+        - url: /graph/sdks/sdks-overview
+          itemType: overview
+          text: Microsoft Graph SDKs
+    - title: Users & Groups
       links:
         - url: /graph/azuread-users-concept-overview
           itemType: overview
           text: Users
-        - url: /graph/teams-concept-overview
+        - url: /graph/office365-groups-concept-overview
           itemType: overview
-          text: Teamwork
-        - url: /graph/onedrive-concept-overview
-          itemType: overview
-          text: Files
-        - url: /graph/outlook-calendar-concept-overview
-          itemType: overview
-          text: Calendar
-        - url: /graph/outlook-mail-concept-overview
-          itemType: overview
-          text: Mail
-        - url: /graph/azuread-identity-access-management-concept-overview
-          itemType: overview
-          text: Identity and access
-    - title: Develop
-      links:
-        - url: /graph/auth/auth-concepts
-          itemType: concept
-          text: Get auth tokens
-        - url: https://docs.microsoft.com/en-us/graph/use-the-api
-          itemType: overview
-          text: Use the API
-        - url: /graph/migrate-azure-ad-graph-overview
-          itemType: overview
-          text: Migrate
-        - url: /graph/sdks/sdks-overview
-          itemType: overview
-          text: Use the SDKs
-        - url: /graph/toolkit/overview
-          itemType: overview
-          text: Use the toolkit
+          text: Groups
 
+# Individual card with one link
 additionalContent:
   sections:
-    - title: Resources
+    - title: Develop
       items:
-        - title: Changelog
-          summary: Find out what’s changed in the v1.0 and beta versions of the Microsoft Graph API.
-          url: /graph/changelog
-        - title: Known issues
-          summary: Learn about known issues with Microsoft Graph.
-          url: /graph/known-issues
-        - title: Support
-          summary: Ask a question or provide feedback on our APIs or docs.
-          url: https://developer.microsoft.com/graph/support
-        - title: Microsoft Graph blog
-          summary: Read the blog to get the latest news about new APIs, breaking changes, and more.
-          url: https://developer.microsoft.com/graph/blogs/
-        - title: Monthly community calls
-          summary: Join the monthly calls or catch up on previous recordings.
-          url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
-        - title: Videos and podcasts
-          summary: Check out our video series and podcasts to learn more about Microsoft Graph APIs.
-          url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
+        - title: Quickstarts
+          url: https://developer.microsoft.com/graph/quick-start
+        - title: Tutorials
+          url: /graph/tutorials
+        - title: Get auth tokens
+          url: /graph/auth/auth-concepts
+        - title: Migrate
+          url: /graph/migrate-azure-ad-graph-overview
+        - title: Use the SDKs
+          url: /graph/sdks/sdks-overview
+        - title: Use the toolkit
+          url: /graph/toolkit/overview
+
+# Card with links 
+additionalContent:
+  sections:
+    - title: 
+      summary: 
+      items:
+        # Card
+        - title: Explore
+          links:
+            - text: Users you can reach
+              url: /graph/users-you-can-reach
+            - text: Microsoft Graph data connect
+              url: /graph/data-connect-overview
+        # Card
+        - title: Microsoft Graph Learn training
+          links:
+            - text: link2a
+              url: file2a.md OR https://docs.microsoft.com/file2a
+            - text: link2b
+              url: file2b.md OR https://docs.microsoft.com/file2b
+        # Card
+        - title: Resources
+          links:
+            - text: Changelog
+              url: /graph/changelog
+            - text: Known issues
+              url: /graph/known-issues
+            - text: Support
+              url: https://developer.microsoft.com/graph/support
+            - text: Microsoft Graph blog
+              url: https://developer.microsoft.com/graph/blogs/
+            - text: Monthly community calls
+              url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
+            - text: Videos and podcasts
+              url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
 
