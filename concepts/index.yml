@@ -175,6 +175,7 @@ additionalContent:
           url: /graph/sdks/sdks-overview
         - title: Use the toolkit
           url: /graph/toolkit/overview
+  sections:
     - items:
         # Card
         - title: Explore
@@ -183,13 +184,8 @@ additionalContent:
               url: /graph/users-you-can-reach
             - text: Microsoft Graph data connect
               url: /graph/data-connect-overview
-        # Card
-        - title: Microsoft Graph Learn training
-          links:
-            - text: link2a
-              url: file2a.md OR https://docs.microsoft.com/file2a
-            - text: link2b
-              url: file2b.md OR https://docs.microsoft.com/file2b
+            - text: Microsoft Graph Learn training
+              url: /learn/browse/?roles=developer&products=ms-graph
         # Card
         - title: Resources
           links:
