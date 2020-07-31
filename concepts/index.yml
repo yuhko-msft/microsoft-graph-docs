@@ -109,7 +109,7 @@ conceptualContent:
         - url: /graph/insights-customize-item-insights-privacy
           itemType: overview
           text: Insights
-        - url: 
+        - url: /graph/
           itemType: concept
           text: Analytics
     - title: Productivity
@@ -117,7 +117,7 @@ conceptualContent:
         - url: /graph/outlook-calendar-concept-overview
           itemType: overview
           text: Calendar
-        - url: 
+        - url: /graph/
           itemType: concept
           text: Places
         - url: /graph/outlook-mail-concept-overview
@@ -129,7 +129,7 @@ conceptualContent:
         - url: /graph/planner-concept-overview
           itemType: overview
           text: Tasks and Plans
-        - url: 
+        - url: /graph/
           itemType: concept
           text: Todo
     - title: Use the API
@@ -179,9 +179,7 @@ additionalContent:
 # Card with links 
 additionalContent:
   sections:
-    - title: 
-      summary: 
-      items:
+    - items:
         # Card
         - title: Explore
           links:
