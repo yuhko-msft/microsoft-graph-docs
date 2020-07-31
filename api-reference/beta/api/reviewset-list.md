@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /compliance/ediscovery/cases({id})/reviewSets
+GET /compliance/ediscovery/cases/{id}/reviewSets
 ```
 
 ## Request headers
@@ -66,7 +66,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.reviewSet"
 } -->
 
 ```http
