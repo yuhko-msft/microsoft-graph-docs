@@ -175,9 +175,6 @@ additionalContent:
           url: /graph/sdks/sdks-overview
         - title: Use the toolkit
           url: /graph/toolkit/overview
-
-# Card with links 
-  sections:
     - items:
         # Card
         - title: Explore
