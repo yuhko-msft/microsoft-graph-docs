@@ -161,22 +161,22 @@ conceptualContent:
 # Individual card with one link
 additionalContent:
   sections:
-    - title: Develop
-      items:
-        - title: Quickstarts
-          url: https://developer.microsoft.com/graph/quick-start
-        - title: Tutorials
-          url: /graph/tutorials
-        - title: Get auth tokens
-          url: /graph/auth/auth-concepts
-        - title: Migrate
-          url: /graph/migrate-azure-ad-graph-overview
-        - title: Use the SDKs
-          url: /graph/sdks/sdks-overview
-        - title: Use the toolkit
-          url: /graph/toolkit/overview
-  sections:
     - items:
+        #Card
+        - title: Develop
+          links:
+            - text: Quickstarts
+              url: https://developer.microsoft.com/graph/quick-start
+            - text: Tutorials
+              url: /graph/tutorials
+            - text: Get auth tokens
+              url: /graph/auth/auth-concepts
+            - text: Migrate
+              url: /graph/migrate-azure-ad-graph-overview
+            - text: Use the SDKs
+              url: /graph/sdks/sdks-overview
+            - text: Use the toolkit
+              url: /graph/toolkit/overview
         # Card
         - title: Explore
           links:
@@ -201,4 +201,3 @@ additionalContent:
               url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
             - text: Videos and podcasts
               url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
-
