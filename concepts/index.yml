@@ -185,7 +185,7 @@ additionalContent:
             - text: Microsoft Graph data connect
               url: /graph/data-connect-overview
             - text: Microsoft Graph Learn training
-              url: /learn/browse/?roles=developer&products=ms-graph
+              url: https://docs.microsoft.com/learn/browse/?roles=developer&products=ms-graph
         # Card
         - title: Resources
           links:
