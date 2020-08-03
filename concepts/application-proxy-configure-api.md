@@ -197,8 +197,8 @@ Content-type: appplication/json
 ```http
 HTTP/1.1 204 No content
 ```
-### Set the redirectUri, identifierUri, and homepageUrl properties
-Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** propertes to the external URL.
+### Set the redirectUri, identifierUri, homepageUrl, and logoutUrl properties
+Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** propertes to the external URL. Update the application's **logoutUrl** to the external URL with "?appproxy=logout" appended to the string.
 
 #### Request
 
@@ -216,7 +216,8 @@ Content-type: appplication/json
    "web": {
       "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
       "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-   }
+   },
+   "logoutUrl":"https://contosoiwaapp-contoso.msappproxy.net?appproxy=logout"
 }
 ```
 #### Response
