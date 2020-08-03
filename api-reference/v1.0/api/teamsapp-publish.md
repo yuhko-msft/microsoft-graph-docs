@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-
 Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
 the created resource will have `distributionMethod` = `organization`.
@@ -26,6 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (work or school account) | App.Catalog.Submit |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -35,6 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 POST /appCatalogs/teamsApps
 ```
 
+```http
+POST /appCatalogs/teamsApps/id/appDefinitions/
+```
+
+```http
+DELETE   /appCatalogs/teamsApps/id/appDefinitions/{appDefinitionId}
+```
 ## Request headers
 
 | Header        | Value           |

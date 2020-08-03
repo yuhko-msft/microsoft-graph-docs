@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
 The details of one version of a [teamsApp](teamsapp.md).
 
 ## Properties
@@ -21,6 +19,8 @@ The details of one version of a [teamsApp](teamsapp.md).
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique id (not the teams appid). |
 | teamsAppId          | string   | The id from the Teams App manifest. |
+| publishingState| string|The published status of a specific version of a Teams app. Values are `published` or `rejected`.|
+|requiresReview|boolean|This triggers the review process if set to `true`. If not set, or set to `false`, the app is considered approved and instantly published.|
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
 
