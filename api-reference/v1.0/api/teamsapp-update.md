@@ -112,27 +112,3 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
-
-### Example 3: Admin approval of an application pending review
-
-### Request
-
-```http
-PATCH https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teams-app-id}/appDefinitions/ba032008-b8b6-496f-a5c9-6fe00f23cf4f
-If-None-Match: {eTag-from-get}
-Content-type: application/json
-{
-  "publishingState":"published"
-}
-```
-
-### Response
-
-```http
-PATCH https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teams-app-id}/appDefinitions/ba032008-b8b6-496f-a5c9-6fe00f23cf4f
-If-None-Match: {eTag-from-get}
-Content-type: application/json
-{
-  "publishingState":"published"
-}
-```

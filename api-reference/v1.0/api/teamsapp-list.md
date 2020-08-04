@@ -116,7 +116,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: List applications with the associated app definitions and progress in the staging approval pipeline
+### Example 3: List applications with the associated app definitions and progress in the review approval pipeline
 
 #### Request
 
