@@ -1,5 +1,5 @@
 ---
-title: "Permissions"
+title: "Upate a previously published application"
 description: "Update an app previously published to the Microsoft Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update apps published to your organization's app catalog
+# Update application published to your organization's app catalog
 
 Namespace: microsoft.graph
 

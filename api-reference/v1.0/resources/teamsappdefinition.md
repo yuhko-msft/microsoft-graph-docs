@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update apps published to your organization's app catalog
+# Update applications published to your organization's app catalog
 
 Namespace: microsoft.graph
 
@@ -44,7 +44,7 @@ PUT /appCatalogs/teamsApps/{id}
 
 Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update.
+>**Note:** Use the ID returned from the [List published apps](../api/teamsapp-list.md) call for to reference the app you'd like to update.
 Do not use the ID from the manifest of the zip app package.
 
 ## Response
