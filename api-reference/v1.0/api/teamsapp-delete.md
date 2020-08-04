@@ -1,5 +1,5 @@
 ---
-title: "Permissions"
+title: "Remove an app from your organization's app catalog"
 description: "Remove the app from your organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
 author: "nkramer"
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Remove an app from your organization's app catalog
 
 Namespace: microsoft.graph
-
-
 
 Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
 To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
