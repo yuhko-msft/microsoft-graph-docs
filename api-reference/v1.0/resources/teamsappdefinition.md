@@ -60,7 +60,7 @@ HTTP/1.1 204 No Content
 ### Request
 
 <!-- markdownlint-disable MD034 -->
-``
+`
 PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244

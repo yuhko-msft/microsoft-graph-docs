@@ -1,5 +1,5 @@
 ---
-title: "Permissions"
+title: "Publish an application to Teams app catalog"
 description: "Publish an application to Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
