@@ -64,8 +64,6 @@ HTTP/1.1 204 No Content
 PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244
-
-[Zip file containing a Teams app package]
 ``
 
 For Teams application zip file [see Create app package](/microsoftteams/platform/concepts/apps/apps-package)
