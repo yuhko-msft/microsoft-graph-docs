@@ -1,5 +1,5 @@
 ---
-title: "Upate a previously published application"
+title: "Update a previously published application"
 description: "Update an app previously published to the Microsoft Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
