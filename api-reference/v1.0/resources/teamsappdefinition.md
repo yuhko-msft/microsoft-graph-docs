@@ -81,7 +81,7 @@ HTTP/1.1 204 No Content
 ### Request
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinition?requiresReview=true
 Content-type: application/zip
 Content-length: 244
 ```
