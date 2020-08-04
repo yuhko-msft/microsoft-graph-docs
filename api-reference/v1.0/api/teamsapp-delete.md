@@ -34,6 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
+### Delete an application that is currently in review
+
+```http
+ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
+```
+
 ## Request headers
 
 | Header        | Value           |
@@ -48,9 +54,9 @@ None.
 
 ## Response
 
-```
+``
 HTTP/1.1 204 No Content
-```
+``
 
 ## Example
 
