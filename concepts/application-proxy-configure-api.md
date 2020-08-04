@@ -215,9 +215,9 @@ Content-type: appplication/json
    "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
    "web": {
       "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-      "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-   },
-   "logoutUrl":"https://contosoiwaapp-contoso.msappproxy.net?appproxy=logout"
+      "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+      "logoutUrl": "https://contosoiwaapp-contoso.msappproxy.net?appproxy=logout"
+   }
 }
 ```
 #### Response
