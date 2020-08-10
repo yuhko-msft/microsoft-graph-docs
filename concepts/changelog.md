@@ -21,6 +21,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property. |
 | Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
 
+
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the transcription property in to [call](/graph/api/resources/call) entity.|
+| Addition | v1 | Added the transcription property in to [call](/graph/api/resources/call) entity. |
+
 ## July 2020
 
 ### Calendar
