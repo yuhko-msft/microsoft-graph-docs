@@ -35,6 +35,8 @@ GET /print/shares
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+To see a list of each printer share's capabilities, include the optional `$select=capabilities` query parameter.
+
 ### Exceptions
 Some operators are not supported: `$count`, `$orderby`, `$search`.
 
@@ -60,15 +62,15 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/print/shares
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-printershares-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-shares-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printershares-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-shares-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-printershares-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-shares-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

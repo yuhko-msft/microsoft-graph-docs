@@ -17,11 +17,11 @@ Retrieve the properties and relationships of a [shift](../resources/shift.md) ob
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
-|Application | Schedule.Read.All, Schedule.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                    |
+|:---------------------------------------|:-------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                 |
+| Application                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -55,6 +55,8 @@ If successful, this method returns a `200 OK` response code and a [shift](../res
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shift-get"
@@ -62,6 +64,24 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 ### Response
