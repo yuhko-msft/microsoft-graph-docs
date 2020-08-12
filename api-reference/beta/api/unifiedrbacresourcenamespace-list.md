@@ -1,4 +1,3 @@
-
 ---
 title: "List unifiedRbacResourceNamespace"
 description: "Get a list of unifiedRbacResourceNamespace objects."
