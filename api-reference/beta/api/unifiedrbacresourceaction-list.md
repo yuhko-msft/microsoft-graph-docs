@@ -1,4 +1,3 @@
-
 ---
 title: "List unifiedRbacResourceAction"
 description: "Get a list of unifiedRbacResourceAction objects."
