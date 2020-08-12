@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": String,
+  "name": "String",
   "resourceActions": [{"@odata.type": "microsoft.graph.unifiedRbacResourceAction"}],
 }
 ```
