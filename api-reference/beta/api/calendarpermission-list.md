@@ -1,9 +1,9 @@
 ---
 title: "List calendarPermissions"
 description: "Get a list of the calendarPermission objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: Bhupesh12Hub
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: outlook
 doc_type: apiPageType
 ---
 
@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Calendars.Read, Calendars.ReadWrite|
+|Delegated (personal Microsoft account)|Calendars.Read, Calendars.ReadWrite|
+|Application|Calendars.Read, Calendars.ReadWrite|
 
 ## HTTP request
 
