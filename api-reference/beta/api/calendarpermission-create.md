@@ -44,12 +44,12 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|emailAddress|[emailAddress](../resources/emailaddress.md)|**TODO: Add Description**|
-|isRemovable|Boolean|**TODO: Add Description**|
-|isInsideOrganization|Boolean|**TODO: Add Description**|
-|role|calendarRoleType|**TODO: Add Description**. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
-|allowedRoles|calendarRoleType collection|**TODO: Add Description**. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|id|String|The unique identifier of the user with whom the calendar has been shared. Inherited from [entity](../resources/entity.md)|
+|emailAddress|[emailAddress](../resources/emailaddress.md)|Represents a sharee or delegate who has access to the calendar. For the "My Organization" sharee, the address property is null. Read-only|
+|isRemovable|Boolean|True if the user can be removed from the list of delegates for the specified calendar, false otherwise.|
+|isInsideOrganization|Boolean|True if the user in context delegate is inside the same organization as the calendar owner, false otherwise.|
+|role|calendarRoleType| Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|allowedRoles|calendarRoleType collection| Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 
 
 
