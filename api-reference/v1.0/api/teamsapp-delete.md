@@ -12,7 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
-To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 
@@ -32,7 +31,10 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-### Delete an application that is currently in review
+### Delete a specific version of a submitted app that has not been approved
+
+For apps that have been submitted but not yet approved by the IT admin for inclusion in the app catalog, this API removes the app submission.
+>**Note**: If there is only one app definition visible for a specific teamsApp, and if you delete that sole app definition successfully, then you will delete the parent TeamsApp resource as well.
 
 ```http
  DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}

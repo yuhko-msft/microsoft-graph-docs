@@ -87,14 +87,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List applications with a given ID
+### Example 2: Look up a TeamsApp by its manifest id
 
 The following example lists applications with a given ID.
 
 #### Request
 
 ```http
-GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+GET /appCatalogs/teamsApps?$filter=externalId eq 'ManifestId'
 ```
 
 #### Response
