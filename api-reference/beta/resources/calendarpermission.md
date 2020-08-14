@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 The permissions of a user with whom the calendar has been shared or delegated in an Outlook client.
 
-Get, update, and delete of calendar permissions is supported on behalf of only the calendar owner.
+Get, update, delete, list and create of calendar permissions is supported on behalf of only the calendar owner.
 
 Getting the calendar permissions of a calendar on behalf of a sharee or delegate returns an empty calendar permissions collection.
 
@@ -26,6 +26,8 @@ Once a sharee or delegate has been set up for a calendar, you can [update](../ap
 | [Get calendarPermission](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Read properties and relationships of calendarPermission object. |
 | [Update](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Update calendarPermission object. |
 | [Delete](../api/calendarpermission-delete.md) | None | Delete calendarPermission object. |
+|[List](../api/calendarpermission-list.md)|[calendarPermission](../resources/calendarpermission.md) collection|Get a list of the [calendarPermission](../resources/calendarpermission.md) objects and their properties.|
+|[Create](../api/calendarpermission-create.md)|[calendarPermission](../resources/calendarpermission.md)|Create a new calendarPermissions object.|
 
 ## Properties
 
