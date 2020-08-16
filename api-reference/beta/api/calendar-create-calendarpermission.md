@@ -106,8 +106,8 @@ Content-Type: application/json
   "emailAddress": {
     "@odata.type": "microsoft.graph.emailAddress"
   },
-  "isRemovable": "true",
-  "isInsideOrganization": "true",
+  "isRemovable": true,
+  "isInsideOrganization": true,
   "role": "write",
   "allowedRoles": [
     "freeBusyRead",
