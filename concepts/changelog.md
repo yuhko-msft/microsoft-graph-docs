@@ -13,11 +13,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## August 2020
 
-### Applications
+### ServicePrincipals
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.
+| Addition | beta | Added the [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource. |
+| Addition | v1.0 | Added the **signInAudience** property to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-v1.0) resource.
 
+ 
 ### Calendar
 
 | **Change type** | **Version**   | **Description**                          |

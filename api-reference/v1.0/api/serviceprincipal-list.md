@@ -123,7 +123,8 @@ Content-type: application/json
         },
         "keyCredentials": [],
         "oauth2PermissionScopes": [],
-        "passwordCredentials": []
+        "passwordCredentials": [],
+        "signInAudience":"AzureADMyOrg"
     }]
 }
 ```
