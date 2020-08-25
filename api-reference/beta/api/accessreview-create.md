@@ -92,7 +92,7 @@ Content-type: application/json
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
     "reviewerType" : "delegated",
-    "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
+    "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68"
     "description":"Sample description",
     "reviewers":
     [
