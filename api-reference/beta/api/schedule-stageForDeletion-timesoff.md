@@ -1,19 +1,19 @@
 ---
-title: "Replace timeOff"
-description: "Replace an existing timeOff object."
+title: "StageForDeletion timeOff"
+description: "Stage deletion of timeOff in draft mode."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Replace timeOff
+# Create timeOff
 
 Namespace: microsoft.graph
 
-Replace an existing [timeOff](../resources/timeoff.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-If the specified [timeOff](../resources/timeoff.md) object doesn't exist, this method returns `404 Not found`.
+Create a new [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -21,18 +21,20 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All* |
 
->\* **Important:** Application permissions require MS-APP-ACTS-AS header to be provided.
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+
+> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
+POST /teams/{teamId}/schedule/timesOff
 ```
 
 ## Request headers
@@ -41,15 +43,10 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
-| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
-
-## Request body
-
-In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [timeOff](../resources/timeoff.md) object in the response body.
 
 ## Example
 
@@ -57,16 +54,14 @@ If successful, this method returns a `200 OK` response code and a [timeOff](../r
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "timeoff-put"
+  "name": "timeoff-post"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOffId}
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff
 Content-type: application/json
-Prefer: return=representation
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
@@ -85,25 +80,18 @@ Prefer: return=representation
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/timeoff-put-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/timeoff-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-put-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/timeoff-put-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/timeoff-put-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/timeoff-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
----
-
 
 #### Response
 
@@ -113,11 +101,11 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type":"microsoft.graph.timeOff"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 401
 
@@ -126,7 +114,6 @@ Content-length: 401
   "createdDateTime": "2019-03-14T05:35:57.755Z",
   "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
   "lastModifiedBy": {
-    "@odata.type":"microsoft.graph.identitySet",
     "application": null,
     "device": null,
     "conversation": null,
@@ -155,7 +142,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Replace an existing timeOff",
+  "description": "Creates a new timeOff",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
