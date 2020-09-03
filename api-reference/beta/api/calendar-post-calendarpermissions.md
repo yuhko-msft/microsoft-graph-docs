@@ -1,7 +1,7 @@
 ---
 title: "Create calendarPermission"
 description: "Create a new calendarPermission object."
-author: Bhupesh12Hub
+author: "harini84"
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{id}/calendar/calendarPermissions/{id}
+POST /me/calendar/calendarPermissions
+POST /users/{id}/calendar/calendarPermissions
 ```
 
 ## Request headers
@@ -73,7 +74,7 @@ Content-length: 267
 {
   "@odata.type": "#microsoft.graph.calendarPermission",
   "emailAddress": {
-    "@odata.type": "microsoft.graph.emailAddress"
+    "name": "My Organization"
   },
   "isRemovable": "true",
   "isInsideOrganization": "true",
@@ -104,7 +105,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.calendarPermission",
   "id": "ddac8d4b-8d4b-ddac-4b8d-acdd4b8dacdd",
   "emailAddress": {
-    "@odata.type": "microsoft.graph.emailAddress"
+    "name": "My Organization"
   },
   "isRemovable": true,
   "isInsideOrganization": true,

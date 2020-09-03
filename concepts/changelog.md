@@ -11,7 +11,13 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-## September
+## September 2020
+
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | Beta | Added [list](/graph/api/calendar-list-calendarpermissions?view=graph-rest-beta) and [create](/graph/api/calendar-post-calendarpermissions?view=graph-rest-beta) operations to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-beta). |
 
 ### Users
 
@@ -20,11 +26,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change | beta and v1.0 | Updated the mail property on the [user](/graph/api/resources/user) entity to be writeable. |
 
 ## August 2020
-
-### Calendar
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition | Beta | Added [list](/graph/api/calendarpermission-list?view=graph-rest-beta) and [create](/graph/api/calendarpermission-create?view=graph-rest-beta) operations to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-beta). |
 
 ### Applications
 | **Change type** | **Version**   | **Description**                          |

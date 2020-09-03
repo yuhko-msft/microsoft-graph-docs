@@ -1,7 +1,7 @@
 ---
 title: "List calendarPermissions"
 description: "Get a list of the calendarPermission objects and their properties."
-author: Bhupesh12Hub
+author: "harini84"
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /me/calendar/calendarPermissions
 GET /users/{id}/calendar/calendarPermissions/{id}
 ```
 
@@ -77,7 +78,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.calendarPermission",
       "id": "ddac8d4b-8d4b-ddac-4b8d-acdd4b8dacdd",
       "emailAddress": {
-        "@odata.type": "microsoft.graph.emailAddress"
+        "name": "My Organization"
       },
       "isRemovable": true,
       "isInsideOrganization": true,
