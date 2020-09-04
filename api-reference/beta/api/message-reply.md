@@ -56,6 +56,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |comment|String|A comment to include. Can be an empty string.|
 |message|[message](../resources/message.md)|Any writeable properties to update in the reply message.|
+|mimeContent|String|Base64-encoded MIME content of message to send in reply.|
 
 ## Response
 
@@ -63,7 +64,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 
 ## Example
 The following example includes a comment and adds a recipient to the reply message.
-##### Request
+##### Request 1
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -111,7 +112,7 @@ Content-Type: application/json
 ---
 
 
-##### Response
+##### Response 1
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -134,3 +135,35 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+##### Request 2
+
+This is a request for replying to a message with MIME content as the message.
+
+<!-- {
+  "blockType": "request",
+  "name": "message_reply_with_mime_content"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
+Content-Type: application/json
+
+{
+  "mimeContent": "Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np..."
+}
+
+```
+
+##### Response 2
+
+This is an example of a response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```

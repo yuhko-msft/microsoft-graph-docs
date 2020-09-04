@@ -47,13 +47,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|The message to send. Required.|
+|Message|[Message](../resources/message.md)|The message object to send.|
+|MimeContent|String|Base64-encoded MIME content of message to send.|
 |SaveToSentItems|Boolean|Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.|
 
 If you want to use **mention** to call out another user in the new message:
 
 - Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.
 - For each mention in the **mentions** property, you must specify the **mentioned** property.
+
+You can either specify MIME content or the message JSON object, but not both. 
 
 ## Response
 
@@ -329,3 +332,36 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+
+##### Request 5
+
+This example shows how to send a message with MIME content.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_mime_content"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: application/json
+
+{
+  "mimeContent": "Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...",
+  "saveToSentItems": "false"
+}
+```
+
+#### Response 5
+
+Here is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
