@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json if sending JSON metadata, text/plain if sending MIME content.  |
 
 ## Request body
 In the request body, supply a JSON representation of the [message](../resources/message.md) object.
@@ -52,6 +52,8 @@ If you want to use **mention** to call out another user in the new message:
 - For each mention in the **mentions** property, you must specify the **mentioned** property.
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
+
+If you want to send in MIME content to create a new message, specify the `Content-Type` header as `text/plain` and include the MIME content in the request body.
 
 ## Response
 
@@ -399,6 +401,65 @@ Content-type: application/json
     "flag":{
         "flagStatus":"notFlagged"
     }
+}
+```
+
+##### Request 4
+
+This example shows shows sending in MIME content to create a new message.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_message_with_mime_content"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: text/plain
+
+From: Karl <karl@contoso.com>
+To: Adele <adele@contoso.com>
+Message-Id: <v0214040cad6a13935723@contoso.com>
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary="---B2E888AE-DAC5-49DD-8670-579F610ADAF7";
+Date: Thursday, 4 Jul 2020 09:43:14 -0800
+Subject: Did you see last night’s game?
+Precedence: bulk
+
+---B2E888AE-DAC5-49DD-8670-579F610ADAF7
+Content-Type: text/plain; charset="us-ascii"
+
+We almost won!
+
+---B2E888AE-DAC5-49DD-8670-579F610ADAF7
+Content-Type: text/html; charset="us-ascii"
+
+<html><body><p>We almost won!</p></body></html>
+
+```
+
+##### Response 4
+
+This is an example of the response.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti\"",
+    "id":"AAMkADNlNYjSAAA=",
+    "createdDateTime":"2017-07-22T01:53:56Z",
+    "lastModifiedDateTime":"2017-07-22T01:53:57Z",
+    "changeKey":"CQAAABYAAABK4UfANE/UR5clSilZtIuWAAC1vdti",
+    "receivedDateTime":"2017-07-22T01:53:57Z",
+    "sentDateTime":"2017-07-22T01:53:57Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR1301MB@MWHPR1301MB.namprd13.prod.outlook.com>",
+    "subject":"Did you see last night's game?",
+    "bodyPreview":"We almost won!",
+...
 }
 ```
 
