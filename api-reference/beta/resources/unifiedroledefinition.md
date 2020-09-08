@@ -24,6 +24,7 @@ A unifiedRoleDefinition is a collection of permissions listing the operations th
 | [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a unifiedRoleDefinition object. |
 | [Update unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Update a unifiedRoleDefinition object. |
 | [Delete unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | None | Delete a unifiedRoleDefinition object. |
+| [assignedPrincipals](../api/unifiedroledefinition-assignedPrincipals.md) | [directoryObject](directoryObject.md) collection | Get principals assigned to a role definition.|
 
 ## Properties
 
