@@ -30,8 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleDefinitions/{id}/assignedPrincipals()
+GET /roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true,directoryScopeId='{id}')
 ```
+## Function parameters
+
+|Parameter|Type|Required?|Nullable?|Description|
+|-|-|-|-|-|
+|`transitive`|`boolean`|No|No|Whether to include principals assigned through group membership (direct or transitive). `false` by default.|
+|`directoryScopeId`|`string`|No|No|The ID of the directory scope to get assigned principals for. By default, all scopes are considered.|
 
 ## Request headers
 
@@ -49,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get security principals assigned to a role directly across all scopes
+### Example 1: Get principals assigned to a role directly across all scopes
 
 #### Request
 
