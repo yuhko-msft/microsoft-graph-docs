@@ -22,6 +22,7 @@ Providing either a directoryScopeId or an appScopeId is required.
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get unifiedRoleAssignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
+| [Get transitive unifiedRoleAssignment](../api/unifiedroleassignment-transitive.md) | None | Get direct and transitive unifiedRoleAssignment object for a principal. |
 | [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignment collection. |
 | [Delete unifiedRoleAssignment](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |
 
