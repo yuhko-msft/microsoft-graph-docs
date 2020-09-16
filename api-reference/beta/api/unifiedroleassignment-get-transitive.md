@@ -53,7 +53,9 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 In examples below, we will consider following set up - 
-![Diagram](../../../concepts/images/TransitiveRoleAssignment.png)
+* Alice is assigned Helpdesk Admin directly over tenant scope (role assignment 1 or RA1).
+* Alice is member of a group G1. G1 is assigned Helpdesk Admin role over tenant scope (role assignment 2 or RA2).
+* Alice is member of a group G2. G2 is assigned Security Admin role over an Admin Unit scope (role assignment 3 or RA3).
 
 ### Example 1 : Get all direct and transitive role assignments of a principal
 
