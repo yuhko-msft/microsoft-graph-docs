@@ -1,0 +1,109 @@
+---
+title: "Update deviceCategory"
+description: ""
+localization_priority: Normal
+author: "$(metadata.owner)"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
+---
+
+# Update deviceCategory
+
+Namespace: microsoft.graph
+
+Update the properties of a deviceCategory object.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+```http
+/users/{id}/managedDevices/{id}/deviceCategory
+/deviceManagement/managedDevices/{id}/deviceCategory
+/deviceManagement/detectedApps/{id}/managedDevices/{id}/deviceCategory
+
+```
+
+## Request headers
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
+
+## Request Body
+
+In the request body, supply JSON representation of the deviceCategory object.
+
+<!-- Actions and Functions -->
+
+<!-- CRUD Methods -->
+
+The following table shows the properties that are required when you create a deviceCategory object.
+
+| Property | Type   | Description                                                      |
+| :------- | :----- | :--------------------------------------------------------------- |
+| id       | String | Unique identifier for the device category. Read-only. Read-only. |
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a deviceCategory object in the response body.
+
+## Examples
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_devicecategory"
+}
+-->
+
+```http
+PATCH https://graph.microsoft.com/v1.0/users/{id}/managedDevices/{id}/deviceCategory
+
+Content-Type: application/json
+Content-Length: 56
+
+{
+  "@odata.type": "#microsoft.graph.deviceCategory"
+}
+
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.management.services.api.deviceCategory"
+}
+-->
+
+```http
+HTTP 1.1 200 OK
+
+Content-Type: application/json
+{
+  "value": {
+  "@odata.type": "#microsoft.graph.deviceCategory",
+  "id": "String(identifier)"
+}
+}
+
+```
