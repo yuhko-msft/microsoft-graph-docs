@@ -52,7 +52,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
 | **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
-| **deleted**              | [deleted][]        | Information about the deleted state of the item. Read-only.
+| **deleted**              | [deleted][]        | Optional. Information about the deleted state of the item. Read-only.
 | **description**          | string             | The descriptive text for the site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
 | **displayName**          | string             | The full title for the site. Read-only.

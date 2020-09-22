@@ -22,8 +22,9 @@ Your app should continue calling with the `@odata.nextLink` until you no longer 
 After you have finished receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-Deleted items are returned with the [`deleted` facet](../resources/deleted.md). 
-Items with this property set should be removed from your local state. 
+Deleted items are returned with an @removed object and [`deleted` facet](../resources/deleted.md).
+The @removed will include reason property, for example, "@removed": {"reason": "deleted"}. Deleted indicates the item is deleted and cannot be restored.
+Items with this deleted reason or deleted facet property should be removed from your local state.
 
 **Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 
