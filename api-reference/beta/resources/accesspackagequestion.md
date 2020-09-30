@@ -1,9 +1,9 @@
 ---
 title: "accessPackageQuestion resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "The abstract type for questions configured on an access package assignment policy."
+author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,15 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Used for the `accessPackageQuestion` property of an [access package assignment policy](accesspackageassignmentpolicy.md). 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|isRequired|Boolean|**TODO: Add Description**|
-|sequence|Int32|**TODO: Add Description**|
-|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|**TODO: Add Description**|
+|id|String| ID of the question.|
+|isRequired|Boolean| Whether the requestor is required to supply an answer or not.|
+|sequence|Int32| Relative position of this question when displaying a list of questions to the requestor.|
+|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The text of the question to show to the requestor.|
 
 ## Relationships
 None.
