@@ -90,6 +90,42 @@ The following is a JSON representation of the resource.
       "approvalMode": "NoApproval",
       "approvalStages": []
     },
+     "questions": [{
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": []
+        },
+        "@odata.type": "#microsoft.graph.multipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "Arizona",
+            "displayValue": {
+                "localizedTexts": []
+            }
+        }, {
+            "actualValue": "California",
+            "displayValue": {
+                "localizedTexts": []
+            }
+        }, {
+            "actualValue": "Ohio",
+            "displayValue": {
+                "localizedTexts": []
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "isRequired": false,
+        "text": {
+            "defaultText": "why do you need access to this package?",
+            "localizedTexts": [{
+                "text": "why do you need access to this package",
+                "languageCode": "af"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.textInputQuestion",
+        "isSingleLineQuestion": false
+    }],
     "accessReviewSettings" : null
 }
 ```
