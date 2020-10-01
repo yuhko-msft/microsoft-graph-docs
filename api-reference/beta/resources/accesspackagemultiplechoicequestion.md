@@ -1,9 +1,9 @@
 ---
 title: "accessPackageMultipleChoiceQuestion resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Child of accessPackageQuestion that has multiple choice as the question's answer format"
+author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,20 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
-
+A child of `accessPackageQuestion` which presents multiple answer options a requestor must choose an answer from.
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowsMultipleSelection|Boolean|**TODO: Add Description**|
-|choices|[accessPackageAnswerChoice](../resources/accesspackageanswerchoice.md) collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|isRequired|Boolean|**TODO: Add Description** Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|sequence|Int32|**TODO: Add Description** Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
-|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|**TODO: Add Description** Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
+|allowsMultipleSelection|Boolean|Whether requestor can select multiple choices as their answer.|
+|choices|[accessPackageAnswerChoice](../resources/accesspackageanswerchoice.md) collection|List of answer choices.|
+|id|String|ID of the question. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
+|isRequired|Boolean|Whether the requestor is required to supply an answer or not. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
+|sequence|Int32|Relative position of this question when displaying a list of questions to the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
+|text|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The text of the question to show the requestor. Inherited from [accessPackageQuestion](../resources/accesspackagequestion.md)|
 
 ## Relationships
 None.
