@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAnswerChoice resource type"
-description: "A selected answer to an accessPackageMultipleChoiceQuestion."
+description: "An answer option for an accessPackageMultipleChoiceQuestion."
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,14 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Indicates the selected answer choice for an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md). Stored on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
-
-Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
+Indicates an answer option for an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md). Multiple accessPackageAnswerChoices can be added to an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actualValue|String|The values that are stored.|
+|actualValue|String|The values that are stored. Only relevant when different from the display value.|
 |displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The localized display values shown to the requestor and approvers.|
 
 ## Relationships
