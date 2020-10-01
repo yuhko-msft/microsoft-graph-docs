@@ -1,6 +1,6 @@
 ---
 title: "accessPackageQuestion resource type"
-description: "The abstract type for questions configured on an access package assignment policy."
+description: "The complex type for questions configured on an access package assignment policy."
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
