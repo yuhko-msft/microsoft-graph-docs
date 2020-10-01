@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAnswerChoice resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A selected answer to an accessPackageMultipleChoiceQuestion."
+author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Indicates the selected answer choice for an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md). Stored on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
+
+Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actualValue|String|**TODO: Add Description**|
-|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|**TODO: Add Description**|
+|actualValue|String|The values that are stored.|
+|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The localized display values shown to the requestor and approvers.|
 
 ## Relationships
 None.
