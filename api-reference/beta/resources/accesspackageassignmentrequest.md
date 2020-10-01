@@ -37,6 +37,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd` or `UserRemove`. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| For a requestType of `UserAdd` or `AdminAdd`, this is an access package assignment requested to be created.  For a requestType of `UserRemove`, `AdminRemove` or `SystemRemove`, this has the `id` property of an existing assignment to be removed.|
+|answers|[accessPackageAnswer](accesspackageanswer.md)|Answers provided by the requestor to asked [accessPackageQuestions](accesspackagequestion.md)|
 
 ## Relationships
 
@@ -60,14 +61,107 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "createdDateTime": "2020-02-12T22:06:58.303Z",
-  "completedDate": "2020-02-12T22:14:28.19Z",
-  "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
-  "requestType": "UserAdd",
-  "requestState": "Delivered",
-  "requestStatus": "FulfilledNotificationTriggered",
-  "isValidationOnly": false,
-  "justification": ""
+    "createdDateTime": "2020-02-12T22:06:58.303Z",
+    "completedDate": "2020-02-12T22:14:28.19Z",
+    "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
+    "requestType": "UserAdd",
+    "requestState": "Delivered",
+    "requestStatus": "FulfilledNotificationTriggered",
+    "isValidationOnly": false,
+    "justification": "",
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "answer for single line question",
+        "answeredQuestion": {
+            "id": "d326d88c-3dde-4017-a082-5e1022b0103a",
+            "text": {
+                "defaultText": "Single line text input question",
+                "localizedTexts": [{
+                    "text": "text 1",
+                    "languageCode": "af"
+                }, {
+                    "text": "text 2",
+                    "languageCode": "am"
+                }, {
+                    "text": "text 3",
+                    "languageCode": "ar-SA"
+                }, {
+                    "text": "text 4",
+                    "languageCode": "be"
+                }]
+            },
+            "isRequired": true,
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isSingleLineQuestion": true
+        }
+    }, {
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "answer for multi line text question",
+        "answeredQuestion": {
+            "id": "641edac3-3bc4-455c-80d0-dd70fac757fd",
+            "text": {
+                "defaultText": "Multi line text input question",
+                "localizedTexts": [{
+                    "text": "text 1",
+                    "languageCode": "ar-SA"
+                }, {
+                    "text": "text 2",
+                    "languageCode": "bs"
+                }, {
+                    "text": "text 3",
+                    "languageCode": "cs"
+                }]
+            },
+            "isRequired": true,
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion"
+        }
+    }, {
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Choice 1",
+        "answeredQuestion": {
+            "id": "e292d6ef-00a8-4247-b938-87d57da2450f",
+            "text": {
+                "defaultText": "Multiple Choice question with choices",
+                "localizedTexts": [{
+                    "text": "text 1",
+                    "languageCode": "af"
+                }, {
+                    "text": "text 2",
+                    "languageCode": "am"
+                }, {
+                    "text": "text 3",
+                    "languageCode": "az"
+                }]
+            },
+            "choices": [{
+                "actualValue": "Choice 1",
+                "displayValue": {
+                    "defaultText": "Choice 1",
+                    "localizedTexts": []
+                }
+            }, {
+                "actualValue": "Choice 2",
+                "displayValue": {
+                    "defaultText": "Choice 2",
+                    "localizedTexts": []
+                }
+            }, {
+                "actualValue": "Choice 3",
+                "displayValue": {
+                    "defaultText": "Choice 3",
+                    "localizedTexts": []
+                }
+            }, {
+                "actualValue": "Choice 4",
+                "displayValue": {
+                    "defaultText": "Choice 4",
+                    "localizedTexts": []
+                }
+            }],
+            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion"
+        },
+        "displayValue": "Choice 1"
+    }]
 }
 ```
 
