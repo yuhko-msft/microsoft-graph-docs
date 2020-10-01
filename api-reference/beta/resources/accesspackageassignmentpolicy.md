@@ -78,25 +78,25 @@ The following is a JSON representation of the resource.
     "isDenyPolicy": false,
     "canExtend": false,
     "durationInDays": 365,
-    "requestorSettings" : {
-      "scopeType": "AllExistingDirectorySubjects",
-      "acceptRequests": true,
-      "allowedRequestors": []
+    "requestorSettings": {
+        "scopeType": "AllExistingDirectorySubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
     },
-    "requestApprovalSettings" : {
-      "isApprovalRequired": false,
-      "isApprovalRequiredForExtension": false,
-      "isRequestorJustificationRequired": false,
-      "approvalMode": "NoApproval",
-      "approvalStages": []
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "NoApproval",
+        "approvalStages": []
     },
-     "questions": [{
+    "questions": [{
         "isRequired": false,
         "text": {
             "defaultText": "what state are you from?",
             "localizedTexts": []
         },
-        "@odata.type": "#microsoft.graph.multipleChoiceQuestion",
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
         "choices": [{
             "actualValue": "Arizona",
             "displayValue": {
@@ -123,10 +123,10 @@ The following is a JSON representation of the resource.
                 "languageCode": "af"
             }]
         },
-        "@odata.type": "#microsoft.graph.textInputQuestion",
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
         "isSingleLineQuestion": false
     }],
-    "accessReviewSettings" : null
+    "accessReviewSettings": null
 }
 ```
 
