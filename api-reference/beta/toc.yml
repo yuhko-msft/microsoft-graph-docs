@@ -12240,6 +12240,16 @@ items:
           href: api/teamstab-update.md
         - name: Delete tab
           href: api/teamstab-delete.md
+        - name: List tabs chat
+          href: api/teamstab-chat-list.md
+        - name: Get tab chat
+          href: api/teamstab-chat-get.md
+        - name: Create tab chat
+          href: api/teamstab-chat-create.md
+        - name: Update tab chat
+          href: api/teamstab-chat-update.md
+        - name: Delete tab chat
+          href: api/teamstab-chat-delete.md
       - name: Calendar
         href: resources/event.md
         items:
