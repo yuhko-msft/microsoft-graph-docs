@@ -24,7 +24,11 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
 |[Delete tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
-
+|[List tabs chat](../api/teamstab-chat-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a chat.|
+|[Get tab chat](../api/teamstab-chat-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a chat.|
+|[Create tab chat](../api/teamstab-chat-create.md) | [teamsTab](teamstab.md) | Creates (pins) a tab to a chat.|
+|[Delete tab chat](../api/teamstab-chat-delete.md) | None | Removes (unpins) a tab from a chat.|
+|[Update tab chat](../api/teamstab-chat-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 ## Properties
 
