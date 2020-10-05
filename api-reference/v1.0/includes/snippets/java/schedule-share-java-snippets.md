@@ -8,9 +8,9 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 boolean notifyTeam = true;
 
-int startDateTime = 10/8/2018 12:00:00 AM;
+int startDateTime = 08/10/2018 00:00:00;
 
-int endDateTime = 10/15/2018 12:00:00 AM;
+int endDateTime = 15/10/2018 00:00:00;
 
 graphClient.teams("{teamId}").schedule()
 	.share(notifyTeam,startDateTime,endDateTime)

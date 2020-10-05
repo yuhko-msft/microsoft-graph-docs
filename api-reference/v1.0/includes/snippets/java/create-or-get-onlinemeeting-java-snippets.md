@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-int startDateTime = 2/6/2020 1:49:21 AM;
+int startDateTime = 06/02/2020 04:49:21;
 
-int endDateTime = 2/6/2020 2:19:21 AM;
+int endDateTime = 06/02/2020 05:19:21;
 
 String subject = "Create a meeting with customId provided";
 

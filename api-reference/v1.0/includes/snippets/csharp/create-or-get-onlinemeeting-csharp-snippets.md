@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var startDateTime = DateTimeOffset.Parse("2020-02-06T01:49:21.3524945+00:00");
+var startDateTime = DateTimeOffset.Parse("2020-02-06T04:49:21.3524945+03:00");
 
-var endDateTime = DateTimeOffset.Parse("2020-02-06T02:19:21.3524945+00:00");
+var endDateTime = DateTimeOffset.Parse("2020-02-06T05:19:21.3524945+03:00");
 
 var subject = "Create a meeting with customId provided";
 

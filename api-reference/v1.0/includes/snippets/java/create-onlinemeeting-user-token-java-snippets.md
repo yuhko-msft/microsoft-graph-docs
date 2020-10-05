@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 OnlineMeeting onlineMeeting = new OnlineMeeting();
-onlineMeeting.startDateTime = "2019-07-12T21:30:34.2444915+00:00";
-onlineMeeting.endDateTime = "2019-07-12T22:00:34.2464912+00:00";
+onlineMeeting.startDateTime = "2019-07-13T00:30:34.2444915+03:00";
+onlineMeeting.endDateTime = "2019-07-13T01:00:34.2464912+03:00";
 onlineMeeting.subject = "User Token Meeting";
 
 graphClient.me().onlineMeetings()

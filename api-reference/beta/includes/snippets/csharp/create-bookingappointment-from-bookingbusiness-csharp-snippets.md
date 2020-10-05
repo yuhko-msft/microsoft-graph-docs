@@ -43,13 +43,13 @@ var bookingAppointment = new BookingAppointment
 	CustomerPhone = "213-555-0199",
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T12:30:00+00:00",
+		DateTime = "2018-05-01T15:30:00+03:00",
 		TimeZone = "UTC"
 	},
 	InvoiceAmount = 10,
 	InvoiceDate = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T12:30:00+00:00",
+		DateTime = "2018-05-01T15:30:00+03:00",
 		TimeZone = "UTC"
 	},
 	InvoiceId = "1001",
@@ -127,7 +127,7 @@ var bookingAppointment = new BookingAppointment
 	ServiceNotes = "Customer requires punctual service.",
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T12:00:00+00:00",
+		DateTime = "2018-05-01T15:00:00+03:00",
 		TimeZone = "UTC"
 	},
 	AdditionalData = new Dictionary<string, object>()

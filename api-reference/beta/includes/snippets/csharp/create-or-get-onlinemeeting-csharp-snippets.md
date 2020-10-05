@@ -11,9 +11,9 @@ var chatInfo = new ChatInfo
 	ThreadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"
 };
 
-var startDateTime = DateTimeOffset.Parse("2020-02-06T01:49:21.3524945+00:00");
+var startDateTime = DateTimeOffset.Parse("2020-02-06T04:49:21.3524945+03:00");
 
-var endDateTime = DateTimeOffset.Parse("2020-02-06T02:19:21.3524945+00:00");
+var endDateTime = DateTimeOffset.Parse("2020-02-06T05:19:21.3524945+03:00");
 
 var externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56";
 
