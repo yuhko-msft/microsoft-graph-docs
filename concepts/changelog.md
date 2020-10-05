@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## October 2020
+
+### Teamwork
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|Beta|Added [List chat](/api/teamstab-chat-list.md), [Get tab chat](/api/teamstab-chat-get.md), [Create tab chat](/api/teamstab-chat-create.md), [Delete tab chat](/api/teamstab-chat-delete.md), and [Update tab chat](/api/teamstab-chat-update.md). Also updated the resource file [teamsTab](/api/teamstab.md)|
+
 ## September 2020
 
 ### Calendar
