@@ -12230,15 +12230,15 @@ items:
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: List tabs
+        - name: List tabs channel
           href: api/teamstab-list.md
-        - name: Get tab
+        - name: Get tab channel
           href: api/teamstab-get.md
-        - name: Add tab
+        - name: Add tab channel
           href: api/teamstab-add.md
-        - name: Update tab
+        - name: Update tab channel
           href: api/teamstab-update.md
-        - name: Delete tab
+        - name: Delete tab channel
           href: api/teamstab-delete.md
         - name: List tabs chat
           href: api/teamstab-chat-list.md
