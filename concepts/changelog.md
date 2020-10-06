@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|Beta|Added [List chat](/api/teamstab-chat-list.md), [Get tab chat](/api/teamstab-chat-get.md), [Create tab chat](/api/teamstab-chat-create.md), [Delete tab chat](/api/teamstab-chat-delete.md), and [Update tab chat](/api/teamstab-chat-update.md). Also updated the resource file [teamsTab](/api/teamstab.md)|
+|Addition|Beta|Added [List chat](/graph/api/teamstab-chat-list), [Get tab chat](/graph/api/teamstab-chat-get), [Create tab chat](/graph/api/teamstab-chat-create), [Delete tab chat](/graph/api/teamstab-chat-delete), and [Update tab chat](/graph/api/teamstab-chat-update). Also updated the resource file [teamsTab](/graph/api/teamstab)|
 
 ## September 2020
 
