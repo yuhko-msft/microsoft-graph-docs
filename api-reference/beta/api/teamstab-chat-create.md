@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create tab to chat
+# Create tab in chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates (pins) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md) within a [team](../resources/team.md). 
+Create (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md) within a [team](../resources/team.md). 
 The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
 
 ## Permissions 
@@ -39,10 +39,11 @@ POST /teams/{id}/chat/{id}/tabs
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-type   | application/json. Required. |
 
 ## Request body
 
-A [teamsTab](../resources/teamstab.md).
+In the request body, supply a JSON representation of a [teamsTab](../resources/teamstab.md) resource.
 
 ## Response
 
@@ -67,7 +68,9 @@ POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@
 
 ### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "ignored",
   "truncated": true,
