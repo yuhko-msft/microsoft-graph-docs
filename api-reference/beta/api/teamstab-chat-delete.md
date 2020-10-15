@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
+
+```
 DELETE /teams/{id}/chats/{id}/tabs/{id}
 ```
 
@@ -51,18 +51,24 @@ If successful, this method returns `204 No Content` response code. It does not r
 > **Note**: Since meeting notes are confidential data, the Notes tab is not secure as it does not encrypt the data at rest. This is a violation of a new policy and needs to be removed from all meetings and chats. When a meeting is started, the Automation lists all tabs and deletes the Notes tab which is present using the Notes tab's id.
 
 ### Request
-The following is an example of the request.
-<!-- {
-  "blockType": "ignored",
-  "name": "get_team"
-}-->
-```http
-DELETE https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/{id}
+```
+DELETE /chats/{chatId}/tabs/{tabId}
 ```
 ### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+```
 HTTP/1.1 204 No Content
 ```
+### Example : Delete tabs in a Teams chat
 
---->
+#### Request
+
+The following example shows a request to delete all chats.
+
+```
+DELETE /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/{id}
+```
+
+#### Response
+
+HTTP/1.1 204 No Content
