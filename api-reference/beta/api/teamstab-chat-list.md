@@ -89,16 +89,12 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request to list all channels.
+The following example shows a request to list all chats.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_chats"
-}-->
-```msgraph-interactive
+```
 GET https://graph.microsoft.com/beta/chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 ```
+
 #### Response
 
 The following is an example of the response.
