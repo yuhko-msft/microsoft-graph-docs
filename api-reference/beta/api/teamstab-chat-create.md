@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
+
+```
 POST /teams/{id}/chat/{id}/tabs
 ```
 
@@ -53,6 +53,55 @@ If successful, this method returns a `201 Created` response code.
 
 ### Request
 
+```
+POST /chats/{chatId}/tabs
+
+{
+  "displayName": "My Awesome Tab",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "configuration": {
+    "entityId": "fd3791c9-1e39-42b9-9e48-e9b1cbe54f99",
+    "contentUrl": "https://www.example.com/",
+    "removeUrl": "https://www.example.com/",
+    "websiteUrl": "https://www.example.com/",
+    "customPropertyInt": 1,
+    "customPropertyBool": true,
+    "customPropertyString": "value"
+  }
+}
+```
+
+### Response
+
+The following is an example of the response. 
+
+```
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
+  "displayName": "My Awesome Tab",
+  "configuration": {
+    "entityId": "fd3791c9-1e39-42b9-9e48-e9b1cbe54f99",
+    "contentUrl": "https://www.example.com/",
+    "removeUrl": "https://www.example.com/",
+    "websiteUrl": "https://www.example.com/",
+    "customPropertyInt": 1,
+    "customPropertyBool": true,
+    "customPropertyString": "value"
+  },
+  "webUrl": "https://teams.microsoft.com/l/chat/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%awesome%to%tab"
+}
+
+```
+
+### Example : Create tabs in a Teams chat
+
+#### Request
+
+The following example shows a request to create all chats.
+Request
 POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 
 {
@@ -66,18 +115,8 @@ POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@
   }
 }
 
-### Response
-
-The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability. 
-<!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
-} -->
-
-```http
+#### Response
+```
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -94,4 +133,4 @@ Content-type: application/json
 }
 
 ```
--->
+
