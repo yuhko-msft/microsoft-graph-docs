@@ -1,6 +1,6 @@
 ---
 title: "Create tab in chat"
-description: "Creates (pins) a tab to the specified chat within a team. "
+description: "Creates (pins) a tab to the specified chat within a team. Add a scrum board tab in the meeting chat by using Graph APIs. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -16,16 +16,16 @@ Namespace: microsoft.graph
 Create (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md) within a [team](../resources/team.md). 
 The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
 
-## Permissions 
+#### Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Create.Group*, TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+|Permission type      | Permissions | Entities/APIs Covered |Entities/APIs Covered |
+|:--------------------|:---------------------------------|:---------------------------------|
+|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
+|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
+|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
+|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
