@@ -20,8 +20,8 @@ The corresponding app must already be [installed in the team](../api/teamsappins
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions | Entities/APIs Covered |Entities/APIs Covered |
-|:--------------------|:---------------------------------|:---------------------------------|
+|Permission type      | Permissions | Entities/APIs Covered |
+|:--------------------|:----------------------------------------|:---------------------------------------------------------|
 |Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
 |Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
 |Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
