@@ -49,6 +49,7 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 If successful, this method returns a `200 OK` response code.
 
 ## Example
+
 ### Request
 The following is an example of the request.
 ```http
@@ -76,5 +77,36 @@ Content-type: application/json
     "customPropertyString": "value"
   },
   "webUrl": "https://teams.microsoft.com/l/chat/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%awesome%to%tab"
+}
+```
+
+### Example : Update tabs in a Teams chat
+
+#### Request
+
+The following example shows a request to get all chats.
+
+```
+PATCH /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/794f0e4e-4d10-4bb5-9079-3a465a629eff
+
+{
+  "displayName": "Sprint Board"
+}
+```
+#### Response
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
+  "displayName": "Sprint Board",
+  "webUrl": "https://teams.microsoft.com/l/chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tab%3a%3a794f0e4e-4d10-4bb5-9079-3a465a629eff?label=scrum%20tab",
+  "configuration": {
+    "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
+    "contentUrl": "https://www.contoso.com/scrumsboards/",
+    "websiteUrl": "https://www.contoso.com/scrumsboards/2DCA2E6C7A10415CAF6B8AB6661B3154",
+    "removeUrl": "https://www.contoso.com/scrumsboards.2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
+  }
 }
 ```
