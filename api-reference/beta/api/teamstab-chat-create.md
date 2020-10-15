@@ -1,6 +1,6 @@
 ---
 title: "Create tab in chat"
-description: "Creates (pins) a tab to the specified chat within a team. Add a scrum board tab in the meeting chat by using Graph APIs. "
+description: "Creates (pins) a tab to the specified chat within a team. Adds a scrum board tab in the meeting chat by using Graph APIs. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
