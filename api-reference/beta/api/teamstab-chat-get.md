@@ -13,22 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of the specified [tab](../resources/teamstab.md). 
+Retrieve the properties and relationships of the specified [tab](../resources/teamstab.md).
+
+## Scenario
+
+Get a specific Scrum Board tab in a Teams chat using the displayName of the tab. To verify if the tab exists or not, run the query on API with $filter=displayName eq 'Scrum Board'.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsTab.Read.Group*, TeamsTab.Edit.Group*, TeamsTab.Read.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
-
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+|Permission type      | Permissions | Entities/APIs Covered |Entities/APIs Covered |
+|:--------------------|:---------------------------------|:---------------------------------|
+|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
+|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
+|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
+|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
 
 ## HTTP request
-```http
+
+```
 GET /teams/{id}/chat /{id}/tabs/{id}
 ```
 
@@ -48,7 +51,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [tab](../resources/teamstab.md) object in the response body.
 ## Example
+
 ### Request
+
 The following is an example of the request.
 ```http
 GET /chats/{chatId}/tabs/{tabId}
