@@ -13,7 +13,7 @@ Namespace: microsoft.graph
  
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat (../resources/chat.md) within a [team](../resources/team.md).
+Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md) within a [team](../resources/team.md).
  
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,14 +43,13 @@ This method supports the $filter, $select, and $expand [OData query parameters](
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
  
-## Request body
-Do not supply a request body for this method.
- 
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.
  
 ## Example
+
 ### Request
+
 The following is an example of the request.
 ```http
 GET /chat/{chatId}/tabs
@@ -58,8 +57,8 @@ GET /chat/{chatId}/tabs
 ```
 
 ### Response
+
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -85,3 +84,43 @@ Content-type: application/json
 }
 
 ```
+
+### Example : List tabs in a Teams chat
+
+#### Request
+
+The following example shows a request to list all channels.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_chats"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
+```
+#### Response
+
+The following is an example of the response.
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://localhost:8200/beta/$metadata#chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs",
+  "@odata.count": 1,
+  "value": [
+    "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
+    "displayName": "Scrum Board",
+    "webUrl": "https://teams.microsoft.com/l/chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tab%3a%3a794f0e4e-4d10-4bb5-9079-3a465a629eff?label=scrum%20tab",
+    "configuration": {
+      "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
+      "contentUrl": "https://www.contoso.com/scrumsboards/",
+      "websiteUrl": "https://www.contoso.com/scrumsboards/2DCA2E6C7A10415CAF6B8AB6661B3154",
+      "removeUrl": "https://www.contoso.com/scrumsboards.2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
+    }
+  ]
+}
+```
+-->
+
