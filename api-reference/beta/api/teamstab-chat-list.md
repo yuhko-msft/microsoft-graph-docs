@@ -15,19 +15,6 @@ Namespace: microsoft.graph
  
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md) within a [team](../resources/team.md).
 
-## Scenario
-
-Add a scrum board tab in the meeting chat by using Graph APIs.
- 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
- 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Read.Group*, TeamsTab.Edit.Group*, TeamsTab.Read.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
- 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
