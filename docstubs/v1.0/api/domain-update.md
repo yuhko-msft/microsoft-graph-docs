@@ -1,0 +1,159 @@
+---
+title: "Update domain"
+description: ""
+localization_priority: Normal
+author: "$(metadata.owner)"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
+---
+
+# Update domain
+
+Namespace: microsoft.graph
+
+Update the properties of a domain object.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     |                                             |
+| Delegated (personal Microsoft account) |                                             |
+| Application                            |                                             |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+```http
+
+```
+
+## Request headers
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
+
+## Request Body
+
+In the request body, supply JSON representation of the [domain](../resources/-domain.md) object.
+
+<!-- Actions and Functions -->
+
+<!-- CRUD Methods -->
+
+The following table shows the properties that are required when you create a domain object.
+
+| Property                         | Type                                       | Description |
+| :------------------------------- | :----------------------------------------- | :---------- |
+| authenticationType               | String                                     |             |
+| availabilityStatus               | String                                     |             |
+| id                               | String                                     | Read-only.  |
+| isAdminManaged                   | Boolean                                    |             |
+| isDefault                        | Boolean                                    |             |
+| isInitial                        | Boolean                                    |             |
+| isRoot                           | Boolean                                    |             |
+| isVerified                       | Boolean                                    |             |
+| manufacturer                     | String                                     |             |
+| model                            | String                                     |             |
+| passwordNotificationWindowInDays | Int32                                      |             |
+| passwordValidityPeriodInDays     | Int32                                      |             |
+| state                            | [domainState](../resources/domainstate.md) |             |
+| supportedServices                | String collection                          |             |
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a domain object in the response body.
+
+## Examples
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_domain"
+}
+-->
+
+```http
+PATCH https://graph.microsoft.com/v1.0/domains/{id}
+
+Content-Type: application/json
+Content-Length: 614
+
+{
+  "@odata.type": "#microsoft.graph.domain",
+  "authenticationType": "String",
+  "availabilityStatus": "String",
+  "isAdminManaged": "Boolean",
+  "isDefault": "Boolean",
+  "isInitial": "Boolean",
+  "isRoot": "Boolean",
+  "isVerified": "Boolean",
+  "manufacturer": "String",
+  "model": "String",
+  "passwordNotificationWindowInDays": "Int32",
+  "passwordValidityPeriodInDays": "Int32",
+  "state": {
+    "@odata.type": "#microsoft.graph.domainState",
+    "lastActionDateTime": "DateTimeOffset",
+    "operation": "String",
+    "status": "String"
+  },
+  "supportedServices": [
+    "String"
+  ]
+}
+
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Microsoft.DirectoryServices.domain"
+}
+-->
+
+```http
+HTTP 1.1 200 OK
+
+Content-Type: application/json
+{
+  "value": {
+  "@odata.type": "#microsoft.graph.domain",
+  "authenticationType": "String",
+  "availabilityStatus": "String",
+  "id": "String(identifier)",
+  "isAdminManaged": "Boolean",
+  "isDefault": "Boolean",
+  "isInitial": "Boolean",
+  "isRoot": "Boolean",
+  "isVerified": "Boolean",
+  "manufacturer": "String",
+  "model": "String",
+  "passwordNotificationWindowInDays": "Int32",
+  "passwordValidityPeriodInDays": "Int32",
+  "state": {
+    "@odata.type": "#microsoft.graph.domainState",
+    "lastActionDateTime": "DateTimeOffset",
+    "operation": "String",
+    "status": "String"
+  },
+  "supportedServices": [
+    "String"
+  ]
+}
+}
+
+```
