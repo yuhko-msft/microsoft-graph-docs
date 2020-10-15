@@ -92,7 +92,7 @@ Content-type: application/json
 The following example shows a request to list all chats.
 
 ```
-GET https://graph.microsoft.com/beta/chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
+GET /chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 ```
 
 #### Response
@@ -118,5 +118,4 @@ Content-type: application/json
   ]
 }
 ```
--->
 
