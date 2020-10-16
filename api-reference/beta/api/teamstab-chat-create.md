@@ -101,7 +101,7 @@ Content-type: application/json
 #### Request
 
 The following example shows a request to create all chats.
-Request
+```
 POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 
 {
@@ -114,6 +114,7 @@ POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@
     "removeUrl": "https://www.contoso.com/scrumsboards.2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   }
 }
+```
 
 #### Response
 ```
@@ -133,4 +134,3 @@ Content-type: application/json
 }
 
 ```
-
