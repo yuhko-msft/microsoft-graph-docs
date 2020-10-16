@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [tab](../resou
 
 ## Example
 
-[!NOTE]: The Automation now has an update. It will add another tab, Notes, to every meeting chat when the meeting begins. The Automation lists all the tabs, and adds the ones that are missing.The Notes tab is not present in the response, therefore, the Automation will add the tab to this chat. It will skip Scrum Board since it is present in the response.
+> **Note**: The Automation now has an update. It will add another tab, Notes, to every meeting chat when the meeting begins. The Automation lists all the tabs, and adds the ones that are missing.The Notes tab is not present in the response, therefore, the Automation will add the tab to this chat. It will skip Scrum Board since it is present in the response.
 
 ### Request
 
