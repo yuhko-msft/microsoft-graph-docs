@@ -19,16 +19,6 @@ Universal Print moves key Windows Server print functionality to the Microsoft 36
 
 As organizations adopt Universal Print, organizations and independent software vendors (ISVs) can use the Universal Print API in Microsoft Graph to build and extend applications to support new scenarios.
 
-### Print documents from web and mobile applications
-
-Moving print infrastructure to the cloud enables printing documents directly from web and mobile applications.
-
-To get started with the Universal Print API:
-
-1. [Create a print job](/graph/api/printer-post-jobs?view=graph-rest-beta) and store the resulting document ID.
-2. [Upload document data](/graph/api/printdocument-uploaddata?view=graph-rest-beta) to the document.
-3. [Start the print job](/graph/api/printjob-startprintjob?view=graph-rest-beta).
-
 ### Manage printers
 
 Keeping track of an organization's printers, printer configurations, and printer usage is a complex task. The Universal Print API enables integration in all three areas.
