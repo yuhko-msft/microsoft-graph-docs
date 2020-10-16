@@ -85,6 +85,8 @@ Content-type: application/json
 
 ### Example : List tabs in a Teams chat
 
+> **Note**: The Automation now has an update. It will add another tab, Notes, to every meeting chat when the meeting begins. The Automation lists all the tabs, and adds the ones that are missing. The Notes tab is not present in the response, therefore, the Automation will add the tab to this chat. It will skip Scrum Board since it is present in the response.
+
 #### Request
 
 The following example shows a request to list all chats.
