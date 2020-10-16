@@ -46,7 +46,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [tab](../resources/teamstab.md) object in the response body.
+
 ## Example
+
+[!NOTE]: The Automation now has an update. It will add another tab, Notes, to every meeting chat when the meeting begins. The Automation lists all the tabs, and adds the ones that are missing.The Notes tab is not present in the response, therefore, the Automation will add the tab to this chat. It will skip Scrum Board since it is present in the response.
 
 ### Request
 
@@ -55,6 +58,7 @@ The following is an example of the request.
 GET /chats/{chatId}/tabs/{tabId}
 ```
 ### Response
+
 The following is an example of the response. 
 
 ```http
@@ -83,6 +87,7 @@ Content-type: application/json
 ### Example : Get tabs in a Teams chat
 
 #### Request
+
 The following example shows a request to get all chats.
 
 ```
@@ -90,6 +95,7 @@ GET /chats/{chatId}/tabs/{tabId}
 ```
 
 #### Response
+
 ```
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -112,4 +118,3 @@ Content-type: application/json
   }
 }
 ```
-
