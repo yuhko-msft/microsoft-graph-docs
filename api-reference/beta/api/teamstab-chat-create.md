@@ -27,7 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
 |Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 
@@ -50,6 +49,8 @@ In the request body, supply a JSON representation of a [teamsTab](../resources/t
 If successful, this method returns a `201 Created` response code.
 
 ## Example
+
+> **Note**: When a meeting is started, our customer's automation is invoked. The automation add a Scrum Board tab to the meeting. The details of the invocation of the automation and the logic to figure out whether a meeting is a scrum meeting or not, is not in scope of this discussion.
 
 ### Request
 
