@@ -83,6 +83,8 @@ Content-type: application/json
 
 ### Example : Update tabs in a Teams chat
 
+> **Note**: The Scrum Board tab needs to updated with the new display name. The Automation will list the tabs in the chat, and if the display name of tab matched "Scrum Board", it will update the tab.
+
 #### Request
 
 The following example shows a request to get all chats.
