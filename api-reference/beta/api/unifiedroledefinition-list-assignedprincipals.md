@@ -229,12 +229,12 @@ Content-type: application/json
 
 Consider following set up - 
 
-User1 -----> Role1 (over scope S1): Role assignment 1
-User1 -----> Role1 (over scope S2): Role assignment 2
-User1 -----> Group1 -----> Role1 (over scope S1): Role assignment 3
-User1 -----> Group2 -----> Role1 (over scope S1): Role assignment 4
-User2 -----> Group3 -----> Role1 (over scope S3): Role assignment 5
-User3 -----> Group3 -----> Role1 (over scope 3): Role assignment 5
+User1 -----> Role1 (over scope S1): Role assignment 1  
+User1 -----> Role1 (over scope S2): Role assignment 2  
+User1 -----> Group1 -----> Role1 (over scope S1): Role assignment 3  
+User1 -----> Group2 -----> Role1 (over scope S1): Role assignment 4  
+User2 -----> Group3 -----> Role1 (over scope S3): Role assignment 5  
+User3 -----> Group3 -----> Role1 (over scope 3): Role assignment 5  
 
 #### Request
 
@@ -271,7 +271,7 @@ Content-type: text/plain
 6
 ```
 
-#### Some other examples in above scenario
+#### Some other scenarios using similar setup
 |HTTP call|Output|
 |-|-|
 |`https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=false)/$count`|4<br>(U1, G1, G2, G3)|
