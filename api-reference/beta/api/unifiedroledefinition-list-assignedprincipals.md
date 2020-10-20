@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [directoryObjects](../resources/directoryObjects.md) assigned to a unifiedRoleDefinition object.
+Get a list of [directoryObjects](../resources/directoryObject.md) assigned to a unifiedRoleDefinition object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive
 ```
 ## Function parameters
 
-|Parameter|Type|Required?|Nullable?|Description|
+|Parameter|Type|Required|Nullable|Description|
 |-|-|-|-|-|
 |`transitive`|`boolean`|No|No|Whether to include principals assigned through group membership (direct or transitive). `false` by default.|
 |`directoryScopeId`|`string`|No|No|The ID of the directory scope to get assigned principals for. By default, all scopes are considered.|
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [directoryObjects](../resources/directoryObjects.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObjects](../resources/directoryObject.md) in the response body.
 
 ## Examples
 
@@ -61,8 +61,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignedPrincipals_direct"
@@ -71,20 +69,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/62e90394-69f5-4237-9190-012177145e10/assignedPrincipals()
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -138,8 +122,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignedPrincipals_direct_scoped"
@@ -148,19 +130,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/62e90394-69f5-4237-9190-012177145e10/assignedPrincipals(directoryScopeId='/administrativeUnit/d67eba75-6337-4fb8-9f54-36fc5c890450')/microsoft.graph.user
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -200,8 +169,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignedPrincipals_transitive"
@@ -210,19 +177,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/62e90394-69f5-4237-9190-012177145e10/assignedPrincipals(transitive=true)
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
@@ -275,14 +229,18 @@ Content-type: application/json
 
 Consider following set up - 
 
-![Diagram](../../../concepts/images/assignedPrincipals.jpg)
+User1 -----> Role1 (over scope S1): Role assignment 1
+User1 -----> Role1 (over scope S2): Role assignment 2
+User1 -----> Group1 -----> Role1 (over scope S1): Role assignment 3
+User1 -----> Group2 -----> Role1 (over scope S1): Role assignment 4
+User2 -----> Group3 -----> Role1 (over scope S3): Role assignment 5
+User3 -----> Group3 -----> Role1 (over scope 3): Role assignment 5
 
 #### Request
 
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignedPrincipals_transitive_count"
@@ -291,19 +249,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/62e90394-69f5-4237-9190-012177145e10/assignedPrincipals(transitive=true)/$count
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response
