@@ -19,12 +19,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |:---|:---|:---|
 | Addition | beta | Added support for `$expand=documents` and `$filter=createdBy/userPrincipalName` query parameters in the [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta) method. |
 
-### Identity and access | Identity and sign-in
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added a new API assignedPrincipals to [unifiedRoleDefinition](https://docs.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) entity for managing user flows in an Azure Active Directory B2C tenant. |
-
 ### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
