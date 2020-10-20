@@ -236,6 +236,8 @@ User1 -----> Group2 -----> Role1 (over scope S1): Role assignment 4
 User2 -----> Group3 -----> Role1 (over scope S3): Role assignment 5  
 User3 -----> Group3 -----> Role1 (over scope 3): Role assignment 5  
 
+In this case, there are 6 such prinicipals - User1, User2, User 3, Group1, Group2 and Group3.
+
 #### Request
 
 The following is an example of the request.
@@ -257,18 +259,62 @@ The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
-} -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
 
 6
+
+```
+
+### Example 5: Count principals assigned to a role only directly 
+
+Consider similar set up as above - 
+
+User1 -----> Role1 (over scope S1): Role assignment 1  
+User1 -----> Role1 (over scope S2): Role assignment 2  
+User1 -----> Group1 -----> Role1 (over scope S1): Role assignment 3  
+User1 -----> Group2 -----> Role1 (over scope S1): Role assignment 4  
+User2 -----> Group3 -----> Role1 (over scope S3): Role assignment 5  
+User3 -----> Group3 -----> Role1 (over scope 3): Role assignment 5  
+
+In this case, there are 4 such prinicipals - User1, Group1, Group2 and Group3.
+
+#### Request
+
+The following is an example of the request.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_assignedPrincipals_transitive_count"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/62e90394-69f5-4237-9190-012177145e10/assignedPrincipals(transitive=false)/$count
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": false
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "@odata.count": 5
+}
+
 ```
 
 #### Some other scenarios using similar setup
