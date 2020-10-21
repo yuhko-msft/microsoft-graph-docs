@@ -118,4 +118,6 @@ Content-Type: application/json
 }
 ```
 
+## See also
 
+[List channel](../api-reference/beta/api/channel-list.md)
