@@ -47,6 +47,7 @@ In the request body, supply the ID of the printer that the print job should be r
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |destinationPrinterId|String|The ID of the printer the print job should be redirected to.|
+|configuration|microsoft.graph.printJobConfiguration|Updated configuration of print job.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object queued for the destination printer.
