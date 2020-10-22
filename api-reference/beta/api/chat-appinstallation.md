@@ -19,11 +19,11 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Install App in a chat](../api/chatappinstallation-install.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in a team.|
-|[List App in chat ](../api/teamsappinstallation-add.md) |None | Adds (installs) an app to a team.|
-|[Get App in chat](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
-|[Upgrade App in chat](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in team.|
-|[Uninstall App from chat](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
+|[Install App in a chat](../api/chatappinstallation-install.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Adds (installs) an app to a chat or meeting.|
+|[List App in chat ](../api/teamsappinstallation-add.md) |None | Lists apps in a chat.|
+|[Get App in chat](../api/teamsappinstallation-delete.md) | None | Lists apps installed in the personal scope of a user.|
+|[Upgrade App in chat](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in chat.|
+|[Uninstall App from chat](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Removes (uninstalls) app from a chat.|
 
 ## Properties
 
