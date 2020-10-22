@@ -76,26 +76,147 @@ Content-Type: application/json
 Content-length: 1000
 
 {
-  "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-  "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-  "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "isDenyPolicy": false,
-  "canExtend": false,
-  "durationInDays": 365,
-  "requestorSettings" : {
-    "scopeType": "AllExistingDirectorySubjects",
-    "acceptRequests": true,
-    "allowedRequestors": []
-  },
-  "requestApprovalSettings" : {
-    "isApprovalRequired": false,
-    "isApprovalRequiredForExtension": false,
-    "isRequestorJustificationRequired": false,
-    "approvalMode": "NoApproval",
-    "approvalStages": []
-  },
-  "accessReviewSettings" : null
+    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "accessPackageId": "4c02f928-7752-49aa-8fc8-e286d973a965",
+    "displayName": "All Users",
+    "description": "All users can request for access to the directory.",
+    "canExtend": false,
+    "durationInDays": 365,
+    "expirationDateTime": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingConnectedOrganizationSubjects",
+        "acceptRequests": true,
+        "allowedRequestors": [{
+            "@odata.type": "#microsoft.graph.groupMembers",
+            "displayName": "637123821756649774",
+            "objectId": "264da053-67c6-4f1b-a56e-c6ed028f9474",
+            "isBackup": true
+        }, {
+            "@odata.type": "#microsoft.graph.groupMembers",
+            "displayName": "637100531853342664",
+            "objectId": "0bc0f945-c436-4c6a-9b0e-7c46a233503e",
+            "isBackup": true
+        }]
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "Serial",
+        "approvalStages": [{
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [{
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+                        "description": "group for users from connected organizations which have no external sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.externalSponsors",
+                        "isBackup": false
+                    }
+                ],
+                "escalationApprovers": [{
+                    "@odata.type": "#microsoft.graph.singleUser",
+                    "isBackup": true,
+                    "id": "q1dbd9a1-a445-42ee-83a8-476522ed6cbf",
+                    "description": "user if the external sponsor does not respond"
+                }]
+            },
+            {
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [{
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "F66D2511-33E1-44C6-8513-DD5B480D01C4f",
+                        "description": "group for users from connected organizations which have no internal sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.internalSponsors",
+                        "isBackup": false
+                    }
+                ],
+                "escalationApprovers": [{
+                    "@odata.type": "#microsoft.graph.singleUser",
+                    "isBackup": true,
+                    "id": "A13CDA82-1753-44B0-9949-A6D788210040",
+                    "description": "user if the internal sponsor does not respond"
+                }]
+            }
+        ]
+    },
+    "accessReviewSettings": {
+        "isEnabled": true,
+        "recurrenceType": "quarterly",
+        "reviewerType": "Self",
+        "startDateTime": "2020-04-01T07:59:59.998Z",
+        "durationInDays": 25,
+        "reviewers": [{
+            "@odata.type": "#microsoft.graph.groupMembers",
+            "displayName": "637123821756649774",
+            "objectId": "264da053-67c6-4f1b-a56e-c6ed028f9474",
+            "isBackup": true
+        }, {
+            "@odata.type": "#microsoft.graph.groupMembers",
+            "displayName": "637240743900512066",
+            "objectId": "5b02dccd-7139-48ff-9763-439a9b0219dc",
+            "isBackup": true
+        }]
+    },
+    "questions": [{
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "Arizona",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona?",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "California",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "Ohio",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "isRequired": false,
+        "text": {
+            "defaultText": "why do you need access to this package?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -123,14 +244,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-  "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-  "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "isDenyPolicy": false,
-  "canExtend": false,
-  "durationInDays": 365,
-  "accessReviewSettings" : null
+    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "accessPackageId": "4c02f928-7752-49aa-8fc8-e286d973a965",
+    "displayName": "Users from connected organizations can request",
+    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+    "questions": [{
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "Arizona",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona?",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "California",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "Ohio",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "isRequired": false,
+        "text": {
+            "defaultText": "why do you need access to this package?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
 }
 ```
 
