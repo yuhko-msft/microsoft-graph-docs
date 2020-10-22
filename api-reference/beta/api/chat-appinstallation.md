@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [chatsApp](chatsapp.md) installed in a [chat](chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
+A [chatsApp](chatsapp.md) installed in a [chat](../api-reference/beta/resources/chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
 
 > **Note** The functionality is currently present in Teams client in user context. We must extend the functionality to app context and surface it through Graph APIs.
 
