@@ -71,62 +71,42 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-    "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-    "displayName": "All Users",
-    "description": "All users can request for access to the directory.",
+    "id": "string",
+    "accessPackageId": "string",
+    "displayName": "string",
+    "description": "string",
     "isDenyPolicy": false,
     "canExtend": false,
     "durationInDays": 365,
     "requestorSettings": {
-        "scopeType": "AllExistingDirectorySubjects",
+        "scopeType": "string",
         "acceptRequests": true,
-        "allowedRequestors": []
+        "allowedRequestors": [{
+            "@odata.type": "#microsoft.graph.userSet"
+        }]
     },
     "requestApprovalSettings": {
         "isApprovalRequired": false,
         "isApprovalRequiredForExtension": false,
         "isRequestorJustificationRequired": false,
-        "approvalMode": "NoApproval",
-        "approvalStages": []
-    },
-    "questions": [{
-        "isRequired": false,
-        "text": {
-            "defaultText": "what state are you from?",
-            "localizedTexts": []
-        },
-        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-        "choices": [{
-            "actualValue": "Arizona",
-            "displayValue": {
-                "localizedTexts": []
-            }
-        }, {
-            "actualValue": "California",
-            "displayValue": {
-                "localizedTexts": []
-            }
-        }, {
-            "actualValue": "Ohio",
-            "displayValue": {
-                "localizedTexts": []
-            }
-        }],
-        "allowsMultipleSelection": false
-    }, {
-        "isRequired": false,
-        "text": {
-            "defaultText": "why do you need access to this package?",
-            "localizedTexts": [{
-                "text": "why do you need access to this package",
-                "languageCode": "af"
+        "approvalMode": "string",
+        "approvalStages": [{
+            "approvalStageTimeOutInDays": 14,
+            "isApproverJustificationRequired": true,
+            "isEscalationEnabled": true,
+            "escalationTimeInMinutes": 11520,
+            "primaryApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }],
+            "escalationApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
             }]
-        },
-        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-        "isSingleLineQuestion": false
-    }],
-    "accessReviewSettings": null
+        }]
+    },
+    "accessReviewSettings": null,
+    "questions": [{
+        "@odata.type": "#microsoft.graph.question"
+    }]
 }
 ```
 
