@@ -12173,6 +12173,8 @@ items:
           href: api/team-get-photo.md
         - name: Update team photo
           href: api/profilephoto-update.md
+        - name: Bulk add member
+          href: api/team-bulk-members.md
       - name: Group (team)
         href: resources/group.md
         items:
