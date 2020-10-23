@@ -86,7 +86,7 @@ Content-type: application/json
 
 {
   "id": "opaqueId-fj3hd7yf283jfk193726nvc2w3i2diemdu8",
-  "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
+  "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz8318375234"
 }
 ```
 
@@ -96,7 +96,7 @@ The following example shows how to use the `notificationUrl` with socket.io in J
 
 ```javascript
 // this is the notificationUrl returned from this API
-var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
+var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz8318375234";
 
 // 'io' comes from the socket.io client library
 var socket = io(notificationUrl);
