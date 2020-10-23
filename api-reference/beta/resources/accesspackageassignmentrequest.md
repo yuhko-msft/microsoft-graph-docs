@@ -61,106 +61,30 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "createdDateTime": "2020-02-12T22:06:58.303Z",
-    "completedDate": "2020-02-12T22:14:28.19Z",
-    "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
-    "requestType": "UserAdd",
-    "requestState": "Delivered",
-    "requestStatus": "FulfilledNotificationTriggered",
+    "createdDateTime": "string",
+    "completedDate": "string",
+    "id": "string",
+    "requestType": "string",
+    "requestState": "string",
+    "requestStatus": "string",
     "isValidationOnly": false,
-    "justification": "",
+    "justification": "string",
     "answers": [{
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "answer for single line question",
+        "value": "string",
         "answeredQuestion": {
-            "id": "d326d88c-3dde-4017-a082-5e1022b0103a",
+            "id": "string",
             "text": {
-                "defaultText": "Single line text input question",
+                "defaultText": "string",
                 "localizedTexts": [{
-                    "text": "text 1",
-                    "languageCode": "af"
-                }, {
-                    "text": "text 2",
-                    "languageCode": "am"
-                }, {
-                    "text": "text 3",
-                    "languageCode": "ar-SA"
-                }, {
-                    "text": "text 4",
-                    "languageCode": "be"
+                    "text": "string",
+                    "languageCode": "string"
                 }]
             },
             "isRequired": true,
             "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
             "isSingleLineQuestion": true
         }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "answer for multi line text question",
-        "answeredQuestion": {
-            "id": "641edac3-3bc4-455c-80d0-dd70fac757fd",
-            "text": {
-                "defaultText": "Multi line text input question",
-                "localizedTexts": [{
-                    "text": "text 1",
-                    "languageCode": "ar-SA"
-                }, {
-                    "text": "text 2",
-                    "languageCode": "bs"
-                }, {
-                    "text": "text 3",
-                    "languageCode": "cs"
-                }]
-            },
-            "isRequired": true,
-            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion"
-        }
-    }, {
-        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
-        "value": "Choice 1",
-        "answeredQuestion": {
-            "id": "e292d6ef-00a8-4247-b938-87d57da2450f",
-            "text": {
-                "defaultText": "Multiple Choice question with choices",
-                "localizedTexts": [{
-                    "text": "text 1",
-                    "languageCode": "af"
-                }, {
-                    "text": "text 2",
-                    "languageCode": "am"
-                }, {
-                    "text": "text 3",
-                    "languageCode": "az"
-                }]
-            },
-            "choices": [{
-                "actualValue": "Choice 1",
-                "displayValue": {
-                    "defaultText": "Choice 1",
-                    "localizedTexts": []
-                }
-            }, {
-                "actualValue": "Choice 2",
-                "displayValue": {
-                    "defaultText": "Choice 2",
-                    "localizedTexts": []
-                }
-            }, {
-                "actualValue": "Choice 3",
-                "displayValue": {
-                    "defaultText": "Choice 3",
-                    "localizedTexts": []
-                }
-            }, {
-                "actualValue": "Choice 4",
-                "displayValue": {
-                    "defaultText": "Choice 4",
-                    "localizedTexts": []
-                }
-            }],
-            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion"
-        },
-        "displayValue": "Choice 1"
     }]
 }
 ```
