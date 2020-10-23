@@ -70,26 +70,32 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-    "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-    "displayName": "All Users",
-    "description": "All users can request for access to the directory.",
-    "isDenyPolicy": false,
-    "canExtend": false,
-    "durationInDays": 365,
-    "requestorSettings" : {
-      "scopeType": "AllExistingDirectorySubjects",
-      "acceptRequests": true,
-      "allowedRequestors": []
-    },
-    "requestApprovalSettings" : {
-      "isApprovalRequired": false,
-      "isApprovalRequiredForExtension": false,
-      "isRequestorJustificationRequired": false,
-      "approvalMode": "NoApproval",
-      "approvalStages": []
-    },
-    "accessReviewSettings" : null
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
+  "id": "String (identifier)",
+  "accessPackageId": "String",
+  "displayName": "String",
+  "description": "String",
+  "canExtend": "Boolean",
+  "durationInDays": "Integer",
+  "expirationDateTime": "String (timestamp)",
+  "createdBy": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedBy": "String",
+  "modifiedDateTime": "String (timestamp)",
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+    }
+  ],
+  "requestorSettings": {
+    "@odata.type": "microsoft.graph.requestorSettings"
+  },
+  "requestApprovalSettings": {
+    "@odata.type": "microsoft.graph.approvalSettings"
+  },
+  "accessReviewSettings": {
+    "@odata.type": "microsoft.graph.assignmentReviewSettings"
+  }
 }
 ```
 
