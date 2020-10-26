@@ -1,7 +1,7 @@
 ---
 title: "Upgrade app in chat"
 description: "API to upgrade an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
-author: "Nick Kramer"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -40,7 +40,6 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamsApp"
@@ -49,17 +48,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps/NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=/upgrade
 ```
-
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 ### Response
 
