@@ -1,7 +1,7 @@
 ---
 title: "List app to chat"
 description: "API to list the apps installed in a chat."
-author: "Nick Kramer"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -37,7 +37,6 @@ GET /chats/{chatId}/installedApps
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamsApp"
@@ -49,17 +48,6 @@ GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@t
 "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 ### Response
 
