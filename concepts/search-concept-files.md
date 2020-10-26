@@ -162,6 +162,9 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                },
+                "SharePointIds":{
+                  "listId": "f68476fb-0bcc-4789-93b5-70e3bf9d7b00"
                 }
               }
             }
