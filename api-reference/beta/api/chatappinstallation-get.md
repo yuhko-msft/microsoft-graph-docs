@@ -1,7 +1,7 @@
 ---
 title: "Get app in chat"
 description: "API to get an app installed in a chat."
-author: "Nick Kramer"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
