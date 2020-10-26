@@ -1,7 +1,7 @@
 ---
 title: "chatsAppInstallation resource type"
 description: " This feature enables you to add apps in chats and meetings."
-author: "Nick Kramer"
+author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
