@@ -1,7 +1,7 @@
 ---
 title: "Add app to chat"
 description: "API to install an app to chat."
-author: "Nick Kramer"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -45,7 +45,6 @@ The request body should contain the ID of the existing catalog app to be added.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamsApp"
@@ -57,17 +56,6 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 ### Response
 
