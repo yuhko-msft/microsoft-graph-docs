@@ -1,6 +1,6 @@
 ---
 title: "chatsAppInstallation resource type"
-description: " The aim of this feature is to add graph APIS for CRUD of apps in chats and meetings."
+description: " This feature enables you to add apps in chats and meetings."
 author: "Nick Kramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
