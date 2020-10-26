@@ -40,7 +40,6 @@ GET /chats/{chatId}/installedApps/{appInstallationId}
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamsApp"
@@ -49,17 +48,6 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps/NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=
 ```
-
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 ### Response
 
