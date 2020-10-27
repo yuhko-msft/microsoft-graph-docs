@@ -1,7 +1,7 @@
 ---
 title: "Bulk add member"
 description: "Add members in bulk."
-author: ""
+author: "nkramer"
 doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -134,7 +134,6 @@ POST https://graph.microsoft.com/v1.0/teams/id/members/add
     ]
 }
 ```
-
 
 #### Response
 
