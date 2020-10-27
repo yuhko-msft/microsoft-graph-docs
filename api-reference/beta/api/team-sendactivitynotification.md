@@ -1,6 +1,6 @@
 ---
 title: "SendActivityNotification: Team"
-description: "Send an activity feed notification to a single user, to all users in a chat, or to all users in a team."
+description: "Send an activity feed notification to all users in a team."
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send an activity feed notification to a single [user](../resources/user.md), to all users in a [chat](../resources/chat.md), or to all users in a [team](../resources/team.md).
+Send an activity feed notification to all users in a [team](../resources/team.md).
 
 >**NOTE:** Only Microsoft Graph app IDs that have been linked with a Teams app ID can send notifications. For details, see [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). 
 
