@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List an [app](../resources/teamsapp.md) within [chat](../api-reference/beta/resources/chat.md).
+List an [app](../resources/teamsapp.md) within [chat](../resources/chat.md).
 
 ## Permissions
 
