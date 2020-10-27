@@ -60,6 +60,7 @@ POST /teams/{id}/sendActivityNotification
 
 If successful, this method will return a `202 Accepted` response code. It does not return anything in the response body.
 
+If there is more than one Teams app corresponding to a given Microsoft Graph app ID, this method will return a `409 Conflict` response code with the message `Found multiple applications with the same AAD App ID '{guid}' - a Teams Application ID is required to resolve which application is correct.` The message is misleading. There is no way to specify a Teams Application ID. You must disambiguate by uninstalling any conflicting Teams apps. Note that sideloading (uploading custom maps to a particular team, rather than to the app catalog) creates a new teams app and a new teams app ID.
 
 ## Examples
 
@@ -67,71 +68,57 @@ If successful, this method will return a `202 Accepted` response code. It does n
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackage_from_accesspackages"
+  "name": "Send_activity_notification"
 }-->
-
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages
-Content-type: application/json
-
+POST /teams/{teamId}/sendActivityNotification
+Content-Type: application/json
+  
 {
-  "catalogId": "aa2f6514-3232-46e7-a08a-2411ad8d7128",
-  "displayName": "sales reps",
-  "description": "outside sales representatives"
+  "topic": {
+    "source": "entityUrl",
+    "value": "https://graph.microsoft.com/teams/dc0ae126-1046-4c7b-8b56-991f55479a11/channels/19:910b7d76f3564480a0e52e0671e0f116@thread.tacv2/messages/1591749374896"
+  },
+  "activityType": "questionAnswered",
+  "previewText": {
+    "content": "Your question has been answered"
+  },
+  "recipient": {
+    "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+    "userId": "598efcd4-e549-402a-9602-0b50201faebe"
+  },
+  "templateParameters": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair"
+    }
+  ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackage-from-accesspackages-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackage-from-accesspackages-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackage-from-accesspackages-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response. 
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackage"
+  "truncated": true
 } -->
-
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "id": "56ff43fd-6b05-48df-9634-956a777fce6d",
-  "catalogId": "aa2f6514-3232-46e7-a08a-2411ad8d7128",
-  "displayName": "sales reps",
-  "description": "outside sales representatives",
-  "isHidden": false,
-  "isRoleScopesVisible": false
-}
+HTTP/1.1 202 Accepted
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
-  "description": "Create accessPackage",
+  "description": "Send Activity Notification",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
-
+  "tocPath": "",
+  "suppressions": []
+}
+-->
 
