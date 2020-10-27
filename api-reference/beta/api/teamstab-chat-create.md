@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create tab in chat 
+# Create tab in chat
 
 Namespace: microsoft.graph
 
