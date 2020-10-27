@@ -113,7 +113,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [Bulk add member](../api-reference/beta/api/team-bulk-members.md) method to the [team](../api-reference/beta/resources/team) resource.|
+| Addition | beta | Added the [Bulk add member](../api-reference/beta/api/team-bulk-members) method to the [team](../api-reference/beta/resources/team) resource.|
 | Addition | v1.0 | Added the [List members](/graph/api/conversationmember-list?view=graph-rest-beta), [Get member](/graph/api/conversationmember-get?view=graph-rest-beta), [Add member](/graph/api/conversationmember-add?view=graph-rest-beta), [Update member](/graph/api/conversationmember-update?view=graph-rest-beta), and [Delete member](/graph/api/conversationmember-delete?view=graph-rest-beta) methods to the [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta) resources.|
 
 ### Users
