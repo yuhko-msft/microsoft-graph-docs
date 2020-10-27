@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List members in a team"
 description: "Get the conversationMembers of a team."
 author: "nkramer"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List members
+# List members in a team
 Namespace: microsoft.graph
 
 Get the [conversationMember](../resources/conversationmember.md) of a [team](../resources/team.md).
