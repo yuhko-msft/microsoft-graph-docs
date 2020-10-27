@@ -35,7 +35,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
-|[Bulk add member](../api/team-bulk-members.md) |[aadUserConversationMember](../resources/aaduserconversationmember.md) collection|Add multiple members to a team|
+|[Bulk add member](../api/team-bulk-members.md) | [aadUserConversationMember](../resources/aaduserconversationmember.md) collection|Add multiple members to a team. |
 
 ## Properties
 
