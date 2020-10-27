@@ -1,3 +1,3 @@
 <!-- markdownlint-disable MD041-->
 
-> Read the [SDK documentation](../../../../concepts/sdks/sdks-overview.md) for details on how to [add the SDK](../../../../concepts/sdks/sdk-installation.md) to your project and [create an authProvider](../../../../concepts/sdks/choose-authentication-providers.md) instance.
+> Read the [SDK documentation](/graph/sdks/sdks-overview) for details on how to [add the SDK](/graph/sdks/sdk-installation) to your project and [create an authProvider](/graph/sdks/choose-authentication-providers) instance.
