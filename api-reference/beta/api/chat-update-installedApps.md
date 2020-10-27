@@ -1,5 +1,5 @@
 ---
-title: "Upgrade app in chat"
+title: "Update app in chat"
 description: "API to upgrade an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
 author: "nkramer"
 localization_priority: Priority
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Upgrade app in a chat
+# Update app in a chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade an [app](../resources/teamsapp.md) installed within a [chat](../api-reference/beta/resources/chat.md).
+Upgrade an [app](../resources/teamsapp.md) installed within a [chat](../resources/chat.md).
 
 ## Permissions
 

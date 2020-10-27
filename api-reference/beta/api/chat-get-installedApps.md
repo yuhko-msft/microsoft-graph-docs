@@ -1,5 +1,5 @@
 ---
-title: "Get app in chat"
+title: "List apps in chat"
 description: "API to get an app installed in a chat."
 author: "nkramer"
 localization_priority: Priority
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List app in chat
+# List apps in chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an [app](../resources/teamsapp.md) installed within [chat](../api-reference/beta/resources/chat.md).
+Get an [app](../resources/teamsapp.md) installed within [chat](../resources/chat.md).
 
 ## Permissions
 

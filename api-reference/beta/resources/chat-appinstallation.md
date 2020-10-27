@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [chatsApp](chatsapp.md) installed in a [chat](../api-reference/beta/resources/chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
+A [teamsApp](teamsapp.md) installed in a [chat](chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
 
 > **Note** The functionality is currently present in Teams client in user context. We must extend the functionality to app context and surface it through Graph APIs.
 
 ## Scenarios
 
-   * ServiceNow has a portal through which users in the tenant raise support tickets by clicking on a button. A support ticket comprises of a meeting where concerned users can interact and post messages about the incident. ServiceNow would like to pre-provision each of these meetings with their app to display useful information to the participants via tabs, post messages, manage the roster, and export the chat messages of the meeting.
+* ServiceNow has a portal through which users in the tenant raise support tickets by clicking on a button. A support ticket comprises of a meeting where concerned users can interact and post messages about the incident. ServiceNow would like to pre-provision each of these meetings with their app to display useful information to the participants via tabs, post messages, manage the roster, and export the chat messages of the meeting.
 
-   * Agents (users in the tenant) create group chats with employees (other users in the tenant) to provide employee services. To help the agents in their task, ServiceNow wants their app to be installed in the group chat so that it can read and post messages to the chat and add/remove members from the chat.
+* Agents (users in the tenant) create group chats with employees (other users in the tenant) to provide employee services. To help the agents in their task, ServiceNow wants their app to be installed in the group chat so that it can read and post messages to the chat and add/remove members from the chat.
 
 ## Methods
 

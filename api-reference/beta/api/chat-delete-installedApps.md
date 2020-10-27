@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uninstall an [app](../resources/teamsapp.md) installed within a [chat](../api-reference/beta/resources/chat.md).
+Uninstall an [app](../resources/teamsapp.md) installed within a [chat](../resources/chat.md).
 
 ## Permissions
 

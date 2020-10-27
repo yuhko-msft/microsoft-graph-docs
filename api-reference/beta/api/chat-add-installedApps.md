@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs an [app](../resources/teamsapp.md) to the specified [chat](../api-reference/beta/resources/chat.md).
+Installs an [app](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
 
 ## Permissions
 
