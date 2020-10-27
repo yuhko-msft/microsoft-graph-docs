@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAnswer resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description:  "The complex type for answers to an accessPackageQuestion that are stored on an accessPackageAssignmentRequest."
+author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+The complex type of a requestor's provided answer to an [accessPackageQuestion](../resources/accesspackagequestion.md). These answers will be stored on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|**TODO: Add Description**|
-|displayValue|String|**TODO: Add Description**|
+|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|The question the answer is for.|
+|displayValue|String|The display value of the answer.|
 
 ## Relationships
 None.

@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAnswerString resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A string answer to an accessPackageTextInputQuestion"
+author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Indicates the string input answer to an [accessPackageTextInputQuestion](../resources/accesspackagetextinputquestion.md). Stored on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
 
 
 Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
@@ -19,8 +19,8 @@ Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|**TODO: Add Description** Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md)|
-|displayValue|String|**TODO: Add Description** Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md)|
+|answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|Question the answer is for. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md)|
+|displayValue|String|The localized display values shown to the requestor and approvers. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md)|
 |value|String|**TODO: Add Description**|
 
 ## Relationships
