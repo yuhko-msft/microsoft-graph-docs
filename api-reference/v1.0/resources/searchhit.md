@@ -11,10 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
-
 Represents a single result within the list of search results.
 
 ## Properties
