@@ -17,7 +17,7 @@ Send an activity feed notification to all users in a [team](../resources/team.md
 
 >**NOTE:** Only Microsoft Graph app IDs that have been linked with a Teams app ID can send notifications. For details, see [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). 
 
->**NOTE:** Currently, activity notifications sent via this API will only appear For users running Microsoft Teams Developer Preview on a web or desktop device. For more information, see [How do I enable Developer Preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro).
+>**NOTE:** Currently, activity notifications sent via this API will only appear for users running Microsoft Teams Developer Preview on a web or desktop device. For more information, see [How do I enable Developer Preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro).
 
 ## Permissions
 
