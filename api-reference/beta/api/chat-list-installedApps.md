@@ -51,9 +51,11 @@ GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@t
 
 ### Response
 
+`
 HTTP/1.1 200 OK
 Content-type: application/json
-```
+``
+
 {
   "value": [
     {
@@ -62,3 +64,13 @@ Content-type: application/json
   ]
 }
 ```
+
+<!--{
+  "value": {
+    "@odata.type": "#microsoft.graph.chat",
+    "id": "e8127558-91ad-4595-8703-6e1ed3f04bfe",
+    "topic": "List installed apps in chat",
+    "createdDateTime": "2020-10-27 23:52:29",
+    "lastUpdatedDateTime": "2020-10-27 23:52:29"
+  }
+}-->

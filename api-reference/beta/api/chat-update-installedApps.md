@@ -32,7 +32,10 @@ POST /chats/{chatId}/installedApps/{appInstallationId}/upgrade
 ```
 
 ## Response 
+
+```http
 HTTP/1.1 204 No Content
+```
 
 ## Example
 
@@ -51,4 +54,16 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 
 ### Response
 
+```http
 HTTP/1.1 204 No Content
+```
+
+<!--{
+  "value": {
+    "@odata.type": "#microsoft.graph.chat",
+    "id": "d58b7b66-a74b-4726-a038-a701e31988c2",
+    "topic": "Uninstall app in chat",
+    "createdDateTime": "2020-10-27 23:52:29",
+    "lastUpdatedDateTime": "2020-10-27 23:52:29"
+  }
+}-->
