@@ -1,13 +1,13 @@
 ---
 title: "Get tab in a channel"
-description: "Retrieve the properties and relationships of the specified tabin a channel . "
+description: "Retrieve the properties and relationships of the specified tab in a channel . "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get tab
+# Get tab in a channel
 
 Namespace: microsoft.graph
 
