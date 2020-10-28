@@ -1,6 +1,6 @@
 ---
 title: "Add tab to channel"
-description: "Adds (pins) a tab to the specified channel within a team. "
+description: "Adds (pins) a tab to the specified channel. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
+Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md). 
 The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
 
 ## Permissions
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/channels/{id}/tabs
+POST /channels/{id}/tabs
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+POST https://graph.microsoft.com/beta/channels/{id}/tabs
 {
   "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
