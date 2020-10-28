@@ -1,6 +1,6 @@
 ---
 title: "Delete tab from channel"
-description: "Removes (unpins) a tab from the specified channel within a team. "
+description: "Removes (unpins) a tab from the specified channel. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
+Removes (unpins) a tab from the specified [channel](../resources/channel.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/channels/{id}/tabs/{id}
+DELETE /channels/{id}/tabs/{id}
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+DELETE https://graph.microsoft.com/beta/channels/{id}/tabs/{id}
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
