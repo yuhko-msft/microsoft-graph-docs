@@ -53,10 +53,6 @@ If successful, this method returns a `201 Created` response code.
 #### Request
 
 The following is an example of the request.
-<!-- {
-  "blockType": "ignored",
-  "name": "get_team"
-}-->
 ```http
 POST https://graph.microsoft.com/beta/channels/{id}/tabs
 {
