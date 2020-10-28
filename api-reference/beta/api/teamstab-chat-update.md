@@ -20,16 +20,16 @@ This can be used to configure the content of the tab in chat.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions | Entities/APIs Covered |
-|:--------------------|:---------------------------------|:---------------------------------|
-|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
-|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
-|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
-|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
+|Permission type      | Permissions | 
+|:--------------------|:---------------------------------|
+|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
+|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |
+|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
 
 ## HTTP request
 
-```
+```http
 PATCH /teams/{id}/chat/{id}/tabs/{id}
 ```
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code.
 ### Request
 
 The following is an example of the request.
-```
+```http
 PATCH /chats/{chatId}/tabs/{tabId}
 
 {
@@ -61,7 +61,7 @@ PATCH /chats/{chatId}/tabs/{tabId}
 
 ### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -83,13 +83,11 @@ Content-type: application/json
 
 ### Example : Update tabs in a Teams chat
 
-> **Note**: The Scrum Board tab needs to updated with the new display name. The Automation will list the tabs in the chat, and if the display name of tab matched "Scrum Board", it will update the tab.
-
 #### Request
 
 The following example shows a request to get all chats.
 
-```
+```http
 PATCH /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/794f0e4e-4d10-4bb5-9079-3a465a629eff
 
 {
@@ -99,7 +97,7 @@ PATCH /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/794f0e4e-4d10
 
 #### Response
 
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
