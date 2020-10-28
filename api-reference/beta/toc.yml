@@ -12453,26 +12453,26 @@ items:
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: List tabs channel
-          href: api/teamstab-list.md
-        - name: Get tab channel
-          href: api/teamstab-get.md
-        - name: Add tab channel
-          href: api/teamstab-add.md
-        - name: Update tab channel
-          href: api/teamstab-update.md
-        - name: Delete tab channel
-          href: api/teamstab-delete.md
-        - name: List tabs chat
-          href: api/teamstab-chat-list.md
-        - name: Get tab chat
-          href: api/teamstab-chat-get.md
-        - name: Create tab chat
-          href: api/teamstab-chat-create.md
-        - name: Update tab chat
-          href: api/teamstab-chat-update.md
-        - name: Delete tab chat
-          href: api/teamstab-chat-delete.md
+        - name: List tabs in channel
+          href: api/teamstab-list-channel.md
+        - name: Get tab in channel
+          href: api/teamstab-get-channel.md
+        - name: Add tab in channel
+          href: api/teamstab-add-channel.md
+        - name: Update tab in channel
+          href: api/teamstab-update-channel.md
+        - name: Delete tab from channel
+          href: api/teamstab-delete-channel.md
+        - name: List tabs in chat
+          href: api/teamstab-list-chat.md
+        - name: Get tab in chat
+          href: api/teamstab-get-chat.md
+        - name: Create tab in chat
+          href: api/teamstab-create-chat.md
+        - name: Update tab in chat
+          href: api/teamstab-update-chat.md
+        - name: Delete tab from chat
+          href: api/teamstab-delete-chat.md
       - name: Calendar
         href: resources/event.md
         items:
