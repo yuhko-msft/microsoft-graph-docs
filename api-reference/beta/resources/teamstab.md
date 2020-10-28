@@ -1,6 +1,6 @@
 ---
 title: "teamsTab resource type"
-description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
+description: "A teamsTab is a tab that's pinned (attached) to a channel and a chat. "
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
@@ -13,22 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
+A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) and a [chat](chat.md). 
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs channel](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab channel](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab channel](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Delete tab channel](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab channel](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
-|[List tabs chat](../api/teamstab-chat-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a chat.|
-|[Get tab chat](../api/teamstab-chat-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a chat.|
-|[Create tab chat](../api/teamstab-chat-create.md) | [teamsTab](teamstab.md) | Creates (pins) a tab to a chat.|
-|[Delete tab chat](../api/teamstab-chat-delete.md) | None | Removes (unpins) a tab from a chat.|
-|[Update tab chat](../api/teamstab-chat-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+|[List tabs in channel](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab in channel](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab to channel](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
+|[Delete tab from channel](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Update tab in channel](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel .|
+|[List tab in chat](../api/teamstab-list-chat.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a chat.|
+|[Get tab in chat](../api/teamstab-get-chat.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a chat.|
+|[Create tab in chat](../api/teamstab-create-chat.md) | [teamsTab](teamstab.md) | Creates (pins) a tab in a chat.|
+|[Delete tab from chat](../api/teamstab-delete-chat.md) | None | Removes (unpins) a tab from a chat.|
+|[Update tab in chat](../api/teamstab-update-chat.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a chat.|
 
 ## Properties
 
