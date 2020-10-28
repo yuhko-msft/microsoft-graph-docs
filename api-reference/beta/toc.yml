@@ -12272,6 +12272,8 @@ items:
           href: api/profilephoto-update.md
         - name: Bulk add member
           href: api/team-bulk-members.md
+        - name: Complete migration for team
+          href: api/team-completemigration.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -12328,6 +12330,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Complete migration for channel
+          href: api/channel-completemigration.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
         - name: List channel messages
