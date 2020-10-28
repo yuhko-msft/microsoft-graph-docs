@@ -13,12 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## October 2020
 
-### Teamwork
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition|Beta|Added [List chat](/graph/api/teamstab-chat-list?view=graph-rest-beta&preserve-view=true), [Get tab chat](/graph/api/teamstab-chat-get?view=graph-rest-beta&preserve-view=true), [Create tab chat](/graph/api/teamstab-chat-create?view=graph-rest-beta&preserve-view=true), [Delete tab chat](/graph/api/teamstab-chat-delete?view=graph-rest-beta&preserve-view=true), and [Update tab chat](/graph/api/teamstab-chat-update?view=graph-rest-beta&preserve-view=true). Also updated the resource file [teamsTab](/graph/api/teamstab?view=graph-rest-beta&preserve-view=true)|
-
 ### Applications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -126,6 +120,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.
 |Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
+|Addition|Beta|Added [List tab in chat](/graph/api/teamstab-list-chat?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/teamstab-get-chat?view=graph-rest-beta&preserve-view=true), [Create tab in chat](/graph/api/teamstab-create-chat?view=graph-rest-beta&preserve-view=true), [Delete tab from chat](/graph/api/teamstab-delete-chat?view=graph-rest-beta&preserve-view=true), and [Update tab in chat](/graph/api/teamstab-update-chat?view=graph-rest-beta&preserve-view=true). Also updated the resource file [teamsTab](/graph/api/teamstab?view=graph-rest-beta&preserve-view=true)|
 
 ### Users
 
