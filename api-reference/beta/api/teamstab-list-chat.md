@@ -1,6 +1,6 @@
 ---
 title: "List tabs in chat"
-description: "Retrieve the list of tabs in the specified chat within a team. "
+description: "Retrieve the list of tabs in the specified chat. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,23 +13,23 @@ Namespace: microsoft.graph
  
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md) within a [team](../resources/team.md).
+Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md) .
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions | Entities/APIs Covered |
-|:--------------------|:---------------------------------|:---------------------------------|
-|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
-|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
-|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
-|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
+|Permission type      | Permissions | 
+|:--------------------|:---------------------------------|
+|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
+|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |
+|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
  
 ## HTTP request
  
-```
-GET /teams/{id}/chat/{id}/tabs
+```http
+GET /chat/{id}/tabs
 ```
  
 ## Optional query parameters
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ### Request
 
 The following is an example of the request.
-```
+```http
 GET /chat/{chatId}/tabs
 
 ```
@@ -57,7 +57,8 @@ GET /chat/{chatId}/tabs
 ### Response
 
 The following is an example of the response.
-```
+
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -83,22 +84,20 @@ Content-type: application/json
 
 ```
 
-### Example : List tabs in a Teams chat
-
-> **Note**: The Automation now has an update. It will add another tab, Notes, to every meeting chat when the meeting begins. The Automation lists all the tabs, and adds the ones that are missing. The Notes tab is not present in the response, therefore, the Automation will add the tab to this chat. It will skip Scrum Board since it is present in the response.
+### Example : List tabs in a chat
 
 #### Request
 
 The following example shows a request to list all chats.
 
-```
+```http
 GET /chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 ```
 
 #### Response
 
 The following is an example of the response.
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
