@@ -1,37 +1,37 @@
 ---
 title: "Create tab in chat"
-description: "Creates (pins) a tab to the specified chat within a team. Adds a scrum board tab in the meeting chat by using Graph APIs. "
+description: "Creates (pins) a tab to the specified chat. Adds a scrum board tab in the meeting chat by using Graph APIs. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create tab in chat
+# Create a tab to the specified chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md) within a [team](../resources/team.md). 
+Create (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 
 The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
 
 #### Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions | Entities/APIs Covered |
-|:--------------------|:----------------------------------------|:---------------------------------------------------------|
-|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
-|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
-|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |Allows write of the new teamsTab to the chat. TeamsTab.Create does not grant the ability to read, modify or delete tabs after they are created, or give access to the content inside the tabs. None give access to the content inside the tabs.|
-|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |Allows read of existing teamsTab in the chat. None give access to the content inside the tabs.|
-
+|Permission type      | Permissions | 
+|:--------------------|:----------------------------------------|
+|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
+|Delegated  | TeamsTab.ReadWrite.All |
+|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |
+|Application | TeamsTab.ReadWrite.All  |
 
 ## HTTP request
 
-```
-POST /teams/{id}/chat/{id}/tabs
+<!-- { "blockType": "ignored" } -->
+```http
+POST /chat/{id}/tabs
 ```
 
 ## Request headers
@@ -50,11 +50,16 @@ If successful, this method returns a `201 Created` response code.
 
 ## Example
 
-> **Note**: When a meeting is started, our customer's automation is invoked. The automation add a Scrum Board tab to the meeting. The details of the invocation of the automation and the logic to figure out whether a meeting is a scrum meeting or not, is not in scope of this discussion.
-
 ### Request
 
-```
+Here is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_teamstab-chat"
+}-->
+```msgraph-interactive
+```http
 POST /chats/{chatId}/tabs
 
 {
@@ -76,7 +81,7 @@ POST /chats/{chatId}/tabs
 
 The following is an example of the response. 
 
-```
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -102,7 +107,8 @@ Content-type: application/json
 #### Request
 
 The following example shows a request to create all chats.
-```
+
+```http
 POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 
 {
@@ -118,7 +124,7 @@ POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@
 ```
 
 #### Response
-```
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -135,3 +141,4 @@ Content-type: application/json
 }
 
 ```
+
