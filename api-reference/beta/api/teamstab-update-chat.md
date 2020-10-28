@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-PATCH /teams/{id}/chat/{id}/tabs/{id}
+PATCH /chat/{id}/tabs/{id}
 ```
 
 ## Request headers
@@ -113,3 +113,16 @@ Content-type: application/json
   }
 }
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List channels",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
