@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update tab
+# Update tab in channel
 
 Namespace: microsoft.graph
 
