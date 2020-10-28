@@ -61,20 +61,6 @@ Here is an example of the request.
 ```msgraph-interactive
 ```http
 POST /chats/{chatId}/tabs
-
-{
-  "displayName": "My Awesome Tab",
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
-  "configuration": {
-    "entityId": "fd3791c9-1e39-42b9-9e48-e9b1cbe54f99",
-    "contentUrl": "https://www.example.com/",
-    "removeUrl": "https://www.example.com/",
-    "websiteUrl": "https://www.example.com/",
-    "customPropertyInt": 1,
-    "customPropertyBool": true,
-    "customPropertyString": "value"
-  }
-}
 ```
 
 ### Response
@@ -110,17 +96,6 @@ The following example shows a request to create all chats.
 
 ```http
 POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
-
-{
-  "displayName": "Scrum Board",
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
-  "configuration": {
-    "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
-    "contentUrl": "https://www.contoso.com/scrumsboards/",
-    "websiteUrl": "https://www.contoso.com/scrumsboards/2DCA2E6C7A10415CAF6B8AB6661B3154",
-    "removeUrl": "https://www.contoso.com/scrumsboards.2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
-  }
-}
 ```
 
 #### Response
