@@ -1,6 +1,6 @@
 ---
 title: "List tabs in channel"
-description: "Retrieve the list of tabs in the specified channel within a team. "
+description: "Retrieve the list of tabs in the specified channel . "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
+Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) . 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET /teams/{id}/channels/{id}/tabs
+GET /channels/{id}/tabs
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 #### Request
 The following is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/beta/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### Response
