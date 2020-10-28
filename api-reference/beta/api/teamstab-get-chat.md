@@ -1,5 +1,5 @@
 ---
-title: "Get tab in chat"
+title: "Get tab inside a chat"
 description: "Retrieve the properties and relationships of the specified tab inside a chat. "
 author: "nkramer"
 localization_priority: Normal
