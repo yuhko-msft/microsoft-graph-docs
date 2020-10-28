@@ -98,20 +98,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://localhost:8200/beta/$metadata#chats/{chatId}/tabs/{tabId}",
-  "value": {
-    "id": "62a07424-9c50-4adf-8931-c0038d7ef11e",
-    "displayName": "My Awesome Tab",
-    "webUrl": "https://teams.microsoft.com/l/chat/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%awesome%to%tab",
+  "@odata.context": "https://localhost:8200/beta/$metadata#chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs",
+  "@odata.count": 1,
+  "value": [
+    "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
+    "displayName": "Scrum Board",
+    "webUrl": "https://teams.microsoft.com/l/chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tab%3a%3a794f0e4e-4d10-4bb5-9079-3a465a629eff?label=scrum%20tab",
     "configuration": {
-      "entityId": "fd3791c9-1e39-42b9-9e48-e9b1cbe54f99",
-      "contentUrl": "https://www.example.com/",
-      "removeUrl": "https://www.example.com/",
-      "websiteUrl": "https://www.example.com/",
-      "customPropertyInt": 1,
-      "customPropertyBool": true,
-      "customPropertyString": "value"
+      "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
+      "contentUrl": "https://www.contoso.com/scrumsboards/",
+      "websiteUrl": "https://www.contoso.com/scrumsboards/2DCA2E6C7A10415CAF6B8AB6661B3154",
+      "removeUrl": "https://www.contoso.com/scrumsboards.2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
     }
-  }
+  ]
 }
+
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List channels",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
