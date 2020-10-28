@@ -51,4 +51,6 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 
 ### Response
 
+```
 HTTP/1.1 204 No Content
+```
