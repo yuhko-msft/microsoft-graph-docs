@@ -1,19 +1,19 @@
 ---
-title: "Get connection"
-description: "Retrieve the properties and relationships of an externalConnection."
+title: "Create connection"
+description: "Use this API to create a new externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Get connection
+# Create connection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [externalConnection](../resources/externalconnection.md).
+Create a new [externalConnection](../resources/externalconnection.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -32,26 +32,23 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /external/connections/{id}
+POST /external/connections
 ```
-
-## Optional query parameters
-
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of an [externalConnection](../resources/externalconnection.md) object.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [externalConnection](../resources/externalconnection.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [externalConnection](../resources/externalconnection.md) object in the response body.
 
 ## Examples
 
@@ -62,25 +59,33 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connection"
+  "name": "create_connection_from_external"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/connections/contosohr
+```http
+POST https://graph.microsoft.com/beta/external/connections
+Content-type: application/json
+
+{
+  "id": "contosohr",
+  "name": "Contoso HR",
+  "description": "Connection to index Contoso HR system"
+}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-connection-from-external-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connection-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-connection-from-external-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connection-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-connection-from-external-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 <!-- markdownlint-disable MD024 -->
 ### Response
@@ -95,7 +100,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -114,7 +119,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get connection",
+  "description": "Create connection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
