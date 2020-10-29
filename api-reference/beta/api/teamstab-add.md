@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /channels/{id}/tabs
+POST /channels/{id}/tabs/{id}
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code.
 
 The following is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/channels/{id}/tabs
+POST https://graph.microsoft.com/beta/channels/{id}/tabs/{id}
 {
   "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
