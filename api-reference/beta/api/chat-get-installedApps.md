@@ -68,6 +68,6 @@ Content-type: application/json
   "type": "#page.annotation",
   "description": "List apps in chat",
   "keywords": "",
-  "section": "documentation",
+  "section": "List apps in chat",
   "tocPath": ""
 }-->
