@@ -91,12 +91,6 @@ The following is a JSON representation of the resource.
 
 >**Note:** If the team is of type class, a **classSettings** property is applied on the team.
 
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.team",
-  "baseType": "microsoft.graph.entity"
-}-->
-
 ```json
 {
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
