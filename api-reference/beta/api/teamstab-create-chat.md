@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 
-The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
+The corresponding app must already be installed in the chat.
 
 #### Permissions
 
