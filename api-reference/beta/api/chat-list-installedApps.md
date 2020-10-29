@@ -1,5 +1,5 @@
 ---
-title: "List app to chat"
+title: "List app in chat"
 description: "API to list the apps installed in a chat."
 author: "nkramer"
 localization_priority: Priority
@@ -71,6 +71,6 @@ Content-type: application/json
   "type": "#page.annotation",
   "description": "List app in chat",
   "keywords": "",
-  "section": "List app to chat",
+  "section": "List app in chat",
   "tocPath": ""
 }-->
