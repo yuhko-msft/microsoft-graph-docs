@@ -12468,15 +12468,15 @@ items:
         href: resources/teamstab.md
         items:
         - name: List tabs in channel
-          href: api/teamstab-list-channel.md
+          href: api/teamstab-list.md
         - name: Get tab in channel
-          href: api/teamstab-get-channel.md
+          href: api/teamstab-get.md
         - name: Add tab in channel
-          href: api/teamstab-add-channel.md
+          href: api/teamstab-add.md
         - name: Update tab in channel
-          href: api/teamstab-update-channel.md
+          href: api/teamstab-update.md
         - name: Delete tab from channel
-          href: api/teamstab-delete-channel.md
+          href: api/teamstab-delete.md
         - name: List tabs in chat
           href: api/teamstab-list-chat.md
         - name: Get tab in chat
