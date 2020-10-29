@@ -71,6 +71,6 @@ HTTP/1.1 201 Created
   "type": "#page.annotation",
   "description": "Add app to chat",
   "keywords": "",
-  "section": "documentation",
+  "section": "Add app to chat",
   "tocPath": ""
 }-->
