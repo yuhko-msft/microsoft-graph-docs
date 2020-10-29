@@ -9,7 +9,6 @@ doc_type: resourcePageType
 
 # Use the Microsoft Search API to query data
 
-
 You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
@@ -29,7 +28,8 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Search across Graph connectors](/graph/search-concept-custom-types)| **contentSources** |
+|[Search across Graph connectors](/graph/search-concept-custom-types)| **contentSources** 
+|
 
 ## Scope search based on entity types
 
@@ -45,7 +45,8 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
+|[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.
+|
 
 ## Page search results
 
@@ -72,7 +73,8 @@ Best practices:
     | 1    | 0 | 25 |
     | 2    | 25 | 50 |
     | 3    | 75 | 75 |
-    | 4    | 150 | 100 |
+    | 4    | 150 | 100
+    |
 
 ## Get the most relevant emails
 
@@ -134,12 +136,12 @@ For backward compatibility, the original properties and types are accessible and
 |:-----------------------------------|:--------------|:------------------|:----------------|
 | [searchRequest](./searchrequest.md)| Rename property | **stored_fields** | **fields**      |
 | [searchQuery](./searchquery.md)    | Rename property | **query_string** | **queryString** |
-| [searchQueryString](./searchquerystring.md) | Deprecate resource | Not applicable | Not applicable |
 | [searchHit](./searchhit.md)        | Rename property | **_id** | **hitId** |
 | [searchHit](./searchhit.md)        | Rename property | **_score** | **rank** |
 | [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
 | [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
-| [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
+| [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  
+|
 
 ## Search samples
 
@@ -150,7 +152,6 @@ For backward compatibility, the original properties and types are accessible and
   - [Search external content](/graph/search-concept-custom-types)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
 
 ## What's new
 
