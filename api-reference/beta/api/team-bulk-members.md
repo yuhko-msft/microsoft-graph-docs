@@ -1,7 +1,7 @@
 ---
 title: "Bulk add member"
 description: "Add members in bulk."
-author: ""
+author: "nkramer"
 doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -93,12 +93,6 @@ The following is the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 200 OK
 
@@ -162,12 +156,6 @@ The following is the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 207 MULTI-STATUS
 
