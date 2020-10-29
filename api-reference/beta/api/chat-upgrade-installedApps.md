@@ -61,8 +61,8 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get accessPackage",
+  "description": "Upgrade app in chat",
   "keywords": "",
-  "section": "documentation",
+  "section": "Upgrade app in chat",
   "tocPath": ""
 }-->
