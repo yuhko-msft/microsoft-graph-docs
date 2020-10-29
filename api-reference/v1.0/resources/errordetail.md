@@ -3,7 +3,7 @@ title: "errorDetail resource type"
 description: "Describes an error for a failed request to create a Microsoft Search connection schema asynchronously."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -56,5 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
