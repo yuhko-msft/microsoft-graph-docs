@@ -9,7 +9,7 @@ ms.prod: ""
 doc_type: resourcePageType
 ---
 
-# SearchResult resource type
+# searchResult resource type
 
 Namespace: microsoft.graph
 

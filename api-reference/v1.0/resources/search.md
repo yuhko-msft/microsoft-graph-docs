@@ -31,5 +31,4 @@ None
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md)
-|
+| [query](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md)|

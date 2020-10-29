@@ -18,7 +18,6 @@ Represents a search query that contains search terms and optional filters.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |queryString|String|The search query containing the search terms. Required.|
-|
 
 ## JSON representation
 

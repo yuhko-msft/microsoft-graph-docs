@@ -15,14 +15,13 @@ Runs the query specified in the request body. Search results are provided in the
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Mail.Read, Mail.ReadWrite, Calendars.Read, Calendars.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, ExternalItem.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. 
-|
+| Application                            | Not supported. |
 
 ## HTTP request
 
@@ -35,8 +34,7 @@ POST /search/query
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. 
-|
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -44,8 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. 
-|
+|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.|
 
 ## Response
 
@@ -87,16 +84,16 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)
-[sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)
-[sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)
+[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[sample-code](../includes/snippets/objc/search-query-objc-snippets.md)
-[sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)
+[!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

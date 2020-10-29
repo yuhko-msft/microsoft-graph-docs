@@ -28,8 +28,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |fields|String collection |Contains the fields to be returned for each resource object specified in **entityTypes**, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in **externalItem** from content ingested by Graph connectors. Optional.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
-|size|Int32|The size of the page to be retrieved. Optional.
-|
+|size|Int32|The size of the page to be retrieved. Optional.|
 
 
 ## JSON representation
