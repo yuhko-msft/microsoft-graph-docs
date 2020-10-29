@@ -54,10 +54,6 @@ This API returns a `200` response indicating all members supplied were added to 
 
 The following example shows a request to add multiple members to a team.
 
-<!-- {
-  "blockType": "request",
-  "name": "bulkadd_teammembers"
-}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
 {
@@ -113,10 +109,6 @@ HTTP/1.1 200 OK
 
 The following example shows a request to add multiple members to a team with partial failure.
 
-<!-- {
-  "blockType": "request",
-  "name": "bulkaddpartial_teammembers"
-}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
 {
