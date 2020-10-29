@@ -33,7 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 GET /chats/{chatId}/installedApps/{appInstallationId}
 ```
 
-## Response 
+## Response
+
 `200 OK` and a teamsAppInstallation object.
 
 ## Example
@@ -65,7 +66,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get accessPackage",
+  "description": "List apps in chat",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
