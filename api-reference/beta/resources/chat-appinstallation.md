@@ -30,14 +30,14 @@ A [teamsApp](teamsapp.md) installed in a [chat](chat.md), or the personal scope 
 |[Install App in a chat](../api/chat-add-installedApps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Adds (installs) an app to a chat or meeting.|
 |[List App in chat](../api/chat-list-installedApps.md) |None | Lists apps in a chat.|
 |[Get App in chat](../api/chat-get-installedApps.md) | None | Lists apps installed in the personal scope of a user.|
-|[Upgrade App in chat](../api/chat-update-installedApps.md) | None | Upgrades to the latest version of the app installed in chat.|
+|[Upgrade App in chat](../api/chat-upgrade-installedApps.md) | None | Upgrades to the latest version of the app installed in chat.|
 |[Uninstall App from chat](../api/chat-delete-installedApps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Removes (uninstalls) app from a chat.|
 
 ## Properties
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the team's ap ID). |
+| id                  | string   | A unique ID (not the Teams app ID). |
 
 ## Relationships
 
