@@ -57,10 +57,7 @@ This API returns a `200` response indicating all members supplied were added to 
 The following example shows a request to add multiple members to a team.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "bulkadd_teammembers"
-}-->
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
 {
@@ -104,6 +101,7 @@ The following is the response.
 } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "@odata.context": "https://localhost:20443/beta/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
     "values": [
@@ -128,10 +126,7 @@ HTTP/1.1 200 OK
 The following example shows a request to add multiple members to a team with partial failure.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "bulkaddpartial_teammembers"
-}-->
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
 {
@@ -175,6 +170,7 @@ The following is the response.
 } -->
 ```http
 HTTP/1.1 207 MULTI-STATUS
+
 {
     "@odata.context": "https://localhost:20443/beta/$metadata#Collection(microsoft.graph.addConversationMemberResult)",
     "values": [
