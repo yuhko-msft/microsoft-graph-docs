@@ -19,11 +19,11 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs in channel](../api/teamstab-list-channel.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab in channel](../api/teamstab-get-channel.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab to channel](../api/teamstab-add-channel.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Delete tab from channel](../api/teamstab-delete-channel.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab in channel](../api/teamstab-update-channel.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel .|
+|[List tabs in channel](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab in channel](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab to channel](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
+|[Delete tab from channel](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Update tab in channel](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel .|
 |[List tab in chat](../api/teamstab-list-chat.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a chat.|
 |[Get tab in chat](../api/teamstab-get-chat.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a chat.|
 |[Create tab in chat](../api/teamstab-create-chat.md) | [teamsTab](teamstab.md) | Creates (pins) a tab in a chat.|
