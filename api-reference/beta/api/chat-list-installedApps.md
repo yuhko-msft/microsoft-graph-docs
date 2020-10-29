@@ -69,7 +69,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get accessPackage",
+  "description": "List app in chat",
   "keywords": "",
   "section": "List app to chat",
   "tocPath": ""
