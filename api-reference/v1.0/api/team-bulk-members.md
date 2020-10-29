@@ -80,6 +80,7 @@ The following is the response.
 
 ```http
 HTTP/1.1 200 OK
+
 {
     "@odata.context": "https://localhost:20443/beta/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
     "values": [
@@ -129,6 +130,7 @@ The following is the response.
 
 ```http
 HTTP/1.1 207 MULTI-STATUS
+
 {
     "@odata.context": "https://localhost:20443/beta/$metadata#Collection(microsoft.graph.addConversationMemberResult)",
     "values": [
