@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /chats/{chatId}/installedApps/{appInstallationId}
 ```
@@ -58,3 +60,13 @@ Content-type: application/json
 "id": "id-value"
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get accessPackage",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
