@@ -1,17 +1,19 @@
 ---
-title: "Delete externalItem"
-description: "Delete an externalItem."
+title: "Delete externalConnection"
+description: "Delete an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Delete externalItem
+# Delete externalConnection
 
 Namespace: microsoft.graph
 
-Delete an [externalitem](../resources/externalitem.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Delete an [externalConnection](../resources/externalconnection.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,15 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /external/connections/{connection-id}/items/{item-id}
+DELETE /external/connections/{id}
 ```
-
-## Path parameters
-
-| Parameter     | Type   | Description                                         |
-|:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
 
 ## Request headers
 
@@ -63,26 +58,26 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_externalitem"
+  "name": "delete_connection"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+DELETE https://graph.microsoft.com/beta/connections/contosohr
 ```
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalitem-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalitem-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-connection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 <!-- markdownlint-disable MD024 -->
 ### Response
@@ -103,8 +98,10 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete externalItem",
+  "description": "Delete externalConnection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
