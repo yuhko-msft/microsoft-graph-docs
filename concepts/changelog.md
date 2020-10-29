@@ -119,8 +119,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [Bulk add member](/graph/api/team-bulk-members?view=graph-rest-beta) method to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
-| Addition | v1.0 | Added the [Bulk add member](/graph/api/team-bulk-members?view=graph-rest-beta) method to the [team](../api-reference/v1.0/resources/team) resource.|
+| Addition | beta and v1.0 | Added the [Bulk add member](/graph/api/team-bulk-members?view=graph-rest-beta) method to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
 |Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
