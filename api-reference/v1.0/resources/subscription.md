@@ -21,6 +21,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [list][] under a SharePoint [site][]
 - A [message][], [event][], or [contact][] in Outlook
 - A [user][] or [group][] in Azure Active Directory
+- A [printTaskDefinition][] in Print Service
 
 See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
 
@@ -64,6 +65,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | SharePoint **list**    | 4230 minutes (under 3 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
 | **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
+| Print **printTaskDefinition**    | 4230 minutes (under 3 days)    |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
@@ -126,6 +128,7 @@ Here is a JSON representation of the resource.
 [alert]: ./alert.md
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
+[printTaskDefinition]: ./printtaskdefinition.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
