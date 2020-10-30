@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 
-The corresponding app must already be [installed in the chat](../api/chatappinstallation-add.md).
+The corresponding app must already be installed in the chat.
 
 #### Permissions
 
@@ -58,7 +58,6 @@ Here is an example of the request.
   "blockType": "request",
   "name": "create_teamstab-chat"
 }-->
-```msgraph-interactive
 ```http
 POST /chats/{chatId}/tabs
 ```
