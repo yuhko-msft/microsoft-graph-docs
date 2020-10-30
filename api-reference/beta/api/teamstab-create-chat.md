@@ -59,6 +59,7 @@ Here is an example of the request.
   "name": "create_teamstab-chat"
 }-->
 ```msgraph-interactive
+```http
 POST /chats/{chatId}/tabs
 ```
 
