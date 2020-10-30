@@ -1,6 +1,6 @@
 ---
 title: "Add app to chat"
-description: "API to install an app to chat."
+description: "Install an app to chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -49,7 +49,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "add_teamsApp"
+  "name": "add_installedApps"
 }-->
 
 ```http
