@@ -58,7 +58,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "create_teamstab-chat"
 }-->
-```http
+```msgraph-interactive
 POST /chats/{chatId}/tabs
 ```
 
