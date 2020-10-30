@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Send Activity Notification to a single user
+# Send activity notification to a single user
 
 Namespace: microsoft.graph
 
@@ -53,7 +53,7 @@ POST /users/{id}/chats/{id}/sendActivityNotification
 | activityType  | string  | Represents the type of activity and must be declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). Required.|
 | chainID       | long    | Enables the developer to override a previous notification. If not included, a new notifcation will be posted. **Note:** Currently, when specifying **chainId**, an unrelated notification from the same app will sometimes be replaced. |
 | previewText   | [itemBody](../resources/itemBody.md) | Preview text displayed to the user as part an activity feed item. |
-| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection | Parameter values for the parameters present in the activity template text. |
+| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection | Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). |
 
 ## Response
 
@@ -75,6 +75,7 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/users/629d12f1-c124-437e-b197-cc38f38cceb4/sendActivityNotification
+Content-Type: application/json
 {
     "topic": {
         "type": "rawText",
