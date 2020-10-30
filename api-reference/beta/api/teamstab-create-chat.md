@@ -29,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
 ```http
 POST /chat/{id}/tabs
 ```
@@ -54,11 +53,6 @@ If successful, this method returns a `201 Created` response code.
 
 Here is an example of the request.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_teamstab-chat"
-}-->
-```msgraph-interactive
 ```http
 POST /chats/{chatId}/tabs
 ```
