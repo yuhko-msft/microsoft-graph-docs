@@ -1,19 +1,19 @@
 ---
 title: "SendActivityNotification: Team"
-description: "Send an activity feed notification to a single user, to all users in a chat, or to all users in a team."
+description: "Send an activity feed notification to all users in a team."
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Send Activity Notification
+# Send activity notification to all users in a team
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send an activity feed notification to a single [user](../resources/user.md), to all users in a [chat](../resources/chat.md), all users in a [team](../resources/team.md).
+Send an activity feed notification to all users in a [team](../resources/team.md).
 
 >**NOTE:** Only Microsoft Graph app IDs that have been linked with a Teams app ID can send notifications. For details, see [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). 
 
@@ -34,9 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id}/teamwork/sendActivityNotification
-POST /users/{id}/chats/{id}/sendActivityNotification
-POST /chats/{id}/sendActivityNotification
 POST /teams/{id}/sendActivityNotification
 ```
 
@@ -67,6 +64,8 @@ If there is more than one Teams app corresponding to a given Microsoft Graph app
 
 ## Examples
 
+### Example 1: Notify a user about a new task
+
 ### Request
 
 The following is an example of the request.
@@ -76,27 +75,22 @@ The following is an example of the request.
   "name": "Send_activity_notification"
 }-->
 ```http
-POST /teams/{teamId}/sendActivityNotification
-Content-Type: application/json
-  
+POST https://graph.microsoft.com/beta/teams/e5a548cb-e5a4-4e54-8da1-ec0e944d9c11/sendActivityNotificationPrivileged
 {
-  "topic": {
-    "source": "entityUrl",
-    "value": "https://graph.microsoft.com/teams/dc0ae126-1046-4c7b-8b56-991f55479a11/channels/19:910b7d76f3564480a0e52e0671e0f116@thread.tacv2/messages/1591749374896"
-  },
-  "activityType": "questionAnswered",
-  "previewText": {
-    "content": "Your question has been answered"
-  },
-  "recipient": {
-    "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-    "userId": "598efcd4-e549-402a-9602-0b50201faebe"
-  },
-  "templateParameters": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair"
-    }
-  ]
+    "topic": {
+        "type": "graphResource",
+        "value": "https://graph.microsoft.com/beta/teams/e5a548cb-e5a4-4e54-8da1-ec0e944d9c11/channels/123@thread.v2/tabs/tabId"
+    },
+    "activityType": "taskCreated",
+    "previewText": "New Task Created",
+    "recipient": [{
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        "userId": "2725adbe-59ac-4b1a-8096-b47bd244eb09"
+    }],
+    "templateParameters": [{
+        "name": "taskId",
+        "value": "Task 12321"
+    }]
 }
 ```
 
@@ -111,6 +105,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 ```
+
+## See also
+- [Send activity notification to a user](user-sendactivitynotification.md)
+- [Send activity notification to users in chat](chat-sendactivitynotification.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
