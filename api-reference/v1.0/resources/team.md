@@ -32,7 +32,7 @@ For more information about working with groups and members in teams, see [Use th
 |[List team members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
 |[Add team members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
 |[Remove team members](../api/team-delete-members.md)|None|Delete a [conversationMember](../resources/conversationmember.md) object.|
-|[Change member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
+|[Change the role of team members](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
