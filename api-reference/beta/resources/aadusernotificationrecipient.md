@@ -3,7 +3,7 @@ title: "aadUserNotificationRecipient resource type"
 description: "Send a notification to a single user."
 author: "nkramer"
 localization_priority: Normal
-ms.prod: Priority
+ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---
 
