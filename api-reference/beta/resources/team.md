@@ -26,7 +26,8 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
-|[List team members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
+|[List team members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|List the conversationMembers from the members navigation property.|
+|[Get team members](../api/team-get-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
 |[Add team members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
 |[Remove team members](../api/team-delete-members.md)|None|Delete a [conversationMember](../resources/conversationmember.md) object.|
 |[Change the role of team members](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
