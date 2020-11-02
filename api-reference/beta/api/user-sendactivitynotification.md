@@ -73,6 +73,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "Send_activity_notification"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/users/629d12f1-c124-437e-b197-cc38f38cceb4/sendActivityNotification
 Content-Type: application/json
