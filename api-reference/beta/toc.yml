@@ -12264,6 +12264,8 @@ items:
           href: api/group-delete.md
         - name: List team members
           href: api/team-list-members.md
+        - name: Get team members
+          href: api/team-get-members.md
         - name: Add team members
           href: api/team-post-members.md
         - name: Remove team members
