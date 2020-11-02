@@ -3,7 +3,7 @@ title: "teamworkActivityTopic resource type"
 description: "The location field of an activity notification"
 author: "nkramer"
 localization_priority: Normal
-ms.prod: Priority
+ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---
 
