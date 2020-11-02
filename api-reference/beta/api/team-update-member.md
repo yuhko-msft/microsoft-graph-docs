@@ -1,21 +1,19 @@
 ---
-title: "Update conversationMember"
-description: "Update the role of a conversationMember in a team or channel."
+title: "Update team member"
+description: "Update the role of a member in a team."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Update conversationMember
+# Update team member
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the role of a [conversationMember](../resources/conversationmember.md) in a 
-[team](../resources/team.md).
-or [channel](../resources/channel.md).
+Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
 
 > [!NOTE]
 > On channels, this operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.
@@ -26,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| In teams: TeamMember.ReadWrite.All<br/>In channels: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account)| TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported|
-|Application| In teams: TeamMember.ReadWrite.All<br/>In channels:  ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application|  TeamMember.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
@@ -60,13 +58,12 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_conversation_member"
+  "name": "update_team_member"
 } -->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/members/{id}
 content-type: application/json
 content-length: 26
 
@@ -75,20 +72,6 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-conversation-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-conversation-member-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-conversation-member-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
