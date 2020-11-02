@@ -74,6 +74,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "Send_activity_notification"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/e5a548cb-e5a4-4e54-8da1-ec0e944d9c11/sendActivityNotificationPrivileged
 {
