@@ -11,6 +11,16 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## November 2020
+
+### Teamwork
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta  | Added the [Get team member](/graph/api/team-get-member?view=graph-rest-beta) method to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+| Addition | v1.0  | Added the [Get team member](/graph/api/team-get-member?view=graph-rest-1.0) method to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource.|
+| Addition | v1.0  | Added the [Update the role of a team member](/graph/api/team-update-members?view=graph-rest-1.0) method to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource.|
+
 ## October 2020
 
 ### Applications
@@ -119,7 +129,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta and v1.0 | Added the [Bulk add member](/graph/api/team-bulk-members?view=graph-rest-beta) method to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+| Addition | beta  | Added the [Bulk add member](/graph/api/team-bulk-members?view=graph-rest-beta) method to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+| Addition |  v1.0 | Added the [Bulk add member](/graph/api/team-bulk-members?view=graph-rest-1.0) method to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource.|
 |Addition|beta|Added support for **completeMigration** to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
 |Addition|beta|Added the **teamCreationMode** property to the  [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition|beta|Added the **channelCreationMode** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) resource.|
