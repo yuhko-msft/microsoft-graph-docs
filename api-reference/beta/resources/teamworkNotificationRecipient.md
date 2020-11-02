@@ -3,7 +3,7 @@ title: "teamworkNotificationRecipient resource type"
 description: "Represents the base class that serves as the basis for all the valid recipients for notifications."
 author: "nkramer"
 localization_priority: Normal
-ms.prod: Priority
+ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---
 
