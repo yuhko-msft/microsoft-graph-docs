@@ -12286,6 +12286,8 @@ items:
           href: api/profilephoto-update.md
         - name: Complete migration for team
           href: api/team-completemigration.md
+        - name: Send activity feed notification to team
+          href: api/team-sendactivitynotification.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -12383,6 +12385,8 @@ items:
           href: api/chat-get-message.md
         - name: Send message in chat
           href: api/chat-post-message.md
+        - name: Send activity feed notification to chat
+          href: api/chat-sendactivitynotification.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
