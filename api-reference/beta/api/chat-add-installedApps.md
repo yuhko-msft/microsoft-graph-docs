@@ -27,7 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { 
+"blockType": "ignored" 
+} -->
 
 ```http
 POST /chats/{chatId}/installedApps
@@ -54,6 +56,7 @@ The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps
+
 {
 "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
