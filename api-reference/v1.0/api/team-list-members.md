@@ -104,4 +104,4 @@ Content-Type: application/json
 
 ## See also
 
-[List channel members](../api/conversationmember-list.md)
+[List channel members](../api/channel-list-members.md)
