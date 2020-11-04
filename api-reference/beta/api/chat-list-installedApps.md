@@ -1,19 +1,19 @@
 ---
-title: "List app in chat"
-description: "API to list the apps installed in a chat."
+title: "List apps in chat"
+description: "List the apps installed in a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List app in chat
+# List apps in chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List an [app](../resources/teamsapp.md) within [chat](../resources/chat.md).
+List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -45,10 +45,8 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps
-{
-"teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
-}
+GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
+
 ```
 
 ### Response
