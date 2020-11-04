@@ -1,16 +1,16 @@
 ---
-title: "Update tab"
-description: "Update the properties of the specified tab."
+title: "Update tab in channel"
+description: "Update the properties of the specified tab in a channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update tab
+# Update tab in channel
 
 Namespace: microsoft.graph
-
+ 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [tab](../resources/teamstab.md).
