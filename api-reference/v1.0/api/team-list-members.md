@@ -1,6 +1,6 @@
 ---
 title: "List members in a team"
-description: "Get the conversationMembers of a team."
+description: "Gets the conversationMembers of a team."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List members in a team
 Namespace: microsoft.graph
 
-Get the [conversationMember](../resources/conversationmember.md) of a [team](../resources/team.md).
+Get the list of [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
 
 >Note: This API currently does not support pagination, so if there's too many members to fit into one request, you won't get all the members.
 
