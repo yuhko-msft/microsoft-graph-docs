@@ -1,6 +1,6 @@
 ---
-title: "Upgrade app in chat"
-description: "API to upgrade an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
+title: "Upgrade app in a chat"
+description: "Upgrade an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade an [app](../resources/teamsapp.md) installed within a [chat](../resources/chat.md).
+Upgrade [teamsAppInstallation](../resources/teamsappinstallation.md) of an [app](../resources/teamsapps.md) within a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -48,7 +48,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps/NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=/upgrade
+POST https://graph.microsoft.com/beta/chats/{chatId}/installedApps/{appInstallationId}/upgrade
 ```
 
 ### Response
