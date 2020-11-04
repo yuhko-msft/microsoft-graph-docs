@@ -1,19 +1,19 @@
 ---
-title: "Update tab in a channel"
-description: "Update the properties of the specified tab in a channel."
+title: "Update tab"
+description: "Update the properties of the specified tab."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update tab in channel
+# Update tab
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the specified [tab](../resources/teamstab.md) in a channel.
+Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.
 
 ## Permissions
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```http
-PATCH /channels/{id}/tabs/{id}
+PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code.
 #### Request
 The following is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
