@@ -1,19 +1,19 @@
 ---
-title: "List apps in chat"
-description: "API to get an app installed in a chat."
+title: "Get installed apps in chat"
+description: "Get installed apps in a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List apps in chat
+# Get installed apps in chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an [app](../resources/teamsapp.md) installed within [chat](../resources/chat.md).
+Get [app installation](../resources/teamsappinstallation.md) installed in a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 } -->
 
 ```http
-GET /chats/{chatId}/installedApps/{appInstallationId}
+GET /chats/{chatId}/installedApps
 ```
 
 ## Response
