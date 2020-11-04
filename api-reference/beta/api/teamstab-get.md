@@ -1,7 +1,7 @@
 ---
-title: "Get tab in a channel"
-description: "Retrieve the properties and relationships of the specified tab in a channel . "
-author: "nkramer"
+title: "Get tab in channel"
+description: "Retrieve the properties and relationships of the specified tab in a channel. "
+author: "nkramer" 
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of the specified [tab](../resources/teamstab.md) in a channel. 
+Retrieve the properties and relationships of the specified [tab](../resources/teamstab.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```http
-GET /channels/{id}/tabs/{id}
+GET /teams/{id}/channels/{id}/tabs/{id}
 ```
 
 ## Optional query parameters
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [tab](../resou
 #### Request
 The following is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/channels/{id}/tabs/{id}?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
 #### Response
 The following is an example of the response. 
