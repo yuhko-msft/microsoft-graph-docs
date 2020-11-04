@@ -4870,8 +4870,6 @@ items:
           href: api/user-list-joinedteams.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
-        - name: Bulk add member
-          href: api/team-bulk-members.md
       - name: Group (team)
         href: resources/group.md
         items:
