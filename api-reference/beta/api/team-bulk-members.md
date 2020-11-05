@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 This is a bound action for adding multiple elements to a conversationMember collection in a single request.
 
 ```http
-POST /teams/id/members/add
+POST /teams/{team-id}/members/add
 ```
 
 ## Request headers
@@ -118,8 +118,6 @@ HTTP/1.1 200 OK
 #### Request
 
 The following example shows a request to add multiple members to a team with partial failure.
-
-# [HTTP](#tab/http)
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
