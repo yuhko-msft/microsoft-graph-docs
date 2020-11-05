@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
+DELETE https://graph.microsoft.com/beta/teams/{teams-Id}/members/{membership-Id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]
@@ -85,6 +85,20 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "remove members from team",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
 ## See also
 
-[Delete channel member](../api/conversationmember-delete.md)
+[Delete channel member](../api/channel-delete-members.md)
