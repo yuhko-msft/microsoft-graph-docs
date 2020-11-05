@@ -63,13 +63,13 @@ Here is an example of the request.
   "name": "update_team_member"
 } -->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/members/{id}
-content-type: application/json
-content-length: 26
-
+PATCH https://graph.microsoft.com/v1.0/teams/{team-id}/members/{membership-id}
 {
-  "@odata.type":"#microsoft.graph.aadUserConversationMember",
-  "roles": ["owner"]
+    "id":"id",
+    "roles": ["owner"]
+    "userId":"7051f984-682e-4a08-a6b2-df82fe7d9fe1",
+    "displayName":"John Doe",
+    "email":"johnDoe@yourTenant.com"
 }
 ```
 
@@ -89,7 +89,7 @@ Content-type: application/json
 Content-length: 475
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "roles": ["owner"],
