@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get members
+# Get team members
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{id}/members/{id}
+GET /teams/{team-Id}/members/{membership-Id}
 ```
 
 ## Optional query parameters
@@ -88,7 +88,19 @@ Content-Type: application/json
     }
 }
 ```
-
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Retrieve list of team members",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
 ## See also
 
 [Get channel members](../api/channel-get-members.md)
