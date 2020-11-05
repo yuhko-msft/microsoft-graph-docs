@@ -1,5 +1,5 @@
 ---
-title: "List team members"
+title: "List members in a team"
 description: "Get the members of a team."
 author: "nkramer"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List team members  
+# List members in a team  
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -79,8 +79,6 @@ GET https://graph.microsoft.com/beta/teams/{teams-Id}/members
 
 ---
 
-
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -92,33 +90,42 @@ GET https://graph.microsoft.com/beta/teams/{teams-Id}/members
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
-    "@odata.count": 2,
-    "value": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('id')/members",
+    "values": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
-            "roles": [],
-            "displayName": "Adele Vance",
-            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+            "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
+            "roles": ["owner"],
+            "userId": "aafc32d9-22e8-47a5-9178-099fd5e18968",
+            "displayName": "George Washington",
+            "email": "geowa@contoso.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "MOD Administrator",
-            "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
+            "id":"1ce8527b-95aa-410e-a581-8e8a8cba3e2f",
+            "roles":["owner"],
+            "userId": "24b4876d-0c48-4895-9a62-c810827f1fae",
+            "displayName": "Emily Green,
+            "email": "emGr@contoso.com"
         }
     ]
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "conversation: member list",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
 
 ## See also
 
