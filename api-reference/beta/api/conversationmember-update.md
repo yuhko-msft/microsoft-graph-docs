@@ -1,6 +1,6 @@
 ---
 title: "Update team member"
-description: "Update the role of a member in a team or channel."
+description: "Update the role of a member in a team."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md) or [channel](../resources/channel.md).
+Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
 
 ## Permissions
 
@@ -21,14 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| In teams: TeamMember.ReadWrite.All. In channels: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All. |
+|Delegated (work or school account)|TeamMember.ReadWrite.All. |
 |Delegated (personal Microsoft account)|Not supported|
-|Application| In teams: TeamMember.ReadWrite.All. In channels:  ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All. |
+|Application| TeamMember.ReadWrite.All. |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-PATCH /teams/{id}/channels/{id}/members/{id}
+PATCH /teams/{id}/members/{id}
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ Here is an example of the request.
   "name": "update_conversation_member"
 } -->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/members/{id}
 content-type: application/json
 content-length: 26
 
@@ -86,7 +86,7 @@ Content-type: application/json
 Content-length: 475
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "roles": ["owner"],
