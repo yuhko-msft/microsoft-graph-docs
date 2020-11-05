@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-PATCH /teams/{id}/members/{id}
+PATCH /teams/{team-Id}/members/{membership-Id}
 ```
 
 ## Request headers
@@ -63,14 +63,8 @@ Here is an example of the request.
   "name": "update_team_member"
 } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{team-id}/members/{membership-id}
-{
-    "id":"id",
-    "roles": ["owner"]
-    "userId":"7051f984-682e-4a08-a6b2-df82fe7d9fe1",
-    "displayName":"John Doe",
-    "email":"johnDoe@yourTenant.com"
-}
+PATCH https://graph.microsoft.com/v1.0/teams/{team-Id}/members/{membership-Id}
+
 ```
 
 ### Response
@@ -85,25 +79,21 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 475
-
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-  "roles": ["owner"],
-  "displayName": "John Doe",
-  "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-  "email": null
+    "id":"id",
+    "roles": ["owner"]
+    "userId":"7051f984-682e-4a08-a6b2-df82fe7d9fe1",
+    "displayName":"John Doe",
+    "email":"johnDoe@yourTenant.com"
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel",
+  "description": "update member's role in team",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
