@@ -114,4 +114,4 @@ Content-length: 475
 
 ## See also
 
-[Update channel member](../api/channel-update-members.md)
+[Update the role of a member in a channel](../api/channel-update-members.md)
