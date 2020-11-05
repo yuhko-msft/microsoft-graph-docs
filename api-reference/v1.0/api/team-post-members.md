@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /teams/{team-Id}/members
 ```
@@ -57,12 +58,14 @@ For best results, stagger calls with a 2 second buffer.
   "name": "add members to team"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/v1.0/teams/id/members
 {
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "user@odata.bind": "https://graph.microsoft.com/v1.0/users('7051f984-682e-4a08-a6b2-df82fe7d9fe1')",
   "roles": [],
+}   "roles": ["owner"]
 }
 ```
 
