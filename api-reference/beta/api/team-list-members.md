@@ -1,13 +1,13 @@
 ---
-title: "List members"
-description: "Get the conversationMembers of a team."
+title: "List team members"
+description: "Get the members of a team."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List members
+# List team members  
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{teamsId}/members
+GET /teams/{teams-Id}/members
 ```
 
 ## Optional query parameters
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/members
+GET https://graph.microsoft.com/beta/teams/{teams-Id}/members
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
@@ -122,4 +122,4 @@ Content-Type: application/json
 
 ## See also
 
-[List channel members](../api/conversationmember-list.md)
+[List channel members](../api/channel-listmembers.md)
