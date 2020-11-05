@@ -101,4 +101,4 @@ Content-length: 475
 
 ## See also
 
-[Update channel member](../api/conversationmember-update.md)
+[Update channel member](../api/channel-update-members.md)
