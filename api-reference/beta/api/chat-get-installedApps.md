@@ -47,7 +47,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "add_teamsApp"
+  "name": "get_teamsApp"
 }-->
 
 ```http
