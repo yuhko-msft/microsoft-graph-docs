@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 } -->
 
 ```http
-GET /chats/{chatId}/installedApps
+GET /chats/{chatId}/installedApps/{appInstallationId}
 ```
 
 ## Response
@@ -51,7 +51,8 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps/NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=
+GET https://graph.microsoft.com/beta/chats/{chatid}/installedApps/{appInstallationId}
+
 ```
 
 ### Response
