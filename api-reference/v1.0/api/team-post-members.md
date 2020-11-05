@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create members
+# Add members to team
 Namespace: microsoft.graph
 
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /teams/{teamsId}/members
+POST /teams/{team-Id}/members
 ```
 
 ## Request headers
@@ -54,18 +54,15 @@ For best results, stagger calls with a 2 second buffer.
 
 <!-- {
   "blockType": "request",
-  "name": "create_conversationmember_from_"
+  "name": "add members to team"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/teams/{id}/members
-Content-type: application/json
-Content-length: 26
-
+POST https://graph.microsoft.com/v1.0/teams/id/members
 {
-    "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "user@odata.bind": "https://graph.microsoft.com/v1.0/users('7051f984-682e-4a08-a6b2-df82fe7d9fe1')",
+  "roles": [],
 }
 ```
 
@@ -77,22 +74,30 @@ Content-length: 26
   "@odata.type": "microsoft.graph.conversationMember"
 }
 -->
-``` http
-HTTP/1.1 201 Created
-Content-type: application/json
 
+``` http
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
-    "roles": [
-        "owner"
-    ],
-    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
-    "displayName": "Cameron White",
-    "email": "CameronW@M365x987948.OnMicrosoft.com"
+    "roles": [],
+    "userId": "7051f984-682e-4a08-a6b2-df82fe7d9fe1",
+    "displayName": "George Washington",
+    "email": "geowa@contoso.com"
 }
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "add members to team",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
 ## See also
 
-[Add channel member](../api/conversationmember-add.md)
+[Add channel member](../api/channel-add-members.md)
