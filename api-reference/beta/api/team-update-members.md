@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|  TeamMember.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored"} -->
 ```http
 PATCH /teams/{team-Id}/members/{membership-Id}
@@ -62,6 +63,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_team_member"
 } -->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{team-Id}/members/{membership-Id}
 
@@ -79,6 +81,7 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
+
 {
     "id":"id",
     "roles": ["owner"]
