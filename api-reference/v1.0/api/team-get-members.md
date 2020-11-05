@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get conversationMembers
+# Get team members
 
 Namespace: microsoft.graph
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/members/{id}
+GET /teams/{team-Id}/members/{membership-Id}
 ```
 
 ## Optional query parameters
@@ -100,7 +100,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "conversation: member list",
+  "description": "Retrieve list of team members",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
