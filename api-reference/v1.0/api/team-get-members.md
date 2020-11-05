@@ -108,3 +108,7 @@ Content-length: 201
   ]
 }
 -->
+
+## See also
+
+[Get channel members](../api/channel-get-members.md)
