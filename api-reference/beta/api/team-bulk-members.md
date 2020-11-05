@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 This is a bound action for adding multiple elements to a conversationMember collection in a single request.
 
-```xml
+```http
 POST /teams/id/members/add
 ```
 
