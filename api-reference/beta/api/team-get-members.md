@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/members/{membersid}
+GET https://graph.microsoft.com/v1.0/teams{team-id}/members{membership-id}
 ```
 
 ### Response
@@ -77,31 +77,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
-    "@odata.count": 2,
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
-            "roles": [],
-            "displayName": "Adele Vance",
-            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
-            "email": "AdeleV@M365x987948.OnMicrosoft.com"
-        },
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
-            "roles": [
-                "owner"
-            ],
-            "displayName": "MOD Administrator",
-            "userId": "598efcd4-e549-402a-9602-0b50201faebe",
-            "email": "admin@M365x987948.OnMicrosoft.com"
-        }
-    ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('id')/members('id')",
+    "values": {
+        "@odata.type": "#microsoft.graph.aadUserConversationMember",
+        "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
+        "roles": ["owner"],
+        "userId": "aafc32d9-22e8-47a5-9178-099fd5e18968",
+        "displayName": "George Washington",
+        "email": "geowa@contoso.com"
+    }
 }
 ```
 
 ## See also
 
-[Get channel members](../api/conversationmember-get.md)
+[Get channel members](../api/channel-get-members.md)
