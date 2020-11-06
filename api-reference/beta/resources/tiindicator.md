@@ -126,7 +126,7 @@ For details about the types of indicators supported and limits on indicator coun
 |:-------------|:------------|:------------|
 |domainName|String|Domain name associated with this indicator. Should be of the format subdomain.domain.topleveldomain (For example, baddomain.domain.net)|
 |networkCidrBlock|String| CIDR Block notation representation of the network referenced in this indicator. Use only if the Source and Destination cannot be identified. |
-|networkDestinationAsn|Int32|The destination autonomous system identifier of the network referenced in the indicator.|
+|networkDestinationAsn|Int64|The destination autonomous system identifier of the network referenced in the indicator.|
 |networkDestinationCidrBlock|String|CIDR Block notation representation of the destination network in this indicator.|
 |networkDestinationIPv4|String|IPv4 IP address destination.|
 |networkDestinationIPv6|String|IPv6 IP address destination.|
@@ -135,7 +135,7 @@ For details about the types of indicators supported and limits on indicator coun
 |networkIPv6|String| IPv6 IP address. Use only if the Source and Destination cannot be identified. |
 |networkPort|Int32| TCP port. Use only if the Source and Destination cannot be identified. |
 |networkProtocol|Int32|Decimal representation of the protocol field in the IPv4 header.|
-|networkSourceAsn|Int32|The source autonomous system identifier of the network referenced in the indicator.|
+|networkSourceAsn|Int64|The source autonomous system identifier of the network referenced in the indicator.|
 |networkSourceCidrBlock|String|CIDR Block notation representation of the source network in this indicator|
 |networkSourceIPv4|String|IPv4 IP Address source.|
 |networkSourceIPv6|String|IPv6 IP Address source.|
