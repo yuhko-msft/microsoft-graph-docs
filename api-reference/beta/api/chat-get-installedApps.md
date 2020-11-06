@@ -1,13 +1,13 @@
 ---
-title: "Get installed apps in chat"
-description: "Get installed apps in a chat."
+title: "Get installed app in chat"
+description: "Get installed app in a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get installed apps in chat
+# Get installed app in chat
 
 Namespace: microsoft.graph
 
