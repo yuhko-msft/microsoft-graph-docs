@@ -12275,7 +12275,7 @@ items:
         - name: Update team photo
           href: api/profilephoto-update.md
         - name: Bulk add member
-          href: api/team-bulk-members.md
+          href: api/team-bulkadd-members.md
         - name: Complete migration for team
           href: api/team-completemigration.md
       - name: Group (team)
