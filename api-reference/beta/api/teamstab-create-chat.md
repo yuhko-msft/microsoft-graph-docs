@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code.
 Here is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_team"
 }-->
 
@@ -64,7 +64,7 @@ POST /chats/{chatId}/tabs
 
 The following is an example of the response.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
@@ -96,7 +96,7 @@ Content-type: application/json
 
 The following example shows a request to create all chats.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_team"
 }-->
 
@@ -107,7 +107,7 @@ POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@
 #### Response
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
@@ -134,7 +134,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List channels",
+  "description": "Create tab in chat",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
