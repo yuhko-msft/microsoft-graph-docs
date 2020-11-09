@@ -33,7 +33,27 @@ One of the following permissions is required to call this API. To learn more, in
 GET /chats/{chatId}/installedApps
 ```
 
-## Example
+## Optional query parameters
+
+This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+
+## Request headers
+
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.
+
+## Examples
+
+### Example 1
 
 ### Request
 
@@ -51,14 +71,84 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
 
 ### Response
 
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "chat_list_installedApps"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
-```
 {
   "value": [
     {
       "id": "id-value"
     }
+  ]
+}
+```
+
+### Example 2
+
+#### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "ignored",
+  "name": "chat_list_installedApps"
+}-->
+```http
+GET https://graph.microsoft.com/beta/chat/{id}/teamwork/installedApps?$expand=teamsAppDefinition
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "chat_list_installedApps",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "value": [
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
+            "teamsAppDefinition": {
+                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+                "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
+                "displayName": "OneNote",
+                "version": "1.0.0"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk=",
+            "teamsAppDefinition": {
+                "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
+                "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
+                "displayName": "SurveyMonkey",
+                "version": "1.7"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMyYTUyNzcwMy0xZjZmLTQ1NTktYTMzMi1kOGE3ZDI4OGNkODg=",
+            "teamsAppDefinition": {
+                "id": "MmE1Mjc3MDMtMWY2Zi00NTU5LWEzMzItZDhhN2QyODhjZDg4IyMxLjA=",
+                "teamsAppId": "2a527703-1f6f-4559-a332-d8a7d288cd88",
+                "displayName": "SharePoint",
+                "version": "1.0"
+            }
+        }
   ]
 }
 ```
@@ -72,3 +162,4 @@ Content-type: application/json
   "section": "List app in chat",
   "tocPath": ""
 }-->
+
