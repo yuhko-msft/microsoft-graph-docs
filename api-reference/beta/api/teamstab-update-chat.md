@@ -24,10 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------|
 |Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
 |Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
-|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |
-|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
 
 ## HTTP request
+
+<!-- { "blockType": "ignored" } -->
 
 ```http
 PATCH /chat/{id}/tabs/{id}
@@ -51,6 +51,12 @@ If successful, this method returns a `200 OK` response code.
 ### Request
 
 The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_team"
+}-->
+
 ```http
 PATCH /chats/{chatId}/tabs/{tabId}
 
@@ -60,6 +66,12 @@ PATCH /chats/{chatId}/tabs/{tabId}
 ```
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -87,6 +99,11 @@ Content-type: application/json
 
 The following example shows a request to get all chats.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_team"
+}-->
+
 ```http
 PATCH /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/794f0e4e-4d10-4bb5-9079-3a465a629eff
 
@@ -96,6 +113,12 @@ PATCH /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/794f0e4e-4d10
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -113,12 +136,13 @@ Content-type: application/json
   }
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "List channels",
+  "description": "Update chat in tab",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
