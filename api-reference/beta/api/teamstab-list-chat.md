@@ -23,13 +23,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------|
 |Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
 |Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
-|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |
-|Application |TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
  
 ## HTTP request
- 
+
+<!-- { "blockType": "ignored" } -->
+
 ```http
-GET /chat/{id}/tabs
+GET /chats/{id}/tabs
 ```
  
 ## Optional query parameters
@@ -48,15 +48,26 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "List tabs"
+}-->
+
 The following is an example of the request.
 ```http
-GET /chat/{chatId}/tabs
+GET /chats/{chatId}/tabs
 
 ```
 
 ### Response
 
 The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -90,11 +101,22 @@ Content-type: application/json
 
 The following example shows a request to list all chats.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_team"
+}-->
+
 ```http
 GET /chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
 
 The following is an example of the response.
 ```http
@@ -117,12 +139,13 @@ Content-type: application/json
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Add tab to channel",
+  "description": "List tabs",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
