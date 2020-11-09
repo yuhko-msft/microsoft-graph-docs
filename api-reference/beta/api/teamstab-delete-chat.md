@@ -26,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsTab.ReadWrite.All  |
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /chats/{id}/tabs/{id}
 ```
@@ -46,25 +48,49 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "delete-tab"
+}-->
+
 ```http
 DELETE /chats/{chatId}/tabs/{tabId}
 ```
+
 ### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
-### Example : Delete tabs in a Teams chat
+### Example : Delete tabs from chat
 
 #### Request
 
 The following example shows a request to delete all chats.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete-tab"
+}-->
 
 ```http
 DELETE /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/{id}
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -75,7 +101,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "List channels",
+  "description": "Delete tab from chat",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
