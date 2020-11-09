@@ -24,13 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:----------------------------------------|
 |Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
 |Delegated  | TeamsTab.ReadWrite.All |
-|Application |TeamsTab.Create, TeamsTab.ReadWrite.All  |
-|Application | TeamsTab.ReadWrite.All  |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
-POST /chat/{id}/tabs
+POST /chats/{id}/tabs
 ```
 
 ## Request headers
@@ -53,13 +51,23 @@ If successful, this method returns a `201 Created` response code.
 
 Here is an example of the request.
 
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team"
+}-->
+
 ```http
 POST /chats/{chatId}/tabs
 ```
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
+<!-- {
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -87,12 +95,23 @@ Content-type: application/json
 #### Request
 
 The following example shows a request to create all chats.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
