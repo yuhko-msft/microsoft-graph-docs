@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated  | TeamsTab.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /chats/{id}/tabs
 ```
