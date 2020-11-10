@@ -2,7 +2,7 @@
 title: "tiIndicator resource type"
 description: "Threat intelligence (TI) indicators represent data used to identify malicious activities."
 localization_priority: Normal
-author: "preetikr"
+author: "fengzhums"
 ms.prod: "security"
 doc_type: resourcePageType
 ---

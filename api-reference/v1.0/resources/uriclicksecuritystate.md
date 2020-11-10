@@ -1,8 +1,8 @@
 ---
 title: "uriClickSecurityState resource type"
-description: "Represents detection pertinent information for alerts."
+description: "Represent the URL Click information (malicious and benign ones)."
 localization_priority: Normal
-author: "fengzhu"
+author: "fengzhums"
 ms.prod: "security"
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # uriClickSecurityState resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents detection pertinent information for alerts.
 

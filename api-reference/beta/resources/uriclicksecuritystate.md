@@ -1,8 +1,8 @@
 ---
 title: "uriClickSecurityState resource type"
-description: "Represents detection pertinent information for alerts."
+description: "Represent the URL Click information (malicious and benign ones)."
 localization_priority: Normal
-author: "fengzhu"
+author: "fengzhums"
 ms.prod: "security"
 doc_type: resourcePageType
 ---

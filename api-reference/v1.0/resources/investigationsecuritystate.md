@@ -1,9 +1,8 @@
 ---
 title: "investigationSecurityState resource type"
-description: "Represents the investigation state for the alerts. The security provider will populate this field and set it to initiated or done, etc.
-when the alert is queried by the customer (to reflect the correct state of the investigation a the time of query)."
+description: "Represents the investigation state for the alerts. The security provider will populate this field and set it to initiated or done, etc. when the alert is queried by the customer (to reflect the correct state of the investigation a the time of query)."
 localization_priority: Normal
-author: "fengzhu"
+author: "fengzhums"
 ms.prod: "security"
 doc_type: resourcePageType
 ---
@@ -11,8 +10,6 @@ doc_type: resourcePageType
 # investigationSecurityState resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the investigation state for the alerts. The security provider will populate this field and set it to initiated or done, etc.
 when the alert is queried by the customer (to reflect the correct state of the investigation a the time of query).
