@@ -26,9 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
 PATCH /chat/{id}/tabs/{id}
 ```
@@ -51,10 +49,9 @@ If successful, this method returns a `200 OK` response code.
 ### Request
 
 The following is an example of the request.
-
 <!-- {
   "blockType": "request",
-  "name": "get_team"
+  "name": "update-tabs in chat"
 }-->
 
 ```http
@@ -101,7 +98,7 @@ The following example shows a request to get all chats.
 
 <!-- {
   "blockType": "request",
-  "name": "get_team"
+  "name": "update-tabs in chat"
 }-->
 
 ```http
@@ -113,7 +110,6 @@ PATCH /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/794f0e4e-4d10
 ```
 
 #### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true,
