@@ -57,13 +57,9 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 The following is an example of the request.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "search_query"
-}-->
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
 {

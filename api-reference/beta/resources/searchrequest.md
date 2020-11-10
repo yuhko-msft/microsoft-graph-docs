@@ -44,14 +44,6 @@ The JSON blob contains the types of resources expected in the response, the unde
 
 The following is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.searchRequest",
-  "baseType": null
-}-->
 
 ```json
 {
