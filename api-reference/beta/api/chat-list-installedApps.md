@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1
+### Example 1: Get all the apps installed in the specified chat
 
 ### Request
 
@@ -92,7 +92,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get the names and other details of all the apps installed in a chat
 
 #### Request
 
