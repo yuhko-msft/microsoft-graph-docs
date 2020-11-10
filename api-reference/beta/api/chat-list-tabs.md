@@ -72,8 +72,8 @@ Content-type: application/json
 {
   "@odata.context": "https://localhost:8200/beta/$metadata#chats/{chatId}/tabs",
   "@odata.count": 1,
-  "value": [
-    {
+  "value": 
+    [
       "id": "62a07424-9c50-4adf-8931-c0038d7ef11e",
       "displayName": "My Awesome Tab",
       "webUrl": "https://teams.microsoft.com/l/chat/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%awesome%to%tab",
@@ -86,7 +86,7 @@ Content-type: application/json
         "customPropertyBool": true,
         "customPropertyString": "value"
       }
-     ]
+    ]  
 }
 
 ```
