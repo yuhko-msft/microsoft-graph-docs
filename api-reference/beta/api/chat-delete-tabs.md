@@ -22,10 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------|
 |Delegated  |TeamsTab.ReadWrite.All  |
 |Delegated  | TeamsTab.ReadWrite.All |
-|Application |TeamsTab.ReadWrite.All  |
-|Application | TeamsTab.ReadWrite.All  |
-## HTTP request
 
+## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -47,10 +45,9 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 
 ### Request
-
 <!-- {
   "blockType": "request",
-  "name": "delete-tab"
+  "name": "delete-tab in chat"
 }-->
 
 ```http
@@ -59,7 +56,6 @@ DELETE /chats/{chatId}/tabs/{tabId}
 
 ### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,10 +70,9 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following example shows a request to delete all chats.
-
 <!-- {
   "blockType": "request",
-  "name": "delete-tab"
+  "name": "delete-tab in chat"
 }-->
 
 ```http
@@ -85,7 +80,6 @@ DELETE /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/{id}
 ```
 
 #### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true,
