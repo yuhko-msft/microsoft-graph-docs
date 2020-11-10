@@ -36,7 +36,7 @@ POST /chats/{chatId}/installedApps/{appInstallationId}/upgrade
 ## Response 
 HTTP/1.1 204 No Content
 
-## Example
+## Example: Upgrade an app installed in a chat
 
 ### Request
 
