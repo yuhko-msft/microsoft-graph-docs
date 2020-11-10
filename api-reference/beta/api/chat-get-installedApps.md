@@ -39,7 +39,7 @@ GET /chats/{chatId}/installedApps/{appInstallationId}
 
 `200 OK` and a teamsAppInstallation object.
 
-## Example
+## Example: Get an app installed in the specified chat
 
 ### Request
 
