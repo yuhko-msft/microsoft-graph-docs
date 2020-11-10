@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated  | TeamsTab.ReadWrite.All |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -52,10 +51,9 @@ If successful, this method returns a `201 Created` response code.
 ### Request
 
 Here is an example of the request.
-
 <!-- {
   "blockType": "request",
-  "name": "get_team"
+  "name": "create-tab in chat"
 }-->
 
 ```http
@@ -99,7 +97,7 @@ Content-type: application/json
 The following example shows a request to create all chats.
 <!-- {
   "blockType": "request",
-  "name": "get_team"
+  "name": "create-tab in chat"
 }-->
 
 ```http
@@ -107,7 +105,6 @@ POST https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@
 ```
 
 #### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true,
