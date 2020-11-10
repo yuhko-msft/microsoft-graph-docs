@@ -1,5 +1,63 @@
 {
   "changelog": [
+    {
+        "ChangeList": [
+          {
+            "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+            "ApiChange": "Resource",
+            "ChangedApiName": "teamsAppInstallation",
+            "ChangeType": "Update",
+            "Description": "Added methods to [teamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-beta).",
+            "Target": "teamsappinstallation"
+          },
+          {
+            "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+            "ApiChange": "Method",
+            "ChangedApiName": "chat-add-installedApps",
+            "ChangeType": "Addition",
+            "Description": "Added [install app in chat APIs](https://docs.microsoft.com/en-us/graph/api/resources/chat-add-installedApps?view=graph-rest-beta).",
+            "Target": "chat-add-installedApps"
+          },
+          {
+            "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+            "ApiChange": "Method",
+            "ChangedApiName": "chat-list-installedApps",
+            "ChangeType": "Addition",
+            "Description": "Added [list apps in chat  APIs](https://docs.microsoft.com/en-us/graph/api/resources/chat-list-installedApps.md?view=graph-rest-beta).",
+            "Target": "chat-list-installedApps"
+          },
+          {
+            "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+            "ApiChange": "Method",
+            "ChangedApiName": "chat-get-installedApps",
+            "ChangeType": "Addition",
+            "Description": "Added [get app in chat APIs](https://docs.microsoft.com/en-us/graph/api/resources/chat-get-installedApps?view=graph-rest-v1.0).",
+            "Target": "chat-get-installedApps"
+          },
+          {
+            "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+            "ApiChange": "Method",
+            "ChangedApiName": "chat-upgrade-installedApps",
+            "ChangeType": "Addition",
+            "Description": "Added [Upgrade an app in chat APIs](https://docs.microsoft.com/en-us/graph/api/resources/chat-upgrade-installedApps?view=graph-rest-beta).",
+            "Target": "chat-upgrade-installedApps"
+          },
+          {
+            "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+            "ApiChange": "Method",
+            "ChangedApiName": "chat-delete-installedApps",
+            "ChangeType": "Addition",
+            "Description": "Added [Uninstall app from chat APIs](https://docs.microsoft.com/en-us/graph/api/resources/chat-delete-installedApps?view=graph-rest-beta).",
+            "Target": "chat-delete-installedApps"
+          }
+        ],
+        "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2020-11-10T00:00:00",
+        "WorkloadArea": "Teamwork",
+        "SubArea": ""
+      },    
       {
         "ChangeList": [
           {
