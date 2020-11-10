@@ -12466,15 +12466,15 @@ items:
         - name: Delete tab from channel
           href: api/teamstab-delete.md
         - name: List tabs in chat
-          href: api/teamstab-list-chat.md
+          href: api/chat-list-tabs.md
         - name: Get tab in chat
-          href: api/teamstab-get-chat.md
+          href: api/chat-get-tabs.md
         - name: Create tab in chat
-          href: api/teamstab-create-chat.md
+          href: api/chat-create-tabs.md
         - name: Update tab in chat
-          href: api/teamstab-update-chat.md
+          href: api/chat-update-tabs.md
         - name: Delete tab from chat
-          href: api/teamstab-delete-chat.md
+          href: api/chat-delete-tabs.md
       - name: Calendar
         href: resources/event.md
         items:
