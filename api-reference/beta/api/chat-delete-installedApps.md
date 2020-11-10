@@ -38,7 +38,7 @@ DELETE /chats/{chatId}/installedApps/{appInstallationId}
 ## Response 
 HTTP/1.1 204 No Content
 
-## Example
+## Example: Uninstall an app from the specified chat
 
 ### Request
 
