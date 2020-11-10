@@ -56,8 +56,6 @@ This API returns a `200` response indicating all members supplied were added to 
 
 The following example shows a request to add multiple members to a team.
 
-# [HTTP](#tab/http)
-
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
 {
@@ -75,17 +73,6 @@ POST https://graph.microsoft.com/v1.0/teams/id/members/add
     ]
 }
 ```
-
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 #### Response
 
@@ -136,17 +123,6 @@ POST https://graph.microsoft.com/v1.0/teams/id/members/add
     ]
 }
 ```
-
-# [C#](#tab/csharp)
-
-
-# [JavaScript](#tab/javascript)
-
-
-# [Objective-C](#tab/objc)
-
-
----
 
 #### Response
 
