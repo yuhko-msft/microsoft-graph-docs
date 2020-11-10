@@ -67,9 +67,11 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_conversation_member"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -100,6 +102,7 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http
+
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
