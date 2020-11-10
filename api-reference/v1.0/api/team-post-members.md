@@ -79,6 +79,8 @@ POST https://graph.microsoft.com/v1.0/teams/id/members
 -->
 
 ``` http
+HTTP/1.1 200 OK
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
