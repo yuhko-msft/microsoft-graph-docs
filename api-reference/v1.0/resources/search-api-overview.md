@@ -122,6 +122,24 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
+## Schema change deprecation warning
+
+Properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
+
+Start updating any existing apps to use current property and type names, and to get current property names in the response.
+For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
+
+| Resource                           | Change type   | Original property | Current property|
+|:-----------------------------------|:--------------|:------------------|:----------------|
+| [searchRequest](./searchrequest.md)| Rename property | **stored_fields** | **fields**      |
+| [searchQuery](./searchquery.md)    | Rename property | **query_string** | **queryString** |
+| [searchQueryString](./searchquerystring.md) | Deprecate resource | Not applicable | Not applicable |
+| [searchHit](./searchhit.md)        | Rename property | **_id** | **hitId** |
+| [searchHit](./searchhit.md)        | Rename property | **_score** | **rank** |
+| [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
+| [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
+| [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
+
 ## Search samples
 
 - Learn more about a few key use cases:
