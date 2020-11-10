@@ -18,7 +18,6 @@ The JSON blob contains the types of resources expected in the response, the unde
 > [!NOTE]
 > Be aware of [known limitations](search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results.
 
-
 ## Properties
 
 | Property     | Type        | Description |
@@ -30,21 +29,11 @@ The JSON blob contains the types of resources expected in the response, the unde
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |size|Int32|The size of the page to be retrieved. Optional.|
-|stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
 
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.searchRequest",
-  "baseType": null
-}-->
 
 ```json
 {
@@ -59,20 +48,8 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
+
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
-
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "searchRequest resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
-

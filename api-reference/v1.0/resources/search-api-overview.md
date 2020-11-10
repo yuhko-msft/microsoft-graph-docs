@@ -9,7 +9,6 @@ doc_type: resourcePageType
 
 # Use the Microsoft Search API to query data
 
-
 You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
@@ -58,7 +57,7 @@ Control pagination of the search results by specifying the following two propert
 Note the following limits if you're searching the **event** or **message** entity:
 
 - **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
-- The maximum results per page (**size**) is 25 for **message** and **event**. 
+- The maximum results per page (**size**) is 25 for **message** and **event**.
 
 There is no upper limit for SharePoint or OneDrive items. A reasonable page size is 200. A larger page size generally incurs higher latency.
 
@@ -132,7 +131,6 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
   - [Search external content](/graph/search-concept-custom-types)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
 
 ## What's new
 

@@ -1,15 +1,15 @@
 ---
-author: JeremyKelley
-ms.author: JeremyKelley
+author: lanhong
+ms.author: lanhong
 ms.date: 09/10/2017
 title: SearchResult
 localization_priority: Normal
 description: "The SearchResult resource indicates than an item is the response to a search query."
-ms.prod: ""
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
-# SearchResult resource type
+# searchResult resource type
 
 Namespace: microsoft.graph
 
