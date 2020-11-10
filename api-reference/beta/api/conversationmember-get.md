@@ -101,8 +101,8 @@ Here is an example of the response.
   "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
-```http
 
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
