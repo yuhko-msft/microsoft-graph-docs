@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /chats/{id}/tabs
 ```
@@ -48,8 +49,8 @@ If successful, this method returns a `200 OK` response code and collection of [t
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "List tabs"
-}-->
+  "name": "List tabs in chat"
+} -->
 
 ```http
 GET /chats/{chatId}/tabs
@@ -143,7 +144,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List tabs in chat",
+  "description": "List-tabs in chat",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
