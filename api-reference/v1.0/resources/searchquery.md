@@ -34,8 +34,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "queryString": "String",
-  "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
+  "queryString": "String"
 }
 ```
 

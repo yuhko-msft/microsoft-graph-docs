@@ -9,7 +9,6 @@ doc_type: resourcePageType
 
 # Use the Microsoft Search API to query data
 
-
 You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
@@ -45,7 +44,7 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
+|[externalItem](..\..\beta\resources\externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
 
 ## Page search results
 
@@ -122,24 +121,6 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 - The search API does not support custom sort for **message**, **event** or  **externalItem**.
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
-
-## Schema change deprecation warning
-
-Properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
-
-Start updating any existing apps to use current property and type names, and to get current property names in the response.
-For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
-
-| Resource                           | Change type   | Original property | Current property|
-|:-----------------------------------|:--------------|:------------------|:----------------|
-| [searchRequest](./searchrequest.md)| Rename property | **stored_fields** | **fields**      |
-| [searchQuery](./searchquery.md)    | Rename property | **query_string** | **queryString** |
-| [searchQueryString](./searchquerystring.md) | Deprecate resource | Not applicable | Not applicable |
-| [searchHit](./searchhit.md)        | Rename property | **_id** | **hitId** |
-| [searchHit](./searchhit.md)        | Rename property | **_score** | **rank** |
-| [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
-| [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
-| [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 
 ## Search samples
 
