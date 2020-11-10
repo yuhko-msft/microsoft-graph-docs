@@ -24,9 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /chats/{id}/tabs/{id}
 ```
@@ -52,10 +50,9 @@ If successful, this method returns a `200 OK` response code and a [tab](../resou
 ### Request
 
 The following is an example of the request.
-
 <!-- {
   "blockType": "request",
-  "name": "get_tab"
+  "name": "get_tab in chat"
 }-->
 
 ```http
@@ -64,7 +61,6 @@ GET /chats/{chat-Id}/tabs/{tab-Id}
 ### Response
 
 The following is an example of the response. 
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +93,6 @@ Content-type: application/json
 ### Example : Get tabs in a Teams chat
 
 #### Request
-
 The following example shows a request to get all chats.
 <!-- {
   "blockType": "request",
@@ -109,7 +104,6 @@ GET /chats/{chat-Id}/tabs/{tab-Id}
 ```
 
 #### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true,
