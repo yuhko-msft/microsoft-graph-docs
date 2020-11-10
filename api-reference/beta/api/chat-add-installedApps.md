@@ -43,7 +43,7 @@ The request body should contain the ID of the existing catalog app to be added.
 
 201 Created
 
-## Example
+## Example:  Install an app in the specified chat
 
 ### Request
 
