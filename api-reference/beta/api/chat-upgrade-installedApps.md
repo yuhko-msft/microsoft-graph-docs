@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade [teamsAppInstallation](../resources/teamsappinstallation.md) of an [app](../resources/teamsapps.md) within a [chat](../resources/chat.md).
+Upgrade [teamsAppInstallation](../resources/teamsappinstallation.md) of an [app](../resources/teamsapp.md) within a [chat](../resources/chat.md).
 
 ## Permissions
 
