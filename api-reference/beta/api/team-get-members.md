@@ -78,7 +78,8 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('id')/members('id')",
-    "values": {
+    "values": [
+    {
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
         "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
         "roles": ["owner"],
@@ -86,6 +87,7 @@ Content-Type: application/json
         "displayName": "George Washington",
         "email": "geowa@contoso.com"
     }
+  ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
