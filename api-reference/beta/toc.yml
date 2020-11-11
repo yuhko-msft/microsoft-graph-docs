@@ -12453,15 +12453,15 @@ items:
         - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
         - name: Install app in chat
-          href: chat-add-installedApps.md
+          href: api/chat-add-installedApps.md
         - name: List apps in chat
-          href: chat-list-installedApps.md
+          href: api/chat-list-installedApps.md
         - name: Get app in chat
-          href: chat-get-installedApps.md
+          href: api/chat-get-installedApps.md
         - name: Upgrade an app in chat
-          href: chat-upgrade-installedApps.md
+          href: api/chat-upgrade-installedApps.md
         - name: Uninstall app from chat
-          href: chat-delete-installedApps.md
+          href: api/chat-delete-installedApps.md
       - name: Tab
         href: resources/teamstab.md
         items:
