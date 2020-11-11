@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 
 {
     "id":"id",
-    "roles": ["owner"]
+    "roles": ["owner"],
     "userId":"7051f984-682e-4a08-a6b2-df82fe7d9fe1",
     "displayName":"John Doe",
     "email":"johnDoe@yourTenant.com"
