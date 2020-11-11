@@ -54,13 +54,13 @@ The following is an example of the request.
 
 ```http
 GET /chats/{chatId}/tabs
-
 ```
 
 ### Response
 
 The following is an example of the response.
-<!-- {
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
