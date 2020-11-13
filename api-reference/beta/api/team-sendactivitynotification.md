@@ -52,7 +52,7 @@ POST /teams/{id}/sendActivityNotification
 | activityType  | string  | Represents the type of activity and must be declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). Required.|
 | recipient     | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) | The intended receiver. A recipient must be a Teams user with the ability to post notifications to everyone in a team, channel, and chat.  Required. |
 | from          | string  | Displays a hint if the sender is different than the caller on the Microsoft Graph token. |
-| chainID       | long    | Enables the developer to override a previous notification. If not included, a new notifcation will be posted. **Note:** Currently, when specifying **chainId**, an unrelated notification from the same app will sometimes be replaced. |
+| chainID       | long    | Enables the developer to override a previous notification. If not included, a new notification will be posted. **Note:** Currently, when specifying **chainId**, an unrelated notification from the same app will sometimes be replaced. |
 | previewText   | [itemBody](../resources/itemBody.md) | Preview text displayed to the user as part an activity feed item. |
 | templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection | Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). |
 
