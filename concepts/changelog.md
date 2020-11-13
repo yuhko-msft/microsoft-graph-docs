@@ -24,7 +24,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta | Added HasPhysicalDevice property to [printer](/graph/api/resources/printer?view=graph-rest-beta) resource. | 
-| Addition | beta | Added abort action to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
+| Addition | beta | Added [abort](/graph/api/printjob-abort?view=graph-rest-beta) action to [printJob](/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
 | Addition | beta | Added configuration property to [redirect](/graph/api/printjob-redirect?view=graph-rest-beta) action on printJob(/graph/api/resources/printjob?view=graph-rest-beta) resource. | 
 
 ### Identity and access
