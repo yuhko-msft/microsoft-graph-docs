@@ -63,7 +63,7 @@ The following is an example of the response.
 {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.teamsTab"
   } -->
 
 ```http
@@ -112,7 +112,7 @@ GET /chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.teamsTab"
   } -->
 
 The following is an example of the response.
