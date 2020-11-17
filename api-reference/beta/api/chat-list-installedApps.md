@@ -125,7 +125,7 @@ Content-type: application/json
         {
             "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
             "teamsAppDefinition": {
-                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA=",
                 "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
                 "displayName": "OneNote",
                 "version": "1.0.0"
