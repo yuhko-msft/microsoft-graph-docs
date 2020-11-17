@@ -88,7 +88,8 @@ The following is the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.aadUserConversationMember"
 } -->
 
 ```http
@@ -149,7 +150,8 @@ The following is the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.aadUserConversationMember"
 } -->
 
 ```http
