@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Used for the `accessPackageQuestion` property of an [access package assignment policy](accesspackageassignmentpolicy.md). 
 
+Subtypes include [accessPackageTextInputQuestions](accesspackagetextinputquestion.md) and [accessPackageMultipleChoiceQuestions](accesspackagemultiplechoicequestion.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
