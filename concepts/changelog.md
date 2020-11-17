@@ -3385,7 +3385,6 @@ Deletion|beta|Removed the importAppleDeviceIdentityList action on [importedApple
 |Addition|beta|Added the **managedDeviceCleanupSettings** property to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) entity|
 |Deletion|beta|Removed the **usernameSource** property from the [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta) entity|
 |Addition|beta|Added the **thirdPartyKeybo
-=======
 |Deletion|beta|Removed the importAppleDeviceIdentityList action on [importedAppleDeviceIdentity](/graph/api/resources/intune-corpenrollment-importedappledeviceidentity?view=graph-rest-beta&preserve-view=true) collection |
 |Deletion|beta|Removed the [updateDeviceProfileAssignment](/graph/api/intune-corpenrollment-enrollmentprofile-updatedeviceprofileassignment?view=graph-rest-beta&preserve-view=true) action on [enrollmentProfile](/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta&preserve-view=true) |
 |Deletion|beta|Removed the setDefaultProfile action on [enrollmentProfile](/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta&preserve-view=true) |
