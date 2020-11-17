@@ -268,7 +268,7 @@ Content-type: application/json
 
 ### Example 3: Create assignment policy with questions
 
-Questions configured in an assignment policy will be asked to requestors in scope of the policy. Their answers will be shown to their approvers.
+Questions configured in an assignment policy will be asked to requestors in scope of the policy. Their answers will be shown to their approvers. Question IDs are read-only and are included in the response by default.
 
 #### Request
 
