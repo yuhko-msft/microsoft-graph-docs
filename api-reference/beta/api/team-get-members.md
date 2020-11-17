@@ -65,7 +65,8 @@ GET https://graph.microsoft.com/v1.0/teams{team-id}/members{membership-id}
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
-<!-- {
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "name": "get_teammember",
@@ -78,7 +79,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('id')/members('id')",
-    "values": [
+    "value": [
     {
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
         "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
