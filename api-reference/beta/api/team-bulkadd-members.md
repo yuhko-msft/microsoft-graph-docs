@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP Request
 
 This is a bound action for adding multiple elements to a conversationMember collection in a single request.
+<!-- { "blockType": "ignored" } -->
 
 ```http
 POST /teams/{team-id}/members/add
@@ -55,9 +56,14 @@ This API returns a `200` response indicating all members supplied were added to 
 #### Request
 
 The following example shows a request to add multiple members to a team.
+<!-- {
+  "blockType": "request",
+  "name": "bulkaddmembers_team"
+}-->
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
+
 {
     "values": [
         {
@@ -79,6 +85,11 @@ POST https://graph.microsoft.com/v1.0/teams/id/members/add
 The following is the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -106,8 +117,14 @@ HTTP/1.1 200 OK
 
 The following example shows a request to add multiple members to a team with partial failure.
 
+<!-- {
+  "blockType": "request",
+  "name": "bulkaddmembers_team"
+}-->
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/id/members/add
+
 {
     "values": [
         {
@@ -129,6 +146,11 @@ POST https://graph.microsoft.com/v1.0/teams/id/members/add
 The following is the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 207 MULTI-STATUS
@@ -152,3 +174,18 @@ HTTP/1.1 207 MULTI-STATUS
     ]
 }
 ```
+
+<!-- uuid: d945a9a4-0e5b-11eb-adc1-0242ac120002
+2020-10-14 20:22:11 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "bulkaddmembers_team",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
