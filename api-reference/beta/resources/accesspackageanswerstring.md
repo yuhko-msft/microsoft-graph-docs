@@ -21,7 +21,7 @@ Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
 |:---|:---|:---|
 |answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|Question the answer is for. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md)|
 |displayValue|String|The localized display values shown to the requestor and approvers. Inherited from [accessPackageAnswer](../resources/accesspackageanswer.md)|
-|value|String|**TODO: Add Description**|
+|value|String|The value stored on the requestor's user profile, if this answer is configured to be stored as a specific attribute.|
 
 ## Relationships
 None.
