@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 Indicates an answer option for an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md). Multiple accessPackageAnswerChoices can be added to an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|actualValue|String|The values that are stored. Only relevant when different from the display value.|
-|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The localized display values shown to the requestor and approvers.|
+|Property|Type|Description|Required|Read-only|
+|:---|:---|:---|:---|:---|
+|actualValue|String|The actual value of the selected choice. This is typically a string value which is understable by applications.|Yes|No|
+|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The localized display values shown to the requestor and approvers.|Yes|No|
 
 ## Relationships
 None.
