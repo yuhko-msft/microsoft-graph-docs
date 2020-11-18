@@ -68,6 +68,13 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
 
 ```
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
+
 ### Response
 
 `
