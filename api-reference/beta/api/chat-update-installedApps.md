@@ -1,13 +1,13 @@
 ---
-title: "Upgrade app in a chat"
-description: "Upgrade an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
-author: "nkramer"
+title: "Update app in a chat"
+description: "Update an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
+author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Upgrade app in a chat
+# Update app in a chat
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,7 @@ POST /chats/{chatId}/installedApps/{appInstallationId}/upgrade
 ## Response 
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 ## Example: Upgrade an app installed in a chat
@@ -54,9 +54,18 @@ POST https://graph.microsoft.com/beta/chats/{chatId}/installedApps/{appInstallat
 
 ### Response
 
-<<<<<<< HEAD:api-reference/beta/api/chat-update-installedApps.md
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+
+Content-type: application/json
+
+{
+      "@odata.type":"#microsoft.graph.chat",
+      "id":"e8127558-91ad-4595-8703-6e1ed3f04bfe",
+      "topic":"Get installed app in chat",
+      "createdDateTime":"2020-10-27 23:52:29",
+      "lastUpdatedDateTime":"2020-10-27 23:52:29"
+}
 ```
 
 <!--{
@@ -67,18 +76,4 @@ HTTP/1.1 204 No Content
     "createdDateTime": "2020-10-27 23:52:29",
     "lastUpdatedDateTime": "2020-10-27 23:52:29"
   }
-=======
-```
-HTTP/1.1 204 No Content
-```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Upgrade app in chat",
-  "keywords": "",
-  "section": "Upgrade app in chat",
-  "tocPath": ""
->>>>>>> 881227566af8693a212df6f9ae5e49258bacf75c:api-reference/beta/api/chat-upgrade-installedApps.md
 }-->

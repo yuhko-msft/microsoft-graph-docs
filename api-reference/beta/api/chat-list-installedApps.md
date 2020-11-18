@@ -6,3 +6,82 @@ localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
+
+# List apps in chat
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /chats/{chatId}/installedApps
+```
+
+## Optional query parameters
+
+This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+
+## Request headers
+
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.
+
+## Examples
+
+### Example 1: Get all the apps installed in the specified chat
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsApp"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
+
+```
+
+### Response
+
+`
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.chat",
+         "id":"e8127558-91ad-4595-8703-6e1ed3f04bfe",
+         "topic":"List installed apps in chat",
+         "createdDateTime":"2020-10-27 23:52:29",
+         "lastUpdatedDateTime":"2020-10-27 23:52:29"
+      }
+   ]
+}
+``

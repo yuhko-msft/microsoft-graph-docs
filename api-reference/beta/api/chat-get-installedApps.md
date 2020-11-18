@@ -55,20 +55,18 @@ GET https://graph.microsoft.com/beta/chats/{chatid}/installedApps/{appInstallati
 
 ### Response
 
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
-```
-{
-"id": "id-value"
-}
-```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List apps in chat",
-  "keywords": "",
-  "section": "List apps in chat",
-  "tocPath": ""
-}-->
+{
+   "value":{
+      "@odata.type":"#microsoft.graph.chat",
+      "id":"e8127558-91ad-4595-8703-6e1ed3f04bfe",
+      "topic":"Get installed app in chat",
+      "createdDateTime":"2020-10-27 23:52:29",
+      "lastUpdatedDateTime":"2020-10-27 23:52:29"
+   }
+}
+
+```
