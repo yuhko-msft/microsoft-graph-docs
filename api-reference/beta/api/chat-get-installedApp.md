@@ -37,7 +37,7 @@ GET /chats/{chatId}/installedApps/{appInstallationId}
 
 ## Response
 
-`200 OK` and a teamsAppInstallation object.
+If successful, this method returns a `200 OK` and a [teamsApp](../resources/teamsapp.md) object in the body.
 
 ## Example: Get an app installed in the specified chat
 
@@ -64,8 +64,8 @@ GET https://graph.microsoft.com/beta/chats/{chatid}/installedApps/{appInstallati
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
 
+Content-Type: application/json
 {
    "value":{
       "@odata.type":"#microsoft.graph.chat",

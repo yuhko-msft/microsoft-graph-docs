@@ -33,11 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 POST /chats/{chatId}/installedApps/{appInstallationId}/upgrade
 ```
 
-## Response 
+## Response
 
-```http
-HTTP/1.1 200 OK
-```
+If successful, this method returns a `200 OK` response code and an updated [teamsApp](../resources/teamsapp.md) object in the response body.
 
 ## Example: Upgrade an app installed in a chat
 
@@ -63,7 +61,6 @@ POST https://graph.microsoft.com/beta/chats/{chatId}/installedApps/{appInstallat
 HTTP/1.1 200 OK
 
 Content-Type: application/json
-
 {
     "@odata.type": "#microsoft.graph.chat",
     "id": "e8127558-91ad-4595-8703-6e1ed3f04bfe",
