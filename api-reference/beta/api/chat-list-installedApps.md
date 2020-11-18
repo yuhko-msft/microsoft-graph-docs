@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
 
 `
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 {
    "value":[
       {

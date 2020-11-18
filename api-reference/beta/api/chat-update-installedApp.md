@@ -59,17 +59,16 @@ POST https://graph.microsoft.com/beta/chats/{chatId}/installedApps/{appInstallat
   "truncated": true,
 }
 -->
-
 ```http
 HTTP/1.1 200 OK
 
-Content-type: application/json
+Content-Type: application/json
 {
-      "@odata.type": "#microsoft.graph.chat",
-      "id": "e8127558-91ad-4595-8703-6e1ed3f04bfe",
-      "topic": "Update installed app in chat",
-      "createdDateTime": "2020-10-27 23:52:29",
-      "lastUpdatedDateTime": "2020-10-27 23:52:29"
+    "@odata.type": "#microsoft.graph.chat",
+    "id": "e8127558-91ad-4595-8703-6e1ed3f04bfe",
+    "topic": "Update installed app in chat",
+    "createdDateTime": "2020-10-27 23:52:29",
+    "lastUpdatedDateTime": "2020-10-27 23:52:29"
 }
 ```
 
