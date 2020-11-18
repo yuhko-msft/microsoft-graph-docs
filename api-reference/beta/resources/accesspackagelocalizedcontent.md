@@ -1,9 +1,9 @@
 ---
 title: "accessPackageLocalizedContent resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A complex type used to represent text in different locals, along with a default text.*"
+author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+A complex type used to represent a text in multiple localalized forms. It includes a default text, which is used in any case where the requested localization is not available.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultText|String|**TODO: Add Description**|
-|localizedTexts|[accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md) collection|**TODO: Add Description**|
+|defaultText|String|The fallback string, which is used when a requested localization is not available.|
+|localizedTexts|[accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md) collection|Content represented in a format for a specific locale.|
 
 ## Relationships
 None.
