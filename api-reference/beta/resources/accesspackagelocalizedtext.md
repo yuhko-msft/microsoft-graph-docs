@@ -1,9 +1,9 @@
 ---
 title: "accessPackageLocalizedText resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A complex type used to represent a string in a specific language."
+author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+A complex type which would be used to represent a string in a specific language.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|languageCode|String|**TODO: Add Description**|
-|text|String|**TODO: Add Description**|
+|Property|Type|Description|Required|Read-only|
+|:---|:---|:---|:---|:---|
+|languageCode|String|The ISO code for the intended language.|Yes|No|
+|text|String|The text in the specific language|Yes|No|
 
 ## Relationships
 None.
