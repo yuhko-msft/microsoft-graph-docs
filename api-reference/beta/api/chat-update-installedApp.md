@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/chats/{chatId}/installedApps/{appInstallat
 HTTP/1.1 200 OK
 
 Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.chat",
     "id": "e8127558-91ad-4595-8703-6e1ed3f04bfe",
@@ -71,13 +72,3 @@ Content-Type: application/json
     "lastUpdatedDateTime": "2020-10-27 23:52:29"
 }
 ```
-
-<!--{
-  "value": {
-    "@odata.type": "#microsoft.graph.chat",
-    "id": "d58b7b66-a74b-4726-a038-a701e31988c2",
-    "topic": "Uninstall app in chat",
-    "createdDateTime": "2020-10-27 23:52:29",
-    "lastUpdatedDateTime": "2020-10-27 23:52:29"
-  }
-}-->

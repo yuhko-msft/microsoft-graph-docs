@@ -73,12 +73,12 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chat"
+  "@odata.type": "Collection(microsoft.graph.chat)"
 }
 -->
-
-`
+```http
 HTTP/1.1 200 OK
+
 Content-Type: application/json
 {
    "value":[
@@ -91,4 +91,4 @@ Content-Type: application/json
       }
    ]
 }
-``
+```
