@@ -26,7 +26,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+<!-- { 
+"blockType": "ignored" 
+} -->
+
 ```http
 DELETE /chats/{chatId}/installedApps/{appInstallationId}
 ```
@@ -37,11 +41,9 @@ DELETE /chats/{chatId}/installedApps/{appInstallationId}
 HTTP/1.1 204 No Content
 ```
 
-## Example
+## Example: Uninstall an app from the specified chat
 
 ### Request
-
-The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -54,6 +56,7 @@ DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f29
 
 ### Response
 
+<<<<<<< HEAD
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -66,4 +69,18 @@ HTTP/1.1 204 No Content
     "createdDateTime": "2020-10-27 23:52:29",
     "lastUpdatedDateTime": "2020-10-27 23:52:29"
   }
+=======
+```
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Uninstall app in a chat",
+  "keywords": "",
+  "section": "Uninstall app in a chat",
+  "tocPath": ""
+>>>>>>> 881227566af8693a212df6f9ae5e49258bacf75c
 }-->

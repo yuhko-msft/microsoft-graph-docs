@@ -1,19 +1,19 @@
 ---
-title: "List app to chat"
-description: "API to list the apps installed in a chat."
+title: "List apps in chat"
+description: "List the apps installed in a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List app in chat
+# List apps in chat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List an [app](../resources/teamsapp.md) within [chat](../resources/chat.md).
+List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -26,36 +26,68 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /chats/{chatId}/installedApps
 ```
 
-## Example
+## Optional query parameters
+
+This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+
+## Request headers
+
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.
+
+## Examples
+
+### Example 1: Get all the apps installed in the specified chat
 
 ### Request
 
-The following is an example of the request.
-
 <!-- {
   "blockType": "request",
-  "name": "add_teamsApp"
+  "name": "list_teamsApp"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps
-{
-"teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
-}
+GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
+
 ```
 
 ### Response
 
+<<<<<<< HEAD
 `
 HTTP/1.1 200 OK
 Content-type: application/json
 ``
 
+=======
+<!-- {
+  "blockType": "response",
+  "name": "chat_list_installedApps"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+>>>>>>> 881227566af8693a212df6f9ae5e49258bacf75c
 {
   "value": [
     {
@@ -65,6 +97,7 @@ Content-type: application/json
 }
 ```
 
+<<<<<<< HEAD
 <!--{
   "value": {
     "@odata.type": "#microsoft.graph.chat",
@@ -74,3 +107,72 @@ Content-type: application/json
     "lastUpdatedDateTime": "2020-10-27 23:52:29"
   }
 }-->
+=======
+### Example 2: Get the names and other details of all the apps installed in a chat
+
+#### Request
+
+<!-- {
+  "blockType": "ignored",
+  "name": "chat_list_installedApps"
+}-->
+```http
+GET https://graph.microsoft.com/beta/chat/{id}/teamwork/installedApps?$expand=teamsAppDefinition
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "chat_list_installedApps",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "value": [
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
+            "teamsAppDefinition": {
+                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA=",
+                "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
+                "displayName": "OneNote",
+                "version": "1.0.0"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk=",
+            "teamsAppDefinition": {
+                "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
+                "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
+                "displayName": "SurveyMonkey",
+                "version": "1.7"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMyYTUyNzcwMy0xZjZmLTQ1NTktYTMzMi1kOGE3ZDI4OGNkODg=",
+            "teamsAppDefinition": {
+                "id": "MmE1Mjc3MDMtMWY2Zi00NTU5LWEzMzItZDhhN2QyODhjZDg4IyMxLjA=",
+                "teamsAppId": "2a527703-1f6f-4559-a332-d8a7d288cd88",
+                "displayName": "SharePoint",
+                "version": "1.0"
+            }
+        }
+  ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List app in chat",
+  "keywords": "",
+  "section": "List app in chat",
+  "tocPath": ""
+}-->
+
+>>>>>>> 881227566af8693a212df6f9ae5e49258bacf75c

@@ -1,6 +1,6 @@
 ---
 title: "Add app to chat"
-description: "API to install an app to chat."
+description: "Install an app to chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -26,7 +26,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+<!-- { 
+"blockType": "ignored" 
+} -->
+
 ```http
 POST /chats/{chatId}/installedApps
 ```
@@ -46,15 +50,13 @@ The request body should contain the catalog app's generated app ID. *See* [teams
 
 If successful, this method returns a `201 Created` response code and a [teamsApp](../resources/channel.md) in the response body.
 
-## Example
+## Example:  Install an app in the specified chat
 
 ### Request
 
-The following is an example of the request.
-
 <!-- {
   "blockType": "request",
-  "name": "add_teamsApp"
+  "name": "add_installedApps"
 }-->
 
 ```http
