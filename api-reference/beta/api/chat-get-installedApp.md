@@ -35,6 +35,12 @@ One of the following permissions is required to call this API. To learn more, in
 GET /chats/{chatId}/installedApps/{appInstallationId}
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
 ## Response
 
 If successful, this method returns a `200 OK` and a [teamsApp](../resources/teamsapp.md) object in the body.
@@ -52,6 +58,12 @@ If successful, this method returns a `200 OK` and a [teamsApp](../resources/team
 GET https://graph.microsoft.com/beta/chats/{chatid}/installedApps/{appInstallationId}
 
 ```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ### Response
 

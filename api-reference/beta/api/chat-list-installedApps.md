@@ -65,7 +65,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ```http
 GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
-
 ```
 
 ### Response
@@ -81,7 +80,7 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
-   "value":[
+   "value": [
       {
          "@odata.type":"#microsoft.graph.chat",
          "id":"e8127558-91ad-4595-8703-6e1ed3f04bfe",
