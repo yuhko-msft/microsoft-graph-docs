@@ -44,7 +44,7 @@ POST /chats/{chatId}/installedApps
 
 ## Request body
 
-The request body should contain the catalog app's generated app ID. *See* [teamsApp Properties](../resources/teamsapp?view=graph-rest-1.0#properties)
+The request body should contain the catalog app's generated app ID. *See* [teamsApp Properties](../resources/teamsapp.md#properties)
 
 ## Response
 
