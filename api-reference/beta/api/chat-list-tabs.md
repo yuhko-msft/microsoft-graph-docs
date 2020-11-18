@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ## Example
 
 ### Request
-The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "List tabs in chat"
@@ -58,7 +58,6 @@ GET /chats/{chatId}/tabs
 
 ### Response
 
-The following is an example of the response.
 <!-- 
 {
   "blockType": "response",
@@ -97,7 +96,6 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request to list all chats.
 <!-- {
   "blockType": "request",
   "name": "list-tabs in chat"
@@ -115,7 +113,7 @@ GET /chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
   "@odata.type": "microsoft.graph.conversationMember"
   } -->
 
-The following is an example of the response.
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
