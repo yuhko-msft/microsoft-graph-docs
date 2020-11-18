@@ -45,7 +45,7 @@ HTTP/1.1 200 OK
 
 <!-- {
   "blockType": "request",
-  "name": "add_teamsApp"
+  "name": "update_installedApp"
 }-->
 
 ```http

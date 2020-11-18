@@ -45,7 +45,7 @@ GET /chats/{chatId}/installedApps/{appInstallationId}
 
 <!-- {
   "blockType": "request",
-  "name": "get_teamsApp"
+  "name": "get_installedApp"
 }-->
 
 ```http

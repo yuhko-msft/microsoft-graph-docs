@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [teamsApp
 
 <!-- {
   "blockType": "request",
-  "name": "add_installedApps"
+  "name": "add_installedApp"
 }-->
 
 ```http
