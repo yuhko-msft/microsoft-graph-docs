@@ -43,8 +43,6 @@ GET /chats/{chatId}/installedApps/{appInstallationId}
 
 ### Request
 
-The following is an example of the request.
-
 <!-- {
   "blockType": "request",
   "name": "get_teamsApp"
