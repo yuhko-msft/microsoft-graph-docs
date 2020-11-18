@@ -47,8 +47,6 @@ The request body should contain the ID of the existing catalog app to be added.
 
 ### Request
 
-The following is an example of the request.
-
 <!-- {
   "blockType": "request",
   "name": "add_installedApps"
