@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs an [app](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
+Installs a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -31,13 +31,20 @@ One of the following permissions is required to call this API. To learn more, in
 POST /chats/{chatId}/installedApps
 ```
 
+## Request headers
+
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
+
 ## Request body
 
-The request body should contain the ID of the existing catalog app to be added.
+The request body should contain the catalog app's generated app ID. *See* [teamsApp Properties](../resources/teamsapp?view=graph-rest-1.0#properties)
 
 ## Response
 
-201 Created
+If successful, this method returns a `201 Created` response code and a [teamsApp](../resources/channel.md) in the response body.
 
 ## Example
 
@@ -60,18 +67,22 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
 ```http
 HTTP/1.1 201 Created
 
 Content-Type: application/json
-```
+{
+  "@odata.type": "#microsoft.graph.chat",
+  "id": "4c54cdc2-6f55-4587-a7cc-c7280997b04f",
+  "topic": "Add app to chat",
+  createdDateTime": "2020-10-27 23:52:29",
+  "lastUpdatedDateTime": "2020-10-27 23:52:29"
+}
 
-<!--{
-  "value": {
-    "@odata.type": "#microsoft.graph.chat",
-    "id": "4c54cdc2-6f55-4587-a7cc-c7280997b04f",
-    "topic": "Add app to chat",
-    "createdDateTime": "2020-10-27 23:52:29",
-    "lastUpdatedDateTime": "2020-10-27 23:52:29"
-  }
-}-->
+```
