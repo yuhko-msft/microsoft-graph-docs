@@ -15,7 +15,7 @@ The complex type of a requestor's provided answer to an [accessPackageQuestion](
 
 ## Properties
 |Property|Type|Description|Required|Read-only|
-|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|
 |answeredQuestion|[accessPackageQuestion](../resources/accesspackagequestion.md)|The question the answer is for.|Yes|Yes|
 |displayValue|String|The display value of the answer.|Yes|No|
 
