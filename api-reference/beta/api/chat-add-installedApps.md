@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "@odata.type": "microsoft.graph.chat"
 } -->
 
 ```http
@@ -80,14 +80,14 @@ HTTP/1.1 201 Created
 
 Content-Type: application/json
 {
-   "value": [
-      {
-         "@odata.type": "#microsoft.graph.chat",
-         "id": "4c54cdc2-6f55-4587-a7cc-c7280997b04f",
-         "topic": "Add app to chat",
-         "createdDateTime": "2020-10-27 23:52:29",
-         "lastUpdatedDateTime": "2020-10-27 23:52:29"
-      }
-   ]
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.chat",
+      "id": "4c54cdc2-6f55-4587-a7cc-c7280997b04f",
+      "topic": "Add app to chat",
+      "createdDateTime": "2020-10-27 23:52:29",
+      "lastUpdatedDateTime": "2020-10-27 23:52:29"
+    }
+  ]
 }
 ```
