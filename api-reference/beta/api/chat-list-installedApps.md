@@ -57,8 +57,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
-
 <!-- {
   "blockType": "request",
   "name": "list_teamsApp"
@@ -78,6 +76,7 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -94,7 +93,6 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "chat_list_installedApps"
