@@ -59,12 +59,6 @@ GET https://graph.microsoft.com/beta/chats/{chatid}/installedApps/{appInstallati
 
 ```
 
-## Request headers
-
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-
 ### Response
 
 <!-- {
@@ -79,7 +73,7 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
-   "value":{
+   "value": {
       "@odata.type":"#microsoft.graph.chat",
       "id":"e8127558-91ad-4595-8703-6e1ed3f04bfe",
       "topic":"Get installed app in chat",
@@ -87,5 +81,4 @@ Content-Type: application/json
       "lastUpdatedDateTime":"2020-10-27 23:52:29"
    }
 }
-
-```
+`
