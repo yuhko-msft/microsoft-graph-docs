@@ -31,7 +31,7 @@ GET /chats/{id}/tabs/{id}
 
 ## Optional query parameters
 
-This method supports the $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
