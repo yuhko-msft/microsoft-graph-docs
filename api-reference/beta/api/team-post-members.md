@@ -121,6 +121,6 @@ HTTP/1.1 201 Created
 }
 -->
 
-## See also
+// ## See also
 
-[Add channel member](../api/channel-add-members.md)
+// [Add channel member](../api/channel-add-members.md)
