@@ -78,7 +78,7 @@ Content-Type: application/json
       "id":"e8127558-91ad-4595-8703-6e1ed3f04bfe",
       "topic":"Get installed app in chat",
       "createdDateTime":"2020-10-27 23:52:29",
-      "lastUpdatedDateTime":"2020-10-27 23:52:29"
+      "lastEditedDateTime":"2020-10-27 23:52:29"
    }
 }
 `

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade [teamsAppInstallation](../resources/teamsappinstallation.md) of an [app](../resources/teamsapp.md) within a [chat](../resources/chat.md).
+Update [teamsAppInstallation](../resources/teamsappinstallation.md) of an [app](../resources/teamsapp.md) within a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -66,6 +66,6 @@ Content-Type: application/json
     "id": "e8127558-91ad-4595-8703-6e1ed3f04bfe",
     "topic": "Update installed app in chat",
     "createdDateTime": "2020-10-27 23:52:29",
-    "lastUpdatedDateTime": "2020-10-27 23:52:29"
+    "lastEditedDateTime": "2020-10-27 23:52:29"
 }
 ``
