@@ -60,4 +60,14 @@ POST https://graph.microsoft.com/beta/chats/{chatId}/installedApps/{appInstallat
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "id-value"
+    }
+  ]
+}
+```
 ```
