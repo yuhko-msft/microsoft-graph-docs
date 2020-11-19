@@ -109,6 +109,5 @@ HTTP/1.1 200 OK
 }
 -->
 
-<!-- ## See also
-
+<!--- ## See also
  [Update channel member](../api/channel-update-member.md) -->
