@@ -79,4 +79,13 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "id-value"
+    }
+  ]
+}
 ```
