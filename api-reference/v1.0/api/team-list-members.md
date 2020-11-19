@@ -68,8 +68,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teams-Id}/members
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_team_members",
-  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
+    "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }-->
 
 ``` http
