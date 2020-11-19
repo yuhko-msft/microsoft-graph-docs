@@ -51,9 +51,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [teamsApp](../resources/teamsapp.md) objects in the response body.
 
-## Examples
-
-### Example 1: Get all the apps installed in the specified chat
+## Example: Get all the apps installed in the specified chat
 
 ### Request
 
@@ -78,4 +76,13 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "id-value"
+    }
+  ]
+}
 ```
