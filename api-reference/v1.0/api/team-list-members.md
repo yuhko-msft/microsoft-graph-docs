@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teams-Id}/members
 <!-- {
   "blockType": "response",
   "truncated": true,
-    "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
+  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }-->
 
 ``` http
@@ -100,7 +100,7 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "team_ members_list",
+  "description": " list team members",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
