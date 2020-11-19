@@ -103,6 +103,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+// ## See also
 
-[Delete channel member](../api/channel-delete-members.md)
+// [Delete channel member](../api/channel-delete-members.md)
