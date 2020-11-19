@@ -78,17 +78,4 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
 
 ```http
 HTTP/1.1 200 OK
-
-Content-Type: application/json
-{
-   "value": [
-      {
-         "@odata.type":"#microsoft.graph.chat",
-         "id":"e8127558-91ad-4595-8703-6e1ed3f04bfe",
-         "topic":"List installed apps in chat",
-         "createdDateTime":"2020-10-27 23:52:29",
-         "lastEditedDateTime":"2020-10-27 23:52:29"
-      }
-   ]
-}
 ```

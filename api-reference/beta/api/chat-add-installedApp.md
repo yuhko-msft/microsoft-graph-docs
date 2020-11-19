@@ -79,12 +79,4 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-
-Content-Type: application/json
-{
-    "@odata.type": "#microsoft.graph.chat",
-    "id": "4c54cdc2-6f55-4587-a7cc-c7280997b04f",
-    "createdDateTime": "2020-10-27 23:52:29",
-    "lastEditedDateTime": "2020-10-27 23:52:29"
-}
 ```
