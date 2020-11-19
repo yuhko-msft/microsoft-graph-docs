@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "get_conversationmember"
+  "name": "get_team_members"
 } -->
 
 ``` http
@@ -64,11 +64,11 @@ GET https://graph.microsoft.com/v1.0/teams/{teams-Id}/members
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversationmember",
+  "name": "get_team_members",
   "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }-->
 
@@ -101,7 +101,7 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "conversation member list",
+  "description": "team_ members_list",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
