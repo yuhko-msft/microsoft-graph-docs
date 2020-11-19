@@ -57,6 +57,7 @@ POST https://graph.microsoft.com/beta/chats/{chatId}/installedApps/{appInstallat
   "truncated": true
 }
 -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -68,4 +69,4 @@ Content-Type: application/json
     "createdDateTime": "2020-10-27 23:52:29",
     "lastEditedDateTime": "2020-10-27 23:52:29"
 }
-``
+```

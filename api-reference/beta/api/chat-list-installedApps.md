@@ -75,6 +75,7 @@ GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
   "@odata.type": "Collection(microsoft.graph.chat)"
 }
 -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -90,4 +91,4 @@ Content-Type: application/json
       }
    ]
 }
-``
+```

@@ -76,6 +76,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.chat"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 
@@ -86,4 +87,4 @@ Content-Type: application/json
     "createdDateTime": "2020-10-27 23:52:29",
     "lastEditedDateTime": "2020-10-27 23:52:29"
 }
-``
+```
