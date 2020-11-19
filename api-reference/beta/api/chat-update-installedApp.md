@@ -70,4 +70,3 @@ Content-type: application/json
   ]
 }
 ```
-```
