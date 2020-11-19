@@ -105,6 +105,6 @@ HTTP/1.1 200 OK
 }
 -->
 
-// ## See also
+<!-- ## See also
 
-// [Update the role of a member in a channel](../api/channel-update-members.md)
+ [Update the role of a member in a channel](../api/channel-update-members.md) -->
