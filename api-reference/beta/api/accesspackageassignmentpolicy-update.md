@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 
 ### Request
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -219,13 +219,7 @@ Content-length: 1000
     }]
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
