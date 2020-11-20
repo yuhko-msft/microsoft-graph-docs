@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 <!-- 
 {
   "blockType": "request",
-  "name": "get_team_members"
+  "name": "get_teammember"
 }-->
 
 ```http
@@ -72,10 +72,10 @@ GET https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membersid}
 {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.conversationMember)"
+  "name": "get_teammember",
+  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 } 
 -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
