@@ -54,7 +54,8 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 
 ### Request
 
-<!-- {
+<!-- 
+{
   "blockType": "request",
   "name": "get_team_members"
 }-->
@@ -65,7 +66,8 @@ GET https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membersid}
 
 ### Response
 
-<!-- {
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
