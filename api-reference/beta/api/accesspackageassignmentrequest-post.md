@@ -150,6 +150,7 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Arizona",
         "answeredQuestion": {
+            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
             "isRequired": false,
             "text": {
                 "defaultText": "what state are you from?",
@@ -160,15 +161,15 @@ Content-type: application/json
             },
             "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
             "choices": [{
-                "actualValue": "Arizona",
+                "actualValue": "AZ",
                 "displayValue": {
                     "localizedTexts": [{
-                        "text": "Arizona?",
+                        "text": "Arizona",
                         "languageCode": "es"
                     }]
                 }
             }, {
-                "actualValue": "California",
+                "actualValue": "CA",
                 "displayValue": {
                     "localizedTexts": [{
                         "text": "California",
@@ -176,7 +177,7 @@ Content-type: application/json
                     }]
                 }
             }, {
-                "actualValue": "Ohio",
+                "actualValue": "OH",
                 "displayValue": {
                     "localizedTexts": [{
                         "text": "Ohio",
@@ -190,9 +191,10 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Need access to marketing campaign material",
         "answeredQuestion": {
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
             "isRequired": false,
             "text": {
-                "defaultText": "why do you need access to this package?",
+                "defaultText": "Who is your manager?",
                 "localizedTexts": [{
                     "text": "por qué necesita acceso a este paquete",
                     "languageCode": "es"
@@ -235,6 +237,7 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Arizona",
         "answeredQuestion": {
+            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
             "isRequired": false,
             "text": {
                 "defaultText": "what state are you from?",
@@ -245,15 +248,15 @@ Content-type: application/json
             },
             "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
             "choices": [{
-                "actualValue": "Arizona",
+                "actualValue": "AZ",
                 "displayValue": {
                     "localizedTexts": [{
-                        "text": "Arizona?",
+                        "text": "Arizona",
                         "languageCode": "es"
                     }]
                 }
             }, {
-                "actualValue": "California",
+                "actualValue": "CA",
                 "displayValue": {
                     "localizedTexts": [{
                         "text": "California",
@@ -261,7 +264,7 @@ Content-type: application/json
                     }]
                 }
             }, {
-                "actualValue": "Ohio",
+                "actualValue": "OH",
                 "displayValue": {
                     "localizedTexts": [{
                         "text": "Ohio",
@@ -275,9 +278,10 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Need access to marketing campaign material",
         "answeredQuestion": {
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
             "isRequired": false,
             "text": {
-                "defaultText": "why do you need access to this package?",
+                "defaultText": "Who is your manager?",
                 "localizedTexts": [{
                     "text": "por qué necesita acceso a este paquete",
                     "languageCode": "es"
