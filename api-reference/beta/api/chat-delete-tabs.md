@@ -1,27 +1,29 @@
 ---
-title: "Delete tab from chat"
-description: "Removes (unpins) a tab from the specified chat . "
+title: "Delete teamsTab"
+description: "Remove (unpin) a tab from the specified chat . "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Delete tab from chat
+# Delete teamsTab
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes (unpins) a tab from the specified [chat](../resources/chat.md). 
+Remove (unpin) a tab from the specified [chat](../resources/chat.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions | 
+|Permission type      | Permissions (from least to most privileged)| 
 |:--------------------|:---------------------------------|
-|Delegated  |TeamsTab.ReadWrite.All  |
-|Delegated  | TeamsTab.ReadWrite.All |
+|Delegated (work or school account) |TeamsTab.ReadWrite.All  |
+|Delegated (personal Microsoft account)  | TeamsTab.ReadWrite.All |
+|Application (work or school account)| TeamsTab.ReadWrite.All  |
+|Application (personal Microsoft account)| TeamsTab.Read.All, TeamsTab.ReadWrite.All|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,31 +47,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 
 ### Request
-<!-- {
-  "blockType": "request",
-  "name": "delete-tab in chat"
-}-->
 
-```http
-DELETE /chats/{chatId}/tabs/{tabId}
-```
-
-### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-### Example : Delete tabs from chat
-
-#### Request
-
-The following example shows a request to delete all chats.
 <!-- {
   "blockType": "request",
   "name": "delete-tab in chat"
@@ -79,7 +57,7 @@ The following example shows a request to delete all chats.
 DELETE /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs/{id}
 ```
 
-#### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
