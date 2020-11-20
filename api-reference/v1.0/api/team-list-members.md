@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
+<!--
+{
   "blockType": "ignored"
 }
 -->
@@ -62,7 +63,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 {
   "blockType": "request",
   "name": "list_team_members"
-}-->
+}
+-->
 
 ``` http
 GET https://graph.microsoft.com/v1.0/teams/{teams-Id}/members
@@ -70,11 +72,13 @@ GET https://graph.microsoft.com/v1.0/teams/{teams-Id}/members
 
 ### Response
 
-<!-- {
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "collection(microsoft.graph.conversationMember)"
-}-->
+}
+-->
 
 ``` http
 HTTP/1.1 200 OK
