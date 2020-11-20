@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "get_team_members"
+  "name": "list_team_members"
 } -->
 
 ``` http
@@ -100,7 +100,7 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": " list team members",
+  "description": "list team members",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
