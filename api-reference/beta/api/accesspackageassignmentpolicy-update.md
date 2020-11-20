@@ -86,23 +86,13 @@ Content-length: 1000
     "requestorSettings": {
         "scopeType": "AllExistingConnectedOrganizationSubjects",
         "acceptRequests": true,
-        "allowedRequestors": [{
-            "@odata.type": "#microsoft.graph.groupMembers",
-            "displayName": "637123821756649774",
-            "objectId": "264da053-67c6-4f1b-a56e-c6ed028f9474",
-            "isBackup": true
-        }, {
-            "@odata.type": "#microsoft.graph.groupMembers",
-            "displayName": "637100531853342664",
-            "objectId": "0bc0f945-c436-4c6a-9b0e-7c46a233503e",
-            "isBackup": true
-        }]
+        "allowedRequestors": []
     },
     "requestApprovalSettings": {
         "isApprovalRequired": true,
         "isApprovalRequiredForExtension": false,
         "isRequestorJustificationRequired": true,
-        "approvalMode": "Serial",
+        "approvalMode": "SingleStage",
         "approvalStages": [{
                 "approvalStageTimeOutInDays": 14,
                 "isApproverJustificationRequired": true,
@@ -118,56 +108,12 @@ Content-length: 1000
                         "@odata.type": "#microsoft.graph.externalSponsors",
                         "isBackup": false
                     }
-                ],
-                "escalationApprovers": [{
-                    "@odata.type": "#microsoft.graph.singleUser",
-                    "isBackup": true,
-                    "id": "q1dbd9a1-a445-42ee-83a8-476522ed6cbf",
-                    "description": "user if the external sponsor does not respond"
-                }]
-            },
-            {
-                "approvalStageTimeOutInDays": 14,
-                "isApproverJustificationRequired": true,
-                "isEscalationEnabled": true,
-                "escalationTimeInMinutes": 11520,
-                "primaryApprovers": [{
-                        "@odata.type": "#microsoft.graph.groupMembers",
-                        "isBackup": true,
-                        "id": "F66D2511-33E1-44C6-8513-DD5B480D01C4f",
-                        "description": "group for users from connected organizations which have no internal sponsor"
-                    },
-                    {
-                        "@odata.type": "#microsoft.graph.internalSponsors",
-                        "isBackup": false
-                    }
-                ],
-                "escalationApprovers": [{
-                    "@odata.type": "#microsoft.graph.singleUser",
-                    "isBackup": true,
-                    "id": "A13CDA82-1753-44B0-9949-A6D788210040",
-                    "description": "user if the internal sponsor does not respond"
-                }]
+                ]
             }
         ]
     },
     "accessReviewSettings": {
-        "isEnabled": true,
-        "recurrenceType": "quarterly",
-        "reviewerType": "Self",
-        "startDateTime": "2020-04-01T07:59:59.998Z",
-        "durationInDays": 25,
-        "reviewers": [{
-            "@odata.type": "#microsoft.graph.groupMembers",
-            "displayName": "637123821756649774",
-            "objectId": "264da053-67c6-4f1b-a56e-c6ed028f9474",
-            "isBackup": true
-        }, {
-            "@odata.type": "#microsoft.graph.groupMembers",
-            "displayName": "637240743900512066",
-            "objectId": "5b02dccd-7139-48ff-9763-439a9b0219dc",
-            "isBackup": true
-        }]
+        "isEnabled": false
     },
     "questions": [{
         "isRequired": false,
@@ -180,7 +126,7 @@ Content-length: 1000
         },
         "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
         "choices": [{
-            "actualValue": "Arizona",
+            "actualValue": "AZ",
             "displayValue": {
                 "localizedTexts": [{
                     "text": "Arizona?",
@@ -188,7 +134,7 @@ Content-length: 1000
                 }]
             }
         }, {
-            "actualValue": "California",
+            "actualValue": "CA",
             "displayValue": {
                 "localizedTexts": [{
                     "text": "California",
@@ -196,7 +142,7 @@ Content-length: 1000
                 }]
             }
         }, {
-            "actualValue": "Ohio",
+            "actualValue": "OH",
             "displayValue": {
                 "localizedTexts": [{
                     "text": "Ohio",
@@ -208,7 +154,7 @@ Content-length: 1000
     }, {
         "isRequired": false,
         "text": {
-            "defaultText": "why do you need access to this package?",
+            "defaultText": "Who is your manager?",
             "localizedTexts": [{
                 "text": "por qué necesita acceso a este paquete",
                 "languageCode": "es"
@@ -243,6 +189,7 @@ Content-Type: application/json
     "displayName": "Users from connected organizations can request",
     "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
     "questions": [{
+        "id" : "BD3F6B95-458D-4BC8-A9A6-8D4B29F64F3D",
         "isRequired": false,
         "text": {
             "defaultText": "what state are you from?",
@@ -253,7 +200,7 @@ Content-Type: application/json
         },
         "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
         "choices": [{
-            "actualValue": "Arizona",
+            "actualValue": "AZ",
             "displayValue": {
                 "localizedTexts": [{
                     "text": "Arizona?",
@@ -261,7 +208,7 @@ Content-Type: application/json
                 }]
             }
         }, {
-            "actualValue": "California",
+            "actualValue": "CA",
             "displayValue": {
                 "localizedTexts": [{
                     "text": "California",
@@ -269,7 +216,7 @@ Content-Type: application/json
                 }]
             }
         }, {
-            "actualValue": "Ohio",
+            "actualValue": "OH",
             "displayValue": {
                 "localizedTexts": [{
                     "text": "Ohio",
@@ -279,9 +226,10 @@ Content-Type: application/json
         }],
         "allowsMultipleSelection": false
     }, {
+        "id" : "F652C13C-A660-4E4C-A1E0-CE9FEC6EE57A",
         "isRequired": false,
         "text": {
-            "defaultText": "why do you need access to this package?",
+            "defaultText": "Who is your manager?",
             "localizedTexts": [{
                 "text": "por qué necesita acceso a este paquete",
                 "languageCode": "es"
