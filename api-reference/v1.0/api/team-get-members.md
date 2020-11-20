@@ -27,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-Id}/members/{membership-Id}
@@ -55,6 +56,7 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 ### Request
 
 <!-- 
+
 {
   "blockType": "request",
   "name": "get_team_members"
@@ -66,7 +68,8 @@ GET https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membersid}
 
 ### Response
 
-<!-- 
+<!--
+
 {
   "blockType": "response",
   "truncated": true,
