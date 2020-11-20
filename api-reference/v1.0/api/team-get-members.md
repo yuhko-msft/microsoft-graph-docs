@@ -8,7 +8,6 @@ doc_type: apiPageType
 ---
 
 # Get team members
-
 Namespace: microsoft.graph
 
 Get all [conversation members](../resources/conversationmember.md) in a [team](../resources/team.md).
@@ -56,12 +55,11 @@ If successful, this method returns a `200 OK` response code and a list of [conve
 
 ### Request
 
-<!-- 
-{
+<!-- {
   "blockType": "request",
   "name": "get_teammember"
-}-->
-
+}
+-->
 ```http
 GET https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membersid}
 ```
@@ -80,6 +78,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membersid}
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
     "value": [
