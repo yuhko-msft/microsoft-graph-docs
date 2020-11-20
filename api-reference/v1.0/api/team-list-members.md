@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teams-Id}/members
 
 ``` http
 HTTP/1.1 200 OK
-
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('id')/members",
     "value": [
