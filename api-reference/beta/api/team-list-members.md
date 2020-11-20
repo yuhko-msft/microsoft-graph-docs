@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_conversationmember"
+  "name": "get_teamMember"
 }
 -->
 ``` http
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/teams/{teams-Id}/members
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversationmember",
+  "name": "get_teamMember",
   "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }
 -->
