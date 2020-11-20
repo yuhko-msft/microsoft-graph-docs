@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/teams/{teams-Id}/members
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_teamMember",
+  "name": "list_teamMember",
   "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }
 -->
