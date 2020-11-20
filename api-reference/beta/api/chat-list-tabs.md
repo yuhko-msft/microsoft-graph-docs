@@ -19,10 +19,12 @@ Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](..
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions | 
+|Permission type      | Permissions (from least to most privileged) | 
 |:--------------------|:---------------------------------|
-|Delegated  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
-|Delegated  | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Delegated (work or school account) | TeamsTab.ReadWrite.All  |
+|Delegated (personal Microsoft account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Application (work or school account)| TeamsTab.ReadWrite.All  |
+|Application (personal Microsoft account)| TeamsTab.Read.All, TeamsTab.ReadWrite.All|
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +35,7 @@ GET /chats/{id}/tabs
  
 ## Optional query parameters
  
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
  
 ## Request headers
 | Header       | Value |
@@ -49,70 +51,20 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 <!-- {
   "blockType": "request",
-  "name": "List tabs in chat"
-} -->
-
-```http
-GET /chats/{chatId}/tabs
-```
-
-### Response
-
-<!-- 
-{
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
-  } -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://localhost:8200/beta/$metadata#chats/{chatId}/tabs",
-  "@odata.count": 1,
-  "value": [
-    {
-      "id": "62a07424-9c50-4adf-8931-c0038d7ef11e",
-      "displayName": "My Awesome Tab",
-      "webUrl": "https://teams.microsoft.com/l/chat/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%awesome%to%tab",
-      "configuration": {
-        "entityId": "fd3791c9-1e39-42b9-9e48-e9b1cbe54f99",
-        "contentUrl": "https://www.example.com/",
-        "removeUrl": "https://www.example.com/",
-        "websiteUrl": "https://www.example.com/",
-        "customPropertyInt": 1,
-        "customPropertyBool": true,
-        "customPropertyString": "value"
-      }
-     }
-    ]  
-}
-
-```
-
-### Example : List tabs in a chat
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "list-tabs in chat"
+  "name": "list_tabs_in_chat"
 }-->
 
 ```http
 GET /chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 ```
 
-#### Response
+### Response
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
   } -->
-
 
 ```http
 HTTP/1.1 200 OK
