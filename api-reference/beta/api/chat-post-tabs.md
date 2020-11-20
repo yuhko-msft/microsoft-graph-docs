@@ -1,5 +1,5 @@
 ---
-title: "Create tab in chat"
+title: "Create a tab in chat"
 description: "Create (pin) a tab to the specified chat. "
 author: "nkramer"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create tab in chat
+# Create a tab in chat
 
 Namespace: microsoft.graph
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)  | TeamsTab.Create, TeamsTab.ReadWrite.All  |
 |Delegated (personal Microsoft account)  | TeamsTab.ReadWrite.All |
 |Application (work or school account)| TeamsTab.Create, TeamsTab.ReadWrite.All  |
-|Application (personal Microsoft account)| TeamsTab.Read.All, TeamsTab.ReadWrite.All|
+|Application (personal Microsoft account)| TeamsTab.ReadWrite.All|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "create-tab in chat"
+  "name": "create_tab_in_chat"
 }-->
 
 ```http
@@ -94,7 +94,6 @@ Content-type: application/json
     "removeUrl": "https://www.contoso.com/scrumsboards.2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   }
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
