@@ -12605,7 +12605,7 @@ items:
         - name: Get tab in chat
           href: api/chat-get-tabs.md
         - name: Create tab in chat
-          href: api/chat-create-tabs.md
+          href: api/chat-post-tabs.md
         - name: Update tab in chat
           href: api/chat-update-tabs.md
         - name: Delete tab from chat
