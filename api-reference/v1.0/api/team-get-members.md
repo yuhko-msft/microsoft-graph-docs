@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membersid}
 {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
 } -->
 
 ```http
