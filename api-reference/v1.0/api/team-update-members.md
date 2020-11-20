@@ -62,7 +62,7 @@ Here is an example of the request.
 } -->
 
 ```http
-PATCH https://graph.microsoft.com/V1.0/teams/{team-Id}/members/{membership-Id}
+PATCH https://graph.microsoft.com/v1.0/teams/{team-Id}/members/{membership-Id}
 content-type: application/json
 content-length: 26
 
