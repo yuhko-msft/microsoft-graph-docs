@@ -57,7 +57,7 @@ For best results, stagger calls with a 2 second buffer.
 <!--
 {
   "blockType": "request",
-  "name": "add members to team"
+  "name": "add_members_team"
 }
 -->
 
@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/v1.0/teams/id/members
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!--
 {
   "blockType": "response",
