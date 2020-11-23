@@ -42,7 +42,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs. |
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0). |
-| Addition | beta | Added methods file [List apps in chat](/graph/api/chat-list-installedApps?view=graph-rest-beta), [Get installed apps in chat](/graph/api/chat-get-installedApps?view=graph-rest-beta), [Add app to chat](/graph/api/chat-add-installedApps?view=graph-rest-beta), [Uninstall app in a chat](/graph/api/chat-delete-installedApps?view=graph-rest-beta), [Upgrade app in a chat](/graph/api/chat-upgrade-installedApps?view=graph-rest-beta)
+| Addition | beta | Added methods file [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta), [Add app to chat](/graph/api/chat-add-installedapps?view=graph-rest-beta), [Uninstall app in a chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta), [Upgrade app in a chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta)
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-1.0). |
 
 
