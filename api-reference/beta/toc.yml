@@ -12540,13 +12540,13 @@ items:
         - name: Install app in chat
           href: api/chat-add-installedApp.md
         - name: List apps in chat
-          href: api/chat-list-installedApps.md
+          href: api/chat-list-installedapps.md
         - name: Get app in chat
-          href: api/chat-get-installedApp.md
+          href: api/chat-get-installedapps.md
         - name: Update app in chat
-          href: api/chat-update-installedApp.md
+          href: api/chat-update-installedapps.md
         - name: Uninstall app from chat
-          href: api/chat-delete-installedApp.md
+          href: api/chat-delete-installedapps.md
       - name: Tab
         href: resources/teamstab.md
         items:
