@@ -27,11 +27,11 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 |[Add app for user](../api/user-add-teamsappinstallation.md) | | Adds (installs) an app in the personal scope of a user.|
 |[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
 |[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
-|[Install app in chat](../api/chat-add-installedApp.md) | | Adds (installs) an app to a chat or meeting.|
-|[List apps in chat](../api/chat-list-installedApps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Lists apps in a chat.|
-|[Get app in chat](../api/chat-get-installedApp.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in the personal scope of a user.|
-|[Update app in chat](../api/chat-update-installedApp.md) | None | Update to the latest version of the app installed in chat.|
-|[Uninstall app from chat](../api/chat-delete-installedApp.md) | None | Removes (uninstalls) app from a chat.|
+|[Install app in chat](../api/chat-add-installedapps.md) | | Adds (installs) an app to a chat or meeting.|
+|[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Lists apps in a chat.|
+|[Get app in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in the personal scope of a user.|
+|[Update app in chat](../api/chat-update-installedapps.md) | None | Update to the latest version of the app installed in chat.|
+|[Uninstall app from chat](../api/chat-delete-installedapps.md) | None | Removes (uninstalls) app from a chat.|
 
 ## Properties
 
