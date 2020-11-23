@@ -12543,7 +12543,7 @@ items:
           href: api/chat-list-installedApps.md
         - name: Get app in chat
           href: api/chat-get-installedApp.md
-        - name: Update an app in chat
+        - name: Update app in chat
           href: api/chat-update-installedApp.md
         - name: Uninstall app from chat
           href: api/chat-delete-installedApp.md
