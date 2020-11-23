@@ -30,7 +30,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 |[Install app in chat](../api/chat-add-installedApp.md) | | Adds (installs) an app to a chat or meeting.|
 |[List apps in chat](../api/chat-list-installedApps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Lists apps in a chat.|
 |[Get app in chat](../api/chat-get-installedApp.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in the personal scope of a user.|
-|[Update an app in chat](../api/chat-update-installedApp.md) | None | Update to the latest version of the app installed in chat.|
+|[Update app in chat](../api/chat-update-installedApp.md) | None | Update to the latest version of the app installed in chat.|
 |[Uninstall app from chat](../api/chat-delete-installedApp.md) | None | Removes (uninstalls) app from a chat.|
 
 ## Properties
