@@ -93,7 +93,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **createdDateTime** property to the [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta) and [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta) resources.",
+          "Description": "Added the **createdDateTime** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) and [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resources.",
           "Target": "channel,team"
         }
       ],
@@ -109,9 +109,9 @@
         {
           "Id": "58fde3b2-9416-4226-a260-6405935ff290",
           "ApiChange": "Method",
-          "ChangedApiName": "chat-list-tabs, chat-get-tabs, chat-create-tabs, chat-delete-tabs, chat-update-tabs, teamstab",
+          "ChangedApiName": "Chat",
           "ChangeType": "Addition",
-          "Description": "Added [List chat](https://docs.microsoft.com/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab chat](https://docs.microsoft.com/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Create tab chat](https://docs.microsoft.com/graph/api/chat-create-tabs?view=graph-rest-beta&preserve-view=true), [Delete tab chat](https://docs.microsoft.com/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), and [Update tab chat](https://docs.microsoft.com/graph/api/chat-update-tabs?view=graph-rest-beta&preserve-view=true).",
+          "Description": "Added [List chat](https://docs.microsoft.com/en-us/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab chat](https://docs.microsoft.com/en-us/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Create tab chat](https://docs.microsoft.com/en-us/graph/api/chat-create-tabs?view=graph-rest-beta&preserve-view=true), [Delete tab chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), and [Update tab chat](https://docs.microsoft.com/graph/en-us/api/chat-update-tabs?view=graph-rest-beta&preserve-view=true).",
           "Target": "teamstab"
         },
         {
