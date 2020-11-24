@@ -95,8 +95,9 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
+<!-- 
+{
+ "blockType": "response",
   "truncated": true,
   "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
