@@ -11,16 +11,17 @@ ms.prod: "outlook"
 
 Namespace: microsoft.graph
 
-Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's default calendar,
-or from some other calendar of the user's.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from a calendar.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+## Permissions
+
+Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+
+| Permission type | Least priviledged permission | Other possible permissions |
+|:--------------- |:----------------------------- |:-------------------------- |
+| Delegated (work or school account) | Calendars.Read | Calendars.ReadWrite |
+| Delegated (personal Microsoft account) | Calendars.Read | Calendars.ReadWrite |
+| Application | Calendars.Read | Calendars.ReadWrite |
 
 ## HTTP request
 

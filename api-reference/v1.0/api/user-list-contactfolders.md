@@ -12,14 +12,16 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the contact folder collection in the default Contacts folder of the signed-in user.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
-|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
-|Application | Contacts.Read, Contacts.ReadWrite |
+## Permissions
+
+Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+
+| Permission type | Least priviledged permission | Other possible permissions |
+|:--------------- |:----------------------------- |:-------------------------- |
+| Delegated (work or school account) | Contacts.Read | Contacts.ReadWrite |
+| Delegated (personal Microsoft account) | Contacts.Read | Contacts.ReadWrite |
+| Application | Contacts.Read | Contacts.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

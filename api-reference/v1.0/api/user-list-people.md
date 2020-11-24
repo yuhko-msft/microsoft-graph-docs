@@ -17,13 +17,13 @@ You can get this information via the People API. For examples, see the [Examples
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | People.Read, People.Read.All    |
-|Delegated (personal Microsoft account) | People.Read    |
-|Application | People.Read.All |
+| Permission type | Least priviledged permission | Other possible permissions |
+|:--------------- |:---------------------------- |:-------------------------- |
+| Delegated (work or school account) | People.Read | People.Read.All |
+| Delegated (personal Microsoft account) | People.Read | None |
+| Application | People.Read.All | None |
 
 ## HTTP request
 

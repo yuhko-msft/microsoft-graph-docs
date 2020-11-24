@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  User.Export.All, User.Read.All  |
-|Delegated (personal Microsoft account) |  Not applicable  |
-|Application | User.Export.All, User.Read.All |
+Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
->**Note:** The export can only be performed by a company administrator when delegated permissions are used.
+| Permission type | Least priviledged permission | Other possible permissions |
+|:--------------- |:---------------------------- |:-------------------------- |
+| Delegated (work or school account) | User.Export.All | User.Read.All |
+| Application | User.Export.All | User.Read.All |
+
+The export can only be performed by an administrator when delegated permissions are used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

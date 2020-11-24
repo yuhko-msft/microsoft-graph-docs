@@ -17,13 +17,12 @@ When deleted, user resources are moved to a temporary container and can be resto
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following least priviledged permissions to call this API. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All |
+| Permission type | Least priviledged permission |
+|:--------------- |:----------------------------- |
+| Delegated (work or school account) | Directory.AccessAsUser.All |
+| Application | User.ReadWrite.All |
 
 ## HTTP request
 

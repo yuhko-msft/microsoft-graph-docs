@@ -45,13 +45,14 @@ Additionally, if the meeting location has been set up as a resource, or if the e
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+Choose one of the following least priviledged permissions to call this API. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+
+| Permission type | Least priviledged permission |
+|:--------------- |:----------------------------- |
+| Delegated (work or school account) | Calendars.ReadWrite |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite |
+| Application | Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

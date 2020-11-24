@@ -16,14 +16,14 @@ Send the message specified in the request body. The message is saved in the Sent
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+Choose one of the following least priviledged permissions to call this API. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Send    |
-|Delegated (personal Microsoft account) | Mail.Send    |
-|Application | Mail.Send |
+| Permission type | Least priviledged permission |
+|:--------------- |:---------------------------- |
+| Delegated (work or school account) | Mail.Send |
+| Delegated (personal Microsoft account) | Mail.Send |
+| Application | Mail.Send |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

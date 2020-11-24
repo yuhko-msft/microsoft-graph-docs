@@ -11,22 +11,21 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.
  
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-> With user delegated permissions this operation only works for the 'me' user. 
-> With application permissions, it works for all users by specifying  the specific user id. 
-> ('me' alias is not supported with application permissions)
+| Permission type | Least priviledged permission | Other possible permissions |
+|:--------------- |:---------------------------- |:-------------------------- |
+| Delegated (work or school account) | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Application | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+The following list defines exceptions to the permissions in the previous table:
+- With user delegated permissions this operation only works for the 'me' alias. 
+- With application permissions, it works for all users by specifying the specific user id. 
+- The 'me' alias is not supported with application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
