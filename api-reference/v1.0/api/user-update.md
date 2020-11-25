@@ -15,9 +15,9 @@ Update the properties of a user object.
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. If necessary, you can consider other possible permissions that have a higher privilege. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission | Other possible permissions |
+| Permission type | Least privileged permission | Other possible permissions |
 |:--------------- |:----------------------------- |:-------------------------- |
 | Delegated (work or school account) | User.ReadWrite | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.ReadWrite | None |

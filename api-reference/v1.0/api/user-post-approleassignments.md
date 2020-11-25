@@ -19,9 +19,9 @@ Use this API to assign an app role to a user. To grant an app role assignment to
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission |
+| Permission type | Least privileged permission |
 |:--------------- |:----------------------------- |
 | Delegated (work or school account) | AppRoleAssignment.ReadWrite.All |
 | Application | AppRoleAssignment.ReadWrite.All |

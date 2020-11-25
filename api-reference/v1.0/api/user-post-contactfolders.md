@@ -17,9 +17,9 @@ You can also [create a new contactfolder as a child of any specified contact fol
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission | Other possible permissions |
+| Permission type | Least privileged permission | Other possible permissions |
 |:--------------- |:---------------------------- |:-------------------------- |
 | Delegated (work or school account) | Contacts.ReadWrite |
 | Delegated (personal Microsoft account) | Contacts.ReadWrite |

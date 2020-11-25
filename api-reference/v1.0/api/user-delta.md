@@ -15,10 +15,10 @@ Get newly created, updated, or deleted users without having to perform a full re
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
 
-| Permission type | Least priviledged permissions | Other possible permissions |
+| Permission type | Least privileged permissions | Other possible permissions |
 |:--------------- |:----------------------------- |:-------------------------- |
 | Delegated (work or school account) | User.Read | User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 | Application | User.Read.All | User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |

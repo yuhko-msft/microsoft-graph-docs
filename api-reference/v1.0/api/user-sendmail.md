@@ -17,9 +17,9 @@ You can include a [file attachment](../resources/fileattachment.md) in the same 
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission |
+| Permission type | Least privileged permission |
 |:--------------- |:---------------------------- |
 | Delegated (work or school account) | Mail.Send |
 | Delegated (personal Microsoft account) | Mail.Send |

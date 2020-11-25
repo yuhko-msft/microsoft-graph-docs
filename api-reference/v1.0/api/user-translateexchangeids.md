@@ -15,9 +15,9 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. If necessary, you can consider other possible permissions that have a higher privilege. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission | Other possible permissions |
+| Permission type | Least privileged permission | Other possible permissions |
 |:--------------- |:---------------------------- |:-------------------------- |
 | Delegated (work or school account) | User.ReadBasic.All | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.ReadBasic.All | User.Read, User.ReadWrite |

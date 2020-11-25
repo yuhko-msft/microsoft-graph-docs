@@ -20,9 +20,9 @@ in a Microsoft 365 group is always direct.
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission | Other possible permissions |
+| Permission type | Least privileged permission | Other possible permissions |
 |:--------------- |:---------------------------- |:-------------------------- |
 | Delegated (work or school account) | User.ReadBasic.All and GroupMember.Read.All | User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, User.ReadWrite.All and GroupMember.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Application | User.Read.All and GroupMember.Read.All | User.Read.All and Group.Read.All, User.ReadWrite.All and GroupMember.Read.All User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |

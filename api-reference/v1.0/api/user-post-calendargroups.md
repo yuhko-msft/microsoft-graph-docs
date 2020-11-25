@@ -15,9 +15,9 @@ Use this API to create a new CalendarGroup.
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission | Other possible permissions |
+| Permission type | Least privileged permission | Other possible permissions |
 |:--------------- |:---------------------------- |:-------------------------- |
 | Delegated (work or school account) | Calendars.ReadWrite |
 | Delegated (personal Microsoft account) | Calendars.ReadWrite |

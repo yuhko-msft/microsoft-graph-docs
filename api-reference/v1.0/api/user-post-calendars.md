@@ -15,9 +15,9 @@ Use this API to create a new calendar for a [user](../resources/user.md).
 
 ## Permissions
 
-Choose one of the following least priviledged permissions to call this API. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type | Least priviledged permission |
+| Permission type | Least privileged permission |
 |:--------------- |:----------------------------- |
 | Delegated (work or school account) | Calendars.ReadWrite |
 | Delegated (personal Microsoft account) | Calendars.ReadWrite |
