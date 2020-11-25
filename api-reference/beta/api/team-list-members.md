@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-``` http
+```http
 GET /teams/{team-id}/members
 ```
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('id')/members",
