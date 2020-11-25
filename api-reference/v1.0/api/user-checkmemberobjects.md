@@ -15,35 +15,35 @@ Check for membership in a list of group or directory roles for the specified use
 
 ## Permissions
 
-Choose one of the following least privileged permissions to call this method. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. If necessary, you can consider other possible permissions that have a higher privilege. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [Administrative unit permissions](/graph/permissions-reference#administrative-units-permissions), [Group permissions](/graph/permissions-reference#group-permissions), [Role management permissions](/graph/permissions-reference#role-management-permissions), or [User permissions](/graph/permissions-reference#user-permissions).
 
-### Users
-
-| Permission type | Least privileged permission | Other possible permissions |
-|:--------------- |:----------------------------- |:-------------------------- |
-| Delegated (work or school account) | User.ReadBasic.All | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Application | User.ReadBasic.All | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-
-### Groups
-
-| Permission type | Least priviledged permission | Other possible permissions |
-|:--------------- |:----------------------------- |:-------------------------- |
-| Delegated (work or school account) | Group.Read.All | Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Application | Group.Read.All | Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-
-### Administrative units
+### Administrative unit
 
 | Permission type | Least priviledged permission | Other possible permissions |
 |:--------------- |:----------------------------- |:-------------------------- |
 | Delegated (work or school account) | AdministrativeUnit.Read.All | AdministrativeUnit.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 | Application | AdministrativeUnit.Read.All | AdministrativeUnit.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-### Directory roles
+### Directory role
 
 | Permission type | Least priviledged permission | Other possible permissions |
 |:--------------- |:----------------------------- |:-------------------------- |
 | Delegated (work or school account) | RoleManagement.Read.Directory | RoleManagement.ReadWrite.Directory, Directory.Read.All, Directory.ReadWrite.All |
 | Application | RoleManagement.Read.Directory | RoleManagement.ReadWrite.Directory, Directory.Read.All, Directory.ReadWrite.All |
+
+### Group
+
+| Permission type | Least priviledged permission | Other possible permissions |
+|:--------------- |:----------------------------- |:-------------------------- |
+| Delegated (work or school account) | Group.Read.All | Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Application | Group.Read.All | Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+### User
+
+| Permission type | Least privileged permission | Other possible permissions |
+|:--------------- |:----------------------------- |:-------------------------- |
+| Delegated (work or school account) | User.ReadBasic.All | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Application | User.ReadBasic.All | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
