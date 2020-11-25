@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /teams/{team-id}/members
 ```
@@ -66,6 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_teammember"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
@@ -78,6 +80,7 @@ GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
   "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 {
