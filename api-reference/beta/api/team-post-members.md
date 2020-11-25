@@ -1,5 +1,5 @@
 ---
-title: "Add members to team"
+title: "Add member to team"
 description: "Add a new member to a team."
 author: "nkramer"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Add members to team
+# Add member to team
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /teams/{teams-Id}/members
+POST /teams/{team-id}/members
 ```
 
 ## Request headers
@@ -60,12 +60,14 @@ For best results, stagger calls with a 2 second buffer.
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/teams/id/members
+POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
+Content-type: application/json
+Content-length: 100
 
 {
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "user@odata.bind": "https://graph.microsoft.com/v1.0/users('7051f984-682e-4a08-a6b2-df82fe7d9fe1')",
-  "roles": [],
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 ```
 
@@ -101,11 +103,13 @@ HTTP/1.1 201 Created
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
-    "roles": [],
-    "userId": "7051f984-682e-4a08-a6b2-df82fe7d9fe1",
-    "displayName": "George Washington",
-    "email": "geowa@contoso.com"
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+    "roles": [
+        "owner"
+    ],
+    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
+    "displayName": "Cameron White",
+    "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
 
@@ -121,6 +125,6 @@ HTTP/1.1 201 Created
 }
 -->
 
-<!-- ## See also
+## See also
 
- [Add channel member](../api/channel-add-members.md) -->
+- [Add member in channel](channel-post-members.md)

@@ -1,36 +1,37 @@
 ---
-title: "Get team members"
-description: "Retrieve list of team members."
-author: "clearab"
+title: "Get member of team"
+description: "Get member of team."
+author: "laujan"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get team members
+# Get member of team
+
 Namespace: microsoft.graph
 
-Get all [conversation members](../resources/conversationmember.md) in a [team](../resources/team.md).
+Get a [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Permission Type|Permissions (from least to most privileged)|
+|---------|-------------|
+|Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
+<!-- { "blockType": "ignored"} -->
 ```http
-GET /teams/{team-Id}/members/{membership-Id}
+GET /teams/{team-id}/members/{membership-id}
 ```
 
 ## Optional query parameters
@@ -49,56 +50,53 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [conversationMember](../resources/conversationmember.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
 ## Example
 
 ### Request
 
+Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_teammember"
-}
--->
+  "name": "team-get_member"
+} -->
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membersid}
+GET https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members//ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
 
 ### Response
 
-<!--
-{
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_teammember",
-  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
-} 
--->
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [],
-            "displayName": "John Doe",
-            "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "email": null
-        }
-    ]
+"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
+"@odata.type": "#microsoft.graph.aadUserConversationMember",
+"id": "/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+"roles": ["owner"],
+"displayName": "John Doe",
+"userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+"email": null
 }
+
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "Retrieve list of team members",
+  "description": "get_team_member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -107,6 +105,6 @@ Content-length: 201
 }
 -->
 
-<!-- ## See also
+## See also
 
- [Get channel members](../api/channel-get-members.md) -->
+- [Get member of channel](channel-get-members.md)

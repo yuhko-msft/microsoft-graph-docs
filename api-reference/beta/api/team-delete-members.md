@@ -1,5 +1,5 @@
 ---
-title: "Remove members from team"
+title: "Remove member from team"
 description: "Remove a conversationMember from a team."
 author: "nkramer"
 localization_priority: Priority
@@ -7,12 +7,12 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Remove members from team
+# Remove member from team
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a new [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
+Remove a [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/teams/{teams-Id}/members/{membership-Id}
+DELETE https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]
@@ -103,6 +103,7 @@ HTTP/1.1 204 No Content
 }
 -->
 
-<!-- ## See also
+## See also
 
- [Delete channel member](../api/channel-delete-members.md) -->
+- [Remove member from channel](channel-delete-members.md)
+
