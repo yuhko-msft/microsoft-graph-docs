@@ -3,6 +3,123 @@
     {
       "ChangeList": [
         {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team add member](https://docs.microsoft.com/en-us/graph/api/team-post-members?view=graph-rest-beta) method.",
+          "Target": "team-post-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team get member](https://docs.microsoft.com/en-us/graph/api/team-get-members?view=graph-rest-beta) method.",
+          "Target": "team-get-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team list members](https://docs.microsoft.com/en-us/graph/api/team-list-members?view=graph-rest-beta) method.",
+          "Target": "team-list-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team delete member](https://docs.microsoft.com/en-us/graph/api/team-delete-members?view=graph-rest-beta) method.",
+          "Target": "team-delete-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team update member](https://docs.microsoft.com/en-us/graph/api/team-update-members?view=graph-rest-beta) method.",
+          "Target": "team-update-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added methods to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type.",
+          "Target": "team"
+        }
+      ],
+      "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-25T00:00:00.00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team add member](https://docs.microsoft.com/en-us/graph/api/team-post-members?view=graph-rest-v1.0) method.",
+          "Target": "team-post-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team get member](https://docs.microsoft.com/en-us/graph/api/team-get-members?view=graph-rest-v1.0) method.",
+          "Target": "team-get-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team list members](https://docs.microsoft.com/en-us/graph/api/team-list-members?view=graph-rest-v1.0) method.",
+          "Target": "team-list-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team delete member](https://docs.microsoft.com/en-us/graph/api/team-delete-members?view=graph-rest-v1.0) method.",
+          "Target": "team-delete-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Method",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added the [team update member](https://docs.microsoft.com/en-us/graph/api/team-update-members?view=graph-rest-v1.0) method.",
+          "Target": "team-update-members"
+        },
+        {
+          "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "team",
+          "ChangeType": "Addition",
+          "Description": "Added methods to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-v1.0) resource type.",
+          "Target": "team"
+        }
+      ],
+      "Id": "96800035-1bbe-40f8-812b-d672d05a9da8",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-11-25T00:00:00.00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+
+    {
+      "ChangeList": [
+        {
           "Id": "5577ef08-28cb-11eb-9746-158983535857",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkActivityTopic",
