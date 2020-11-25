@@ -17,7 +17,7 @@ While creating the draft in the same **POST** call, you can include an [attachme
 
 ## Permissions
 
-Choose one of the following least privileged permissions to call this method. Delegated permissions for personal Microsoft accounts are not supported for this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+Choose one of the following least privileged permissions to call this method. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
 | Permission type | Least privileged permission |
 |:--------------- |:----------------------------- |

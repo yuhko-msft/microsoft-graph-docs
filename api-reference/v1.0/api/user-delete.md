@@ -21,7 +21,7 @@ Choose one of the following least privileged permissions to call this method. De
 
 | Permission type | Least privileged permission |
 |:--------------- |:----------------------------- |
-| Delegated (work or school account) | Directory.AccessAsUser.All |
+| Delegated (work or school account) | User.ReadWrite.All |
 | Application | User.ReadWrite.All |
 
 ## HTTP request
