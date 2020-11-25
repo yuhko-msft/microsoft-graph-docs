@@ -78,6 +78,7 @@ GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
   "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 {
