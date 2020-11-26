@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 ```http
 HTTP/1.1 200 OK
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.addConversationMember)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('id')/members",
     "values": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
