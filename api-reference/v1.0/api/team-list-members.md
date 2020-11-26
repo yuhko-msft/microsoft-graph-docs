@@ -64,9 +64,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!--{
   "blockType": "request",
-  "name": "list_teamMember"
-}
--->
+  "name": "list_team_member"
+} -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
