@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 } -->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
+GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/members
 ```
 
 ### Response
@@ -74,7 +74,6 @@ GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "list_team_member",
   "@odata.type": "microsoft.graph.aadUserConversationMember"
 }
 -->
@@ -85,24 +84,26 @@ Content-type: application/json
 Content-length: 201
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/members",
     "@odata.count": 2
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
-            "roles": ["owner"],
-            "userId": "aafc32d9-22e8-47a5-9178-099fd5e18968",
-            "displayName": "George Washington",
-            "email": "geowa@contoso.com"
+            "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ=",
+            "roles": [],
+            "displayName": "Joe Self",
+            "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
+            "email": "jself@teamsip.onmicrosoft.com"
         },
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "id":"1ce8527b-95aa-410e-a581-8e8a8cba3e2f",
-            "roles":["owner"],
-            "userId": "24b4876d-0c48-4895-9a62-c810827f1fae",
-            "displayName": "Emily Green,
-            "email": "emGr@contoso.com"
+             "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNiMzI0NmY0NC1jMDkxLTQ2MjctOTZjNi0yNWIxOGZhMmM5MTA=",
+            "roles": [
+                "owner"
+                ],
+            "displayName": "Anagha Kothurwar",
+            "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
+            "email": "ankothur@teamsip.onmicrosoft.com"
         }
     ]
 }
