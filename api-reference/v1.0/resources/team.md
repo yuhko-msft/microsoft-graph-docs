@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
 A team in Microsoft Teams is a collection of [channel](channel.md) objects.
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
