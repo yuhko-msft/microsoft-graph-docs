@@ -82,8 +82,9 @@ GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
 ```http
 HTTP/1.1 200 OK
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('id')/members",
-    "values": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 2
+    "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
