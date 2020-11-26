@@ -77,11 +77,15 @@ GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/
   "blockType": "response",
   "truncated": true,
   "name": "list_team_member"
-  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
-} -->
+  "@odata.type": "microsoft.graph.aadUserConversationMember"
+}
+-->
 
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 201
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
     "@odata.count": 2
