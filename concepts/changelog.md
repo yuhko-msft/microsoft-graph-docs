@@ -13,6 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## November 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1 | Added the **cancelledOccurrences**, **exceptionOccurrences**, and **occurrenceId** properties to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) entity.
 
 ### Change notifications
 

@@ -100,8 +100,52 @@ The first example gets the specified event. It specifies the following:
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences,location 
 Prefer: outlook.timezone="Pacific Standard Time"
+```
+#### Response
+The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, because the events no longer exist, the operation returns only their **occurrenceId** property values.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject": "Daily stand-up",
+  "cancelledOccurrences": [
+     "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-07",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
+    ],
+  "occurrenceId": null,
+    "start": {
+        "dateTime": "2020-04-23T11:30:00.0000000",
+        "timeZone": "UTC"
+    },
+  "end": {
+        "dateTime": "2020-04-23T12:00:00.0000000",
+        "timeZone": "UTC"
+    },
+  "exceptionOccurrences": [
+        {
+            "id": "AAMkADM0ZGRhMjdjLTA==",
+            "Subject": "SM update 24",
+            "occurrenceId": "OID.AAMkADAGAADDdm4NAAA=.2020-05-21",
+            "start": {
+                "dateTime": "2020-05-21T11:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2020-05-21T12:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        }
+    ]
+}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-csharp-snippets.md)]
