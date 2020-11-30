@@ -20,10 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged) | 
 |:--------------------|:---------------------------------|
-|Delegated (work or school account) | TeamsTab.ReadWrite.All  |
-|Delegated (personal Microsoft account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
-|Application (work or school account)| TeamsTab.ReadWrite.All  |
-|Application (personal Microsoft account)| TeamsTab.Read.All, TeamsTab.ReadWrite.All|
+|Delegated (work or school account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported |
+|Application | TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [tab](../resou
 ## Example
 
 ### Request
-The following example shows a request to get all chats.
+The following example shows a request to get chat details.
 <!-- {
   "blockType": "request",
   "name": "get_tab"
@@ -89,6 +88,7 @@ Content-type: application/json
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
