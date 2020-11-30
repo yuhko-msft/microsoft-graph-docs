@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description** |
 | :-------------- | :---------- | :-------------- |
-| Addition | beta | Added methods file [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta), [Add app to chat](/graph/api/chat-add-installedapps?view=graph-rest-beta), [Uninstall app in a chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta), [Upgrade app in a chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta) |
+| Addition | beta | Added methods [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Add app to chat](/graph/api/chat-add-installedapps?view=graph-rest-beta&preserve-view=true), [Uninstall app in a chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Upgrade app in a chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta&preserve-view=true) to [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) resource type. |
 
 
 ## November 2020
