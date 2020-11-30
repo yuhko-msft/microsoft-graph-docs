@@ -1,5 +1,31 @@
 {
   "changelog": [
+   {
+    "ChangeList": [
+      {
+        "Id": "58fde3b2-9416-4226-a260-6405935ff290",
+        "ApiChange": "Method",
+        "ChangedApiName": "Chat",
+        "ChangeType": "Addition",
+        "Description": "Added [List chat](https://docs.microsoft.com/en-us/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab chat](https://docs.microsoft.com/en-us/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Create tab chat](https://docs.microsoft.com/en-us/graph/api/chat-create-tabs?view=graph-rest-beta&preserve-view=true), [Delete tab chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), and [Update tab chat](https://docs.microsoft.com/graph/en-us/api/chat-update-tabs?view=graph-rest-beta&preserve-view=true).",
+        "Target": "teamstab"
+      },
+      {
+        "Id": "58fde3b2-9416-4226-a260-6405935ff290",
+        "ApiChange": "Resource",
+        "ChangedApiName": "Chat",
+        "ChangeType": "Addition",
+        "Description": "Added methods to the [teamsTab](https://docs.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-beta&preserve-view=true) resource type.",
+        "Target": "teamstab"
+      }
+      ],
+      "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T00:00:00",
+      "WorkloadArea": "Teamwork ",
+      "SubArea": ""      
+    },
     {
       "ChangeList": [
         {
@@ -180,7 +206,6 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
-    
     {
       "ChangeList": [
         {
@@ -201,14 +226,6 @@
     },
     {
       "ChangeList": [
-        {
-          "Id": "58fde3b2-9416-4226-a260-6405935ff290",
-          "ApiChange": "Method",
-          "ChangedApiName": "Chat",
-          "ChangeType": "Addition",
-          "Description": "Added [List chat](https://docs.microsoft.com/en-us/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab chat](https://docs.microsoft.com/en-us/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Create tab chat](https://docs.microsoft.com/en-us/graph/api/chat-create-tabs?view=graph-rest-beta&preserve-view=true), [Delete tab chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), and [Update tab chat](https://docs.microsoft.com/graph/en-us/api/chat-update-tabs?view=graph-rest-beta&preserve-view=true).",
-          "Target": "teamstab"
-        },
         {
           "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
           "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
