@@ -21,10 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged) | 
 |:--------------------|:---------------------------------|
-|Delegated (work or school account) | TeamsTab.ReadWrite.All  |
-|Delegated (personal Microsoft account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All |
-|Application (work or school account)| TeamsTab.ReadWrite.All  |
-|Application (personal Microsoft account)| TeamsTab.Read.All, TeamsTab.ReadWrite.All|
+|Delegated (work or school account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported |
+|Application | TeamsTab.Read.All, TeamsTab.ReadWrite.All  |
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -101,4 +100,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
