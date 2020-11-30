@@ -11,6 +11,15 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## December 2020
+
+### Teamwork
+
+| **Change type** | **Version** | **Description** |
+| :-------------- | :---------- | :-------------- |
+| Addition | beta | Added methods file [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta), [Add app to chat](/graph/api/chat-add-installedapps?view=graph-rest-beta), [Uninstall app in a chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta), [Upgrade app in a chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta) |
+
+
 ## November 2020
 
 
@@ -108,7 +117,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0&preserve-view=true). |
 | Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
 | Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-v1.0&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
-| Addition | beta | Added methods file [List apps in chat](/graph/api/chat-list-installedapps?view=graph-rest-beta), [Get installed apps in chat](/graph/api/chat-get-installedapps?view=graph-rest-beta), [Add app to chat](/graph/api/chat-add-installedapps?view=graph-rest-beta), [Uninstall app in a chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta), [Upgrade app in a chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta) |
+
 
 ## October 2020
 
