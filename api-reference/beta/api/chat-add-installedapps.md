@@ -79,15 +79,6 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
