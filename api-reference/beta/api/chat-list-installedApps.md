@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/chats/{chatId}/installedApps
+GET https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps
 ```
 
 ### Response
