@@ -11,8 +11,15 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-## November 2020
+## December 2020
 
+### Teamwork
+
+| **Change type** | **Version** | **Description** |
+| :-------------- | :---------- | :-------------- |
+| Addition | beta | Added [List tab in chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Create tab in chat](/graph/api/chat-post-tabs?view=graph-rest-beta&preserve-view=true), [Delete tab from chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), and [Update tab in chat](/graph/api/chat-update-tabs?view=graph-rest-beta&preserve-view=true). Also updated the resource file [teamsTab](/graph/api/teamstab?view=graph-rest-beta&preserve-view=true)|
+
+## November 2020
 
 ### Change notifications
 
@@ -108,7 +115,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [read channel message APIs](/graph/api/resources/chatmessage?view=graph-rest-v1.0&preserve-view=true). |
 | Addition | Beta | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
 | Addition | v1.0 | Added the following methods to the [channel](/graph/api/resources/channel?view=graph-rest-v1.0&preserve-view=true) resource: [List channel members](/graph/api/channel-list-members?view=graph-rest-v1.0&preserve-view=true), [Get channel member](/graph/api/channel-get-members?view=graph-rest-v1.0&preserve-view=true), [Add channel member](/graph/api/channel-post-members?view=graph-rest-v1.0&preserve-view=true),  [Update channel member's role](/graph/api/channel-update-members?view=graph-rest-v1.0&preserve-view=true), [Remove channel member](/graph/api/channel-delete-members?view=graph-rest-v1.0&preserve-view=true).|
-| Addition | beta | Added [List tab in chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Create tab in chat](/graph/api/chat-post-tabs?view=graph-rest-beta&preserve-view=true), [Delete tab from chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), and [Update tab in chat](/graph/api/chat-update-tabs?view=graph-rest-beta&preserve-view=true). Also updated the resource file [teamsTab](/graph/api/teamstab?view=graph-rest-beta&preserve-view=true)|
+
 
 ## October 2020
 
