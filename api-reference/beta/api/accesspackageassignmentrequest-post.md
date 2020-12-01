@@ -191,7 +191,7 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Need access to marketing campaign material",
         "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
             "isRequired": false,
             "text": {
                 "defaultText": "Who is your manager?",
@@ -278,7 +278,7 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Need access to marketing campaign material",
         "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
             "isRequired": false,
             "text": {
                 "defaultText": "Who is your manager?",
