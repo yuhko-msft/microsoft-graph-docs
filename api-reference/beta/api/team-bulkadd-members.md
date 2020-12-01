@@ -1,5 +1,5 @@
 ---
-title: "Bulk add member"
+title: "Bulk add members to team"
 description: "Add members in bulk."
 author: "nkramer"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Bulk add members to a team
+# Bulk add members to team
 
 Namespace: microsoft.graph
 
@@ -19,12 +19,11 @@ Add multiple members in a single request to a [team](../resources/team.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions               | 
+|Permission type      | Permissions (from least to most privileged) | 
 |:--------------------|:--------------------------|
-| Delegated | TeamMember.Read.All   |
-| Delegated | TeamMember.ReadWrite.All |
-| Application-only | TeamMember.Read.All   |
-| Application-only | TeamMember.ReadWrite.All |
+| Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamMember.Read.All, TeamMember.ReadWrite.All   |
 
 
 ## HTTP Request
@@ -62,7 +61,7 @@ The following example shows a request to add multiple members to a team.
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/teams/id/members/add
+POST https://graph.microsoft.com/beta/teams/id/members/add
 
 {
     "values": [
@@ -124,7 +123,7 @@ The following example shows a request to add multiple members to a team with par
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/teams/id/members/add
+POST https://graph.microsoft.com/beta/teams/id/members/add
 
 {
     "values": [
