@@ -150,58 +150,13 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Arizona",
         "answeredQuestion": {
-            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
-            "isRequired": false,
-            "text": {
-                "defaultText": "what state are you from?",
-                "localizedTexts": [{
-                    "text": "¿De qué estado eres?",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-            "choices": [{
-                "actualValue": "AZ",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Arizona",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "CA",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "California",
-                        "languageCode": "es"
-                    }]
-                }
-            }, {
-                "actualValue": "OH",
-                "displayValue": {
-                    "localizedTexts": [{
-                        "text": "Ohio",
-                        "languageCode": "es"
-                    }]
-                }
-            }],
-            "allowsMultipleSelection": false
+            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
         }
     }, {
         "@odata.type": "#microsoft.graph.accessPackageAnswerString",
         "value": "Need access to marketing campaign material",
         "answeredQuestion": {
-            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
-            "isRequired": false,
-            "text": {
-                "defaultText": "Who is your manager?",
-                "localizedTexts": [{
-                    "text": "por qué necesita acceso a este paquete",
-                    "languageCode": "es"
-                }]
-            },
-            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-            "isSingleLineQuestion": false
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
         }
     }]
 }
