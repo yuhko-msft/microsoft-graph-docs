@@ -293,18 +293,7 @@ Content-type: application/json
     "expirationDateTime": null,
     "requestorSettings": {
         "scopeType": "AllExistingConnectedOrganizationSubjects",
-        "acceptRequests": true,
-        "allowedRequestors": [{
-            "@odata.type": "#microsoft.graph.groupMembers",
-            "displayName": "637123821756649774",
-            "objectId": "264da053-67c6-4f1b-a56e-c6ed028f9474",
-            "isBackup": true
-        }, {
-            "@odata.type": "#microsoft.graph.groupMembers",
-            "displayName": "637100531853342664",
-            "objectId": "0bc0f945-c436-4c6a-9b0e-7c46a233503e",
-            "isBackup": true
-        }]
+        "acceptRequests": true
     },
     "requestApprovalSettings": {
         "isApprovalRequired": true,
