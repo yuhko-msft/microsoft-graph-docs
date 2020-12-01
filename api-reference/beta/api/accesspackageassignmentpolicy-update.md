@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 ## Examples
 
 ### Request
-
+In this policy update, one of the options for the multiple choice question was removed. Future requestors will no longer have the removed option available to them.
 
 <!-- {
   "blockType": "request",
@@ -138,14 +138,6 @@ Content-length: 1000
             "displayValue": {
                 "localizedTexts": [{
                     "text": "California",
-                    "languageCode": "es"
-                }]
-            }
-        }, {
-            "actualValue": "OH",
-            "displayValue": {
-                "localizedTexts": [{
-                    "text": "Ohio",
                     "languageCode": "es"
                 }]
             }
