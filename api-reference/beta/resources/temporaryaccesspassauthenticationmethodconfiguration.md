@@ -37,7 +37,7 @@ Represents a Temporary Access Pass authentication methods policy. Authentication
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
 
-# JSON representation
+## JSON representation
 The following is a JSON representation of the resource.
 ``` json
 {
