@@ -22,7 +22,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## November 2020
 
-
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
