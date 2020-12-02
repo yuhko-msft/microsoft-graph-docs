@@ -1,25 +1,34 @@
 ---
 title: "Get temporaryAccessPassAuthenticationMethod"
 description: "Read the properties and relationships of a temporaryAccessPassAuthenticationMethod object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "inbarckMS"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get temporaryAccessPassAuthenticationMethod
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve a user's single  [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|:---|:---|:--|
+|Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not supported.|Not supported.
+
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
@@ -28,16 +37,16 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/authentication/temporaryAccessPassMethods/{temporaryAccessPassAuthenticationMethodId}
+GET /me/authentication/temporaryAccessPassMethods/{temporaryAccessPassAuthenticationMethodId}
+GET /users/{id | userPrincipalName}/temporaryAccessPassMethods/{temporaryAccessPassAuthenticationMethodId}
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+
 
 ## Request body
 Do not supply a request body for this method.
@@ -75,10 +84,11 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.strongAuthentication.temporaryAccessPassAuthenticationMethod",
     "id": "30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30",
-    "temporaryAccessPass": "String",
+    "temporaryAccessPass": null,
     "createdDateTime": "String (timestamp)",
     "startDateTime": "String (timestamp)",
-    "lifetimeInMinutes": "Integer"
+    "lifetimeInMinutes": "Integer",
+    "isUsableOnce": "Boolean"
   }
 }
 ```
