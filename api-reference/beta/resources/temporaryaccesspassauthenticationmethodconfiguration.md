@@ -51,3 +51,5 @@ The following is a JSON representation of the resource.
   "isUsableOnce": "Boolean"
 },
 "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
+}
+```
