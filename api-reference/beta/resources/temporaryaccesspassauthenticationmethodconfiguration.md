@@ -25,11 +25,11 @@ Represents a Temporary Access Pass authentication methods policy. Authentication
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The authentication method policy identifier.|
-|minimumLifetimeInMinutes|Int|Minimum lifetime in minutes for any temporaryAccessPass created in the tenant. Values can be betweem 10 to 43200 minutes (equivalent to 30 days).|
-|maximumLifetimeInMinutes|Int|Maxnimum lifetime in minutes for any temporaryAccessPass created in the tenant. Values can be betweem 10 to 43200 minutes (equivalent to 30 days).|
-|defaultLifetimeInMinutes|int|Default lifetime, in minutes, for a temporaryAccessPass. Value can be between the minimumLifetimeInMinutes and maximumLifetimeInMinutes|
-|defaultLength|int|Default length, in characters, of a temporaryAccessPass, between 8 to 48 characters|
-|isUsableOnce|Boolean	|If true, all the passes in the tenant should be restricted to one-time use. If false, passes in the tenant can be either one-time use or multiple time use, defined by per pass|
+|minimumLifetimeInMinutes|Int|Minimum lifetime in minutes for any temporaryAccessPass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days).|
+|maximumLifetimeInMinutes|Int|Maximum lifetime in minutes for any temporaryAccessPass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days).|
+|defaultLifetimeInMinutes|int|Default lifetime, in minutes, for a temporaryAccessPass. Value can be between the minimumLifetimeInMinutes and maximumLifetimeInMinutes.|
+|defaultLength|int|Default length, in characters, of a temporaryAccessPass, between 8 and 48 characters.|
+|isUsableOnce|Boolean	|If true, all the passes in the tenant will be restricted to one-time use. If false, passes in the tenant can be created to be either one-time use or multiple time use.|
 |state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
 ## Relationships
