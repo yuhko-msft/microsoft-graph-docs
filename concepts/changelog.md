@@ -4,7 +4,6 @@ description: "This changelog covers what's changed in Microsoft Graph, including
 author: "MSGraphDocsVteam"
 localization_priority: Priority
 ---
-
 # Changelog for Microsoft Graph
 
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
@@ -13,11 +12,23 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Identity and access
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the following properties to [Terms of Use agreementfile](/graph/api/resources/agreementfile.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added the following properties to [Terms of Use agreementfilelocalization](/graph/api/resources/agreementfilelocalization.md):<ul><li>isMajorVersion</li><li>createdDateTime</li></ul>|
+| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement.md):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion.md)|
+
 ### Teamwork
 
-| **Change type** | **Version** | **Description** |
-| :-------------- | :---------- | :-------------- |
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [List apps for user](/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-v1.0&preserve-view=true), [Add app for user](/graph/api/userteamwork-add-installedapps?view=graph-rest-v1.0&preserve-view=true), [Remove app for user](/graph/api/userteamwork-delete-installedapps?view=graph-rest-v1.0&preserve-view=true), and [Upgrade installed app for user](/graph/api/userteamwork-upgrade-installedapps?view=graph-rest-v1.0&preserve-view=true) methods to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
+| Addition | v1.0 | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-v1.0&preserve-view=true) resource. |
+| Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
+| Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added [List tab in chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Get tab in chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Create tab in chat](/graph/api/chat-post-tabs?view=graph-rest-beta&preserve-view=true), [Delete tab from chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), and [Update tab in chat](/graph/api/chat-update-tabs?view=graph-rest-beta&preserve-view=true). Also updated the resource file [teamsTab](/graph/api/teamstab?view=graph-rest-beta&preserve-view=true)|
+
 
 ## November 2020
 
@@ -32,6 +43,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-1.0&preserve-view=true) complex type.|
 | Addition | v1.0 | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0&preserve-view=true) entity to support meeting option configuration.|
+| Addition | beta | Added the **platformId** property to the [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true) resource. |
 
 ### Devices and apps | Cloud PC
 
@@ -89,7 +101,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **spa** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | beta | Added the [organizationalBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) resource type and associated methods, which allow for the customization of the visual look and feel of sign-in screens.|
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin
 ### Identity and access | Governance
 
 | **Change type** | **Version**   | **Description**                          |
@@ -5598,4 +5613,3 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
-
