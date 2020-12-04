@@ -2180,8 +2180,6 @@ items:
               href: api/intune-apps-macoslobapp-delete.md
             - name: Update
               href: api/intune-apps-macoslobapp-update.md
-          - name: macOS LOB app assignment settings
-            href: resources/intune-apps-macoslobappassignmentsettings.md
           - name: macOS LOB child app
             href: resources/intune-apps-macoslobchildapp.md
           - name: macOS mdatp app
@@ -3216,8 +3214,6 @@ items:
               href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md
             - name: Delete
               href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
-            - name: Update
-              href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md
             - name: import action
               href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
             - name: import action
@@ -3262,8 +3258,6 @@ items:
               href: api/intune-enrollment-windowsautopilotdeviceidentity-create.md
             - name: Delete
               href: api/intune-enrollment-windowsautopilotdeviceidentity-delete.md
-            - name: Update
-              href: api/intune-enrollment-windowsautopilotdeviceidentity-update.md
             - name: assignUserToDevice action
               href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
             - name: unassignUserFromDevice action
@@ -4273,10 +4267,16 @@ items:
               href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md
           - name: Device compliance script error
             href: resources/intune-deviceconfig-devicecompliancescripterror.md
+          - name: Device compliance script rul operator
+            href: resources/intune-deviceconfig-devicecompliancescriptruloperator.md
           - name: Device compliance script rule
             href: resources/intune-deviceconfig-devicecompliancescriptrule.md
+          - name: Device compliance script rule data type
+            href: resources/intune-deviceconfig-devicecompliancescriptruledatatype.md
           - name: Device compliance script rule error
             href: resources/intune-deviceconfig-devicecompliancescriptruleerror.md
+          - name: Device compliance script rules validation error
+            href: resources/intune-deviceconfig-devicecompliancescriptrulesvalidationerror.md
           - name: Device compliance script validation result
             href: resources/intune-deviceconfig-devicecompliancescriptvalidationresult.md
           - name: Device compliance setting state
@@ -8828,6 +8828,8 @@ items:
             href: resources/intune-shared-companyportalblockedaction.md
           - name: Compliance status
             href: resources/intune-shared-compliancestatus.md
+          - name: Configuration manager collection assignment target
+            href: resources/intune-shared-configurationmanagercollectionassignmenttarget.md
           - name: Device and app management assignment filter type
             href: resources/intune-shared-deviceandappmanagementassignmentfiltertype.md
           - name: Device and app management assignment source
@@ -8921,6 +8923,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
+            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management reports
@@ -9035,6 +9039,8 @@ items:
             href: resources/intune-shared-keyusages.md
           - name: Key/value pair
             href: resources/intune-shared-keyvaluepair.md
+          - name: macOS LOB app assignment settings
+            href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
             href: resources/intune-shared-macosvppappassignmentsettings.md
           - name: Managed device owner type

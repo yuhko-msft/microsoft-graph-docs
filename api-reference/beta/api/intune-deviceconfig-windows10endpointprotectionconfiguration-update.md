@@ -232,6 +232,8 @@ The following table shows the properties that are required when you create the [
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
 |applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
 |applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
+|applicationGuardAllowCameraMicrophoneRedirection|Boolean|Gets or sets whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone.|
+|applicationGuardCertificateThumbprints|String collection|Allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.|
 |bitLockerAllowStandardUserEncryption|Boolean|Allows the admin to allow standard users to enable encrpytion during Azure AD Join.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
@@ -297,7 +299,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 31045
+Content-length: 31214
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -928,6 +930,10 @@ Content-length: 31045
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "applicationGuardAllowCameraMicrophoneRedirection": true,
+  "applicationGuardCertificateThumbprints": [
+    "Application Guard Certificate Thumbprints value"
+  ],
   "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
@@ -1042,7 +1048,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31217
+Content-Length: 31386
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1676,6 +1682,10 @@ Content-Length: 31217
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "applicationGuardAllowCameraMicrophoneRedirection": true,
+  "applicationGuardCertificateThumbprints": [
+    "Application Guard Certificate Thumbprints value"
+  ],
   "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,

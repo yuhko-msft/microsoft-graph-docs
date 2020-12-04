@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 34198
+Content-Length: 34383
 
 {
   "value": [
@@ -697,6 +697,10 @@ Content-Length: 34198
       "applicationGuardAllowPrintToNetworkPrinters": true,
       "applicationGuardAllowVirtualGPU": true,
       "applicationGuardAllowFileSaveOnHost": true,
+      "applicationGuardAllowCameraMicrophoneRedirection": true,
+      "applicationGuardCertificateThumbprints": [
+        "Application Guard Certificate Thumbprints value"
+      ],
       "bitLockerAllowStandardUserEncryption": true,
       "bitLockerDisableWarningForOtherDiskEncryption": true,
       "bitLockerEnableStorageCardEncryptionOnMobile": true,

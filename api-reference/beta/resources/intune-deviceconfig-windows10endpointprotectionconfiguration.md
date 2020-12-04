@@ -214,6 +214,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
 |applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
 |applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
+|applicationGuardAllowCameraMicrophoneRedirection|Boolean|Gets or sets whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone.|
+|applicationGuardCertificateThumbprints|String collection|Allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.|
 |bitLockerAllowStandardUserEncryption|Boolean|Allows the admin to allow standard users to enable encrpytion during Azure AD Join.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
@@ -919,6 +921,10 @@ Here is a JSON representation of the resource.
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "applicationGuardAllowCameraMicrophoneRedirection": true,
+  "applicationGuardCertificateThumbprints": [
+    "String"
+  ],
   "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,

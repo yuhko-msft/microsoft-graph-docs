@@ -3,6 +3,232 @@
     {
       "ChangeList": [
         {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftTunnelServerLogCollectionResponse",
+          "ChangeType": "Addition",
+          "Description": "Added new entities:, [microsoftTunnelServerLogCollectionResponse](/graph/api/resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse?view=graph-rest-beta\u0026preserve-view=true), ",
+          "Target": "microsoftTunnelServerLogCollectionResponse"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentFilterEvaluationSummary,assignmentFilterStatusDetails,keyValuePair_2OfString_String",
+          "ChangeType": "Addition",
+          "Description": "Added new complex types:, [assignmentFilterEvaluationSummary](/graph/api/resources/intune-policyset-assignmentfilterevaluationsummary?view=graph-rest-beta\u0026preserve-view=true), [assignmentFilterStatusDetails](/graph/api/resources/intune-policyset-assignmentfilterstatusdetails?view=graph-rest-beta\u0026preserve-view=true), [keyValuePair_2OfString_String](/graph/api/resources/intune-policyset-keyvaluepair_2ofstring_string?view=graph-rest-beta\u0026preserve-view=true), ",
+          "Target": "assignmentFilterEvaluationSummary,assignmentFilterStatusDetails,keyValuePair_2OfString_String"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentFilterEvaluationResult,deviceComplianceScriptRuleDataType,deviceComplianceScriptRulesValidationError,deviceComplianceScriptRulOperator,deviceManagementConfigurationControlType,microsoftTunnelLogCollectionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added new enum types:, [assignmentFilterEvaluationResult](/graph/api/resources/intune-policyset-assignmentfilterevaluationresult?view=graph-rest-beta\u0026preserve-view=true), [deviceComplianceScriptRuleDataType](/graph/api/resources/intune-deviceconfig-devicecompliancescriptruledatatype?view=graph-rest-beta\u0026preserve-view=true), [deviceComplianceScriptRulesValidationError](/graph/api/resources/intune-deviceconfig-devicecompliancescriptrulesvalidationerror?view=graph-rest-beta\u0026preserve-view=true), [deviceComplianceScriptRulOperator](/graph/api/resources/intune-deviceconfig-devicecompliancescriptruloperator?view=graph-rest-beta\u0026preserve-view=true), [deviceManagementConfigurationControlType](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype?view=graph-rest-beta\u0026preserve-view=true), [microsoftTunnelLogCollectionStatus](/graph/api/resources/intune-mstunnel-microsofttunnellogcollectionstatus?view=graph-rest-beta\u0026preserve-view=true), ",
+          "Target": "assignmentFilterEvaluationResult,deviceComplianceScriptRuleDataType,deviceComplianceScriptRulesValidationError,deviceComplianceScriptRulOperator,deviceManagementConfigurationControlType,microsoftTunnelLogCollectionStatus"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "workProfileAllowAppInstallsFromUnknownSources",
+          "ChangeType": "Addition",
+          "Description": "Added the **workProfileAllowAppInstallsFromUnknownSources** property to the [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "androidWorkProfileGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "associatedDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedDomains** property to the [appleVpnConfiguration](/graph/api/resources/intune-deviceconfig-applevpnconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "appleVpnConfiguration"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "windows10EnrollmentCompletionPageConfigurationId,deviceSetupStatus,accountSetupStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **windows10EnrollmentCompletionPageConfigurationId**, **deviceSetupStatus** and **accountSetupStatus** properties to the [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "deviceManagementAutopilotEvent"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCode** property to the [deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "deviceManagementAutopilotPolicyStatusDetail"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "uxBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **uxBehavior** property to the [deviceManagementConfigurationSettingDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "deviceManagementConfigurationSettingDefinition"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "blockMovingMessagesToOtherEmailAccounts,blockSendingEmailFromThirdPartyApps,blockSyncingRecentlyUsedEmailAddresses,requireSmime",
+          "ChangeType": "Change",
+          "Description": "Changed the following properties on the [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity:, **blockMovingMessagesToOtherEmailAccounts** from required to optional, **blockSendingEmailFromThirdPartyApps** from required to optional, **blockSyncingRecentlyUsedEmailAddresses** from required to optional, **requireSmime** from required to optional, ",
+          "Target": "iosEasEmailProfileConfiguration"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "applePersonalizedAdsBlocked",
+          "ChangeType": "Addition",
+          "Description": "Added the **applePersonalizedAdsBlocked** property to the [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "iosGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "dependsOnAppCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **dependsOnAppCount** property to the [mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "mobileAppDependency"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "applicationGuardAllowCameraMicrophoneRedirection,applicationGuardCertificateThumbprints",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationGuardAllowCameraMicrophoneRedirection** and **applicationGuardCertificateThumbprints** properties to the [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "windows10EndpointProtectionConfiguration"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "microsoftTunnelServerLogCollectionResponses",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoftTunnelServerLogCollectionResponses** navigation property to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta\u0026preserve-view=true) entity",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "v10_0,v11_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v10_0** and **v11_0** properties to the [androidMinimumOperatingSystem](/graph/api/resources/intune-apps-androidminimumoperatingsystem?view=graph-rest-beta\u0026preserve-view=true) complex type",
+          "Target": "androidMinimumOperatingSystem"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceComplianceScriptRulesValidationError",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceComplianceScriptRulesValidationError** property to the [deviceComplianceScriptError](/graph/api/resources/intune-deviceconfig-devicecompliancescripterror?view=graph-rest-beta\u0026preserve-view=true) complex type",
+          "Target": "deviceComplianceScriptError"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceComplianceScriptRulOperator,deviceComplianceScriptRuleDataType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceComplianceScriptRulOperator** and **deviceComplianceScriptRuleDataType** properties to the [deviceComplianceScriptRule](/graph/api/resources/intune-deviceconfig-devicecompliancescriptrule?view=graph-rest-beta\u0026preserve-view=true) complex type",
+          "Target": "deviceComplianceScriptRule"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWebClip",
+          "ChangeType": "Addition",
+          "Description": "Added the **isWebClip** property to the [iosHomeScreenApp](/graph/api/resources/intune-deviceconfig-ioshomescreenapp?view=graph-rest-beta\u0026preserve-view=true) complex type",
+          "Target": "iosHomeScreenApp"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "v14_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v14_0** property to the [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-beta\u0026preserve-view=true) complex type",
+          "Target": "iosMinimumOperatingSystem"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "v10_1909,v10_2004",
+          "ChangeType": "Addition",
+          "Description": "Added the **v10_1909** and **v10_2004** properties to the [windowsMinimumOperatingSystem](/graph/api/resources/intune-apps-windowsminimumoperatingsystem?view=graph-rest-beta\u0026preserve-view=true) complex type",
+          "Target": "windowsMinimumOperatingSystem"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Property",
+          "ChangedApiName": "osVolumeEncryptionMethodMismatch,osVolumeUnprotected",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the following properties on the [advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta\u0026preserve-view=true) enum type:, **osVolumeEncryptionMethodMismatch** from 2 to 128, **osVolumeUnprotected** from 128 to 2, ",
+          "Target": "advancedBitLockerState"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "corporateOwnedAOSPUserlessDevice",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **corporateOwnedAOSPUserlessDevice** member from the [androidDeviceOwnerEnrollmentMode](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentmode?view=graph-rest-beta\u0026preserve-view=true) enum type",
+          "Target": "androidDeviceOwnerEnrollmentMode"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftProtect",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoftProtect** member to the [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta\u0026preserve-view=true) enum type",
+          "Target": "androidVpnConnectionType"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftProtect",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoftProtect** member to the [androidWorkProfileVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconnectiontype?view=graph-rest-beta\u0026preserve-view=true) enum type",
+          "Target": "androidWorkProfileVpnConnectionType"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftProtect",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoftProtect** member to the [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta\u0026preserve-view=true) enum type",
+          "Target": "appleVpnConnectionType"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "box",
+          "ChangeType": "Addition",
+          "Description": "Added the **box** member to the [managedAppDataStorageLocation](/graph/api/resources/intune-mam-managedappdatastoragelocation?view=graph-rest-beta\u0026preserve-view=true) enum type",
+          "Target": "managedAppDataStorageLocation"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "update",
+          "ChangeType": "Addition",
+          "Description": "Added the **update** member to the [userExperienceAnalyticsOperatingSystemRestartCategory](/graph/api/resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory?view=graph-rest-beta\u0026preserve-view=true) enum type",
+          "Target": "userExperienceAnalyticsOperatingSystemRestartCategory"
+        },
+        {
+          "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "notAttempted,disabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **notAttempted** and **disabled** members to the [windowsAutopilotDeploymentState](/graph/api/resources/intune-troubleshooting-windowsautopilotdeploymentstate?view=graph-rest-beta\u0026preserve-view=true) enum type",
+          "Target": "windowsAutopilotDeploymentState"
+        }
+      ],
+      "Id": "d364132d-d820-4b5a-bdfc-936b7d51311a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-01T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
           "ApiChange": "Resource",
           "ChangedApiName": "deviceComanagementAuthorityConfiguration,deviceManagementConfigurationCategory,deviceManagementConfigurationChoiceSettingCollectionDefinition,deviceManagementConfigurationChoiceSettingDefinition,deviceManagementConfigurationPolicy,deviceManagementConfigurationPolicyAssignment,deviceManagementConfigurationSetting,deviceManagementConfigurationSettingDefinition,deviceManagementConfigurationSettingGroupCollectionDefinition,deviceManagementConfigurationSettingGroupDefinition,deviceManagementConfigurationSimpleSettingCollectionDefinition,deviceManagementConfigurationSimpleSettingDefinition",

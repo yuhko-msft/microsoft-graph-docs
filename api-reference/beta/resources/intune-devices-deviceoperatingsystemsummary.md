@@ -32,7 +32,7 @@ Device operating system summary.
 |androidWorkProfileCount|Int32|Number of work profile Android devices.|
 |androidCorporateWorkProfileCount|Int32|The count of Corporate work profile Android devices. Also known as Corporate Owned Personally Enabled (COPE). Valid values -1 to 2147483647|
 |configMgrDeviceCount|Int32|Number of ConfigMgr managed devices.|
-|aospUserlessCount|Int32|Number of AOSP dedicated Android devices. Valid values 0 to 2147483647|
+|aospUserlessCount|Int32|Number of AOSP userless Android devices. Valid values 0 to 2147483647|
 
 ## Relationships
 None
