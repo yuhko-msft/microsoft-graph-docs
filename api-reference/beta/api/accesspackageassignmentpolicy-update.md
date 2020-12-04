@@ -129,7 +129,7 @@ Content-length: 1000
             "actualValue": "AZ",
             "displayValue": {
                 "localizedTexts": [{
-                    "text": "Arizona?",
+                    "text": "Arizona",
                     "languageCode": "es"
                 }]
             }
@@ -195,7 +195,7 @@ Content-Type: application/json
             "actualValue": "AZ",
             "displayValue": {
                 "localizedTexts": [{
-                    "text": "Arizona?",
+                    "text": "Arizona",
                     "languageCode": "es"
                 }]
             }
