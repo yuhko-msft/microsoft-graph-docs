@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) and a [chat](chat.md). 
+Represents a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md). 
 
 ## Methods
 
