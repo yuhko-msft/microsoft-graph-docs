@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal.
+Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. It can be used if a user is assigned Azure AD role via a group. To learn more about it, refer to this doc - [Use cloud groups to manage role assignments in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/roles/groups-concept)
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All, AND GroupMember.Read.All (if fetching transitive role assignmnts) |
+|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All, AND GroupMember.Read.All (if fetching transitive role assignments) |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, AND GroupMember.Read.All (if fetching transitive role assignmnts) |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, AND GroupMember.Read.All (if fetching transitive role assignments) |
 
 ## HTTP request
 
@@ -53,6 +53,10 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 In examples below, we will consider following set up - 
+* Alice -----> Helpdesk Admin (at tenant scope) : Role Assignment RA1
+* Alice -----> Group G1 -----> Helpdesk Admin (at tenant scope) : Role assignment RA2
+* Alice -----> Group G2 -----> Security Admin (at an admin unit scope) : Role assignment RA3
+
 * Alice is assigned Helpdesk Admin directly over tenant scope (role assignment 1 or RA1).
 * Alice is member of a group G1. G1 is assigned Helpdesk Admin role over tenant scope (role assignment 2 or RA2).
 * Alice is member of a group G2. G2 is assigned Security Admin role over an Admin Unit scope (role assignment 3 or RA3).
@@ -73,18 +77,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{Alice's id}/roleManagement/directory/transitiveRoleAssignments
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -145,18 +137,6 @@ The following is an example of the request with the `$expand` query parameter.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{Alice's id}/roleManagement/directory/transitiveRoleAssignments?$filter=principalId ne '<Alice's ID>'
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -210,18 +190,6 @@ The following is an example of the request with the `$expand` query parameter.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{Alice's id}/roleManagement/directory/transitiveRoleAssignments?$filter=directoryScopeId eq '/'
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
