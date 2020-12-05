@@ -57,9 +57,7 @@ In examples below, we will consider following set up -
 * Alice -----> Group G1 -----> Helpdesk Admin (at tenant scope) : Role assignment RA2
 * Alice -----> Group G2 -----> Security Admin (at an admin unit scope) : Role assignment RA3
 
-* Alice is assigned Helpdesk Admin directly over tenant scope (role assignment 1 or RA1).
-* Alice is member of a group G1. G1 is assigned Helpdesk Admin role over tenant scope (role assignment 2 or RA2).
-* Alice is member of a group G2. G2 is assigned Security Admin role over an Admin Unit scope (role assignment 3 or RA3).
+That is, Alice is assigned Helpdesk Admin directly over tenant scope (role assignment 1 or RA1). Alice is member of a group G1 and G1 is assigned Helpdesk Admin role over tenant scope (role assignment 2 or RA2). Alice is also a member of group G2 and G2 is assigned Security Admin role over an Admin Unit scope (role assignment 3 or RA3).
 
 ### Example 1 : Get all direct and transitive role assignments of a principal
 
