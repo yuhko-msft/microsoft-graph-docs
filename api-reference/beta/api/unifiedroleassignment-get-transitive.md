@@ -123,8 +123,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request with the `$expand` query parameter.
-
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -176,7 +175,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request with the `$expand` query parameter.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
