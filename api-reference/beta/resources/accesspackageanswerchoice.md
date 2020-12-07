@@ -17,7 +17,7 @@ Indicates an answer option for an [accessPackageMultipleChoiceQuestion](../resou
 |Property|Type|Description|
 |:---|:---|:---|
 |actualValue|String|The actual value of the selected choice. This is typically a string value which is understandable by applications. Required. |
-|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The localized display values shown to the requestor and approvers.|Yes|No|
+|displayValue|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|The localized display values shown to the requestor and approvers. Required.
 
 ## Relationships
 None.
