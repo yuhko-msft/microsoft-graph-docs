@@ -57,7 +57,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created. You can locate those using the query parameters when [listing accessPackageAssignments](accesspackageassignment-list.md).
 
 ## Examples
-### Example 1: Admin requests a direct assignment for a user.
+### Example 1: Admin requests a direct assignment for a user
 ### Request
 
 The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user. Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
@@ -123,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: User requests a package and answers questions for approval.
+### Example 2: User requests a package and answers questions for approval
 ### Request
 
 The following is an example of a request where the requestor provided answers to the approver to help them make their decision.
