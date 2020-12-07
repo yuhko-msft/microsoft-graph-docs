@@ -15,7 +15,7 @@ A complex type used to represent a text in multiple localalized forms. It includ
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|
 |defaultText|String|The fallback string, which is used when a requested localization is not available.|Yes|No|
 |localizedTexts|[accessPackageLocalizedText](../resources/accesspackagelocalizedtext.md) collection|Content represented in a format for a specific locale.|No|No|
 
