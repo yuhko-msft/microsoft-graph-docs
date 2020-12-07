@@ -17,7 +17,7 @@ A complex type which would be used to represent a string in a specific language.
 |Property|Type|Description|
 |:---|:---|:---|
 |languageCode|String|The ISO code for the intended language. Required. |
-|text|String|The text in the specific language|Yes|No|
+|text|String|The text in the specific language. Required. |
 
 ## Relationships
 None.
