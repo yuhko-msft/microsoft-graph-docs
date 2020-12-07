@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A child of `accessPackageQuestion` which presents multiple answer options a requestor must choose an answer from.
+A child of `accessPackageQuestion` that presents multiple options that the requestor must choose an answer from.
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 
@@ -52,4 +52,3 @@ The following is a JSON representation of the resource.
   "allowsMultipleSelection": "Boolean"
 }
 ```
-
