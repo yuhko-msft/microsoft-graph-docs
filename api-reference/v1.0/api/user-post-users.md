@@ -84,9 +84,9 @@ Content-type: application/json
 
 {
   "accountEnabled": true,
-  "displayName": "displayName-value",
-  "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
+  "displayName": "Adele Vance",
+  "mailNickname": "AdeleV",
+  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "xWwvJ]6NMw+bWH-d"
