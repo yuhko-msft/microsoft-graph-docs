@@ -56,7 +56,7 @@ The following example shows a request to get chat details.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs?$filter=displayName eq 'Scrum Board'
+GET https://graph.microsoft.com/beta/chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs?$filter=displayName eq 'Scrum Board'
 ```
 
 ### Response
