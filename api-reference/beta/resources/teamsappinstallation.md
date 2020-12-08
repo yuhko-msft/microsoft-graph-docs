@@ -29,7 +29,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 |[Add app for user](../api/userteamwork-add-installedapps.md) | | Adds (installs) an app in the personal scope of a user.|
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
 |[Upgrade app installed for user](../api/userteamwork-upgrade-installedapps.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
-|[Add app in chat](../api/chat-add-installedapps.md) | | Adds (installs) an app in a chat.|
+|[Add app in chat](../api/chat-post-installedapps.md) | | Adds (installs) an app in a chat.|
 |[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Lists apps in a chat.|
 |[Get app in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in the personal scope of a user.|
 |[Update app in chat](../api/chat-update-installedapps.md) | None | Update to the latest version of the app installed in chat.|
