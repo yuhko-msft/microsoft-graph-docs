@@ -19,13 +19,13 @@ Use this API to assign an app role to a user. To grant an app role assignment to
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. For more information, see [Application permissions](/graph/permissions-reference#application-permissions).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All |
+| Permission type | Recommended permission |
+|:--------------- |:----------------------------- |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | AppRoleAssignment.ReadWrite.All |
 
 ## HTTP request
 

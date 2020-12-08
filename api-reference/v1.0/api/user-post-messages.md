@@ -16,13 +16,14 @@ Use this API to create a draft of a new message. Drafts can be created in any fo
 While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. For more information, see [Mail permissions](/graph/permissions-reference#mail-permissions).
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) | Mail.ReadWrite |
+| Delegated (personal Microsoft account) | Mail.ReadWrite |
+| Application | Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -15,13 +15,13 @@ Retrieve a list of [user](../resources/user.md) objects.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | User.ReadBasic.All | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | User.Read.All | User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -134,7 +134,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_signinname_users"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # [C#](#tab/csharp)
@@ -193,7 +193,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_signin_last_time"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
 # [C#](#tab/csharp)

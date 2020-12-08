@@ -17,12 +17,24 @@ To get expanded event instances, you can [get the calendar view](calendar-list-c
 [get the instances of an event](event-list-instances.md).
 
 ## Permissions
-Depending on the type of calendar that the events are in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
-| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Calendars permissions](/graph/permissions-reference#calendars-permissions) and [Group permissions](/graph/permissions-reference#group-permissions).
+
+### User calendar
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Calendars.Read | Calendars.ReadWrite |
+| Delegated (personal Microsoft account) | Calendars.Read | Calendars.ReadWrite |
+| Application | Calendars.Read | Calendars.ReadWrite |
+
+### Group calendar
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Group.Read.All | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Not supported. | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

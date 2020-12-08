@@ -31,13 +31,14 @@ Users can set the time zone they prefer on any Outlook client, by choosing from 
 This `GET` operation returns the user's preferred time zone in the format that the administrator has set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Mail permissions](/graph/permissions-reference#mail-permissions).
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | MailboxSettings.Read | MailboxSettings.ReadWrite |
+| Delegated (personal Microsoft account) | MailboxSettings.Read | MailboxSettings.ReadWrite |
+| Application | MailboxSettings.Read | MailboxSettings.ReadWrite |
 
 ## HTTP request
 To get all the mailbox settings for a user:

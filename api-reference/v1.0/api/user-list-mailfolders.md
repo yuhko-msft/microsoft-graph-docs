@@ -14,13 +14,14 @@ Namespace: microsoft.graph
 Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Mail permissions](/graph/permissions-reference#mail-permissions).
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Mail.ReadBasic | Mail.Read, Mail.ReadWrite |
+| Delegated (personal Microsoft account) | Mail.ReadBasic | Mail.Read, Mail.ReadWrite |
+| Application | Mail.ReadBasic.All | Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

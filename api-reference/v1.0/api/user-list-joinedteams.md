@@ -11,22 +11,22 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.
  
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Team permissions](/graph/permissions-reference#team-permissions), [TeamSettings permissions](/graph/permissions-reference#team-settings-permissions), and [User permissions](/graph/permissions-reference#user-permissions).
 
-> With user delegated permissions this operation only works for the 'me' user. 
-> With application permissions, it works for all users by specifying  the specific user id. 
-> ('me' alias is not supported with application permissions)
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+The following list defines exceptions to the permissions in the previous table:
+- With user delegated permissions this operation only works for the 'me' alias. 
+- With application permissions, it works for all users by specifying the specific user id. 
+- The 'me' alias is not supported with application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

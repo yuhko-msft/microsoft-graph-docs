@@ -19,13 +19,13 @@ The request body contains the user to create. At a minimum, you must specify the
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:----------------------------- |:-------------------------- |
+| Delegated (work or school account) | User.ReadWrite.All | Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | User.ReadWrite.All | Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -84,12 +84,12 @@ Content-type: application/json
 
 {
   "accountEnabled": true,
-  "displayName": "Adele Vance",
-  "mailNickname": "AdeleV",
-  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+  "displayName": "displayName-value",
+  "mailNickname": "mailNickname-value",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
-    "password": "xWwvJ]6NMw+bWH-d"
+    "password": "password-value"
   }
 }
 ```
@@ -129,17 +129,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+    "id": "id-value",
     "businessPhones": [],
-    "displayName": "Adele Vance",
-    "givenName": "Adele",
-    "jobTitle": "Product Marketing Manager",
-    "mail": "AdeleV@contoso.onmicrosoft.com",
-    "mobilePhone": "+1 425 555 0109",
-    "officeLocation": "18/2111",
-    "preferredLanguage": "en-US",
-    "surname": "Vance",
-    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
+    "displayName": "displayName-value",
+    "givenName": null,
+    "jobTitle": null,
+    "mail": null,
+    "mobilePhone": null,
+    "officeLocation": null,
+    "preferredLanguage": null,
+    "surname": null,
+    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
 

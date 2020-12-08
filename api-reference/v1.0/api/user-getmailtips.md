@@ -17,13 +17,14 @@ Note that by making a `POST` call to the `getMailTips` action, you can request s
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.Read.Shared    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Mail permissions](/graph/permissions-reference#mail-permissions).
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Mail.Read | Mail.Read.Shared |
+| Delegated (personal Microsoft account) | Mail.Read | Not supported. |
+| Application | Mail.Read | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

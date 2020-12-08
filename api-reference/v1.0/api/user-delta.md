@@ -15,14 +15,14 @@ Get newly created, updated, or deleted users without having to perform a full re
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | User.Read | User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | User.Read.All | User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -155,18 +155,18 @@ Content-type: application/json
   "value": [
     {
       "businessPhones": [
-          "+1 425 555 0109"
+          "businessPhones-value"
       ],
-      "displayName": "Adele Vance",
-      "givenName": "Adele",
-      "jobTitle": "Retail Manager",
-      "mail": "AdeleV@contoso.onmicrosoft.com",
-      "mobilePhone": "+1 425 555 0109",
-      "officeLocation": "18/2111",
-      "preferredLanguage": "en-US",
-      "surname": "Vance",
-      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
-      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "mail": "mail-value",
+      "mobilePhone": "mobilePhone-value",
+      "officeLocation": "officeLocation-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "surname": "surname-value",
+      "userPrincipalName": "userPrincipalName-value",
+      "id": "id-value"
     }
   ]
 }
@@ -225,9 +225,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "Adele Vance",
-      "jobTitle": "Retail Manager",
-      "mobilePhone": "+1 425 555 0109"
+      "displayName": "displayName-value",
+      "jobTitle": "jobTitle-value",
+      "mobilePhone": null
     }
   ]
 }
@@ -288,8 +288,8 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "Vance Adele",
-      "jobTitle": "Product Marketing Manager"
+      "displayName": "displayName-value",
+      "jobTitle": null
     }
   ]
 }

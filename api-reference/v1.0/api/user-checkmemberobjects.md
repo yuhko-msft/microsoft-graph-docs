@@ -15,13 +15,39 @@ Check for membership in a list of group or directory roles for the specified use
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+CChoose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Administrative unit permissions](/graph/permissions-reference#administrative-units-permissions), [Group permissions](/graph/permissions-reference#group-permissions), [Role management permissions](/graph/permissions-reference#role-management-permissions), and [User permissions](/graph/permissions-reference#user-permissions).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>In addition:<br><br><ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>And:<ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+### Administrative unit
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | AdministrativeUnit.Read.All | AdministrativeUnit.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | AdministrativeUnit.Read.All | AdministrativeUnit.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+### Directory role
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | RoleManagement.Read.Directory | RoleManagement.ReadWrite.Directory, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | RoleManagement.Read.Directory | RoleManagement.ReadWrite.Directory, Directory.Read.All, Directory.ReadWrite.All |
+
+### Group
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Group.Read.All | Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Group.Read.All | Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+### User
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | User.ReadBasic.All | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | User.ReadBasic.All | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 

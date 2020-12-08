@@ -20,13 +20,14 @@ There are two scenarios where an app can get contacts in another user's contact 
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite    |
-|Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite    |
-|Application | Contacts.Read, Contacts.ReadWrite |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Contacts permissions](/graph/permissions-reference#contacts-permissions).
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Contacts.Read | Contacts.ReadWrite |
+| Delegated (personal Microsoft account) | Contacts.Read | Contacts.ReadWrite |
+| Application | Contacts.Read | Contacts.ReadWrite |
 
 ## HTTP request
 

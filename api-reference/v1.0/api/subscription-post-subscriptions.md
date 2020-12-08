@@ -15,55 +15,133 @@ Subscribes a listener application to receive change notifications when the reque
 
 ## Permissions
 
- Creating a subscription requires read scope to the resource. For example, to get change notifications on messages, your app needs the `Mail.Read` permission. 
- 
- Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Permissions](/graph/permissions-reference).
 
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Not supported | Not supported |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Not supported | Not supported | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
-|[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
-|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
-|[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
-|[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
-|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+### CallRecord (/communications/callRecords)
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Not supported. | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | CallRecords.Read.All | Not supported. |
 
-### chatMessage
+### ChatMessage (/teams/{id}/channels/{id}/messages)
 
-**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Not supported. | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | ChannelMessage.Read.Group | ChannelMessage.Read.All |
 
-> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the
-[required licenses](https://aka.ms/teams-changenotification-licenses).
+### ChatMessage (/teams/getAllMessages)
 
-> **Note:** `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Not supported. | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | ChannelMessage.Read.All | Not supported. |
+
+### ChatMessage (/chats/{id}/messages and /chats/getAllMessages)
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Not supported. | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Chat.Read.All | Not supported. |
+
+### Contact
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Contacts.Read | Not supported. |
+| Delegated (personal Microsoft account) | Contacts.Read | Not supported. |
+| Application | Contacts.Read | Not supported. |
+
+### DriveItem (user's personal OneDrive)
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Not supported | Not supported. |
+| Delegated (personal Microsoft account) | Files.ReadWrite | Not supported. |
+| Application | Not supported. | Not supported. |
+
+### DriveItem (OneDrive for Business)
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Files.ReadWrite.All | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Files.ReadWrite.All | Not supported. |
+
+### Event
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Calendars.Read | Not supported. |
+| Delegated (personal Microsoft account) | Calendars.Read | Not supported. |
+| Application | Calendars.Read | Not supported. |
+
+### Group
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Group.Read.All | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Group.Read.All | Not supported. |
+
+### Group conversation
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Group.Read.All | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Not supported. | Not supported. |
+
+### List
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Sites.ReadWrite.All | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | Sites.ReadWrite.All | Not supported. |
+
+### Message
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Mail.ReadBasic | Mail.Read |
+| Delegated (personal Microsoft account) | Mail.ReadBasic | Mail.Read |
+| Application | Mail.ReadBasic | Mail.Read |
+
+### Security alert
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | SecurityEvents.ReadWrite.All | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application | SecurityEvents.ReadWrite.All | Not supported. |
+
+### User
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | User.Read.All | Not supported. |
+| Delegated (personal Microsoft account) | User.Read.All | Not supported. |
+| Application | User.Read.All | Not supported. |
+
+In addition to selecting permissions, the following information should be considered: 
+
+- The ChannelMessage.Read.Group uses [resource-specific consent](https://aka.ms/teams-rsc).
+- **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
+- `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the [required licenses](https://aka.ms/teams-changenotification-licenses).
+- `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
 If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.
-
-### driveItem
-
-Additional limitations apply for subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
-
-On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
-
-### contact, event, and message
-
-Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
-
-- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
-- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
-
-  - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
-  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
+- Additional limitations apply for subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions. On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+- Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
+    - Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
+    - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
+        - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
+        - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
 
 ## HTTP request
 

@@ -39,15 +39,32 @@ For an item attachment that is a [contact](../resources/contact.md), [event](../
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-* If accessing attachments in messages: Mail.Read.
-* If accessing attachments in events: Calendars.Read.
-* If accessing attachments in group posts: Group.Read.All.
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Calendars permissions](/graph/permissions-reference#calendars-permissions), [Group permissions](/graph/permissions-reference#group-permissions), and [Mail permissions](/graph/permissions-reference#mail-permissions).
 
-<!--
-* If accessing attachments in group events or posts: Group.Read.All.
--->
+### Messages
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Mail.Read | Mail.ReadWrite |
+| Delegated (personal Microsoft account) | Mail.Read | Mail.ReadWrite |
+| Application | Mail.Read | Mail.ReadWrite |
+
+### Calendars
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Calendars.Read | Calendars.ReadWrite |
+| Delegated (personal Microsoft account) | Calendars.Read | Calendars.ReadWrite |
+| Application | Calendars.Read | Calendars.ReadWrite |
+
+### Groups
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Group.Read.All | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Group.Read.All | Group.ReadWrite.All |
+| Application | Group.Read.All | Group.ReadWrite.All |
 
 ## HTTP request
 This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), and [post](../resources/post.md)) that support attachments:

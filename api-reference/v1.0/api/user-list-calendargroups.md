@@ -12,14 +12,16 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the user's calendar groups.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+## Permissions
+
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [Calendars permissions](/graph/permissions-reference#calendars-permissions).
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | Calendars.Read | Calendars.ReadWrite |
+| Delegated (personal Microsoft account) | Calendars.Read | Calendars.ReadWrite |
+| Application | Calendars.Read | Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

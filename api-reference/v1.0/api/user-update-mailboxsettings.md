@@ -29,13 +29,14 @@ When updating the preferred time zone for a user, specify it in the Windows or [
 > You cannot create or delete any mailbox settings.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.ReadWrite |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. For more information, see [Mail permissions](/graph/permissions-reference#mail-permissions).
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) | MailboxSettings.ReadWrite |
+| Delegated (personal Microsoft account) | MailboxSettings.ReadWrite |
+| Application | MailboxSettings.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

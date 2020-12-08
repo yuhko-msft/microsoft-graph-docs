@@ -13,16 +13,15 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of user object.
 
-> Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
-
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. If necessary, you can consider other permissions that have a higher privilege for your specific scenario. For more information, see [User permissions](/graph/permissions-reference#user-permissions).
+
+| Permission type | Recommended permission | Other permissions |
+|:--------------- |:---------------------- |:----------------- |
+| Delegated (work or school account) | User.Read | User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.Read | User.ReadWrite |
+| Application | User.Read.All | User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
 
@@ -40,11 +39,12 @@ GET /me
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). 
+Getting a user returns only these default properties: businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, and userPrincipalName. Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
 
-To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
+To return an alternative property set, you must specify the desired set of properties using the OData `$select` query parameter. For example, to return **displayName**, **givenName**, and **postalCode**, you add the following to your query `$select=displayName,givenName,postalCode`.
 
 ## Request headers
 | Header       | Value|
@@ -82,18 +82,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "+1 425 555 0109"
+       "businessPhones-value"
    ],
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "jobTitle": "Retail Manager",
-   "mail": "AdeleV@contoso.onmicrosoft.com",
-   "mobilePhone": "+1 425 555 0109",
-   "officeLocation": "18/2111",
-   "preferredLanguage": "en-US",
-   "surname": "Vance",
-   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
-   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "jobTitle": "jobTitle-value",
+   "mail": "mail-value",
+   "mobilePhone": "mobilePhone-value",
+   "officeLocation": "officeLocation-value",
+   "preferredLanguage": "preferredLanguage-value",
+   "surname": "surname-value",
+   "userPrincipalName": "userPrincipalName-value",
+   "id": "id-value"
 }
 ```
 
@@ -145,18 +145,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "+1 425 555 0109"
+       "businessPhones-value"
    ],
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "jobTitle": "Retail Manager",
-   "mail": "AdeleV@contoso.onmicrosoft.com",
-   "mobilePhone": "+1 425 555 0109",
-   "officeLocation": "18/2111",
-   "preferredLanguage": "en-US",
-   "surname": "Vance",
-   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
-   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "jobTitle": "jobTitle-value",
+   "mail": "mail-value",
+   "mobilePhone": "mobilePhone-value",
+   "officeLocation": "officeLocation-value",
+   "preferredLanguage": "preferredLanguage-value",
+   "surname": "surname-value",
+   "userPrincipalName": "userPrincipalName-value",
+   "id": "id-value"
 }
 ```
 
@@ -177,9 +177,9 @@ Content-type: application/json
 Content-length: 491
 
 {
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "postalCode": "98004"
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "postalCode": "postalCode-value"
 }
 ```
 

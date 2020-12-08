@@ -12,14 +12,16 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Use this API to create a new mail folder in the root folder of the user's mailbox.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+## Permissions
+
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. For more information, see [Mail permissions](/graph/permissions-reference#mail-permissions).
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------------- |
+| Delegated (work or school account) | Mail.ReadWrite |
+| Delegated (personal Microsoft account) | Mail.ReadWrite |
+| Application | Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +62,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "Clutter"
+  "displayName": "displayName-value"
 }
 ```
 # [C#](#tab/csharp)
@@ -95,12 +97,12 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "Clutter",
-  "parentFolderId": "AQMkADlmOGQwZmU3LWVjOWMtNDhiYgAtODcxNy1",
+  "displayName": "displayName-value",
+  "parentFolderId": "parentFolderId-value",
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
+  "id": "id-value"
 }
 ```
 

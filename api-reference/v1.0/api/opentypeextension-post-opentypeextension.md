@@ -17,21 +17,95 @@ Create an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 ## Permissions
 
-Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose one of the following [recommended permissions](/graph/auth/auth-concepts#microsoft-graph-permissions) to call this method. The recommended permissions use the least privilege necessary for calling the method. For more information, see [Permissions](/graph/permissions-reference).
 
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
-| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
-| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
-| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
-| [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+### Device
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) | Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Device.ReadWrite.All |
+
+### Event
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) | Calendars.ReadWrite |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite |
+| Application | Calendars.ReadWrite |
+
+### Group
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Group.ReadWrite.All |
+
+### Group event
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
+
+### Group post
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Group.ReadWrite.All |
+
+### Message
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) |  Mail.ReadWrite |
+| Delegated (personal Microsoft account) | Mail.ReadWrite |
+| Application | Mail.ReadWrite |
+
+### Organization
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) |  Organization.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Organization.ReadWrite.All |
+
+### Personal contact
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) |  Contacts.ReadWrite |
+| Delegated (personal Microsoft account) | Contacts.ReadWrite |
+| Application | Contacts.ReadWrite |
+
+### User
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) |  User.ReadWrite |
+| Delegated (personal Microsoft account) | User.ReadWrite |
+| Application | User.ReadWrite.All |
+
+### Task
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) |  Tasks.ReadWrite |
+| Delegated (personal Microsoft account) | Tasks.ReadWrite |
+| Application | Tasks.ReadWrite.All |
+
+### Tasklist
+
+| Permission type | Recommended permission |
+|:--------------- |:---------------------- |
+| Delegated (work or school account) |  Tasks.ReadWrite |
+| Delegated (personal Microsoft account) | Tasks.ReadWrite |
+| Application | Tasks.ReadWrite.All |
 
 ## HTTP request
 
