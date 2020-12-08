@@ -51,6 +51,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added [Get the installed app in team](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Get installed app for user](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Addition | beta | Added [Get chat between user and app](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) method to the new [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true) resource. |
 
+
+### Identity and access | Governance
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the new [accessPackageAnswer](/graph/api/resources/accesspackageanswer.md) complex resource type, including two sub-types [accessPackageAnswerChoice](/graph/api/resources/accesspackageanswerchoice.md) and [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring.md).|
+| Addition | beta | Added the new [accessPackageQuestion](/graph/api/resources/accesspackagequestion.md) complex resource type, including two sub-types [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion.md) and [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion.md).|
+| Addition | beta | Added the new [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent.md) complex resource type. |
+| Addition | beta | Added the new [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext.md) complex resource type. |
+| Change | beta | Added an example of creating a policy with requestor questions configured in POST accessPackageAssignmentPolicy. |
+| Change | beta | Changed example to include updating requestor questions in an existing accessPackagePolicy in UPDATE accessPackageAssignmentPolicy. |
+| Change | beta | Added an example of an access package request that includes answered questions for approval in POST accessPackageAssignmentRequest. |
+
 ## November 2020
 
 ### Change notifications
