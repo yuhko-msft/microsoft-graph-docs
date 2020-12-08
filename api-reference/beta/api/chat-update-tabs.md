@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /chat/{id}/tabs/{id}
+PATCH /chats/{id}/tabs/{id}
 ```
 
 ## Request headers
