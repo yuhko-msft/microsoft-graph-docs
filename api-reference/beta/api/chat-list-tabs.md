@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 }-->
 
 ```http
-GET /chat/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
+GET /chats/19:75a0894119a0468caee5811901a75ffd@thread.tacv2/tabs
 ```
 
 ### Response
