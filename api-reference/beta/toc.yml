@@ -12653,7 +12653,7 @@ items:
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
         - name: Add app in chat
-          href: api/chat-add-installedapps.md
+          href: api/chat-post-installedapps.md
         - name: List apps in chat
           href: api/chat-list-installedapps.md
         - name: Get app in chat
