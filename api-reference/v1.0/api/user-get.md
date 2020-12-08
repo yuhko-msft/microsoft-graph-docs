@@ -145,7 +145,7 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "+1 425 555 0109""
+       "+1 425 555 0109"
    ],
    "displayName": "Adele Vance",
    "givenName": "Adele",
