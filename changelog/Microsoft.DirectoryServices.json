@@ -1,6 +1,6 @@
 {
   "changelog": [
-	{
+    {
       "ChangeList": [
         {
           "Id": "b836dbcc-8951-4d35-9947-a1b9ee42e399",
@@ -28,7 +28,7 @@
         },
         {
           "Id": "7312117b-0740-45d2-aa85-1a0e1fb2c1f7",
-          "ApiChange": "Resource"
+          "ApiChange": "Resource",
           "ChangedApiName": "accessPackageLocalizedText",
           "ChangeType": "Addition",
           "Description": "Added the new [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext.md) complex resource type.",
