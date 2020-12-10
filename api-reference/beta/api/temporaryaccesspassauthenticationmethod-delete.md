@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 
 Deletes a [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
 
+While the current Temporary Access Pass on the user is valid – it needs to be deleted before a new Temporary Access Pass can be create a new pass on the user. Deleting a valid Temporary Access Pass will revoke the user’s sessions.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
