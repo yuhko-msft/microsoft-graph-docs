@@ -1,25 +1,38 @@
 ---
 title: "Create temporaryAccessPassAuthenticationMethod"
 description: "Create a new temporaryAccessPassAuthenticationMethod object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "inbarckMS"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create temporaryAccessPassAuthenticationMethod
 Namespace: microsoft.graph
 
-Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object on a user. A user can only have one Temporary Access Pass. The passcode can be used between the start and end time of the Temporary Access Pass. If the user requires a new Temporary Access Pass:
+* While the current Temporary Access Pass is valid – the admin needs to delete the existing Temporary Access Pass and create a new pass on the user. Deleting a valid Temporary Access Pass will revoke the user’s sessions. 
+* After the Temporary Access Pass has expired – a new Temporary Access Pass will override the current Temporary Access Pass and will not revoke the user’s sessions.
+
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
+|:---------------------------------------|:-------------------------|:-----------------|
+| Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
 |Application|UserAuthenticationMethod.ReadWrite.All|
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
+* Privileged authentication admin
+* Authentication admin
+
 
 ## HTTP request
 
@@ -40,15 +53,13 @@ POST /user/authentication/temporaryAccessPassMethods
 ## Request body
 In the request body, supply a JSON representation of the [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
 
-The following table shows the properties that are required when you create the [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
+The following table shows the properties that are can be set when you create the [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
-|temporaryAccessPass|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|lifetimeInMinutes|Int32|**TODO: Add Description**|
+|Property|Type|Description|Required| 
+|:---|:---|:---|:---|
+|startDateTime|DateTimeOffset|The date and time when the temporaryAccessPass becomes available to use| No|
+|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime. Minimum 10, Maximum 43200 (equivalent to 30 days)| No|
+|isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time. A multi-use Temporary Access Pass (isUsableOnce = false), can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy|  No|
 
 
 
@@ -71,12 +82,12 @@ Content-length: 209
 
 {
   "@odata.type": "#microsoft.strongAuthentication.temporaryAccessPassAuthenticationMethod",
-  "temporaryAccessPass": "String",
   "startDateTime": "String (timestamp)",
-  "lifetimeInMinutes": "Integer"
+  "lifetimeInMinutes": "Integer",
+  "isUsableOnce": "Boolean"
+
 }
 ```
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -96,7 +107,8 @@ Content-Type: application/json
   "temporaryAccessPass": "String",
   "createdDateTime": "String (timestamp)",
   "startDateTime": "String (timestamp)",
-  "lifetimeInMinutes": "Integer"
+  "lifetimeInMinutes": "Integer",
+  "isUsableOnce": "Boolean"
 }
 ```
 
