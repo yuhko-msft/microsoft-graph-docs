@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
 |:---|:---|:--|
 |Delegated (work or school account)|UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.ReadWrite.All
-|Delegated (personal Microsoft account)|Not supported.
-|Application|UserAuthenticationMethod.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.
+|Application|Not supported.|UserAuthenticationMethod.ReadWrite.All|
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -39,11 +39,8 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-DELETE /users/{id | userPrincipalName}/authentication/
-{temporaryAccessPassAuthenticationMethodId}
-DELETE /me/authentication/{temporaryAccessPassAuthenticationMethodId}
-
-
+DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{id}
+DELETE /me/authentication/temporaryAccessPassMethods/{id}
 ```
 
 ## Request headers
@@ -56,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -67,7 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/authentication/temporaryAccessPassMethods/{temporaryAccessPassAuthenticationMethodId}
+DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods/{id}
 ```
 
 

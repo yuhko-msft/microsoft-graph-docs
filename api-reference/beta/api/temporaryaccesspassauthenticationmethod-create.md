@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:-------------------------|:-----------------|
 | Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
-|Application|UserAuthenticationMethod.ReadWrite.All|
+|Application| Not supported. |UserAuthenticationMethod.ReadWrite.All|
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -41,7 +41,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 }
 -->
 ``` http
-POST /user/authentication/temporaryAccessPassMethods
+POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ The following table shows the properties that are can be set when you create the
 |Property|Type|Description|Required| 
 |:---|:---|:---|:---|
 |startDateTime|DateTimeOffset|The date and time when the temporaryAccessPass becomes available to use| No|
-|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime. Minimum 10, Maximum 43200 (equivalent to 30 days)| No|
+|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime, if set. Minimum 10, Maximum 43200 (equivalent to 30 days)| No|
 |isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time. A multi-use Temporary Access Pass (isUsableOnce = false), can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy|  No|
 
 
@@ -76,12 +76,12 @@ If successful, this method returns a `201 Created` response code and a [temporar
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/user/authentication/temporaryAccessPassMethods
+POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods
 Content-Type: application/json
 Content-length: 209
 
 {
-  "@odata.type": "#microsoft.strongAuthentication.temporaryAccessPassAuthenticationMethod",
+  "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
   "startDateTime": "String (timestamp)",
   "lifetimeInMinutes": "Integer",
   "isUsableOnce": "Boolean"
@@ -94,7 +94,7 @@ Content-length: 209
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.strongAuthentication.temporaryAccessPassAuthenticationMethod"
+  "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethod"
 }
 -->
 ``` http
@@ -102,7 +102,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.strongAuthentication.temporaryAccessPassAuthenticationMethod",
+  "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
   "id": "30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30",
   "temporaryAccessPass": "String",
   "createdDateTime": "String (timestamp)",

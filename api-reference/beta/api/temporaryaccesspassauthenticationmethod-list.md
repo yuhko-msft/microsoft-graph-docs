@@ -1,7 +1,7 @@
 ---
 title: "List temporaryAccessPassAuthenticationMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects and their properties."
-author: "inbarcMS"
+author: "inbarckMS"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of a user's[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  objects and their properties. This call will only return a single object as only one Temporary Access Pass method can be set on users.
+Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  objects and their properties. This call will only return a single object as only one Temporary Access Pass method can be set on users.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|:--|
 |Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
 |Delegated (personal Microsoft account)|Not supported.|Not supported.
-|Application|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All|
+|Application|Not supported.|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All|
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethod
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.strongAuthentication.temporaryAccessPassAuthenticationMethod)"
+  "@odata.type": "Collection(microsoft.graph.temporaryAccessPassAuthenticationMethod)"
 }
 -->
 ``` http
@@ -84,7 +84,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.strongAuthentication.temporaryAccessPassAuthenticationMethod",
+      "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
       "id": "String",
       "temporaryAccessPass": "String",
       "createdDateTime": "String (timestamp)",
