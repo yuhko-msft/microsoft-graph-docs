@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|**TODO: Provide applicable permissions.**|
 |Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Application|UserAuthenticationMethod.ReadWrite.All|
 
 ## HTTP request
 
