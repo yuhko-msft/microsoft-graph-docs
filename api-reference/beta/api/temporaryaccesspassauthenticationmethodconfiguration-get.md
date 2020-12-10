@@ -46,6 +46,37 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 ## Request body
 Do not supply a request body for this method.
 
-## Response
+### Response
+The following is an example of the response.
 
-If successful, this method returns a `200 OK` response code and a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object in the response body.
+**Note:** The response object shown here might be shortened for readability.
+<!-- {​​​​​
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fido2AuthenticationMethodConfiguration"
+}​​​​​
+-->
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+    "id": "TemporaryAccessPass",
+    "state": "enabled",
+    "defaultLifetimeInMinutes": Integer,
+    "defaultLength": Integer,
+    "minimumLifetimeInMinutes": Integer,
+    "maximumLifetimeInMinutes": Integer,
+    "isUsableOnce": Boolean,
+    "includeTargets":[
+         {​​​​​
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false,
+            "useForSignIn":true
+         }​​​​​
+    ]
+}
+```
