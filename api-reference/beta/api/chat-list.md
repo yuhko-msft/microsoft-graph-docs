@@ -265,7 +265,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List all the chats and expand the chats' members and filter by the chat member's displayname
+### Example 2: List all the chats and expand the chats' members
 
 #### Request
 
@@ -274,10 +274,10 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_chats_expand_members_and_filter"
+  "name": "list_chats_expand_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members
 ```
 
 ---
@@ -299,7 +299,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(members())",
-    "@odata.count": 3,
+    "@odata.count": 46,
     "value": [
         {
             "id": "19:meeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2",
@@ -332,6 +332,56 @@ Content-type: application/json
                     "displayName": "Nick Fury",
                     "userId": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
                     "email": "furyn@teamsgraph.onmicrosoft.com"
+                }
+            ]
+        },
+        {
+            "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
+            "topic": "Group chat sample",
+            "createdDateTime": "2020-12-03T19:41:07.054Z",
+            "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
+            "chatType": "group",
+            "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
+            "members": [
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "roles": [],
+                    "displayName": "Tony Stark",
+                    "userId": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "email": "starkt@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "48bf9d52-dca7-4a5f-8398-37b95cc7bd83",
+                    "roles": [],
+                    "displayName": "Bruce Banner",
+                    "userId": "48bf9d52-dca7-4a5f-8398-37b95cc7bd83",
+                    "email": "bannerb@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "9efb1aea-4f83-4673-bdcd-d3f3c7be28c2",
+                    "roles": [],
+                    "displayName": "TChalla",
+                    "userId": "9efb1aea-4f83-4673-bdcd-d3f3c7be28c2",
+                    "email": "tchalla@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+                    "roles": [],
+                    "displayName": "Thor Odinson",
+                    "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+                    "email": "odinsont@teamsgraph.onmicrosoft.com"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+                    "id": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+                    "roles": [],
+                    "displayName": "Steve Rogers",
+                    "userId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+                    "email": "rogerss@teamsgraph.onmicrosoft.com"
                 }
             ]
         },
