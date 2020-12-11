@@ -274,10 +274,10 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_chats_expand_members_and_filters"
+  "name": "list_chats_expand_members_and_filter"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
 ```
 
 ---
@@ -414,3 +414,17 @@ Content-type: application/json
     ]
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List chats",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
