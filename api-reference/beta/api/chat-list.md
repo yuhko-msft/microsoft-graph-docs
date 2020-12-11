@@ -277,7 +277,7 @@ Here is an example of the request.
   "name": "list_chats_expand_members_and_filters"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
+GET https://graph.microsoft.com/beta/chats?$expand=members&$filter=members/any(o: o/displayname eq 'Peter Parker')
 ```
 
 ---
@@ -299,7 +299,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(members())",
-    "@odata.count": 3,
+    "@odata.count": 46,
     "value": [
         {
             "id": "19:meeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2",
