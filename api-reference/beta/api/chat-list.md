@@ -265,7 +265,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List all the chats and expand the chats' members
+### Example 3: List all the chats and expand the chats' members and filter by the chat member's displayname
 
 #### Request
 
@@ -274,7 +274,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_chats_expand_members"
+  "name": "list_chats_expand_members_and_filters"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$expand=members
