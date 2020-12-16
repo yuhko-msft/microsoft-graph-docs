@@ -50,11 +50,11 @@ Do not supply a request body for this method.
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
-<!-- {​​​​​
+<!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.fido2AuthenticationMethodConfiguration"
-}​​​​​
+}
 -->
 ``` http
 HTTP/1.1 200 OK
@@ -71,12 +71,12 @@ Content-type: application/json
     "maximumLifetimeInMinutes": Integer,
     "isUsableOnce": Boolean,
     "includeTargets":[
-         {​​​​​
+         {
             "targetType":"group",
             "id":"all_users",
             "isRegistrationRequired":false,
             "useForSignIn":true
-         }​​​​​
+         }
     ]
 }
 ```
