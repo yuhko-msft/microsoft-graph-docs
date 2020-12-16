@@ -103,9 +103,27 @@ The first example gets the specified event. It specifies the following:
 GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
+### Example 1: Expand a series master event
+#### Request
+
+The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_seriesMaster_expansion"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
+```
 #### Response
 The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, because the events no longer exist, the operation returns only their **occurrenceId** property values.
 
+<!-- {
+  "blockType": "response",
+  "name": "get_event_seriesMaster_expansion",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
