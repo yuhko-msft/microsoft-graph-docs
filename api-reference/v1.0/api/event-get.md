@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Get event
+# Get: event
 
 Namespace: microsoft.graph
 
