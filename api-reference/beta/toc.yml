@@ -10205,7 +10205,7 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-                - name: Email
+          - name: Temporary Access Pass
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
