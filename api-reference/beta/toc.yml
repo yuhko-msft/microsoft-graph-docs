@@ -10205,6 +10205,17 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
+                - name: Email
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/temporaryaccesspassauthenticationmethod-list.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
+            - name: Add
+              href: api/temporaryaccesspassauthenticationmethod-create.md
         - name: Authentication method policy
           items:
           - name: Overview
