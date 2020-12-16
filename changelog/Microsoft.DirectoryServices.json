@@ -225,6 +225,14 @@
         {
           "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
           "ApiChange": "Resource",
+          "ChangedApiName": "temporaryaccesspassauthenticationmethodconfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) entity for managing users\u0027 Temporary Access Pass authentication method policy.",
+          "Target": "temporaryaccesspassauthenticationmethodconfiguration"
+        },
+        {
+          "Id": "8edd9cea-d04c-4a1b-8c50-68270332a880",
+          "ApiChange": "Resource",
           "ChangedApiName": "fido2AuthenticationMethodConfiguration",
           "ChangeType": "Addition",
           "Description": "Added the [fido2AuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users\u0027 FIDO2 Security Keys authentication method policy.",
