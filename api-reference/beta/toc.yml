@@ -10283,7 +10283,7 @@ items:
             href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
             items:
             - name: Get
-              href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md.md
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
             - name: Update
               href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
             - name: Delete
