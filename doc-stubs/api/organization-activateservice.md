@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a given service for a tenant
+Activate a given service for a tenant and will require admin privileges to run.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,12 +44,12 @@ In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
+At least one parameter must be defined for this action to be valid. There are two possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three parameters are defined, then the `servicePlanId` and `skuId` takes precedence.
+
 |Parameter|Type|Description|
 |:---|:---|:---|
-|service|String|Name of the service to activate
-|
-|servicePlanId|Guid|PlanId of the ServicePlan to activate
-|
+|service|String|Name of the service to activate|
+|servicePlanId|Guid|PlanId of the ServicePlan to activate|
 |skuId|Guid|SkuId of SKU the service plan is on|
 
 
@@ -67,7 +67,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/organization/activateService
+POST https://graph.microsoft.com/beta/activateService
 
 Content-Type: application/json
 Content-length: 75
@@ -90,4 +90,3 @@ Content-length: 75
 ``` http
 HTTP/1.1 204 No Content
 ```
-
