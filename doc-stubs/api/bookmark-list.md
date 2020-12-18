@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)| Global Administrator, Global Reader, Search Administrator, Search Editor |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ## HTTP request
 
@@ -71,47 +71,35 @@ GET https://graph.microsoft.com/beta/bookmarks
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.bookmark",
-      "id": "1f25a012-a012-1f25-12a0-251f12a0251f",
-      "displayName": "String",
-      "description": "String",
-      "webUrl": "String",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "categories": [
-        "String"
-      ],
-      "availabilityStartDateTime": "String (timestamp)",
-      "availabilityEndDateTime": "String (timestamp)",
-      "languageTags": [
-        "String"
-      ],
-      "platforms": [
-        "String"
-      ],
-      "targetedVariations": [
-        {
-          "@odata.type": "microsoft.graph.searchAdminVariant"
-        }
-      ],
-      "powerAppIds": [
-        "String"
-      ],
-      "keywords": {
-        "@odata.type": "microsoft.graph.answerKeyword"
-      },
-      "state": "String",
-      "isSuggested": "Boolean",
-      "groupIds": [
-        "String"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "733b26d5-af76-4eea-ac69-1a0ce8716897",
+    "displayName": "Italy Holiday",
+    "webUrl": "https://msvacation",
+    "description": "Book a fancy vacation in Tuscany or browse museums in Florence.",
+    "lastModifiedDateTime": 2016-03-21T20:01:37Z,
+    "lastModifiedBy": {
+      "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Ryan Gregg"
+      }
+    },
+    "keywords":  {
+      "keywords": ["Vancation in Europe", "Holiday in Europe"],
+      "reservedKeywords": ["Vancation in Italy"],
+      "matchSimilarKeywords": true
+    },
+    "categories": ["HR"],
+    "availabilityStartDateTime": 2020-09-21T20:01:37Z,
+    "availabilityEndDateTime": 2020-11-21T20:01:37Z,
+    "languageTags": ["en-US"],
+    "platforms": ["ios"],
+    "groupIds": ["groupId"],
+    "targetedVariations": null,
+    "powerAppIds": ["powerAppId"],
+    "state": "published",
+    "isSuggested": false
+  }
+]
 ```
 

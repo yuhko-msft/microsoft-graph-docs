@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)| Global Administrator, Search Administrator, Search Editor |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ## HTTP request
 
@@ -44,29 +44,29 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|displayName|String|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|description|String|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|webUrl|String|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|categories|String collection|**TODO: Add Description**|
-|availabilityStartDateTime|DateTimeOffset|**TODO: Add Description**|
-|availabilityEndDateTime|DateTimeOffset|**TODO: Add Description**|
-|languageTags|String collection|**TODO: Add Description**|
-|platforms|devicePlatformType collection|**TODO: Add Description**. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|targetedVariations|[searchAdminVariant](../resources/searchadminvariant.md) collection|**TODO: Add Description**|
-|powerAppIds|String collection|**TODO: Add Description**|
-|keywords|[answerKeyword](../resources/answerkeyword.md)|**TODO: Add Description**|
-|state|answerState|**TODO: Add Description**. Possible values are: `Published`, `Draft`, `Excluded`.|
-|isSuggested|Boolean|**TODO: Add Description**|
-|groupIds|String collection|**TODO: Add Description**|
+|id|String|Guid id of the Bookmark Inherited from [entity](../resources/entity.md)|
+|displayName|String|Bookmark Display Name Inherited from [searchAnswer](../resources/searchanswer.md)|
+|description|String|Bookmark Description Inherited from [searchAnswer](../resources/searchanswer.md)|
+|webUrl|String|Bookmark URL Inherited from [searchAnswer](../resources/searchanswer.md)|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Read only. Details of the user that created or last modified the bookmark Inherited from [searchAnswer](../resources/searchanswer.md)|
+|lastModifiedDateTime|DateTimeOffset|Read only. Timestamp of when the bookmark is created or edited Inherited from [searchAnswer](../resources/searchanswer.md)|
+|categories|String collection|Categories commonly used to describe this bookmark. eg. IT, HR, etc.|
+|availabilityStartDateTime|DateTimeOffset|Bookmark start date to appear as a search result (Set as null for always available)|
+|availabilityEndDateTime|DateTimeOffset|Bookmark end date to stop appearing as a search result (Set as null for always available)|
+|languageTags|String collection|List of countries or regions able to view this bookmark|
+|platforms|devicePlatformType collection|List of devices and OS able to view this bookmark. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|targetedVariations|[searchAdminVariant](../resources/searchadminvariant.md) collection|List of bookmark targeted variations. Use when you need to show different content to users based on their device, or country and region, or both (Targeted Variations). The Dates and Groups settings will apply to all variations.|
+|powerAppIds|String collection|PowerApp ids for this bookmark|
+|keywords|[answerKeyword](../resources/answerkeyword.md)|Keywords for this bookmark. Properties include: keywords, reservedKeywords, and matchSimilarKeywords.|
+|state|answerState|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|
+|isSuggested|Boolean|Read only. True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft.|
+|groupIds|String collection|List of security group IDs able to view this bookmark|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [bookmark](../resources/bookmark.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -79,41 +79,11 @@ If successful, this method returns a `200 OK` response code and an updated [book
 ``` http
 PATCH https://graph.microsoft.com/beta/bookmarks/{bookmarksId}
 Content-Type: application/json
-Content-length: 662
 
 {
-  "@odata.type": "#microsoft.graph.bookmark",
-  "displayName": "String",
-  "description": "String",
-  "webUrl": "String",
-  "categories": [
-    "String"
-  ],
-  "availabilityStartDateTime": "String (timestamp)",
-  "availabilityEndDateTime": "String (timestamp)",
-  "languageTags": [
-    "String"
-  ],
-  "platforms": [
-    "String"
-  ],
-  "targetedVariations": [
-    {
-      "@odata.type": "microsoft.graph.searchAdminVariant"
-    }
-  ],
-  "powerAppIds": [
-    "String"
-  ],
-  "keywords": {
-    "@odata.type": "microsoft.graph.answerKeyword"
-  },
-  "state": "String",
-  "isSuggested": "Boolean",
-  "groupIds": [
-    "String"
-  ]
+  "description": "Book a fancy vacation in Tuscany or browse museums in Florence."
 }
+
 ```
 
 
@@ -125,46 +95,6 @@ Content-length: 662
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.bookmark",
-  "id": "1f25a012-a012-1f25-12a0-251f12a0251f",
-  "displayName": "String",
-  "description": "String",
-  "webUrl": "String",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "categories": [
-    "String"
-  ],
-  "availabilityStartDateTime": "String (timestamp)",
-  "availabilityEndDateTime": "String (timestamp)",
-  "languageTags": [
-    "String"
-  ],
-  "platforms": [
-    "String"
-  ],
-  "targetedVariations": [
-    {
-      "@odata.type": "microsoft.graph.searchAdminVariant"
-    }
-  ],
-  "powerAppIds": [
-    "String"
-  ],
-  "keywords": {
-    "@odata.type": "microsoft.graph.answerKeyword"
-  },
-  "state": "String",
-  "isSuggested": "Boolean",
-  "groupIds": [
-    "String"
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
