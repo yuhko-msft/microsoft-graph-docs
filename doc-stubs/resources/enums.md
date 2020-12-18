@@ -16,38 +16,3 @@ doc_type: enumTypes
 |Published|
 |Draft|
 |Excluded|
-
-### cloudPcStatus values 
-
-
-
-|Member|
-|:---|
-|notProvisioned|
-|provisioning|
-|provisioned|
-|upgrading|
-|inGracePeriod|
-|deprovisioning|
-|failed|
-
-### educationAddedStudentAction values 
-
-
-
-|Member|
-|:---|
-|none|
-|assignIfOpen|
-|unknownFutureValue|
-
-### onlineMeetingForwarders values 
-
-
-
-|Member|
-|:---|
-|everyone|
-|organizer|
-|unknownFutureValue|
-

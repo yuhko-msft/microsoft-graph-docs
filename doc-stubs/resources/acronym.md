@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+An acronym is a tenant wide administrative answer which references common acronyms in a tenant. An acronym has a few simple properties which define an acronym for an organization. This is based on microsoft.graph.search.searchAnswer\
+\
+The main properties of an acronym include: The acronym, what the acronym standsFor, description, state, and source.
 
 
 Inherits from [searchAnswer](../resources/searchanswer.md).
@@ -28,14 +30,14 @@ Inherits from [searchAnswer](../resources/searchanswer.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|displayName|String|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
-|standsFor|String collection|**TODO: Add Description**|
-|state|answerState|**TODO: Add Description**. Possible values are: `Published`, `Draft`, `Excluded`.|
-|webUrl|String|**TODO: Add Description** Inherited from [searchAnswer](../resources/searchanswer.md)|
+|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for Inherited from [searchAnswer](../resources/searchanswer.md)|
+|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/searchanswer.md)|
+|id|String|Guid id of the Acronym Inherited from Inherited from [entity](../resources/entity.md)|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Read only. Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/searchanswer.md)|
+|lastModifiedDateTime|DateTimeOffset|Read only. Timestamp of when the acronym is created or edited Inherited from [searchAnswer](../resources/searchanswer.md)|
+|standsFor|String collection|What the acronym stands for.|
+|state|answerState|State of the acronym. Possible values are: `published`, `draft`, or `excluded`.. Possible values are: `Published`, `Draft`, `Excluded`.|
+|webUrl|String|The URL of the page or website where you want users to go for more information about the acronym. Inherited from [searchAnswer](../resources/searchanswer.md)|
 
 ## Relationships
 None.

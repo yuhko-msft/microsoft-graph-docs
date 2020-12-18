@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |availabilityEndDateTime|DateTimeOffset|Bookmark end date to stop appearing as a search result (Set as null for always available)|
 |languageTags|String collection|List of countries or regions able to view this bookmark|
 |platforms|devicePlatformType collection|List of devices and OS able to view this bookmark. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|targetedVariations|[searchAdminVariant](../resources/searchadminvariant.md) collection|List of bookmark targeted variations. Use when you need to show different content to users based on their device, or country and region, or both (Targeted Variations). The Dates and Groups settings will apply to all variations.|
+|targetedVariations|[answerVariant](../resources/answerVariant.md) collection|List of bookmark targeted variations. Use when you need to show different content to users based on their device, or country and region, or both (Targeted Variations). The Dates and Groups settings will apply to all variations.|
 |powerAppIds|String collection|PowerApp ids for this bookmark|
 |keywords|[answerKeyword](../resources/answerkeyword.md)|Keywords for this bookmark. Properties include: keywords, reservedKeywords, and matchSimilarKeywords.|
 |state|answerState|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|

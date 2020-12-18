@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Answer Keyword is used to configure triggers for a search answer to appear on search.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|keywords|String collection|**TODO: Add Description**|
-|matchSimilarKeywords|Boolean|**TODO: Add Description**|
-|reservedKeywords|String collection|**TODO: Add Description**|
+|keywords|String collection|A collection of keywords used to trigger the QNA|
+|matchSimilarKeywords|Boolean|If similar words in the search term to the keywords should trigger the answer|
+|reservedKeywords|String collection|Unique keywords that will guarentee the answer is trigger|
 
 ## Relationships
 None.

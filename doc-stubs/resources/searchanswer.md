@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Search Answer is a base type for other search answers which includes properties that apply to other search answer entities.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -28,12 +28,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|webUrl|String|**TODO: Add Description**|
+|id|String|Guid id of the Bookmark Inherited from [entity](../resources/entity.md)|
+|displayName|String|Bookmark Display Name Inherited from [searchAnswer](../resources/searchanswer.md)|
+|description|String|Bookmark Description Inherited from [searchAnswer](../resources/searchanswer.md)|
+|webUrl|String|Bookmark URL Inherited from [searchAnswer](../resources/searchanswer.md)|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Read only. Details of the user that created or last modified the bookmark Inherited from [searchAnswer](../resources/searchanswer.md)|
+|lastModifiedDateTime|DateTimeOffset|Read only. Timestamp of when the bookmark is created or edited Inherited from [searchAnswer](../resources/searchanswer.md)|
 
 ## Relationships
 None.
