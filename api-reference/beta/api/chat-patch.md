@@ -51,7 +51,8 @@ The following table shows the properties that can be used with this action.
 
 ## Response
 
-If successful, this method returns a `200 OK response` code and the updated **chat** resource in the response body.
+If successful, this method returns a `200 OK` response code and the [chat](../resources/chat.md) resource created in the response body.
+
 
 ## Examples
 
