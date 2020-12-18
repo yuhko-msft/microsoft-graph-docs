@@ -1,25 +1,27 @@
 ---
 title: "organization: activateService"
 description: "Activate a given service for a tenant"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "org"
+ms.prod: "organisation"
 doc_type: apiPageType
 ---
 
 # organization: activateService
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Activate a given service for a tenant
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All|
+|Delegated (personal Microsoft account)|Not Supported|
+|Application|Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All|
 
 ## HTTP request
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /organization/{organizationId}/activateService
+POST /activateService
 ```
 
 ## Request headers
@@ -44,9 +46,11 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|service|String|**TODO: Add Description**|
-|servicePlanId|Guid|**TODO: Add Description**|
-|skuId|Guid|**TODO: Add Description**|
+|service|String|Name of the service to activate
+|
+|servicePlanId|Guid|PlanId of the ServicePlan to activate
+|
+|skuId|Guid|SkuId of SKU the service plan is on|
 
 
 
@@ -63,15 +67,15 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/organization/{organizationId}/activateService
+POST https://graph.microsoft.com/beta/organization/activateService
 
 Content-Type: application/json
 Content-length: 75
 
 {
-  "service": "String",
-  "servicePlanId": "Guid",
-  "skuId": "Guid"
+  "service": "serviceName",
+  "servicePlanId": "a23b959c-7ce8-4e57-9140-b90eb88a9e97",
+  "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900"
 }
 ```
 
