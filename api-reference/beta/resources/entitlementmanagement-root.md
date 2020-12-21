@@ -29,6 +29,8 @@ The entitlement management resource types include:
 - [connectedOrganization](connectedorganization.md): A connected organization for external users who can request access.
 - [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
 
+For a tutorial that shows you how to use entitlement management to create a package of resources that internal users can self-service request, see [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
+
 Note that the entitlement management feature, including the API, is included in Azure AD Premium P2. The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
 
 ## Methods
@@ -80,7 +82,7 @@ The following table lists the methods that you can use to interact with entitlem
 
 ## Types
 
-- [requestorSettings](requestorsettings.md), [approvalSettings](approvalsettings.md) and [assignmentReviewSettings](assignmentreviewsettings.md) - Used in an [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) to specify who can request, who approves, and who reviews access package assignment requests on that policy.
+- [requestorSettings](requestorsettings.md), [approvalSettings](approvalsettings.md), [questions](accesspackagequestion.md) and [assignmentReviewSettings](assignmentreviewsettings.md) - Used in an [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) to specify who can request, who approves, and who reviews access package assignment requests on that policy.
 - [approvalStage](approvalstage.md) - Used in the [approvalSettings](approvalsettings.md) to specify the primary, backup, and escalation approvers.
 - [userSet](userset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) - Used in [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) and [assignmentReviewSettings](assignmentreviewsettings.md).
 - [accessPackageSubject](accesspackagesubject.md) - Used in the [accessPackageAssignment](accesspackageassignment.md) as a subject user who has an access package assignment.
@@ -88,7 +90,7 @@ The following table lists the methods that you can use to interact with entitlem
 
 ## See also
 
- - [What is Azure AD entitlement management?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+ - [What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
 
 
 

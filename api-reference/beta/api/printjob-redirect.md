@@ -44,6 +44,7 @@ In the request body, supply the ID of the printer that the print job should be r
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |destinationPrinterId|String|The ID of the printer the print job should be redirected to.|
+|configuration|microsoft.graph.printJobConfiguration|Updated configuration of print job.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object queued for the destination printer.
@@ -78,10 +79,12 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 [!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
----
 
 ### Response
 The following is an example of the response. 
@@ -121,3 +124,5 @@ Content-length: 437
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

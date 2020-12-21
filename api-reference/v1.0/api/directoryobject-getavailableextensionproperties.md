@@ -63,7 +63,6 @@ If successful, this action returns a `200 OK` response code and an [extensionPro
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProperties
-
 Content-Type: application/json
 Content-length: 43
 
@@ -108,4 +107,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

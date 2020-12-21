@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 >\* **Important:** Application permissions require MS-APP-ACTS-AS header to be provided.
 
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -142,3 +143,4 @@ Content-length: 401
   ]
 }
 -->
+
