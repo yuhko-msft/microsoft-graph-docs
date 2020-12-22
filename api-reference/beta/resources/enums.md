@@ -311,6 +311,22 @@ Namespace: microsoft.graph
 |openShiftRequest
 |userShiftPreferences
 
+### timeCardState values
+
+| Member
+|:----------------------------
+|clockedIn
+|onBreak
+|clockedOut
+
+### confirmedBy values
+
+| Member
+|:----------------------------
+|none
+|user
+|manager
+
 ### timeZoneStandard values
 
 | Member
