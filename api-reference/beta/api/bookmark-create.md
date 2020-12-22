@@ -66,7 +66,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code.
+If successful, this method returns a `201 Created` response code with the id of the Bookmark created.
 
 ## Examples
 
@@ -113,8 +113,7 @@ Content-Type: application/json
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bookmark"
+  "truncated": true
 }
 -->
 ``` http

@@ -1,16 +1,16 @@
 ---
-title: "Delete bookmark"
-description: "Deletes a bookmark object."
+title: "Delete qna"
+description: "Deletes a qna object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Delete bookmark
+# Delete qna
 Namespace: microsoft.graph
 
-Deletes a [bookmark](../resources/bookmark.md) object.
+Deletes a [qna](../resources/qna.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /bookmarks/{bookmarksId}
+DELETE /qnas/{qnaId}
 ```
 
 ## Request headers
@@ -48,11 +48,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_bookmark"
+  "name": "delete_qna"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/bookmarks/{bookmarksId}
+DELETE https://graph.microsoft.com/beta/qnas/{qnaId}
 ```
 
 

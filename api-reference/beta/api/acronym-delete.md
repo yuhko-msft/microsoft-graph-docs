@@ -1,25 +1,25 @@
 ---
-title: "Delete qna"
-description: "Deletes a qna object."
+title: "Delete acronym"
+description: "Deletes an acronym object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Delete qna
+# Delete acronym
 Namespace: microsoft.graph
 
-Deletes a [qna](../resources/qna.md) object.
+Deletes an [acronym](../resources/acronym.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)| Global Administrator, Search Administrator, Search Editor |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /qna
+DELETE /acronyms/{acronymsId}
 ```
 
 ## Request headers
@@ -48,11 +48,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_qna"
+  "name": "delete_acronym"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/qna
+DELETE https://graph.microsoft.com/beta/acronyms/{acronymsId}
 ```
 
 
