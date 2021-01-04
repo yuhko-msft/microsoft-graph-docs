@@ -88,7 +88,9 @@ Content-Type: application/json
     "createdDateTime": "String (timestamp)",
     "startDateTime": "String (timestamp)",
     "lifetimeInMinutes": "Integer",
-    "isUsableOnce": "Boolean"
+    "isUsableOnce": "Boolean",
+    "isUsable": "Boolean",
+    "methodUsabilityReason": "String"
   }
 }
 ```

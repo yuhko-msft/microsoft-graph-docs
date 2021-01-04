@@ -33,7 +33,9 @@ Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 |createdDateTime|DateTimeOffset|The date and time when the temporaryAccessPass was created|
 |startDateTime|DateTimeOffset|The date and time when the temporaryAccessPass becomes available to use|
 |lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime. Minimum 10, Maximum 43200 (equivalent to 30 days)|
-|isUsableOnce|Boolean|Determines of the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time	
+|isUsableOnce|Boolean|Determines of the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time|
+|isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user|
+|methodUsabilityReason|String|Details for why the authentication method has this state. For Temporary Access Pass details can include: enabledByPolicy, disabledByPolicy,expired, notYetValid, oneTimeUsed|
 
 
 ## Relationships
@@ -57,8 +59,9 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "startDateTime": "String (timestamp)",
   "lifetimeInMinutes": "Integer",
-  "isUsableOnce": "Boolean"
-
+  "isUsableOnce": "Boolean",
+  "isUsable": "Boolean",
+  "methodUsabilityReason": "String"
 }
 ```
 
