@@ -48,7 +48,9 @@ For an administrator to request to create an assignment for a user, the value of
 
 For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create an assignment for themselves, the value of the **requestType** property is `UserAdd`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).  The user making the request must already exist in the directory.
+For a non-administrator user to request to create an assignment for themselves (either *first assignment* or *renew* assignment to the access package), the value of the **requestType** property is `UserAdd`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+
+For a non-administrator user to request to extend an assignment for themselves, the value of the **requestType** property is `UserExtend`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
 ## Response
 
@@ -250,6 +252,72 @@ Content-type: application/json
             "isSingleLineQuestion": false
         }
     }]
+}
+```
+### Example 3: User requests a package and provide a justification
+#### Request
+
+The following is an example of a request where the requestor requested an access package and provided a justification to the approver.
+ 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "UserAdd",
+    "accessPackageAssignment": {
+        "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
+    },
+    "justification":"Need access to New Hire access package"
+}
+```
+
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "813bbc6b-31f5-4cdf-8fed-1ba4284a1e3f",
+    "requestType": "UserAdd",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted",
+    "isValidationOnly": false,
+    "expirationDateTime": null,
+    "justification": "Requested for the new task.",
+    "answers": [],
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": null
+        }
+    }
 }
 ```
 

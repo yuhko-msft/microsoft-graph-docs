@@ -22,7 +22,8 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 | [List accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection | Retrieve a list of accesspackageassignmentrequest objects. |
 | [Create accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Create a new accessPackageAssignmentRequest. |
 | [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an accessPackageAssignmentRequest object. |
-|[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Retrieve the list of accessPackageAssignmentRequest related to the currently-logged-in user.|
+|[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Retrieve the list of accessPackageAssignmentRequest objects filtered on the currently-logged-in user. This method supports parameter `on` to retrieve objects corresponding to current user being the `target`, or objects `createdBy` current user, or objects where current user is an allowed `approver`.|
+|[Cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.|
 
 ## Properties
 
@@ -44,7 +45,11 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Read-only. Nullable.|
+|accessPackageAssignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|The assignments to this access package. Read-only. Nullable.|
+|approval|[approval](../resources/approval.md)|The approval object associated with the accessPackageAssignmentRequest. Read-only. Nullable.|
 |requestor|[accessPackageSubject](accesspackagesubject.md)| The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable.|
+
 
 ## JSON representation
 

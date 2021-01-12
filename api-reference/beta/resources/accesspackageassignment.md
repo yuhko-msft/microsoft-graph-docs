@@ -19,7 +19,9 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accesspackageassignment** objects. |
+| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of accesspackageassignment objects. |
+|[FilterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[accessPackageAssignment](../resources/accesspackageassignment.md) collection|Retrieve the list of accessPackageAssignmentRequest objects filtered on the currently-logged-in user. This method supports parameter `on` to retrieve objects corresponding to current user being the `target`, or objects `createdBy` current user.|
+
 
 >**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
@@ -44,6 +46,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| Read-only. Nullable.|
 |accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Read-only. Nullable.|
+|accessPackageAssignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|The request for assignment of the target to this access package. Read-only. Nullable.|
 |accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection| The resource roles delivered to the target user for this assignment. Read-only. Nullable.|
 |target|[accessPackageSubject](accesspackagesubject.md)| The subject of the access package assignment. Read-only. Nullable.|
 
