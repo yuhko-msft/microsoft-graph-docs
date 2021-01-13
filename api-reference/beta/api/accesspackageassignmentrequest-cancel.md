@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# accessPackageAssignmentRequest: FilterByCurrentUser
+# accessPackageAssignmentRequest: cancel
 Namespace: microsoft.graph
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
