@@ -46,7 +46,6 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|Read-only. Nullable.|
-|accessPackageAssignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|The assignments to this access package. Read-only. Nullable.|
 |approval|[approval](../resources/approval.md)|The approval object associated with the accessPackageAssignmentRequest. Read-only. Nullable.|
 |requestor|[accessPackageSubject](accesspackagesubject.md)| The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable.|
 
