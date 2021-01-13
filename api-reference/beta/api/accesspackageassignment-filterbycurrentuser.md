@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.IGAELM.EC.FrontEnd.ExternalModel.accessPackageAssignment)"
+  "@odata.type": "Collection(microsoft.graph.accessPackageAssignment)"
 }
 -->
 ``` http
