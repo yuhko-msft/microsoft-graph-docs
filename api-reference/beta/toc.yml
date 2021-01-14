@@ -10949,6 +10949,8 @@ items:
             items:
             - name: List
               href: api/accesspackageassignment-list.md
+              name: FilterbyCurrentUser
+              href: api/accesspackageassignment-filterbycurrentuser.md
           - name: Access package assignment policy
             href: resources/accesspackageassignmentpolicy.md
             items:
@@ -10971,6 +10973,10 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+              name: FilterbyCurrentUser
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
