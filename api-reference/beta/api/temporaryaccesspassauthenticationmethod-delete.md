@@ -14,23 +14,31 @@ Namespace: microsoft.graph
 
 Deletes a [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
 
-While the current Temporary Access Pass on the user is valid – it needs to be deleted before a new Temporary Access Pass can be create a new pass on the user. Deleting a valid Temporary Access Pass will revoke the user’s sessions.
+While the current Temporary Access Pass on the user is valid – it needs to be deleted before a new Temporary Access Pass can be create on the user. Deleting a valid Temporary Access Pass revokes the user’s sessions.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
-|:---|:---|:--|
-|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.ReadWrite.All
-|Delegated (personal Microsoft account)|Not supported.|Not supported.
-|Application|n/a|UserAuthenticationMethod.ReadWrite.All|
+### Permissions acting on self
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
+### Permissions acting on other users
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Global admin
 * Privileged authentication admin
 * Authentication admin
-
 
 ## HTTP request
 

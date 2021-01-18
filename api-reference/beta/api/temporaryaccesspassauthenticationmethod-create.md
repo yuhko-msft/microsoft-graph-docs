@@ -21,18 +21,26 @@ Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryacc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
+### Permissions acting on self
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
+### Permissions acting on other users
+
+|Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-|Application|n/a|UserAuthenticationMethod.ReadWrite.All|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
 * Global admin
 * Privileged authentication admin
 * Authentication admin
-
 
 ## HTTP request
 
@@ -58,8 +66,8 @@ The following table shows the properties that can be set when you create the [te
 |Property|Type|Description|Required| 
 |:---|:---|:---|:---|
 |startDateTime|DateTimeOffset|The date and time when the temporaryAccessPass becomes available to use, if not set the Temporary Access Pass is available to use at creation time.| No|
-|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Minimum 10, Maximum 43200 (equivalent to 30 days)| No|
-|isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time. A multi-use Temporary Access Pass (isUsableOnce = false), can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy|  No|
+|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Minimum 10, Maximum 43200 (equivalent to 30 days).| No|
+|isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time. A multi-use Temporary Access Pass (isUsableOnce = false), can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy.|  No|
 
 
 
