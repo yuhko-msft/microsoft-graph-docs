@@ -243,32 +243,6 @@ The request uses the `Prefer: odata.maxpagesize` header to limit the maximum num
 Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get all the events in that calendar view, and a `@odata.deltaLink`
 in the response.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["AAMkADI5M1BbeAAA="],
-  "name": "event_delta_calendarview"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1/me/calendars/AAMkADI5M1BbeAAA=/calendarview/delta?startDateTime=2020-06-01T00:00:00Z&endDateTime=2020-06-10T00:00:00Z
-
-Prefer: odata.maxpagesize=2
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-calendarview-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 #### Response
 
 If the request is successful, the response includes a state token, which is either a _skipToken_
