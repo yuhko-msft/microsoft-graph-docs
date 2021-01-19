@@ -13,6 +13,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## January 2021
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Update the **event:delta** documentation to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) entity.
+
+
 ### Applications
 
 | **Change type** | **Version**   | **Description**                          |
