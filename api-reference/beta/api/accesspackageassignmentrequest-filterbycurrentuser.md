@@ -104,28 +104,6 @@ Content-Type: application/json
                     "type": "noExpiration"
                 }
             }
-        },
-        {
-            "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
-            "createdDateTime": "2021-01-19T20:01:49.533Z",
-            "completedDate": "2021-01-19T20:01:52.21Z",
-            "id": "babe49af-b372-4ae2-9224-00a3922f4e6c",
-            "requestType": "AdminRemove",
-            "requestState": "Delivered",
-            "requestStatus": "Fulfilled",
-            "isValidationOnly": false,
-            "expirationDateTime": null,
-            "justification": "Admin remove",
-            "answers": [],
-            "schedule": {
-                "startDateTime": null,
-                "recurrence": null,
-                "expiration": {
-                    "endDateTime": null,
-                    "duration": null,
-                    "type": "notSpecified"
-                }
-            }
         }
 ```
 

@@ -104,28 +104,7 @@ Content-Type: application/json
                     "type": "afterDateTime"
                 }
             }
-},
-{
-  "@odata.type": "#microsoft.graph.accessPackageAssignment",
-  "id": "08f170b4-0938-445e-b17c-f9ab4ae481d7",
-  "catalogId": "34cfe9a8-88bc-4c82-b3d8-6b77d7035c33",
-  "accessPackageId": "ca6992f8-e413-49a1-9619-c9819f4f73e0",
-  "assignmentPolicyId": "7c6e6874-789e-4f11-b351-cc7b5883deef",
-  "targetId": "67a55955-fb60-453b-9fd2-c7c890904434",
-  "assignmentStatus": "ExpiredNotificationTriggered",
-  "assignmentState": "Expired",
-  "isExtended": false,
-  "expiredDateTime": "2021-01-19T20:01:52.163Z",
-  "schedule": {
-                "startDateTime": "2021-01-15T22:58:18.607Z",
-                "recurrence": null,
-                "expiration": {
-                    "endDateTime": "2022-01-15T22:58:18.607Z",
-                    "duration": null,
-                    "type": "afterDateTime"
-                }
-            }
- }
+}
 
 ```
 
