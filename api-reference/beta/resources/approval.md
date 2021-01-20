@@ -1,6 +1,6 @@
 ---
 title: "approval resource type"
-description: "**The approval object associated with the accessPackageAssignmentRequest.**"
+description: "The approval object associated with the accessPackageAssignmentRequest."
 localization_priority: Normal
 author: "sbounouh"
 ms.prod: "microsoft-identity-platform"
@@ -16,12 +16,12 @@ The approval object associated with the `accessPackageAssignmentRequest`.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|ID of the `approval` object|
+|id|String|The identifier of the approval object.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|steps|[approvalStage](../resources/approvalstage.md) collection|Used for the `approvalStages` property of approval settings in the `requestApprovalSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.|
+|steps|[approvalStage](../resources/approvalstage.md) collection|Used for the *approvalStages* property of approval settings in the *requestApprovalSettings* property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

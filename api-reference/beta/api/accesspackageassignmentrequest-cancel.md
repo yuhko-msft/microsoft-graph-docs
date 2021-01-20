@@ -15,7 +15,7 @@ In [Azure AD entitlement management](../resources/entitlementmanagement-root.md)
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|EntitlementManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -39,11 +39,11 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{
 ## Request body
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-For a non-administrator user to cancel a request for themselves, the body has to contain the request `id` and `requestStatus`. The value of the **requestStatus** property is `cancelled`, and the **id** property contains the ID of the **accessPackageAssignmentRequest** property identifying the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
+For a non-administrator user to cancel their own request, the body must contain the request `id` and `requestStatus`. The value of the *requestStatus* property is `cancelled`. The `id` is the identifier of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
 
 ## Response
 
-If successful, this function returns a `200 OK` response code.  It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code.  It does not return anything in the response body.
 
 ## Examples
 

@@ -48,9 +48,9 @@ For an administrator to request to create an assignment for a user, the value of
 
 For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create an assignment for themselves (either *first assignment* or *renew* assignment to the access package), the value of the **requestType** property is `UserAdd`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to create their own assignment for (either *first assignment* or *renew* assignment), the value of the *requestType* property is `UserAdd`. The *accessPackageAssignment* property contains the `targetId` with the `id` of the users. The *assignmentPolicyId* property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The *accessPackageId* property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
-For a non-administrator user to request to extend an assignment for themselves, the value of the **requestType** property is `UserExtend`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to extend their own assignments, the value of the *requestType* property is `UserExtend`. The *accessPackageAssignment* property contains the `targetId` with the `id` of the users. The *assignmentPolicyId* property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The *accessPackageId* property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
 ## Response
 
@@ -254,10 +254,10 @@ Content-type: application/json
     }]
 }
 ```
-### Example 3: User requests a package and provide a justification
+### Example 3: Request a package and provide a justification
 #### Request
 
-The following is an example of a request where the requestor requested an access package and provided a justification to the approver.
+The following example shows how to request an access package and provide justification to the approver.
  
 
 
