@@ -33,7 +33,7 @@ A representation of a Temporaty Access Pass registered to a user. Temporary Acce
 |lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime. Minimum 10, Maximum 43200 (equivalent to 30 days).|
 |isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time.|
 |isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user.|
-|methodUsabilityReason|String|Details for why the authentication method has this state. For Temporary Access Pass details can include: enabledByPolicy, disabledByPolicy, expired, notYetValid, oneTimeUsed.|
+|methodUsabilityReason|String|Details about usability state (isUsable). Reasons can include: enabledByPolicy, disabledByPolicy, expired, notYetValid, oneTimeUsed.|
 
 
 ## Relationships
