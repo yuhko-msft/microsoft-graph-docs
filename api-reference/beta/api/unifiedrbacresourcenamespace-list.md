@@ -101,7 +101,6 @@ Content-type: application/json
             "id": "microsoft.aad.privilegedIdentityManagement",
             "name": "microsoft.aad.privilegedIdentityManagement"
         },
-        ...
 }
 
 ```
