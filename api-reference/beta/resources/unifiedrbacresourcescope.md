@@ -16,11 +16,7 @@ Namespace: microsoft.graph
 A unifiedRbacResouceScope describes the scope of the resource exposed in the workload where unifiedRbacResourceAction can perform on.
 
 ## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-
-
+None
 
 ## Properties
 
