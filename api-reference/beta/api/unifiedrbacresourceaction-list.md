@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.Read.All, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory, RoleManagement.Read.All, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -67,18 +67,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroledefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroledefinition-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroledefinition-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -98,28 +86,47 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRbacResourceAction",
-      "id": "microsoft.directory-applications-create",
-      "name": "microsoft.directory/applications/create",
-      "description": "Create application",
-      "actionVerb": "POST",
-      "resourceScopeId": "microsoft.directory-applications"
-    },
-    {
-      "@odata.type": "#microsoft.graph.unifiedRbacResourceAction",
-      "id": "microsoft.directory-applications-myorganization-owners-read",
-      "name": "microsoft.directory/applications.myOrganization/owners/read",
-      "description": "Read organization owners",
-      "actionVerb": "GET",
-      "resourceScopeId": "microsoft.directory-applications-myOrganization-owners"
-    },
-    ...
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.directory')/resourceActions",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/roleManagement/directory/resourcenamespaces/microsoft.directory/resourceactions?$skiptoken=X%276D6963726F736F66742E6469726563746F72792D63726F737354656E616E74416363657373506F6C69636965732D74656E616E7444656661756C742D7570646174652D70617463684800000001000000%27",
+    "value": [
+        {
+            "actionVerb": "GET",
+            "description": "Read members of administrative units",
+            "id": "microsoft.directory-administrativeUnits-members-read-get",
+            "name": "microsoft.directory/administrativeUnits/members/read",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": "GET",
+            "description": "Read all properties (including privileged properties) on application policies",
+            "id": "microsoft.directory-applicationPolicies-allProperties-read-get",
+            "name": "microsoft.directory/applicationPolicies/allProperties/read",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": "PATCH",
+            "description": "Update all properties (including privileged properties) on application policies",
+            "id": "microsoft.directory-applicationPolicies-allProperties-update-patch",
+            "name": "microsoft.directory/applicationPolicies/allProperties/update",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": "POST",
+            "description": "Create application policies, and creator is added as the first owner",
+            "id": "microsoft.directory-applicationPolicies-createAsOwner-post",
+            "name": "microsoft.directory/applicationPolicies/createAsOwner",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": "DELETE",
+            "description": "Delete application policies",
+            "id": "microsoft.directory-applicationPolicies-delete-delete",
+            "name": "microsoft.directory/applicationPolicies/delete",
+            "resourceScopeId": null
+        },
+        ...
+    ]
 }
 
 ```
