@@ -69,7 +69,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 ```
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -124,7 +123,7 @@ Content-type: application/json
             "id": "microsoft.directory-applicationPolicies-delete-delete",
             "name": "microsoft.directory/applicationPolicies/delete",
             "resourceScopeId": null
-        },
+        }
     ]
 }
 
