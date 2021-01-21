@@ -1,6 +1,6 @@
 ---
 title: "unifiedRbacResouceAction resource type"
-description: "A unifiedRbacResourceAction defines "
+description: "A unifiedRbacResourceAction defines the action and it's properties related to application specific permissions"
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
@@ -31,7 +31,7 @@ A unifiedRbacResouceAction defines the action and it's properties related to app
 |description|String| Description of the action. |
 |actionVerb|String| Action verb for the operation. |
 |resourceScopeId|String| Action applicable resource id. |
-|resourceScope|UnifiedRbacResourceScope| Action applicable resource reference. Read-only. |
+|resourceScope|[UnifiedRbacResourceScope](unifiedrbacresourcescope.md)| Action applicable resource reference. Read-only. |
 
 ## Relationships
 
