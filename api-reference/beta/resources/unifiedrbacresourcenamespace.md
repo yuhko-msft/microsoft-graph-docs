@@ -28,7 +28,7 @@ A unifiedRbacResourceNamespace is a collection of unifiedRbacResourceAction for 
 |:-------------|:------------|:------------|
 |id|String| Id of the resource namespace. Required. |
 |name|String| Display name for the resource namespace. Required.|
-|resourceActions|Collection(unifiedRbacResourceAction)| Collection of resource actions in the namespace. |
+|resourceActions|Collection([unifiedRbacResourceAction](unifiedrbacresourceaction.md))| Collection of resource actions in the namespace. |
 
 ## Relationships
 
