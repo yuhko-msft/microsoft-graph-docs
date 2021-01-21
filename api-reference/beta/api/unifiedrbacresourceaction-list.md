@@ -125,7 +125,6 @@ Content-type: application/json
             "name": "microsoft.directory/applicationPolicies/delete",
             "resourceScopeId": null
         },
-        ...
     ]
 }
 
