@@ -1,5 +1,5 @@
 ---
-title: "unifiedRbacResouceAction resource type"
+title: "unifiedRbacResourceAction resource type"
 description: "A unifiedRbacResourceAction defines the action and it's properties related to application specific permissions"
 localization_priority: Normal
 author: "abhijeetsinha"
@@ -7,20 +7,20 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# unifiedRbacResouceAction resource type
+# unifiedRbacResourceAction resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unifiedRbacResouceAction defines the action and it's properties related to application specific permissions.
+A unifiedRbacResourceAction defines the action and it's properties related to application specific permissions.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List unifiedRbacResouceAction](../api/unifiedrbacresourceaction-list.md) | [unifiedRbacResouceAction](unifiedrbacresourceaction.md) collection | Read a list of unifiedRbacResouceAction objects, and their properties. |
-| [Get unifiedRbacResouceAction](../api/unifiedrbacresourceaction-get.md) | [unifiedRbacResouceAction](unifiedrbacresourceaction.md) | Read the properties of a unifiedRbacResouceAction object. |
+| [List unifiedRbacResourceAction](../api/unifiedrbacresourceaction-list.md) | [unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection | Read a list of unifiedRbacResourceAction objects, and their properties. |
+| [Get unifiedRbacResourceAction](../api/unifiedrbacresourceaction-get.md) | [unifiedRbacResourceAction](unifiedrbacresourceaction.md) | Read the properties of a unifiedRbacResourceAction object. |
 
 ## Properties
 
@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.unifiedRbacResouceAction",
+  "@odata.type": "microsoft.graph.unifiedRbacResourceAction",
   "baseType": "",
   "keyProperty": "id"
 }-->
@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "unifiedRbacResouceAction resource",
+  "description": "unifiedRbacResourceAction resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
