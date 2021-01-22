@@ -1,19 +1,19 @@
 ---
-title: "unifiedRbacResouceScope resource type"
-description: "A unifiedRbacResouceScope describes the scope of the resource exposed in the workload where unifiedRbacResourceAction can perform on."
+title: "unifiedRbacResourceScope resource type"
+description: "A unifiedRbacResourceScope describes the scope of the resource exposed in the workload where unifiedRbacResourceAction can perform on."
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# unifiedRbacResouceScope resource type
+# unifiedRbacResourceScope resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unifiedRbacResouceScope describes the scope of the resource exposed in the workload where unifiedRbacResourceAction can perform on.
+A unifiedRbacResourceScope describes the scope of the resource exposed in the workload where unifiedRbacResourceAction can perform on.
 
 ## Methods
 None
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.unifiedRbacResouceScope",
+  "@odata.type": "microsoft.graph.unifiedRbacResourceScope",
   "baseType": "",
   "keyProperty": "id"
 }-->
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "unifiedRbacResouceScope resource",
+  "description": "unifiedRbacResourceScope resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
