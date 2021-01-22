@@ -1,5 +1,5 @@
 ---
-title: "unifiedRbacResouceNamespace resource type"
+title: "unifiedRbacResourceNamespace resource type"
 description: "A unified resource namespace is a collection of namespaces for an RBAC application."
 localization_priority: Normal
 author: "abhijeetsinha"
