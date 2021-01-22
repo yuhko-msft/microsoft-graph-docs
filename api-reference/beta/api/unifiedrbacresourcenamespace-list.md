@@ -61,7 +61,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedrbacresourceaction"
+  "name": "list_unifiedrbacresourcenamespace"
 }-->
 
 ```msgraph-interactive
@@ -100,7 +100,8 @@ Content-type: application/json
         {
             "id": "microsoft.aad.privilegedIdentityManagement",
             "name": "microsoft.aad.privilegedIdentityManagement"
-        },
+        }
+    ]
 }
 
 ```
