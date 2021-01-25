@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## Request body
 In the request body, supply a JSON representation of the [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
 
-The following table shows the properties that can be set when you create the [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
+The following table describes optional properties that can be used when creating the [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
 
 |Property|Type|Description|Required| 
 |:---|:---|:---|:---|
