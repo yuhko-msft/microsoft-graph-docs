@@ -90,10 +90,9 @@ Content-length: 209
 
 {
   "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-  "startDateTime": "String (timestamp)",
-  "lifetimeInMinutes": "Integer",
-  "isUsableOnce": "Boolean"
-
+  "startDateTime": "2021-01-26T00:00:00.000Z",
+  "lifetimeInMinutes": 60,
+  "isUsableOnce": false
 }
 ```
 
@@ -111,14 +110,15 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-  "id": "30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30",
-  "temporaryAccessPass": "String",
-  "createdDateTime": "String (timestamp)",
-  "startDateTime": "String (timestamp)",
-  "lifetimeInMinutes": "Integer",
-  "isUsableOnce": "Boolean",
-  "isUsable": "Boolean",
-  "methodUsabilityReason": "String"
+    "id": "81757535-e21e-4330-a338-33b8038ff12b",
+    "temporaryAccessPass": "nc+&G=xwDKCz",
+    "createdDateTime": "2021-01-25T23:53:35.5026721Z",
+    "startDateTime": "2021-01-26T00:00:00Z",
+    "lifetimeInMinutes": 60,
+    "isUsableOnce": false,
+    "isUsable": false,
+    "methodUsabilityReason": "NotYetValid"
+
 }
 ```
 
