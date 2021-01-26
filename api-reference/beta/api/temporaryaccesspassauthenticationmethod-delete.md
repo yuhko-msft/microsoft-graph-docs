@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
+Delete a [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
 
 While the current Temporary Access Pass on the user is valid – it needs to be deleted before a new Temporary Access Pass can be create on the user. Deleting a valid Temporary Access Pass revokes the user’s sessions.
 
@@ -86,4 +86,3 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/tem
 ``` http
 HTTP/1.1 204 No Content
 ```
-
