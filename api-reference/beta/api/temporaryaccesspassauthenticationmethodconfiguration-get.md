@@ -61,18 +61,18 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
     "id": "TemporaryAccessPass",
     "state": "enabled",
-    "defaultLifetimeInMinutes": Integer,
-    "defaultLength": Integer,
-    "minimumLifetimeInMinutes": Integer,
-    "maximumLifetimeInMinutes": Integer,
-    "isUsableOnce": Boolean,
-    "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false,
-            "useForSignIn":true
-         }
+    "defaultLifetimeInMinutes": 60,
+    "defaultLength": 12,
+    "minimumLifetimeInMinutes": 60,
+    "maximumLifetimeInMinutes": 1440,
+    "isUsableOnce": false,
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
     ]
 }
 ```
