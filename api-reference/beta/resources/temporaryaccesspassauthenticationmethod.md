@@ -18,9 +18,9 @@ A representation of a Temporaty Access Pass registered to a user. Temporary Acce
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/temporaryaccesspassauthenticationmethod-list.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Retrieve a list of a user's temporaryAccessPassAuthenticationMethod. Users may only have one Temporary Access Pass authentication method.|
-|[Get](../api/temporaryaccesspassauthenticationmethod-get.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Retrieve the properties  of the user's temporaryAccessPassAuthenticationMethod object.||
-|[Create](../api/temporaryaccesspassauthenticationmethod-create.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Create a user's  temporaryAccessPassAuthenticationMethod object.|
+|[List](../api/temporaryaccesspassauthenticationmethod-list.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Retrieve a list of the user's temporaryAccessPassAuthenticationMethod. Users may only have one Temporary Access Pass authentication method.|
+|[Get](../api/temporaryaccesspassauthenticationmethod-get.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Retrieve the properties of the user's temporaryAccessPassAuthenticationMethod object.||
+|[Create](../api/temporaryaccesspassauthenticationmethod-create.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Create a user's temporaryAccessPassAuthenticationMethod object.|
 |[Delete](../api/temporaryaccesspassauthenticationmethod-delete.md)|None|Delete a user's temporaryAccessPassAuthenticationMethod object.|
 
 ## Properties
@@ -31,7 +31,7 @@ A representation of a Temporaty Access Pass registered to a user. Temporary Acce
 |createdDateTime|DateTimeOffset|The date and time when the temporaryAccessPass was created.|
 |startDateTime|DateTimeOffset|The date and time when the temporaryAccessPass becomes available to use.|
 |lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime. Minimum 10, Maximum 43200 (equivalent to 30 days).|
-|isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time.|
+|isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If `True` – the pass can be used once, if `False` – the pass can be used multiple times within the temporaryAccessPass life time.|
 |isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user.|
 |methodUsabilityReason|String|Details about usability state (isUsable). Reasons can include: enabledByPolicy, disabledByPolicy, expired, notYetValid, oneTimeUsed.|
 
