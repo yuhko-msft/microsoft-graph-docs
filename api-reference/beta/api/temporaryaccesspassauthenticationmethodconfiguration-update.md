@@ -23,9 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Global admin
+ For delegated scenarios, the administrator needs the Global admin role. For more information, see[roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 
 ## HTTP request
@@ -68,14 +66,24 @@ PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/auth
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-  "state": "enabled",
-  "defaultLifetimeInMinutes": "Integer",
-  "defaultLength": "Integer",
-  "minimumLifetimeInMinutes": "Integer",
-  "maximumLifetimeInMinutes": "Integer",
-  "isUsableOnce": "Boolean"
+  "@odata.type":"#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+  "state":"enabled",
+  "defaultLifetimeInMinutes":60,
+  "defaultLength":8,
+  "minimumLifetimeInMinutes":60,
+  "maximumLifetimeInMinutes":1440,"
+  isUsableOnce":false,
+  "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "useForSignIn": true
+        }
+    ]
 }
+
+
 ```
 
 ### Response
