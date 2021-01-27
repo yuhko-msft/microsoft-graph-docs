@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Temporary Access Pass authentication methods policy. Authentication methods policies define configuration settings and users or groups who are enabled to use the authentication method.
+Represents a Temporary Access Pass authentication methods policy. Authentication methods policy define configuration settings and users or groups who are enabled to use the authentication method.
 
 ## Methods
 |Method|Return type|Description|
