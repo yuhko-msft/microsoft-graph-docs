@@ -34,7 +34,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
 |authenticationRequirement | string | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed.|
-|authenticationRequirementPolicies|[authenticationRequirementPolicy](authenticationrequirementpolicy.md) collection|Source of authentication requirement, such as Conditional Access, per-user MFA, Identity Protection, and Security Defaults.|
+|authenticationRequirementPolicies|authenticationRequirementPolicy collection|Source of authentication requirement, such as Conditional Access, per-user MFA, Identity Protection, and Security Defaults.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example, Browser, Exchange Active Sync,Modern clients, IMAP, MAPI, SMTP, or POP.|
 |conditionalAccessStatus|string| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`.|
 |correlationId|String|The identifier that's sent from the client when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support.|
@@ -61,7 +61,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |servicePrincipalId|String|The application identifier used for sign-in. This field is populated when you are signing in using an application.|
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you are signing in using an application.|
 |signInIdentifier|String|The identification used to signIn - includes UPN, but is also populated when a user logs in in with other identifiers.|
-|signInIdentiferType|[signInIdentiferType](signinidentifier.md)|Provides the type of signInIdentifier. Examples include userPrincipalName, qrCode, phoneNumber, proxyAddress, and more.|
+|signInIdentiferType|signInIdentiferType|Provides the type of signInIdentifier. Examples include userPrincipalName, qrCode, phoneNumber, proxyAddress, and more.|
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (in case of a sign-in failure).|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`.|
 |tokenIssuerType|String|The type of identity provider. Possible values: `AzureAD`, `ADFederationServices`, or `UnknownFutureValue`.|
@@ -69,7 +69,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |userDisplayName|String|The display name of the user.|
 |userId|String|The identifier of the user.|
 |userPrincipalName|String|The UPN of the user.|
-|userType|[signInUserType](signinusertype.md)|Type of user. Examples include member, guest, or external.|
+|userType|signInUserType|Type of user. Examples include member, guest, or external.|
 
 ## Relationships
 None
