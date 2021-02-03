@@ -68,7 +68,8 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "name": "ShareName",
+  "displayName": "ShareName",
+  "allowAllUsers": "true",
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
