@@ -47,8 +47,6 @@ In the request body, supply the values for relevant [printerShare](../resources/
 |:-------------|:------------|:------------|
 |printer|String|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
 
->**Note:** Updating the printer share name is not supported.
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [printerShare](../resources/printershare.md) object in the response body.
 ## Example
