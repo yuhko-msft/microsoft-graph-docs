@@ -41,7 +41,7 @@ Graph Explorer includes the following elements:
 
 ### Make a GET request in Graph Explorer
 
-To run a GET request in Graph Explorer, you don’t have to be signed in. Just click a sample query and sample data will show in the response preview. 
+To run a GET request in Graph Explorer, you don't have to be signed in. Just click a sample query and sample data will show in the response preview. 
 
 ![Screenshot of a sample request in Graph Explorer](./images/making-a-get-request.png)
 

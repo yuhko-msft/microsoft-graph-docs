@@ -21,7 +21,7 @@ Represents information for a local user or group used for user rights setting.
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|The name of this local user or group.|
-|description|String|Admin’s description of this local user or group.|
+|description|String|Admin's description of this local user or group.|
 |securityIdentifier|String|The security identifier of this local user or group (e.g. *S-1-5-32-544).|
 
 ## Relationships

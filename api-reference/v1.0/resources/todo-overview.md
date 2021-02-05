@@ -11,8 +11,8 @@ doc_type: conceptualPageType
 
 Use the Microsoft Graph To Do API to create an app that connects with tasks across Microsoft To Do clients. Build a variety of experiences with tasks, such as the following:
 
-* Create tasks from your app’s workflow, for example, from email or notifications, and save them in To Do. Use the [linkedResource](linkedresource.md) entity to store the link back to your app.
-* Sync your app’s existing tasks with To Do and create a single task view for better prioritization and manageability.
+* Create tasks from your app's workflow, for example, from email or notifications, and save them in To Do. Use the [linkedResource](linkedresource.md) entity to store the link back to your app.
+* Sync your app's existing tasks with To Do and create a single task view for better prioritization and manageability.
 * Manage To Do tasks in a custom business application.
 
 Currently, the API supports only permissions delegated by the signed-in user.

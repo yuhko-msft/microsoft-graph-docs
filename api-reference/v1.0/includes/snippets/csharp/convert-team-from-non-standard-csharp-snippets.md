@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var team = new Team
 {
 	DisplayName = "My Class Team",
-	Description = "My Class Team’s Description",
+	Description = "My Class Team's Description",
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"}

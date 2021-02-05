@@ -221,7 +221,7 @@ group properties **displayName**, **id**, and **description**, and the custom da
 ### Request
 
 ```http
-GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
+GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123'&$select=displayName,id,description,graphlearn_courses
 ```
 
 

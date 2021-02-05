@@ -20,7 +20,7 @@ Microsoft is building a platform for creating experiences that transcend a singl
 With activities, you have a way to capture the unique tasks for users of your app that flow seamlessly across any platform and device, allowing them to quickly resume working on their preferred screen. Using the activity feed, you can create a human-centric view of the tasks most important to users, helping reduce friction when switching from web to mobile to PC and beyond. 
 
 ### Build rich cross-device experiences by using the device relay API 
-In addition to Microsoft devices (PCs, Windows Phones, Xbox, IoT, HoloLens, and more), the device relay API also exposes Android and iOS devices. This enables you to truly break down boundaries between your users' devices. You can build apps that utilize the user’s environment and create rich experiences that transcend a single device in real-time. 
+In addition to Microsoft devices (PCs, Windows Phones, Xbox, IoT, HoloLens, and more), the device relay API also exposes Android and iOS devices. This enables you to truly break down boundaries between your users' devices. You can build apps that utilize the user's environment and create rich experiences that transcend a single device in real-time. 
 
 
 ## API reference

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the current required settings for a user to use the analytics API.
 
-For the analytics API to return results for users, they must have a cloud-hosted mailbox that’s enabled for Microsoft Graph, have a valid MyAnalytics license, and be opted in to using MyAnalytics.
+For the analytics API to return results for users, they must have a cloud-hosted mailbox that's enabled for Microsoft Graph, have a valid MyAnalytics license, and be opted in to using MyAnalytics.
 
 ## Methods
 

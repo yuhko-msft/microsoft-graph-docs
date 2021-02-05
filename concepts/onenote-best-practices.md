@@ -28,7 +28,7 @@ The same approach applies to other OneNote APIs.
 
 ## Use $expand instead of making multiple API calls
 
-Suppose you want to retrieve all of the user’s notebooks, sections, and section groups in a hierarchical view. You might accomplish that by doing the following:
+Suppose you want to retrieve all of the user's notebooks, sections, and section groups in a hierarchical view. You might accomplish that by doing the following:
 
 * Call `GET ~/notebooks` to get the list of notebooks.
 

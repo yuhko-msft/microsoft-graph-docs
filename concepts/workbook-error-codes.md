@@ -25,7 +25,7 @@ The following table lists the current error codes and messages. The service migh
 |413    | **payloadTooLarge**       | The request size exceeds the maximum limit.
 |429    | **tooManyRequests**     | The app or user has been throttled.
 |500    | **internalServerError**            | An internal server error occurred while processing the request.
-|501    | **notImplemented**          | The requested feature isn’t implemented.
+|501    | **notImplemented**          | The requested feature isn't implemented.
 |502    | **badGateway**          | The server encountered a temporary error and could not complete your request.
 |503    | **serviceUnavailable**      | The service is not available. Please try your request again.
 |504    | **gatewayTimeout**        | The server, while acting as a proxy, did not receive a timely response from the upstream server in order to complete the request.
@@ -41,7 +41,7 @@ The following are some additional errors that your app might encounter within th
 | **conflictUncategorized**                   | The current state conflicts with what the request expects.
 | **filteredRangeConflict**                   | The operation failed because it conflicts with a filtered range.
 | **forbiddenUncategorized**                    | The request is not allowed.
-| **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit.
+| **gatewayTimeoutUncategorized**         | The service wasn't able to complete the request within the time limit.
 | **generalException**         | There was an internal error while processing the request.
 | **insertDeleteConflict**         | The insert or delete operation attempted resulted in a conflict.
 | **internalServerErrorUncategorized**       | An unspecified error has occurred.
@@ -49,7 +49,7 @@ The following are some additional errors that your app might encounter within th
 | **invalidReference**         | This reference is not valid for the current operation.
 | **invalidSessionAccessConflict**             | The session specified in the request is invalid due to conflicts with other clients that are accessing the workbook.
 | **invalidSessionAuthentication**         | The session specified in the request is invalid due to an authentication error.
-| **invalidSessionNotFound**         | The session specified in the request is invalid because the workbook can’t be found.
+| **invalidSessionNotFound**         | The session specified in the request is invalid because the workbook can't be found.
 | **invalidSessionReCreatable**             | The session specified in the request does not exist or is invalid due to a transient error.
 | **invalidSessionRestricted**          | The session specified in the request is invalid due to service configurations or restrictions.
 | **invalidSessionUnexpected**                | The session specified in the request is invalid due to an unexpected issue.

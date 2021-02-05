@@ -19,7 +19,7 @@ Each activity represents a unique...
 -->
 ## What makes a great user activity?
 
-User activities don’t just launch apps — they are deep links into specific content within your app. The user activities you create can not only be used in your own app, but will also appear in Cortana and Windows Timeline — driving more app reengagement and making it easier for your users to continue using your app across multiple devices.
+User activities don't just launch apps — they are deep links into specific content within your app. The user activities you create can not only be used in your own app, but will also appear in Cortana and Windows Timeline — driving more app reengagement and making it easier for your users to continue using your app across multiple devices.
 
 ### What should become an activity?
 

@@ -47,7 +47,7 @@ Represents the image resource on cloud PC.
 |:---|:---|
 |pending|The image upload is in progress.|
 |ready|The image is ready for use on Cloud PCs.|
-|failed|The image couldn’t be uploaded. |
+|failed|The image couldn't be uploaded. |
 
 ### cloudPcDeviceImageStatusDetails values
 

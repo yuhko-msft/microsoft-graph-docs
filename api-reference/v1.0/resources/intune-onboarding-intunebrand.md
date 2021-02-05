@@ -23,9 +23,9 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support.|
 |contactITEmailAddress|String|Email address of the person/organization responsible for IT support.|
 |contactITNotes|String|Text comments regarding the person/organization responsible for IT support.|
-|privacyUrl|String|URL to the company/organization’s privacy policy.|
-|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
-|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
+|privacyUrl|String|URL to the company/organization's privacy policy.|
+|onlineSupportSiteUrl|String|URL to the company/organization's IT helpdesk site.|
+|onlineSupportSiteName|String|Display name of the company/organization's IT helpdesk site.|
 |themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|

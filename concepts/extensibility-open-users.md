@@ -10,7 +10,7 @@ ms.custom: graphiamtop20
 This article walks you through an example to demonstrate how to use *open extensions*. 
 
 Imagine you're building an application that is available on lots of different client platforms, such as desktop and mobile.  You want to let users 
-configure their UI experience so it’s consistent no matter which device they use to sign in to your app. This is a common requirement for most apps. 
+configure their UI experience so it's consistent no matter which device they use to sign in to your app. This is a common requirement for most apps. 
 
 For this scenario, this article will show you how to:
 

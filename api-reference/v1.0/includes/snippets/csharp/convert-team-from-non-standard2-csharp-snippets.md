@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var team = new Team
 {
 	DisplayName = "My Class Team",
-	Description = "My Class Team’s Description",
+	Description = "My Class Team's Description",
 	Channels = new TeamChannelsCollectionPage()
 	{
 		new Channel

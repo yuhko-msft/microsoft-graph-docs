@@ -70,7 +70,7 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description"
+  "description": "My Sample Team's Description"
 }
 ```
 # [C#](#tab/csharp)
@@ -130,7 +130,7 @@ Content-Type: application/json
 {
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",
-   "description":"My Sample Team’s Description",
+   "description":"My Sample Team's Description",
    "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
@@ -447,7 +447,7 @@ Content-Length: 0
 
 Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.
 
-To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
+To create a team from a non-standard base template, you'll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you'd like to create.
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -466,7 +466,7 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
-  "description": "My Class Team’s Description"
+  "description": "My Class Team's Description"
 }
 ```
 # [C#](#tab/csharp)
@@ -522,7 +522,7 @@ Content-Type: application/json
 {
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
    "displayName":"My Class Team",
-   "description":"My Class Team’s Description",
+   "description":"My Class Team's Description",
    "channels":[
       {
          "displayName":"Class Announcements 📢",
@@ -599,7 +599,7 @@ Content-Type: application/json
   "@microsoft.graph.teamCreationMode": "migration",
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
+  "description": "My Sample Team's Description",
   "createdDateTime": "2020-03-14T11:22:17.067Z"
 }
 ```

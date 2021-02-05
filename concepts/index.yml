@@ -95,7 +95,7 @@ additionalContent:
     - title: Resources
       items:
         - title: Changelog
-          summary: Find out what’s changed in the v1.0 and beta versions of the Microsoft Graph API.
+          summary: Find out what's changed in the v1.0 and beta versions of the Microsoft Graph API.
           url: ./changelog.md
         - title: Known issues
           summary: Learn about known issues with Microsoft Graph.

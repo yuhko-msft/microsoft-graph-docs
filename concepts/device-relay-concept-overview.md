@@ -26,7 +26,7 @@ Extend your app by providing UX to discover devices and to launch your app on th
 
 ### Augment the experience
 
-Create a companion experience for your app on another of the user’s devices. For example, the app could include UX to launch itself on other devices. In a game, the user could launch the app to a device with a larger screen (for example, from a PC to an Xbox). The Xbox could present a full view of the game (a first-person view), while the device with the smaller screen could present a different view with additional context (a top-level view of the game level showing the player and opponents' locations).  
+Create a companion experience for your app on another of the user's devices. For example, the app could include UX to launch itself on other devices. In a game, the user could launch the app to a device with a larger screen (for example, from a PC to an Xbox). The Xbox could present a full view of the game (a first-person view), while the device with the smaller screen could present a different view with additional context (a top-level view of the game level showing the player and opponents' locations).  
 
 ### Enrich the experience
 

@@ -199,7 +199,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- You can access only the signed-in user’s own mailbox. Searching delegated mailboxes is not supported.
+- You can access only the signed-in user's own mailbox. Searching delegated mailboxes is not supported.
 - For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
 - Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
 

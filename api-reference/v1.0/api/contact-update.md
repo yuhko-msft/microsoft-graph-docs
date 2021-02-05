@@ -68,7 +68,7 @@ In the request body, supply the values for relevant fields that should be update
 |homePhones|String collection|The contact's home phone numbers.|
 |imAddresses|String|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
-|jobTitle|String|The contact’s job title.|
+|jobTitle|String|The contact's job title.|
 |manager|String|The name of the contact's manager.
 |middleName|String|The contact's middle name.|
 |mobilePhone|String|The contact's mobile phone number.|

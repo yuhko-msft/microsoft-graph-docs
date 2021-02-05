@@ -65,9 +65,9 @@ The following table shows the properties that are required when you create the i
 |contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support|
 |contactITEmailAddress|String|E-mail address of the person/organization responsible for IT support|
 |contactITNotes|String|Text comments regarding the person/organization responsible for IT support|
-|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
-|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
-|privacyUrl|String|URL to the company/organization’s privacy policy|
+|onlineSupportSiteUrl|String|URL to the company/organization's IT helpdesk site|
+|onlineSupportSiteName|String|Display name of the company/organization's IT helpdesk site|
+|privacyUrl|String|URL to the company/organization's privacy policy|
 |customPrivacyMessage|String|Text comments regarding what the admin doesn't have access to on the device|
 |customCanSeePrivacyMessage|String|Text comments regarding what the admin has access to on the device|
 |customCantSeePrivacyMessage|String|Text comments regarding what the admin doesn't have access to on the device|

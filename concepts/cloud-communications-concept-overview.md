@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 ---
 
 # Cloud communications API overview
-The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. Grow your business by expediting how you respond to your customers’ needs and how your employees collaborate with each other.
+The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. Grow your business by expediting how you respond to your customers' needs and how your employees collaborate with each other.
 
 ## Why integrate with the cloud communications APIs?
 
@@ -25,7 +25,7 @@ You can use the cloud communications APIs to:
 
 
 ### Simplify the customer service experience
-Whether you own a large helpdesk service or a small storefront, it can be difficult to handle multiple customer requests, especially if you don’t have any context of what problem they’re trying to solve beforehand. Handle incoming calls from customers through an **Interactive Voice Response** (IVR) system, where a bot will initially interact with them.
+Whether you own a large helpdesk service or a small storefront, it can be difficult to handle multiple customer requests, especially if you don't have any context of what problem they're trying to solve beforehand. Handle incoming calls from customers through an **Interactive Voice Response** (IVR) system, where a bot will initially interact with them.
 
 When a customer is prompted for a response from the bot, the customer can press a key on their keypad that corresponds to their selection. The bot can then gather the dial-tone multi-frequency (DTMF) from the customer.
 
@@ -66,7 +66,7 @@ You can use the cloud communications APIs to build a bot that:
 - [Mutes another participant](/graph/api/participant-mute?view=graph-rest-1.0).
 
 ### Send reminders reliably
-To enable users to send customers a reminder for an appointment or a reminder for a payment deadline that’s approaching, you can have a bot call the customer automatically. <!--If the customer misses the call, it will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->
+To enable users to send customers a reminder for an appointment or a reminder for a payment deadline that's approaching, you can have a bot call the customer automatically. <!--If the customer misses the call, it will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->
 
 You can use the cloud communications APIs to build a bot that:
 

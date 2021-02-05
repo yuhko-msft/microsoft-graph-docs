@@ -56,7 +56,7 @@ On successful completion, you'll get HTTP 200 OK and a collection of [event](/gr
 
 The same GET capabilities apply if Alex has delegated Megan access to Alex' primary calendar, or if Alex has delegated Megan his entire mailbox.
 
-If Alex has not shared nor delegated his primary calendar with Megan, specifying Alex’s user ID or user principal name in the preceding GET operations will return an error. 
+If Alex has not shared nor delegated his primary calendar with Megan, specifying Alex's user ID or user principal name in the preceding GET operations will return an error. 
 
 
 ## Sharee: Get shared, custom calendar or its events from sharee's mailbox

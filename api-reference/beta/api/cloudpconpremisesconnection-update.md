@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name for the on-premises connection.|
-|subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
+|subscriptionId|String|The ID of the target Azure subscription that's associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: username@contoso.com.|
 |adDomainPassword|String|The password associated with adDomainUsername.|

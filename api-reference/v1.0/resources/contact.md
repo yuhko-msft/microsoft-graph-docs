@@ -65,7 +65,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |id|String|The contact's unique identifier. Read-only.|
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
-|jobTitle|String|The contact’s job title.|
+|jobTitle|String|The contact's job title.|
 |lastModifiedDateTime|DateTimeOffset|The time the contact was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |manager|String|The name of the contact's manager.
 |middleName|String|The contact's middle name.|

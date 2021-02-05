@@ -57,7 +57,7 @@ On successful completion, you'll get HTTP 200 OK and a [mailFolder](/graph/api/r
 
 The same GET capabilities apply if Garth had delegated John further access to Garth's Inbox, or if Garth had delegated John his entire mailbox.
 
-If Garth has not shared his Inbox with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error. 
+If Garth has not shared his Inbox with John, nor has he delegated his mailbox to John, specifying Garth's user ID or user principal name in those GET operations will return an error. 
 
 
 ## Next steps

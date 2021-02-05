@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
 [team setDisplayName:@"My Sample Team"];
-[team setDescription:@"My Sample Team’s Description"];
+[team setDescription:@"My Sample Team's Description"];
 NSMutableArray *membersList = [[NSMutableArray alloc] init];
 MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
 NSMutableArray *rolesList = [[NSMutableArray alloc] init];

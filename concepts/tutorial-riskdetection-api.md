@@ -386,7 +386,7 @@ With this conditional access policy in place, the **MyTestUser1** account is now
 
 ## Step 5: Dismiss risky users
 
-If you believe the user is not at risk, and you don’t want to enforce a conditional access policy, you can manually dismiss the risky user.
+If you believe the user is not at risk, and you don't want to enforce a conditional access policy, you can manually dismiss the risky user.
 
 ### Dismiss the risky user
 

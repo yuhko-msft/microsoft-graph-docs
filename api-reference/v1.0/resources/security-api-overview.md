@@ -38,7 +38,7 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">Not supported in Azure Sentinel </p> | <p align="center">&#x2713;</p> |
 > **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph Security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* File issue: Alert status gets updated across Microsoft Graph Security API integrated applications but not reflected in the provider’s management experience.
+\* File issue: Alert status gets updated across Microsoft Graph Security API integrated applications but not reflected in the provider's management experience.
 
 \*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph Security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph Security API roles can have access to the Microsoft Defender for Endpoint data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
 

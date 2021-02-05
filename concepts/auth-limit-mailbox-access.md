@@ -19,9 +19,9 @@ These steps are specific to Exchange Online resources and do not apply to other 
 To configure an application access policy and limit the scope of application permissions:
 1.	Connect to Exchange Online PowerShell. For details, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
-2.	Identify the app’s client ID and a mail-enabled security group to restrict the app’s access to.
+2.	Identify the app's client ID and a mail-enabled security group to restrict the app's access to.
 
-    - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
+    - Identify the app's application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Create a new mail-enabled security group or use an existing one and identify the email address for the group. 
 
 3.	Create an application access policy. 
@@ -36,7 +36,7 @@ To configure an application access policy and limit the scope of application per
     ```sh
     Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b 
     ```
-    The output of this command will indicate whether the app has access to User1’s mailbox.
+    The output of this command will indicate whether the app has access to User1's mailbox.
 
 Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 

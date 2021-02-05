@@ -51,7 +51,7 @@ On successful completion, you'll get HTTP 200 OK and a [contactFolder](/graph/ap
 
 The same GET capabilities apply if Garth had delegated John his entire mailbox.
 
-If Garth has not shared the contact folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error. 
+If Garth has not shared the contact folder with John, nor has he delegated his mailbox to John, specifying Garth's user ID or user principal name in those GET operations will return an error. 
 
 
 ## Next steps

@@ -9,7 +9,7 @@ ms.prod: "insights"
 
 # Use the People API in Microsoft Graph to get information about the people most relevant to you
 
-Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
+Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user's communication and collaboration patterns and business relationships. People can be local contacts or from an organization's directory, and people from recent communications. Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.
 
 ## Authorization
@@ -17,11 +17,11 @@ The People API is particularly useful for people picking scenarios, such as comp
 To call the People API in Microsoft Graph, your app will need the appropriate permissions:
 
 * People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.
-* People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users/{id}/people`) calls. People.Read.All requires admin consent.
+* People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user's organization (`https://graph.microsoft.com/v1.0/users/{id}/people`) calls. People.Read.All requires admin consent.
 
 ## Browse people
 
-The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.
+The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user's organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.
 
 ### Get a collection of relevant people
 
@@ -688,7 +688,7 @@ Content-type: application/json
 }
 ```
 
-### Browse another user’s relevant people
+### Browse another user's relevant people
 
 The following request gets the people most relevant to another person in the signed-in user's organization, as described in the [implementation of the working-with feature](#implementation-of-the-working-with-feature). This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
 
@@ -817,7 +817,7 @@ Content-type: application/json
 
 ## Search people
 
-The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.
+The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user's organization. These requests require the People.Read permission, with the exception of searching other users' relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.
 
 ### Use search to select people
 
@@ -971,7 +971,7 @@ Examples of public interaction include:
 - Sending or receiving emails to/from each other as part of a public group 
 - Inviting users to meetings as part of group, or where more than X people are invited
  
-The ranking doesn’t change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
+The ranking doesn't change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
  
 In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).
  

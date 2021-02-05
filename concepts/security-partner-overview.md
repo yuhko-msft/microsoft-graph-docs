@@ -32,7 +32,7 @@ Microsoft enables technology partner integration in two key ways.
 |Integrate your application with the Microsoft Graph Security API.|<li>Alerts from Microsoft Graph Security Providers</li><li>Secure Scores from Microsoft</li>| <li>Query alerts/Secure Score</li> <li>Call a Microsoft Graph Security Action</li> <li>Update a Microsoft Graph Security alert</li> <li>Upload Customer threat indicators to Microsoft</li> |
 |Enable others to integrate with your products through the Microsoft Graph Security API.|<li>Alerts from your security products</li>|<li>Security Actions for your security product</li>|
 
-Let’s delve a little deeper and explore some common scenarios where Microsoft Graph Security API integration magnifies security integration investments and the benefits to customers that we can achieve together.
+Let's delve a little deeper and explore some common scenarios where Microsoft Graph Security API integration magnifies security integration investments and the benefits to customers that we can achieve together.
 
 ## Featured technology partner scenarios
 

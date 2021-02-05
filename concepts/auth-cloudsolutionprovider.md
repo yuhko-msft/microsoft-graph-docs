@@ -9,7 +9,7 @@ ms.custom: graphiamtop20
 
 # Call Microsoft Graph from a Cloud Solution Provider application
 
-> **Note:** This topic applies **only** to Microsoft Cloud Solution Provider (CSP) application developers. The [Microsoft Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) program enables Microsoft’s partners to resell and manage Microsoft Online services to customers.
+> **Note:** This topic applies **only** to Microsoft Cloud Solution Provider (CSP) application developers. The [Microsoft Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) program enables Microsoft's partners to resell and manage Microsoft Online services to customers.
 
 This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the [authorization code grant flow](/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
@@ -17,7 +17,7 @@ This topic describes how to enable application access to partner-managed custome
 
 ## What is a partner-managed application
 
-The CSP program enables Microsoft’s partners to resell and manage Microsoft Online Services (such as Microsoft 365, Microsoft Azure, and CRM Online) to customers. Management of customer services is done through Delegated Admin Privileges, which enables designated partner users (known as agents) to access and configure their customers’ environments.
+The CSP program enables Microsoft's partners to resell and manage Microsoft Online Services (such as Microsoft 365, Microsoft Azure, and CRM Online) to customers. Management of customer services is done through Delegated Admin Privileges, which enables designated partner users (known as agents) to access and configure their customers' environments.
 
 Additionally, as a partner developer, you can build a **partner-managed app** to manage your customers' Microsoft services. Partner-managed apps are often called *pre-consented* apps because all your customers are automatically pre-consented for your partner-managed apps. This means when a user from one of your customer tenants uses one of your partner-managed apps, the user can use it without being prompted to give consent. Partner-managed apps also inherit Delegated Admin Privileges, so your partner agents can also get privileged access to your customers through your partner-managed application.
 
@@ -105,4 +105,4 @@ When you create a new customer using the [Partner Center API](https://partnercen
 To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Azure AD to acquire a token (to call Microsoft Graph). This should cover most cases. 
 However, if after waiting three minutes you still receive an authorization error, please wait an additional 60 seconds and try again.
 
-> **Note:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won’t contain the pre-consented permission claims.
+> **Note:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won't contain the pre-consented permission claims.

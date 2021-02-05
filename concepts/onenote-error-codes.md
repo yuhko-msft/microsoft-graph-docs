@@ -72,7 +72,7 @@ Azure Key Vault is too busy to handle the incoming request at this moment. Pleas
 SharePoint is currently unavailable. Please try again later.
 
 ### 10016
-Document library on the user or group’s OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
+Document library on the user or group's OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
 
 ### 10017
 Bad Request.

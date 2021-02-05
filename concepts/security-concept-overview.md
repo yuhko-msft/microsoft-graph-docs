@@ -61,7 +61,7 @@ Enable swift action to defend against new threats, such as actions to block file
 
 ### Proactively manage security risks (preview)
 
-Use the Microsoft Secure Score (preview) to provide visibility into your organization’s security needs and get suggestions for how to improve it, and project an improved score after those suggestions are incorporated. Easily measure your progress over time and get insights on specific changes that led to improvement in your score.
+Use the Microsoft Secure Score (preview) to provide visibility into your organization's security needs and get suggestions for how to improve it, and project an improved score after those suggestions are incorporated. Easily measure your progress over time and get insights on specific changes that led to improvement in your score.
 
 ## Benefits of using the Microsoft Graph Security API
 

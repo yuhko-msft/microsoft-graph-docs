@@ -12,7 +12,7 @@ author: bettirosengugi
 
 ## Consent to permissions
 
-The user or administrator must grant Graph Explorer the correct permissions via a consent process to access data in Microsoft Graph. Consent to permissions in Graph Explorer either via the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. 
+The user or administrator must grant Graph Explorer the correct permissions via a consent process to access data in Microsoft Graph. Consent to permissions in Graph Explorer either via the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you're signed in. 
 The **Modify permissions** tab lists all permissions you need to run the query in the address bar. 
 
 To consent to permissions:

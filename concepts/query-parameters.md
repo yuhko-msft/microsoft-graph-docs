@@ -290,7 +290,7 @@ For more information about searchable email properties, KQL syntax, supported op
 
 ### Using $search on person collections
 
-You can use the Microsoft Graph People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter. A `$search` request returns up to 250 results.
+You can use the Microsoft Graph People API to retrieve the people who are most relevant to a user. Relevance is determined by the user's communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter. A `$search` request returns up to 250 results.
 
 Searches on people occur on both the **displayName** and **emailAddress** properties of the [person](/graph/api/resources/person?view=graph-rest-1.0) resource.
 

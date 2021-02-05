@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
 [team setDisplayName:@"My Class Team"];
-[team setDescription:@"My Class Team’s Description"];
+[team setDescription:@"My Class Team's Description"];
 NSMutableArray *channelsList = [[NSMutableArray alloc] init];
 MSGraphChannel *channels = [[MSGraphChannel alloc] init];
 [channels setDisplayName:@"Class Announcements 📢"];

@@ -18,9 +18,9 @@ These steps are specific to online meetings and do not apply to other Microsoft 
 
 To configure an application access policy and allow applications to access online meetings with application permissions:
 
-1. Identify the app’s applcation (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
+1. Identify the app's applcation (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
 
-    - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
+    - Identify the app's application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identify the user's user (object) ID in the [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
 2. Connect to Skype for Business PowerShell with adminitrator account. For details, see [Manage Skype for Business Online with PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).

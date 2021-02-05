@@ -23,7 +23,7 @@ TV content rating labels in Ireland
 |general|2|The GA classification is suitable for all audiences|
 |children|3|The CH classification is suitable for children|
 |youngAdults|4|The YA classification is suitable for teenage audience|
-|parentalSupervision|5|The PS classification invites parents and guardians to consider restriction children’s access|
+|parentalSupervision|5|The PS classification invites parents and guardians to consider restriction children's access|
 |mature|6|The MA classification is suitable for adults|
 
 

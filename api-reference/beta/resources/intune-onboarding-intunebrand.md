@@ -33,11 +33,11 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support.|
 |contactITEmailAddress|String|Email address of the person/organization responsible for IT support.|
 |contactITNotes|String|Text comments regarding the person/organization responsible for IT support.|
-|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
-|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
-|privacyUrl|String|URL to the company/organization’s privacy policy.|
-|customPrivacyMessage|String|The custom privacy message used to explain what the organization can’t see or do on managed devices.|
-|customCantSeePrivacyMessage|String|The custom privacy message used to explain what the organization can’t see or do on managed devices.|
+|onlineSupportSiteUrl|String|URL to the company/organization's IT helpdesk site.|
+|onlineSupportSiteName|String|Display name of the company/organization's IT helpdesk site.|
+|privacyUrl|String|URL to the company/organization's privacy policy.|
+|customPrivacyMessage|String|The custom privacy message used to explain what the organization can't see or do on managed devices.|
+|customCantSeePrivacyMessage|String|The custom privacy message used to explain what the organization can't see or do on managed devices.|
 |customCanSeePrivacyMessage|String|The custom privacy message used to explain what the organization can see and do on managed devices.|
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|

@@ -28,7 +28,7 @@ This warning header is only sent back to clients when one of the data providers 
 - If a provider times out, HttpStatusCode.GatewayTimeout (504) is returned in the warning header.
 - If an internal provider error happens, HttpStatusCode.InternalServerError (500) is used in the warning header.
 
-If a data provider returns 2xx or 404, it’s not shown in the warning header because these codes are expected for success or when data is not found respectively. In a federated system, a 404 not found is expected as many times the data is only known to one or several, but not all, providers.
+If a data provider returns 2xx or 404, it's not shown in the warning header because these codes are expected for success or when data is not found respectively. In a federated system, a 404 not found is expected as many times the data is only known to one or several, but not all, providers.
 
 ## Example
 
@@ -65,6 +65,6 @@ A workaround for this limit is to use the `$filter` OData query parameter with t
 
 ## See also
 
-If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).
+If you're having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).
 
 

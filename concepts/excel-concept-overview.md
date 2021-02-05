@@ -19,11 +19,11 @@ You can use Microsoft Graph to allow web and mobile applications to read and mod
 
 ### Perform calculations
 
-Users love the ease with which they can perform deep and complex calculations within Excel. You can now access Excel’s powerful calculation engine with instant results. For example, a mortgage calculator can take advantage of the PMT function from Excel by making a simple API call that includes principal, rate and number of payments. Excel does all the difficult work and returns the monthly payment instantly. With more than 300 Excel worksheet functions currently available, you have full access to the breadth of formulas supported by Excel today. Complex business models don’t need to be rebuilt repeatedly. Developers can program Excel to perform those calculations instantly and retrieve the results with simple API calls.
+Users love the ease with which they can perform deep and complex calculations within Excel. You can now access Excel's powerful calculation engine with instant results. For example, a mortgage calculator can take advantage of the PMT function from Excel by making a simple API call that includes principal, rate and number of payments. Excel does all the difficult work and returns the monthly payment instantly. With more than 300 Excel worksheet functions currently available, you have full access to the breadth of formulas supported by Excel today. Complex business models don't need to be rebuilt repeatedly. Developers can program Excel to perform those calculations instantly and retrieve the results with simple API calls.
 
 ### Generate reports and analyze results
 
-Excel is a flexible reporting and analysis tool, from simple data tables to complex professional dashboards. Today, we give you full access to all of Excel’s reporting features, making Excel an online reporting service within Microsoft 365. Imagine any of the reporting scenarios users create and rely on today pulled into a custom app to create professional charts or analyze large sets of data intelligently, seamlessly blending Excel into those customized experiences.
+Excel is a flexible reporting and analysis tool, from simple data tables to complex professional dashboards. Today, we give you full access to all of Excel's reporting features, making Excel an online reporting service within Microsoft 365. Imagine any of the reporting scenarios users create and rely on today pulled into a custom app to create professional charts or analyze large sets of data intelligently, seamlessly blending Excel into those customized experiences.
 
 ### Store and track data
 
@@ -51,6 +51,6 @@ Looking for the API reference for this service?
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
-* [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
+* [Update a range's format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
 * [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

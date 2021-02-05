@@ -381,7 +381,7 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 
 * Multiple namespaces are not supported.
 * GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
-* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
+* `@odata.bind` is not supported.  This means that developers won't be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
   * No support for `nextLink`

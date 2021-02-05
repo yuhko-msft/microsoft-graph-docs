@@ -19,7 +19,7 @@ One application can have multiple application instances, and each tenant can hav
 ![Image showing a phone number with tenants with one or more application instances](images/communications-app-tenant.PNG)
 
 ## Prerequisite - Register a bot
-To get started, follow the instructions to [register a calling bot](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). You’ll need config values such as bot ID, Microsoft app ID, and Microsoft app password to use in your code.
+To get started, follow the instructions to [register a calling bot](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). You'll need config values such as bot ID, Microsoft app ID, and Microsoft app password to use in your code.
 
 Add the following permissions to your bot. A tenant admin needs to consent to these permissions as well:
 

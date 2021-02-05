@@ -14,7 +14,7 @@ author: "merzink"
 In addition to [app registration on Azure Portal](notifications-integration-app-registration.md), your application needs to register cross-device information such as cross-platform application ID and cross-platform push credentials in order to authorize Microsoft Graph to send notifications via native push notification services that correspond to each operating system: Windows, iOS, and Android. This is done through the [Partner Center dashboard (formerly Windows Dev Center dashboard)](https://partner.microsoft.com/dashboard/). 
 
 > [!NOTE]
-> You'll need a Windows developer account to complete the steps in this article, even if you don’t plan to build a Windows UWP application. If you don’t already have a Windows developer account, see [Opening a developer account](/windows/uwp/publish/opening-a-developer-account). Alternatively, if you prefer not to enroll as a Windows developer, you can reach out to us via email at [gnsengage@microsoft.com](sendto: gnsengage@microsoft.com). If you create a Windows developer account and are building a school or work application as part of an enterprise, you can associate your developer account with the appropriate Azure AD account that is used for managing your enterprise submissions. For details, see [Associate Azure Active Directory with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center).
+> You'll need a Windows developer account to complete the steps in this article, even if you don't plan to build a Windows UWP application. If you don't already have a Windows developer account, see [Opening a developer account](/windows/uwp/publish/opening-a-developer-account). Alternatively, if you prefer not to enroll as a Windows developer, you can reach out to us via email at [gnsengage@microsoft.com](sendto: gnsengage@microsoft.com). If you create a Windows developer account and are building a school or work application as part of an enterprise, you can associate your developer account with the appropriate Azure AD account that is used for managing your enterprise submissions. For details, see [Associate Azure Active Directory with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center).
 
 To get started, sign in to the [Partner Center dashboard](https://partner.microsoft.com/dashboard) using your Windows developer account:
 
@@ -48,4 +48,4 @@ To get started, sign in to the [Partner Center dashboard](https://partner.micros
     
     ![Verify domain](images/notifications-crossdevice-domain-verify.png)
 
-That’s it! You've now registered your applications to receive notifications. Next, learn how to set up your [app service](notifications-integrating-app-server.md) and start sending notifications.
+That's it! You've now registered your applications to receive notifications. Next, learn how to set up your [app service](notifications-integrating-app-server.md) and start sending notifications.

@@ -1,6 +1,6 @@
 ---
 title: "defenderPotentiallyUnwantedAppAction enum type"
-description: "Defender’s action to take on detected Potentially Unwanted Application (PUA)."
+description: "Defender's action to take on detected Potentially Unwanted Application (PUA)."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Defender’s action to take on detected Potentially Unwanted Application (PUA).
+Defender's action to take on detected Potentially Unwanted Application (PUA).
 
 ## Members
 |Member|Value|Description|

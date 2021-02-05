@@ -119,7 +119,7 @@ The JSON file itself must be named **cross-platform-app-identifiers** and hosted
  
 The file will allow for multiple JSON objects with the same platform identifier. For example, an iPhone app and an iPad app should be listed as separate JSON objects, each with a platform value of iOS. The web platform identifier is shown in the following example.
  
-You don't need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs. For example, if you don't have an app client for the Android platform, you don’t need an entry in the file for Android.
+You don't need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs. For example, if you don't have an app client for the Android platform, you don't need an entry in the file for Android.
  
 The following example includes all the valid platform identifiers currently accepted. JSON objects that include an invalid platform value will be stripped out.  
 

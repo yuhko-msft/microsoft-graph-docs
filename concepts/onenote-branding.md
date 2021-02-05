@@ -73,51 +73,51 @@ In color-limited environments and one-color designs, the logo can appear in blac
 
 <a name="do-nots"></a>
 
-## Logo don’ts
+## Logo don'ts
 
-**Don’t place the logo or icon on a color background** 
+**Don't place the logo or icon on a color background** 
 
 ![Icon on a color background](images/onenotelogodonts1.png)
 
 <br/>
 
-**Don’t change the scale or the proportions**
+**Don't change the scale or the proportions**
 
 ![Skewed icon](images/onenotelogodonts2.png)
 
 <br/>
 
-**Don’t use a drop shadow**
+**Don't use a drop shadow**
 
 ![Icon with drop shadow](images/onenotelogodonts3.png)
 
 <br/>
 
-**Don’t change the color, except to black or white** (see [Color](#color))
+**Don't change the color, except to black or white** (see [Color](#color))
 
 ![Green icon](images/onenotelogodonts4.png) 
 
 <br/>
 
-**Don’t rotate the logo or icon**   
+**Don't rotate the logo or icon**   
 
 ![Rotated icon](images/onenotelogodonts5.png)
 
 <br/>
 
-**Don’t rearrange the logo elements** 
+**Don't rearrange the logo elements** 
 
 ![Icon above name](images/onenotelogodonts6.png)
 
 <br/>
 
-**Don’t use an effect such as extrude and bevel**  
+**Don't use an effect such as extrude and bevel**  
 
 ![Icon with special effects](images/onenotelogodonts7.png)
 
 <br/>
 
-**Don’t create a new logo or icon**
+**Don't create a new logo or icon**
 
 ![Custom icon](images/onenotelogodonts8.png)
 
@@ -134,8 +134,8 @@ See the following table for details about how to refer to OneNote in various con
 
 | Context | Usage |
 |------|------|
-| App names | To avoid confusing consumers within the app stores, we prefer that *OneNote* not be included in the name of your app. If it’s determined that *OneNote* must be used in the app name, *OneNote* must be modified by a preposition (for example, *for OneNote* or *with OneNote*).<br/><br/>Example:&nbsp;&nbsp;*Proseware for OneNote*<br/><br/>Under no circumstances can the name of your app begin with *OneNote*.
-| Publisher names | The publisher’s name may not include a reference to *OneNote*. The publisher’s name may not infringe upon any Microsoft trademarks. |
+| App names | To avoid confusing consumers within the app stores, we prefer that *OneNote* not be included in the name of your app. If it's determined that *OneNote* must be used in the app name, *OneNote* must be modified by a preposition (for example, *for OneNote* or *with OneNote*).<br/><br/>Example:&nbsp;&nbsp;*Proseware for OneNote*<br/><br/>Under no circumstances can the name of your app begin with *OneNote*.
+| Publisher names | The publisher's name may not include a reference to *OneNote*. The publisher's name may not infringe upon any Microsoft trademarks. |
 | Indicating interoperability with OneNote | **Recommended:**&nbsp;&nbsp;Send to OneNote<br/><br/>**Acceptable:**&nbsp;&nbsp;Share with OneNote<br/>Acceptable when used in reference to "sharing" with other applications—for example, *Share with OneNote, Facebook, or Twitter.*)<br/><br/>**Never:**&nbsp;&nbsp;Save to OneNote<br/>This is technically incorrect. |
 | General marketing (including app descriptions) | The first mention in a communication should use the full name: *Microsoft OneNote*.<br /><br />Subsequent references in the communication can use the short name: *OneNote*.
  

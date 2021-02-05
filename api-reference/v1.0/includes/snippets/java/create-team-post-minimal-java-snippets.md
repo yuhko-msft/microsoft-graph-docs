@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 Team team = new Team();
 team.additionalDataManager().put("template@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/teamsTemplates('standard')"));
 team.displayName = "My Sample Team";
-team.description = "My Sample Team’s Description";
+team.description = "My Sample Team's Description";
 LinkedList<ConversationMember> membersList = new LinkedList<ConversationMember>();
 AadUserConversationMember members = new AadUserConversationMember();
 LinkedList<String> rolesList = new LinkedList<String>();

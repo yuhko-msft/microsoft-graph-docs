@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
 [team setDisplayName:@"My Class Team"];
-[team setDescription:@"My Class Team’s Description"];
+[team setDescription:@"My Class Team's Description"];
 
 NSError *error;
 NSData *teamData = [team getSerializedDataWithError:&error];

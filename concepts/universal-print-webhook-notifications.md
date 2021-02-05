@@ -40,13 +40,13 @@ For information about how to listen for Microsoft Graph notifications, see [Use 
 
 ### Scopes
 
-To subscribe to notifications for print jobs, applications must have the following permission scopes approved in the customer’s Azure AD tenant: 
+To subscribe to notifications for print jobs, applications must have the following permission scopes approved in the customer's Azure AD tenant: 
 
 * For printTask triggered (JobStarted) event, the permissions listed in [Get taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-beta&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
 
 * For JobFetchable event, the permissions listed in [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http).
 
-Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
+Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2Fbeta&view=graph-rest-beta) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer's Azure AD tenant by its administrator.  
 
 
 ## Create subscription: printTask triggered (JobStarted) event 
@@ -55,14 +55,14 @@ Some applications monitor print queues for incoming jobs and want to be notified
 
 Before creating a notification for a **printTask**-triggered event, ensure that application has created the following: 
 
-- A [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http) for the customer’s Azure AD tenant. A single task definition can be associated with one or more printers within the same Azure AD tenant. 
+- A [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&tabs=http) for the customer's Azure AD tenant. A single task definition can be associated with one or more printers within the same Azure AD tenant. 
 
 - A [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&tabs=http) for each of the printer queues for which the partner wants to receive a notification when a new print job starts. The **printTaskTrigger** needs to be bound to the **printTaskDefinition**. 
 
 >[!NOTE]
 >One printer can be associated with only one **printTaskTrigger** and one **printTaskTrigger** can be associated with only one **printTaskDefinition**. However, one **printTaskDefinition** can have one or more **printTaskTriggers** associated with it. 
 
-With the **printTaskDefinition** that exists for customer’s Azure AD tenant, the application can [create a subscription for a printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription:  
+With the **printTaskDefinition** that exists for customer's Azure AD tenant, the application can [create a subscription for a printTask triggered (JobStarted) event using the printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http). While creating the subscription:  
 
 * The `resource` field needs to be set as `print/taskDefinitions/{printTaskDefinition ID}/tasks`. 
 * The `changeType` field needs to be set as `created`. 

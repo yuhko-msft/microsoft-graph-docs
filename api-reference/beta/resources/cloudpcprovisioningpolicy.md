@@ -35,9 +35,9 @@ Represents a cloud PC provisioning policy.
 |id|String|Unique identifier for the cloud PC provisioning policy. Read-only.|
 |displayName|String|The display name for the provisioning policy.|
 |description|String|The provisioning policy description.|
-|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the cloud PC service.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that's validated by the cloud PC service.|
 |imageId|String|The ID of the OS image you want to provision on cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
-|imageDisplayName|String|The display name for the OS image you’re provisioning.|
+|imageDisplayName|String|The display name for the OS image you're provisioning.|
 |imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on cloud PCs. Possible values are: `gallery`, `custom`.|
 
 ## Relationships

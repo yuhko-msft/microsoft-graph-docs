@@ -32,8 +32,8 @@ Represents a cloud-managed virtual desktop.
 |id|String|Unique identifier for the cloud PC. Read-only.|
 |displayName|String|The cloud PC display name.|
 |imageDisplayName|String|Name of the OS image that's on the cloud PC.|
-|managedDeviceId|String|The cloud PC’s Intune device ID.|
-|managedDeviceName|String|The cloud PC’s Intune device name.|
+|managedDeviceId|String|The cloud PC's Intune device ID.|
+|managedDeviceName|String|The cloud PC's Intune device name.|
 |provisioningPolicyId|String|The cloud PC's provisioning policy ID.|
 |servicePlanId|String|The cloud PC's service plan ID.|
 |servicePlanName|String|The cloud PC's service plan name.|
@@ -46,11 +46,11 @@ Represents a cloud-managed virtual desktop.
 
 |Member|Description|
 |:---|:---|
-|notProvisioned|The Cloud PC hasn’t been provisioned.|
+|notProvisioned|The Cloud PC hasn't been provisioned.|
 |provisioning|Cloud PC provisioning is in progress.|
 |provisioned|The Cloud PC is provisioned and can be accessed by end users.|
 |upgrading|Cloud PC resize is in progress.|
-|inGracePeriod|The Cloud PC is in the one week grace period before it’s deprovisioned.|
+|inGracePeriod|The Cloud PC is in the one week grace period before it's deprovisioned.|
 |deprovisioning|The Cloud PC is deprovisioning.|
 |failed|The operation on Cloud PC has failed.|
 

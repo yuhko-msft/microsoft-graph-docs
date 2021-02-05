@@ -15,7 +15,7 @@ The profile API lets you, as app developers, model and represent people in Micro
 
 As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
-- "Search for People who’s name starts with ‘J’"
+- "Search for People who's name starts with ‘J'"
 - "Which documents are most interesting to this person?"
 
 You can use the people API and insights API in Microsoft Graph to build smarter apps that can, respectively, access the relevant people and documents for a user.

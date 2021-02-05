@@ -46,7 +46,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Value              | Description                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | everyone           | Everyone is a presenter (This is default option).             |
-| organization       | Everyone in organizer’s organization is a presenter.          |
+| organization       | Everyone in organizer's organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknow future value.                                          |

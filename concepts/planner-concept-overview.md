@@ -17,8 +17,8 @@ Planner provides a simple and visual way for teams to organize their work. Custo
 ## Why integrate with Planner tasks?
 Planner provides task tracking capabilities for collaboration experiences in Microsoft 365. If your scenarios require tracking tasks and organizing work for a team or group of end users, Planner is the right service for you. Planner integration can help you reach the millions of users collaborating on Microsoft 365. 
 
-### Organize your team’s work
-Planner provides a shared space where you can build a team, [create tasks](/graph/api/planner-post-tasks?view=graph-rest-1.0), and assign them to others on the team. Planner makes it easy for everyone to know who’s doing what and if things are on track. You can update tasks with additional information like due dates, progress, and descriptions, and then further organize tasks with customizable buckets and category labels.   
+### Organize your team's work
+Planner provides a shared space where you can build a team, [create tasks](/graph/api/planner-post-tasks?view=graph-rest-1.0), and assign them to others on the team. Planner makes it easy for everyone to know who's doing what and if things are on track. You can update tasks with additional information like due dates, progress, and descriptions, and then further organize tasks with customizable buckets and category labels.   
 
 ### Collaborate across Microsoft 365
 Planner integrates into collaboration experiences across Microsoft 365. In addition to Planner web and mobile clients, users can view and update Planner plans and tasks from within SharePoint and Microsoft Teams.  

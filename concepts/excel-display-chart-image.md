@@ -23,5 +23,5 @@ If you want to customize the display of the image, specify a height, width, and 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
-* [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
+* [Update a range's format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

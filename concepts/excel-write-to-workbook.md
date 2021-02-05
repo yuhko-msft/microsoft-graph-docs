@@ -164,6 +164,6 @@ onWriteToExcel() {
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
-* [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
+* [Update a range's format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
 * [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

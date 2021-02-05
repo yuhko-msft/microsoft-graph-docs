@@ -10,7 +10,7 @@ ms.custom: graphiamtop20
 
 Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as [user](/graph/api/resources/user?view=graph-rest-1.0) and [message](/graph/api/resources/message?view=graph-rest-1.0). You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store.
 
-For example, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource. Alternatively, you might want to retain your app’s existing user profile store, and simply add an app-specific store identifier to the **user** resource.
+For example, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource. Alternatively, you might want to retain your app's existing user profile store, and simply add an app-specific store identifier to the **user** resource.
 
 Microsoft Graph offers two types of extensions. Choose the extension type that best suits your application needs:
 
@@ -74,7 +74,7 @@ be discoverable by other apps. These apps can in turn use the extension for thei
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
 - If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you have verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. For example, if your vanity domain is contoso.com, you can define an **id** of, `contoso_mySchema`. This is the preferred option.
-- If you don’t have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  For example, `extkvbmkofy_mySchema`.
+- If you don't have a verified vanity domain, you can just set the **id** to a schema name (without a domain name prefix), for example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  For example, `extkvbmkofy_mySchema`.
 
 You will see this unique name in **id** used as the name of the complex type that will store your custom data on the extended resource instance.
 
