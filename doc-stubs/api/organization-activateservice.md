@@ -1,25 +1,33 @@
 ---
 title: "organization: activateService"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "`activateService` is used to activate a given service for a tenant and will require admin privileges to run."
+author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "organizations"
 doc_type: apiPageType
 ---
 
 # organization: activateService
+
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+## Description
+
+`activateService` is used to activate a given service for a tenant and will require admin privileges to run.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+
+|Permission type|Permissions (from most to least privileged)|
+| :--- | :--- |
+| Delegated (work or school account) | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+| Delegated (personal Microsoft account) | Not Supported. |
+| Application | Directory.ReadWrite.All, Directory.ReadWriteAdvanced.All |
+
 
 ## HTTP request
 
@@ -39,16 +47,15 @@ POST /organization/{organizationId}/activateService
 
 ## Request body
 In the request body, supply JSON representation of the parameters.
+At least one parameter must be defined for this action to be valid. There are two possible cases: You could have `service` or (`servicePlanId` and `skuId`). If all three parameters are defined, then the `servicePlanId` and `skuId` takes precedence.
 
-The following table shows the parameters that can be used with this action.
+### Parameters
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|service|String|**TODO: Add Description**|
-|servicePlanId|Guid|**TODO: Add Description**|
-|skuId|Guid|**TODO: Add Description**|
-
-
+| Parameter         | Type         | Required? | Description                           |
+| ----------------- | ------------ | --------- | ------------------------------------- |
+| `service` | `Edm.String` | False     | Name of the service to activate       |
+| `servicePlanId`   | `Edm.Guid`   | False     | PlanId of the ServicePlan to activate |
+| `skuId`           | `Guid`       | False     | SkuId of SKU the service plan is on   |
 
 ## Response
 
@@ -66,12 +73,11 @@ If successful, this action returns a `204 No Content` response code.
 POST https://graph.microsoft.com/beta/organization/{organizationId}/activateService
 
 Content-Type: application/json
-Content-length: 75
+Content-length: 150
 
 {
-  "service": "String",
-  "servicePlanId": "Guid",
-  "skuId": "Guid"
+    "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900",
+    "servicePlanId": "a23b959c-7ce8-4e57-9140-b90eb88a9e97"
 }
 ```
 
