@@ -1,6 +1,6 @@
 ---
 title: "organization: activateService"
-description: "`activateService` is used to activate a given service for a tenant and will require admin privileges to run."
+description: "`activateService` is used to activate a given service for an organization and will require admin privileges to run."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "organizations"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 ## Description
 
-`activateService` is used to activate a given service for a tenant and will require admin privileges to run.
+`activateService` is used to activate a given service for an organization and will require admin privileges to run.
 
 
 ## Permissions
