@@ -1,5 +1,5 @@
 ---
-title: "Temporary Access Pass Policy "
+title: "temporaryAccessPassAuthenticationMethodConfiguration resource type"
 description: "Represents a Temporary Access Pass authentication methods policy"
 author: "inbarckms"
 localization_priority: Normal
@@ -39,6 +39,7 @@ Represents a Temporary Access Pass authentication methods policy. Authentication
 
 ## JSON representation
 The following is a JSON representation of the resource.
+
 ``` json
 {
   "@odata.type": "#microsoft.authMethodPolicy.temporaryAccessPassAuthenticationMethodConfiguration",
