@@ -2,6 +2,7 @@
 title: "Delete temporaryAccessPassAuthenticationMethod"
 description: "Deletes a temporaryAccessPassAuthenticationMethod object."
 ms.author: "inbarc"
+author: "InbarckMS"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
