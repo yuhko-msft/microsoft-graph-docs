@@ -1,7 +1,7 @@
 ---
 title: "Get temporaryAccessPassAuthenticationMethod"
 description: "Read the properties and relationships of a temporaryAccessPassAuthenticationMethod object."
-author: "inbarckMS"
+ms.author: "inbarckMS"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
