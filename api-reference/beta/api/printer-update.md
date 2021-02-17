@@ -156,13 +156,13 @@ Content-length: 1313
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "acceptingJobs": true,
   "status": {
-    "processingState": "idle",
-    "processingStateReasons": [],
-    "processingStateDescription": ""
+    "state": "idle",
+    "details": [],
+    "description": ""
   },
   "defaults": {
     "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
+    "contentType": "application/oxps",
     "finishings": ["none"],
     "mediaType": "stationery"
   },
@@ -180,9 +180,9 @@ Content-length: 1313
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",
