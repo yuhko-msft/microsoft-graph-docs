@@ -97,22 +97,39 @@ Content-length: 1313
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
+  "displayName": "PrinterName",
   "manufacturer": "PrinterManufacturer",
   "model": "PrinterModel",
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
+  "isAcceptingJobs": true,
   "status": {
-    "processingState": "stopped",
-    "processingStateReasons": ["disconnected"],
-    "processingStateDescription": ""
+    "state": "stopped",
+    "details": [
+      "disconnected"
+    ],
+    "description": ""
   },
   "defaults": {
-    "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
-    "finishings": ["none"],
-    "mediaType": "stationery"
+    "copiesPerJob": 1,
+    "finishings": [
+      "none"
+    ],
+    "mediaColor": "Unknown",
+    "mediaType": "stationery",
+    "mediaSize": "North America Letter",
+    "pagesPerSheet": 1,
+    "orientation": "portrait",
+    "outputBin": "auto",
+    "inputBin": "auto",
+    "contentType": "application/oxps",
+    "fitPdfToPage": false,
+    "multipageLayout": null,
+    "colorMode": "color",
+    "quality": "medium",
+    "duplexMode": "oneSided",
+    "dpi": 600,
+    "scaling": null
   },
   "location": {
     "latitude": 1.1,
@@ -120,25 +137,25 @@ Content-length: 1313
     "altitudeInMeters": 3,
     "streetAddress": "One Microsoft Way",
     "subUnit": [
-        "Main Plaza",
-        "Unit 400"
+      "Main Plaza",
+      "Unit 400"
     ],
     "city": "Redmond",
     "postalCode": "98052",
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
-        "C+AI",
-        "Microsoft Graph"
+      "C+AI",
+      "Microsoft Graph"
     ],
     "subdivision": [
-        "King County",
-        "Red West"
+      "King County",
+      "Red West"
     ],
     "stateOrProvince": "Washington"
   }
