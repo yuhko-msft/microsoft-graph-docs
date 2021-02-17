@@ -69,7 +69,7 @@ Content-length: 109
 
 {
   "displayName": "ShareName",
-  "allowAllUsers": "true",
+  "allowAllUsers": true,
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
@@ -109,8 +109,8 @@ Content-length: 225
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
   "displayName": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-  "isAcceptingJobs": "true",
-  "allowAllUsers": "true",
+  "isAcceptingJobs": true,
+  "allowAllUsers": true,
   "status": {
     "state": "stopped",
     "details": ["disconnected"],
