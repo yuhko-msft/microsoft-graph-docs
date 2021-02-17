@@ -114,7 +114,7 @@ Content-type: application/json
 Content-length: 437
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea')/jobs/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea')/jobs/$entity",
   "id": "24123",
   "createdDateTime": "2020-06-26T04:20:06.5715544Z",
   "createdBy": {
