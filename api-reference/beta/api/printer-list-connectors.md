@@ -97,9 +97,6 @@ Content-length: 1373
       "fullyQualifiedDomainName": "connector1@redmond.corp.microsoft.com",
       "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
       "appVersion": "0.19.7338.23496",
-      "deviceHealth": {
-        "lastConnectionTime": "2020-02-04T07:00:00.0000000"
-      },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
       "location": {
         "latitude": 1.1,
@@ -115,9 +112,9 @@ Content-length: 1373
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",
