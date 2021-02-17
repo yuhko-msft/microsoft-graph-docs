@@ -216,7 +216,7 @@ Content-type: application/json
 Content-length: 1688
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs/$entity",
   "id": "31216",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
   "createdBy": {    
@@ -232,7 +232,7 @@ Content-length: 1688
   "redirectedTo": null,
   "redirectedFrom": null,
   "isFetchable": "false",
-  "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
+  "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
