@@ -109,7 +109,7 @@ Content-length: 461
         "state": "completed",
         "description": "The print job has completed successfully and no further processing will take place.",
         "details" : [],
-        "isAcquiredByPrinter": "true"
+        "isAcquiredByPrinter": true
       }
     }
   ]
