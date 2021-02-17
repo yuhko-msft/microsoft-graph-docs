@@ -106,8 +106,10 @@ Content-length: 461
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
       "createdBy": {},
       "status": {
-        "processingState": "completed",
-        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+        "state": "completed",
+        "description": "The print job has completed successfully and no further processing will take place.",
+        "details" : [],
+        "isAcquiredByPrinter": "true"
       }
     }
   ]
