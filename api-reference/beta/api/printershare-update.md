@@ -107,8 +107,15 @@ Content-length: 225
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
-  "name": "ShareName",
-  "createdDateTime": "2020-02-04T00:00:00.0000000Z"
+  "displayName": "ShareName",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "isAcceptingJobs": "true",
+  "allowAllUsers": "true",
+  "status": {
+    "state": "stopped",
+    "details": ["disconnected"],
+    "description": ""
+  }
 }
 ```
 
