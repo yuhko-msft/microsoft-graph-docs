@@ -96,13 +96,10 @@ Content-length: 1289
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "Connector1",
+      "displayName": "Connector1",
       "fullyQualifiedDomainName": "connector1@redmond.corp.microsoft.com",
       "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
       "appVersion": "0.19.7338.23496",
-      "deviceHealth": {
-        "lastConnectionTime": "2020-02-04T07:00:00.0000000"
-      },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
       "location": {
         "latitude": 1.1,
