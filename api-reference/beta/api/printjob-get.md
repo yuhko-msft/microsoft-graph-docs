@@ -96,16 +96,22 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 408
-
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
   "id": "5182",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-  "createdBy": {},
+  "createdBy": {
+    
+  },
   "status": {
-    "processingState": "completed",
-    "processingStateDescription": "The print job has completed successfully and no further processing will take place."
-  }
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": "false"
 }
 ```
 
@@ -136,18 +142,20 @@ Content-type: application/json
 Content-length: 774
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs(tasks())/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
   "id": "5182",
-  "createdDateTime": "2020-06-30T17:18:52.3930472Z",
-  "createdBy": {
-    "id": "",
-    "displayName": "",
-    "userPrincipalName": ""
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "createdBy": {    
   },
   "status": {
-    "processingState": "pendingHeld",
-    "processingStateDescription": "The job is not a candidate for processing yet."
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
   },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": "false",
   "tasks": [
     {
       "id": "d036638b-1272-4bba-9227-732463823ed3",
@@ -208,48 +216,29 @@ Content-type: application/json
 Content-length: 1688
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs/$entity",
   "id": "31216",
-  "createdDateTime": "2020-06-26T04:20:06.5715544Z",
-  "createdBy": {
-    "id": "",
-    "displayName": "",
-    "ipAddress": null,
-    "userPrincipalName": "",
-    "oDataType": null
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "createdBy": {    
+  },
+  "configuration": {    
   },
   "status": {
-  "processingState": "aborted",
-  "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
   },
-  "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": "false",
+  "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
       "displayName": "",
       "contentType": "application/oxps",
-      "size": 276604,
-      "configuration": {
-        "quality": "medium",
-        "dpi": 300,
-        "feedDirection": null,
-        "orientation": "landscape",
-        "duplexMode": "oneSided",
-        "copies": 2,
-        "colorMode": "color",
-        "inputBin": null,
-        "outputBin": null,
-        "mediaSize": null,
-        "mediaType": null,
-        "finishings": [],
-        "pagesPerSheet": null,
-        "multipageLayout": "clockwiseFromTopLeft",
-        "collate": true,
-        "scaling": null,
-        "fitPdfToPage": null,
-        "margin": null,
-        "pageRanges": []
-      }
+      "size": 276604
     }
   ]
 }
