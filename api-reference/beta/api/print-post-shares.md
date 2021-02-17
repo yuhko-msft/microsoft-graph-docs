@@ -66,27 +66,10 @@ Content-type: application/json
 Content-length: 114
 
 {
-  "name": "name-value",
+  "displayName": "ShareName",
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from-print-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 The following is an example of the response.
@@ -104,7 +87,7 @@ Content-length: 233
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
     "id": "7361c7c1-ff07-4565-9897-bef6895a7d04",
-    "name": "ShareName",
+    "displayName": "ShareName",
     "createdDateTime": "2020-02-04T00:00:00.0000000Z"
 }
 ```
