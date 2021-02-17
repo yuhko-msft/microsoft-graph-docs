@@ -149,12 +149,12 @@ Content-length: 1313
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
+  "displayName": "PrinterName",
   "manufacturer": "PrinterManufacturer",
   "model": "PrinterModel",
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
+  "isAcceptingJobs": true,
   "status": {
     "state": "idle",
     "details": [],
