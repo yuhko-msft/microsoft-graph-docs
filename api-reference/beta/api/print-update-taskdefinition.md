@@ -108,7 +108,7 @@ Content-Type: application/json
   "id": "fab143fd-ee61-4358-8558-2c7dee953982",
   "displayName": "Test TaskDefinitionName",
   "createdBy": {
-    "appId" : "479688a0-cc3a-4993-ab24-54c7c80b047e"
+    "appId" : "479688a0-cc3a-4993-ab24-54c7c80b047e",
     "displayName": "Requesting App Display Name"
   }
 }
