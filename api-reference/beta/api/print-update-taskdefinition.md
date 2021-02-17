@@ -104,7 +104,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.printTaskDefinition",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",
   "id": "fab143fd-ee61-4358-8558-2c7dee953982",
   "displayName": "Test TaskDefinitionName",
   "createdBy": {
