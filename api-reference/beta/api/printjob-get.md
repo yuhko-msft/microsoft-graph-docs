@@ -111,7 +111,7 @@ Content-length: 408
   },
   "redirectedTo": null,
   "redirectedFrom": null,
-  "isFetchable": "false"
+  "isFetchable": false
 }
 ```
 
@@ -155,7 +155,7 @@ Content-length: 774
   },
   "redirectedTo": null,
   "redirectedFrom": null,
-  "isFetchable": "false",
+  "isFetchable": false,
   "tasks": [
     {
       "id": "d036638b-1272-4bba-9227-732463823ed3",
@@ -231,7 +231,7 @@ Content-length: 1688
   },
   "redirectedTo": null,
   "redirectedFrom": null,
-  "isFetchable": "false",
+  "isFetchable": false,
   "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
     {
