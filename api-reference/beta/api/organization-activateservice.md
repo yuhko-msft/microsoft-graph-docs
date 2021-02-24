@@ -3,7 +3,7 @@ title: "organization: activateService"
 description: "`activateService` is used to activate a given service for an organization and will require admin privileges to run."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "organizations"
+ms.prod: "organization"
 doc_type: apiPageType
 ---
 
