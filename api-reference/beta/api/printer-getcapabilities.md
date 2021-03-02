@@ -29,7 +29,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printers/{id}/getCapabilities
+GET /print/printers/{id}/getCapabilities
 ```
 ## Request headers
 | Name          | Description   |
@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "printer-getCapabilities"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
+GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printer-getcapabilities-csharp-snippets.md)]
