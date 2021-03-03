@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groupLifecyclePolicies/{id}')
+let groupLifecyclePolicies = await client.api('/groupLifecyclePolicies')
 	.get();
 
 ```

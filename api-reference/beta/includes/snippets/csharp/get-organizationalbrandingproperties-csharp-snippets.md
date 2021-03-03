@@ -6,14 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var organizationalBrandingLocalization = new OrganizationalBrandingLocalization
-{
-	BackgroundColor = "#00000F",
-	Id = "fr"
-};
-
-await graphClient.Organization["d69179bf-f4a4-41a9-a9de-249c0f2efb1d"].Branding.Localizations
+var localizations = await graphClient.Organization["d69179bf-f4a4-41a9-a9de-249c0f2efb1d"].Branding.Localizations["en-US"]
 	.Request()
-	.AddAsync(organizationalBrandingLocalization);
+	.Select("SignInPageText")
+	.GetAsync();
+
+var signInPageText = localizations.SignInPageText;
 
 ```

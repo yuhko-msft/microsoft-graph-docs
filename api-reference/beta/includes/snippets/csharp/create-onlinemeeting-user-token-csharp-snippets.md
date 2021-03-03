@@ -8,8 +8,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var onlineMeeting = new OnlineMeeting
 {
-	StartDateTime = DateTimeOffset.Parse("2019-07-12T21:30:34.2444915+00:00"),
-	EndDateTime = DateTimeOffset.Parse("2019-07-12T22:00:34.2464912+00:00"),
+	StartDateTime = DateTimeOffset.Parse("2019-07-13T00:30:34.2444915+03:00"),
+	EndDateTime = DateTimeOffset.Parse("2019-07-13T01:00:34.2464912+03:00"),
 	Subject = "User Token Meeting"
 };
 
