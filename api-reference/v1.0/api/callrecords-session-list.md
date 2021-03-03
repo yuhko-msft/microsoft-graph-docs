@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and the requested [s
 The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_sessions"
 }-->
 
@@ -73,7 +73,7 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true
@@ -152,7 +152,7 @@ Content-type: application/json
 The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_sessions_expanded"
 }-->
 
@@ -167,7 +167,7 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true

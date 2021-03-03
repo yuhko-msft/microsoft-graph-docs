@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and the requested [m
 The following is an example of the request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord"
 }-->
 
@@ -80,7 +80,7 @@ The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
@@ -133,7 +133,7 @@ Content-type: application/json
 The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_callrecord_expanded"
 }-->
 
@@ -148,7 +148,7 @@ The following is an example of the response. If the sessions list is truncated, 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->

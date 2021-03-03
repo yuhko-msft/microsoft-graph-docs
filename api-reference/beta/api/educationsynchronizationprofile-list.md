@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "list_synchronizationProfile"
 }-->
 ```http
@@ -60,7 +60,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
   "isCollection": true

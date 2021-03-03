@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 ##### Request
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_educationassignmentresource"
 }-->
 ```http
@@ -68,7 +68,7 @@ The following is an example of the response.
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignmentResource"
 } -->
