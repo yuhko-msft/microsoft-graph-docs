@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "user",
           "ChangeType": "Addition",
-          "Description": "Added the [Get transitiveReports count](https://docs.microsoft.com/en-us/graph/api/directoryobject-gettransitivereportscount?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Description": "Added the [Get transitiveReports count](https://docs.microsoft.com/en-us/graph/api/directoryobject-gettransitivereportscount?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "orgcontact",
           "ChangeType": "Addition",
-          "Description": "Added the [Get transitiveReports count](https://docs.microsoft.com/en-us/graph/api/directoryobject-gettransitivereportscount?view=graph-rest-beta) method to the [orgcontact](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Description": "Added the [Get transitiveReports count](https://docs.microsoft.com/en-us/graph/api/directoryobject-gettransitivereportscount?view=graph-rest-beta) method to the [orgcontact](https://docs.microsoft.com/en-us/graph/api/resources/orgcontact?view=graph-rest-beta) resource.",
           "Target": "orgcontact"
         }
       ],
