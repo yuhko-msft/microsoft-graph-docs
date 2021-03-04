@@ -26,6 +26,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | [List organizational contacts](../api/orgcontact-list.md) | [orgContact](orgcontact.md) collection | List properties of organizational contacts. |
 | [Get organizational contact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | Read properties and relationships of orgContact object. |
 | [Get manager](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | Get the contact's manager. |
+| [Get transitiveReports count](../api/directoryobject-gettransitivereportscount.md) | [directoryObject](directoryobject.md) collection | Get the transitive reports count for an organization contact from the transitiveReports navigation property. |
 | [List directReports](../api/orgcontact-list-directreports.md) | [directoryObject](directoryobject.md) collection | List the contact's direct reports. |
 | [List memberOf](../api/orgcontact-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get a memberOf object collection. |
 | [checkMemberGroups](../api/orgcontact-checkmembergroups.md) | String collection | Check for group membership. |
