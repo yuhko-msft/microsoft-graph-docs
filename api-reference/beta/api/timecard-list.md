@@ -44,7 +44,7 @@ This method supports the $filter, $orderBy, $top, $skipToken OData query paramet
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| MS-APP-ACTS-AS | User id. Required when using Application Permissions.  |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 Do not supply a request body for this method.

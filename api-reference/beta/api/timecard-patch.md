@@ -41,6 +41,7 @@ PATCH /teams/{teamId}/schedule/timecards/{timeCardID}
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 

@@ -1,20 +1,20 @@
 ---
-title: "StageForDeletion timeOff"
-description: "Stage deletion of timeOff in draft mode."
+title: "StageForDeletion open shift"
+description: "Stage deletion of an open shift in draft mode."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Stage deletion of timeoff in draft mode
+# Stage deletion of openshift in draft mode
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stage deletion of [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
-Use this API to draft multiple timeoff deletions before finally sharing all the deleted timeoffs.
+Stage deletion of [openshift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.
+Use this API to draft multiple openshift deletions before finally sharing all the deleted openshifts.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/timesOff/{timeOffId}/stageForDeletion
+POST /teams/{teamId}/schedule/openShifts/{openShiftId}/stageForDeletion
 ```
 
 ## Request headers
@@ -52,10 +52,10 @@ If successful, this method returns a `204 OK` response code.
 
 #### Request
 
-The following is an example of a request to stage in draft mode a timeOff deletion.
+The following is an example of a request to stage in draft mode an openshift deletion.
 
 ```http
-POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/timesOff/{timeOffId}/stageForDeletion
+POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShifts/{openShiftId}/stageForDeletion
 ```
 ---
 
@@ -71,10 +71,10 @@ HTTP/1.1 204 OK
 
 #### Request
 
-The following is an example to get a timeOff that's been staged for deletion.
+The following is an example to get an openShift that's been staged for deletion.
 
 ```http
-GET https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/timesOff/{timeOffId}
+GET https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShifts/{openShiftId}
 
 ```
 ---
@@ -89,29 +89,33 @@ Content-type: application/json
 Content-length: 401
 
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
+  "id": "OPNSHFT_20976420-6453-49ee-8c87-1d42e1f4cd0b",
+  "schedulingGroupId": "dbaeeda2-025b-4db3-861d-ccaf7c369fb5",
+  "sharedOpenShift": {
+    "notes": "Please upload proof of completion.",
+    "displayName": "Re-Paint kitchen wall",
+    "startDateTime": "2019-10-04T10:00:00.000Z",
+    "endDateTime": "2019-10-04T11:00:00.000Z",
+    "theme": "white",
+    "activities": [],
+    "openSlotCount": 3
+  },
+  "draftOpenShift": {
+    "notes": "Please upload proof of completion.",
+    "displayName": "Re-Paint kitchen wall",
+    "startDateTime": "2019-10-04T10:00:00.000Z",
+    "endDateTime": "2019-10-04T11:00:00.000Z",
+    "theme": "white",
+    "activities": [],
+    "openSlotCount": 3
+  },
+  "createdDateTime": "2019-10-03T10:00:00.000Z",
+  "lastModifiedDateTime": "2019-10-03T10:00:00.000Z",
   "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
     "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
+      "id": "ca124613-19fe-403d-be9a-1e469c98de08",
+      "displayName": "Jon Doe"
     }
-  },
-  "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
   },
   "isStagedForDeletion": "true",
 }

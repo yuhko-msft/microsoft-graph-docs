@@ -44,7 +44,7 @@ This method does not support OData query parameters to customize the response.
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-type | application/json. Required.|
-| MS-APP-ACTS-AS | User id. Required when using Application Permissions.  |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 
