@@ -148,8 +148,8 @@ We're excited to share a preview of new tools that will help you **create**, **r
 
 1. The binding syntax changed from `{...}` to `${...}`. 
     * For Example: `"text": "Hello {name}"` becomes `"text": "Hello ${name}"`
-2. The JavaScript API no longer contains an `EvaluationContext` object. Simply pass your data to the `expand` function. Please see the [SDK page](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk) for full details.
-3. The .NET API was redesigned to more closely match the JavaScript API. Please see the [SDK page](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk) for full details.
+2. The JavaScript API no longer contains an `EvaluationContext` object. Simply pass your data to the `expand` function. Please see the [SDK page](https://docs.microsoft.com/adaptive-cards/templating/sdk) for full details.
+3. The .NET API was redesigned to more closely match the JavaScript API. Please see the [SDK page](https://docs.microsoft.com/adaptive-cards/templating/sdk) for full details.
 
 ### Rendering for web component
 > [!IMPORTANT] 
@@ -219,6 +219,7 @@ We're excited to share a preview of new tools that will help you **create**, **r
 <body onload="renderCard()">
 	<h1>Adaptive Cards Data Binding Example</h1>
 	<div id="exampleDiv"></div>
+</body>
 </html>
 ```
 
