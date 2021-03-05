@@ -1,7 +1,7 @@
 ---
 ms.author: "yiwenwang"
 title: "Use the Microsoft Search API in Microsoft Graph to render display layout"
-description: "We provide display layout in Microsoft Graph Search API, which help our clients rendering the different search results".
+description: "We provide display layout in Microsoft Graph Search API, which help our clients rendering the different search results"
 author: "yiwenwang"
 localization_priority: Normal
 ms.prod: "search"
@@ -14,8 +14,8 @@ A search result type is a rule that causes distinct kinds of search results to b
 - One or more characteristics or conditions to compare each search result against, such as the result source or content type of the search result.
 - A display template to use for search results that meet the conditions. The display template controls the way in which all results that meet the conditions appear and behave on a search results page. 
 
-Microsoft Graph Search API provided a renderable response based on [Adaptive Card]("https://adaptivecards.io/"). By using [Adaptive Card Template]("https://adaptivecards.io/designer/"), Clients can render different search result in different kinds of platform.
-Clients can custominize their search result type in [Microsoft Office365 Admin Center]("https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes").
+Microsoft Graph Search API provided a renderable response based on [Adaptive Card](https://adaptivecards.io/). By using [Adaptive Card Template](https://adaptivecards.io/designer), Clients can render different search result in different kinds of platform.
+Clients can custominize their search result type in [Microsoft Office365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 
 ## Example 1: Sample Request
 
@@ -148,8 +148,8 @@ We're excited to share a preview of new tools that will help you **create**, **r
 
 1. The binding syntax changed from `{...}` to `${...}`. 
     * For Example: `"text": "Hello {name}"` becomes `"text": "Hello ${name}"`
-2. The JavaScript API no longer contains an `EvaluationContext` object. Simply pass your data to the `expand` function. Please see the [SDK page](sdk.md) for full details.
-3. The .NET API was redesigned to more closely match the JavaScript API. Please see the [SDK page](sdk.md) for full details.
+2. The JavaScript API no longer contains an `EvaluationContext` object. Simply pass your data to the `expand` function. Please see the [SDK page](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk) for full details.
+3. The .NET API was redesigned to more closely match the JavaScript API. Please see the [SDK page](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk) for full details.
 
 ### Rendering for web component
 > [!IMPORTANT] 
