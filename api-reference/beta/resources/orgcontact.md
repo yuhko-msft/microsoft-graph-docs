@@ -60,6 +60,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | directReports | [directoryObject](directoryobject.md) collection | The contact's direct reports. (The users and contacts that have their manager property set to this contact.) Read-only. Nullable. |
 | manager | [directoryObject](directoryobject.md) | The user or contact that is this contact's manager. Read-only. |
 | memberOf | [directoryObject](directoryobject.md) collection | Groups that this contact is a member of. Read-only. Nullable. |
+| transitiveReports | [directoryObject](directoryobject.md) collection | The transitive reports for a contact. Read-only. |
 
 ## JSON representation
 

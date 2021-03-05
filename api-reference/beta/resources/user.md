@@ -312,6 +312,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
+| transitiveReports | [directoryObject](directoryobject.md) collection | The transitive reports for a user. Read-only. |
 |usageRight|[usageRight](usageright.md) collection|Represents the usage rights a user has been granted. |
 
 ### User preferences for languages and regional formats
