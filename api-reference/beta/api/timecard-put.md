@@ -190,6 +190,95 @@ HTTP/1.1 200 OK
 }
 ```
 
+## Example to enable timeclock for the schedule along with location detection
+
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request"
+}-->
+
+```http
+PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
+{     
+    "enabled": true,  
+
+    "timeZone": "America/Chicago",  
+
+    "provisionStatus": "Completed",  
+
+    "provisionStatusCode": null,  
+
+    "openShiftsEnabled": true,  
+
+    "swapShiftsRequestsEnabled": true,  
+
+    "offerShiftRequestsEnabled": true,  
+
+    "timeOffRequestsEnabled": true,  
+
+    "timeClockEnabled": true,
+
+    "timeClockSettings": {
+
+        "approvedLocation": {
+
+           "altitude": 1024.13,
+
+           "latitude": 26.13246,
+
+           "longitude": 24.34616
+
+        }
+     }
+
+ }
+ ```
+
+### Response
+
+The following is an example of the response.
+
+```http
+HTTP/1.1 200 OK
+
+{     
+
+    "enabled": true,  
+
+    "timeZone": "America/Chicago",  
+
+    "provisionStatus": "Completed",  
+
+    "provisionStatusCode": null,  
+
+    "openShiftsEnabled": true,  
+
+    "swapShiftsRequestsEnabled": true,  
+
+    "offerShiftRequestsEnabled": true,  
+
+    "timeOffRequestsEnabled": true,  
+
+    "timeClockEnabled": true,  
+
+    "timeClockSettings": {
+
+        "approvedLocation": {
+
+           "altitude": 1024.13,
+
+           "latitude": 26.13246,
+
+           "longitude": 24.34616
+
+        }
+     }
+
+ }
+ ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
