@@ -32,17 +32,6 @@ A timecard entry in the schedule.
 |[ConfirmTimeCard](../api/timecard-confirm.md) | [timecard](timecard.md) | Confirm a **timecard** record, bound to **timecard** entity.|
 
 ## Properties
-|Name          |Type           |Description                                                                                                                                      |
-|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |ID of the **timecard**.|
-| userId 			|`string`      |ID of the user assigned to the **timecard**. Required.|
-| sharedtimecard 	| [timecardItem](timecarditem.md)  |The shared version of this **timecard** that is viewable by both employees and managers. Required.|
-| drafttimecard		| [timecardItem](timecarditem.md)        |The draft version of this **timecard** that is viewable by managers. Required.|
-| createdDateTime		|`Datetimecardset`        |The time stamp at which this **timecard** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`Datetimecardset`        |The time stamp at which this **timecard** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timecard**. |
-| isStagedForDeletion | `Edm.Boolean` | Indicates whether the **timecard** is staged for deletion |
-
 |Property               |Type           |Description                                                                |
 |-----------------------|---------------|---------------------------------------------------------------------------|
 | id			        |`string`  |Id of the `timeCard`|

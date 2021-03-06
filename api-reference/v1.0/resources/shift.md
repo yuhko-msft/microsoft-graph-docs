@@ -22,7 +22,6 @@ Represents a unit of scheduled work in a [schedule](schedule.md).
 |[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a **shift** by ID.|
 |[Replace shift](../api/shift-put.md) | [shift](shift.md) | Replace a **shift**.|
 |[Delete shift](../api/shift-delete.md) | None | Delete a **shift** from the schedule.|
-|[StageForDeletion shift](../api/shift-stageForDeletion.md) | None | Stage a **shift** object for deletion in draft mode. |
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
@@ -35,7 +34,6 @@ Represents a unit of scheduled work in a [schedule](schedule.md).
 | createdDateTime		|`DateTimeOffset`        |The timestamp on which this **shift** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedDateTime		|`DateTimeOffset`        |The timestamp on which this **shift** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **shift**.|
-| isStagedForDeletion | `Edm.Boolean` | Indicates whether the shift is staged for deletion |
 
 ## JSON representation
 
