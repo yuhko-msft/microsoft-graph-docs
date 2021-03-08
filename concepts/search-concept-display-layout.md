@@ -37,7 +37,7 @@ Content-Type: application/json
             "query": {
                 "queryString": "*"
             },
-            "enableDisplayLayout":false
+            "enableDisplayLayout":true
         }
     ]
 }
