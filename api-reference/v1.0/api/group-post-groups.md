@@ -285,6 +285,7 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
+
 {
   "description": "Group assignable to a role",
   "displayName": "Role assignable group",
@@ -300,6 +301,7 @@ Content-Type: application/json
 ```
 
 > **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
+ 
 #### Response
 
 The following is an example of the response. It includes only default properties.
@@ -313,6 +315,7 @@ The following is an example of the response. It includes only default properties
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
   "id": "502df398-d59c-469d-944f-34a50e60db3f",
@@ -359,5 +362,5 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+} -->
 
