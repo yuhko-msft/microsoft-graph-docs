@@ -54,7 +54,7 @@ This example removes the permission identified as {perm-id} from the item {item-
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "delete-permission-1", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
 DELETE /me/drive/items/{item-id}/permissions/{perm-id}

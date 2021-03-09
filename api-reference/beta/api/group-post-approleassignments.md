@@ -66,7 +66,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment"
+  "name": "group_create_approleassignment_1"
 }-->
 
 ```http

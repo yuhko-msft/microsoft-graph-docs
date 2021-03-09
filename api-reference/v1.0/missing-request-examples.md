@@ -90,7 +90,7 @@ Content-Type: application/json
 
 
 # [HTTP](#tab/http)
-<!-- {"blockType": "request", "name": "get_users" } -->
+<!-- {"blockType": "request", "name": "get_users_1" } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{user-id}
 ```

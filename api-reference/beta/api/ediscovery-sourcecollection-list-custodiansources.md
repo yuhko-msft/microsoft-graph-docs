@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 <!-- {
   "blockType": "request",
-  "name": "list_datasource"
+  "name": "list_datasource_2"
 }
 -->
 

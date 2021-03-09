@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_printjob"
+  "name": "list_printjob_2"
 }
 -->
 ``` http

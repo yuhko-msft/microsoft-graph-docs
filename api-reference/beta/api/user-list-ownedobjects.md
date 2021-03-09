@@ -51,7 +51,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_ownedobjects"
+  "name": "get_ownedobjects_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/ownedObjects

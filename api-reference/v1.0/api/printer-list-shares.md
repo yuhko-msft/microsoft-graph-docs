@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_printershare"
+  "name": "list_printershare_2"
 }
 -->
 ``` http

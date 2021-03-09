@@ -50,7 +50,7 @@ The following example assigns a built-in role to a user.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryrole"
+  "name": "create_directoryobject_from_directoryrole_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/directoryRoles/0afed502-2456-4fd4-988e-3c21924c28a7/members/$ref
@@ -97,7 +97,7 @@ You can use a specific resource set like users or groups in the request body, or
 
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryrole"
+  "name": "create_directoryobject_from_directoryrole_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/directoryRoles/0afed502-2456-4fd4-988e-3c21924c28a7/members/$ref

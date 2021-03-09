@@ -69,7 +69,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent"
+  "name": "get_chatmessagehostedcontent_1"
 }-->
 
 ```msgraph-interactive
@@ -123,7 +123,7 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessagehostedcontent"
+  "name": "get_chatmessagehostedcontent_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value

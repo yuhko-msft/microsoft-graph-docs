@@ -53,7 +53,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userriskhitsory",
+  "name": "get_userriskhitsory_1",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```msgraph-interactive
@@ -159,7 +159,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userriskhitsory",
+  "name": "get_userriskhitsory_2",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```msgraph-interactive

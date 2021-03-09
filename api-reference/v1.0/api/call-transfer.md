@@ -61,7 +61,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/transfer
@@ -250,7 +250,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "@odata.type": "call-transfer-2"
 }-->
 
 ```http

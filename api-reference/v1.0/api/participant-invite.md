@@ -66,7 +66,7 @@ The following examples show how to call this API.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite"
+  "name": "participant-invite-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
@@ -708,7 +708,7 @@ This call requires an application instance with a PSTN number assigned. For deta
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite"
+  "name": "participant-invite-2"
 }-->
 ```http
 POST /communications/calls/{id}/participants/invite

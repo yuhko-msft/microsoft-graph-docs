@@ -62,7 +62,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityprovider_1"
 }
 -->
 
@@ -118,7 +118,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityprovider_2"
 }
 -->
 

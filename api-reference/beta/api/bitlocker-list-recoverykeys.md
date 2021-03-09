@@ -85,7 +85,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_1"
 }
 -->
 ``` http
@@ -156,7 +156,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleIds": ["1ab40ab2-32a8-4b00-b6b5-ba724e407de9"],
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_2"
 }
 -->
 ``` http

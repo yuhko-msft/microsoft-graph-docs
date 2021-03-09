@@ -61,7 +61,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_openshift"
+  "name": "get_openshift_2"
 }-->
 
 ```msgraph-interactive

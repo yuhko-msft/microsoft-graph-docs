@@ -65,7 +65,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_riskDetection"
+  "name": "list_riskDetection_1"
 }-->
 
 ```msgraph-interactive
@@ -146,7 +146,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_riskDetection"
+  "name": "list_riskDetection_2"
 }-->
 
 ```msgraph-interactive

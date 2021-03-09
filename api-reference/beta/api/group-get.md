@@ -61,7 +61,7 @@ The following is an example of a GET request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
-  "name": "get_group"
+  "name": "get_group_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4

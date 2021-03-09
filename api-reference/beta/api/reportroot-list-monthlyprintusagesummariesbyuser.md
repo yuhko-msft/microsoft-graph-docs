@@ -52,7 +52,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_endpoints"
+  "name": "get_endpoints_6"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageSummariesByUser

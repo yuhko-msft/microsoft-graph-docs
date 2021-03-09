@@ -57,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [printJob
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_printjob_from_"
+  "name": "create_printjob_from__2"
 }
 -->
 ``` http

@@ -66,7 +66,7 @@ The following is an example of the GET profile request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_profile"
+  "name": "get_profile_1"
 }-->
 
 ```msgraph-interactive
@@ -291,7 +291,7 @@ The following is an example of using the $expand and $select query parameters to
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_profile"
+  "name": "get_profile_2"
 }-->
 
 ```msgraph-interactive

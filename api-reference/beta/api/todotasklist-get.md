@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [todoTaskList]
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADIyAAAAABrJAAA="],
-  "name": "get_todotasklist"
+  "name": "get_todotasklist_2"
 }
 -->
 ``` http
