@@ -75,7 +75,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_userflowlanguageconfiguration_from_"
+  "name": "create_userflowlanguageconfiguration_from__1"
 }
 -->
 
@@ -139,7 +139,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_userflowlanguageconfiguration_from_"
+  "name": "create_userflowlanguageconfiguration_from__2"
 }
 -->
 

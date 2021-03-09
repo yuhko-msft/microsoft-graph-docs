@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcProvis
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcprovisioningpolicy"
+  "name": "get_cloudpcprovisioningpolicy_1"
 }
 -->
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcprovisioningpolicy"
+  "name": "get_cloudpcprovisioningpolicy_2"
 }
 -->
 

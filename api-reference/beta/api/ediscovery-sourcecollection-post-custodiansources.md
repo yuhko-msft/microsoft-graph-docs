@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code and a [micro
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_datasource_from_"
+  "name": "create_datasource_from__2"
 }
 -->
 

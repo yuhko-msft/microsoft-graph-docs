@@ -48,7 +48,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_resources"
+  "name": "get_resources_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/resources

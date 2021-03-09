@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and the requested [e
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_emailauthenticationmethod"
+  "name": "get_emailauthenticationmethod_1"
 }
 -->
 ``` http

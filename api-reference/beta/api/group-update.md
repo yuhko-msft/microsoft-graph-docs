@@ -81,7 +81,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_group"
+  "name": "update_group_1"
 }-->
 
 ```http
@@ -132,7 +132,7 @@ You can obtain the ID of the label you want to apply to a Microsoft 365 group by
 
 <!-- {
   "blockType": "request",
-  "name": "update_group"
+  "name": "update_group_2"
 }-->
 
 ```http

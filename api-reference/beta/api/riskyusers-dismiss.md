@@ -54,7 +54,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "dismiss_riskyuser"
+  "name": "dismiss_riskyuser_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
@@ -102,7 +102,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "dismiss_riskyuser"
+  "name": "dismiss_riskyuser_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss

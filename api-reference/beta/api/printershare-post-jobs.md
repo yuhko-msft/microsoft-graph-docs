@@ -54,7 +54,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob"
+  "name": "create_printjob_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/jobs

@@ -59,7 +59,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_jobs"
+  "name": "get_jobs_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/jobs

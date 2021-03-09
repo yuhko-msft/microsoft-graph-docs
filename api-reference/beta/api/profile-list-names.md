@@ -70,7 +70,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_names"
+  "name": "get_names_1"
 }-->
 
 ```msgraph-interactive

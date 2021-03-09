@@ -50,7 +50,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_permission"
+  "name": "delete_permission_2"
 }
 -->
 ``` http

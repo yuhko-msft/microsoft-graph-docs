@@ -61,7 +61,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "NamedItemcollection_add"
+  "name": "NamedItemcollection_add_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/add

@@ -51,7 +51,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectors"
+  "name": "get_connectors_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/connectors

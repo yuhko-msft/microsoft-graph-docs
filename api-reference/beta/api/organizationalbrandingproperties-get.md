@@ -66,7 +66,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_2"
 }-->
 
 ```msgraph-interactive
@@ -133,7 +133,7 @@ Requests for /branding always return the **mediaContentType**, **mediaReadLink**
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_3"
 }-->
 
 ```http
@@ -162,7 +162,7 @@ The Accept-Langauge header is used to apply a particular localization to the bra
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_4"
 }-->
 
 ```http
@@ -214,7 +214,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_5"
 }-->
 
 ```msgraph-interactive
@@ -270,7 +270,7 @@ This example shows a request for a property that does not exist on the default b
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_organizationalbrandingproperties"
+  "name": "get_organizationalbrandingproperties_6"
 }-->
 
 ```http

@@ -43,7 +43,7 @@ Here is an example of how to create a new generic list item.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "create-listitem-1", "scopes": "sites.readwrite.all" } -->
 
 ```http
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items

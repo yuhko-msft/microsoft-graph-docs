@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an [identityUser
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflowattributeassignment"
+  "name": "get_identityuserflowattributeassignment_3"
 }
 -->
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityuserflowattributeassignment_expand"
+  "name": "get_identityuserflowattributeassignment_expand_3"
 }
 -->
 

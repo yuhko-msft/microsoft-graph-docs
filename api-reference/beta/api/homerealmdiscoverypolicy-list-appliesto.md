@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_appliesto"
+  "name": "get_appliesto_2"
 }-->
 
 ```http

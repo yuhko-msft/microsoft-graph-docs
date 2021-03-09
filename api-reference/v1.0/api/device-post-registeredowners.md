@@ -47,7 +47,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_device"
+  "name": "create_directoryobject_from_device_1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/$ref

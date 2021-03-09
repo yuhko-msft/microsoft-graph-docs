@@ -55,7 +55,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_privilegedapproval"
+  "name": "get_privilegedapproval_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedApproval

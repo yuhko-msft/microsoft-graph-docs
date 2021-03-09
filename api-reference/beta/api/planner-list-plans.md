@@ -52,7 +52,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_plans"
+  "name": "get_plans_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans

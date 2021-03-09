@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_sitesource"
+  "name": "get_sitesource_1"
 }
 -->
 

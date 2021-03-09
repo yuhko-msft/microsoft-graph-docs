@@ -64,7 +64,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_1"
 }-->
 
 ```http
@@ -119,7 +119,7 @@ The following example updates **deferUpdate** in the **hybridAgentUpdaterConfigu
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_2"
 }-->
 
 ```http
@@ -152,7 +152,7 @@ The following example updates **allowUpdateConfigurationOverride** in the **hybr
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisespublishingprofile"
+  "name": "update_onpremisespublishingprofile_3"
 }-->
 
 ```http
