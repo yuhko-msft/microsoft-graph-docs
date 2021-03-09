@@ -14,6 +14,9 @@ Provisioning new users is a common task for IT departments. For every new employ
 
 In this article, you'll learn about the sequence of Microsoft Graph calls that are used to accomplish a fictional user provisioning scenario.
 
+> [!TIP]
+> See [Sample code](#sample-code) at the end of this article for downloadable sample source files that implement these calls using our Microsoft Graph SDKs.
+
 ## Required permissions
 
 Any application that provisions users will need write access to Azure Active Directory. If the application will be performing these actions as a user (using [delegated authentication](auth-v2-user.md)), that user will need to be an administrator. Alternatively, permissions can be granted to the application directly (using [application authentication](auth-v2-service.md)), allowing it to provision users without an authenticated user.
@@ -432,3 +435,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## Sample code
+
+Follow the links below to download sample source files containing all of the API calls listed in this topic.
+
+- [.NET C#](https://github.com/microsoftgraph/microsoft-graph-docs/tree/jasonjoh-recipes/concepts/recipes/src/work-with-users.cs)
+- [JavaScript](https://github.com/microsoftgraph/microsoft-graph-docs/tree/jasonjoh-recipes/concepts/recipes/src/work-with-users.js)
+- [Java](https://github.com/microsoftgraph/microsoft-graph-docs/tree/jasonjoh-recipes/concepts/recipes/src/work-with-users.java)
