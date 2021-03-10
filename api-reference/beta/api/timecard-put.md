@@ -108,6 +108,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+
 {
    "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
    "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
