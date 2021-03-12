@@ -82,7 +82,7 @@ The following example shows a request to get the manager.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_manager"
+  "name": "get_manager_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager

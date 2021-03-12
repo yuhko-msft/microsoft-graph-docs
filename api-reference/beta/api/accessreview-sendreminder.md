@@ -47,7 +47,7 @@ If successful, this method returns a `204, No Content` response code. It does no
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "sendReminder_accessReview"
+  "name": "sendReminder_accessReview_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/sendReminder

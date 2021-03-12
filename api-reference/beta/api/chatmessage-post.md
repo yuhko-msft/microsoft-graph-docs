@@ -89,7 +89,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_2"
 }-->
 
 ```http
@@ -179,7 +179,7 @@ Content-length: 160
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_3"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -278,7 +278,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_4"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -369,7 +369,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_5"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -459,7 +459,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_6"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
@@ -545,7 +545,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_chatmessage_from_channel"
+  "name": "create_chatmessage_from_channel_7"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages

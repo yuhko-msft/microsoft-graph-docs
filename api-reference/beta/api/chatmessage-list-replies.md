@@ -63,7 +63,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_replies"
+  "name": "get_replies_1"
 }-->
 
 ```msgraph-interactive

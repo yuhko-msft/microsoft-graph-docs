@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_passwordlessmicrosoftauthenticatorauthenticationmethod"
+  "name": "get_passwordlessmicrosoftauthenticatorauthenticationmethod_1"
 }
 -->
 ``` http

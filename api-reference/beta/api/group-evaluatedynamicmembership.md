@@ -81,7 +81,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_evaluatedynamicmembership"
+  "name": "group_evaluatedynamicmembership_1"
 }-->
 
 ```http
@@ -151,7 +151,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_evaluatedynamicmembership"
+  "name": "group_evaluatedynamicmembership_2"
 }-->
 
 ```http

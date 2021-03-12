@@ -57,7 +57,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryaudit"
+  "name": "get_directoryaudit_1"
 }-->
 
 ```msgraph-interactive

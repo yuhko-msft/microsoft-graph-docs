@@ -58,7 +58,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_namedlocation_from_conditionalaccessroot"
+  "name": "create_namedlocation_from_conditionalaccessroot_1"
 }-->
 
 ```http
@@ -143,7 +143,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_namedlocation_from_conditionalaccessroot"
+  "name": "create_namedlocation_from_conditionalaccessroot_2"
 }-->
 
 ```http

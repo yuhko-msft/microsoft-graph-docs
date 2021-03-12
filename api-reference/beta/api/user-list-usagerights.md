@@ -66,7 +66,7 @@ Additionally, if there are more pages in the response an @odata.nextLink is retu
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_usageright"
+  "name": "list_usageright_3"
 }
 -->
 ``` http
@@ -125,7 +125,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_usageright"
+  "name": "list_usageright_4"
 }
 -->
 ``` http

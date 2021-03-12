@@ -58,7 +58,7 @@ The following is an example of the request to post a credit rubric (a rubric wit
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_1"
 }-->
 
 ```http
@@ -244,7 +244,7 @@ Content-type: application/json
 The following is an example of the request to post a rubric with points.
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_2"
 }-->
 
 ```http

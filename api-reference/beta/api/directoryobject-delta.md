@@ -202,7 +202,7 @@ The next example shows the use of the alternative minimal response behavior:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "directoryObject_delta"
+  "name": "directoryObject_delta_1"
 }-->
 
 ```msgraph-interactive
@@ -274,7 +274,7 @@ The next example shows the initial request using the `isOf` operator to filter o
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_delta"
+  "name": "directoryobject_delta_2"
 }-->
 
 ```msgraph-interactive

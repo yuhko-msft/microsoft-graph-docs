@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an [itemPhone](.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_itemphone"
+  "name": "get_itemphone_1"
 }
 -->
 ``` http

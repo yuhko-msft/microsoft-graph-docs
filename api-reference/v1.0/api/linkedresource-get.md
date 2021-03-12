@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [linkedResourc
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29", "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"],
-  "name": "get_linkedresource"
+  "name": "get_linkedresource_1"
 }
 -->
 ``` http

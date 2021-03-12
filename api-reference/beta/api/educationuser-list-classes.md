@@ -65,7 +65,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_classes"
+  "name": "get_classes_3"
 }-->
 
 ```msgraph-interactive

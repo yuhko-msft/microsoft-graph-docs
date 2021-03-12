@@ -71,7 +71,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_5"
 }-->
 
 ```http
@@ -125,7 +125,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_6"
 }-->
 
 ```http
@@ -178,7 +178,7 @@ If the value of a property in a localization is null, the value will be inherite
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_7"
 }-->
 
 ```http
@@ -221,7 +221,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingproperties"
+  "name": "update_organizationalbrandingproperties_8"
 }-->
 
 ```http

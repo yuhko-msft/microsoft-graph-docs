@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [printJob
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob_from_"
+  "name": "create_printjob_from__1"
 }
 -->
 ``` http

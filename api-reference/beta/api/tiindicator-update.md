@@ -82,7 +82,7 @@ The following is an example of the request without the `Prefer` header.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_tiIndicator"
+  "name": "update_tiIndicator_1"
 }-->
 
 ```http
@@ -134,7 +134,7 @@ The following is an example of the request that includes the `Prefer` header.
 
 <!-- {
   "blockType": "request",
-  "name": "update_tiIndicator"
+  "name": "update_tiIndicator_2"
 }-->
 
 ```http

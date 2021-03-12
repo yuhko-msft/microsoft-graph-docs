@@ -48,7 +48,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_orgcontact"
+  "name": "create_directoryobject_from_orgcontact_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/contacts/{id}/memberOf

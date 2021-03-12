@@ -68,7 +68,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguagepage"
+  "name": "get_userflowlanguagepage_3"
 }
 -->
 

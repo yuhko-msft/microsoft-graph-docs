@@ -81,7 +81,7 @@ The following example shows how to get the synchronization schema.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_synchronizationschema"
+  "name": "get_synchronizationschema_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema

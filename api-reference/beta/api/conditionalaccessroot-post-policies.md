@@ -66,7 +66,7 @@ The following example shows a common request to require multi-factor authenticat
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_1"
 }-->
 
 ```http
@@ -200,7 +200,7 @@ This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8
 
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_2"
 }-->
 
 ```http
@@ -307,7 +307,7 @@ Content-type: application/json
 The following is an example of the request to use all the conditions/controls.
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_3"
 }-->
 
 ```http
@@ -551,7 +551,7 @@ The following example shows a request to require MFA to Exchange Online from non
 
 <!-- {
   "blockType": "request",
-  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot_4"
 }-->
 
 ```http

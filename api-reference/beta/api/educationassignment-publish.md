@@ -49,7 +49,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "educationassignment_publish"
+  "name": "educationassignment_publish_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/publish

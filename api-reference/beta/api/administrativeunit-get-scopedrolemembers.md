@@ -50,7 +50,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_scopedrolemember"
+  "name": "get_scopedrolemember_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers/{id}

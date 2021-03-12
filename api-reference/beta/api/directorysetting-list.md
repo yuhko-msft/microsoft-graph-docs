@@ -54,7 +54,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_settings"
+  "name": "get_settings_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/settings
