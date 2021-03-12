@@ -60,7 +60,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_offershiftrequest"
+  "name": "get_offershiftrequest_1"
 }-->
 
 ```msgraph-interactive

@@ -55,7 +55,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_approvalstep"
+  "name": "get_approvalstep_1"
 }-->
 
 ```msgraph-interactive

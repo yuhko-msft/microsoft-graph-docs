@@ -50,7 +50,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationclass_from_educationschool"
+  "name": "create_educationclass_from_educationschool_1"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008

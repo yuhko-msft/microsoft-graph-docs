@@ -42,7 +42,7 @@ Do not supply a request body with this method.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-1", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
@@ -92,7 +92,7 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 The following example shows how to get a list from a SharePoint Online list title.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-2", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-title}

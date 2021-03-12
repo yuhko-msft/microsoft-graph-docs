@@ -64,7 +64,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organization"
+  "name": "get_organization_1"
 }-->
 
 ```msgraph-interactive

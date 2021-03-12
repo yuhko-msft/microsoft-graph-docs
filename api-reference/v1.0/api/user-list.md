@@ -66,7 +66,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users"
+  "name": "get_users_2"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users

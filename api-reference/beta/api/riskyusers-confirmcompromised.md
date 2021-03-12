@@ -53,7 +53,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "confirm_riskyuser"
+  "name": "confirm_riskyuser_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/confirmCompromised
@@ -100,7 +100,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "confirm_riskyuser"
+  "name": "confirm_riskyuser_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmCompromised

@@ -62,7 +62,7 @@ The following example shows the request which makes a peer-to-peer call between 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -1144,7 +1144,7 @@ The following example shows the request to make a peer-to-peer call between the 
 
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-2",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -1289,7 +1289,7 @@ The following example shows a request to make a peer-to-peer call between the bo
 
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-3",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http

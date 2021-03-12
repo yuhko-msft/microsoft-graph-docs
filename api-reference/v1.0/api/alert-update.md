@@ -71,7 +71,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_alert"
+  "name": "update_alert_1"
 }-->
 
 ```http
@@ -138,7 +138,7 @@ The following example shows a request that includes the `Prefer` request header.
 
 <!-- {
   "blockType": "request",
-  "name": "update_alert"
+  "name": "update_alert_2"
 }-->
 
 ```http

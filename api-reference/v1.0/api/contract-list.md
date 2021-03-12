@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_contract"
+  "name": "get_contract_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contracts

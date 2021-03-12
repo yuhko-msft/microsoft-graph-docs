@@ -71,7 +71,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_userflowlanguageconfiguration"
+  "name": "get_userflowlanguageconfiguration_1"
 }
 -->
 

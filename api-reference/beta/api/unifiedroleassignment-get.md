@@ -63,7 +63,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment"
+  "name": "get_unifiedroleassignment_1"
 }-->
 
 ```msgraph-interactive
@@ -123,7 +123,7 @@ The following is an example of the request with the `$expand` query parameter.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment"
+  "name": "get_unifiedroleassignment_2"
 }-->
 
 ```msgraph-interactive

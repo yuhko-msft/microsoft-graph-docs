@@ -58,7 +58,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_channel_app_filter"
+  "name": "list_tabs_in_channel_app_filter_1"
 }
 -->
 
@@ -142,7 +142,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_tabs_in_channel_app_filter"
+  "name": "list_tabs_in_channel_app_filter_2"
 }
 -->
 

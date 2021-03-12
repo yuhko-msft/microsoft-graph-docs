@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_endpoints"
+  "name": "get_endpoints_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints

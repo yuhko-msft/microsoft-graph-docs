@@ -63,7 +63,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roleAssignments"
+  "name": "get_roleAssignments_1"
 }-->
 
 ```msgraph-interactive
@@ -218,7 +218,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roleAssignments"
+  "name": "get_roleAssignments_2"
 }-->
 
 ```msgraph-interactive

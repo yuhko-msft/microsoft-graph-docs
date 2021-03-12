@@ -51,7 +51,7 @@ All other values on the listItem are left alone.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "create-listitem-2", "scopes": "sites.readwrite.all" } -->
 
 ```http
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields

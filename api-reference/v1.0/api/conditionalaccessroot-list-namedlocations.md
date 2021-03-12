@@ -61,7 +61,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_namedlocations"
+  "name": "get_namedlocations_1"
 }-->
 
 ```msgraph-interactive
@@ -168,7 +168,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_namedlocations"
+  "name": "get_namedlocations_2"
 }-->
 
 ```msgraph-interactive
@@ -263,7 +263,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_namedlocations"
+  "name": "get_namedlocations_3"
 }-->
 
 ```msgraph-interactive
@@ -340,7 +340,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_namedlocations"
+  "name": "get_namedlocations_4"
 }-->
 
 ```msgraph-interactive

@@ -66,7 +66,7 @@ The following is an example of the request for a direct assignment, in which the
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_1"
 }-->
 
 ```http
@@ -136,7 +136,7 @@ The following is an example of a request where the requestor provided answers to
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_2"
 }-->
 
 ```http

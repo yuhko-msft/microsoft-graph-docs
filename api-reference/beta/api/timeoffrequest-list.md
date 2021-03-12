@@ -65,7 +65,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_timeoffrequest"
+  "name": "get_timeoffrequest_2"
 }-->
 
 ```msgraph-interactive

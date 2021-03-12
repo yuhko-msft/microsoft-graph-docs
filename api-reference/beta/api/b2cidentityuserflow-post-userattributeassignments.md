@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and an [identit
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_identityuserflowattributeassignment_from_"
+  "name": "create_identityuserflowattributeassignment_from__1"
 }
 -->
 

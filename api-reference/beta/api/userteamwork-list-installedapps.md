@@ -65,7 +65,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps"
+  "name": "user_list_teamsApps_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
@@ -124,7 +124,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
 
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_details"
+  "name": "user_list_teamsApps_details_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)

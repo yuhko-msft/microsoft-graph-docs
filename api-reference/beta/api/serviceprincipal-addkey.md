@@ -75,7 +75,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_1"
 }-->
 
 ```http
@@ -126,7 +126,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "serviceprincipal_addkey_2"
 }-->
 
 ```http

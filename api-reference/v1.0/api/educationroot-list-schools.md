@@ -57,7 +57,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/schools

@@ -60,7 +60,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_resources"
+  "name": "get_resources_2"
 }-->
 
 ```msgraph-interactive

@@ -128,7 +128,7 @@ In this example, an administrator assigns user nawu@contoso.com to the Billing R
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_1"
 }-->
 
 ```http
@@ -238,7 +238,7 @@ In this example, the user nawu@contoso.com activates the eligible Billing Reader
 
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_2"
 }-->
 
 ```http
@@ -341,7 +341,7 @@ In this example, the user nawu@contoso.com deactivates the active Billing Reader
 
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_3"
 }-->
 
 ```http
@@ -411,7 +411,7 @@ In this example, an administrator removes the user nawu@contoso.com from the Bil
 
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_4"
 }-->
 
 ```http
@@ -479,7 +479,7 @@ In this example, administrators update the role assignment for the user nawu@con
 
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_5"
 }-->
 
 ```http
@@ -570,7 +570,7 @@ This example extends the expiring role assignment for user ANUJCUSER to API Mana
 
 <!-- {
   "blockType": "request",
-  "name": "governanceroleassignmentrequest_post"
+  "name": "governanceroleassignmentrequest_post_6"
 }-->
 
 ```http

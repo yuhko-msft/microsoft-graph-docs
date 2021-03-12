@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_usersource"
+  "name": "get_usersource_2"
 }
 -->
 

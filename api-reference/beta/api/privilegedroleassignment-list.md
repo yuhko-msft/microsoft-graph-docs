@@ -54,7 +54,7 @@ The following example shows a request to get all role assignments:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_privilegedroleassignments"
+  "name": "get_privilegedroleassignments_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
@@ -110,7 +110,7 @@ The following example shows a request to query active role assignments:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_privilegedroleassignments"
+  "name": "get_privilegedroleassignments_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
@@ -174,7 +174,7 @@ The following example shows a request to query permanent role assignments, where
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_privilegedroleassignments"
+  "name": "get_privilegedroleassignments_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
@@ -238,7 +238,7 @@ The following example shows a request to query eligible role assignments, includ
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_privilegedroleassignments"
+  "name": "get_privilegedroleassignments_4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false

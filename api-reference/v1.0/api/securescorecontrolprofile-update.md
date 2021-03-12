@@ -67,7 +67,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_1"
 }-->
 
 ```http
@@ -127,7 +127,7 @@ The following example shows a request that includes the `Prefer` request header.
 
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_update"
+  "name": "securescorecontrolprofiles_update_2"
 }-->
 
 ```http

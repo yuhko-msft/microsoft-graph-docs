@@ -85,7 +85,7 @@ If successful, this method returns a `201 Created` response code if a new meetin
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-or-get-onlinemeeting"
+  "name": "create-or-get-onlinemeeting-1"
 }-->
 
 ```http
@@ -207,7 +207,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create-or-get-onlinemeeting"
+  "name": "create-or-get-onlinemeeting-2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/createOrGet

@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and an [externa
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from_"
+  "name": "create_externalgroupmember_from__1"
 }
 -->
 
@@ -132,7 +132,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from_"
+  "name": "create_externalgroupmember_from__2"
 }
 -->
 
@@ -176,7 +176,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "create_externalgroupmember_from_"
+  "name": "create_externalgroupmember_from__3"
 }
 -->
 
