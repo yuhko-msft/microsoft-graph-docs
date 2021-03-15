@@ -136,6 +136,10 @@ Content-Type: application/json
 }
 ```
 
+## Upload to a Shared with me folder
+Hello World!
+
+
 ## Error responses
 
 See [Error Responses][error-response] for details about
