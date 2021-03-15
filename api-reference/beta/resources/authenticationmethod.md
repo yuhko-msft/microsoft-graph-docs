@@ -19,8 +19,8 @@ Represents an authentication method registered to a user. An [authentication met
 
 | Method       | Return type | Description |
 |:-------------|:------------|:------------|
-| [List authenticationMethods](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's **authenticationMethod** objects. |
-| [Get authenticationMethod](../api/authenticationmethod-get.md) | [authenticationMethod](authenticationmethod.md) | Read the properties and relationships of an **authenticationMethod** object. |
+| [List authenticationMethods](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's authenticationMethod objects. |
+
 
 ## Properties
 
