@@ -16,6 +16,9 @@ This method only supports files up to 4MB in size.
 
 To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
 
+You can also upload a new file to a Shared With Me folder. A Shared With Me folder is a folder that lives in someone else's drive, but they have granted you with *Can edit* access to it. Depending on the UI it can show up as **Shared with you**, **Shared with me** or **Shared**. For more details see [Shared with me folders](https://support.microsoft.com/en-us/office/see-files-shared-with-you-in-onedrive-2c14e8e6-4e52-4c61-9778-7155d33534a1#ID0EAACAAA=OneDrive_for_work_or_school).
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## HTTP request
-To replace an existing item
+To replace an existing item:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -38,7 +41,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-To upload a new file
+To upload a new file:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -49,7 +52,7 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
-To upload a new file in a Shared With Me folder
+To upload a new file in a Shared With Me folder:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -145,7 +148,7 @@ Content-Type: application/json
 #### Request
 This example uploads a new file to a Shared-With-Me folder.
 
-<!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "upload-to-SWM-via-put", "scopes": "files.readwrite" } -->
 
 ```http
 PUT /me/drives/{remoteItem-driveid}/items/{remoteItem-id}:/fileC.txt:/content
