@@ -13455,6 +13455,10 @@ items:
               href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
             - name: Get multi-value property
               href: api/multivaluelegacyextendedproperty-get.md
+    - name: Windows updates
+      items:
+      - name: Deployment
+        href: resources/windowsupdates-deployment.md
     - name: Workbooks and charts
       displayName: Excel
       items:
