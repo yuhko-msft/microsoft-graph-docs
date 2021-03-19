@@ -13455,10 +13455,20 @@ items:
               href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
             - name: Get multi-value property
               href: api/multivaluelegacyextendedproperty-get.md
-    - name: Windows updates
+    - name: Windows updates (preview)
       items:
+      - name: Catalog
+        href: resources/windowsupdates-catalog.md
       - name: Deployment
         href: resources/windowsupdates-deployment.md
+      - name: Deployment audience
+        href: resources/windowsupdates-deploymentaudience.md
+      - name: Updatable asset
+        items:
+        - name: Azure AD device
+          href: resources/windowsupdates-azureaddevice.md
+        - name: Updatable asset group
+          href: resources/windowsupdates-updatableassetgroup.md
     - name: Workbooks and charts
       displayName: Excel
       items:
