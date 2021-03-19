@@ -23,9 +23,7 @@ Namespace: microsoft.graph.windowsUpdates
 |[Get deployment](../api/windowsupdates-deployment-get.md)|[deployment](../resources/windowsupdates-deployment.md)|Read the properties and relationships of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Update deployment](../api/windowsupdates-deployment-update.md)|[deployment](../resources/windowsupdates-deployment.md)|Update the properties of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Delete deployment](../api/windowsupdates-deployment-delete.md)|None|Deletes a [deployment](../resources/windowsupdates-deployment.md) object.|
-|[updateSettings](../api/windowsupdates-deployment-updatesettings.md)|None|**TODO: Add Description**|
 |[List deploymentAudience](../api/windowsupdates-deployment-list-audience.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|Get the deploymentAudience resources from the audience navigation property.|
-|[Create deploymentAudience](../api/windowsupdates-deployment-post-audience.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Create a new deploymentAudience object.|
 
 ## Properties
 |Property|Type|Description|
