@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sends a sharing invitation for a **DriveItem**.
-A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Adds a permission to share a [driveItem](../resources/driveitem.md) with specific [driveRecipient](../resource/driverecipient.md) resources, and optionally sending an email or post to the recipients to notify them the item has been shared with them.
+
+A successful request sets the [invitation facet](../resources/sharinginvitation.md) of the permission on the **driveItem**. The invitation facet is represented by the **invitation** property of the **permission**.
 
 ## Permissions
 
@@ -59,11 +60,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                            | Description                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
+| recipients       | Collection([driveRecipient](../resources/driverecipient.md)) | A collection of recipients to receive access. The recipients receive a sharing invitation if **sendInvitation** is true.                                            |
 | message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters. |
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
-| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
-| roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
+| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (`true`) or if the permission is just created (`false`).            |
+| roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                       |
 | expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
 
