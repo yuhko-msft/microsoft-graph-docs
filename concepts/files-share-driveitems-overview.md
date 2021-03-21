@@ -14,17 +14,18 @@ Apps can set permissions to share files and folders in OneDrive Personal, OneDri
 
 ## Sharing items using a link facet
 
-Sharing links make it easy to share files. 
-
-(A) Create link for anonymous (anyone with link), or organization scope.
-- Expiration (https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta&tabs=http#remarks)
-Links created this way do not expire unless a default expiration policy is enforced for the organization.
+Sharing links make it easy to share an item with multiple users at once, or granting specific users access to a sharing link, without modifying existing permissions on the link, if any.
 
 sharingLink properties:
 type (view/edit/embed) allows read or read-write access to the shared item, or embedding a link with read-only  access in a hosted webpage (in OneDrive for consumers only).
 scope defines the extent of who can use the link to access per the link type; anonymous, organization, existingAccess (anyone already granted access, can be by sharing link or invitation, ODB/SP), users (specific users in ODB/SP).
 webUrl specifies the actual sharing URL to access the shared driveItem
 application specifies the app that the link is associated with.
+
+(A) Create link for anonymous (anyone with link), or organization scope.
+- Expiration (https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta&tabs=http#remarks)
+Links created this way do not expire unless a default expiration policy is enforced for the organization.
+
 
 Can share with anyone who has the link (scope is anonymous or organization). 
 Show examples of "view link", "edit link"
@@ -35,7 +36,7 @@ Example of "Create embeddable link" (OD)
 (B) Alternatively can share item with specific users who must sign in to access the files (scope is users). Use grant access to sharing link to do that.
 Show an example of "specific people link" (https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta#specific-people-link).
 
-Note that if the scope of a sharingLink is "existingAccess", this means the link supports people who have already been granted access to the item through other means. When granting specific recipients access via a link of existingAccess scope, method can return additional permissions:
+Note that IF the scope of a sharingLink is "existingAccess", this means the link supports people who have already been granted access to the item through other means. When granting specific recipients access via a link of existingAccess scope, method can return additional permissions:
 (After this link: https://docs.microsoft.com/en-us/graph/api/permission-grant?view=graph-rest-beta&tabs=http#response-1)
 "User-type permissions representing recipients who were successfully granted access. These can be identified by presence of the grantedTo property.
 Link-type permissions representing invitations that need to be sent to unrecognized external users for them to gain access. These can be identified by the presence of an invitation facet. These entries will contain a link with the invitation URL, and the grantedToIdentities collection will indicate the users to whom the link should be sent."
