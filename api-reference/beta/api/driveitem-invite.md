@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a permission to share a [driveItem](../resources/driveitem.md) with specific [driveRecipient](../resource/driverecipient.md) resources, and optionally sending an email or post to the recipients to notify them the item has been shared with them.
+Adds a permission to share a [driveItem](../resources/driveitem.md) with specific [driveRecipient](../resources/driverecipient.md) resources, and optionally sending an email or post to the recipients to notify them the item has been shared with them.
 
 A successful request sets the [invitation facet](../resources/sharinginvitation.md) of the permission on the **driveItem**. The invitation facet is represented by the **invitation** property of the **permission**.
 
