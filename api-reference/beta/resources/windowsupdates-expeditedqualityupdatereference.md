@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 **TODO: Add Description**
 
 
-Inherits from [qualityUpdateReference](../resources/qualityupdatereference.md).
+Inherits from [qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md).
 
 ## Properties
 |Property|Type|Description|

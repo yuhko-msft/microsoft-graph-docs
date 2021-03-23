@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 **TODO: Add Description**
 
 
-Inherits from [deploymentSettings](../resources/deploymentsettings.md).
+Inherits from [deploymentSettings](../resources/windowsupdates-deploymentsettings.md).
 
 ## Properties
 |Property|Type|Description|

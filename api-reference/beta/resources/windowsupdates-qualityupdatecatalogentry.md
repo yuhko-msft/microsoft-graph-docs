@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 **TODO: Add Description**
 
 
-Inherits from [softwareUpdateCatalogEntry](../resources/softwareupdatecatalogentry.md).
+Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
 ## Methods
 |Method|Return type|Description|

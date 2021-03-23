@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 **TODO: Add Description**
 
 
-Inherits from [softwareUpdateReference](../resources/softwareupdatereference.md).
+Inherits from [softwareUpdateReference](../resources/windowsupdates-softwareupdatereference.md).
 
 ## Properties
 |Property|Type|Description|

@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 **TODO: Add Description**
 
 
-Inherits from [updatableAssetError](../resources/updatableasseterror.md).
+Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseterror.md).
 
 ## Properties
 |Property|Type|Description|

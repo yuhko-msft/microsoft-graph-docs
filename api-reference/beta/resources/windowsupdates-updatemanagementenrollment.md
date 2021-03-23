@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 **TODO: Add Description**
 
 
-Inherits from [updatableAssetEnrollment](../resources/updatableassetenrollment.md).
+Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md).
 
 ## Properties
 |Property|Type|Description|

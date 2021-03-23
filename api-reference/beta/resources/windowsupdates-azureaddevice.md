@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 **TODO: Add Description**
 
 
-Inherits from [updatableAsset](../resources/updatableasset.md).
+Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 
 ## Methods
 |Method|Return type|Description|
