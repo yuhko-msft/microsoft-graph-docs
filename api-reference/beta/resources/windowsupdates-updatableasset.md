@@ -18,7 +18,7 @@ Namespace: microsoft.graph.windowsUpdates
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List updatableAssets](../api/updatableasset-list.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/updatableasset.md) objects and their properties.|
+|[List updatableAssets](../api/windowsupdates-updatableasset-list.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/updatableasset.md) objects and their properties.|
 |[Create updatableAsset](../api/windowsupdates-updatableasset-create.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Create a new [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Get updatableAsset](../api/windowsupdates-updatableasset-get.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Update updatableAsset](../api/windowsupdates-updatableasset-update.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Update the properties of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|

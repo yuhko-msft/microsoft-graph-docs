@@ -21,7 +21,7 @@ Inherits from [updatableAsset](../resources/updatableasset.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List updatableAssetGroups](../api/updatableassetgroup-list.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) collection|Get a list of the [updatableAssetGroup](../resources/updatableassetgroup.md) objects and their properties.|
+|[List updatableAssetGroups](../api/windowsupdates-updatableassetgroup-list.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) collection|Get a list of the [updatableAssetGroup](../resources/updatableassetgroup.md) objects and their properties.|
 |[Create updatableAssetGroup](../api/windowsupdates-updatableassetgroup-create.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Get updatableAssetGroup](../api/windowsupdates-updatableassetgroup-get.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Read the properties and relationships of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Update updatableAssetGroup](../api/windowsupdates-updatableassetgroup-update.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Update the properties of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|

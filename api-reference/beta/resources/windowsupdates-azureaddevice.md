@@ -21,7 +21,7 @@ Inherits from [updatableAsset](../resources/updatableasset.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureADDevices](../api/azureaddevice-list.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/azureaddevice.md) objects and their properties.|
+|[List azureADDevices](../api/windowsupdates-azureaddevice-list.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/azureaddevice.md) objects and their properties.|
 |[Create azureADDevice](../api/windowsupdates-azureaddevice-create.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Create a new [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Update azureADDevice](../api/windowsupdates-azureaddevice-update.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Update the properties of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
