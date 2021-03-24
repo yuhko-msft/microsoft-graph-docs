@@ -402,7 +402,7 @@ items:
           - name: Deployments
             href: windowsupdates-deployments.md
           - name: Enroll in management
-            href: windowsupdates-enrollment.md
+            href: windowsupdates-enroll.md
           - name: Deploy an update
             href: windowsupdates-deploy-update.md
           - name: Deploy an expedited update
