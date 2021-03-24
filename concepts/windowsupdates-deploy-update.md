@@ -109,7 +109,9 @@ Content-Type: application/json
         "rollout": {
             "devicesPerOffer": 100,
             "durationBetweenOffers": "P7D"
-        }
+        },
+        "monitoring": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
