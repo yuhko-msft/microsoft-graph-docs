@@ -9,14 +9,14 @@ doc_type: conceptualPageType
 
 # Deploy an update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to sets of devices in an Azure AD tenant. Before you can use the deployment service to deploy updates of a given type (e.g. feature updates), devices must be enrolled in management by the deployment service for that update type. Today, the deployment service supports deployments of Windows 10 feature updates. (See also: [Deploy an expedited update using the Windows Update for Business deployment service](windowsupdates-deploy-expedited-update.md))
+With the Windows Update for Business deployment service, you can deploy Windows updates to sets of devices in an Azure AD tenant. Before you can use the deployment service to deploy updates of a given type (e.g. feature updates), devices must be enrolled in management by the deployment service for that update type. Today, the deployment service supports deployments of Windows 10 feature updates. (See also: [Deploy an expedited update](windowsupdates-deploy-expedited-update.md))
 
 When you deploy an update to a device, Windows Update will offer the specified update to the device if it has not yet taken the update. For example, if you deploy a feature update (e.g. version 20H2), the device will move to the specified version if it is enrolled in feature update management and currently on an older version of Windows 10. If the device is already at or above the specified version, it will stay on its current version. As long as it remains enrolled in feature update management, the device will not take any other feature updates from Windows Update unless explicitly deployed using the deployment service.
 
 ## Prerequisites
 
 * [deployment service prerequisites]
-* [enrolled in update management for relevant content type (include link)]
+* [enrolled in update management for relevant content type ([link](windowsupdates-enrollment.md))]
 
 ## Step 1: (Optional) Get a list of deployable updates
 
