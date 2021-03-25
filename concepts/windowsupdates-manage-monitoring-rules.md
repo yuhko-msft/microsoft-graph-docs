@@ -15,9 +15,9 @@ Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
 ## Step 1: Create a monitoring rule
 
-Each deployment can have one active monitoring rule at a time.
+You can create a monitoring rule for a deployment in its monitoring settings. Each deployment can have one active monitoring rule at a time.
 
-You can create a monitoring rule for a deployment in its monitoring settings. Below is an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
+Below is an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
 
 ### Request
 
@@ -61,7 +61,7 @@ Content-Type: application/json
         "value": "offering",
         "reasons": [
             {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
+                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
                 "value": "offeringByRequest"
             }
         ],
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 ## Step 2: Unpause a deployment that was paused by a monitoring rule
 
-When a monitoring rule that pauses the deployment is triggered, the way to resume the deployment is to remove the rule or change the threshold.
+When a monitoring rule that pauses the deployment is triggered, one way to resume the deployment is to remove the rule.
 
 Below is an example of resuming the deployment by removing the rule.
 
@@ -129,7 +129,7 @@ Content-Type: application/json
         "value": "offering",
         "reasons": [
             {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
+                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
                 "value": "offeringByRequest"
             }
         ],
@@ -153,7 +153,9 @@ Content-Type: application/json
 }
 ```
 
-Below is an example of resuming the deployment by changing the monitoring rule threshold. When the new threshold is reached, the action (in this case, `pauseDeployment`) will be triggered again. This same example also illustrates how to edit any existing monitoring rule, even if its threshold has not yet been met, as well as how to create a monitoring rule on a deployment that does not have one.
+Another way to resume the deployment is to change the threshold of the relevant monitoring rule. When the new threshold is reached, the action (in this case, `pauseDeployment`) will be triggered again. 
+
+Below is an example of resuming the deployment by changing the monitoring rule threshold. This example also illustrates how to edit any existing monitoring rule, even if its threshold has not yet been met, as well as how to create a monitoring rule on a deployment that does not have one.
 
 ### Request
 
@@ -193,7 +195,7 @@ Content-Type: application/json
         "value": "offering",
         "reasons": [
             {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
+                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
                 "value": "offeringByRequest"
             }
         ],

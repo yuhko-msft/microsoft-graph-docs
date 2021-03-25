@@ -52,7 +52,7 @@ Content-Type: application/json
         "value": "offering",
         "reasons": [
             {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
+                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
                 "value": "offeringByRequest"
             }
         ],
@@ -124,7 +124,7 @@ Content-Type: application/json
         "value": "offering",
         "reasons": [
             {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
+                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
                 "value": "offeringByRequest"
             }
         ],
@@ -192,7 +192,7 @@ Content-Type: application/json
         "value": "offering",
         "reasons": [
             {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
+                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
                 "value": "offeringByRequest"
             }
         ],

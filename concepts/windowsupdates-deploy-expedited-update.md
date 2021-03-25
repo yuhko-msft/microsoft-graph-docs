@@ -30,7 +30,7 @@ When you deploy an expedited quality update to a device, Windows Update will off
 
 All Windows LCU security updates can be expedited, and will be tagged with the `isExpeditable` property set to `true` to identify them.
 
-It is recommended to only show the three most current updates, and so the sample includes `$top=3`.
+It is recommended to only show the three most current updates, so the following example includes `$top=3`.
 
 ### Request
 
@@ -84,6 +84,8 @@ Create a deployment whose content specifies the target compliance date.
 
 You can configure the reboot grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The reboot grace period sets the amount of time after installation that the user can control the timing of the reboot. If the device has not rebooted when the grace period expires, it reboots automatically.
 
+Expediting the latest available update (`equivalentContent` set to the default `latestSecurity`) helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
+
 ### Request
 
 ```http
@@ -119,7 +121,7 @@ Content-Type: application/json
         "value": "offering",
         "reasons": [
             {
-                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason"
+                "@odata.type": "microsoft.graph.windowsUpdates.deploymentStateReason",
                 "value": "offeringByRequest"
             }
         ],
@@ -144,8 +146,6 @@ Content-Type: application/json
     "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-Expediting the latest available update (`equivalentContent` set to `latestSecurity`) helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
 
 ## Step 3: Assign devices to the deployment audience
 
