@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/members/enrollAssets
+POST /admin/windows/updates/updatableAssets/enrollAssets
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/members/enrollAssets
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssets
 
 Content-Type: application/json
 Content-length: 176
@@ -115,7 +115,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/members/enrollAssetsById
+POST /admin/windows/updates/updatableAssets/enrollAssetsById
 ```
 
 ## Request headers
@@ -150,7 +150,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/members/enrollAssetsById
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssetsById
 
 Content-Type: application/json
 Content-length: 99
