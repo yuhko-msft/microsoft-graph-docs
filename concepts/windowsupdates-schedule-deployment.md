@@ -15,7 +15,7 @@ Scheduling features are compatible with deployments of Windows 10 feature update
 
 ## Schedule a deployment to start at a future date
 
-Deployments can be scheduled to start at a future date. In the example below, all devices assigned the deployment will be offered the update on July 1, 2021.
+You can schedule a deployment to start at a future date by configuring its rollout settings. In the example below, all devices assigned the deployment will be offered the update on July 1, 2021.
 
 ### Request
 
@@ -81,7 +81,7 @@ Content-Type: application/json
 
 ## Stage a deployment over a period of time
 
-Deployments can also be scheduled so that devices assigned to the deployment are offered the update in a gradual rollout that is staged over time. The update is offered to subsets of devices assigned to the deployment at regular intervals, with the total duration of the rollout determined by either an end date or offering rate. You can think of a gradual rollout as similar to a recurring calendar event series.
+You can also schedule a deployment so that assigned devices are offered the update in a gradual rollout that is staged over time. The update will be offered to subsets of devices assigned to the deployment at regular intervals, with the total duration of the rollout determined by either an end date or offering rate. You can think of a gradual rollout as similar to a recurring calendar event series.
 
 One way to stage a deployment over time is to set the `endDateTime` of the deployment. All devices assigned to the deployment will be offered the update within the window between the `startDateTime` and `endDateTime`. If the `startDateTime` is not specified, then the deployment will begin as soon as devices are assigned.
 
