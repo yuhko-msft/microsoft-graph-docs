@@ -108,7 +108,9 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
         "rollout": {
             "devicesPerOffer": 100,
-            "durationBetweenOffers": "P7D"
+            "durationBetweenOffers": "P7D",
+            "startDateTime": null,
+            "endDateTime": null
         },
         "monitoring": null,
         "userExperience": null
