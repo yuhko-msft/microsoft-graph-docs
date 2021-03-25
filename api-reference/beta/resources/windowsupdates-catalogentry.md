@@ -13,24 +13,17 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Metadata for a piece of content that can be approved for deployment.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List catalogEntries](../api/catalogentry-list.md)|[catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get a list of the [catalogEntry](../resources/catalogentry.md) objects and their properties.|
-|[Create catalogEntry](../api/windowsupdates-catalogentry-create.md)|[catalogEntry](../resources/windowsupdates-catalogentry.md)|Create a new [catalogEntry](../resources/windowsupdates-catalogentry.md) object.|
-|[Get catalogEntry](../api/windowsupdates-catalogentry-get.md)|[catalogEntry](../resources/windowsupdates-catalogentry.md)|Read the properties and relationships of a [catalogEntry](../resources/windowsupdates-catalogentry.md) object.|
-|[Update catalogEntry](../api/windowsupdates-catalogentry-update.md)|[catalogEntry](../resources/windowsupdates-catalogentry.md)|Update the properties of a [catalogEntry](../resources/windowsupdates-catalogentry.md) object.|
-|[Delete catalogEntry](../api/windowsupdates-catalogentry-delete.md)|None|Deletes a [catalogEntry](../resources/windowsupdates-catalogentry.md) object.|
+See also: [softwareUpdateCatalogEntry](windowsupdates-softwareupdatecatalogentry.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|releaseDate|DateTimeOffset|**TODO: Add Description**|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content was or will no longer be available to deploy using the service. Read-only.|
+|displayName|String|The display name of the content. Read-only.|
+|id|String|The unique identifier for the catalog entry. Read-only.|
+|releaseDate|DateTimeOffset|The date on which the content was or will be released. Read-only.|
 
 ## Relationships
 None.

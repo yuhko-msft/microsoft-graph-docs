@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the deployment of content to a set of devices.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,22 +23,27 @@ Namespace: microsoft.graph.windowsUpdates
 |[Get deployment](../api/windowsupdates-deployment-get.md)|[deployment](../resources/windowsupdates-deployment.md)|Read the properties and relationships of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Update deployment](../api/windowsupdates-deployment-update.md)|[deployment](../resources/windowsupdates-deployment.md)|Update the properties of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Delete deployment](../api/windowsupdates-deployment-delete.md)|None|Deletes a [deployment](../resources/windowsupdates-deployment.md) object.|
-|[List deploymentAudience](../api/windowsupdates-deployment-list-audience.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|Get the deploymentAudience resources from the audience navigation property.|
+|[Get deployment audience](../api/windowsupdates-deploymentaudience-get.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|Get the deploymentAudience resource from the audience navigation property.|
+|[List audience members](../api/windowsupdates-deploymentaudience-list-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List members of the deployment audience.|
+|[List audience exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions from the deployment audience.|
+|[Update audience members and exclusions](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|Add or remove members and exclusions of the deployment audience.|
+
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[deployableContent](../resources/windowsupdates-deployablecontent.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|settings|[deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description**|
-|state|[deploymentState](../resources/windowsupdates-deploymentstate.md)|**TODO: Add Description**|
+|content|[deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Cannot be changed. Returned by default.|
+|createdDateTime|DateTimeOffset|The date and time the deployment was created. Returned by default. Read-only.|
+|id|String|The unique identifier for the deployment. Returned by default. Key. Not nullable. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the deployment was last modified. Returned by default. Read-only.|
+|settings|[deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy `content`. Returned by default.|
+|state|[deploymentState](../resources/windowsupdates-deploymentstate.md)|Execution status of the deployment. Returned by default.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|audience|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|**TODO: Add Description**|
+|audience|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Specifies the audience to which content is deployed.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

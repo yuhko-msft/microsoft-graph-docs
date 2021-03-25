@@ -13,11 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Content that is deployable by the service.
+
+See also: [softwareUpdateReference](windowsupdates-softwareupdatereference.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

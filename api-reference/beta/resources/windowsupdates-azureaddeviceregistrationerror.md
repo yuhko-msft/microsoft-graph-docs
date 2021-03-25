@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An error in an Azure AD device's registration process that prevents the device from being enrollment in update management or receiving deployed content.
 
 
 Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseterror.md).
@@ -21,8 +21,8 @@ Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseter
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description** Inherited from [updatableAssetError](../resources/windowsupdates-updatableasseterror.md)|
-|reason|azureADDeviceRegistrationErrorReason|**TODO: Add Description**. Possible values are: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`.|
+|description|String|A description of the error. Inherited from [updatableAssetError](../resources/windowsupdates-updatableasseterror.md)|
+|reason|azureADDeviceRegistrationErrorReason|The reason why the registration encountered an error. Possible values are: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`.|
 
 ## Relationships
 None.
