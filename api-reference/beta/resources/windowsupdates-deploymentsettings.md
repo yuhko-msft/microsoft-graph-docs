@@ -13,13 +13,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings controlling when and how to deploy an update.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|monitoring|[monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|**TODO: Add Description**|
-|rollout|[rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|**TODO: Add Description**|
+|monitoring|[monitoringSettings](../resources/windowsupdates-monitoringsettings.md)|Settings governing conditions to monitor and automated actions to take.|
+|rollout|[rolloutSettings](../resources/windowsupdates-rolloutsettings.md)|Settings governing how the content is rolled out.|
 
 ## Relationships
 None.
