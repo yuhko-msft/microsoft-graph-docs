@@ -13,13 +13,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A reason for a particular deployment state.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|value|deploymentStateReasonValue|**TODO: Add Description**. Possible values are: `scheduledByOfferWindow`, `scheduledByLinkedDeployment`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`, `faultedBySettingsIncompatibility`, `faultedByContentUnavailable`, `faultedByContentOutdated`, `archivedByRequest`, `archivedByRevokedApproval`.|
+|description|String|Describes the reason in more detail. Read-only.|
+|value|deploymentStateReasonValue|Specifies a reason for the deployment state. Read-only. Possible values are: `scheduledByOfferWindow`, `scheduledByLinkedDeployment`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`, `faultedBySettingsIncompatibility`, `faultedByContentUnavailable`, `faultedByContentOutdated`, `archivedByRequest`, `archivedByRevokedApproval`.|
 
 ## Relationships
 None.
