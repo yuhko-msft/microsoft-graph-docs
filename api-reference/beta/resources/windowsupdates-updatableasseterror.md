@@ -13,12 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An error that prevent the device from being enrolled in update management or receving deployed content.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
+|description|String|A description of the error.|
 
 ## Relationships
 None.

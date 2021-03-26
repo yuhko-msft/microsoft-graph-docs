@@ -23,7 +23,7 @@ See also: [softwareUpdateCatalogEntry](windowsupdates-softwareupdatecatalogentry
 |deployableUntilDateTime|DateTimeOffset|The date on which the content was or will no longer be available to deploy using the service. Read-only.|
 |displayName|String|The display name of the content. Read-only.|
 |id|String|The unique identifier for the catalog entry. Read-only.|
-|releaseDate|DateTimeOffset|The date on which the content was or will be released. Read-only.|
+|releaseDateTime|DateTimeOffset|The date on which the content was or will be released. Read-only.|
 
 ## Relationships
 None.
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsUpdates.catalogEntry",
   "id": "String (identifier)",
   "displayName": "String",
-  "releaseDate": "String (timestamp)",
+  "releaseDateTime": "String (timestamp)",
   "deployableUntilDateTime": "String (timestamp)"
 }
 ```
