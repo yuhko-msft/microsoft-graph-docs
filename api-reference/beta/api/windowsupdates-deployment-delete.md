@@ -1,6 +1,6 @@
 ---
 title: "Delete deployment"
-description: "Deletes a deployment object."
+description: "Delete a deployment object."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

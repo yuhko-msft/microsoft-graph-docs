@@ -1,6 +1,6 @@
 ---
 title: "List deployment audience members"
-description: "Get the updatableAsset resources from the members navigation property."
+description: "List the updatable assets that are members of a deployment audience."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

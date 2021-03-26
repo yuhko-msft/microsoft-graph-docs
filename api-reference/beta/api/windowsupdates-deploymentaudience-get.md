@@ -1,6 +1,6 @@
 ---
 title: "List deploymentAudience"
-description: "Get the deploymentAudience resources from the audience navigation property."
+description: "Get the deployment audience from the audience navigation property of a deployment object."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the deploymentAudience from the audience navigation property of a [deployment](../resources/windowsupdates-deployment.md) object.
+Get the deployment audience from the audience navigation property of a [deployment](../resources/windowsupdates-deployment.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

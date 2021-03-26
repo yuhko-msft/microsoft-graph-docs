@@ -1,6 +1,6 @@
 ---
 title: "List deployments"
-description: "Get a list of the deployment objects and their properties."
+description: "Get a list of deployment objects and their properties."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [deployment](../resources/deployment.md) objects and their properties.
+Get a list of [deployment](../resources/deployment.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

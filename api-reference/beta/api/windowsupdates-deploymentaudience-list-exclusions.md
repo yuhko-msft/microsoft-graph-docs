@@ -1,6 +1,6 @@
 ---
 title: "List deployment audience exclusions"
-description: "Get the updatableAsset resources from the exclusions navigation property."
+description: "List the updatable assets that are excluded from a deployment audience."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

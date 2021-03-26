@@ -1,6 +1,6 @@
 ---
 title: "deploymentAudience: updateAudience"
-description: "**TODO: Add Description**"
+description: "Update the members and exclusions collections of a deployment audience."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the members and exclusions collections of a deploymentAudience.
+Update the members and exclusions collections of a deployment audience.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

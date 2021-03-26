@@ -1,6 +1,6 @@
 ---
 title: "List azureADDevices"
-description: "Get a list of the azureADDevice objects and their properties."
+description: "Get a list of azureADDevice objects and their properties."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

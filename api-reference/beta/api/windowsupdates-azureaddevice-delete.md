@@ -1,6 +1,6 @@
 ---
 title: "Delete azureADDevice"
-description: "Deletes an azureADDevice object."
+description: "Delete an azureADDevice object."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

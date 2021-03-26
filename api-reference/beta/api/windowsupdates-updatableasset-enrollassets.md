@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset: enrollAssets"
-description: "**TODO: Add Description**"
+description: "Enroll an updatable asset in update management by the deployment service."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll an updatableAsset in update management by the deployment service. An azureADDevice can be enrolled in update management; an updatableAssetGroup cannot be enrolled in update management.
+Enroll an updatable asset in update management by the deployment service.
+
+An [azureADDevice](../resources/windowsupdates-azureaddevice.md) can be enrolled in update management; an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) cannot be enrolled in update management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

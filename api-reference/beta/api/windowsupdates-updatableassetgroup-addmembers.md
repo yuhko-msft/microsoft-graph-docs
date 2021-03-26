@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetGroup: addMembers"
-description: "**TODO: Add Description**"
+description: "Add members to an updatable asset group."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add members to an updatableAssetGroup. An azureADDevice can be added as a member of an updatableAssetGroup; an updatableAssetGroup cannot be added as a member of an updatableAssetGroup.
+Add members to an updatable asset group.
+
+An [azureADDevice](../resources/windowsupdates-azureaddevice.md) can be added as a member; an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) cannot be added as a member.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

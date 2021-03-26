@@ -1,6 +1,6 @@
 ---
 title: "Get azureADDevice"
-description: "Read the properties and relationships of an azureADDevice object."
+description: "Read the properties of an azureADDevice object."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

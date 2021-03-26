@@ -1,6 +1,6 @@
 ---
 title: "Delete updatableAssetGroup"
-description: "Deletes an updatableAssetGroup object."
+description: "Delete an updatableAssetGroup object."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object. When an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object, its member [updatableAsset](../resources/windowsupdates-updatableasset.md) objects are not deleted.
+Delete an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.
+
+When an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object, its member [updatableAsset](../resources/windowsupdates-updatableasset.md) objects are not deleted.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

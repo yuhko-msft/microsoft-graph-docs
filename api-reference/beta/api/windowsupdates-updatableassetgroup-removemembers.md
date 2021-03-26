@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetGroup: removeMembers"
-description: "**TODO: Add Description**"
+description: "Remove members from an updatable asset group."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove members from an updatableAssetGroup.
+Remove members from an updatable asset group.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

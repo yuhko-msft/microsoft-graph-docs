@@ -1,6 +1,6 @@
 ---
 title: "List entries"
-description: "Get the catalogEntry resources from the entries navigation property."
+description: "Get the list of entries from a catalog."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

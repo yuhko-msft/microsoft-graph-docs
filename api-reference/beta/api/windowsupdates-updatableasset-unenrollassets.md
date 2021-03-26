@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset: unenrollAssets"
-description: "**TODO: Add Description**"
+description: "Unenroll an updatable asset from update management by the deployment service."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unenroll an updatableAsset from update management by the deployment service. 
+Unenroll an updatable asset from update management by the deployment service.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
