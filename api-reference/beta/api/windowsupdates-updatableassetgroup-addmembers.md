@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add to the members of the updatable asset group.|
+|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as members of the updatable asset group.|
 
 
 

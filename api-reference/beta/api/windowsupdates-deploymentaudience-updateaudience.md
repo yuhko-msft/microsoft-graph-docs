@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the members and exclusions lists of a deploymentAudience.
+Update the members and exclusions collections of a deploymentAudience.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,10 +46,10 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|addMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add to the members of the deployment audience.|
-|removeMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove from the members of the deployment audience.|
-|addExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add to the exclusions of the deployment audience.|
-|removeExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove from the exclusions of the deployment audience.|
+|addMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as members of the deployment audience.|
+|removeMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as members of the deployment audience.|
+|addExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as exclusions from the deployment audience.|
+|removeExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as exclusions from the deployment audience.|
 
 
 
