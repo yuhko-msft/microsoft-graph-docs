@@ -18,10 +18,10 @@ Settings controlling how an update is deployed over time.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowOffersWhen|String|Date after which devices are allowed to receive new offers. When not set, offers are always allowed.|
-|devicesPerOffer|Int32|	Specifies the number of devices that are offered at the same time. Has no effect when targetCompletionDateTime/endDateTime is set. When targetCompletionDateTime/endDateTime and devicesPerOffer are both not set, all devices in the deployment are offered content at the same time.|
-|durationBetweenOffers|String|Specifies duration between each set of devices being offered the update. Has an effect when targetCompletionDateTime/endDateTime or devicesPerOffer are defined. Default value is P1D (1 day).|
-|targetCompletionDateTime|DateTimeOffset|Specifies the date before which all devices currently in the deployment are offered the update. Devices added after this date are offered immediately. When targetCompletionDateTime and devicesPerOffer are both not set, all devices in the deployment are offered content at the same time.|
+|startDateTime|DateTimeOffset|Date on which devices in the deployment start receiving the update. When not set, the deployment starts as soon as devices are assigned.|
+|devicesPerOffer|Int32|	Specifies the number of devices that are offered at the same time. Has no effect when `endDateTime` is set. When `endDateTime` and `devicesPerOffer` are both not set, all devices in the deployment are offered content at the same time.|
+|durationBetweenOffers|String|Specifies duration between each set of devices being offered the update. Has an effect when `endDateTime` or `devicesPerOffer` are defined. Default value is `P1D` (1 day).|
+|endDateTime|DateTimeOffset|Specifies the date before which all devices currently in the deployment are offered the update. Devices added after this date are offered immediately. When `endDateTime` and `devicesPerOffer` are both not set, all devices in the deployment are offered content at the same time.|
 
 ## Relationships
 None.
@@ -36,9 +36,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.rolloutSettings",
-  "allowOffersWhen": "String",
+  "startDateTime": "String",
   "durationBetweenOffers": "String",
-  "targetCompletionDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
   "devicesPerOffer": "Integer"
 }
 ```

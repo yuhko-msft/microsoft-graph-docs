@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A reference to specific quality update content.
+A reference to Windows 10 quality update content. In a deployment, the same qualityUpdateReference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
 
 Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
