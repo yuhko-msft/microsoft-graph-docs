@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A reference to specific quality update content.
 
 
 Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
@@ -21,8 +21,8 @@ Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdate
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classification|qualityUpdateClassification|**TODO: Add Description**. Possible values are: `all`, `security`, `nonSecurity`.|
-|releaseDate|DateTimeOffset|**TODO: Add Description**|
+|classification|qualityUpdateClassification|Specifies the classification of the referenced content. Possible values are: `all`, `security`, `nonSecurity`.|
+|releaseDate|DateTimeOffset|Specifies a quality update in the given servicingChannel with the given classification by date (i.e. the last update published on the specified date). Default value is security.|
 
 ## Relationships
 None.
