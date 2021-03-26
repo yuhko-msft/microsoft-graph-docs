@@ -1,6 +1,6 @@
 ---
 title: "updateManagementEnrollment resource type"
-description: "**TODO: Add Description**"
+description: "Represents enrollment into management by the service of a certain update category."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

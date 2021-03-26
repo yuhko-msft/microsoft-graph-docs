@@ -1,6 +1,6 @@
 ---
 title: "updatableAsset resource type"
-description: "**TODO: Add Description**"
+description: "Represents an asset that can receive updates."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

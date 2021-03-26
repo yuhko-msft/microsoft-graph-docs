@@ -1,6 +1,6 @@
 ---
 title: "softwareUpdateReference resource type"
-description: "**TODO: Add Description**"
+description: "Represents specific update content."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific update content. In a deployment, the same softwareUpdateReference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
+Represents specific update content.
+
+In a deployment, the same softwareUpdateReference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
 
 Inherits from [deployableContent](../resources/windowsupdates-deployablecontent.md).

@@ -1,6 +1,6 @@
 ---
 title: "softwareUpdateCatalogEntry resource type"
-description: "**TODO: Add Description**"
+description: "Metadata for a software update that can be approved for deployment."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

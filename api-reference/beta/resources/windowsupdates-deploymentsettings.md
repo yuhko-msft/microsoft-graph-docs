@@ -1,6 +1,6 @@
 ---
 title: "deploymentSettings resource type"
-description: "**TODO: Add Description**"
+description: "Settings controlling when and how to deploy an update."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

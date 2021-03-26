@@ -1,6 +1,6 @@
 ---
 title: "monitoringSettings resource type"
-description: "**TODO: Add Description**"
+description: "Settings controlling automated monitoring and response in a deployment."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

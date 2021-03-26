@@ -1,6 +1,6 @@
 ---
 title: "featureUpdateCatalogEntry resource type"
-description: "**TODO: Add Description**"
+description: "Metadata for a Windows 10 feature update that can be approved for deployment."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

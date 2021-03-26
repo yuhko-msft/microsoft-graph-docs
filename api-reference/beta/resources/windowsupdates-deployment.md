@@ -1,6 +1,6 @@
 ---
 title: "deployment resource type"
-description: "**TODO: Add Description**"
+description: "Represents the deployment of content to a set of devices."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

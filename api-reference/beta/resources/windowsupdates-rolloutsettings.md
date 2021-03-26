@@ -1,6 +1,6 @@
 ---
 title: "rolloutSettings resource type"
-description: "**TODO: Add Description**"
+description: "Settings controlling how an update is deployed over time."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

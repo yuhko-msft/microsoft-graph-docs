@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetGroup resource type"
-description: "**TODO: Add Description**"
+description: "A group of updatable assets."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A group of updatable assets. An azureADDevice can be a member; an updatable asset group cannot be a member.
+A group of updatable assets.
+
+An [azureADDevice](../resources/windowsupdates-azureADDevice.md) can be a member; an updatableAssetGroup cannot be a member.
 
 
 Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).

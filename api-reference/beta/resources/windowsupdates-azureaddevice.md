@@ -1,6 +1,6 @@
 ---
 title: "azureADDevice resource type"
-description: "**TODO: Add Description**"
+description: "Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

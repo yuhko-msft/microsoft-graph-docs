@@ -1,6 +1,6 @@
 ---
 title: "deploymentState resource type"
-description: "**TODO: Add Description**"
+description: "Describes and controls the current state of a deployment."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

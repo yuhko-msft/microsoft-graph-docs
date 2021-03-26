@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetError resource type"
-description: "**TODO: Add Description**"
+description: "An error that prevent the device from being enrolled in update management or receving deployed content."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

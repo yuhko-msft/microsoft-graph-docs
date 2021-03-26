@@ -1,6 +1,6 @@
 ---
 title: "updatableAssetEnrollment resource type"
-description: "**TODO: Add Description**"
+description: "Represents an enrollment into an area of the service."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

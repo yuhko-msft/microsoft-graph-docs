@@ -1,6 +1,6 @@
 ---
 title: "catalog resource type"
-description: "**TODO: Add Description**"
+description: "Represents the catalog of content that can be approved for deployment."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The catalog of content that can be approved for deployment.
+Represents the catalog of content that can be approved for deployment.
 
 ## Methods
 |Method|Return type|Description|

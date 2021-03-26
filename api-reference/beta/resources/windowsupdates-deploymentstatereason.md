@@ -1,6 +1,6 @@
 ---
 title: "deploymentStateReason resource type"
-description: "**TODO: Add Description**"
+description: "A reason for a particular deployment state."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"

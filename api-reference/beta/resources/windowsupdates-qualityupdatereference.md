@@ -1,6 +1,6 @@
 ---
 title: "qualityUpdateReference resource type"
-description: "**TODO: Add Description**"
+description: "Represents Windows 10 quality update content."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Windows 10 quality update content. In a deployment, the same qualityUpdateReference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
+Represents Windows 10 quality update content.
+
+In a deployment, the same qualityUpdateReference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
 
 Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
