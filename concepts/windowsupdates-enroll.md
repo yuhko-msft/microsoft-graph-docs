@@ -45,6 +45,8 @@ Content-Type: application/json
 
 ## Step 2: Enroll the device in update management
 
+When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, device will not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a deployment.
+
 ### Request
 
 ``` http
@@ -76,22 +78,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Default behavior after enrollment
+## Unenroll from management by the service or unregister from the service 
 
-Once you enroll a device in management for a certain update category, it will no longer receive updates of that category from Windows Update until you deploy an update by assigning it to a deployment.
-
-## Unregister from the service or unenroll from management by the service
-
-### Request
-
-``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{azureADDeviceId}
-```
-
-### Response
-``` http
-HTTP/1.1 204 No Content
-```
+When you unenroll a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. If the device is assigned to any deployments for the given update category, it will not receive that content. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
 
 ### Request
 
@@ -115,3 +104,17 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+You can unregister a device from the service by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences.
+
+### Request
+
+``` http
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{azureADDeviceId}
+```
+
+### Response
+``` http
+HTTP/1.1 204 No Content
+```
+
