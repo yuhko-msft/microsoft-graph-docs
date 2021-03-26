@@ -13,12 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings controlling automated monitoring and response in a deployment.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|monitoringRules|[monitoringRule](../resources/windowsupdates-monitoringrule.md) collection|**TODO: Add Description**|
+|monitoringRules|[monitoringRule](../resources/windowsupdates-monitoringrule.md) collection|Specifies the rules through which monitoring signals can trigger actions on the deployment. Rules are combined using or. Default value is empty collection.|
 
 ## Relationships
 None.
