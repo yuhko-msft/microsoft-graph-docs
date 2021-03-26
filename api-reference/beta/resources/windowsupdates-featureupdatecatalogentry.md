@@ -13,28 +13,20 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Metadata for a Windows feature update that can be approved for deployment.
 
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List featureUpdateCatalogEntries](../api/featureupdatecatalogentry-list.md)|[featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) collection|Get a list of the [featureUpdateCatalogEntry](../resources/featureupdatecatalogentry.md) objects and their properties.|
-|[Create featureUpdateCatalogEntry](../api/windowsupdates-featureupdatecatalogentry-create.md)|[featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md)|Create a new [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) object.|
-|[Get featureUpdateCatalogEntry](../api/windowsupdates-featureupdatecatalogentry-get.md)|[featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md)|Read the properties and relationships of a [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) object.|
-|[Update featureUpdateCatalogEntry](../api/windowsupdates-featureupdatecatalogentry-update.md)|[featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md)|Update the properties of a [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) object.|
-|[Delete featureUpdateCatalogEntry](../api/windowsupdates-featureupdatecatalogentry-delete.md)|None|Deletes a [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
-|displayName|String|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
-|id|String|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
-|releaseDate|DateTimeOffset|**TODO: Add Description** Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
-|version|String|**TODO: Add Description**|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content was or will no longer be available to deploy using the service. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
+|displayName|String|	The display name of the content. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
+|id|String|The unique identifier for the catalog entry. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
+|releaseDate|DateTimeOffset|The date on which the content was or will be released. Read-only. Inherited from [catalogEntry](../resources/windowsupdates-catalogentry.md)|
+|version|String|The version of the feature update. Read-only.|
 
 ## Relationships
 None.
