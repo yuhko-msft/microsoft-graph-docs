@@ -13,14 +13,14 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Rule defining a signal and threshold to monitor and the action to perform when met.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|monitoringAction|**TODO: Add Description**. Possible values are: `alertError`, `alertWarning`, `alertInfo`, `pauseDeployment`.|
-|signal|monitoringSignal|**TODO: Add Description**. Possible values are: `rollback`.|
-|threshold|Int32|**TODO: Add Description**|
+|action|monitoringAction|	The action triggered when the threshold for the given signal is met. Possible values are: `alertError`, `alertWarning`, `alertInfo`, `pauseDeployment`.|
+|signal|monitoringSignal|The signal to monitor. Possible values are: `rollback`.|
+|threshold|Int32|The threshold for a signal at which to trigger action. An integer from 1 to 100 (inclusive).|
 
 ## Relationships
 None.
