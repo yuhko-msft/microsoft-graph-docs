@@ -90,7 +90,7 @@ Content-length: 145
 HTTP/1.1 204 No Content
 ```
 
-# updatableAssetGroup: removeMembersById
+<!-- # updatableAssetGroup: removeMembersById
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -106,13 +106,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
 |Application|**TODO: Provide applicable permissions.**|
 
-## HTTP request
+## HTTP request -->
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+<!-- ``` http
 POST /updatableAssetGroup/{updatableAssetGroupId}/removeMembersById
 ```
 
@@ -140,13 +140,13 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Request -->
 <!-- {
   "blockType": "request",
   "name": "updatableassetgroup_removemembersbyid"
 }
 -->
-``` http
+<!-- ``` http
 POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/removeMembersById
 
 Content-Type: application/json
@@ -162,13 +162,13 @@ Content-length: 68
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability. -->
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
+<!-- ``` http
 HTTP/1.1 204 No Content
 ```
-
+ -->

@@ -111,7 +111,7 @@ Content-length: 599
 HTTP/1.1 204 No Content
 ```
 
-# deploymentAudience: updateAudienceById
+<!-- # deploymentAudience: updateAudienceById
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -127,13 +127,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
 |Application|**TODO: Provide applicable permissions.**|
 
-## HTTP request
+## HTTP request -->
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+<!-- ``` http
 POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 ```
 
@@ -164,13 +164,13 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Request -->
 <!-- {
   "blockType": "request",
   "name": "deploymentaudience_updateaudiencebyid"
 }
 -->
-``` http
+<!-- ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 
 Content-Type: application/json
@@ -195,13 +195,13 @@ Content-length: 204
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability. -->
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
+<!-- ``` http
 HTTP/1.1 204 No Content
-```
+``` -->
 

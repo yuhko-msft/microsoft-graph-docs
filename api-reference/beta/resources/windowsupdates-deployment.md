@@ -18,7 +18,7 @@ Represents the deployment of content to a set of devices.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deployments](../api/windowsupdates-deployment-list.md)|[deployment](../resources/windowsupdates-deployment.md) collection|Get a list of the [deployment](../resources/deployment.md) objects and their properties.|
+|[List deployments](../api/windowsupdates-deployment-list.md)|[deployment](../resources/windowsupdates-deployment.md) collection|Get a list of the [deployment](../resources/windowsupdates-deployment.md) objects and their properties.|
 |[Create deployment](../api/windowsupdates-deployment-create.md)|[deployment](../resources/windowsupdates-deployment.md)|Create a new [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Get deployment](../api/windowsupdates-deployment-get.md)|[deployment](../resources/windowsupdates-deployment.md)|Read the properties and relationships of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Update deployment](../api/windowsupdates-deployment-update.md)|[deployment](../resources/windowsupdates-deployment.md)|Update the properties of a [deployment](../resources/windowsupdates-deployment.md) object.|
