@@ -13,15 +13,15 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings controlling how an update is deployed over time.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowOffersWhen|String|**TODO: Add Description**|
-|devicesPerOffer|Int32|**TODO: Add Description**|
-|durationBetweenOffers|String|**TODO: Add Description**|
-|targetCompletionDateTime|DateTimeOffset|**TODO: Add Description**|
+|allowOffersWhen|String|Date after which devices are allowed to receive new offers. When not set, offers are always allowed.|
+|devicesPerOffer|Int32|	Specifies the number of devices that are offered at the same time. Has no effect when targetCompletionDateTime/endDateTime is set. When targetCompletionDateTime/endDateTime and devicesPerOffer are both not set, all devices in the deployment are offered content at the same time.|
+|durationBetweenOffers|String|Specifies duration between each set of devices being offered the update. Has an effect when targetCompletionDateTime/endDateTime or devicesPerOffer are defined. Default value is P1D (1 day).|
+|targetCompletionDateTime|DateTimeOffset|Specifies the date before which all devices currently in the deployment are offered the update. Devices added after this date are offered immediately. When targetCompletionDateTime and devicesPerOffer are both not set, all devices in the deployment are offered content at the same time.|
 
 ## Relationships
 None.
