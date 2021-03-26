@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An enrollment into an area of the service.
+Represents an enrollment into an area of the service.
 
 ## Properties
 None.

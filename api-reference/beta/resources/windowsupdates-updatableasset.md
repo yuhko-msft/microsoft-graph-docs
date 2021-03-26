@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An asset that can receive updates.
+Represents an asset that can receive updates.
 
 <!-- ## Methods
 |Method|Return type|Description|

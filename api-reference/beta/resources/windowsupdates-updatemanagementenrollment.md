@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An enrollment into management by the service of a certain update category.
+Represents enrollment into management by the service of a certain update category.
 
 
 Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md).

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A device in Azure Active Directory that is registered with the deployment service.
+Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service.
 
 
 Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
@@ -25,8 +25,8 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 |[Create azureADDevice](../api/windowsupdates-azureaddevice-create.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Create a new [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Delete azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|None|Deletes an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
-|[Enroll azureADDevice in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll the device in update management by the deployment service.|
-|[Unenroll azureADDevice from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll the device from update management by the deployment service.|
+|[Enroll azureADDevice in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll the [azureADDevice](../resources/windowsupdates-azureaddevice.md) in update management by the deployment service.|
+|[Unenroll azureADDevice from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Unenroll the [azureADDevice](../resources/windowsupdates-azureaddevice.md) from update management by the deployment service.|
 
 
 ## Properties
