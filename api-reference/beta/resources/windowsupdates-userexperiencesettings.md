@@ -13,12 +13,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings controlling the user's update experience on a device.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|daysUntilForcedReboot|Int32|**TODO: Add Description**|
+|daysUntilForcedReboot|Int32|Specifies number of days after the update is installed during which the user of the device can control when the device reboots.|
 
 ## Relationships
 None.

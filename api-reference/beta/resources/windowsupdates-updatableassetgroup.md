@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A group of updatable assets. An azureADDevice can be a member; an updatable asset group cannot be a member.
 
 
 Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
@@ -24,24 +24,20 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 |[List updatableAssetGroups](../api/windowsupdates-updatableassetgroup-list.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) collection|Get a list of the [updatableAssetGroup](../resources/updatableassetgroup.md) objects and their properties.|
 |[Create updatableAssetGroup](../api/windowsupdates-updatableassetgroup-create.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Get updatableAssetGroup](../api/windowsupdates-updatableassetgroup-get.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Read the properties and relationships of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
-|[Update updatableAssetGroup](../api/windowsupdates-updatableassetgroup-update.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Update the properties of an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Delete updatableAssetGroup](../api/windowsupdates-updatableassetgroup-delete.md)|None|Deletes an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
-|[addMembers](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|**TODO: Add Description**|
-|[addMembersById](../api/windowsupdates-updatableassetgroup-addmembersbyid.md)|None|**TODO: Add Description**|
-|[removeMembers](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|**TODO: Add Description**|
-|[removeMembersById](../api/windowsupdates-updatableassetgroup-removemembersbyid.md)|None|**TODO: Add Description**|
+|[Add members](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an updatable asset group.|
+|[Remove members](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an updatable asset group.|
 |[List members](../api/windowsupdates-updatableassetgroup-list-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get the updatableAsset resources from the members navigation property.|
-|[Create updatableAsset](../api/windowsupdates-updatableassetgroup-post-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Create a new updatableAsset object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md)|
+|id|String|An identifier for the group. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|members|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|**TODO: Add Description**|
+|members|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Members of the group. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

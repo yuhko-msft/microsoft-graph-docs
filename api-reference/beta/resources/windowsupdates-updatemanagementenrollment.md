@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An enrollment into management by the service of a certain update category.
 
 
 Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md).
@@ -21,7 +21,7 @@ Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableas
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|updateCategory|updateCategory|**TODO: Add Description**. Possible values are: `feature`, `quality`.|
+|updateCategory|updateCategory|The category of updates that the service manages. Possible values are: `feature`.|
 
 ## Relationships
 None.
