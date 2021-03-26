@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Enroll an updatableAsset in update management by the deployment service. An azureADDevice can be enrolled in update management; an updatableAssetGroup cannot be enrolled in update management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,8 +46,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|updateCategory|updateCategory|**TODO: Add Description**|
-|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|**TODO: Add Description**|
+|updateCategory|updateCategory|The category of updates for the service to manage. Possible values are: `feature`.|
+|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to enroll in update management by the service for the given `updateCategory`.|
 
 
 

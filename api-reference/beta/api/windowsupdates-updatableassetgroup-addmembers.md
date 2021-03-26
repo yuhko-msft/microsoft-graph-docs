@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Add members to an updatableAssetGroup. An azureADDevice can be added as a member of an updatableAssetGroup; an updatableAssetGroup cannot be added as a member of an updatableAssetGroup.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/addMembers
+POST /updatableAssetGroup/{updatableAssetGroupId}/addMembers
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|**TODO: Add Description**|
+|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add to the members of the updatable asset group.|
 
 
 
@@ -63,7 +63,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/addMembers
+POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/addMembers
 
 Content-Type: application/json
 Content-length: 145
@@ -113,7 +113,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/addMembersById
+POST /updatableAssetGroup/{updatableAssetGroupId}/addMembersById
 ```
 
 ## Request headers
@@ -147,7 +147,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/addMembersById
+POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/addMembersById
 
 Content-Type: application/json
 Content-length: 68

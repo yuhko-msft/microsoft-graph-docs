@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Remove members from an updatableAssetGroup.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/removeMembers
+POST /updatableAssetGroup/{updatableAssetGroupId}/removeMembers
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|**TODO: Add Description**|
+|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove from the members of the updatable asset group.|
 
 
 
@@ -63,7 +63,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/removeMembers
+POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/removeMembers
 
 Content-Type: application/json
 Content-length: 145
@@ -113,7 +113,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/removeMembersById
+POST /updatableAssetGroup/{updatableAssetGroupId}/removeMembersById
 ```
 
 ## Request headers
@@ -147,7 +147,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/removeMembersById
+POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/removeMembersById
 
 Content-Type: application/json
 Content-length: 68
