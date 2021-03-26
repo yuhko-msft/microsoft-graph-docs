@@ -15,18 +15,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 The set of assets to which a deployment can apply.
 
-Inherits from audience.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deploymentAudiences](../api/deploymentaudience-list.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|Get a list of the [deploymentAudience](../resources/deploymentaudience.md) objects and their properties.|
-|[Create deploymentAudience](../api/windowsupdates-deploymentaudience-create.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Create a new [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
 |[Get deploymentAudience](../api/windowsupdates-deploymentaudience-get.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Read the properties and relationships of a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
-|[Update deploymentAudience](../api/windowsupdates-deploymentaudience-update.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Update the properties of a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
-|[Delete deploymentAudience](../api/windowsupdates-deploymentaudience-delete.md)|None|Deletes a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.|
-|[List exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get the updatableAsset resources from the exclusions navigation property.|
-|[List members](../api/windowsupdates-deploymentaudience-list-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get the updatableAsset resources from the members navigation property.|
+|[List exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions of the [deploymentAudience](../resources/deploymentaudience.md).|
+|[List members](../api/windowsupdates-deploymentaudience-list-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List members of the [deploymentAudience](../resources/deploymentaudience.md).|
+|[Update members and exclusions](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|Add or remove members and exclusions.|
 
 ## Properties
 |Property|Type|Description|
