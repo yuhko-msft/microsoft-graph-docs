@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Share a [driveItem](../resources/driveitem.md) via a sharing link.
+Share a [driveItem](../resources/driveitem.md) by creating a [permission](../resources/permission.md) with a sharing link.
 
 The **createLink** action creates a new [sharingLink](../resources/sharinglink.md) resource if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.

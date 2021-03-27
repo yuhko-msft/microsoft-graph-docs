@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Adds one or more [permission](../resources/permission.md) objects to share a [driveItem](../resources/driveitem.md) with each of the specified [driveRecipient](../resources/driverecipient.md) resource. Optionally sends an email or post to the recipients to notify them the sharing of the item.
+Share a [driveItem](../resources/driveitem.md) with specified recipients by creating a collection of [permission](../resources/permission.md) objects for the recipients. Optionally sends an email or post to the recipients to invite and notify them of the item sharing.
 
 A successful request sets properties of each **permission** requested on the **driveItem**. Among the properties is the **invitation** property which is a [sharingInvitation](../resources/sharinginvitation.md) resource representing the invitation facet of the permission.
 

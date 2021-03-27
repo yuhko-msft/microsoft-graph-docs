@@ -42,8 +42,8 @@ The following properties of **permission** are set specifically for the link fac
 ### APIs and use cases
 1. Use the [createLink](/graph/api/driveitem-createlink) action to create a permission that contains a sharing link specifying a scope for anyone (`anonymous`), or anyone in an organization ("organization`). Anyone within the specified scope can access the shared item using the resultant **sharingLink**.
 2. As an alternative to step #1, provide specific recipients in the initial [createLink](/graph/api/driveitem-createlink) action, or in a [grant](/graph/api/permission-grant) action for an existing sharing link. 
-  - Granting additional users access to an existing sharing link that is already in use by other users doesn't modify any existing permissions on the link.
-  - Successful requests set the recipients in the **grantedToIdentities** property of the **permission**. 
+   - Granting additional users access to an existing sharing link that is already in use by other users doesn't modify any existing permissions on the link.
+   - Successful requests set the recipients in the **grantedToIdentities** property of the **permission**. 
 3. [Get the permission](/graph/api/permission-get), including the **sharedId** property which contains a unique access token.
 4. [Get the shared item](/graph/api/shares-get) by passing the unique access token as a parameter. A successful `GET` operation returns a [sharedDriveItem](/graph/api/resources/shareddriveitem) resource.
 5. As an alternative to steps #3 and #4, [encode](/graph/api/shares-get#encoding-sharing-urls) the **webUrl** of the **sharingLink** and provide it as a parameter to [get the shared item](/graph/api/shares-get).
