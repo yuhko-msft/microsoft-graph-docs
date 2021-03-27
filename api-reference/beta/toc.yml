@@ -9810,6 +9810,7 @@ items:
       - name: Share items
         items:
         - name: Permissions
+          expanded: true
           items:
           - name: Permission
             href: resources/permission.md
@@ -9822,18 +9823,20 @@ items:
           - name: Delete permission
             href: api/permission-delete.md
         - name: Share by link facet
+          expanded: true
           items:
           - name: SharingLink
             href: resources/sharinglink.md
           - name: Share item by link
             href: api/driveitem-createlink.md
-          - name: Use sharing links
-            href: api/shares-get.md
           - name: Grant access to sharing link
             href: api/permission-grant.md
+          - name: Get shared item
+            href: api/shares-get.md
           - name: Revoke grants on sharing link (preview)
             href: api/permission-revokegrants.md
         - name: Share by invitation facet
+          expanded: true
           items:
           - name: SharingInvitation
             href: resources/sharinginvitation.md

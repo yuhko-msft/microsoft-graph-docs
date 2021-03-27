@@ -7,11 +7,11 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sharepoint"
 ---
-# Accessing shared DriveItems
+# Get sharedDriveItem
 
 Namespace: microsoft.graph
 
-Access a shared [driveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
+Get a shared [driveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
 
 To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).
 

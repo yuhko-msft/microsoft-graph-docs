@@ -7,11 +7,11 @@ description: "Access a shared driveItem or a collection of shared items by using
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Accessing shared driveItems
+# Get sharedDriveItem
 
 Namespace: microsoft.graph
 
-Access a shared [driveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
+Get a shared [driveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
 
 To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).
 
