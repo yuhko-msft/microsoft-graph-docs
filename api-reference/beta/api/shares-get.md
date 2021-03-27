@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Access shared items
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # Accessing shared DriveItems
 

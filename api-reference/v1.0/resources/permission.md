@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Permission
 localization_priority: Priority
 description: "The Permission resource provides information about a sharing permission granted for a DriveItem resource."
-ms.prod: ""
+ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 

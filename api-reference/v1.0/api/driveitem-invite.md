@@ -67,7 +67,7 @@ In the request body, provide a JSON object with the following parameters.
 | recipients       | Collection([DriveRecipient][]) | A collection of recipients who will receive access and the sharing invitation.
 | message          | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.
 | requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
-| sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to each recipient. Otherwise, a permission is granted directly without sending a notification.
+| sendInvitation   | Boolean                        | If true, a sharing link is sent to each recipient. Otherwise, a permission is granted directly without sending a notification.
 | roles            | Collection(String)             | Specify the roles that are to be granted to the recipients of the sharing invitation.
 | expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.

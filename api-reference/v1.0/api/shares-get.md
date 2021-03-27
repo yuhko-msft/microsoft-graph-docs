@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Access shared items
 localization_priority: Normal
 description: "Access a shared driveItem or a collection of shared items by using a shareId or sharing URL."
-ms.prod: ""
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Accessing shared driveItems

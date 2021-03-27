@@ -1,6 +1,6 @@
 ---
 title: "Share files and folders in OneDrive and SharePoint"
-description: "Multipurpose Internet Mail Extensions (MIME) is an industry email standard. You can now use a `$value` segment to get the MIME content of an Outlook message."
+description: "Use the Microsoft Graph API to set permissions for users to share files and folders in OneDrive Personal, OneDrive for Business, and SharePoint."
 author: "JeremyKelley"
 localization_priority: Priority
 ms.prod: "sharepoint"
@@ -15,11 +15,11 @@ Use the Microsoft Graph API to set permissions for users to share files and fold
 In this article
 - [Sharing items using a link facet](#sharing-items-using-a-link-facet)
   - [Permission defining a sharingLink resource](#permission-defining-a-sharinglink-resource)
-  - [APIs and use cases](#apis-and-use-cases-1)
+  - [APIs and use cases](#apis-and-use-cases)
   - [Examples](#examples)
 - [Sharing items using an invitation facet](#sharing-items-using-an-invitation-facet)
   - [Permission defining a sharingInvitation resource](#permission-defining-a-sharinginvitation-resource)
-  - [APIs and use cases](#apis-and-use-cases-2)
+  - [APIs and use cases](#apis-and-use-cases-1)
   - [Example](#example)
 
 ## Sharing items using a link facet
