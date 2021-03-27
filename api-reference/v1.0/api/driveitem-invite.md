@@ -168,7 +168,6 @@ how errors are returned.
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[sharing link]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",
