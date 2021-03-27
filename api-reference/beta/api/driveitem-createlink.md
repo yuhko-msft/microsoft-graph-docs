@@ -7,18 +7,18 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Create a sharing link for a DriveItem
+# driveItem: createLink
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
+Share a [driveItem](../resources/driveitem.md) via a sharing link.
 
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
+The **createLink** action creates a new [sharingLink](../resources/sharinglink.md) resource if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
-DriveItem resources inherit sharing permissions from their ancestors.
+**driveItem** resources inherit sharing permissions from their ancestors.
 
 ## Permissions
 
@@ -42,7 +42,13 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### Request body
+## Request headers
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
+
+## Request body
 
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
@@ -78,7 +84,7 @@ If the **scope** parameter is not specified, the default link type for the organ
 
 ## Response
 
-If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
+If successful, this method returns a single [permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
 
 The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
 
