@@ -9822,6 +9822,10 @@ items:
             href: api/permission-update.md
           - name: Delete permission
             href: api/permission-delete.md
+          - name: Share item by link
+            href: api/driveitem-createlink.md
+          - name: Share item with recipients
+            href: api/driveitem-invite.md
         - name: Share by link facet
           expanded: true
           items:
@@ -9842,28 +9846,6 @@ items:
             href: resources/sharinginvitation.md
           - name: Share item with recipients
             href: api/driveitem-invite.md
-      - name: Permissions
-        items:
-        - name: Permission
-          href: resources/permission.md
-        - name: List permissions
-          href: api/driveitem-list-permissions.md
-        - name: Get permission
-          href: api/permission-get.md
-        - name: Update permission
-          href: api/permission-update.md
-        - name: Delete permission
-          href: api/permission-delete.md
-        - name: Share item with recipients
-          href: api/driveitem-invite.md
-        - name: Share item by link
-          href: api/driveitem-createlink.md
-        - name: Use sharing links
-          href: api/shares-get.md
-        - name: Grant access to sharing link
-          href: api/permission-grant.md
-        - name: Revoke grants on sharing link (preview)
-          href: api/permission-revokegrants.md
     - name: Financials (preview)
       displayname: Dynamics, Dynamics 365 Business Central
       items:

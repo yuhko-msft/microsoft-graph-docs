@@ -88,12 +88,13 @@ Here is a JSON representation of the resource.
 |:---------------------------------------------------------|:-----------------------
 | [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`
-| [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Share item with recipients][invite]                     | `POST /drive/items/{item-id}/invite`
+| [Share item by link][createLink]                         | `POST /drive/items/{item-id}/createLink`
 | [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 | [Revoke grants](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
+
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md
