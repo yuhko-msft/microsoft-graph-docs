@@ -46,8 +46,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|[deploymentState](../resources/windowsupdates-deploymentstate.md)|**TODO: Add Description**|
-|settings|[deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|**TODO: Add Description**|
+|state|[deploymentState](../resources/windowsupdates-deploymentstate.md)|Execution status of the deployment.|
+|settings|[deploymentSettings](../resources/windowsupdates-deploymentsettings.md)|Settings specified on the specific deployment governing how to deploy deployment `content`.|
 
 
 ## Response

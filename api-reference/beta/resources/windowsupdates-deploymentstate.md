@@ -18,10 +18,11 @@ Describes and controls the current state of a deployment.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-<!-- |effectiveSinceDateTime|DateTimeOffset|Date on which the current state became effective. Read-only.| -->
 |reasons|[deploymentStateReason](../resources/windowsupdates-deploymentstatereason.md) collection|Specifies the reasons the deployment has its state value. Read-only.|
 |requestedValue|requestedDeploymentStateValue|Specifies the requested state of the deployment. Possible values are: `none`, `paused`, `archived`.|
 |value|deploymentStateValue|Specifies the state of the deployment. Read-only. Possible values are: `scheduled`, `offering`, `paused`.|
+
+<!-- |effectiveSinceDateTime|DateTimeOffset|Date on which the current state became effective. Read-only.| -->
 
 ## Relationships
 None.
