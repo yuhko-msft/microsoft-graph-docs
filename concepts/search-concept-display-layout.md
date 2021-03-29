@@ -109,22 +109,22 @@ Content-type: application/json
 								}
 						},
 						
-					],
-					"displayLayouts": [
-                  {
-                   "layoutId": "1603900360618_5XCBK2OXG",
-                   "layoutBody": "{\"type\":\"AdaptiveCard\",\"version\":\"1.0\",\"body\":[{\"type\":\"ColumnSet\",\"columns\":[{\"type\":\"Column\",\"width\":\"auto\",\"items\":[{\"type\":\"Image\",\"url\":\"https://searchuxcdn.azureedge.net/designerapp/images/LiquidLogo.png\",\"horizontalAlignment\":\"Center\",\"size\":\"Small\"}],\"horizontalAlignment\":\"Center\"},{\"type\":\"Column\",\"width\":10,\"items\":[{\"type\":\"TextBlock\",\"text\":\"[{Title}]({URL})\",\"weight\":\"Bolder\",\"color\":\"Accent\",\"size\":\"Medium\",\"maxLines\":3},{\"type\":\"TextBlock\",\"text\":\"{ResultSnippet}\",\"maxLines\":3,\"wrap\":true}],\"spacing\":\"Medium\"}]}],\"$schema\":\"http://adaptivecards.io/schemas/adaptive-card.json\"}",
-                   "lastModifiedTime": "2/12/2021 7:20:02 AM +00:00"
-                  },
-				  
-				  {
-                   "layoutId": "1603900360618_5XCBK2OXP",
-                   "LayoutBody": "{\"type\":\"AdaptiveCard\",\"version\":\"1.0\",\"body\":[{\"type\":\"ColumnSet\",\"columns\":[{\"type\":\"Column\",\"width\":\"auto\",\"items\":[{\"type\":\"Image\",\"url\":\"https://searchuxcdn.azureedge.net/designerapp/images/LiquidLogo.png\",\"horizontalAlignment\":\"Center\",\"size\":\"Small\"}],\"horizontalAlignment\":\"Center\"},{\"type\":\"Column\",\"width\":10,\"items\":[{\"type\":\"TextBlock\",\"text\":\"[{Title}]({URL})\",\"weight\":\"Bolder\",\"color\":\"Accent\",\"size\":\"Medium\",\"maxLines\":3},{\"type\":\"TextBlock\",\"text\":\"{ResultSnippet}\",\"maxLines\":3,\"wrap\":true}],\"spacing\":\"Medium\"}]}],\"$schema\":\"http://adaptivecards.io/schemas/adaptive-card.json\"}",
-                   "lastModifiedTime": "2/12/2021 7:25:02 AM +00:00"
-                  }
-				  ],
+					]
 		        }
-		    ]
+		    ],
+		"displayLayouts": [
+            {
+                "layoutId": "1603900360618_5XCBK2OXG",
+                "layoutBody": "{\"type\":\"AdaptiveCard\",\"version\":\"1.0\",\"body\":[{\"type\":\"ColumnSet\",\"columns\":[{\"type\":\"Column\",\"width\":\"auto\",\"items\":[{\"type\":\"Image\",\"url\":\"https://searchuxcdn.azureedge.net/designerapp/images/LiquidLogo.png\",\"horizontalAlignment\":\"Center\",\"size\":\"Small\"}],\"horizontalAlignment\":\"Center\"},{\"type\":\"Column\",\"width\":10,\"items\":[{\"type\":\"TextBlock\",\"text\":\"[{Title}]({URL})\",\"weight\":\"Bolder\",\"color\":\"Accent\",\"size\":\"Medium\",\"maxLines\":3},{\"type\":\"TextBlock\",\"text\":\"{ResultSnippet}\",\"maxLines\":3,\"wrap\":true}],\"spacing\":\"Medium\"}]}],\"$schema\":\"http://adaptivecards.io/schemas/adaptive-card.json\"}",
+                "lastModifiedTime": "2/12/2021 7:20:02 AM +00:00"
+            },
+				  
+			{
+                "layoutId": "1603900360618_5XCBK2OXP",
+                "LayoutBody": "{\"type\":\"AdaptiveCard\",\"version\":\"1.0\",\"body\":[{\"type\":\"ColumnSet\",\"columns\":[{\"type\":\"Column\",\"width\":\"auto\",\"items\":[{\"type\":\"Image\",\"url\":\"https://searchuxcdn.azureedge.net/designerapp/images/LiquidLogo.png\",\"horizontalAlignment\":\"Center\",\"size\":\"Small\"}],\"horizontalAlignment\":\"Center\"},{\"type\":\"Column\",\"width\":10,\"items\":[{\"type\":\"TextBlock\",\"text\":\"[{Title}]({URL})\",\"weight\":\"Bolder\",\"color\":\"Accent\",\"size\":\"Medium\",\"maxLines\":3},{\"type\":\"TextBlock\",\"text\":\"{ResultSnippet}\",\"maxLines\":3,\"wrap\":true}],\"spacing\":\"Medium\"}]}],\"$schema\":\"http://adaptivecards.io/schemas/adaptive-card.json\"}",
+                "lastModifiedTime": "2/12/2021 7:25:02 AM +00:00"
+            }
+		]
         }
     ]
 }
