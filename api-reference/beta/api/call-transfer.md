@@ -274,8 +274,7 @@ Content-Type: application/json
     "languageId": "en-us",
     "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 
@@ -618,8 +617,7 @@ Content-Type: application/json
     "languageId": "en-us",
     "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 
