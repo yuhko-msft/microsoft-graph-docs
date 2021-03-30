@@ -411,8 +411,6 @@ items:
             href: windowsupdates-schedule-deployment.md
           - name: Manage monitoring rules
             href: windowsupdates-manage-monitoring-rules.md
-          - name: Monitor a deployment
-            href: windowsupdates-monitor-deployment.md
       - name: Workbooks and charts
         displayName: Excel
         items:
