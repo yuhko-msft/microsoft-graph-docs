@@ -38,7 +38,6 @@ Below is an example of querying for all Windows 10 quality updates that can be d
 
 ```http
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$top=3&$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDate desc
-Content-type: application/json
 ```
 
 ### Response

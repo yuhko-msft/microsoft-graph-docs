@@ -9,43 +9,13 @@ doc_type: conceptualPageType
 
 # Enroll in update management by the Windows Update for Business deployment service
 
-When a device is enrolled in update management by the Windows Update for Business deployment service, you can use the deployment service to manage content delivered from Windows Update to that device. You can enroll a device in update management by update category. Today, the deployment service supports enrollment in management of Windows 10 feature updates. At this time, the deployment service does not require enrollment in management of Windows 10 quality updates in order to deploy expedited quality updates.
+When a device is enrolled in update management by the Windows Update for Business deployment service, you can use the deployment service to manage content delivered from Windows Update to that device. You can enroll a device in update management by update category.
 
-## Step 1: (Optional) Register the device with the deployment service
+Today, the deployment service supports enrollment in management of Windows 10 feature updates. At this time, the deployment service does not require enrollment in management of Windows 10 quality updates in order to deploy expedited quality updates.
 
-Devices must be registered with the service in order to be managed by the service and receive deployed updates.
+## Enroll the device in update management
 
-Devices are automatically registered when enrolled in management by the service, but they can also be registered directly.
-
-### Request
-
-``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-  "id": "983f03cd-03cd-983f-cd03-3f98cd033f98"
-}
-```
-
-### Response
-
-``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
-  "id": "983f03cd-03cd-983f-cd03-3f98cd033f98",
-  "errors": [],
-  "enrollments": []
-}
-```
-
-## Step 2: Enroll the device in update management
-
-When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, device will not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a deployment.
+When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, device will not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a deployment. Devices are automatically registered with the service when enrolled in management by the service.
 
 ### Request
 
@@ -105,7 +75,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-You can unregister a device from the service by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences.
+You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences.
 
 ### Request
 
