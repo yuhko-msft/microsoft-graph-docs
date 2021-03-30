@@ -13495,8 +13495,6 @@ items:
         - name: Azure AD device
           href: resources/windowsupdates-azureaddevice.md
           items:
-          - name: Create Azure AD device
-            href: api/windowsupdates-azureaddevice-create.md
           - name: Get Azure AD device
             href: api/windowsupdates-azureaddevice-get.md
           - name: List Azure AD devices

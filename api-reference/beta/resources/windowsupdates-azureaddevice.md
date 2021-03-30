@@ -22,7 +22,6 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List azureADDevices](../api/windowsupdates-azureaddevice-list.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
-|[Create azureADDevice](../api/windowsupdates-azureaddevice-create.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Create a new [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Get azureADDevice](../api/windowsupdates-azureaddevice-get.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Read the properties and relationships of an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Delete azureADDevice](../api/windowsupdates-azureaddevice-delete.md)|None|Deletes an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
 |[Enroll azureADDevice in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll the [azureADDevice](../resources/windowsupdates-azureaddevice.md) in update management by the deployment service.|
