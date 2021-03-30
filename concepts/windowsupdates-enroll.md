@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Enroll in update management by the Windows Update for Business deployment service
 
-[supported update categories for enrollment]
+When a device is enrolled in update management by the Windows Update for Business deployment service, you can use the deployment service to manage content delivered from Windows Update to that device. You can enroll a device in update management by update category. Today, the deployment service supports enrollment in management of Windows 10 feature updates. At this time, the deployment service does not require enrollment in management of Windows 10 quality updates in order to deploy expedited quality updates.
 
 ## Step 1: (Optional) Register the device with the deployment service
 
