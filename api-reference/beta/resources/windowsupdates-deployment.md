@@ -23,7 +23,6 @@ Represents the deployment of content to a set of devices.
 |[Get deployment](../api/windowsupdates-deployment-get.md)|[deployment](../resources/windowsupdates-deployment.md)|Read the properties and relationships of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Update deployment](../api/windowsupdates-deployment-update.md)|[deployment](../resources/windowsupdates-deployment.md)|Update the properties of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Delete deployment](../api/windowsupdates-deployment-delete.md)|None|Deletes a [deployment](../resources/windowsupdates-deployment.md) object.|
-|[Get deployment audience](../api/windowsupdates-deploymentaudience-get.md)|[deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|Get the deploymentAudience resource from the audience navigation property.|
 |[List audience members](../api/windowsupdates-deploymentaudience-list-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List members of the deployment audience.|
 |[List audience exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions from the deployment audience.|
 |[Update audience members and exclusions](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|Add or remove members and exclusions of the deployment audience.|
