@@ -8,3 +8,5 @@ doc_type: conceptualPageType
 ---
 
 # Windows updates API overview
+
+## Prerequisites
