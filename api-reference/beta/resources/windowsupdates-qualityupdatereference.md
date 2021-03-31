@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents Windows 10 quality update content.
 
-In a deployment, the same qualityUpdateReference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
+In a deployment, the same quality update reference could result in devices receiving different update revisions, but the content is considered contextually equivalent for all devices in the deployment.
 
 
 Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).

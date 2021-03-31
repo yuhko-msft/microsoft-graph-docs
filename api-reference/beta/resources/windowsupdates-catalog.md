@@ -18,7 +18,7 @@ Represents the catalog of content that can be approved for deployment.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List entries](../api/windowsupdates-catalog-list-entries.md)|[catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the catalogEntry resources from the entries navigation property.|
+|[List entries](../api/windowsupdates-catalog-list-entries.md)|[catalogEntry](../resources/windowsupdates-catalogentry.md) collection|Get the catalog entry resources from the entries navigation property. Returns catalog entry resources of the following derived types: [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md), [qualityUpdateCatalogEntry](../resources/windowsupdates-qualityupdatecatalogentry.md).|
 
 ## Properties
 |Property|Type|Description|
