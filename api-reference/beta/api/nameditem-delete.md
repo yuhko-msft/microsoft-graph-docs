@@ -1,5 +1,5 @@
 ---
-title: "Delete NamedItem"
+title: "Delete namedItem"
 description: "Delete the specified named item in a workbook."
 author: "isvargasmsft"
 localization_priority: Normal
@@ -31,13 +31,12 @@ DELETE /me/drive/items/{id}/workbook/names/{name}
 DELETE /me/drive/root:/{item-path}:/workbook/names/{name}
 DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/names/{name}
 DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/{name}
-
 ```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
 
 ## Request body
 Do not supply a request body for this method.
@@ -53,8 +52,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/me/drive/items/{itemID}/workbook/names/{name}
-
 ```
+
 ##### Response
 Here is an example of the response. 
 <!-- {
