@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
 description: "The SharingLink resource groups link-related data items into a single structure."
-ms.prod: ""
+ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
