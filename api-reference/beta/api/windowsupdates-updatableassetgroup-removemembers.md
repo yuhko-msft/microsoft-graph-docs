@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Remove members from an updatable asset group.
 
-You can also use the method [removeMembersById](windowsupdates-updatableassetgroup-removemembersbyid).
+You can also use the method [removeMembersById](windowsupdates-updatableassetgroup-removemembersbyid.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

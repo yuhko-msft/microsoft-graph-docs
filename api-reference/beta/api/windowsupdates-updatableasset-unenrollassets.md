@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Unenroll updatable assets from update management by the deployment service.
 
-You can also use the method [unenrollAssetsById](windowsupdates-updatableasset-unenrollassetsbyid).
+You can also use the method [unenrollAssetsById](windowsupdates-updatableasset-unenrollassetsbyid.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

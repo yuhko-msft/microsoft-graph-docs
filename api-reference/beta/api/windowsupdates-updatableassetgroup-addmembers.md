@@ -18,7 +18,7 @@ An [azureADDevice](../resources/windowsupdates-azureaddevice.md) can be added as
 
 Adding an Azure AD device as a member of an updatable asset group automatically creates an Azure AD device object if it does not already exist.
 
-You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid).
+You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
