@@ -19,8 +19,6 @@ Deploying an expedited Windows 10 update allows the update to be installed as qu
 
 Today, the deployment service supports expedited deployments of Windows 10 quality updates. Deploying an expedited quality update helps achieve compliance against a specific security update, as specified by date. (See also: [Deploy an update](windowsupdates-deploy-update.md))
 
-When you deploy an expedited quality update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard.
-
 ## Prerequisites
 
 * [deployment service prerequisites]
@@ -83,9 +81,9 @@ Content-Type: application/json
 
 A deployment specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
 
-You can configure the reboot grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The reboot grace period sets the amount of time after installation that the user can control the timing of the reboot. If the device has not rebooted when the grace period expires, it reboots automatically.
+When you deploy an expedited quality update to a device, Windows Update will offer an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices will meet the specified security update compliance standard. This behavior of offering the latest available, indicated by the property `equivalentContent` being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
 
-Expediting the latest available update (`equivalentContent` set to the default `latestSecurity`) helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.
+You can configure the reboot grace period using the property `daysUntilForcedReboot` in the deployment's user experience settings. The reboot grace period sets the amount of time after installation that the user can control the timing of the reboot. If the device has not rebooted when the grace period expires, it reboots automatically.
 
 Below is an example of creating a deployment for an expedited quality update. The targeted devices will be specified in the next step.
 
