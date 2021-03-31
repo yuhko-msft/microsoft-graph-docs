@@ -84,8 +84,7 @@ Content-Length: 430
     },
     "languageId": "languageId-value",
     "region": "region-value"
-  },
-  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -251,7 +250,8 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer-2"
+  "@odata.type": "call-transfer",
+  "name": "call-transfer-2"
 }-->
 
 ```http
@@ -424,7 +424,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call-transfer"
+  "name": "call-transfer-3"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/transfer
@@ -596,7 +596,8 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "@odata.type": "call-transfer"
+  "@odata.type": "call-transfer",
+  "name": "call-transfer-4"
 }-->
 
 ```http
