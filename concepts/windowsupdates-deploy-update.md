@@ -43,18 +43,18 @@ Content-Type: application/json
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
             "id": "560a186a-1434-4364-8330-deb944b494ff",
-            "displayName": "Windows 10, version foo",
+            "displayName": "Windows 10, version 20H2",
             "releaseDate": "String (timestamp)",
             "deployableUntilDateTime": "String (timestamp)",
-            "version": "foo"
+            "version": "20H2"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
             "id": "5e436dae-56bd-4925-bf8b-acf550e07227",
-            "displayName": "Windows 10, version bar",
+            "displayName": "Windows 10, version 2004",
             "releaseDate": "String (timestamp)",
             "deployableUntilDateTime": "String (timestamp)",
-            "version": "bar"
+            "version": "2004"
         }
     ]
 }
@@ -76,7 +76,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
@@ -121,7 +121,7 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",

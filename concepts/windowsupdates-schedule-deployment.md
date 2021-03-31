@@ -27,7 +27,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
@@ -61,7 +61,7 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
@@ -97,7 +97,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
@@ -133,7 +133,7 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
@@ -165,7 +165,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
@@ -201,7 +201,7 @@ Content-Type: application/json
     },
     "content": {
         "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "foo"
+        "version": "20H2"
     },
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",

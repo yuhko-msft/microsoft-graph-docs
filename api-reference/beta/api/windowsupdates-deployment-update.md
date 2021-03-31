@@ -106,7 +106,7 @@ Content-Type: application/json
   },
   "content": {
     "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-    "version": "foo"
+    "version": "20H2"
   },
   "settings": null,
   "createdDateTime": "String (timestamp)",
@@ -172,7 +172,7 @@ Content-Type: application/json
   },
   "content": {
     "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-    "version": "foo"
+    "version": "20H2"
   },
   "settings": {
     "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
