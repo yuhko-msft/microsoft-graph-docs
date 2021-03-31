@@ -35,7 +35,7 @@ Using the link facet involves creating a [sharingLink](/graph/api/resources/shar
 (*) denotes support for a **driveItem** in OneDrive for Business or SharePoint only.
  
 The following properties of **permission** are set specifically for the link facet:
-- The **link** property containing a **sharingLink** resource, detailing the type and scope of access, the URL to open the shared item on the OneDrive site, and other sharing information.
+- The **link** property containing a **sharingLink** resource, detailing the [type](/graph/api/resources/sharinglink#type-options) and [scope](/graph/api/resources/sharinglink#scope-options) of access, the URL to open the shared item on the OneDrive site, and other sharing information.
 - The **shareId** property containing a unique token to [get](/graph/api/shares-get) the [shared item](/graph/api/resources/shareddriveitem).
 - The **expirationDateTime** property that can be set if the **sharingLink** is for anyone. 
 
@@ -57,9 +57,9 @@ Here are some examples of **permission** resources that include a **sharingLink*
 - [Link with existing access](#link-with-existing-access)
 - [Link for specific people](#link-for-specific-people)
 
-These examples show creating permissions that contain sharing links: 
-- [Create company sharable links](/graph/api/driveitem-createlink#creating-company-sharable-links)
-- [Create embeddable links](/graph/api/driveitem-createlink#creating-embeddable-links)
+These examples show creating permissions that contain a **sharingLink**: 
+- [Create company sharable links](#create-company-sharable-links)
+- [Create embeddable links](#create-embeddable-links)
 
 
 #### Link for read access
@@ -153,6 +153,96 @@ The following permission specifies a link that provides read and write access to
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
   "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
+#### Create company sharable links
+
+OneDrive for Business and SharePoint support company sharable links.
+These are similar to anonymous links, except they work for only members of the owning organization.
+To create a company sharable link, use the **scope** parameter with a value of `organization`.
+
+##### Request
+
+
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+
+```http
+POST /me/drive/items/{item-id}/createLink
+Content-Type: application/json
+
+{
+  "type": "edit",
+  "scope": "organization"
+}
+```
+
+
+
+##### Response
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "123ABC",
+  "roles": ["write"],
+  "link": {
+    "type": "edit",
+    "scope": "organization",
+    "webUrl": "https://contoso-my.sharepoint.com/personal/ellen_contoso_com/...",
+    "application": {
+      "id": "1234",
+      "displayName": "Sample Application"
+    },
+  }
+}
+```
+
+#### Create embeddable links
+
+When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
+When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
+
+**Note:** Embed links are only supported for OneDrive personal.
+
+##### Request
+
+
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+
+```http
+POST /me/drive/items/{item-id}/createLink
+Content-Type: application/json
+
+{
+  "type": "embed"
+}
+```
+
+##### Response
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "123ABC",
+  "roles": ["read"],
+  "link": {
+    "type": "embed",
+    "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
+    "webUrl": "https://onedive.live.com/...",
+    "application": {
+      "id": "1234",
+      "displayName": "Sample Application"
+    },
+  }
 }
 ```
 

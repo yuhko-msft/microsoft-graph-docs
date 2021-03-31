@@ -50,7 +50,7 @@ Here is a JSON representation of the resource.
 
 [Identity]: identity.md
 
-## Type options
+### Type options
 
 This table defines the possible values for the **type** property:
 
@@ -60,7 +60,7 @@ This table defines the possible values for the **type** property:
 | `edit`  | `write` | An edit sharing link, allowing read-write access.
 | `embed` | `read`  | A view-only sharing link that can be used to embed content into a host webpage. Embed links are not available for OneDrive for Business or SharePoint.
 
-## Scope options
+### Scope options
 
 | Value          | Description
 |:---------------|:------------------------------------------------------------
