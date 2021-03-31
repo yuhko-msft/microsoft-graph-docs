@@ -21,6 +21,7 @@ The set of assets to which a deployment can apply.
 |[List members](../api/windowsupdates-deploymentaudience-list-members.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List members of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
 |[List exclusions](../api/windowsupdates-deploymentaudience-list-exclusions.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List exclusions of the [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).|
 |[Update members and exclusions](../api/windowsupdates-deploymentaudience-updateaudience.md)|None|Add or remove members and exclusions.|
+|[Update members and exclusions (by ID)](../api/windowsupdates-deploymentaudience-updateaudiencebyid.md)|None|Add or remove members and exclusions of the same type.|
 
 ## Properties
 |Property|Type|Description|

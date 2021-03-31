@@ -12,11 +12,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enroll an updatable asset in update management by the deployment service.
+Enroll updatable assets in update management by the deployment service.
 
 An [azureADDevice](../resources/windowsupdates-azureaddevice.md) can be enrolled in update management; an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) cannot be enrolled in update management.
 
 Enrolling an Azure AD device in update management automatically creates an Azure AD device object if it does not already exist.
+
+You can also use the method [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -96,87 +98,3 @@ Content-length: 176
 HTTP/1.1 202 Accepted
 ```
 
-<!-- # updatableAsset: enrollAssetsById
-Namespace: microsoft.graph.windowsUpdates
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-**TODO: Add Description**
-
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
-
-## HTTP request -->
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-<!-- ``` http
-POST /admin/windows/updates/updatableAssets/enrollAssetsById
-```
-
-## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
-
-## Request body
-In the request body, supply JSON representation of the parameters.
-
-The following table shows the parameters that can be used with this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|updateCategory|updateCategory|**TODO: Add Description**|
-|memberEntityType|String|**TODO: Add Description**|
-|ids|String collection|**TODO: Add Description**|
-
-
-
-## Response
-
-If successful, this action returns a `202 Accepted` response code.
-
-## Examples
-
-### Request -->
-<!-- {
-  "blockType": "request",
-  "name": "updatableasset_enrollassetsbyid"
-}
--->
-<!-- ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssetsById
-
-Content-Type: application/json
-Content-length: 99
-
-{
-  "updateCategory": "String",
-  "memberEntityType": "String",
-  "ids": [
-    "String"
-  ]
-}
-```
-
-
-### Response
-**Note:** The response object shown here might be shortened for readability. -->
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-<!-- ``` http
-HTTP/1.1 202 Accepted
-```
- -->

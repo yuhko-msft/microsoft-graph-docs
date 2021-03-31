@@ -1,22 +1,20 @@
 ---
-title: "deploymentAudience: updateAudience"
-description: "Update the members and exclusions collections of a deployment audience."
+title: "deploymentAudience: updateAudienceById"
+description: "Update the members and exclusions collections of a deployment audience with updatable assets of the same type."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
-# deploymentAudience: updateAudience
+# deploymentAudience: updateAudienceById
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the members and exclusions collections of a deployment audience.
+Update the members and exclusions collections of a deployment audience with updatable assets of the same type.
 
 Adding an [azureADdevice](../resources/windowsupdates-azureaddevice.md) to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object if it does not already exist.
-
-If all assets are the same type, you can also use the method [updateAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
+POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 ```
 
 ## Request headers
@@ -50,10 +48,11 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|addMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as members of the deployment audience.|
-|removeMembers|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as members of the deployment audience.|
-|addExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to add as exclusions from the deployment audience.|
-|removeExclusions|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as exclusions from the deployment audience.|
+|memberEntityType|String|The full type of the updatable assets. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`, `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
+|addMembers|String collection|List of identifiers corresponding to the updatable assets to add as members of the deployment audience.|
+|removeMembers|String collection|List of identifiers corresponding to the updatable assets to remove as members of the deployment audience.|
+|addExclusions|String collection|List of identifiers corresponding to the updatable assets to add as exclusions from the deployment audience.|
+|removeExclusions|String collection|List of identifiers corresponding to the updatable assets to remove as exclusions from the deployment audience.|
 
 
 
@@ -66,39 +65,28 @@ If successful, this action returns a `202 Accepted` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "deploymentaudience_updateaudience"
+  "name": "deploymentaudience_updateaudiencebyid"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
+POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 
 Content-Type: application/json
-Content-length: 599
+Content-length: 204
 
 {
+  "memberEntityType": "String",
   "addMembers": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
-      "id": "String (identifier)"
-    }
+    "String"
   ],
   "removeMembers": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
-      "id": "String (identifier)"
-    }
+    "String"
   ],
   "addExclusions": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
-      "id": "String (identifier)"
-    }
+    "String"
   ],
   "removeExclusions": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
-      "id": "String (identifier)"
-    }
+    "String"
   ]
 }
 ```

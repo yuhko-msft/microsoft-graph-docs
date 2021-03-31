@@ -1,20 +1,18 @@
 ---
-title: "updatableAssetGroup: removeMembers"
-description: "Remove members from an updatable asset group."
+title: "updatableAsset: enrollAssetsById"
+description: "Enroll updatable assets of the same type in update management by the deployment service."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
 doc_type: apiPageType
 ---
 
-# updatableAssetGroup: removeMembers
+# updatableAsset: enrollAssetsById
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove members from an updatable asset group.
-
-You can also use the method [removeMembersById](windowsupdates-updatableassetgroup-removemembersbyid).
+Enroll updatable assets of the same type in update management by the deployment service.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/{updatableAssetGroupId}/removeMembers
+POST /admin/windows/updates/updatableAssets/enrollAssetsById
 ```
 
 ## Request headers
@@ -48,7 +46,9 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assets|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of updatable assets to remove as members of the updatable asset group.|
+|updateCategory|updateCategory|The category of updates for the service to manage. Possible values are: `feature`.|
+|memberEntityType|String|The full type of the updatable assets. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
+|ids|String collection|List of identifiers corresponding to the updatable assets to enroll in update management by the service for the given `updateCategory`.|
 
 
 
@@ -61,21 +61,21 @@ If successful, this action returns a `202 Accepted` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "updatableassetgroup_removemembers"
+  "name": "updatableasset_enrollassetsbyid"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/{updatableAssetGroupId}/removeMembers
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssetsById
 
 Content-Type: application/json
-Content-length: 145
 
 {
-  "assets": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
-      "id": "String (identifier)"
-    }
+  "updateCategory": "feature",
+  "memberEntityType": "#microsoft.graph.windowsUpdates.azureADDevice",
+  "ids": [
+    "String",
+    "String",
+    "String"
   ]
 }
 ```
