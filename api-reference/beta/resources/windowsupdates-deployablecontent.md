@@ -15,8 +15,6 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents content that is deployable by the service.
 
-See also: [softwareUpdateReference](windowsupdates-softwareupdatereference.md)
-
 ## Properties
 None.
 

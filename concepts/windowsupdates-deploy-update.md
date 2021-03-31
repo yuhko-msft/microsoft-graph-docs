@@ -131,7 +131,16 @@ Content-Type: application/json
             "startDateTime": null,
             "endDateTime": null
         },
-        "monitoring": null,
+        "monitoring": {
+            "monitoringRules": [
+                {
+                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
+                    "signal": "rollback",
+                    "threshold": 5,
+                    "action": "pauseDeployment"
+                }
+            ]
+        },
         "userExperience": null
     },
     "createdDateTime": "String (timestamp)",

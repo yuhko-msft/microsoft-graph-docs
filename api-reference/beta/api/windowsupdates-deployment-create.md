@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|[deployableContent](../resources/windowsupdates-deployablecontent.md)|**TODO: Add Description**|
+|content|[deployableContent](../resources/windowsupdates-deployablecontent.md)|Specifies what content to deploy. Deployable content should be provided as one of the following derived types: [expeditedQualityUpdateReference](../resources/windowsupdates-expeditedqualityupdatereference.md) , [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md)|
 
 
 
@@ -77,6 +77,16 @@ Content-length: 344
     "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
     "rollout": {
       "devicesPerOffer": 100
+    },
+    "monitoring": {
+      "monitoringRules": [
+        {
+          "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
+          "signal": "rollback",
+          "threshold": 5,
+          "action": "pauseDeployment"
+        }
+      ]
     }
   }
 }
@@ -122,7 +132,17 @@ Content-Type: application/json
       "startDateTime": null,
       "endDateTime": null
     },
-    "monitoring": null,
+    ,
+    "monitoring": {
+      "monitoringRules": [
+        {
+          "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
+          "signal": "rollback",
+          "threshold": 5,
+          "action": "pauseDeployment"
+        }
+      ]
+    },
     "userExperience": null
   },
   "createdDateTime": "String (timestamp)",
