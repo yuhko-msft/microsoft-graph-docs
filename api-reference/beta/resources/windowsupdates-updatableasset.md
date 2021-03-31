@@ -23,7 +23,7 @@ All updatable assets exist as one of the following derived types: [azureADDevice
 |[List updatableAssets](../api/windowsupdates-updatableasset-list.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.|
 |[Create updatableAssetGroup](../api/windowsupdates-updatableassetgroup-create.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Get updatableAsset](../api/windowsupdates-updatableasset-get.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
-|[Delete updatableAsset](../api/windowsupdates-updatableasset-delete.md)|None|Deletes an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
+|[Delete updatableAsset](../api/windowsupdates-updatableasset-delete.md)|None|Delete an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Enroll asset in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll the asset in update management by the deployment service.|
 |[Unenroll asset from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Enroll the asset from update management by the deployment service.|
 |[Add members to group](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an updatable asset group.|

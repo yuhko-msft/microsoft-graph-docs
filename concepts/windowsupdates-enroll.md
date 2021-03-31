@@ -1,6 +1,6 @@
 ---
 title: "Enroll in update management by the Windows Update for Business deployment service"
-description: "**TODO: Add Description**"
+description: "When a device is enrolled in update management by the Windows Update for Business deployment service, you can use the deployment service to manage content delivered from Windows Update to that device."
 author: "Alice-at-Microsoft"
 localization_priority: Normal
 ms.prod: "w10"
