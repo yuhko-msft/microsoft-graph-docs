@@ -16,6 +16,8 @@ Add members to an updatable asset group.
 
 An [azureADDevice](../resources/windowsupdates-azureaddevice.md) can be added as a member; an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) cannot be added as a member.
 
+Adding a [azureADdevice](../resources/windowsupdates-azureaddevice.md) as a member of an updatable asset group automatically creates an Azure AD device object if it does not already exist.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
