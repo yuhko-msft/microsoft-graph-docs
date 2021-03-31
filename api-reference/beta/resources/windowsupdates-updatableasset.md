@@ -15,15 +15,20 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents an asset that can receive updates.
 
-<!-- ## Methods
+All updatable assets exist as one of the following derived types: [azureADDevice](../resources/windowsupdates-azureaddevice.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
+
+## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List updatableAssets](../api/windowsupdates-updatableasset-list.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Get a list of the [updatableAsset](../resources/updatableasset.md) objects and their properties.|
-|[Create updatableAsset](../api/windowsupdates-updatableasset-create.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Create a new [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
+|[Create azureADDevice](../api/windowsupdates-azureaddevice-create.md)|[azureADDevice](../resources/windowsupdates-azureaddevice.md)|Create a new [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.|
+|[Create updatableAssetGroup](../api/windowsupdates-updatableassetgroup-create.md)|[updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md)|Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.|
 |[Get updatableAsset](../api/windowsupdates-updatableasset-get.md)|[updatableAsset](../resources/windowsupdates-updatableasset.md)|Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Delete updatableAsset](../api/windowsupdates-updatableasset-delete.md)|None|Deletes an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.|
 |[Enroll asset in management](../api/windowsupdates-updatableasset-enrollassets.md)|None|Enroll the asset in update management by the deployment service.|
-|[Unenroll asset from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Enroll the asset from update management by the deployment service.| -->
+|[Unenroll asset from management](../api/windowsupdates-updatableasset-unenrollassets.md)|None|Enroll the asset from update management by the deployment service.|
+|[Add members to group](../api/windowsupdates-updatableassetgroup-addmembers.md)|None|Add members to an updatable asset group.|
+|[Remove members from group](../api/windowsupdates-updatableassetgroup-removemembers.md)|None|Remove members from an updatable asset group.|
 
 ## Properties
 |Property|Type|Description|
