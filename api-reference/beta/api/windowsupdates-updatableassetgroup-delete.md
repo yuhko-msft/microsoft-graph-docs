@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -68,6 +68,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{u
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 

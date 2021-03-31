@@ -189,7 +189,7 @@ Content-type: application/json
 ### Response
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 ## During a deployment

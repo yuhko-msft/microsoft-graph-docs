@@ -45,7 +45,7 @@ Content-Type: application/json
 ### Response
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 ## Unenroll from management by the service or unregister from the service 
@@ -72,7 +72,7 @@ Content-Type: application/json
 ### Response
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences.
@@ -85,6 +85,6 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{a
 
 ### Response
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 

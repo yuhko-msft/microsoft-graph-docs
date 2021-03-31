@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -89,7 +89,7 @@ Content-length: 176
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 <!-- # updatableAsset: unenrollAssetsById
@@ -139,7 +139,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -173,6 +173,6 @@ Content-length: 99
 }
 -->
 <!-- ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ``` -->
 

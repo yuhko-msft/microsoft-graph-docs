@@ -52,7 +52,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [deployment](../resources/windowsupdates-deployment.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and an updated [deployment](../resources/windowsupdates-deployment.md) object in the response body.
 
 ## Examples
 
@@ -67,7 +67,6 @@ In this example, the deployment is paused by updating the `requestedValue` of th
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 Content-Type: application/json
-Content-length: 344
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
@@ -87,7 +86,7 @@ Content-length: 344
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
@@ -125,7 +124,6 @@ In this example, the deployment's `settings` are updated to add a monitoring rul
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 Content-Type: application/json
-Content-length: 344
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
@@ -153,7 +151,7 @@ Content-length: 344
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
