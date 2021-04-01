@@ -3,7 +3,7 @@ title: "Get unifiedRbacResourceNamespace"
 description: "Retrieve the properties and relationships of a unifiedRbacResourceNamespace object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -36,6 +36,17 @@ GET /roleManagement/directory/resourceNamespaces/{id}
 ## Optional query parameters
 
 This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Pattern          | Supported | Syntax | Notes            |
+| ---------------- | :-------: | ------ | ---------------- |
+| $top, $skiptoken |     ✓     |        |                  |
+| $select          |     ✓     |        |                  |
+| $filter          |     ✓     |        | Supports: `name` |
+| $expand          |     ✓     |        |                  |
+| $count           |     ✓     |        |                  |
+| $orderby         |     X     |        |                  |
+| $search          |     X     |        |                  |
+| $skip            |     X     |        |                  |
 
 ## Request headers
 
