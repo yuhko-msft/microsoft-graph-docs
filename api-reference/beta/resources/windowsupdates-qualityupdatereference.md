@@ -24,7 +24,7 @@ Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdate
 |Property|Type|Description|
 |:---|:---|:---|
 |classification|qualityUpdateClassification|Specifies the classification of the referenced content. Possible values are: `all`, `security`, `nonSecurity`.|
-|releaseDate|DateTimeOffset|Specifies a quality update in the given servicingChannel with the given classification by date (i.e. the last update published on the specified date). Default value is security.|
+|releaseDateTime|DateTimeOffset|Specifies a quality update in the given servicingChannel with the given classification by date (i.e. the last update published on the specified date). Default value is security.|
 
 ## Relationships
 None.
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateReference",
   "classification": "String",
-  "releaseDate": "String (timestamp)"
+  "releaseDateTime": "String (timestamp)"
 }
 ```
 
