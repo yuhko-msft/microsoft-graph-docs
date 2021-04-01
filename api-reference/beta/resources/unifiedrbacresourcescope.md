@@ -3,7 +3,7 @@ title: "unifiedRbacResourceScope resource type"
 description: "A unifiedRbacResourceScope describes the scope of the resource exposed in the workload where unifiedRbacResourceAction can perform on."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -22,9 +22,9 @@ None
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Id of an app-specific container or resource representing the scope of the assignment. Usually the immutable id of the resource. The scope of an assignment determines the set of resources for which the principal has been granted access. Required. |
+|id|String| The identifier of an app-specific container or resource that represents the scope of the assignment. Usually the immutable id of the resource. The scope of an assignment determines the set of resources for which the principal has been granted access. Required. |
 |displayName|String| Read-only property providing the display name of the app-specific resource represented by the app scope. Provided for display purposes since resourceScopeId is often an immutable, non-human-readable id. Read-only. |
-|type|String| Read-only property describing the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only |
+|type|String| Read-only property that describes the type of app-specific resource represented by the app scope. Provided for display purposes, so that a user interface can convey to the user the kind of app-specific resource represented by the app scope. Read-only |
 
 ## Relationships
 
