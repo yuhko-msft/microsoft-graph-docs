@@ -3,7 +3,7 @@ title: "Get unifiedRbacResourceAction"
 description: "Retrieve the properties and relationships of a unifiedRbacResourceAction object."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-directory-management"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
