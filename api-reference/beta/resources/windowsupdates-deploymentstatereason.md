@@ -18,7 +18,6 @@ A reason for a particular deployment state.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Describes the reason in more detail. Read-only.|
 |value|deploymentStateReasonValue|Specifies a reason for the deployment state. Read-only. Possible values are: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`.|
 
 ## Relationships
@@ -34,8 +33,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.deploymentStateReason",
-  "value": "String",
-  "description": "String"
+  "value": "String"
 }
 ```
 

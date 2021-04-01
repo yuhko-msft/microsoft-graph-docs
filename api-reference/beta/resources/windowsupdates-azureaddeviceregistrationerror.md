@@ -21,7 +21,6 @@ Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseter
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A description of the error. Inherited from [updatableAssetError](../resources/windowsupdates-updatableasseterror.md)|
 |reason|azureADDeviceRegistrationErrorReason|The reason why the registration encountered an error. Possible values are: `invalidGlobalDeviceId`, `invalidAzureADDeviceId`, `missingTrustType`, `invalidAzureADJoin`.|
 
 ## Relationships
@@ -37,7 +36,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.azureADDeviceRegistrationError",
-  "description": "String",
   "reason": "String"
 }
 ```

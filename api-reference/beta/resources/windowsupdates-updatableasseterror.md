@@ -15,10 +15,6 @@ Namespace: microsoft.graph.windowsUpdates
 
 An error that prevent the device from being enrolled in update management or receving deployed content.
 
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|description|String|A description of the error.|
 
 ## Relationships
 None.
@@ -32,8 +28,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetError",
-  "description": "String"
+  "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetError"
 }
 ```
 

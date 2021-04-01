@@ -23,7 +23,7 @@ Inherits from [windowsUpdateReference](../resources/windowsupdates-windowsupdate
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classification|qualityUpdateClassification|Specifies the classification of the referenced content. Possible values are: `all`, `security`, `nonSecurity`.|
+|classification|qualityUpdateClassification|Specifies the classification of the referenced content. Possible values are: `security`.|
 |releaseDateTime|DateTimeOffset|Specifies a quality update in the given servicingChannel with the given classification by date (i.e. the last update published on the specified date). Default value is security.|
 
 ## Relationships
