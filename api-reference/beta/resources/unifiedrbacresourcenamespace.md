@@ -3,7 +3,7 @@ title: "unifiedRbacResourceNamespace resource type"
 description: "A unified resource namespace is a collection of namespaces for an RBAC application."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -28,7 +28,7 @@ A unifiedRbacResourceNamespace is a collection of unifiedRbacResourceAction for 
 |:-------------|:------------|:------------|
 |id|String| Id of the resource namespace. Required. |
 |name|String| Display name for the resource namespace. Required.|
-|resourceActions|Collection([unifiedRbacResourceAction](unifiedrbacresourceaction.md))| Collection of resource actions in the namespace. |
+|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection| A collection of resource actions in the namespace. |
 
 ## Relationships
 
