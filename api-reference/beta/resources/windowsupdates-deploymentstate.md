@@ -22,8 +22,6 @@ Describes and controls the current state of a deployment.
 |requestedValue|requestedDeploymentStateValue|Specifies the requested state of the deployment. Possible values are: `none`, `paused`.|
 |value|deploymentStateValue|Specifies the state of the deployment. Read-only. Possible values are: `scheduled`, `offering`, `paused`.|
 
-<!-- |effectiveSinceDateTime|DateTimeOffset|Date on which the current state became effective. Read-only.| -->
-
 ## Relationships
 None.
 
@@ -44,7 +42,6 @@ The following is a JSON representation of the resource.
     }
   ],
   "requestedValue": "String",
-  "effectiveSinceDate": "String (timestamp)"
 }
 ```
 
