@@ -97,45 +97,44 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.directory')/resourceActions",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/roleManagement/directory/resourcenamespaces/microsoft.directory/resourceactions?$skiptoken=X%276D6963726F736F66742E6469726563746F72792D63726F737354656E616E74416363657373506F6C69636965732D74656E616E7444656661756C742D7570646174652D70617463684800000001000000%27",
-    "value": [
-        {
-            "actionVerb": "GET",
-            "description": "Read members of administrative units",
-            "id": "microsoft.directory-administrativeUnits-members-read-get",
-            "name": "microsoft.directory/administrativeUnits/members/read",
-            "resourceScopeId": null
-        },
-        {
-            "actionVerb": "GET",
-            "description": "Read all properties (including privileged properties) on application policies",
-            "id": "microsoft.directory-applicationPolicies-allProperties-read-get",
-            "name": "microsoft.directory/applicationPolicies/allProperties/read",
-            "resourceScopeId": null
-        },
-        {
-            "actionVerb": "PATCH",
-            "description": "Update all properties (including privileged properties) on application policies",
-            "id": "microsoft.directory-applicationPolicies-allProperties-update-patch",
-            "name": "microsoft.directory/applicationPolicies/allProperties/update",
-            "resourceScopeId": null
-        },
-        {
-            "actionVerb": "POST",
-            "description": "Create application policies, and creator is added as the first owner",
-            "id": "microsoft.directory-applicationPolicies-createAsOwner-post",
-            "name": "microsoft.directory/applicationPolicies/createAsOwner",
-            "resourceScopeId": null
-        },
-        {
-            "actionVerb": "DELETE",
-            "description": "Delete application policies",
-            "id": "microsoft.directory-applicationPolicies-delete-delete",
-            "name": "microsoft.directory/applicationPolicies/delete",
-            "resourceScopeId": null
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.directory')/resourceActions",
+  "value": [
+      {
+          "actionVerb": "GET",
+          "description": "Read members of administrative units",
+          "id": "microsoft.directory-administrativeUnits-members-read-get",
+          "name": "microsoft.directory/administrativeUnits/members/read",
+          "resourceScopeId": null
+      },
+      {
+          "actionVerb": "GET",
+          "description": "Read all properties (including privileged properties) on application policies",
+          "id": "microsoft.directory-applicationPolicies-allProperties-read-get",
+          "name": "microsoft.directory/applicationPolicies/allProperties/read",
+          "resourceScopeId": null
+      },
+      {
+          "actionVerb": "PATCH",
+          "description": "Update all properties (including privileged properties) on application policies",
+          "id": "microsoft.directory-applicationPolicies-allProperties-update-patch",
+          "name": "microsoft.directory/applicationPolicies/allProperties/update",
+          "resourceScopeId": null
+      },
+      {
+          "actionVerb": "POST",
+          "description": "Create application policies, and creator is added as the first owner",
+          "id": "microsoft.directory-applicationPolicies-createAsOwner-post",
+          "name": "microsoft.directory/applicationPolicies/createAsOwner",
+          "resourceScopeId": null
+      },
+      {
+          "actionVerb": "DELETE",
+          "description": "Delete application policies",
+          "id": "microsoft.directory-applicationPolicies-delete-delete",
+          "name": "microsoft.directory/applicationPolicies/delete",
+          "resourceScopeId": null
+      }
+  ]
 }
 
 ```
