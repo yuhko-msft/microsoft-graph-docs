@@ -654,9 +654,14 @@ Namespace: microsoft.graph
 |none
 |shift
 |swapRequest
+|userShiftPreferences
 |openShift
 |openShiftRequest
-|userShiftPreferences
+|offerShiftRequest
+|timeCard
+|timeOffReason
+|timeOff
+|timeOffRequest
 
 ### timeCardState values
 
