@@ -3,7 +3,7 @@ title: "List unifiedRbacResourceAction"
 description: "Get a list of unifiedRbacResourceAction objects."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-directory-management"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
