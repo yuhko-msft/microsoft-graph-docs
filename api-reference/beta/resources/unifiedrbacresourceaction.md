@@ -3,7 +3,7 @@ title: "unifiedRbacResourceAction resource type"
 description: "A unifiedRbacResourceAction defines the action and it's properties related to application specific permissions"
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -26,12 +26,12 @@ A unifiedRbacResourceAction defines the action and it's properties related to ap
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Id of the action. Required. |
+|id|String| The identifier of the action. Required. |
 |name|String| Display name of the action. This will be used when creating custom role. Required. |
 |description|String| Description of the action. |
-|actionVerb|String| Action verb for the operation. |
-|resourceScopeId|String| Action applicable resource id. |
-|resourceScope|[UnifiedRbacResourceScope](unifiedrbacresourcescope.md)| Action applicable resource reference. Read-only. |
+|actionVerb|String| Action verb for the operation. It can have these values - GET, POST, PATCH, DELETE or null. |
+|resourceScopeId|String| Resource type the permission is applicable on. |
+|resourceScope|[UnifiedRbacResourceScope](unifiedrbacresourcescope.md)| Property referncing the resource type on which the action is applicable. Read-only. |
 
 ## Relationships
 
