@@ -351,40 +351,40 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "addMembers",
                     "ChangeType": "Addition",
-                    "Description": "Added the [addMembers](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAssetGroup-addMembers?view=graph-rest-beta) method to the [updatableAssetGroup](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetGroup?view=graph-rest-beta) resource.",
-                    "Target": "updatableAssetGroup"
+                    "Description": "Added the [addMembers](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-addMembers?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Target": "updatableAsset"
                 },
                 {
                     "Id": "48000336-8dee-11eb-8507-815178c7c041",
                     "ApiChange": "Method",
                     "ChangedApiName": "addMembersById",
                     "ChangeType": "Addition",
-                    "Description": "Added the [addMembersById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAssetGroup-addMembersById?view=graph-rest-beta) method to the [updatableAssetGroup](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetGroup?view=graph-rest-beta) resource.",
-                    "Target": "updatableAssetGroup"
+                    "Description": "Added the [addMembersById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-addMembersById?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Target": "updatableAsset"
                 },
                 {
                     "Id": "480268b6-8dee-11eb-8507-815178c7c041",
                     "ApiChange": "Method",
                     "ChangedApiName": "removeMembers",
                     "ChangeType": "Addition",
-                    "Description": "Added the [removeMembers](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAssetGroup-removeMembers?view=graph-rest-beta) method to the [updatableAssetGroup](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetGroup?view=graph-rest-beta) resource.",
-                    "Target": "updatableAssetGroup"
+                    "Description": "Added the [removeMembers](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-removeMembers?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Target": "updatableAsset"
                 },
                 {
                     "Id": "4804ca3f-8dee-11eb-8507-815178c7c041",
                     "ApiChange": "Method",
                     "ChangedApiName": "removeMembersById",
                     "ChangeType": "Addition",
-                    "Description": "Added the [removeMembersById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableAssetGroup-removeMembersById?view=graph-rest-beta) method to the [updatableAssetGroup](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetGroup?view=graph-rest-beta) resource.",
-                    "Target": "updatableAssetGroup"
+                    "Description": "Added the [removeMembersById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-removeMembersById?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
+                    "Target": "updatableAsset"
                 }
             ],
             "Id": "477a23ce-8dee-11eb-8507-815178c7c041",
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-03-26T04:46:50.585Z",
-            "WorkloadArea": "Windows updates",
-            "SubArea": ""
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Operating system updates"
         }
     ]
 }
