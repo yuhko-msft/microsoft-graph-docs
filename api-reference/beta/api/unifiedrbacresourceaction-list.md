@@ -3,7 +3,7 @@ title: "List unifiedRbacResourceAction"
 description: "Get a list of unifiedRbacResourceAction objects."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "microsoft-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -36,6 +36,17 @@ GET /roleManagement/directory/resourceNamespaces/{namespace-id}/resourceActions
 ## Optional query parameters
 
 This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Pattern          | Supported | Syntax | Notes                                     |
+| ---------------- | :-------: | ------ | ----------------------------------------- |
+| $top, $skiptoken |     ✓     |        |                                           |
+| $select          |     ✓     |        |                                           |
+| $filter          |     ✓     |        | Supports: `actionVerb`, `resourceScopeId` |
+| $expand          |     ✓     |        | Supports: `resourceScope`                 |
+| $count           |     ✓     |        |                                           |
+| $orderby         |     X     |        |                                           |
+| $search          |     X     |        |                                           |
+| $skip            |     X     |        |                                           |
 
 ## Request headers
 
