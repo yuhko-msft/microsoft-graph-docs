@@ -3,7 +3,7 @@ title: "List unifiedRbacResourceNamespace"
 description: "Get a list of unifiedRbacResourceNamespace objects."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -36,6 +36,17 @@ GET /roleManagement/directory/resourceNamespaces
 ## Optional query parameters
 
 This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Pattern          | Supported | Syntax | Notes            |
+| ---------------- | :-------: | ------ | ---------------- |
+| $top, $skiptoken |     ✓     |        |                  |
+| $select          |     ✓     |        |                  |
+| $filter          |     ✓     |        | Supports: `name` |
+| $expand          |     ✓     |        |                  |
+| $count           |     ✓     |        |                  |
+| $orderby         |     X     |        |                  |
+| $search          |     X     |        |                  |
+| $skip            |     X     |        |                  |
 
 ## Request headers
 
@@ -87,21 +98,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces",
-    "value": [
-        {
-            "id": "microsoft.directory",
-            "name": "microsoft.directory"
-        },
-        {
-            "id": "microsoft.aad.identityProtection",
-            "name": "microsoft.aad.identityProtection"
-        },
-        {
-            "id": "microsoft.aad.privilegedIdentityManagement",
-            "name": "microsoft.aad.privilegedIdentityManagement"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces",
+  "value": [
+      {
+          "id": "microsoft.directory",
+          "name": "microsoft.directory"
+      },
+      {
+          "id": "microsoft.aad.identityProtection",
+          "name": "microsoft.aad.identityProtection"
+      },
+      {
+          "id": "microsoft.aad.privilegedIdentityManagement",
+          "name": "microsoft.aad.privilegedIdentityManagement"
+      }
+  ]
 }
 
 ```
