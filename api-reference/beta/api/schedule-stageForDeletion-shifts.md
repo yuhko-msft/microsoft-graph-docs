@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stage deletion of a [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md) in draft mode.
-Consider a scenario where a manager has created a new shift and shared it with his team. Now the manager deleted this shift but has not yet shared this change. In this scenario, you can support a different view for the manager with this shift deleted, while the team member can still view the shared version of the shift.
-Use this API to draft multiple shift deletions before finally sharing all the deleted shifts.
+Stage the deletion of a [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md) in draft mode.
+
+This action enables you to support different views for managers and for team members. A manager can delete one or more shifts from a schedule before sharing the changes with their team. 
+
+Use this API to stage multiple deletions of shifts before sharing all the deleted shifts.
 
 ## Permissions
 
@@ -49,14 +51,12 @@ POST /teams/{teamId}/schedule/shifts/{shiftId}/stageForDeletion
 
 If successful, this method returns a `204 OK` response code.
 
-## Example to stage a shift to be deleted
+## Examples 
+
+### Example 1: Stage the deletion of a shift 
 
 #### Request
 
-The following is an example of the request to stage a shift to be deleted.
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-post-shifts"
@@ -69,7 +69,6 @@ POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts{shiftId}/st
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,7 +79,7 @@ The following is an example of the response.
 HTTP/1.1 204 OK
 ```
 
-## Example to get a shift that's staged for deletion
+### Example 2: Get a shift that's staged for deletion
 
 #### Request
 
