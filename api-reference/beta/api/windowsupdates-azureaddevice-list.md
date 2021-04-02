@@ -36,6 +36,8 @@ GET /admin/windows/updates/updatableAssets/?$filter=isof('microsoft.graph.window
 ## Optional query parameters
 This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
 
+To use a query parameter on a property that is not inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md), include the full resource type. For example, to select `errors`, use `$select=microsoft.graph.windowsUpdates.azureADDevice/errors`.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
