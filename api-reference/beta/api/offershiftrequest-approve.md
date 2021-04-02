@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required for application permission scope. |
+| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
 
 ## Request body
 
