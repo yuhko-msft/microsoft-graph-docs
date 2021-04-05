@@ -1,9 +1,9 @@
 ---
-title: "Add Named Item"
+title: "namedItem: add"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: apiPageType
 ---
 
@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Sites.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All |
+|Delegated (work or school account) | Files.ReadWrite.Selected, Files.ReadWrite.AppFolder, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
+|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
+|Application | Files.ReadWrite.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All   |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
