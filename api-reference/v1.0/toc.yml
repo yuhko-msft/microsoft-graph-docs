@@ -5847,4 +5847,4 @@ items:
         - name: List range
           href: api/nameditem-range.md
         - name: Delete named item
-          href: api/namedItem-delete.md
+          href: api/nameditem-delete.md
