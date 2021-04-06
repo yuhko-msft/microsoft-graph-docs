@@ -1,5 +1,5 @@
 ---
-title: "namedItem: add"
+title: "workbookNamedItem: add"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
 author: "ruoyingl"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# namedItem: add
+# workbookNamedItem: add
 
 Namespace: microsoft.graph
 

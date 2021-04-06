@@ -1,5 +1,5 @@
 ---
-title: "Delete namedItem"
+title: "Delete workbookNamedItem"
 description: "Delete the specified named item in a workbook."
 author: "isvargasmsft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Delete namedItem
+# Delete workbookNamedItem
 
 Namespace: microsoft.graph
 
