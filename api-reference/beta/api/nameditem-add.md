@@ -7,7 +7,7 @@ ms.prod: "excel"
 author: "ruoyingl"
 ---
 
-# Add Named Item
+# workbookNamedItem: add
 
 Namespace: microsoft.graph
 

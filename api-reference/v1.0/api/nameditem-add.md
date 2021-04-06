@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Add Named Item
+# namedItem: add
 
 Namespace: microsoft.graph
 
