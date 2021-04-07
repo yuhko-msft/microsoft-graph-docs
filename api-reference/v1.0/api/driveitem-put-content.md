@@ -41,6 +41,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
+
 To upload a new file:
 <!-- { "blockType": "ignored" } -->
 
@@ -52,6 +53,7 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
+
 To upload a new file to other drives - such as in a **Shared with Me** folder:
 <!-- { "blockType": "ignored" } -->
 
@@ -59,6 +61,8 @@ To upload a new file to other drives - such as in a **Shared with Me** folder:
 PUT /drives/{drive-id}/items/{item-id}:/{filename}:/content
 ```
 To access other drives using parent folder - an arbitrary drive in the organization or someone else's drive - the command should indicate the drive ID. For **Shared with Me** items, the drive-ID and item-ID come from the `remoteItem` facet of the `driveItem` of the folder that is shared with the user.
+
+
 
 ## Request body
 
