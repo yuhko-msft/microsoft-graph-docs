@@ -52,12 +52,13 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
-To upload a new file in a Shared With Me folder:
+To upload a new file using the parent folder and drive ID's - such as in a "Shared With Me" folder:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /drives/{remoteItem-driveid}/items/{remoteItem-id}:/{filename}:/content
+PUT /drives/{drive-id}/items/{item-id}:/{filename}:/content
 ```
+For "Shared with Me" items, the drive-ID and item-ID come from the `remoteItem` facet of the `driveItem` of the folder that is shared with the user.
 
 ## Request body
 
