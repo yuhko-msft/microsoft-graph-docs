@@ -152,7 +152,7 @@ This example uploads a new file to a **Shared with Me** folder.
 <!-- { "blockType": "request", "name": "upload-to-SWM-via-put", "scopes": "files.readwrite" } -->
 
 ```http
-PUT /me/drives/{remoteItem-driveid}/items/{remoteItem-id}:/fileC.txt:/content
+PUT /drives/{remoteItem-driveid}/items/{remoteItem-id}:/fileC.txt:/content
 Content-Type: text/plain
 
 The contents of the file goes here.
