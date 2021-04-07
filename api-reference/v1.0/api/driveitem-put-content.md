@@ -16,7 +16,7 @@ This method only supports files up to 4MB in size.
 
 To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
 
-You can also upload a new file to a **Shared with Me folder**. A **Shared with Me** folder is a folder that lives in someone else's drive, but they have granted you with *Can edit* access to it. Depending on the UI it can show up as **Shared with you**, **Shared with me** or **Shared**. For more details see [Shared with me folders](https://support.microsoft.com/en-us/office/see-files-shared-with-you-in-onedrive-2c14e8e6-4e52-4c61-9778-7155d33534a1#ID0EAACAAA=OneDrive_for_work_or_school).
+You can also upload a new file to a **Shared with Me** folder. A **Shared with Me** folder is a folder that lives in someone else's drive, but they have granted you with *Can edit* access to it. Depending on the UI it can show up as **Shared with you**, **Shared with me** or **Shared**. For more details see [Shared with me folders](https://support.microsoft.com/en-us/office/see-files-shared-with-you-in-onedrive-2c14e8e6-4e52-4c61-9778-7155d33534a1#ID0EAACAAA=OneDrive_for_work_or_school).
 
 
 ## Permissions
