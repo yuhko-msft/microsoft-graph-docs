@@ -3,7 +3,7 @@ title: "workbookNamedItem: add - FormulaLocal"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "excel"
 author: "ruoyingl"
 ---
 

@@ -3,7 +3,7 @@ title: "List workbookNamedItemCollection"
 description: "Retrieve a list of workbookNamedItem objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "excel"
 author: "ruoyingl"
 ---
 

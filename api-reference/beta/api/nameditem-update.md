@@ -3,7 +3,7 @@ title: "Update workbookNamedItem"
 description: "Update the properties of workbookNamedItem object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "excel"
 author: "ruoyingl"
 ---
 
