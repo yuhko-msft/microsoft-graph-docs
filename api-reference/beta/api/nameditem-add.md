@@ -1,6 +1,6 @@
 ---
 title: "workbookNamedItem: add"
-description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
+description: "Adds a new namedItem to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "excel"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a new name to the collection of the given scope using the user's locale for the formula.
+Adds a new namedItem to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

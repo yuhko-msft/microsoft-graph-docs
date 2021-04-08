@@ -1,17 +1,17 @@
 ---
 title: "List WorksheetCollection"
-description: "Retrieve a list of worksheet objects."
+description: "Retrieve a list of WorkbookWorksheet objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List WorksheetCollection
+# List workbookWorksheetCollection
 
 Namespace: microsoft.graph
 
-Retrieve a list of worksheet objects.
+Retrieve a list of workbookWorksheet objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
