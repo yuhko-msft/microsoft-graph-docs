@@ -1,5 +1,5 @@
 ---
-title: "Get RangeFont"
+title: "Get workbookRangeFont"
 description: "Retrieve the properties and relationships of rangefont object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get RangeFont
+# Get workbookRangeFont
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of rangefont object.
+Retrieve the properties and relationships of workbookRangeFont object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

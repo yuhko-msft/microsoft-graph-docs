@@ -1,5 +1,5 @@
 ---
-title: "workbookChartCollection: ItemAt"
+title: "workbookChart: itemAt"
 description: "Gets a workbookchart based on its position in the collection."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# ChartCollection: ItemAt
+# workbookChart: itemAt
 
 Namespace: microsoft.graph
 

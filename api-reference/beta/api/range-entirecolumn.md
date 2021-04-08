@@ -1,5 +1,5 @@
 ---
-title: "Range: EntireColumn"
+title: "workbookRange: entireColumn"
 description: "Gets an object that represents the entire column of the range."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: EntireColumn
+# workbookRange: entireColumn
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List RangeBorderCollection"
+title: "List workbookRangeBorderCollection"
 description: "Retrieve a list of rangeborder objects."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List RangeBorderCollection
+# List workbookRangeBorderCollection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of rangeborder objects.
+Retrieve a list of workbookRangeBorder objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

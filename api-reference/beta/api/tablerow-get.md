@@ -1,5 +1,5 @@
 ---
-title: "Get TableRow"
+title: "Get workbookTableRow"
 description: "Retrieve the properties and relationships of tablerow object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get TableRow
+# Get workbookTableRow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of tablerow object.
+Retrieve the properties and relationships of workbookTableRow object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

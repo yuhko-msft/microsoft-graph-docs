@@ -1,5 +1,5 @@
 ---
-title: "Range: LastCell"
+title: "workbookRange: lastCell"
 description: "."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: LastCell
+# workbookRange: lastCell
 
 Namespace: microsoft.graph
 

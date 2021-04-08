@@ -1,5 +1,5 @@
 ---
-title: "Table: convertToRange"
+title: "workbookTable: convertToRange"
 description: "Converts the table into a normal range of cells. All data is preserved."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Table: convertToRange
+# workbookTable: convertToRange
 
 Namespace: microsoft.graph
 

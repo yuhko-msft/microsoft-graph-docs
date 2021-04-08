@@ -1,5 +1,5 @@
 ---
-title: "Get Range"
+title: "Get workbookRange"
 description: "Retrieve the properties and relationships of range object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get Range
+# Get workbookRange
 
 Namespace: microsoft.graph
 

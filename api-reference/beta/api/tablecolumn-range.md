@@ -1,5 +1,5 @@
 ---
-title: "TableColumn: Range"
+title: "workbookTableColumn: range"
 description: "Gets the range object associated with the entire column."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableColumn: Range
+# workbookTableColumn: range
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the range object associated with the entire column.
+Gets the workbookRange object associated with the entire column.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

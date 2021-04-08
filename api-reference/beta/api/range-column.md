@@ -1,5 +1,5 @@
 ---
-title: "Range: Column"
+title: "workbookRange: column"
 description: "Gets a column contained in the range."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: Column
+# workbookRange: column
 
 Namespace: microsoft.graph
 

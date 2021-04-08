@@ -1,19 +1,19 @@
 ---
-title: "Get ChartSeries"
-description: "Retrieve the properties and relationships of chartseries object."
+title: "Get workbookChartSeries"
+description: "Retrieve the properties and relationships of workbookChartSeries object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartSeries
+# Get workbookChartSeries
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of chartseries object.
+Retrieve the properties and relationships of workbookChartSeries object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

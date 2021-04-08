@@ -1,5 +1,5 @@
 ---
-title: "workbookChartCollection: add"
+title: "workbookChart: add"
 description: "Creates a new workbookChart."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# workbookChartCollection: add
+# workbookChart: add
 
 Namespace: microsoft.graph
 

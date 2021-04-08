@@ -1,5 +1,5 @@
 ---
-title: "Range: EntireRow"
+title: "workbookRange: entireRow"
 description: "Gets an object that represents the entire row of the range."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: EntireRow
+# workbokRange: entireRow
 
 Namespace: microsoft.graph
 

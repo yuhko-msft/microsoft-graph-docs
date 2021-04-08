@@ -1,5 +1,5 @@
 ---
-title: "Create table"
+title: "Create workbookTable"
 description: "Use this API to create a new Table."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create table
+# Create workbookTable
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new Table.
+Use this API to create a new workbookTable.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

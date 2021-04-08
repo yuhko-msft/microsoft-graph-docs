@@ -1,5 +1,5 @@
 ---
-title: "Update worksheet"
+title: "Update workbookWorksheet"
 description: "Update the properties of worksheet object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update worksheet
+# Update workbookWorksheet
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of worksheet object.
+Update the properties of workbookWorksheet object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -1,5 +1,5 @@
 ---
-title: "ChartFill: setSolidColor"
+title: "workbookChartFill: setSolidColor"
 description: "Sets the fill formatting of a chart element to a uniform color."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# ChartFill: setSolidColor
+# workbookChartFill: setSolidColor
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sets the fill formatting of a chart element to a uniform color.
+Sets the fill formatting of a workbookChart element to a uniform color.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

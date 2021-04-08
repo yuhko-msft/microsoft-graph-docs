@@ -1,19 +1,19 @@
 ---
-title: "Create ChartPoints"
-description: "Use this API to create a new ChartPoints."
+title: "Create workbookChartPoints"
+description: "Use this API to create a new workbookChartPoints."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create ChartPoint
+# Create workbookChartPoint
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new ChartPoint.
+Use this API to create a new workbookChartPoint.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

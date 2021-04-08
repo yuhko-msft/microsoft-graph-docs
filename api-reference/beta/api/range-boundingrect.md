@@ -1,5 +1,5 @@
 ---
-title: "Range: BoundingRect"
+title: "workbookRange: boundingRect"
 description: "."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: BoundingRect
+# workbookRange: boundingRect
 
 Namespace: microsoft.graph
 

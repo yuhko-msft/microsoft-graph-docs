@@ -1,5 +1,5 @@
 ---
-title: "TableColumnCollection: add"
+title: "workbookTableColumn: add"
 description: "Adds a new column to the table."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableColumnCollection: add
+# workbookTableColumn: add
 
 Namespace: microsoft.graph
 

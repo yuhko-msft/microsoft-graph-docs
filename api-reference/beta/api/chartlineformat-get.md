@@ -1,19 +1,19 @@
 ---
 title: "Get workbookChartLineFormat"
-description: "Retrieve the properties and relationships of workbookchartlineformat object."
+description: "Retrieve the properties and relationships of workbookChartLineFormat object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartLineFormat
+# Get workbookChartLineFormat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of chartlineformat object.
+Retrieve the properties and relationships of workbookChartLineFormat object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

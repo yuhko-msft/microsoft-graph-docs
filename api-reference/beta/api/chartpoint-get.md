@@ -1,19 +1,19 @@
 ---
-title: "Get ChartPoint"
-description: "Retrieve the properties and relationships of chartpoint object."
+title: "Get workbookChartPoint"
+description: "Retrieve the properties and relationships of workbookChartPoint object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartPoint
+# Get workbookChartPoint
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of chartpoint object.
+Retrieve the properties and relationships of workbookChartPoint object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

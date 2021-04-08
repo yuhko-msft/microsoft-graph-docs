@@ -1,5 +1,5 @@
 ---
-title: "ChartSeriesCollection: ItemAt"
+title: "workbookChartSeriesCollection: itemAt"
 description: "Retrieves a series based on its position in the collection"
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# ChartSeriesCollection: ItemAt
+# workbookChartSeriesCollection: itemAt
 
 Namespace: microsoft.graph
 

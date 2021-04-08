@@ -1,5 +1,5 @@
 ---
-title: "Update tablerow"
+title: "Update workbookTableRow"
 description: "Update the properties of tablerow object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update tablerow
+# Update workbookTableRow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of tablerow object.
+Update the properties of workbookTableRow object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

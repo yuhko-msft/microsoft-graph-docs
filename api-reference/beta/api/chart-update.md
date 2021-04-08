@@ -1,19 +1,19 @@
 ---
-title: "Update chart"
-description: "Update the properties of chart object."
+title: "Update workbookChart"
+description: "Update the properties of workbookChart object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update chart
+# Update workbookChart
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of chart object.
+Update the properties of workbookChart object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

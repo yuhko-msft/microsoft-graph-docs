@@ -1,5 +1,5 @@
 ---
-title: "ChartPointsCollection: ItemAt"
+title: "workbookChartPointsCollection: itemAt"
 description: "Retrieve a point based on its position within the series."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# ChartPointsCollection: ItemAt
+# workbookChartPointsCollection: itemAt
 
 Namespace: microsoft.graph
 

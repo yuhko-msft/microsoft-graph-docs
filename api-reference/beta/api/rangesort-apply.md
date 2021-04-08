@@ -1,5 +1,5 @@
 ---
-title: "RangeSort: apply"
+title: "workbookRangeSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# RangeSort: apply
+# workbookRangeSort: apply
 
 Namespace: microsoft.graph
 

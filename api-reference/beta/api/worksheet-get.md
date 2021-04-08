@@ -1,5 +1,5 @@
 ---
-title: "Get Worksheet"
+title: "Get workbookWorksheet"
 description: "Retrieve the properties and relationships of worksheet object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get Worksheet
+# Get workbookWorksheet
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of worksheet object.
+Retrieve the properties and relationships of workbookWorksheet object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

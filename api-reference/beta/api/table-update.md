@@ -1,5 +1,5 @@
 ---
-title: "Update table"
+title: "Update workbookTable"
 description: "Update the properties of table object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update table
+# Update workbookTable
 
 Namespace: microsoft.graph
 
@@ -49,7 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Table](../resources/workbooktable.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookTable](../resources/workbooktable.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

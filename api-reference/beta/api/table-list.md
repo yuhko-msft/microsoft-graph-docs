@@ -1,5 +1,5 @@
 ---
-title: "List TableCollection"
+title: "List workbookTables"
 description: "Retrieve a list of table objects."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List TableCollection
+# List workbookTables
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of table objects.
+Retrieve a list of workbookTable objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

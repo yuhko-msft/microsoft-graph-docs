@@ -1,5 +1,5 @@
 ---
-title: "TableColumn: TotalRowRange"
+title: "workbookTableColumn: totalRowRange"
 description: "Gets the range object associated with the totals row of the column."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableColumn: TotalRowRange
+# workbookTableColumn: totalRowRange
 
 Namespace: microsoft.graph
 

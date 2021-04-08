@@ -1,5 +1,5 @@
 ---
-title: "Range: Cell"
+title: "workbookRange: cell"
 description: "Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range."
 localization_priority: Normal
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: Cell
+# workbookRange: cell
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Table: HeaderRowRange"
+title: "workbookTable: headerRowRange"
 description: "Gets the range object associated with header row of the table."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Table: HeaderRowRange
+# workbookTable: headerRowRange
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the range object associated with header row of the table.
+Gets the workbookRange object associated with header row of the table.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

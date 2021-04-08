@@ -1,19 +1,19 @@
 ---
-title: "Update chartlineformat"
-description: "Update the properties of chartlineformat object."
+title: "Update workbookChartLineFormat"
+description: "Update the properties of workbookChartLineFormat object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update chartlineformat
+# Update workbookChartLineFormat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of chartlineformat object.
+Update the properties of workbookChartLineFormat object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

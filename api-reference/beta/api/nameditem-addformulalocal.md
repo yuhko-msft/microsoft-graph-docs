@@ -1,5 +1,5 @@
 ---
-title: "Add Named Item FormulaLocal"
+title: "workbookNamedItem: add - FormulaLocal"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: ""
 author: "ruoyingl"
 ---
 
-# Add Named Item FormulaLocal
+# workbookNamedItem: add - FormulaLocal
 
 Namespace: microsoft.graph
 Adds a new name to the collection of the given scope using the user's locale for the formula.

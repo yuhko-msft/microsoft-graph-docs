@@ -1,19 +1,19 @@
 ---
-title: "Get ChartTitle"
-description: "Retrieve the properties and relationships of charttitle object."
+title: "Get workbookChartTitle"
+description: "Retrieve the properties and relationships of workbookChartTitle object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartTitle
+# Get workbookChartTitle
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of charttitle object.
+Retrieve the properties and relationships of workbookChartTitle object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

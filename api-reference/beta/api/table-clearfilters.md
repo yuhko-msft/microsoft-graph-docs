@@ -1,5 +1,5 @@
 ---
-title: "Table: clearFilters"
+title: "workbookTable: clearFilters"
 description: "Clears all the filters currently applied on the table."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Table: clearFilters
+# workbookTable: clearFilters
 
 Namespace: microsoft.graph
 

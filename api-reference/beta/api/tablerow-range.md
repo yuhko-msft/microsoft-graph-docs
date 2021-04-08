@@ -1,5 +1,5 @@
 ---
-title: "TableRow: Range"
+title: "workbookTableRow: range"
 description: "Returns the range object associated with the entire row."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableRow: Range
+# workbookTableRow: range
 
 Namespace: microsoft.graph
 

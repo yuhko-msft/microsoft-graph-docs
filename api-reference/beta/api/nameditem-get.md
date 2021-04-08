@@ -1,5 +1,5 @@
 ---
-title: "Get NamedItem"
+title: "Get namedItem"
 description: "Retrieve the properties and relationships of nameditem object."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: ""
 author: "ruoyingl"
 ---
 
-# Get NamedItem
+# Get namedItem
 
 Namespace: microsoft.graph
 

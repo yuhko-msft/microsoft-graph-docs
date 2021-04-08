@@ -1,5 +1,5 @@
 ---
-title: "TableColumn: HeaderRowRange"
+title: "workbookTableColumn: headerRowRange"
 description: "Gets the range object associated with the header row of the column."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableColumn: HeaderRowRange
+# workbookTableColumn: headerRowRange
 
 Namespace: microsoft.graph
 

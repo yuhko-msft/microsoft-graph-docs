@@ -1,19 +1,19 @@
 ---
-title: "NamedItem: Range"
-description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
+title: "workbookNamedItem: range"
+description: "Returns the workbookRange object that is associated with the name. Throws an exception if the named item's type is not a range."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 author: "ruoyingl"
 ---
 
-# NamedItem: Range
+# workbookNamedItem: range
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
+Returns the workbookRange object that is associated with the name. Throws an exception if the named item's type is not a range.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
