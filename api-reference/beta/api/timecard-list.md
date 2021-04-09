@@ -37,14 +37,14 @@ GET /teams/{teamId}/schedule/timecards
 
 ## Optional query parameters
 
-This method supports the $filter, $orderBy, $top, $skipToken OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderBy`, `$top`, and `$skipToken` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
+| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required for the application permission scope. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -53,22 +53,20 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a list of [timeCard](../resources/timeCard.md) objects in the response body.
 
-## Example
+## Examples
 
-#### Request
+### Request
 The following is an example of the request. 
 
 ```http
 GET https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards?$top=100&$filter=state eq 'onBreak'&$orderBy=clockIn/dateTime desc
 ```
----
 
-
-#### Response
+### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
