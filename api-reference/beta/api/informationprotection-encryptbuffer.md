@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |buffer|Binary| Provides the data to be encrypted. |
-|labelId|Guid| Provides the label ID used to specify how to encrypt the data and determine which users will have access. Additional details for the labelId in Microsoft Graph can be found here: https://docs.microsoft.com/en-us/graph/api/resources/informationprotectionlabel?view=graph-rest-beta |
+|labelId|Guid| Provides the label ID used to specify how to encrypt the data and determine which users will have access. Additional details for the labelId in Microsoft Graph can be found here: https://docs.microsoft.com/graph/api/resources/informationprotectionlabel |
 
 
 

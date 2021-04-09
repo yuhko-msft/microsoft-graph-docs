@@ -19,7 +19,7 @@ The buffer encryption result includes the encrypted data and publishing license 
 |Property|Type|Description|
 |:---|:---|:---|
 |encryptedBuffer|Binary| Provides the encrypted data to be decrypted. |
-|publishingLicense|Binary| Provides the rights-management information associated with the data including owner, encrypted content key, template associated with the label ID, and more. For more details on the publishing license, go here: https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rmsod/0af175ee-d54d-4d70-b169-b0ade1ab9bf4#gt_3b0362d9-f209-48d2-afd0-0c0f6531a7d1 |
+|publishingLicense|Binary| Provides the rights-management information associated with the data including owner, encrypted content key, template associated with the label ID, and more. For more details on the publishing license, go here: https://docs.microsoft.com/openspecs/windows_protocols/ms-rmsod/0af175ee-d54d-4d70-b169-b0ade1ab9bf4#gt_3b0362d9-f209-48d2-afd0-0c0f6531a7d1 |
 
 ## Relationships
 None.
