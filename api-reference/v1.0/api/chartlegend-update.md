@@ -1,17 +1,17 @@
 ---
-title: "Update chartlegend"
-description: "Update the properties of chartlegend object."
+title: "Update workbookChartLegend"
+description: "Update the properties of workbookChartLegend object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update chartlegend
+# Update workbookChartLegend
 
 Namespace: microsoft.graph
 
-Update the properties of chartlegend object.
+Update the properties of workbookChartLegend object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

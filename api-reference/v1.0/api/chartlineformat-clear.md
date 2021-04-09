@@ -1,5 +1,5 @@
 ---
-title: "ChartLineFormat: clear"
+title: "workbookChartLineFormat: clear"
 description: "Clear the line format of a chart element."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# ChartLineFormat: clear
+# workbookChartLineFormat: clear
 
 Namespace: microsoft.graph
 

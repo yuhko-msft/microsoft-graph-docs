@@ -1,17 +1,17 @@
 ---
-title: "Update range"
-description: "Update the properties of range object."
+title: "Update workbookRange"
+description: "Update the properties of workbookRange object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update range
+# Update workbookRange
 
 Namespace: microsoft.graph
 
-Update the properties of range object.
+Update the properties of workbookRange object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Range](../resources/range.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookRange](../resources/range.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request. It updates a range - values, number-format and formula. The `null` input is to instruct the API to ignore the cell for that particular input. The values, number-format and formulas can be independently updated or combined together in the same API call. 

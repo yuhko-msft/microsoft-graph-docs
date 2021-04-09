@@ -1,17 +1,17 @@
 ---
-title: "Update chartfont"
-description: "Update the properties of chartfont object."
+title: "Update workbookChartFont"
+description: "Update the properties of workbookChartFont object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update chartfont
+# Update workbookChartFont
 
 Namespace: microsoft.graph
 
-Update the properties of chartfont object.
+Update the properties of workbookChartFont object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

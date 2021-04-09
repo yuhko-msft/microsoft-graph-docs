@@ -1,5 +1,5 @@
 ---
-title: "Worksheet: UsedRange"
+title: "workbookWorksheet: usedRange"
 description: "The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell."
 localization_priority: Normal
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Worksheet: UsedRange
+# workbookWorksheet: usedRange
 
 Namespace: microsoft.graph
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example that shows how to call this API.

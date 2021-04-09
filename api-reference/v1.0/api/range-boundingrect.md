@@ -1,13 +1,13 @@
 ---
-title: "Range: BoundingRect"
-description: "."
+title: "workbookRange: boundingRect"
+description: "Gets the smallest range object that encompasses the given ranges"
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: BoundingRect
+# workbookRange: boundingRect
 
 Namespace: microsoft.graph
 
@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

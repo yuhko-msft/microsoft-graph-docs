@@ -1,5 +1,5 @@
 ---
-title: "Worksheet: delete"
+title: "workbookWorksheet: delete"
 description: "Deletes the worksheet from the workbook."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Worksheet: delete
+# workbookWorksheet: delete
 
 Namespace: microsoft.graph
 
-Deletes the worksheet from the workbook.
+Deletes the workbookWorksheet from the workbook.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

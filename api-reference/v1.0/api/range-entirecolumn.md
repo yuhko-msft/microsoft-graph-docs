@@ -1,5 +1,5 @@
 ---
-title: "Range: EntireColumn"
+title: "workbookRange: entireColumn"
 description: "Gets an object that represents the entire column of the range."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: EntireColumn
+# workbookRange: entireColumn
 
 Namespace: microsoft.graph
 
@@ -43,7 +43,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

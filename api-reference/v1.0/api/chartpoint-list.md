@@ -1,17 +1,17 @@
 ---
-title: "List ChartPointsCollection"
-description: "Retrieve a list of chartpoint objects."
+title: "List workbookChartPoints"
+description: "Retrieve a list of workbookChartPoint objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List ChartPointsCollection
+# List workbookChartPoints
 
 Namespace: microsoft.graph
 
-Retrieve a list of chartpoint objects.
+Retrieve a list of workbookChartPoint objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

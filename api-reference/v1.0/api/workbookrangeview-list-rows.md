@@ -1,5 +1,5 @@
 ---
-title: "List rangeView rows"
+title: "List workbookRangeView rows"
 description: "Retrieve a list of range view objects."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List rangeView rows
+# List workbookRangeView rows
 
 Namespace: microsoft.graph
 
-Retrieve a list of range view objects.
+Retrieve a list of workbookRangeView objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

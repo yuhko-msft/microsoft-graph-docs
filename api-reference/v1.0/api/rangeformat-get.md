@@ -1,17 +1,17 @@
 ---
-title: "Get RangeFormat"
-description: "Retrieve the properties and relationships of rangeformat object."
+title: "Get workbookRangeFormat"
+description: "Retrieve the properties and relationships of workbookRangeFormat object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get RangeFormat
+# Get workbookRangeFormat
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of rangeformat object.
+Retrieve the properties and relationships of workbookRangeFormat object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

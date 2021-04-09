@@ -1,5 +1,5 @@
 ---
-title: "TableSort: clear"
+title: "workbookTableSort: clear"
 description: "Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons."
 localization_priority: Normal
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableSort: clear
+# workbookTableSort: clear
 
 Namespace: microsoft.graph
 

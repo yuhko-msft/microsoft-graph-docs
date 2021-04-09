@@ -1,5 +1,5 @@
 ---
-title: "Range: delete"
+title: "workbookRange: delete"
 description: "Deletes the cells associated with the range."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: delete
+# workbookRange: delete
 
 Namespace: microsoft.graph
 

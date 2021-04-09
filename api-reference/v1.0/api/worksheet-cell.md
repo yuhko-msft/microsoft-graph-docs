@@ -1,17 +1,17 @@
 ---
-title: "Worksheet: Cell"
-description: "Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid."
+title: "workbookWorksheet: cell"
+description: "Gets the workbookRange object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Worksheet: Cell
+# workbookWorksheet: cell
 
 Namespace: microsoft.graph
 
-Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.
+Gets the wokbookRange object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

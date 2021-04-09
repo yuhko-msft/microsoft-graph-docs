@@ -1,5 +1,5 @@
 ---
-title: "TableColumnCollection: ItemAt"
+title: "workbookTableColumn: itemAt"
 description: "Gets a column based on its position in the collection."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableColumnCollection: ItemAt
+# workbookTableColumn: itemAt
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Refresh Session"
+title: "workbook: refreshSession"
 description: "Use this API to refresh an existing workbook session. "
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Refresh Session
+# workbook: refreshSession
 
 Namespace: microsoft.graph
 

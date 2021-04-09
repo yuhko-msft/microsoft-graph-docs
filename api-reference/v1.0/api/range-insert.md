@@ -1,17 +1,17 @@
 ---
-title: "Range: insert"
-description: "Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space."
+title: "workbookRange: insert"
+description: "Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new workbookRange object at the now blank space."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: insert
+# workbookRange: insert
 
 Namespace: microsoft.graph
 
-Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
+Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new workbookRange object at the now blank space.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

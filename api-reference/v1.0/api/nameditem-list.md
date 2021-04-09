@@ -1,17 +1,17 @@
 ---
-title: "List NamedItemCollection"
-description: "Retrieve a list of nameditem objects."
+title: "List workbookNamedItems"
+description: "Retrieve a list of workbookNamedItem objects."
 localization_priority: Normal
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List NamedItemCollection
+# List workbookNamedItems
 
 Namespace: microsoft.graph
 
-Retrieve a list of nameditem objects.
+Retrieve a list of workbookNamedItem objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

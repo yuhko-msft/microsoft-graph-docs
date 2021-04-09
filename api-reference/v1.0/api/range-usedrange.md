@@ -1,5 +1,5 @@
 ---
-title: "Range: UsedRange"
+title: "workbookRange: usedRange"
 description: "Returns the used range of the given range object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: UsedRange
+# workbookRange: usedRange
 
 Namespace: microsoft.graph
 
-Returns the used range of the given range object.
+Returns the used range of the given workbookRange object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -46,7 +46,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

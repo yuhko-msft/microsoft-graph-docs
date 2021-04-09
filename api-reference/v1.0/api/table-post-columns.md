@@ -1,17 +1,17 @@
 ---
-title: "Create TableColumn"
-description: "Use this API to create a new TableColumn."
+title: "Create workbookTableColumn"
+description: "Use this API to create a new workbookTableColumn."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create TableColumn
+# Create workbookTableColumn
 
 Namespace: microsoft.graph
 
-Use this API to create a new TableColumn.
+Use this API to create a new workbookTableColumn.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

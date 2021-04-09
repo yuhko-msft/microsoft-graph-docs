@@ -1,17 +1,17 @@
 ---
-title: "Update rangeborder"
-description: "Update the properties of rangeborder object."
+title: "Update workbookRangeBorder"
+description: "Update the properties of workbookRangeBorder object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update rangeborder
+# Update workbookRangeBorder
 
 Namespace: microsoft.graph
 
-Update the properties of rangeborder object.
+Update the properties of workbookRangeBorder object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

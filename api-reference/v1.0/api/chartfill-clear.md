@@ -1,5 +1,5 @@
 ---
-title: "ChartFill: clear"
+title: "workbookChartFill: clear"
 description: "Clear the fill color of a chart element."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# ChartFill: clear
+# workbookChartFill: clear
 
 Namespace: microsoft.graph
 

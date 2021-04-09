@@ -1,13 +1,13 @@
 ---
-title: "TableColumn: DataBodyRange"
-description: "Gets the range object associated with the data body of the column."
+title: "workbookTableColumn: dataBodyRange"
+description: "Gets the workbookRange object associated with the data body of the column."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableColumn: DataBodyRange
+# workbookTableColumn: dataBodyRange
 
 Namespace: microsoft.graph
 
@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

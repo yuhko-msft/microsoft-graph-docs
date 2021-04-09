@@ -1,13 +1,13 @@
 ---
-title: "Get ChartLineFormat"
-description: "Retrieve the properties and relationships of chartlineformat object."
+title: "Get workbookChartLineFormat"
+description: "Retrieve the properties and relationships of workbookChartLineFormat object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartLineFormat
+# Get workbookChartLineFormat
 
 Namespace: microsoft.graph
 

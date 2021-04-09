@@ -1,5 +1,5 @@
 ---
-title: "Chart: Image"
+title: "workbookChart: image"
 description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Chart: Image
+# workbookChart: image
 
 Namespace: microsoft.graph
 
@@ -85,7 +85,7 @@ For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is a
 
 If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
 
-![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
+![Excel chart image with customized height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

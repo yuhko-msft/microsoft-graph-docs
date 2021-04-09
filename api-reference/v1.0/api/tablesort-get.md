@@ -1,17 +1,17 @@
 ---
-title: "Get TableSort"
-description: "Retrieve the properties and relationships of tablesort object."
+title: "Get workbookTableSort"
+description: "Retrieve the properties and relationships of workbookTableSort object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get TableSort
+# Get workbookTableSort
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of tablesort object.
+Retrieve the properties and relationships of workbookTableSort object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

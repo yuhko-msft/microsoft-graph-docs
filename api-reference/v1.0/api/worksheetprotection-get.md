@@ -1,17 +1,17 @@
 ---
-title: "Get WorksheetProtection"
-description: "Retrieve the properties and relationships of worksheetprotection object."
+title: "Get workbookWorksheetProtection"
+description: "Retrieve the properties and relationships of workbookWorksheetProtection object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get WorksheetProtection
+# Get workbookWorksheetProtection
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of worksheetprotection object.
+Retrieve the properties and relationships of workbookWorksheetProtection object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

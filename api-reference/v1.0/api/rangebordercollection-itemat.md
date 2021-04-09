@@ -1,5 +1,5 @@
 ---
-title: "RangeBorderCollection: ItemAt"
+title: "workbookRangeBorder: itemAt"
 description: "Gets a border object using its index"
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# RangeBorderCollection: ItemAt
+# workbookRangeBorder: itemAt
 
 Namespace: microsoft.graph
 

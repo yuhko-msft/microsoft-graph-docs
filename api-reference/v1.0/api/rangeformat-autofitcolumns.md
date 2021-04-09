@@ -1,5 +1,5 @@
 ---
-title: "RangeFormat: autofitColumns"
+title: "workbookRangeFormat: autofitColumns"
 description: "Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns."
 localization_priority: Normal
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# RangeFormat: autofitColumns
+# workbookRangeFormat: autofitColumns
 
 Namespace: microsoft.graph
 

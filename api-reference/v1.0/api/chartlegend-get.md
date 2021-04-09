@@ -1,5 +1,5 @@
 ---
-title: "Get ChartLegend"
+title: "Get workbookChartLegend"
 description: "Retrieve the properties and relationships of chartlegend object."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartLegend
+# Get workbookChartLegend
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of chartlegend object.
+Retrieve the properties and relationships of workbookChartLegend object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

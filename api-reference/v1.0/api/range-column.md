@@ -1,5 +1,5 @@
 ---
-title: "Range: Column"
+title: "workbookRange: column"
 description: "Gets a column contained in the range."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: Column
+# workbookRange: column
 
 Namespace: microsoft.graph
 
@@ -48,7 +48,7 @@ In the request path, provide the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

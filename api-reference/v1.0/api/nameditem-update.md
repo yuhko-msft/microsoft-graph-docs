@@ -1,17 +1,17 @@
 ---
-title: "Update nameditem"
-description: "Update the properties of nameditem object."
+title: "Update workbookNamedItem"
+description: "Update the properties of workbookNamedItem object."
 localization_priority: Normal
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update nameditem
+# Update workbookNamedItem
 
 Namespace: microsoft.graph
 
-Update the properties of nameditem object.
+Update the properties of workbookNamedItem object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

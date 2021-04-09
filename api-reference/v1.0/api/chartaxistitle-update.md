@@ -1,17 +1,17 @@
 ---
-title: "Update chartaxistitle"
-description: "Update the properties of chartaxistitle object."
+title: "Update workbookChartAxisTitle"
+description: "Update the properties of workbookChartAxisTitle object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update chartaxistitle
+# Update workbookChartAxisTitle
 
 Namespace: microsoft.graph
 
-Update the properties of chartaxistitle object.
+Update the properties of workbookChartAxisTitle object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

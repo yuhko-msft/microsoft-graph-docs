@@ -1,5 +1,5 @@
 ---
-title: "Range: merge"
+title: "workbookRange: merge"
 description: "Merge the range cells into one region in the worksheet."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: merge
+# workbookRange: merge
 
 Namespace: microsoft.graph
 

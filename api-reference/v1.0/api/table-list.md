@@ -1,13 +1,13 @@
 ---
-title: "List TableCollection"
-description: "Retrieve a list of table objects."
+title: "List workbookTableCollection"
+description: "Retrieve a list of workbookTable objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List TableCollection
+# List workbookTableCollection
 
 Namespace: microsoft.graph
 

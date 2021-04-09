@@ -1,17 +1,17 @@
 ---
-title: "List columns"
-description: "Retrieve a list of tablecolumn objects."
+title: "List workbookTableColumns"
+description: "Retrieve a list of workbookTableColumn objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List columns
+# List workbookTableColumns
 
 Namespace: microsoft.graph
 
-Retrieve a list of tablecolumn objects.
+Retrieve a list of workbookTableColumn objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -1,5 +1,5 @@
 ---
-title: "Table: convertToRange"
+title: "workbookTable: convertToRange"
 description: "Converts the table into a normal range of cells. All data is preserved."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Table: convertToRange
+# workbookTable: convertToRange
 
 Namespace: microsoft.graph
 
@@ -40,7 +40,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -1,5 +1,5 @@
 ---
-title: "RangeFormat: autofitRows"
+title: "workbookRangeFormat: autofitRows"
 description: "Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns."
 localization_priority: Normal
 author: "lumine2008"
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# RangeFormat: autofitRows
+# workbookRangeFormat: autofitRows
 
 Namespace: microsoft.graph
 

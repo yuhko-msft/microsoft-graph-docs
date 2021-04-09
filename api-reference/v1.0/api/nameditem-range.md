@@ -1,17 +1,17 @@
 ---
-title: "NamedItem: Range"
-description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
+title: "workbookNamedItem: range"
+description: "Returns the workbookRange object that is associated with the name. Throws an exception if the named item's type is not a range."
 localization_priority: Normal
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# NamedItem: Range
+# workbookNamedItem: range
 
 Namespace: microsoft.graph
 
-Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
+Returns the workbookRange object that is associated with the name. Throws an exception if the named item's type is not a range.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +38,7 @@ GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

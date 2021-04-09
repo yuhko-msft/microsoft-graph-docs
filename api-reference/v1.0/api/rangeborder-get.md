@@ -1,17 +1,17 @@
 ---
-title: "Get RangeBorder"
-description: "Retrieve the properties and relationships of rangeborder object."
+title: "Get workbookRangeBorder"
+description: "Retrieve the properties and relationships of workbookRangeBorder object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get RangeBorder
+# Get workbookRangeBorder
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of rangeborder object.
+Retrieve the properties and relationships of workbookRangeBorder object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

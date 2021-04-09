@@ -1,5 +1,5 @@
 ---
-title: "WorksheetProtection: protect"
+title: "workbookWorksheetProtection: protect"
 description: "Protect a worksheet. It throws if the worksheet has been protected."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# WorksheetProtection: protect
+# workbookWorksheetProtection: protect
 
 Namespace: microsoft.graph
 

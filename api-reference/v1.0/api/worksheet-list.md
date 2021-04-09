@@ -1,5 +1,5 @@
 ---
-title: "List WorksheetCollection"
+title: "List workbookWorksheetCollection"
 description: "Retrieve a list of WorkbookWorksheet objects."
 author: "lumine2008"
 localization_priority: Normal

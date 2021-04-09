@@ -1,17 +1,17 @@
 ---
-title: "Update table"
-description: "Update the properties of table object."
+title: "Update workbookTable"
+description: "Update the properties of workbookTable object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update table
+# Update workbookTable
 
 Namespace: microsoft.graph
 
-Update the properties of table object.
+Update the properties of workbookTable object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -1,13 +1,13 @@
 ---
-title: "Create ChartSeries"
-description: "Use this API to create a new ChartSeries."
+title: "Create workbookChartSeries"
+description: "Use this API to create a new workbookChartSeries."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create ChartSeries
+# Create workbookChartSeries
 
 Namespace: microsoft.graph
 

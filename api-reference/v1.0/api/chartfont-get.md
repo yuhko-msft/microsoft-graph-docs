@@ -1,17 +1,17 @@
 ---
-title: "Get ChartFont"
-description: "Retrieve the properties and relationships of chartfont object."
+title: "Get workbookChartFont"
+description: "Retrieve the properties and relationships of workbookChartFont object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartFont
+# Get workbookChartFont
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of chartfont object.
+Retrieve the properties and relationships of workbookChartFont object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

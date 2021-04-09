@@ -1,17 +1,17 @@
 ---
-title: "Update rangefont"
-description: "Update the properties of rangefont object."
+title: "Update workbookRangeFont"
+description: "Update the properties of workbookRangeFont object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update rangefont
+# Update workbookRangeFont
 
 Namespace: microsoft.graph
 
-Update the properties of rangefont object.
+Update the properties of workbookRangeFont object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

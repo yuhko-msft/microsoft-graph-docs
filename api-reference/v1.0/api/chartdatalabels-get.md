@@ -1,17 +1,17 @@
 ---
-title: "Get ChartDataLabels"
-description: "Retrieve the properties and relationships of chartdatalabels object."
+title: "Get workbookChartDataLabels"
+description: "Retrieve the properties and relationships of workbookChartDataLabels object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get ChartDataLabels
+# Get workbookChartDataLabels
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of chartdatalabels object.
+Retrieve the properties and relationships of workbookChartDataLabels object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

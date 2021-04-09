@@ -1,17 +1,17 @@
 ---
-title: "Get Range"
-description: "Retrieve the properties and relationships of range object."
+title: "Get workbookRange"
+description: "Retrieve the properties and relationships of workbookRange object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get Range
+# Get workbookRange
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of range object.
+Retrieve the properties and relationships of workbookRange object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

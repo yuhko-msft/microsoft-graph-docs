@@ -1,17 +1,17 @@
 ---
-title: "TableRow: Range"
-description: "Returns the range object associated with the entire row."
+title: "workbookTableRow: range"
+description: "Returns the workbookRange object associated with the entire row."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableRow: Range
+# workbookTableRow: range
 
 Namespace: microsoft.graph
 
-Returns the range object associated with the entire row.
+Returns the workbookRange object associated with the entire row.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

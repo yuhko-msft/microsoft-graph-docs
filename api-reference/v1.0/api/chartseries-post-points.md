@@ -1,17 +1,17 @@
 ---
-title: "Create ChartPoints"
-description: "Use this API to create a new ChartPoints."
+title: "Create workbookChartPoint"
+description: "Use this API to create a new workbookChartPoint."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create ChartPoints
+# Create workbookChartPoint
 
 Namespace: microsoft.graph
 
-Use this API to create a new ChartPoints.
+Use this API to create a new workbookChartPoint.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.
+In the request body, supply a JSON representation of [workbookChartPoint](../resources/chartpoint.md) object.
 
 ## Response
 

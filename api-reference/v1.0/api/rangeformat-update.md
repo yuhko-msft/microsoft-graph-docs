@@ -1,17 +1,17 @@
 ---
-title: "Update rangeformat"
-description: "Update the properties of rangeformat object."
+title: "Update workbookRangeFormat"
+description: "Update the properties of workbookRangeFormat object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update rangeformat
+# Update workbookRangeFormat
 
 Namespace: microsoft.graph
 
-Update the properties of rangeformat object.
+Update the properties of workbookRangeFormat object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

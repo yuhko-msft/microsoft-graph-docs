@@ -1,17 +1,17 @@
 ---
-title: "Get TableColumn"
-description: "Retrieve the properties and relationships of tablecolumn object."
+title: "Get workbookTableColumn"
+description: "Retrieve the properties and relationships of workbookTableColumn object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Get TableColumn
+# Get workbookTableColumn
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of tablecolumn object.
+Retrieve the properties and relationships of workbookTableColumn object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

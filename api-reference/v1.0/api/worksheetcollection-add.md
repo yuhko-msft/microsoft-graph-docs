@@ -1,5 +1,5 @@
 ---
-title: "WorksheetCollection: add"
+title: "workbookWorksheet: add"
 description: ".activate() on it."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# WorksheetCollection: add
+# workbookWorksheet: add
 
 Namespace: microsoft.graph
 

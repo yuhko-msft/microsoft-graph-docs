@@ -1,17 +1,17 @@
 ---
-title: "Update rangefill"
-description: "Update the properties of rangefill object."
+title: "Update workbookRangeFill"
+description: "Update the properties of workbookRangeFill object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Update rangefill
+# Update workbookRangeFill
 
 Namespace: microsoft.graph
 
-Update the properties of rangefill object.
+Update the properties of workbookRangeFill object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

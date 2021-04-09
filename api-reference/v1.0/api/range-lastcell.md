@@ -1,13 +1,13 @@
 ---
-title: "Range: LastCell"
-description: "."
+title: "workbookRange: lastCell"
+description: "Gets the last cell within the range."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Range: LastCell
+# workbookRange: lastCell
 
 Namespace: microsoft.graph
 
@@ -43,7 +43,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

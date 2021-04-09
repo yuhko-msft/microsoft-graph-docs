@@ -1,17 +1,17 @@
 ---
-title: "List points"
-description: "Retrieve a list of chartpoints objects."
+title: "List workbookChartPoint"
+description: "Retrieve a list of workbookChartPoint objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List points
+# List workbookChartPoint
 
 Namespace: microsoft.graph
 
-Retrieve a list of chartpoints objects.
+Retrieve a list of workbookChartPoint objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [ChartPoints](../resources/chartpoint.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [workbookChartPoint](../resources/chartpoint.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

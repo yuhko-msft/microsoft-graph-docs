@@ -1,17 +1,17 @@
 ---
-title: "Chart: delete"
-description: "Deletes the chart object."
+title: "workbookChart: delete"
+description: "Deletes the workbookChart object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Chart: delete
+# workbookChart: delete
 
 Namespace: microsoft.graph
 
-Deletes the chart object.
+Deletes the workbookChart object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
