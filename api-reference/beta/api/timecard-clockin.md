@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clock in to start a [timeCard](../resources/timeCard.md).
+Clock in to start a [timeCard](../resources/timecard.md).
 
 ## Permissions
 
@@ -52,15 +52,17 @@ Provide a new [timeCardEvent](../resources/timecardevent.md) object in the reque
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timeCard.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [timeCard](../resources/timecard.md) object in the response body.
 
-## Example
+## Examples
 
-#### Request
+### Request
 The following is an example of the request. 
 
 ```http
 POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timecards/clockIn
+Content-Type: application/json
+
 { 
    "atApprovedLocation": true,
    "notes":{
@@ -69,13 +71,12 @@ POST https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50
      }
 }
 ```
----
 
-#### Response
+### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,6 +85,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
    "id":"3895809b-a618-4c0d-86a0-d42b25b7d74f",
    "userId":"a3601044-a1b5-438e-b742-f78d01d68a67",
