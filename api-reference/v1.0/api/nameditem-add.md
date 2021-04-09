@@ -1,6 +1,6 @@
 ---
 title: "workbookNamedItem: add"
-description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
+description: "Adds a new name to the collection of a given scope"
 localization_priority: Normal
 author: "ruoyingl"
 ms.prod: "excel"
