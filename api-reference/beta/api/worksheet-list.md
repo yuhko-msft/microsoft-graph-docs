@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# ListworkbookWorksheetCollection
+# List workbookWorksheetCollection
 
 Namespace: microsoft.graph
 

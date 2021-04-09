@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# workbookWorksheet: Range
+# workbookWorksheet: range
 
 Namespace: microsoft.graph
 

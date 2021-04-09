@@ -1,5 +1,5 @@
 ---
-title: "List rangeView rows"
+title: "List workbookRangeView rows"
 description: "Retrieve a list of range view objects."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List rangeView rows
+# List workbookRangeView rows
 
 Namespace: microsoft.graph
 

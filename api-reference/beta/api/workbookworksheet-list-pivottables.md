@@ -1,19 +1,19 @@
 ---
-title: "List pivotTables"
-description: "Retrieve a list of workbookpivottable objects."
+title: "List workbookPivotTables"
+description: "Retrieve a list of workbookPivotTable objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# List pivotTables
+# List workbookPivotTables
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of workbookpivottable objects.
+Retrieve a list of workbookPivotTable objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
