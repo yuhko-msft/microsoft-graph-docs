@@ -1,9 +1,9 @@
 ---
 title: "bufferDecryptionResult resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Decrypted piece of data resulting from the information protection decryptBuffer API."
+author: "libarson"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The decrypt buffer result showcases the plain-text data that is returned by the [decryptBuffer] (../api/informationprotection-decryptbuffer) API for information protection. The decrypt buffer result will match the plaintext buffer that was inputted to the [encryptBuffer] (../api/informationprotection-encryptbuffer) API.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|decryptedBuffer|Binary|**TODO: Add Description**|
+|decryptedBuffer|Binary| Plain-text data returned by [decryptBuffer] (../api/informationprotection-decryptbuffer)|
 
 ## Relationships
 None.
