@@ -12,11 +12,10 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
-This method only supports files up to 4MB in size.
 
-To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
+This method only supports files up to 4MB in size. To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
 
-You can also upload a new file to a **Shared with Me** folder. A **Shared with Me** folder is a folder that lives in someone else's drive, but they have granted you with *Can edit* access to it. Depending on the UI it can show up as **Shared with you**, **Shared with me** or **Shared**. For more details see [Shared with me folders](https://support.microsoft.com/en-us/office/see-files-shared-with-you-in-onedrive-2c14e8e6-4e52-4c61-9778-7155d33534a1#ID0EAACAAA=OneDrive_for_work_or_school).
+You can also upload a new file to a **Shared with Me** folder. A **Shared with Me** folder is a folder in someone else's drive and they have granted you with *Can edit* access to it. The folder can be displayed under **Shared with you**, **Shared with me** or **Shared** in the UI. For more details see [Shared with me folders](https://support.microsoft.com/office/see-files-shared-with-you-in-onedrive-2c14e8e6-4e52-4c61-9778-7155d33534a1#ID0EAACAAA=OneDrive_for_work_or_school).
 
 
 ## Permissions
@@ -60,8 +59,7 @@ To upload a new file to other drives - such as in a **Shared with Me** folder:
 ```http
 PUT /drives/{drive-id}/items/{item-id}:/{filename}:/content
 ```
-To access other drives using parent folder - an arbitrary drive in the organization or someone else's drive - the command should indicate the drive ID. For **Shared with Me** items, the drive-ID and item-ID come from the `remoteItem` facet of the `driveItem` of the folder that is shared with the user.
-
+To access other drives using parent folder - an arbitrary drive in the organization or someone else's drive - the command should indicate the [drive ID](https://docs.microsoft.com/onedrive/developer/rest-api/resources/driveitem). For **Shared with Me** items, the **drive-ID** and **item-ID** come from the [remoteItem](https://docs.microsoft.com/onedrive/developer/rest-api/resources/remoteitem) facet of the **driveItem** of the folder that is shared with the user.
 
 
 ## Request body
@@ -103,7 +101,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Updating an existing file
+### Example 2: Update an existing file
 #### Request
 This example replaces the contents of a file with a known ID.
 
@@ -151,7 +149,7 @@ Content-Type: application/json
 
 ### Example 3: Upload to a Shared with Me folder
 #### Request
-This example uploads a new file to a **Shared with Me** folder.
+This example creates a new file in a **Shared with Me** folder. There is no file by the name fileC.txt that already exists in the specified folder.
 
 <!-- { "blockType": "request", "name": "upload-to-SWM-via-put", "scopes": "files.readwrite" } -->
 
