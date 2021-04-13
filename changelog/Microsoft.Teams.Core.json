@@ -9,7 +9,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-1.0&preserve-view=true) method.",
           "Target": "chat"
-        },
+        }
       ],
       "Id": "ecb01663-dbaa-4564-ba93-18a354c750aa",
       "Cloud": "prd",

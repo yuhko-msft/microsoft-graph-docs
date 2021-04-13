@@ -429,16 +429,15 @@ Content-type: application/json
 }
 ```
 
-### Example 4: List all the chats with certain number of item per page
+### Example 4: List all the chats, two at a time
 
 #### Request
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_chats"
+  "name": "list_chats_with_pagination"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$top=2

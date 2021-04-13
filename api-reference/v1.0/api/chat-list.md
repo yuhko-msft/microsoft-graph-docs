@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_chats"
@@ -118,7 +117,6 @@ Content-type: application/json
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_chats_expand_members"
@@ -274,7 +272,6 @@ Content-type: application/json
 
 Here is an example of a request that will filter all the chats based on a specific member's display name.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_chats_expand_members_and_filter"
@@ -373,16 +370,15 @@ Content-type: application/json
 }
 ```
 
-### Example 4: List all the chats with certain number of item per page
+### Example 4: List all the chats, two at a time
 
 #### Request
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_chats"
+  "name": "list_chats_with_pagination"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats?$top=2
