@@ -3,7 +3,7 @@ title: "Get threatAssessmentRequest"
 description: "Retrieve the properties and relationships of a specified threatassessmentrequest object."
 localization_priority: Normal
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All.             |
+| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All             |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ThreatAssessment.Read.All.                  |
+| Application                            | ThreatAssessment.Read.All                  |
 
 ## HTTP request
 
@@ -447,3 +447,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

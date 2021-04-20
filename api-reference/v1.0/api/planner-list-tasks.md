@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /planner/tasks
 ```
 ## Optional query parameters
-This method requires planId [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.
+This method requires planId [filter](/graph/query-parameters) to be specified.
 
 ## Request headers
 | Name      |Description|
