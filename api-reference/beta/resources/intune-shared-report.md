@@ -2,7 +2,7 @@
 title: "report resource type"
 description: "Describes the report resource of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
-author: "dougeby"
+author: "rolyon"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -19,7 +19,6 @@ Returns the content appropriate for the context, including:
 
 - Device Configuration profile history reports.
 - Enrollment failure reports.
-- Microsoft 365 usage reports
 
 ## Properties
 |Property|Type|Description|
@@ -43,6 +42,7 @@ Here is a JSON representation of the resource.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

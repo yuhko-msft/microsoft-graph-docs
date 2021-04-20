@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "List the groups that this organizaitonal contact is a member of."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /contacts/{id}/memberOf
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select` to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) `$select` to help customize the response.
 
 ## Request headers
 | Header       | Value |
