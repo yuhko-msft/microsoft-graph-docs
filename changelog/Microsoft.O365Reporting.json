@@ -109,14 +109,6 @@
         {
           "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
-          "ChangedApiName": "usedChromeOS",
-          "ChangeType": "Addition",
-          "Description": "Added the **usedChromeOS** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
-          "Target": "teamsDeviceUsageUserDetail"
-        },
-        {
-          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-          "ApiChange": "Property",
           "ChangedApiName": "usedLinux",
           "ChangeType": "Addition",
           "Description": "Added the **usedLinux** property to the [teamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageuserdetail?view=graph-rest-beta) resource.",
@@ -125,26 +117,10 @@
         {
           "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
           "ApiChange": "Property",
-          "ChangedApiName": "chromeOS",
-          "ChangeType": "Addition",
-          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
-          "Target": "teamsDeviceUsageUserCounts"
-        },
-        {
-          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-          "ApiChange": "Property",
           "ChangedApiName": "linux",
           "ChangeType": "Addition",
           "Description": "Added the **linux** property to the [teamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusageusercounts?view=graph-rest-beta) resource.",
           "Target": "teamsDeviceUsageUserCounts"
-        },
-        {
-          "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",
-          "ApiChange": "Property",
-          "ChangedApiName": "chromeOS",
-          "ChangeType": "Addition",
-          "Description": "Added the **chromeOS** property to the [teamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/teamsdeviceusagedistributionusercounts?view=graph-rest-beta) resource.",
-          "Target": "teamsDeviceUsageDistributionUserCounts"
         },
         {
           "Id": "e4fe36e4-62e5-4ee5-bc69-d9108ac5baf9",

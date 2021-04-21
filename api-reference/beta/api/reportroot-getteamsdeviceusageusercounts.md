@@ -171,8 +171,7 @@ Content-Length: 269
       "androidPhone": 22, 
       "ios": 75, 
       "mac": 16, 
-      "windows": 257, 
-      "chromeOS": 10, 
+      "windows": 257
       "linux": 5, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"

@@ -26,7 +26,6 @@ Represents number of users by device type over the selected time period.
 | ios               | Int64  | The number of users who were active on the Teams mobile client for iOS. |
 | mac               | Int64  | The number of users who were active in the Teams desktop client on a macOS computer. |
 | windows           | Int64  | The number of users who were active in the Teams desktop client on a Windows-based computer. |
-| chromeOS          | Int64  | The number of users who were active in the Teams desktop client on a ChromeOS computer. |
 | linux             | Int64  | The number of users who were active in the Teams desktop client on a Linux computer. |
 | reportPeriod      | String | The number of days the report covers.                        |
 
@@ -47,8 +46,7 @@ The following is a JSON representation of the resource.
   "androidPhone": 1024, 
   "ios": 1024, 
   "mac": 1024, 
-  "windows": 1024, 
-  "chromeOS": 1024, 
+  "windows": 1024,
   "linux": 1024, 
   "reportPeriod": "String"
 }
