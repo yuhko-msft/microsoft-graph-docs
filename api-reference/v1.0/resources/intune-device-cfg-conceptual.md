@@ -47,7 +47,6 @@ The following Graph resources are available to manage settings and features on d
 - [Device compliance action type](intune-deviceconfig-devicecomplianceactiontype.md)
 - [Device compliance device overview](intune-deviceconfig-devicecompliancedeviceoverview.md)
 - [Device compliance device status](intune-deviceconfig-devicecompliancedevicestatus.md)
-- [Device compliance policy](intune-deviceconfig-devicecompliancepolicy.md)
 - [Device compliance policy assignment](intune-deviceconfig-devicecompliancepolicyassignment.md)
 - [Device compliance policy device state summary](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
 - [Device compliance policy setting state](intune-deviceconfig-devicecompliancepolicysettingstate.md)
@@ -56,7 +55,6 @@ The following Graph resources are available to manage settings and features on d
 - [Device compliance setting state](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Device compliance user overview](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Device compliance user status](intune-deviceconfig-devicecomplianceuserstatus.md)
-- [Device configuration](intune-deviceconfig-deviceconfiguration.md)
 - [Device configuration assignment](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Device configuration device overview](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
 - [Device configuration device state summary](intune-deviceconfig-deviceconfigurationdevicestatesummary.md)
@@ -140,6 +138,7 @@ The following Graph resources are available to manage settings and features on d
 - [Required password type](intune-deviceconfig-requiredpasswordtype.md)
 - [Safe search filter type](intune-deviceconfig-safesearchfiltertype.md)
 - [Setting source](intune-deviceconfig-settingsource.md)
+- [Setting source type](intune-deviceconfig-settingsourcetype.md)
 - [Setting state device summary](intune-deviceconfig-settingstatedevicesummary.md)
 - [Shared PC account deletion policy type](intune-deviceconfig-sharedpcaccountdeletionpolicytype.md)
 - [Shared PC account manager policy](intune-deviceconfig-sharedpcaccountmanagerpolicy.md)
@@ -179,9 +178,3 @@ The following Graph resources are available to manage settings and features on d
 - [Windows update scheduled install](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows update type](intune-deviceconfig-windowsupdatetype.md)
 - [Windows user account control settings](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
-
-
-
-
-
-

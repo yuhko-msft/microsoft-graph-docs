@@ -1,6 +1,6 @@
 ---
 title: "report resource type"
-description: "A report that varies according to the workflow, either device configuration profile history or enrollment failures."
+description: "Describes the report resource of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "intune"
@@ -11,35 +11,37 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-A report that varies according to the workflow, either device configuration profile history or enrollment failures.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Returns the content appropriate for the context, including:
+
+- Device Configuration profile history reports.
+- Enrollment failure reports.
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Not yet documented|
+|content|Stream|Report content; details vary by report type.|
 
 ## Relationships
-
 None
 
 ## JSON Representation
-
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.report"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.report",
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
-
 
 
 
