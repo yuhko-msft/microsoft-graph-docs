@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of a Temporaty Access Pass registered to a user. Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials.
+A representation of a Temporary Access Pass registered to a user. Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials.
 
 ## Methods
 |Method|Return type|Description|
