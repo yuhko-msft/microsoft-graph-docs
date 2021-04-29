@@ -1,6 +1,22 @@
 {
     "changelog": [
         {
+            "ChangeList": [{
+                "Id": "64bd7053-e273-4b39-81cd-e0910c6c20db",
+                "ApiChange": "Method",
+                "ChangedApiName": "bulkReprovisionCloudPc",
+                "ChangeType": "Addition",
+                "Description": "Added the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta) method to the managedDevice resource",
+                "Target": "managedDevice"
+            }],
+            "Id": "64bd7053-e273-4b39-81cd-e0910c6c20db",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-04-29T17:23:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"   
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "2a611d0f-e9d5-4f52-bd55-364c83ad8eef",
