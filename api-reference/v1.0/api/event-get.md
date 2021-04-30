@@ -361,7 +361,7 @@ The following example shows expanding a series master event of a recurring serie
   "name": "get_event_seriesMaster_expansion"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### Response
 The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, because the events no longer exist, the operation returns only their **occurrenceId** property values.
@@ -378,7 +378,7 @@ Content-type: application/json
 Content-length: 1992
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
   "subject": "Daily stand-up",
@@ -388,7 +388,7 @@ Content-length: 1992
      "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
     ],
   "occurrenceId": null,
-    "start": {
+  "start": {
         "dateTime": "2020-04-23T11:30:00.0000000",
         "timeZone": "UTC"
     },
