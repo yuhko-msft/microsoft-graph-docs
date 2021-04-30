@@ -685,14 +685,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Change | beta and v1.0 | Updated the mail property on the [user](/graph/api/resources/user) entity to be writeable. |
 
-## April 2021
-
-### Calendar
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the **cancelledOccurrences**, **exceptionOccurrences**, and **occurrenceId** properties to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity.
-
 ## August 2020
 
 ### Applications
