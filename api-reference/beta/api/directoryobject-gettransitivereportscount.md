@@ -41,7 +41,7 @@ This method supports the `$filter` query parameter only with the **accountEnable
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| ContextualLevel | eventual. Required. |
+| ConsistencyLevel | eventual. Required. |
 
 ## Request body
 
