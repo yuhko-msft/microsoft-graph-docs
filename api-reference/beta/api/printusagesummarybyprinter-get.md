@@ -31,7 +31,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /reports/dailyPrintUsageSummariesByPrinter/{id}
-GET /reports/monhtlyPrintUsageSummariesByPrinter/{id}
+GET /reports/monthlyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/dailyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/monthlyPrintUsageSummariesByPrinter/{id}
 ```
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageSummariesByPri
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -17,20 +17,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+|Delegated (work or school account) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite    |
+|Application | Calendars.Read, Calendars.Read.Shared, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
 All the user's calendars.
-```http
-GET /me/calendars
-GET /users/{id | userPrincipalName}/calendars
-```
-
-The user's calendars in the default [calendarGroup](../resources/calendargroup.md).
 ```http
 GET /me/calendars
 GET /users/{id | userPrincipalName}/calendars
@@ -87,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
