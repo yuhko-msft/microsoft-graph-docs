@@ -141,7 +141,7 @@ Content-type: application/json
 }
 ```
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 If the link has [existing access](/graph/files-share-driveitems-overview#link-with-existing-access), additional permissions will be returned representing the following:
 
@@ -206,7 +206,7 @@ Content-type: application/json
 
 ```
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 
 
