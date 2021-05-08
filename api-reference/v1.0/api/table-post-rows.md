@@ -53,10 +53,11 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.
 
-## Example
-In this example two rows of data are inserted at the end of the table. 
+## Examples
 
-##### Request
+### Example 1: Basic add table row
+
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -86,7 +87,7 @@ Content-length: 51
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -103,6 +104,13 @@ Content-length: 45
   "values": "values-value"
 }
 ```
+### Example 2: Add table row with long-running operation pattern
+
+#### Request
+
+#### Response
+
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
