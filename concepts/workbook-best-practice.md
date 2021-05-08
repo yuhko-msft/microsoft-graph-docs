@@ -125,9 +125,14 @@ For more details, see [Create session](/graph/api/workbook-createsession?view=gr
 
 You might notice that some operations take an indeterminate amount time to complete; for example, opening a large workbook. It is easy to hit timeout while waiting for the response to these requests. To resolve this issue, we provide the long-running operation pattern. When you use this pattern, you don't need to worry about the timeout for the request.
 
-Currently, the session creation Excel API in Microsoft Graph has the long-running operation pattern enabled. This pattern involves the following steps:
+Currently, long-running operation pattern is enabled for the following scenarios:
+- [Create Session](/graph/api/workbook-createsession?view=graph-rest-1.0)
+- [Add row in table](/graph/api/table-post-rows?view=graph-rest-1.0)
+- [Delete row in table](/graph/api/tablerow-delete?view=graph-rest-1.0)
 
-1. Add a `Prefer: respond-async` header to the request to indicate that it is a long-running operation when you crate a session.
+We'll take create session as the exmpale in following contents to be more sepcific on how to use long-running operation pattern. This pattern involves the following steps:
+
+1. Add a `Prefer: respond-async` header to the request to indicate that it is a long-running operation when you create a session.
 2. A long-running operation will return a `202 Accepted` response along with a Location header to retrieve the operation status. If the session creation completes in several seconds, it will return a regular create session response instead of using the long-running operation pattern.
 3. With the `202 Accepted` response, you can retrieve the operation status at the specified location. Operation status values include `notStarted`, `running`, `succeeded`, and `failed`.
 4. After the operation completes, you can get the session creation result through the specified URL in the succeeded response.
