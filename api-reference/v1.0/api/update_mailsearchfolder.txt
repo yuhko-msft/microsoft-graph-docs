@@ -1,0 +1,7 @@
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.mailSearchFolder",
+  "filterQuery": "contains(subject, 'Analytics')"
+}

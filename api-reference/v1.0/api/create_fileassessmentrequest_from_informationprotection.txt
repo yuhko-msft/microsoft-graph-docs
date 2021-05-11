@@ -1,0 +1,10 @@
+POST https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentRequests
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.fileAssessmentRequest",
+  "expectedAssessment": "block",
+  "category": "malware",
+  "fileName": "test.txt",
+  "contentData": "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
+}

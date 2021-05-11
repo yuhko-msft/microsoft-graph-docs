@@ -1,0 +1,8 @@
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+Content-Type: application/json
+Content-length: 147
+
+{
+  "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
+  "allowExternalIdToUseEmailOtp": "enabled",
+}

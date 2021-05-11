@@ -1,0 +1,19 @@
+PATCH https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
+Content-type: application/json
+
+{
+  "assignedTo": "String",
+  "closedDateTime": "String (timestamp)",
+  "comments": [
+    "String"
+  ],
+  "feedback": "@odata.type: microsoft.graph.alertFeedback",
+  "status": "@odata.type: microsoft.graph.alertStatus",
+  "tags": [
+    "String"
+  ],
+  "vendorInformation": {
+    "provider": "String",
+    "vendor": "String"
+  }
+}

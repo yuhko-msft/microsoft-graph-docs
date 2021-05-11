@@ -1,0 +1,10 @@
+POST https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentRequests
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.emailFileAssessmentRequest",
+  "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "expectedAssessment": "block",
+  "category": "malware",
+  "contentData": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
+}

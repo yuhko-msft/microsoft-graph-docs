@@ -1,0 +1,8 @@
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
+Content-type: application/json
+Content-length: 419
+
+{
+  "@odata.type":"#Microsoft.OutlookServices.ConversationThread",
+  "isLocked": true
+}

@@ -1,0 +1,12 @@
+PATCH https://graph.microsoft.com/v1.0/places/cf100@contoso.com
+Content-type: application/json
+Content-length: 285
+
+{
+  "@odata.type": "microsoft.graph.room",
+  "nickname": "Conf Room",
+  "building": "1",
+  "label": "100",
+  "capacity": 50,
+  "isWheelChairAccessible": false
+}

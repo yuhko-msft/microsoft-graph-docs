@@ -1,0 +1,26 @@
+POST https://graph.microsoft.com/v1.0/education/schools
+Content-Type: application/json
+Content-length: 583
+
+{
+  "@odata.type": "#microsoft.graph.educationSchool",
+  "displayName": "String",
+  "description": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "principalEmail": "String",
+  "principalName": "String",
+  "externalPrincipalId": "String",
+  "lowestGrade": "String",
+  "highestGrade": "String",
+  "schoolNumber": "String",
+  "externalId": "String",
+  "phone": "String",
+  "fax": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  }
+}

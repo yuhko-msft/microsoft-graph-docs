@@ -1,0 +1,10 @@
+PATCH https://graph.microsoft.com/v1.0/identity/apiConnectors/be1f769b-9b13-437e-b540-79a905c4932c
+Content-Type: application/json
+
+{
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.pkcs12Certificate",
+    "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+    "password": "secret"
+  }
+}

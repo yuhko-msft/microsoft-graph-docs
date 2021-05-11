@@ -1,0 +1,9 @@
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
+
+{
+  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "extensionName" : "Com.Contoso.Referral",
+  "companyName" : "Wingtip Toys",
+  "dealValue" : 500050,
+  "expirationDate" : "2015-12-03T10:00:00.000Z"
+}

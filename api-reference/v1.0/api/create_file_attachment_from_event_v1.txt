@@ -1,0 +1,9 @@
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
+Content-type: application/json
+Content-length: 151
+
+{
+    "@odata.type": "#microsoft.graph.fileAttachment",
+    "name": "menu.txt",
+    "contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+}

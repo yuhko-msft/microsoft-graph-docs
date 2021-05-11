@@ -1,0 +1,9 @@
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
+Content-type: application/json
+Content-length: 142
+
+{
+  "@odata.type": "#microsoft.graph.fileAttachment",
+  "name": "smile",
+  "contentBytes": "R0lGODdhEAYEAA7"
+}

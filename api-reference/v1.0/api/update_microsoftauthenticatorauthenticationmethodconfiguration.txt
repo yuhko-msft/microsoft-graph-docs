@@ -1,0 +1,8 @@
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator
+Content-Type: application/json
+Content-length: 119
+
+{
+  "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
+  "state": "String"
+}

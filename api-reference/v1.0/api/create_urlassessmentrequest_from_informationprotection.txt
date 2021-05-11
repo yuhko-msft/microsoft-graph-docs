@@ -1,0 +1,9 @@
+POST https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentRequests
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.urlAssessmentRequest",
+  "url": "http://test.com",
+  "expectedAssessment": "block",
+  "category": "phishing"
+}

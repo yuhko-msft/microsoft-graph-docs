@@ -1,0 +1,12 @@
+PATCH https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.countryNamedLocation",
+    "displayName": "Updated named location without unknown countries and regions",
+    "countriesAndRegions": [
+        "CA",
+        "IN"
+    ],
+    "includeUnknownCountriesAndRegions": false
+}

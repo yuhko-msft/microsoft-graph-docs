@@ -1,0 +1,14 @@
+POST https://graph.microsoft.com/v1.0/communications/calls/{id}/answer
+Content-Type: application/json
+Content-Length: 211
+
+{
+  "callbackUri": "callbackUri-value",
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration Blob>"
+  },
+  "acceptedModalities": [
+    "audio"
+  ]
+}

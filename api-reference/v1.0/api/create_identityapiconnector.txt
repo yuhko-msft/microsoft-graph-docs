@@ -1,0 +1,12 @@
+POST https://graph.microsoft.com/v1.0/identity/apiConnectors
+Content-Type: application/json
+
+{
+    "displayName":"Test API",
+    "targetUrl":"https://someotherapi.com/api",
+    "authenticationConfiguration": {
+        "@odata.type":"#microsoft.graph.pkcs12Certificate",
+        "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+        "password": "CertificatePassword"
+    }
+}
