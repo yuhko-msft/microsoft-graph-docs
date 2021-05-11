@@ -1,6 +1,78 @@
 {
   "changelog": [
     {
+      "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "232ad9b9-a486-11eb-a835-c815efda831b",
+              "ApiChange": "Resource",
+              "ChangedApiName": "admin",
+              "ChangeType": "Addition",
+              "Description": "Added the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource type.",
+              "Target": "admin"
+            },
+            {
+              "Id": "232d3bfc-a486-11eb-a835-c815efda831b",
+              "ApiChange": "Resource",
+              "ChangedApiName": "sharepoint",
+              "ChangeType": "Addition",
+              "Description": "Added the [sharepoint](https://docs.microsoft.com/en-us/graph/api/resources/sharepoint?view=graph-rest-beta) resource type.",
+              "Target": "sharepoint"
+            },
+            {
+              "Id": "232f9e07-a486-11eb-a835-c815efda831b",
+              "ApiChange": "Resource",
+              "ChangedApiName": "settings",
+              "ChangeType": "Addition",
+              "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/settings?view=graph-rest-beta) resource type.",
+              "Target": "settings"
+            },
+            {
+              "Id": "2332e3e5-a486-11eb-a835-c815efda831b",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "sharingCapabilities",
+              "ChangeType": "Addition",
+              "Description": "Added the **sharingCapabilities** enumeration type.",
+              "Target": "sharingCapabilities"
+            },
+            {
+              "Id": "23354677-a486-11eb-a835-c815efda831b",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "termStore",
+              "ChangeType": "Deletion",
+              "Description": "Removed the **termStore** relationship from the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+              "Target": "site"
+            }
+          ],
+          "Id": "23287731-a486-11eb-a835-c815efda831b",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2021-04-23T22:49:18.735Z",
+          "WorkloadArea": "Files",
+          "SubArea": ""
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "2337a8e1-a486-11eb-a835-c815efda831b",
+              "ApiChange": "Property",
+              "ChangedApiName": "parentSiteId",
+              "ChangeType": "Deletion",
+              "Description": "Removed the **parentSiteId** property from the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+              "Target": "group"
+            }
+          ],
+          "Id": "23287731-a486-11eb-a835-c815efda831b",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2021-04-23T22:49:18.735Z",
+          "WorkloadArea": "Groups",
+          "SubArea": ""
+        }
+      ]
+    },
+    {
       "ChangeList": [
         {
           "Id": "d0ae3ac8-8d01-4235-b584-66a251ba1605",

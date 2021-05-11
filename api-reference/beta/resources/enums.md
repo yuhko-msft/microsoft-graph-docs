@@ -445,6 +445,15 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 
+### sharingCapabilities values 
+
+|Member|
+|:---|
+|disabled|
+|externalUserSharingOnly|
+|externalUserAndGuestSharing|
+|existingExternalUserSharingOnly|
+
 ### fido2RestrictionEnforcementType values
 
 |Member|
