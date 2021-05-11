@@ -3,8 +3,8 @@ title: "Use Microsoft Graph APIs to configure SAML-based single sign-on"
 description: "Learn how to save time by using the Microsoft Graph APIs to automate the configuration of SAML-based single sign-on."
 author: "kenwith"
 localization_priority: Priority
-ms.prod: "applications"
 ms.custom: scenarios:getting-started
+ms.prod: applications
 ---
 
 # Configure SAML-based single sign-on for your application using the Microsoft Graph API
