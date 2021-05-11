@@ -18,7 +18,7 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 ## Prerequisites
 
-This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, and `Policy.ReadWrite.ApplicationConfiguration` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
+This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, and `User.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
 
 1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
@@ -26,7 +26,7 @@ This tutorial assumes that you are using Microsoft Graph Explorer, but you can u
 
     ![Select the Microsoft Graph permissions](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. Scroll through the list of permissions to the `AppRoleAssignment` permissions, expand **AppRoleAssignment (1)**, and select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down the list of permissions to the `Application` permissions, expand **Application (2)**, and select the **Application.ReadWrite.All** permission. Continue to the `Policy` permissions, expand **Policy (13)**, and select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to and expand **Users (8)**, and then select **User.ReadWrite.All**. 
+4. Scroll through the list of permissions to the `AppRoleAssignment` permissions, expand **AppRoleAssignment (1)**, and select the **AppRoleAssignment.ReadWrite.All** permission. Scroll further down the list of permissions to the `Application` permissions, expand **Application (2)**, and select the **Application.ReadWrite.All** permission. Continue to the `Policy` permissions, expand **Policy (13)**, and select the **Policy.Read.All**  and **Policy.ReadWrite.ApplicationConfiguration** permissions. Finally, scroll to the `User` permissions, expand **Users (8)**, and then select **User.ReadWrite.All**. 
 
     ![Scroll to and select the approleassignment, application, and policy permissions](./images/application-saml-sso-configure-api/select-permissions.png)
 
@@ -449,7 +449,7 @@ Content-type: claimsMappingPolicies/json
 
 ### Assign a claims mapping policy to a service principal
 
-Use the **objectId** for the service principal that you recorded earlier to assign a claims mapping policy to it. Use the value of the **id** property for the claims mapping policy in the body of the request.
+Use the **id** for the service principal that you recorded earlier to assign a claims mapping policy to it. Use the value of the **id** property for the claims mapping policy in the body of the request.
 
 #### Request
 
@@ -470,11 +470,11 @@ HTTP/1.1 204
 
 ## Step 4: Configure a signing certificate
 
-Assign your certificate to the application. 
+You need a self-signed certificate that Azure AD can use to sign a SAML response. You can use your own certificate or you can use the following example. 
 
 ### Create a signing certificate
 
-You need a self-signed certificate that Azure AD can use to sign a SAML response. You can use your own certificate or you can use the following example.
+Using the **id** of the service principal that you created, create a new certificate and add it to the service principal.
 
 #### Request
 
