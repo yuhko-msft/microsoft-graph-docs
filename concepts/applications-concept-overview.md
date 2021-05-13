@@ -69,10 +69,6 @@ For more information about synchronization, see the following articles:
 - [How provisioning works](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 To learn about using the synchronization APIs, see the following tutorials and their associated APIs:
-- [Configure provisioning using Microsoft Graph APIs](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-    - [synchronizationTemplate](/graph/api/resources/synchronization-synchronizationtemplate)
-    - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)
 - [Automate SAML-based SSO app configuration with Microsoft Graph API](/azure/active-directory/manage-apps/application-saml-sso-configure-api)
     - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
     - [application](/graph/api/resources/application?view=graph-rest-1.0)
