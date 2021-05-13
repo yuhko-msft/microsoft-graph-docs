@@ -1,0 +1,126 @@
+---
+title: "Create deviceHealthScriptRunSummary"
+description: "Create a new deviceHealthScriptRunSummary object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+localization_priority: Normal
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: apiPageType
+---
+
+# Create deviceHealthScriptRunSummary
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new [deviceHealthScriptRunSummary](../resources/intune-devicehealthscriptrunsummary.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST ** Collection URI for microsoft.graph.deviceHealthScriptRunSummary not found
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of the [deviceHealthScriptRunSummary](../resources/intune-devicehealthscriptrunsummary.md) object.
+
+The following table shows the properties that are required when you create the [deviceHealthScriptRunSummary](../resources/intune-devicehealthscriptrunsummary.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|noIssueDetectedDeviceCount|Int32|**TODO: Add Description**|
+|issueDetectedDeviceCount|Int32|**TODO: Add Description**|
+|detectionScriptErrorDeviceCount|Int32|**TODO: Add Description**|
+|detectionScriptPendingDeviceCount|Int32|**TODO: Add Description**|
+|detectionScriptNotApplicableDeviceCount|Int32|**TODO: Add Description**|
+|issueRemediatedDeviceCount|Int32|**TODO: Add Description**|
+|remediationSkippedDeviceCount|Int32|**TODO: Add Description**|
+|issueReoccurredDeviceCount|Int32|**TODO: Add Description**|
+|remediationScriptErrorDeviceCount|Int32|**TODO: Add Description**|
+|lastScriptRunDateTime|DateTimeOffset|**TODO: Add Description**|
+|issueRemediatedCumulativeDeviceCount|Int32|**TODO: Add Description**|
+
+
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [deviceHealthScriptRunSummary](../resources/intune-devicehealthscriptrunsummary.md) object in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_devicehealthscriptrunsummary_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.deviceHealthScriptRunSummary not found
+Content-Type: application/json
+Content-length: 603
+
+{
+  "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
+  "noIssueDetectedDeviceCount": "Integer",
+  "issueDetectedDeviceCount": "Integer",
+  "detectionScriptErrorDeviceCount": "Integer",
+  "detectionScriptPendingDeviceCount": "Integer",
+  "detectionScriptNotApplicableDeviceCount": "Integer",
+  "issueRemediatedDeviceCount": "Integer",
+  "remediationSkippedDeviceCount": "Integer",
+  "issueReoccurredDeviceCount": "Integer",
+  "remediationScriptErrorDeviceCount": "Integer",
+  "lastScriptRunDateTime": "String (timestamp)",
+  "issueRemediatedCumulativeDeviceCount": "Integer"
+}
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.deviceHealthScriptRunSummary"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
+  "id": "d33ff93f-f93f-d33f-3ff9-3fd33ff93fd3",
+  "noIssueDetectedDeviceCount": "Integer",
+  "issueDetectedDeviceCount": "Integer",
+  "detectionScriptErrorDeviceCount": "Integer",
+  "detectionScriptPendingDeviceCount": "Integer",
+  "detectionScriptNotApplicableDeviceCount": "Integer",
+  "issueRemediatedDeviceCount": "Integer",
+  "remediationSkippedDeviceCount": "Integer",
+  "issueReoccurredDeviceCount": "Integer",
+  "remediationScriptErrorDeviceCount": "Integer",
+  "lastScriptRunDateTime": "String (timestamp)",
+  "issueRemediatedCumulativeDeviceCount": "Integer"
+}
+```
+
