@@ -1,9 +1,9 @@
 ---
 title: "List settings"
 description: "Get the settings resources from the settings navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "TrGreen"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,10 @@ Namespace: microsoft.graph.admin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+<!--
 Get the settings resources from the settings navigation property.
+-->
+Retrieve the settings and properties for a Tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 

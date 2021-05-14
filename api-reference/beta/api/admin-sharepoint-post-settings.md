@@ -1,9 +1,9 @@
 ---
 title: "Create settings"
 description: "Create a new settings object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "trgreen"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.admin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new settings object.
+Modify one or more settings on the SharePoint tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,9 +46,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isSitePagesEnabled|Boolean|**TODO: Add Description**|
+|isSitePagesEnabled|Boolean|Allow users to create new modern pages. [Learn more](https://docs.microsoft.com/sharepoint/let-users-create-modern-site-pages)|
 |isFluidEnabled|Boolean|**TODO: Add Description**|
-|isCommentsOnSitePagesEnabled|Boolean|**TODO: Add Description**|
+|isCommentsOnSitePagesEnabled|Boolean|Allow commenting on modern pages. [Learn more](https://docs.microsoft.com/sharepoint/let-users-create-modern-site-pages)*|
 |isSharePointNewsfeedEnabled|Boolean|**TODO: Add Description**|
 |sharingCapability|sharingCapabilities|**TODO: Add Description**. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|
 
