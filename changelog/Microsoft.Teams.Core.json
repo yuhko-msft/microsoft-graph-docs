@@ -18,7 +18,7 @@
           "ChangeType": "Addition",
           "Description": "Added a new enum member `teamifyGroup` to teamsAsyncOperationType.",
           "Target": "teamsAsyncOperationType"
-        }
+        },
 		{
           "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
           "ApiChange": "Enum type",
