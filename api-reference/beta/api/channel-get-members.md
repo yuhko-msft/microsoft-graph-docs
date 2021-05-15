@@ -105,7 +105,8 @@ Content-length: 201
 "roles": ["owner"],
 "displayName": "John Doe",
 "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-"email": null
+"email": null,
+"tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
 }
 
 ```
