@@ -24,6 +24,4 @@ Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added he
 |archiveTeam|2|Operation to archive a team.|
 |unarchiveTeam|3|Operation to restore an archived team.|
 |createTeam|3|Operation to create a team from scratch.|
-
-
-
+|createChannel|4|Operation to create a shared channel.|
