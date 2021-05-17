@@ -47,10 +47,10 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |isSitePagesEnabled|Boolean|Allow users to create new modern pages. [Learn more](https://docs.microsoft.com/sharepoint/let-users-create-modern-site-pages)|
-|isFluidEnabled|Boolean|**TODO: Add Description**|
-|isCommentsOnSitePagesEnabled|Boolean|Allow commenting on modern pages. [Learn more](https://docs.microsoft.com/sharepoint/let-users-create-modern-site-pages)*|
+|isFluidEnabled|Boolean|Control whether Fluid experiences is enabled on the tenant.|
+|isCommentsOnSitePagesEnabled|Boolean|Allow commenting on modern pages. [Learn more](https://docs.microsoft.com/sharepoint/let-users-create-modern-site-pages)|
 |isSharePointNewsfeedEnabled|Boolean|**TODO: Add Description**|
-|sharingCapability|sharingCapabilities|**TODO: Add Description**. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.|
+|sharingCapability|sharingCapabilities|Changes the external sharing capabilities for the tenant.  Individual sites and OneDrives must have at least as restrictive external sharing settings as the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`. [Learn more](https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off)|
 
 
 
