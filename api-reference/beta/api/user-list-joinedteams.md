@@ -29,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 > ('me' alias is not supported with application permissions)
 > For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 
+> **Note**: This API doesnot return parent team of shared channel (where user is member of).
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

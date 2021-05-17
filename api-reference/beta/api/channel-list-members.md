@@ -115,7 +115,8 @@ Content-length: 201
         "roles": [],
         "displayName": "Jane Doe",
         "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-        "email": "jdoe@teamsip.onmicrosoft.com"
+        "email": "jdoe@teamsip.onmicrosoft.com",
+        "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
     },
     {
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -125,7 +126,8 @@ Content-length: 201
         ],
         "displayName": "Ace John",
         "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
-        "email": "ajohn@teamsip.onmicrosoft.com"
+        "email": "ajohn@teamsip.onmicrosoft.com",
+        "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
     }
 ]
 }
