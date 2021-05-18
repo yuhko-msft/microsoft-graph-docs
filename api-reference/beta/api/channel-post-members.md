@@ -183,7 +183,7 @@ Content-length: 468
   "email": null
 }
 ```
-### Example 3: Add an user who is part of same tenant as member to a shared channel
+### Example 3: Add a user who is part of same tenant as member to a shared channel
 
 #### Request
 <!-- {
@@ -230,7 +230,7 @@ Content-length: 468
 }
 ```
 
-### Example 4: Add an user who is part of different tenant as member to a shared channel
+### Example 4: Add a user who is part of different tenant as member to a shared channel
 
 #### Request
 <!-- {
