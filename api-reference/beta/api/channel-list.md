@@ -192,7 +192,7 @@ The following example shows a request to list all private channels.
 
 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_shared_channels"
