@@ -188,11 +188,11 @@ Content-length: 262
 
 #### Request
 
-The following example shows a request to list all private channels.
+The following example shows a request to list all shared channels.
+> **Note:** Shared channel is only availble in private preview.
 
 
-
-
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_shared_channels"
