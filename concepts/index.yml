@@ -30,7 +30,7 @@ highlightedContent:
       url: https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0
 
 productDirectory:
-  title: SDK and Tools
+  title: SDKs and tools
   items:
     # Card
     - title: SDKs
@@ -41,7 +41,7 @@ productDirectory:
     # Card
     - title: Quickstarts
       imageSrc: ./images/hub/icon02-quickstart.svg
-      summary: Samples showing how to access services with one authentication
+      summary: Pre-configured samples for your platform
       url: https://developer.microsoft.com/graph/quick-start
     # Card
     - title: Graph Explorer
@@ -118,19 +118,14 @@ additionalContent:
             - text: Schedule a Windows update deployment
               url: https://docs.microsoft.com/graph/windowsupdates-schedule-deployment
         # Card
-        - title: Resources
+        - title: Resources and community
           links:
-            - text: What's new?
-              url: ./whats-new-overview.md
             - text: Changelog
               url: ./changelog.md
             - text: Known issues
               url: ./known-issues.md
             - text: Support
               url: https://developer.microsoft.com/graph/support
-        # Card
-        - title: Community
-          links:
             - text: Microsoft Graph blog
               url: https://developer.microsoft.com/graph/blogs/
             - text: Videos and podcasts
