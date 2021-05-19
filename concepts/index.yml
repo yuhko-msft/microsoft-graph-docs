@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.date: 05/14/2021
+  ms.date: 05/24/2021
   featureFlags:
   - clicktale
 
@@ -22,12 +22,55 @@ highlightedContent:
     - title: What can I access through Microsoft Graph?
       itemType: concept
       url: ./overview-major-services.md
-    - title: Step-by-step trainings
-      itemType: tutorial
-      url: https://docs.microsoft.com/graph/tutorials
+    - title: What's new
+      itemType: whats-new
+      url: ./whats-new-overview.md
     - title: Microsoft Graph REST API
       itemType: reference
       url: https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: sectiontitle # < 60 chars (optional)
+  summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: cardtitle1
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: itemType
+          text: linktext1
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: itemType
+          text: linktext2
+        - url: file3.md OR https://docs.microsoft.com/file3
+          itemType: itemType
+          text: linktext3
+    # Card
+    - title: cardtitle2
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: itemType
+          text: linktext1
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: itemType
+          text: linktext2
+        - url: file3.md OR https://docs.microsoft.com/file3
+          itemType: itemType
+          text: linktext3
+    # Card
+    - title: cardtitle3
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: itemType
+          text: linktext1
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: itemType
+          text: linktext2
+        - url: file3.md OR https://docs.microsoft.com/file3
+          itemType: itemType
+          text: linktext3
 
 productDirectory:
   title: SDK and Tools
@@ -35,22 +78,22 @@ productDirectory:
     # Card
     - title: SDKs
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/hub/code.svg
+      imageSrc: ./images/hub/icon01-sdk.svg
       summary: Available for a variety of languages and platforms
       url: https://docs.microsoft.com/graph/sdks/sdk-installation
     # Card
     - title: Quickstarts
-      imageSrc: ./images/hub/quickstart.svg
+      imageSrc: ./images/hub/icon02-quickstart.svg
       summary: Samples showing how to access services with one authentication
       url: https://developer.microsoft.com/graph/quick-start
     # Card
     - title: Graph Explorer
-      imageSrc: ./images/hub/microsoft-graph-logo.png
+      imageSrc: ./images/hub/icon03-graphexplorer.png
       summary: Tool that lets you try API requests and view responses
       url: https://developer.microsoft.com/graph/graph-explorer/
     # Card
     - title: Microsoft Graph Toolkit
-      imageSrc: ./images/hub/builds.svg
+      imageSrc: ./images/hub/icon04-graphtoolkit.svg
       summary: UI components and authentication providers
       url: ./toolkit/overview.md
 
