@@ -46,7 +46,7 @@ productDirectory:
     # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
-      summary: Try API request and view responses
+      summary: Try API requests and view responses
       url: https://developer.microsoft.com/graph/graph-explorer/
     # Card
     - title: Microsoft Graph Toolkit
