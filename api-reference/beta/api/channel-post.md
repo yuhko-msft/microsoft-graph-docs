@@ -356,10 +356,9 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 Content-type: application/json
 
 {
-    "@odata.type": "#Microsoft.Teams.Core.channel",
+     "displayName": "My First Shared Channel",
+    "description": "This is my first shared channels",
     "membershipType": "shared",
-    "displayName": "My First Shared Channel",
-    "description": "This is my first shared channels"
     "members":
       [
           {
