@@ -46,7 +46,7 @@ productDirectory:
     # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
-      summary: Tool that lets you try API requests and view responses
+      summary: Try API request and view responses
       url: https://developer.microsoft.com/graph/graph-explorer/
     # Card
     - title: Microsoft Graph Toolkit
@@ -60,7 +60,7 @@ additionalContent:
       items:
         # Card1
         - title: Users
-          summary: Access and manipulate user resources directly
+          summary: Access and manipulate user resources directly.
           url: https://docs.microsoft.com/graph/azuread-users-concept-overview
         # Card2
         - title: Groups
@@ -68,27 +68,27 @@ additionalContent:
           url: https://docs.microsoft.com/graph/office365-groups-concept-overview
         # Card3
         - title: Teams
-          summary: Integrate with Microsoft Teams
+          summary: Integrate with Microsoft Teams.
           url: https://docs.microsoft.com/graph/teams-concept-overview
         # Card4
         - title: OneDrive file storage
-          summary: Work with various types of files from OneDrive
+          summary: Work with various types of files from OneDrive.
           url: https://docs.microsoft.com/graph/onedrive-concept-overview
         # Card5
         - title: Outlook calendar
-          summary: Control calendars such as creating an event
+          summary: Control calendars such as creating an event.
           url: https://docs.microsoft.com/graph/outlook-calendar-concept-overview
         # Card6
         - title: Outlook mail
-          summary: Access and manage messages and mail data
+          summary: Access and manage messages and mail data.
           url: https://docs.microsoft.com/graph/outlook-mail-concept-overview
         # Card7
         - title: Excel workbook and charts
-          summary: Read and modify Excel files
+          summary: Read and modify Excel files.
           url: https://docs.microsoft.com/graph/excel-concept-overview
         # Card8
         - title: Identity and access management
-          summary: Use Azure AD methods to manage access and authenticate users
+          summary: Use Azure AD methods to manage access and authenticate users.
           url: https://docs.microsoft.com/graph/azuread-identity-access-management-concept-overview
 
     - title: Guides and resources
