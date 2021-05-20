@@ -193,8 +193,9 @@ Content-length: 468
 } -->
 
 ```http
-https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
-content-type: application/json
+POST https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": [],
@@ -240,8 +241,9 @@ Content-length: 468
 } -->
 
 ```http
-https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
-content-type: application/json
+POST https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": [],

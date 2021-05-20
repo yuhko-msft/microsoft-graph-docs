@@ -343,6 +343,7 @@ Content-length: 201
 #### Request
 
 The following example shows how to create a shared channel.
+> **Note:** Shared channel is only availble in private preview.
 
 
 <!-- {
@@ -352,6 +353,8 @@ The following example shows how to create a shared channel.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
 {
   "@odata.type": "#Microsoft.Teams.Core.channel",
   "membershipType": "shared",
