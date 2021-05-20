@@ -64,7 +64,7 @@ additionalContent:
           url: https://docs.microsoft.com/graph/azuread-users-concept-overview
         # Card2
         - title: Groups
-          summary: Enable user collaboration and integration across services
+          summary: Enable user collaboration and integration across services.
           url: https://docs.microsoft.com/graph/office365-groups-concept-overview
         # Card3
         - title: Teams
