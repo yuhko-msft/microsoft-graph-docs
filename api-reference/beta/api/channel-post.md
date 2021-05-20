@@ -356,18 +356,18 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 Content-type: application/json
 
 {
-  "@odata.type": "#Microsoft.Teams.Core.channel",
-  "membershipType": "shared",
-  "displayName": "My First Shared Channel",
-  "description": "This is my first shared channels"
-  "members":
-     [
-        {
-           "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
-           "roles":["owner"]
-        }
-     ]
+    "@odata.type": "#Microsoft.Teams.Core.channel",
+    "membershipType": "shared",
+    "displayName": "My First Shared Channel",
+    "description": "This is my first shared channels"
+    "members":
+      [
+          {
+            "@odata.type":"#microsoft.graph.aadUserConversationMember",
+            "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+            "roles":["owner"]
+          }
+      ]
 }
 ```
 
