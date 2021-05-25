@@ -1,7 +1,7 @@
 ---
 title: "Update reportRoot"
 description: "Update the properties of a reportRoot object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -11,20 +11,23 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.
-
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)||
-| &nbsp; &nbsp; Device configuration | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -59,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [repo
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/v1.0/reports
+PATCH https://graph.microsoft.com/beta/reports
 Content-type: application/json
 Content-length: 2
 
@@ -78,10 +81,6 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
-
-
-
-
 
 
 

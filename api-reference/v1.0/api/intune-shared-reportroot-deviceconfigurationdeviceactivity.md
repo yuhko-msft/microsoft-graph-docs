@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationDeviceActivity function"
 description: "Metadata for the device configuration device activity report"
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -11,19 +11,21 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Metadata for the device configuration device activity report
-
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)||
-| &nbsp; &nbsp; Device configuration | DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -50,7 +52,7 @@ If successful, this function returns a `200 OK` response code and a [report](../
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/deviceConfigurationDeviceActivity
+GET https://graph.microsoft.com/beta/reports/deviceConfigurationDeviceActivity
 ```
 
 ### Response
@@ -67,10 +69,6 @@ Content-Length: 123
   }
 }
 ```
-
-
-
-
 
 
 

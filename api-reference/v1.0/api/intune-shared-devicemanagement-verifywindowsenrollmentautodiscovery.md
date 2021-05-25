@@ -1,7 +1,7 @@
 ---
 title: "verifyWindowsEnrollmentAutoDiscovery function"
 description: "Not yet documented"
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -11,19 +11,21 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Not yet documented
-
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)||
-| &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -48,6 +50,8 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |domainName|String|Not yet documented|
 
+
+
 ## Response
 If successful, this function returns a `200 OK` response code and a Boolean in the response body.
 
@@ -55,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/verifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
+GET https://graph.microsoft.com/beta/deviceManagement/verifyWindowsEnrollmentAutoDiscovery(domainName='parameterValue')
 ```
 
 ### Response
@@ -69,6 +73,7 @@ Content-Length: 21
   "value": true
 }
 ```
+
 
 
 
