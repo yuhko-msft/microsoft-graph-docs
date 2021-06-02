@@ -205,25 +205,46 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
 {
     var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
     var openIdConfig = await configurationManager.GetConfigurationAsync();
+    string microsoftChangeTrackingAppId = "0bf30f3b-4a52-48df-9a82-234910c4a086";
     var handler = new JwtSecurityTokenHandler();
     try
     {
-	handler.ValidateToken(token, new TokenValidationParameters
-	{
-	    ValidateIssuer = true,
-	    ValidateAudience = true,
-	    ValidateIssuerSigningKey = true,
-	    ValidateLifetime = true,
-	    ValidIssuer = $"https://sts.windows.net/{tenantId}/",
-	    ValidAudiences = appIds,
-	    IssuerSigningKeys = openIdConfig.SigningKeys
-	}, out _);
-	return true;
+        var result = handler.ValidateToken(token, new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidateLifetime = true,
+            ValidIssuer = $"https://sts.windows.net/{tenantId}/",
+            ValidAudiences = appIds,
+            IssuerSigningKeys = openIdConfig.SigningKeys
+        }, out _);
+                
+        ClaimsPrincipal claims = result;
+
+        var claimValue = claims.Claims.GetEnumerator();
+        string appId = "";
+        if (claimValue != null)
+        {
+            while (claimValue.MoveNext())
+            {
+                if (claimValue.Current.Type == "appid")
+                {
+                    appId = claimValue.Current.Value;
+                    break;
+                }
+            }
+        }
+        if (appId != microsoftChangeTrackingAppId)
+        {
+            return false;
+        }
+        return true;
     }
     catch (Exception ex)
     {
-	Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
-	return false;
+        Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
+        return false;
     }
 }
 ```
