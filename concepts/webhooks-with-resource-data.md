@@ -219,28 +219,8 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
             ValidAudiences = appIds,
             IssuerSigningKeys = openIdConfig.SigningKeys
         }, out _);
-                return result.Claims.Where(x => x.Type.Equals("appid", StringComparison.OrdinalIgnoreCase))
+        return result.Claims.Where(x => x.Type.Equals("appid", StringComparison.OrdinalIgnoreCase))
                 .Any(x => x.Value.Equals(microsoftChangeTrackingAppId, StringComparison.OrdinalIgnoreCase));
-        ClaimsPrincipal claims = result;
-
-        var claimValue = claims.Claims.GetEnumerator();
-        string appId = "";
-        if (claimValue != null)
-        {
-            while (claimValue.MoveNext())
-            {
-                if (claimValue.Current.Type == "appid")
-                {
-                    appId = claimValue.Current.Value;
-                    break;
-                }
-            }
-        }
-        if (appId != microsoftChangeTrackingAppId)
-        {
-            return false;
-        }
-        return true;
     }
     catch (Exception ex)
     {
