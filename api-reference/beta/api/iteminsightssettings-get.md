@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties of [itemInsightsSettings](../resources/iteminsightssettings.md) object.
 
-To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md). 
+To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
 
 ## Permissions
 
@@ -23,11 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite |
+|Delegated (work or school account) | User.Read.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read, User.ReadWrite  |
-
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -55,19 +53,39 @@ If successful, this method returns a `200 OK` response code and [itemInsightsSet
 ## Example
 
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_iteminsightssettings"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-iteminsightssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-iteminsightssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-iteminsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
 Here is an example of the response. 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -85,3 +103,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+
