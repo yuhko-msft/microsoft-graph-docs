@@ -109,6 +109,15 @@ The `root` identifier always references the root site for a given target, as fol
 | **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
 | **externalColumns**     | Collection([columnDefinition][])  | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
+## Instance Attributes
+
+Instance attributes are properties with special behaviors.
+These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values.
+
+| Property name                     | Type   | Description
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft.graph.removed          | [removed]] | Information about the removed item. Read-only.
+
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -141,7 +150,8 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
     "drives",
     "permissions",
     "sites",
-    "deleted"
+    "deleted",
+    "@microsoft.graph.removed"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
@@ -175,7 +185,10 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "description": "string",
   "eTag": "string",
   "lastModifiedDateTime": "datetime",
-  "webUrl": "url"
+  "webUrl": "url",
+
+  /* instance annotations */
+  "@microsoft.graph.removed": "microsoft.graph.removed"
 }
 ```
 
