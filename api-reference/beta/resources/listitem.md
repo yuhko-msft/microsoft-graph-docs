@@ -77,7 +77,10 @@ Here is a JSON representation of a **listItem** resource.
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
+  "webUrl": "url",
+
+   /* instance annotations */
+  "@microsoft.graph.removed": "microsoft.graph.removed"
 }
 ```
 
@@ -116,6 +119,15 @@ The following properties are inherited from **[baseItem][]**.
 | driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
 | fields            | [fieldValueSet][]              | The values of the columns set on this list item.
 | versions          | [listItemVersion][] collection | The list of previous versions of the list item.
+
+## Instance Attributes
+
+Instance attributes are properties with special behaviors.
+These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values.
+
+| Property name                     | Type   | Description
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft.graph.removed          | [removed]] | Information about the removed item. Read-only.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
