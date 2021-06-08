@@ -68,6 +68,7 @@ Here is a JSON representation of a **list** resource.
   },
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+  "views": [ {"@odata.type": "microsoft.graph.listView"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -116,7 +117,8 @@ The **list** resource has the following relationships to other resources.
 | **activities**    | [itemActivity][] collection | The recent activities that took place within this list.
 | **drive**         | [drive][]                   | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | All items contained in the list.
-| subscriptions      | [subscription][] collection | The set of subscriptions on the list.
+| **subscriptions** | [subscription][] collection | The set of subscriptions on the list.
+| **views**         | Collection([listView][])     | The collection of list views.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -127,6 +129,7 @@ The **list** resource has the following relationships to other resources.
 [itemActivity]: itemactivity.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
+[listView]: listView.md
 [site]: site.md
 [systemFacet]: systemfacet.md
 [subscription]: subscription.md
