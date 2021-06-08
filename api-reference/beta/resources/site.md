@@ -140,12 +140,18 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
     "drive",
     "drives",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "sites",
     "deleted"
 =======
     "permissions",
     "sites"
 >>>>>>> 825df56c85a093b9d0bfb1270aa57e9f84687794
+=======
+    "permissions",
+    "sites",
+    "deleted"
+>>>>>>> 6d8d5981c80a77a7d36291da36df2d1dc31c0e78
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",

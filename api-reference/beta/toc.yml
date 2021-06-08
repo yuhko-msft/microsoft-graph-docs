@@ -12823,9 +12823,12 @@ items:
         - name: List followed sites
           href: api/sites-list-followed.md
 <<<<<<< HEAD
+<<<<<<< HEAD
         - name: Get delta
           href: api/sites-delta.md
 =======
+=======
+>>>>>>> 6d8d5981c80a77a7d36291da36df2d1dc31c0e78
         - name: List columns
           href: api/site-list-columns.md
         - name: Create column
@@ -12856,7 +12859,12 @@ items:
             href: api/site-update-permission.md
           - name: Delete site permission
             href: api/site-delete-permission.md
+<<<<<<< HEAD
 >>>>>>> 825df56c85a093b9d0bfb1270aa57e9f84687794
+=======
+        - name: Get delta
+          href: api/sites-delta.md
+>>>>>>> 6d8d5981c80a77a7d36291da36df2d1dc31c0e78
       - name: Lists
         items:
         - name: List
