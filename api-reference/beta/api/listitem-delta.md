@@ -1,9 +1,9 @@
 ---
 author: learafa
 description: "This method allows your app to track changes to a list and its items over time."
-title: "sites: delta"
+title: "listItem: delta"
 localization_priority: Normal
-ms.prod: "SharePoint"
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # listItem: delta
