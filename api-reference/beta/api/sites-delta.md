@@ -3,7 +3,7 @@ author: learafa
 description: "Sync changes of sites from the service to your client state."
 title: "sites: delta"
 localization_priority: Normal
-ms.prod: "SharePoint"
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # sites: delta
@@ -25,7 +25,7 @@ Deleted sites are returned with an @removed object. The @removed will include re
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,7 +49,7 @@ GET /sites/delta
 
 ## Optional query parameters
 
-This method supports the `$select`, `$expand`, and `$top` [OData query parameters](../concepts/optional-query-parameters.md) to customize the response.
+This method supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request Header
 
@@ -72,13 +72,6 @@ In addition to the collection of resources, the response will also include one o
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
-### Errors
-
-In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
-
-[release-notes]: ../getting-started/release-notes.md
-[error-response]: ../concepts/errors.md
-
 ## Examples
 
 ### Example 1:
@@ -91,9 +84,29 @@ Here is an example of the initial request.
 
 <!-- { "blockType": "request", "name": "get_sites_delta_first", "tags": "service.graph" } -->
 
-```http
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get_sites_delta_first" } -->
+
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-sites-delta-first-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-sites-delta-first-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-sites-delta-first-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-sites-delta-first-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -135,11 +148,29 @@ Here is an example of the last page in a set, how to call this API to update you
 
 Here is an example request after the initial request.
 
-<!-- { "blockType": "request", "name": "get-sites-delta-last", "tags": "service.graph" }-->
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-sites-delta-last" }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/delta(token='1230919asd190410jlka')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-sites-delta-last-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-sites-delta-last-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-sites-delta-last-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-sites-delta-last-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -192,11 +223,29 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 
 #### Request
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "sites.read", "tags": "service.graph", "target": "action" } -->
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "sites.read", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /sites/delta?token=latest
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-latest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-latest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -218,7 +267,11 @@ Content-type: application/json
 
 * The same resource may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 
-* Delta has additional restrictions for OneDrive for Business; please refer to the [release notes][release-notes] for details.
+## Error responses
+
+In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

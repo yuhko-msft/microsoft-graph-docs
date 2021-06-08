@@ -10,23 +10,23 @@ const options = {
 
 const client = Client.init(options);
 
-const profileCardProperties = {
-  directoryPropertyName: "CustomAttribute1",
+const profileCardProperty = {
+  directoryPropertyName: 'CustomAttribute1',
   annotations: [
     {
-      displayName: "Cost Center",
+      displayName: 'Cost Center',
       localizations: [
         {
-          languageTag: "ru-RU",
-          displayName: "центр затрат"
+          languageTag: 'ru-RU',
+          displayName: 'центр затрат'
         }
       ]
     }
   ]
 };
 
-let res = await client.api('/organization/{organizationId}/settings/profileCardProperties')
+await client.api('/organization/{organizationId}/settings/profileCardProperties')
 	.version('beta')
-	.post(profileCardProperties);
+	.post(profileCardProperty);
 
 ```

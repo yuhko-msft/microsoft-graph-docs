@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update properties of the specified [itemInsightsSettings](../resources/iteminsightssettings.md) resource.
 
-To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md). 
+To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
 
 ## Permissions
 
@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite |
+|Delegated (work or school account) | User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite |
+|Application | Not supported. |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
@@ -63,6 +63,8 @@ If successful, this method returns a `200 OK` response code and [itemInsightsSet
 ### Request
 
 Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' item insights of a particular Azure AD group.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_iteminsightssettings"
@@ -76,10 +78,28 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-iteminsightssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-iteminsightssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-iteminsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,3 +116,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+
