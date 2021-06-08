@@ -140,6 +140,7 @@ These properties are temporary and either a) define behavior the service should 
 [list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
+[removed]: removed.md
 
 <!--
 {

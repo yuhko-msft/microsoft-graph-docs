@@ -133,6 +133,7 @@ These properties are temporary and either a) define behavior the service should 
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
+[removed]: removed.md
 
 ## JSON representation
 

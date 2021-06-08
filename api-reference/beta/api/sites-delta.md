@@ -21,7 +21,7 @@ Your app should continue calling with the `@odata.nextLink` until you see an `@o
 After you have finished receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-Deleted sites are returned with an @removed object. The @removed will include reason property, for example, "@removed": {"reason": "deleted"}. Deleted indicates the item is deleted and should be removed from your local state.
+Deleted sites are returned with a removed annotation. The removed annotation will include reason property, for example, "@microsoft.graph.removed": {"reason": "deleted"}. Deleted indicates the item is deleted and should be removed from your local state.
 
 ## Permissions
 
