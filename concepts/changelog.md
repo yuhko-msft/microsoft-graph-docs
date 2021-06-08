@@ -960,12 +960,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
-### Sites and lists
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [Get delta](/graph/api/sites-delta?view=graph-rest-beta) action on [sites](/graph/api/resoures/sites?view=graph-rest-beta) resource. |
-
 ### Calendar
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 and beta | Added the **hideAttendees** property to the [event](/graph/api/resources/event) entity.
