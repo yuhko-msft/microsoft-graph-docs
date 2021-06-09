@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /me/joinedTeams
 or
-GET /users/{id}/joinedTeams
+GET /users/{id | user-principal-name}/joinedTeams
 ```
 > **Note**: These APIs don't return the parent team of the shared channel that the user is a direct member of.
 
