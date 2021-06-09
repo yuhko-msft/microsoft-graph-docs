@@ -8,7 +8,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "shared",
           "ChangeType": "Addition",
-          "Description": "Added a new enum member `shared` to channelMembershipType.",
+          "Description": "Added the ``shared`` member to the **channelMembershipType** enumeration.",
           "Target": "channelMembershipType"
         },
 		{
@@ -16,7 +16,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamifyGroup",
           "ChangeType": "Addition",
-          "Description": "Added a new enum member `teamifyGroup` to teamsAsyncOperationType.",
+          "Description": "Added the ``teamifyGroup`` member to the **teamsAsyncOperationType** enumeration.",
           "Target": "teamsAsyncOperationType"
         },
 		{
@@ -24,7 +24,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "createChannel",
           "ChangeType": "Addition",
-          "Description": "Added a new enum member `createChannel` to teamsAsyncOperationType.",
+          "Description": "Added the ``createChannel`` member to the **teamsAsyncOperationType** enumeration.",
           "Target": "teamsAsyncOperationType"
         }
       ],

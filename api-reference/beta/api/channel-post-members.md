@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
-> **Note:** Shared channel is only availble in private preview.
+> **Note:** Shared channels are only available in private preview.
 
 ## Permissions
 
@@ -184,7 +184,7 @@ Content-length: 468
   "email": null
 }
 ```
-### Example 3: Add a user who is part of same tenant as member to a shared channel
+### Example 3: Add a user who is part of the same tenant as a member to a shared channel
 
 #### Request
 <!-- {
@@ -232,7 +232,7 @@ Content-length: 468
 }
 ```
 
-### Example 4: Add a user who is part of different tenant as member to a shared channel
+### Example 4: Add a user who is part of a different tenant as a member to a shared channel
 
 #### Request
 <!-- {

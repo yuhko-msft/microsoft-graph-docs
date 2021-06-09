@@ -189,7 +189,7 @@ Content-length: 262
 #### Request
 
 The following example shows a request to list all shared channels.
-> **Note:** Shared channel is only availble in private preview.
+> **Note:** Shared channels are only availble in private preview.
 
 
 # [HTTP](#tab/http)
@@ -197,7 +197,7 @@ The following example shows a request to list all shared channels.
   "blockType": "request",
   "name": "list_shared_channels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels?$filter=membershipType eq 'shared'
 ```
 

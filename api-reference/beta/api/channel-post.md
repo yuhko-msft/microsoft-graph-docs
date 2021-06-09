@@ -338,12 +338,12 @@ Content-length: 201
 }
 ```
 
-### Example 5: Create shared channel on behalf of user
+### Example 5: Create a shared channel on behalf of a user
 
 #### Request
 
 The following example shows how to create a shared channel.
-> **Note:** Shared channel is only availble in private preview.
+> **Note:** Shared channel are only available in private preview.
 
 
 <!-- {
@@ -356,17 +356,18 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 Content-type: application/json
 
 {
-     "displayName": "My First Shared Channel",
-    "description": "This is my first shared channels",
-    "membershipType": "shared",
-    "members":
-      [
-          {
-            "@odata.type":"#microsoft.graph.aadUserConversationMember",
-            "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
-            "roles":["owner"]
-          }
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channels",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('{user_id}')",
+      "roles": [
+        "owner"
       ]
+    }
+  ]
 }
 ```
 
