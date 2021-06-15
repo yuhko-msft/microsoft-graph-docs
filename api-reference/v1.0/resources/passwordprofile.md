@@ -35,9 +35,11 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "forceChangePasswordNextSignIn": true,
-  "forceChangePasswordNextSignInWithMfa": false,
-  "password": "string"
+  "passwordProfile": {
+   "forceChangePasswordNextSignIn": true,
+   "forceChangePasswordNextSignInWithMfa": false,
+    "password": "string"
+  }
 }
 
 ```
