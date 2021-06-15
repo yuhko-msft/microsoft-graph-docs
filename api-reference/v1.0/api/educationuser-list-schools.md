@@ -1,5 +1,5 @@
 ---
-title: "List schools"
+title: "List schools of an educationUser"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
 localization_priority: Normal
@@ -7,13 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List schools
+# List schools of an educationUser
 
 Namespace: microsoft.graph
 
 Retrieve a list of schools for a user.
 
->**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+>**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...v1.0/education/me/schools` resource in this case.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/schools
-GET /education/users/{id}/schools
+GET /education/users/{educationUserId}/schools
 ```
 
 ## Optional query parameters
