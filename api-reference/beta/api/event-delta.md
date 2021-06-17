@@ -476,7 +476,7 @@ Content-type: application/json
 
 ## See also
 
-- [Microsoft Graph delta query](/graph/delta-query-overview)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to events in a folder](/graph/delta-query-events)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
