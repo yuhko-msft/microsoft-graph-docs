@@ -172,6 +172,7 @@ The following example show how to import back-in-time messages using the `create
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+Content-type: application/json
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
@@ -269,6 +270,7 @@ The following example shows how to import back-in-time messages containing inlin
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+Content-type: application/json
 
 {
    "createdDateTime":"2019-02-04T19:58:15.511Z",
