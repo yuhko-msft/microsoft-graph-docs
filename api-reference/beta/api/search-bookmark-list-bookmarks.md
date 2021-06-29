@@ -8,7 +8,7 @@ doc_type: apiPageType
 ---
 
 # List bookmarks
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
 Get a list of the [bookmark](../resources/bookmark.md) objects and their properties.
 
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global Administrator, Global Reader, Search Administrator, Search Editor |
+|Delegated (work or school account)| Global administrator, global reader, search administrator, search editor. |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -75,18 +75,18 @@ Content-Type: application/json
   {
     "id": "733b26d5-af76-4eea-ac69-1a0ce8716897",
     "displayName": "Italy Holiday",
-    "webUrl": "https://msvacation",
+    "webUrl": "http://www.margiestravel.com/",
     "description": "Book a fancy vacation in Tuscany or browse museums in Florence.",
     "lastModifiedDateTime": 2016-03-21T20:01:37Z,
     "lastModifiedBy": {
       "user": {
           "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Ryan Gregg"
+          "displayName": "Amalie Larsen"
       }
     },
     "keywords":  {
-      "keywords": ["Vancation in Europe", "Holiday in Europe"],
-      "reservedKeywords": ["Vancation in Italy"],
+      "keywords": ["Vacation in Europe", "Holiday in Europe"],
+      "reservedKeywords": ["Vacation in Italy"],
       "matchSimilarKeywords": true
     },
     "categories": ["HR"],

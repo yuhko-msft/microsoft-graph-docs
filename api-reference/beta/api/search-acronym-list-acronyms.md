@@ -8,16 +8,16 @@ doc_type: apiPageType
 ---
 
 # List acronyms
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
 Get a list of the [acronym](../resources/acronym.md) objects and their properties.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global Administrator, Global Reader, Search Administrator, Search Editor |
+|Delegated (work or school account)| Global administrator, global reader, search administrator, search editor. |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -77,13 +77,13 @@ Content-Type: application/json
     "displayName": "DNN",
     "standsFor": "Deep Neural Network",
     "description": "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
-    "webUrl": "https://DNN",
+    "webUrl": "http://microsoft.com/deep-neural-network",
     "state": "published",
     "lastModifiedDateTime": 2016-03-21T20:01:37Z,
     "lastModifiedBy": {
       "user": {
           "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Ryan Gregg"
+          "displayName": "Amalie Larsen"
       }
     }
   }

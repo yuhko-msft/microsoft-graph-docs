@@ -8,16 +8,16 @@ doc_type: apiPageType
 ---
 
 # Create acronym
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
 Create a new [acronym](../resources/acronym.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global Administrator, Search Administrator, Search Editor |
+|Delegated (work or school account)| Global administrator, search administrator, search editor. |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -44,14 +44,14 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for Inherited from [searchAnswer](../resources/searchanswer.md)|
-|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/searchanswer.md)|
-|id|String|Guid id of the Acronym Inherited from Inherited from [entity](../resources/entity.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Read only. Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/searchanswer.md)|
-|lastModifiedDateTime|DateTimeOffset|Read only. Timestamp of when the acronym is created or edited Inherited from [searchAnswer](../resources/searchanswer.md)|
+|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/searchanswer.md).|
+|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/searchanswer.md).|
+|id|String|Guid id of the acronym. Inherited from [entity](../resources/entity.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of when the acronym is created or edited. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
 |standsFor|String collection|What the acronym stands for.|
-|state|answerState|State of the acronym. Possible values are: `published`, `draft`, or `excluded`.. Possible values are: `Published`, `Draft`, `Excluded`.|
-|webUrl|String|The URL of the page or website where you want users to go for more information about the acronym. Inherited from [searchAnswer](../resources/searchanswer.md)|
+|state|answerState|State of the acronym. Possible values are: `published`, `draft`, or `excluded`.|
+|webUrl|String|The url of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/searchanswer.md).|
 
 
 
@@ -75,7 +75,7 @@ Content-Type: application/json
   "displayName": "DNN",
   "standsFor": "Deep Neural Network",
   "description": "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
-  "webUrl": "https://DNN",
+  "webUrl": "http://microsoft.com/deep-neural-network",
   "state": "draft"
 }
 ```

@@ -8,16 +8,16 @@ doc_type: apiPageType
 ---
 
 # Get qna
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
 Read the properties and relationships of a [qna](../resources/qna.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global Administrator, Global Reader, Search Administrator, Search Editor |
+|Delegated (work or school account)| Global administrator, global reader, search administrator, search editor. |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -74,13 +74,13 @@ Content-Type: application/json
 {
     "id": "733b26d5-af76-4eea-ac69-1a0ce8716897",
     "displayName": "Global Country Holidays",
-    "webUrl": "https://microsoft.sharepoint.com/sites/HRw/Pages/globalholidays.aspx",
-    "description": "The dates that Microsoft offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend.",
+    "webUrl": "http://www.contoso.com/",
+    "description": "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend.",
     "lastModifiedDateTime": 2016-03-21T20:01:37Z,
     "lastModifiedBy": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "Ryan Gregg"
+            "displayName": "Amalie Larsen"
         }
     },
     "keywords":  {

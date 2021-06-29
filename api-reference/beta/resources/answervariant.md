@@ -9,18 +9,18 @@ doc_type: resourcePageType
 
 # answerVariant resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
-An Answer Variant can be used to to change certain fields of the answer depending on country or platform
+An answer variant can be used to to change certain fields of a search answer based on country or platform.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Answer variation description|
-|displayName|String|Answer variation display name|
-|webUrl|String|Answer variation URL|
-|languageTags|String collection|List of countries or regions able to view this bookmark|
-|platforms|devicePlatformType collection|List of devices and OS able to view this bookmark. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|description|String|Answer variation description shown on search results page.|
+|displayName|String|Answer variation name displayed in search results.|
+|webUrl|String|Answer variation url link. When users click this answer variation in search results they will go to this url.|
+|languageTags|String collection|List of countries or regions able to view this search answer.|
+|platforms|devicePlatformType collection|List of devices and OS able to view this search answer. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 
 
 ## Relationships

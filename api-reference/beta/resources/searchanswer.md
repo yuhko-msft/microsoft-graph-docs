@@ -9,9 +9,9 @@ doc_type: resourcePageType
 
 # searchAnswer resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
-Search Answer is a base type for other search answers which includes properties that apply to other search answer entities.
+Search answer is a base type for other search answers. Includes properties that apply to other search answer entities.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -28,12 +28,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Guid id of the Bookmark Inherited from [entity](../resources/entity.md)|
-|displayName|String|Bookmark Display Name Inherited from [searchAnswer](../resources/searchanswer.md)|
-|description|String|Bookmark Description Inherited from [searchAnswer](../resources/searchanswer.md)|
-|webUrl|String|Bookmark URL Inherited from [searchAnswer](../resources/searchanswer.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Read only. Details of the user that created or last modified the bookmark Inherited from [searchAnswer](../resources/searchanswer.md)|
-|lastModifiedDateTime|DateTimeOffset|Read only. Timestamp of when the bookmark is created or edited Inherited from [searchAnswer](../resources/searchanswer.md)|
+|id|String|Guid id of the search answer. Inherited from [entity](../resources/entity.md).|
+|displayName|String|Search answer name displayed in search results.|
+|description|String|Search answer description shown on search results page.|
+|webUrl|String|Search answer url link. When users click this search answer in search results they will go to this url.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Details of the user that created or last modified the search answer. Read only.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of when the search answer is created or edited. Read only.|
 
 ## Relationships
 None.

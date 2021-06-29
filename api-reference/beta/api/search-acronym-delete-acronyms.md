@@ -1,23 +1,23 @@
 ---
-title: "Delete bookmark"
-description: "Deletes a bookmark object."
+title: "Delete acronym"
+description: "Deletes an acronym object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Delete bookmark
-Namespace: microsoft.graph
+# Delete acronym
+Namespace: microsoft.graph.search
 
-Deletes a [bookmark](../resources/bookmark.md) object.
+Deletes an [acronym](../resources/acronym.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global Administrator, Search Administrator, Search Editor |
+|Delegated (work or school account)| Global administrator, search administrator, search editor. |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /bookmarks/{bookmarksId}
+DELETE /acronyms/{acronymsId}
 ```
 
 ## Request headers
@@ -48,11 +48,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_bookmark"
+  "name": "delete_acronym"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/bookmarks/{bookmarkId}
+DELETE https://graph.microsoft.com/beta/acronyms/{acronymsId}
 ```
 
 

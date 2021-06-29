@@ -1,23 +1,23 @@
 ---
-title: "Get acronym"
-description: "Read the properties and relationships of an acronym object."
+title: "Get bookmark"
+description: "Read the properties and relationships of a bookmark object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Get acronym
-Namespace: microsoft.graph
+# Get bookmark
+Namespace: microsoft.graph.search
 
-Read the properties and relationships of an [acronym](../resources/acronym.md) object.
+Read the properties and relationships of a [bookmark](../resources/bookmark.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global Administrator, Global Reader, Search Administrator, Search Editor |
+|Delegated (work or school account)| Global administrator, global reader, search administrator, search editor. |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /acronyms/{acronymsId}
+GET /bookmarks/{bookmarksId}
 ```
 
 ## Optional query parameters
@@ -44,18 +44,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [acronym](../resources/acronym.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [bookmark](../resources/bookmark.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_acronym"
+  "name": "get_bookmark"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/acronyms/{acronymsId}
+GET https://graph.microsoft.com/beta/bookmarks/{bookmarksId}
 ```
 
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/acronyms/{acronymsId}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.acronym"
+  "@odata.type": "microsoft.graph.bookmark"
 }
 -->
 ``` http
@@ -73,18 +73,31 @@ Content-Type: application/json
 
 {
   "id": "733b26d5-af76-4eea-ac69-1a0ce8716897",
-  "displayName": "DNN",
-  "standsFor": "Deep Neural Network",
-  "description": "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
-  "webUrl": "https://DNN",
-  "state": "published",
+  "displayName": "Italy Holiday",
+  "webUrl": "http://www.margiestravel.com/",
+  "description": "Book a fancy vacation in Tuscany or browse museums in Florence.",
   "lastModifiedDateTime": 2016-03-21T20:01:37Z,
   "lastModifiedBy": {
     "user": {
         "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Ryan Gregg"
+        "displayName": "Amalie Larsen"
     }
-  }
+  },
+  "keywords":  {
+    "keywords": ["Vacation in Europe", "Holiday in Europe"],
+    "reservedKeywords": ["Vacation in Italy"],
+    "matchSimilarKeywords": true
+  },
+  "categories": ["HR"],
+  "availabilityStartDateTime": 2020-09-21T20:01:37Z,
+  "availabilityEndDateTime": 2020-11-21T20:01:37Z,
+  "languageTags": ["en-US"],
+  "platforms": ["ios"],
+  "groupIds": ["groupId"],
+  "targetedVariations": null,
+  "powerAppIds": ["powerAppId"],
+  "state": "published",
+  "isSuggested": false
 }
 ```
 

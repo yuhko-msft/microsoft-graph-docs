@@ -9,16 +9,16 @@ doc_type: resourcePageType
 
 # answerKeyword resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
 Answer Keyword is used to configure triggers for a search answer to appear on search.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|keywords|String collection|A collection of keywords used to trigger the QNA|
-|matchSimilarKeywords|Boolean|If similar words in the search term to the keywords should trigger the answer|
-|reservedKeywords|String collection|Unique keywords that will guarentee the answer is trigger|
+|keywords|String collection|A collection of keywords used to trigger the search answer.|
+|matchSimilarKeywords|Boolean|If similar words in the search term to the keywords should trigger the search answer.|
+|reservedKeywords|String collection|Unique keywords that will guarantee the search answer is triggered.|
 
 ## Relationships
 None.

@@ -8,16 +8,16 @@ doc_type: apiPageType
 ---
 
 # Delete qna
-Namespace: microsoft.graph
+Namespace: microsoft.graph.search
 
 Deletes a [qna](../resources/qna.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| Global Administrator, Search Administrator, Search Editor |
+|Delegated (work or school account)| Global administrator, search administrator, search editor. |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 

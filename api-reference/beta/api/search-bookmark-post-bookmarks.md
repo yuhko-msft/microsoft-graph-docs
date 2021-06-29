@@ -1,33 +1,47 @@
 ---
-title: "bookmark resource type"
-description: "**TODO: Add Description**"
+title: "Create bookmark"
+description: "Create a new bookmark object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
-# bookmark resource type
-
+# Create bookmark
 Namespace: microsoft.graph.search
 
-A bookmark is a tenant wide administrative answer in Microsoft search results for common tenant search queries. A bookmark has many properties which allow Admins to make common resources more accessible in their organization.
-\
+Create a new [bookmark](../resources/bookmark.md) object.
 
+## Permissions
+One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)| Global administrator, search administrator, search editor. |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
-Inherits from [searchAnswer](../resources/searchanswer.md).
+## HTTP request
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List bookmarks](../api/search-bookmark-list-bookmarks.md)|[bookmark](../resources/bookmark.md) collection|Get a list of the [bookmark](../resources/bookmark.md) objects and their properties.|
-|[Create bookmark](../api/search-bookmark-post-bookmarks.md)|[bookmark](../resources/bookmark.md)|Create a new [bookmark](../resources/bookmark.md) object.|
-|[Get bookmark](../api/search-bookmark-get-bookmarks.md)|[bookmark](../resources/bookmark.md)|Read the properties and relationships of a [bookmark](../resources/bookmark.md) object.|
-|[Update bookmark](../api/search-bookmark-update-bookmarks.md)|[bookmark](../resources/bookmark.md)|Update the properties of a [bookmark](../resources/bookmark.md) object.|
-|[Delete bookmark](../api/search-bookmark-delete-bookmarks.md)|None|Deletes a [bookmark](../resources/bookmark.md) object.|
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /bookmarks
+```
 
-## Properties
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of the [bookmark](../resources/bookmark.md) object.
+
+The following table shows the properties that are required when you create the [bookmark](../resources/bookmark.md).
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Guid id of the bookmark. Inherited from [entity](../resources/entity.md).|
@@ -35,7 +49,7 @@ Inherits from [searchAnswer](../resources/searchanswer.md).
 |description|String|Bookmark description shown on search results page. Inherited from [searchAnswer](../resources/searchanswer.md).|
 |webUrl|String|Bookmark url link. When users click this bookmark in search results they will go to this url. Inherited from [searchAnswer](../resources/searchanswer.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Details of the user that created or last modified the bookmark. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of when the bookmark is created or edited. Inherited from [searchAnswer](../resources/searchanswer.md). Read only. |
+|lastModifiedDateTime|DateTimeOffset|Timestamp of when the bookmark is created or edited. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
 |categories|String collection|Categories commonly used to describe this bookmark. eg. IT, HR, etc.|
 |availabilityStartDateTime|DateTimeOffset|Date bookmark will start to appear as a search result. Set as null for always available.|
 |availabilityEndDateTime|DateTimeOffset|Date bookmark will stop appearing as a search result. Set as null for always available.|
@@ -48,57 +62,66 @@ Inherits from [searchAnswer](../resources/searchanswer.md).
 |isSuggested|Boolean|True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft. Read only.|
 |groupIds|String collection|List of security groups able to view this bookmark.|
 
-## Relationships
-None.
 
-## JSON representation
-The following is a JSON representation of the resource.
+
+## Response
+
+If successful, this method returns a `201 Created` response code with the id of the bookmark created.
+
+## Examples
+
+### Request
 <!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.bookmark",
-  "baseType": "microsoft.graph.searchAnswer",
-  "openType": false
+  "blockType": "request",
+  "name": "create_bookmark_from_bookmarks"
 }
 -->
-``` json
+``` http
+POST https://graph.microsoft.com/beta/search/bookmarks
+
+Authorization: Bearer AAD_PFT_TOKEN
+Content-Type: application/json
+
 {
-  "@odata.type": "#microsoft.graph.bookmark",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "webUrl": "String",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+  "displayName": "Contoso Install Site",
+  "webUrl": "http://www.contoso.com/",
+  "description": "Try or buy Contoso for Home or Business and view product information",
+  "keywords":  {
+    "keywords": ["Contoso", "install"],
+    "reservedKeywords": ["Contoso"],
+    "matchSimilarKeywords": true
   },
-  "lastModifiedDateTime": "String (timestamp)",
-  "categories": [
-    "String"
-  ],
-  "availabilityStartDateTime": "String (timestamp)",
-  "availabilityEndDateTime": "String (timestamp)",
-  "languageTags": [
-    "String"
-  ],
-  "platforms": [
-    "String"
-  ],
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "platforms": ["windows"],
   "targetedVariations": [
     {
-      "@odata.type": "microsoft.graph.answerVariant"
+      "languageTag": "es-ES",
+      "displayName": "Sitio de instalación Contoso",
+      "description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
     }
   ],
-  "powerAppIds": [
-    "String"
-  ],
-  "keywords": {
-    "@odata.type": "microsoft.graph.answerKeyword"
-  },
-  "state": "String",
-  "isSuggested": "Boolean",
-  "groupIds": [
-    "String"
-  ]
+  "groupIds": ["groupId"],
+  "powerAppIds": ["powerAppId"],
+  "state": "published",
+  "isSuggested": false
+}
+```
+
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 201 CREATED
+Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
+Content-Type: application/json
+{
+  "id": "733b26d5-af76-4eea-ac69-1a0ce8716897"
 }
 ```
 
