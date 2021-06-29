@@ -1,9 +1,9 @@
 ---
 title: "Get acronym"
 description: "Read the properties and relationships of an acronym object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jakeost-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/acronyms/{acronymsId}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.acronym"
+  "@odata.type": "microsoft.graph.search.acronym"
 }
 -->
 ``` http

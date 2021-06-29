@@ -1,9 +1,9 @@
 ---
 title: "answerKeyword resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "answerKeyword"
+author: "jakeost-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -27,12 +27,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.answerKeyword"
+  "@odata.type": "microsoft.graph.search.answerKeyword"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.answerKeyword",
+  "@odata.type": "#microsoft.graph.search.answerKeyword",
   "keywords": [
     "String"
   ],

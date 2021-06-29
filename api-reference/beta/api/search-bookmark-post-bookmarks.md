@@ -1,9 +1,9 @@
 ---
 title: "Create bookmark"
 description: "Create a new bookmark object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jakeost-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -54,11 +54,11 @@ The following table shows the properties that are required when you create the [
 |availabilityStartDateTime|DateTimeOffset|Date bookmark will start to appear as a search result. Set as null for always available.|
 |availabilityEndDateTime|DateTimeOffset|Date bookmark will stop appearing as a search result. Set as null for always available.|
 |languageTags|String collection|List of countries or regions able to view this bookmark.|
-|platforms|devicePlatformType collection|List of devices and os able to view this bookmark. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|platforms|microsoft.graph.platform collection|List of devices and OS able to view this qna. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |targetedVariations|[answerVariant](../resources/answervariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
 |powerAppIds|String collection|PowerApp ids for this bookmark. By adding existing PowerApps to a Bookmark, users can complete tasks like entering vacation time or reporting expenses on the search results page.|
 |keywords|[answerKeyword](../resources/answerkeyword.md)|Keywords that trigger this bookmark to appear in search results.|
-|state|answerState|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|
+|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `Published`, `Draft`, `Excluded`.|
 |isSuggested|Boolean|True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft. Read only.|
 |groupIds|String collection|List of security groups able to view this bookmark.|
 
@@ -77,7 +77,7 @@ If successful, this method returns a `201 Created` response code with the id of 
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/search/bookmarks
+POST https://graph.microsoft.com/beta/bookmarks
 
 Authorization: Bearer AAD_PFT_TOKEN
 Content-Type: application/json

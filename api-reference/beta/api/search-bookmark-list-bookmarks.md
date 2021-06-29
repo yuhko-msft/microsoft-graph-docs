@@ -1,9 +1,9 @@
 ---
 title: "List bookmarks"
 description: "Get a list of the bookmark objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jakeost-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/bookmarks
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.bookmark)"
+  "@odata.type": "Collection(microsoft.graph.search.bookmark)"
 }
 -->
 ``` http

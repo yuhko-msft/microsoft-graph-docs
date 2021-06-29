@@ -1,9 +1,9 @@
 ---
 title: "Update qna"
 description: "Update the properties of a qna object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "jakeost-msft"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "search"
 doc_type: apiPageType
 ---
 
@@ -48,15 +48,15 @@ The following table shows the properties that are required when you update the [
 |displayName|String|Question displayed in search results. Inherited from [searchAnswer](../resources/searchanswer.md).|
 |description|String|Answer displayed in search results. Inherited from [searchAnswer](../resources/searchanswer.md).|
 |webUrl|String|Qna url link. When users click this qna in search results they will go to this url. Inherited from [searchAnswer](../resources/searchanswer.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Details of the user that created or last modified the qna. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the qna. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of when the qna is created or edited. Inherited from [searchAnswer](../resources/searchanswer.md). Read only.|
 |availabilityStartDateTime|DateTimeOffset|Date qna will start to appear as a search result. Set as null for always available.|
 |availabilityEndDateTime|DateTimeOffset|Date qna will stop appearing as a search result. Set as null for always available.|
 |languageTags|String collection|List of countries or regions able to view this qna.|
-|platforms|devicePlatformType collection|List of devices and OS able to view this qna. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|targetedVariations|[answerVariant](../resources/answerVariant.md) collection|Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
-|keywords|[answerKeyword](../resources/answerkeyword.md)|Keywords that trigger this qna to appear in search results.|
-|state|answerState|State of the qna. Possible values are: `published`, `draft`, `excluded`.|
+|platforms|microsoft.graph.platform collection|List of devices and OS able to view this qna. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/answerVariant.md) collection|Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/answerkeyword.md)|Keywords that trigger this qna to appear in search results.|
+|state|microsoft.graph.search.answerState|State of the qna. Possible values are: `published`, `draft`, `excluded`.|
 |isSuggested|Boolean|True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read only.|
 |groupIds|String collection|List of security groups able to view this qna.|
 
