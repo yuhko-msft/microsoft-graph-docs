@@ -343,7 +343,7 @@ Content-length: 201
 #### Request
 
 The following example shows how to create a shared channel.
-> **Note:** Shared channel are only available in private preview.
+> **Note:** Shared channels are only available in private preview.
 
 
 <!-- {
@@ -357,7 +357,7 @@ Content-type: application/json
 
 {
   "displayName": "My First Shared Channel",
-  "description": "This is my first shared channels",
+  "description": "This is my first shared channel",
   "membershipType": "shared",
   "members": [
     {
@@ -382,7 +382,9 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created
-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{operationId}
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
 ```
 
 
