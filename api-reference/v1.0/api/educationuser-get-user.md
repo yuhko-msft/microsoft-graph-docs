@@ -1,5 +1,5 @@
 ---
-title: "Get user"
+title: "Get educationUser"
 description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."
 localization_priority: Normal
 author: "mmast-msft"
@@ -7,13 +7,13 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Get user
+# Get educationUser
 
 Namespace: microsoft.graph
 
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 
->**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+>**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...v1.0/education/me/schools` resource in this case.
 
 ## Permissions
 A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
