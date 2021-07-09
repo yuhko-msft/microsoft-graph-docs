@@ -58,6 +58,8 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 #### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -95,6 +97,8 @@ Content-length: 100
 
 #### Response
 
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
@@ -121,6 +125,8 @@ Content-length: 468
 ### Example 2: Add a member with the owner role to a private channel
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -160,7 +166,7 @@ Content-length: 100
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -187,6 +193,8 @@ Content-length: 468
 ### Example 3: Add a user who is part of the same tenant as a member to a shared channel
 
 #### Request
+
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "shared_channel_add_intra_tenant_member"
@@ -205,7 +213,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -235,6 +243,9 @@ Content-length: 468
 ### Example 4: Add a user who is part of a different tenant as a member to a shared channel
 
 #### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "shared_channel_add_x_tenant_member"
@@ -254,7 +265,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
