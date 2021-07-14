@@ -1,9 +1,9 @@
 ---
 title: "messageEvent resource type"
 description: "Represents details of an event during delivery of a mail message to a recipient"
-author: "suvray"
+author: "rsuven"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "admin"
 doc_type: resourcePageType
 ---
 

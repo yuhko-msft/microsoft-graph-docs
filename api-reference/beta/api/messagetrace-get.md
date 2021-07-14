@@ -1,9 +1,9 @@
 ---
 title: "Get messageTrace"
 description: "Read the properties and relationships of a messageTrace object."
-author: "suvray"
+author: "rsuven"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "admin"
 doc_type: apiPageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "messageRecipient resource type"
 description: "Represents a recipient of a message"
-author: "suvray"
+author: "rsuven"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "admin"
 doc_type: resourcePageType
 ---
 

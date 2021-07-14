@@ -1,9 +1,9 @@
 ---
 title: "messageTrace resource type"
 description: "Represents basic information about a message"
-author: "suvray"
+author: "rsuven"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "admin"
 doc_type: resourcePageType
 ---
 
