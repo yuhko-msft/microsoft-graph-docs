@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:------------------------------------|
 | Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
 ## HTTP request
 
@@ -58,6 +58,12 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [teamsApp](../resources/teamsapp.md) objects in the response body.
+
+> **Note:** Requests in application context will only return apps that have been published to the app catalog.
+
+> **Note:** Requests in application context will not return the color and outline icons.
+
+> **Note:** Permission policies will not be applied in application context.
 
 ## Examples
 
