@@ -43,7 +43,7 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 ## Optional query parameters
 
-This method supports the `$expand` OData query parameter to help customize the response. For example, to retrieve the API connector for the `postFederationSignup` and `postAttributeCollection` steps, add `$expand=postFederationSignup,postAttributeCollection`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to help customize the response. For example, to retrieve the API connector for the `postFederationSignup`,  `postAttributeCollection`, and `preTokenIssuance` steps, add `$expand=postFederationSignup,postAttributeCollection,preTokenIssuance` to the request. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -74,7 +74,7 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration?$expand=postFederationSignup,postAttributeCollection
+GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration?$expand=postFederationSignup,postAttributeCollection,preTokenIssuance
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-b2cuserflows-apiconnectorconfiguration-csharp-snippets.md)]
@@ -111,12 +111,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_testuserflow')/apiConnectorConfiguration(postFederationSignup(),postAttributeCollection())",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_testuserflow')/apiConnectorConfiguration(postFederationSignup(),postAttributeCollection(),preTokenISsuance())",
     "postFederationSignup@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postFederationSignup/$entity",
     "postFederationSignup": {
         "id": "<guid1>",
         "displayName": "Test API Connector 1",
-        "targetUrl": "https://someapi.com/api/endpoint",
+        "targetUrl": "https://someapi.com/api/postidp",
         "authenticationConfiguration": {
             "@odata.type": "#microsoft.graph.basicAuthentication",
             "username": "<USERNAME>",
@@ -127,7 +127,18 @@ Content-Type: application/json
     "postAttributeCollection": {
         "id": "<guid2>",
         "displayName": "Test API Connector 2",
-        "targetUrl": "https://someotherapi.com/api/endpoint",
+        "targetUrl": "https://someapi.com/api/attributecollection",
+        "authenticationConfiguration": {
+            "@odata.type": "#microsoft.graph.basicAuthentication",
+            "username": "<USERNAME2>",
+            "password": "******"
+        }
+    },
+    "preTokenIssuance@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows('B2C_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/preTokenIssuance/$entity",
+    "preTokenIssuance": {
+        "id": "<guid3>",
+        "displayName": "Test API Connector 3",
+        "targetUrl": "https://someapi.com/api/tokenaug",
         "authenticationConfiguration": {
             "@odata.type": "#microsoft.graph.basicAuthentication",
             "username": "<USERNAME2>",
