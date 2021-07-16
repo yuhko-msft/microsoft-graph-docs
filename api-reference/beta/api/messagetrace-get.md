@@ -3,7 +3,7 @@ title: "Get messageTrace"
 description: "Read the properties and relationships of a messageTrace object."
 author: "rsuven"
 localization_priority: Normal
-ms.prod: "admin"
+ms.prod: ""
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ GET /admin/exchange/messageTraces
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
-| OData parameter | Comments |
+| Parameter | Description |
 |------------|-------------|
 | $expand | Expand a navigation property. |
 | $filter | Specify the query filter. |
@@ -113,8 +113,7 @@ Content-Type: application/json
       "size": 6677,
       "sourceIPAddress": null,
       "destinationIPAddress": null
-    },
-    <... truncated ...>
+    }
   ]
 }
 ```
@@ -134,7 +133,7 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces('2e3c0fac-4669
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.messageTrace"
 }
 -->
@@ -186,7 +185,7 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces?$filter=messag
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.messageTrace"
 }
 -->
@@ -259,8 +258,7 @@ Content-type: application/json
           "deliveryStatus": "Delivered"
         }
       ]
-    },
-    <... truncated ...>
+    }
   ]
 }
 ```
@@ -280,7 +278,7 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces('2e3c0fac-4669
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.messageTrace"
 }
 -->

@@ -3,7 +3,7 @@ title: "messageRecipient resource type"
 description: "Represents a recipient of a message"
 author: "rsuven"
 localization_priority: Normal
-ms.prod: "admin"
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

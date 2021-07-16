@@ -3,7 +3,7 @@ title: "messageTrace resource type"
 description: "Represents basic information about a message"
 author: "rsuven"
 localization_priority: Normal
-ms.prod: "admin"
+ms.prod: ""
 doc_type: resourcePageType
 ---
 
