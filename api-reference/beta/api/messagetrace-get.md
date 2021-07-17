@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|MessageTrace.Read.All|
 |
 
-This API is accessible only to Tenant Admin, Security Admin and Security Reader roles. All other roles will be refused as unauthorized.
+This API is accessible only to Tenant Admin, Security Admin and Security Reader roles.
 
 ## HTTP request
 
@@ -82,7 +82,7 @@ Records for a page are counted by recipients. So if pagesize (value of $top) is 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_messagetrace"
+  "name": "get_messagetrace_ex1"
 }
 -->
 ``` http
@@ -125,7 +125,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_messagetrace"
+  "name": "get_messagetrace_ex2"
 }
 -->
 ``` http 
@@ -177,7 +177,7 @@ Content-type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_messagetrace"
+  "name": "get_messagetrace_ex3"
 }
 -->
 ``` http
@@ -217,7 +217,7 @@ Content-type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_messagetrace"
+  "name": "get_messagetrace_ex4"
 }
 -->
 ``` http  
@@ -272,7 +272,7 @@ Content-type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_messagetrace"
+  "name": "get_messagetrace_ex5"
 }
 -->
 ``` http 

@@ -71,10 +71,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.messageEvent",
-  "id": "String",
+  "id": "String (identifier)",
   "dateTime": "String (timestamp)",
   "eventType": "String",
   "description": "String"
 }
 ```
-

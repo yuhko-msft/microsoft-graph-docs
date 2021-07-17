@@ -58,7 +58,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.messageRecipient",
-  "id": "String",
+  "id": "String (identifier)",
   "recipientEmail": "String",
   "deliveryStatus": "String",
   "events": [{"@odata.type": "microsoft.graph.messageEvent"}]
