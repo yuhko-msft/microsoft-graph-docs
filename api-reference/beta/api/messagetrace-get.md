@@ -103,6 +103,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces",
   "@odata.nextLink": "https://graph.microsoft.com/beta/admin/exchange/messageTraces?$skiptoken=8w1xSSxJDEhMT7UyAgA%253d",
   "value": [
     {
@@ -143,7 +144,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink": "<url>",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces(recipients())",
   "value": [
     {
       "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",
@@ -195,7 +196,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink": "<url>",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces",
   "value": [
     {
       "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",
@@ -237,6 +238,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces(recipients())",
   "@odata.nextLink": "<url>",
   "value": [
     {
@@ -289,7 +291,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink": "<url>",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces(recipients(events()))",
   "value": [
     {
       "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",
