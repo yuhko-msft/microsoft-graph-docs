@@ -77,7 +77,7 @@ Records for a page are counted by recipients. So if pagesize (value of $top) is 
 
 ## Examples
 
-### 1. Get most recent message trace data
+### Example 1. Get most recent message trace data
 
 #### Request
 <!-- {
@@ -94,7 +94,8 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.messageTrace"
+  "@odata.type": "microsoft.graph.messageTrace",
+  "isCollection": true
 }
 -->
 ``` http
@@ -118,7 +119,7 @@ Content-Type: application/json
 }
 ```
 
-### 2. Get message trace data for a specific message
+### Example 2. Get message trace data for a specific message
 
 #### Request
 <!-- {
@@ -133,8 +134,8 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces('2e3c0fac-4669
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.messageTrace"
+  "@odata.type": "microsoft.graph.messageTrace",
+  "isCollection": true
 }
 -->
 ``` http
@@ -170,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-### 3. Get message trace data for a given message Id
+### Example 3. Get message trace data for a given message Id
 
 #### Request
 <!-- {
@@ -185,8 +186,8 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces?$filter=messag
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.messageTrace"
+  "@odata.type": "microsoft.graph.messageTrace",
+  "isCollection": true
 }
 -->
 ``` http
@@ -210,7 +211,7 @@ Content-type: application/json
 }
 ```
 
-### 4. Get message trace data for a given set of recipients in a date range
+### Example 4. Get message trace data for a given set of recipients in a date range
 
 #### Request
 <!-- {
@@ -227,7 +228,8 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces?$filter=receiv
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.messageTrace"
+  "@odata.type": "microsoft.graph.messageTrace",
+  "isCollection": true
 }
 -->
 ``` http
@@ -263,7 +265,7 @@ Content-type: application/json
 }
 ```
 
-### 5. Get message trace event detail data for a given recipient
+### Example 5. Get message trace event detail data for a given recipient
 
 #### Request
 <!-- {
@@ -278,8 +280,8 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces('2e3c0fac-4669
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.messageTrace"
+  "@odata.type": "microsoft.graph.messageTrace",
+  "isCollection": true
 }
 -->
 ``` http
