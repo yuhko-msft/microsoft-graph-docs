@@ -355,9 +355,6 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 1. Only apps with `publishingState` set to `published` in their [app definitions](/graph/resources/teamsappdefinition.md) are returned in the response.
 2. [App permission policies](/microsoftteams/teams-app-permission-policies.md) are not applied. The response contains both blocked and available apps.
 
-### Permission policies not applied when GET /appCatalogs/teamsApps is called using app context
-Permission policies will not be applied in application context. The list of Teams apps in the response will contain both blocked and available apps.
-
 ## Users
 
 ### Use the dollar ($) symbol in the userPrincipalName
