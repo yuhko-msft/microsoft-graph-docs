@@ -1,0 +1,105 @@
+---
+title: "Create termsAndConditionsAcceptanceStatus"
+description: "Create a new termsAndConditionsAcceptanceStatus object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+localization_priority: Normal
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: apiPageType
+---
+
+# Create termsAndConditionsAcceptanceStatus
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new [termsAndConditionsAcceptanceStatus](../resources/termsandconditionsacceptancestatus.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of the [termsAndConditionsAcceptanceStatus](../resources/termsandconditionsacceptancestatus.md) object.
+
+The following table shows the properties that are required when you create the [termsAndConditionsAcceptanceStatus](../resources/termsandconditionsacceptancestatus.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
+|acceptedVersion|Int32|Most recent version number of the TandC accepted by the user.|
+|userDisplayName|String|Display name of the user whose acceptance the entity represents.|
+|userPrincipalName|String|The userPrincipalName of the User that accepted the term.|
+
+
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [termsAndConditionsAcceptanceStatus](../resources/termsandconditionsacceptancestatus.md) object in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_termsandconditionsacceptancestatus_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
+Content-Type: application/json
+Content-length: 220
+
+{
+  "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
+  "acceptedDateTime": "String (timestamp)",
+  "acceptedVersion": "Integer",
+  "userDisplayName": "String",
+  "userPrincipalName": "String"
+}
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termsAndConditionsAcceptanceStatus"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
+  "id": "7ae58188-8188-7ae5-8881-e57a8881e57a",
+  "acceptedDateTime": "String (timestamp)",
+  "acceptedVersion": "Integer",
+  "userDisplayName": "String",
+  "userPrincipalName": "String"
+}
+```
+
