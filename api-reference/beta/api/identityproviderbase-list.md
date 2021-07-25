@@ -58,13 +58,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 For an Azure AD B2C tenant this method returns a `200 OK` response code and a collection of [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) and/or [appleIdentityProvider](../resources/appleidentityprovider.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Example 1: List all **identityProvider** configured in an Azure AD tenant
 
-### Request
+#### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityproviderbase"
@@ -74,8 +76,26 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
@@ -114,7 +134,7 @@ Content-Type: application/json
 
 ### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
 
-### Request
+#### Request
 The following is an example of the request.
 
 <!-- {
@@ -127,7 +147,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.

@@ -32,7 +32,7 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/chats/getAllMessages
+GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## Optional query parameters
@@ -96,6 +96,7 @@ Content-length: 347
          "webUrl":null,
          "channelIdentity":null,
          "policyViolation":null,
+         "eventDetail": null,
          "from":{
             "application":null,
             "device":null,

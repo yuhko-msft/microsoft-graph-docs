@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts
-GET /groups/{id}/conversations/{id}/threads/{id}/posts
+GET /groups/{groupId}/threads/{threadId}/posts
+GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## Optional query parameters
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
