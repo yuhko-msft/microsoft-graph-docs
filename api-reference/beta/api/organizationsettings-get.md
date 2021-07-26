@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [organizationSettings](../resources/organizationsettings.md) object, including **profileCardProperties**.
 
-This operation does not return [itemInsightsSettings](../resources/iteminsightssettings.md) through the **itemInsights** navigation property. Use [get itemInsightsSettings](iteminsightssettings-get.md) instead.
+This operation does not return [insightsSettings](../resources/insightssettings.md) through the **itemInsights** and **peopleInsights** navigation properties. Use [get itemInsightsSettings](iteminsightssettings-get.md) instead and [get peopleInsightsSettings](peopleiteminsightssettings-get.md) .
 
 ## Permissions
 

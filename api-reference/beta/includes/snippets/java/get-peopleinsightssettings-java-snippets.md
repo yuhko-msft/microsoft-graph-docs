@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-InsightsSettings itemInsightsSettings = graphClient.organization("{organizationId}").settings().itemInsights()
+InsightsSettings peopleInsightsSettings = graphClient.organization("{organizationId}").settings().peopleInsights()
 	.buildRequest()
 	.get();
 
