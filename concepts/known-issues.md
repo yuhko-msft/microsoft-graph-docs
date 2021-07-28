@@ -354,6 +354,9 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 ### Missing functionality when Teams Apps in the app catalog are listed using app-only context
 When invoked in app-only context, the response to [GET /appCatalogs/teamsApps](/graph/api/appcatalogs-list-teamsapps.md) contains only those apps for which the `publishingState` has been set to `published` in their [app definitions](/graph/resources/teamsappdefinition.md). Also, [app permission policies](/microsoftteams/teams-app-permission-policies.md) are not applied while computing the response. The response contains both blocked and allowed apps.
 
+### Missing properties in the list of teams that a user has joined
+The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
+
 ## Users
 
 ### Use the dollar ($) symbol in the userPrincipalName
