@@ -352,8 +352,7 @@ The filter query to get members of a team based on their roles `GET /teams/team-
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ### Missing functionality when Teams Apps in the app catalog are listed using app-only context
-1. Only apps with `publishingState` set to `published` in their [app definitions](/graph/resources/teamsappdefinition.md) are returned in the response.
-2. [App permission policies](/microsoftteams/teams-app-permission-policies.md) are not applied. The response contains both blocked and available apps.
+When invoked in app-only context, the response to [GET /appCatalogs/teamsApps](/graph/api/appcatalogs-list-teamsapps.md) contains only those apps for which the `publishingState` has been set to `published` in their [app definitions](/graph/resources/teamsappdefinition.md). Also, [app permission policies](/microsoftteams/teams-app-permission-policies.md) are not applied while computing the response. The response contains both blocked and allowed apps.
 
 ## Users
 
