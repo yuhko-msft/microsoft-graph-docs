@@ -1,0 +1,66 @@
+---
+title: "privateLinkNamedLocation resource type"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+localization_priority: Normal
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: resourcePageType
+---
+
+# privateLinkNamedLocation resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+
+Inherits from [namedLocation](../resources/namedlocation.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List privateLinkNamedLocations](../api/privatelinknamedlocation-list.md)|[privateLinkNamedLocation](../resources/privatelinknamedlocation.md) collection|Get a list of the [privateLinkNamedLocation](../resources/privatelinknamedlocation.md) objects and their properties.|
+|[Create privateLinkNamedLocation](../api/privatelinknamedlocation-post-privatelinknamedlocations.md)|[privateLinkNamedLocation](../resources/privatelinknamedlocation.md)|Create a new [privateLinkNamedLocation](../resources/privatelinknamedlocation.md) object.|
+|[Get privateLinkNamedLocation](../api/privatelinknamedlocation-get.md)|[privateLinkNamedLocation](../resources/privatelinknamedlocation.md)|Read the properties and relationships of a [privateLinkNamedLocation](../resources/privatelinknamedlocation.md) object.|
+|[Update privateLinkNamedLocation](../api/privatelinknamedlocation-update.md)|[privateLinkNamedLocation](../resources/privatelinknamedlocation.md)|Update the properties of a [privateLinkNamedLocation](../resources/privatelinknamedlocation.md) object.|
+|[Delete privateLinkNamedLocation](../api/privatelinknamedlocation-delete.md)|None|Deletes a [privateLinkNamedLocation](../resources/privatelinknamedlocation.md) object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
+|displayName|String|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
+|id|String|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
+|isTrusted|Boolean|**TODO: Add Description**|
+|modifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
+|privateLinkResourcePolicyIds|String collection|**TODO: Add Description**|
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.privateLinkNamedLocation",
+  "baseType": "Microsoft.IdentityProtectionServices.namedLocation",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.privateLinkNamedLocation",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedDateTime": "String (timestamp)",
+  "privateLinkResourcePolicyIds": [
+    "String"
+  ],
+  "isTrusted": "Boolean"
+}
+```
+
