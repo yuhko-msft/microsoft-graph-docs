@@ -45,9 +45,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.messageTrace",
-  "baseType": "microsoft.graph.entity",
-  "openType": false
+  "@odata.type": "microsoft.graph.messageTrace"
 }
 -->
 ``` json
