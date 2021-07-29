@@ -129,7 +129,7 @@ Content-Type: application/json
 }
 -->
 ``` http 
-GET https://graph.microsoft.com/beta/admin/exchange/messageTraces('2e3c0fac-4669-4e4a-2669-08d5dd529cbe')?$expand=recipients
+GET https://graph.microsoft.com/beta/admin/exchange/messageTraces(id='2e3c0fac-4669-4e4a-2669-08d5dd529cbe')?$expand=recipients
 ```
 
 #### Response
@@ -276,7 +276,7 @@ Content-type: application/json
 }
 -->
 ``` http 
-GET https://graph.microsoft.com/beta/admin/exchange/messageTraces('2e3c0fac-4669-4e4a-2669-08d5dd529cbe')?$expand=recipients($filter=recipientEmail eq 'user2@contoso.com';$expand=events)
+GET https://graph.microsoft.com/beta/admin/exchange/messageTraces(id='2e3c0fac-4669-4e4a-2669-08d5dd529cbe')?$expand=recipients($filter=recipientEmail eq 'user2@contoso.com';$expand=events)
 ```
 
 #### Response
