@@ -27,11 +27,10 @@ None.
 |recipientEmail|String|Recipient email address.|
 |deliveryStatus|messageStatus|Message delivery status. Possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`, `unknownFutureValue`.|
 |events|[messageEvent](../resources/messageevent.md) collection|details of events during delivery of a mail message to a recipient.|
-|
 
-### Message status types
+### messageStatus values
 
-| Message status | Description |
+| Member | Description |
 |------------|-------------|
 | gettingStatus | The message is waiting for status update. |
 | pending | Message delivery is underway or was deferred and is being retried. |
@@ -40,7 +39,6 @@ None.
 | expanded | There was no message delivery because the message was addressed to a distribution group and the membership of the distribution was expanded. |
 | quarantined | The message was quarantined. |
 | filteredAsSpam | The message was marked as spam. |
-|
 
 ## Relationships
 None.
@@ -57,7 +55,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.messageRecipient",
   "id": "String (identifier)",
   "recipientEmail": "String",
   "deliveryStatus": "String",

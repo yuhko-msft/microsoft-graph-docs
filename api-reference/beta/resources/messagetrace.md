@@ -21,7 +21,6 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get messageTraces](../api/messagetrace-get.md)|[messageTrace](../resources/messagetrace.md) collection|Get a list of the [messageTrace](../resources/messagetrace.md) objects and their properties.|
-|
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +34,6 @@ Inherits from [entity](../resources/entity.md).
 |sourceIPAddress|String|The source IP address.|
 |destinationIPAddress|String|The destination IP address.|
 |recipients|[messageRecipient](../resources/messagerecipient.md) collection|Message recipients.|
-|
 
 ## Relationships
 None.
@@ -50,7 +48,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.messageTrace",
   "id": "String (identifier)",
   "senderEmail": "String",
   "receivedDateTime": "String (timestamp)",

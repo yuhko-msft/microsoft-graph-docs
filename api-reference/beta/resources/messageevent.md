@@ -27,11 +27,10 @@ None.
 |dateTime|DateTimeOffset|Time of the event in UTC.|
 |eventType|messageEventType|Event type. Possible values are: `received`, `sent`, `delivered`, `failed`, `processingFailed`, `distributionGroupExpanded`, `submitted`, `delayed`, `redirected`, `resolved`, `dropped`, `recipientsAdded`, `malwareDetected`, `malwareDetectedInMessage`, `malwareDetectedInAttachment`, `ttZapped`, `ttDelivered`, `spamDetected`, `transportRuleTriggered`, `dlpRuleTriggered`, `journaled`, `unknownFutureValue`.|
 |description|String|Detailed information on the event.|
-|
 
-### Message event types
+### messageEventType values
 
-| Event type | Description |
+| Member | Description |
 |------------|-------------|
 | received | Message was received by the transport service. |
 | sent | Message was sent between transport services. |
@@ -70,7 +69,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.messageEvent",
   "id": "String (identifier)",
   "dateTime": "String (timestamp)",
   "eventType": "String",
