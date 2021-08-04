@@ -29,8 +29,8 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Sort search results](#sort-search-results)| **sort** |
-|[Refine results using aggregations](#refine-results-using-aggregations)| 
-**aggregations** |
+|[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
+
 ## Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
