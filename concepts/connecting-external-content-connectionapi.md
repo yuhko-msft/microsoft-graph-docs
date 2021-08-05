@@ -13,11 +13,11 @@ This topic describes settings and management updates for the connector's connect
 
 ## Connections
 
-[Connections](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) allow you to add content from an external source into Microsoft Graph, and are considered a unit of administration in the Microsoft Graph connector's platform. Once you've created the connection, you will be able to add [items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta) that must adhere to the Microsoft Graph external item structure.
+[Connections](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) allow you to add content from an external source into Microsoft Graph, and are considered a unit of administration in the Microsoft Graph connector's platform. Once you've created the connection, you will be able to add [items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta&preserve-view=true) that must adhere to the Microsoft Graph external item structure.
 
 A connection also allows your registered application to define a schema for items that will be ingested, and enables your service to add, update, or delete items from the external data source.
 
-To provide a higher level of customization, connections now include more options for managing content, schema, and the supported content experiences. For example, support for connection-level settings, specifics settings for Microsoft Search, and creating [adaptive card templates](/adaptive-cards/) to render data (based on the schema), across the various [Microsoft 365](https://www.microsoft.com/microsoft-365) content experiences.
+To provide a higher level of customization, connections now include more options for managing content, schema, and the supported content experiences. For example, support for connection-level settings, specifics settings for Microsoft Search, and creating [adaptive card templates](/adaptive-cards/&preserve-view=true) to render data (based on the schema), across the various [Microsoft 365](https://www.microsoft.com/microsoft-365) content experiences.
 
 
 ## Updates to the Connection entity
