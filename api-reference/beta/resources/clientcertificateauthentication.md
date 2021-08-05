@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A type derived from apiAuthenticationConfigurationBase which is used to represent Pkcs12 based client certificate authentication. This is used to retrieve the public properties of uploaded certificates.
+A type derived from apiAuthenticationConfigurationBase which is used to represent Pkcs12 based client certificate authentication in "Get" and "List" operations. This type represents the public properties of uploaded certificates of an API connector.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).
 

@@ -16,7 +16,7 @@ The base type to hold authentication information for calling an API.
 Derived types include:
 - [basicAuthentication](basicauthentication.md) for HTTP basic authentication
 - [pkcs12certificate](pkcs12certificate.md) for client certificate authentication (used for API connector create or upload)
-- [clientCertificateAuthentication](pkcs12certificate.md) for client certificate authentication (used for fetching the client certificates of an API connector)
+- [clientCertificateAuthentication](clientCertificateAuthentication.md) for client certificate authentication (used for fetching the client certificates of an API connector)
 
 ## Properties
 

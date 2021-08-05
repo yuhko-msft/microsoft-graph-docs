@@ -1,6 +1,6 @@
 ---
 title: "clientCertificateAuthentication resource type"
-description: "Represents the configuration for retrieving a clientCertificateAuthentication."
+description: "Represents configuration for fetching a clientCertificateAuthentication in an API call."
 author: "nickgmicrosoft"
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A type derived from apiAuthenticationConfigurationBase that is used to represent a Pkcs12-based client certificate authentication. This is used to retrieve the public properties of uploaded certificates.
+A type derived from apiAuthenticationConfigurationBase which is used to represent Pkcs12 based client certificate authentication in "Get" and "List" operations. This type represents the public properties of uploaded certificates of an API connector.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).
 

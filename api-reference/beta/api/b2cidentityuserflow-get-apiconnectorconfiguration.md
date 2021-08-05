@@ -121,9 +121,21 @@ Content-Type: application/json
         "displayName": "Test API Connector 3",
         "targetUrl": "https://someapi.com/api/tokenaug",
         "authenticationConfiguration": {
-            "@odata.type": "#microsoft.graph.basicAuthentication",
-            "username": "<USERNAME2>",
-            "password": "******"
+            "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+            "certificateList": [
+                {
+                    "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                    "notAfter": 1666350522,
+                    "notBefore": 1508670522,
+                    "isActive": true
+                },
+                {
+                    "thumbprint": "1AB255CC895477798BA418B378255204304897BC",
+                    "notAfter": 1766350522,
+                    "notBefore": 1608670522,
+                    "isActive": false
+                }
+            ]
         }
     }
 }
