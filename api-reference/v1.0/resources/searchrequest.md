@@ -22,7 +22,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 ## Properties
 
 | Property     | Type        | Description |
-|:-------------|:------------|:------------|:------------|
+|:-------------|:------------|:------------|
 |contentSources|String collection|Contains the connection to be targeted.|
 |enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant. This property is only applicable to entityType=`message`. Optional.|
 |entityTypes|entityType collection| One or more types of resources expected in the response. Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`. See [known limitations](search-api-overview.md#known-limitations) for those combinations of two or more entity types that are supported in the same search request. Required.|
@@ -30,6 +30,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |size|Int32|The size of the page to be retrieved. Optional.|
+|resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
 
 ## JSON representation
 
@@ -43,7 +44,8 @@ The following is a JSON representation of the resource.
   "from": 1024,
   "size": 1024,
   "fields": ["String"],
-  "enableTopResults": true  
+  "enableTopResults": true,
+  "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}]  
 }
 ```
 
@@ -51,7 +53,8 @@ The following is a JSON representation of the resource.
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
-
+- Search [custom types imported using connectors](/graph/search-concept-custom-types) data
+- Use [display layout](/graph/search-concept-display-layout.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
