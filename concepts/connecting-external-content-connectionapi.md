@@ -9,23 +9,21 @@ ms.prod: search
 
 # Connection API
 
-This topic describes settings and management updates for the connector's connection settings API, and complements the guide to [Create, update, and delete connections in the Microsoft Graph](connecting-external-content-manage-connections.md).
+This topic describes settings and management updates for the connection settings API, and complements the guide to [Create, update, and delete connections in the Microsoft Graph](connecting-external-content-manage-connections.md).
 
 ## Connections
 
-[Connections](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) allow you to add content from an external source into Microsoft Graph, and are considered a unit of administration in the Microsoft Graph connector's platform. Once you've created the connection, you will be able to add [items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta&preserve-view=true) that must adhere to the Microsoft Graph external item structure.
+[Connections](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) allow you to add content from an external source into Microsoft Graph, and are considered a unit of administration in the Microsoft Graph connector's platform. Once you've created a connection, you will be able to add [items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta&preserve-view=true) that must adhere to the Microsoft Graph external item structure.
 
 A connection also allows your registered application to define a schema for items that will be ingested, and enables your service to add, update, or delete items from the external data source.
 
 To provide a higher level of customization, connections now include more options for managing content, schema, and the supported content experiences. For example, support for connection-level settings, specifics settings for Microsoft Search, and creating [adaptive card templates](/adaptive-cards/&preserve-view=true) to render data (based on the schema), across the various [Microsoft 365](https://www.microsoft.com/microsoft-365) content experiences.
-
 
 ## Updates to the Connection entity
 
 The Connection entity can use additional fields to provide more metadata and specific settings, reducing the number of API calls needed to setup a connection.
 
 ### Types of new fields
-
 
 |Properties in setting  |Description  |Type  |
 |---------|---------|---------|
@@ -39,7 +37,8 @@ The Connection entity can use additional fields to provide more metadata and spe
 |****MGE** = microsoft.graph.externalConnectors*|
 
 #### Example of settings object
-The following sample shows the use of the search, feed, and compliance properties listed in the table above.
+
+The following sample shows the use of the search, feed, and compliance properties listed in the table above:
 
 ```html
 {
@@ -114,6 +113,7 @@ For example, the following call will update appInfo and searchSettings while kee
 
 ```html
 PATCH https://graph.microsoft.com/beta/external/connections('{connectionId}')
+
 PATCH https://graph.microsoft.com/beta/external/connections('{connectionId}')
 {
     "appInfo": {
