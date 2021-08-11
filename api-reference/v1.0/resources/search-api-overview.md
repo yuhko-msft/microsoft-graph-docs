@@ -29,7 +29,8 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
-|[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**
+|[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**|
+|[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
 
 ## Scope search based on entity types
 
@@ -109,6 +110,14 @@ To get the result template in the [searchresponse](searchresponse.md), you have 
 
 See [Use search display layout](/graph/search-concept-display-layout) for examples. 
 
+## Request spelling correction
+
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md). 
+
+In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
+
+For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -139,6 +148,7 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
   - [Use search display layout](/graph/search-concept-display-layout)
+  - [Request spelling correction](/graph/search-concept-speller)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
