@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Specifies which aggregations should be returned alongside the search results.
 
 ## Properties
