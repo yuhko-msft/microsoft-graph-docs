@@ -1,0 +1,39 @@
+---
+title: "userExperienceAnalyticsCloudIdentityDevicesSummary resource type"
+description: "The user experience analytics work from anywhere cloud identity devices summary."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+localization_priority: Normal
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: resourcePageType
+---
+
+# userExperienceAnalyticsCloudIdentityDevicesSummary resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The user experience analytics work from anywhere cloud identity devices summary.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|deviceWithoutCloudIdentityCount|Int32|The count of devices that are not cloud identity.|
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
+  "deviceWithoutCloudIdentityCount": "Integer"
+}
+```
+
