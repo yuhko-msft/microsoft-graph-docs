@@ -29,7 +29,7 @@ The Connection entity can use additional fields to provide more metadata and spe
 |---------|---------|---------|
 |AppInfo     | App information used while displaying connection.       | MGE.applicationInfo        |
 |AuthorizedAppIds     | Applications with permission on this connection.        | StringCollection        |
-|Notifications     | List of notification info objects.        | MGE.notificationInfo        |
+|Notifications     | List of notifications about info objects.        | MGE.notificationInfo        |
 |Schema     | Connection schema.        | MGE.schema        |
 |SearchSettings     | Search settings.        | MGE.searchSettings        |
 |FeedSettings     | Feed settings.       | MGE.feedSettings        |
@@ -108,7 +108,7 @@ The following sample shows the use of the search, feed, and compliance propertie
 
 ## Update properties
 
-The additional properties can be updated by a PATCH call on: **/Connections** entity.
+Additional properties can be updated by a PATCH call on: **/Connections** entity.
 For example, the following call will update appInfo and searchSettings while keeping other properties as they are:
 
 ```html
@@ -133,7 +133,8 @@ PATCH https://graph.microsoft.com/beta/external/connections('{connectionId}')
 }
 ```
 
-## Get connections for a given connector
+## Get connections for a specific connector
+
 To get details on the connections for a given connectors you can use the following example:
 
 ```html
