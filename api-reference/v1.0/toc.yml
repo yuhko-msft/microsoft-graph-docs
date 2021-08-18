@@ -5880,6 +5880,8 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+        - name: Create sharing link
+          href: api/listitem-createlink.md
     - name: Tasks and plans
       displayName: Planner
       items:
