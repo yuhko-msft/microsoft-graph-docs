@@ -32,7 +32,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
 |[tag](../resources/teamworkTag.md)|[List](../api/teamworkTag-list.md), [Create](../api/teamworkTag-post.md), [Get](../api/teamworkTag-get.md), [Update](../api/teamworkTag-update.md), [Delete](../api/teamworkTag-delete.md)|
-|[tagMember](../resources/teamworkTagMember.md)|[List](../api/teamworkTagMember-list.md), [Get](../api/teamworkTagMember-get.md), [Delete](../api/teamworkTagMember-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[List](../api/teamworkTagMember-list.md), [Create](../api/teamworkTagMember-post.md), [Get](../api/teamworkTagMember-get.md), [Delete](../api/teamworkTagMember-delete.md)|
 
 ## Microsoft Teams limits
 
@@ -70,23 +70,12 @@ The following are the differences at the API level between teams and groups:
 
 ## Membership changes in Microsoft Teams
 
-To add members and owners to a team, change the membership of the [group](../resources/group.md) with the same ID.
-
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group-post-members.md)	| POST	    | /groups/{id}/members/$ref  |
-| [Remove member](../api/group-delete-members.md)	| DELETE	| /groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group-post-owners.md)     | POST	    | /groups/{id}/owners/$ref |
-| [Remove owner](../api/group-delete-owners.md)	| DELETE	| /groups/{id}/owners/{userId}/$ref |
+| [Add member](../api/team-post-members.md)	| POST	    | /teams/{id}/members  |
+| [Remove member](../api/team-delete-members.md)	| DELETE	| /teams/{id}/members/{userId} |
+| [Update member's role](../api/team-update-members.md)	| PATCH	| /teams/{id}/members/{userId} |
 | [Update team](../api/team-update.md)	| PATCH     | /teams/{id} |
-
-We recommend that when you add an owner, you also add that user as a member.
-If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams.
-In addition, different apps and APIs will handle that differently.
-For example, Microsoft Teams will show teams that the user is either a member or an owner of, while the Microsoft Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of.
-To avoid confusion, add all owners to the members list as well.
-
-Known issue: when DELETE /groups/{id}/owners is called, the user is also removed from the /groups/{id}/members list. To work around this, we recommend that you remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 When adding and removing members and owners, don't put braces { } around the ID.
 
