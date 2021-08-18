@@ -32,6 +32,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 | [Delete][]                     | No Content | Removes an item from a list.
 | [Update][]                     | [fieldValueSet][]| Update the properties on a listItem.
 | [Update column values][Update] | [fieldValueSet][]| Update column values on a listItem.
+| [createLink][CreateLink]       | [permission][] | Create a link to share a listItem
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -39,9 +40,11 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+[CreateLink]: ../api/listitem-createlink.md
 
 [itemActivityStat]: itemactivitystat.md
 [fieldValueSet]: fieldvalueset.md
+[permission]: permission.md
 
 ## Properties
 
