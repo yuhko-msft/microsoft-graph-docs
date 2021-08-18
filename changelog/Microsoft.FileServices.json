@@ -3,6 +3,42 @@
     {
       "ChangeList":[
         {
+          "Id": "5E7D0E2A-35E4-45E9-8833-86607380B501",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "type",
+          "ChangeType": "Change",
+          "Description": "Changed **type** (string) property in [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource from required to optional.",
+          "Target": "createLink"
+        }
+    ],
+    "Id": "5E7D0E2A-35E4-45E9-8833-86607380B501",
+    "Cloud": "prd",
+    "Version": "v1.0",
+    "CreatedDateTime": "2021-08-19T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "75BF9C8F-8394-4406-8030-F15F89692A7E",
+          "ApiChange": "Method",
+          "ChangedApiName": "createLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [createLink](https://docs.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-1.0) action on a [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        }
+    ],
+    "Id": "75BF9C8F-8394-4406-8030-F15F89692A7E",
+    "Cloud": "prd",
+    "Version": "v1.0",
+    "CreatedDateTime": "2021-08-19T00:00:00.000Z",
+    "WorkloadArea": "Sites and lists",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
           "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
           "ApiChange": "Parameter",
           "ChangedApiName": "type",
