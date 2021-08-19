@@ -1,7 +1,23 @@
 {
   "changelog": [
     {
-    "ChangeList": [
+      "ChangeList": [
+        {
+          "Id": "0c4cebd2-5044-4b17-8bdd-43b6b40d640e",
+          "ApiChange": "Method",
+          "ChangedApiName": "List memberOf",
+          "ChangeType": "Addition",
+          "Description": "Added the [List memberOf](https://docs.microsoft.com/en-us/graph/api/application-list-memberOf?view=graph-rest-beta) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "Application"
+        }
+       ],
+       "Id": "0c4cebd2-5044-4b17-8bdd-43b6b40d640e",
+       "Cloud": "prd",
+       "Version": "beta",
+       "CreatedDateTime": "2021-08-18T14:10:06Z",
+       "WorkloadArea": "Applications",
+       "SubArea": "Application"
+     },
      {
        "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
        "ApiChange": "Method",

@@ -794,6 +794,8 @@ items:
           href: api/application-post-applications.md
         - name: Get application
           href: api/application-get.md
+        - name: List memberOf
+          href: api/application-list-memberof.md
         - name: Update application
           href: api/application-update.md
         - name: Delete application
