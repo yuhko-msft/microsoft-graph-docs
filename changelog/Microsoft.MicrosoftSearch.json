@@ -65,6 +65,158 @@
           "ChangeType": "Addition",
           "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-1.0) method to the [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
           "Target": "searchEntity"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Schema",
+          "ChangedApiName": "graph",
+          "ChangeType": "Addition",
+          "Description": "Added the [graph](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+          "Target": "graph"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "searchAlterationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **searchAlterationType** enumeration type.",
+          "Target": "searchAlterationType"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "alterationResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [alterationResponse](https://docs.microsoft.com/en-us/graph/api/resources/alterationResponse?view=graph-rest-1.0) resource type.",
+          "Target": "alterationResponse"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "alteredQueryToken",
+          "ChangeType": "Addition",
+          "Description": "Added the [alteredQueryToken](https://docs.microsoft.com/en-us/graph/api/resources/alteredQueryToken?view=graph-rest-1.0) resource type.",
+          "Target": "alteredQueryToken"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "resultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/resultTemplate?view=graph-rest-1.0) resource type.",
+          "Target": "resultTemplate"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "resultTemplateDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplateDictionary](https://docs.microsoft.com/en-us/graph/api/resources/resultTemplateDictionary?view=graph-rest-1.0) resource type.",
+          "Target": "resultTemplateDictionary"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "resultTemplateOption",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplateOption](https://docs.microsoft.com/en-us/graph/api/resources/resultTemplateOption?view=graph-rest-1.0) resource type.",
+          "Target": "resultTemplateOption"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "searchAlteration",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAlteration](https://docs.microsoft.com/en-us/graph/api/resources/searchAlteration?view=graph-rest-1.0) resource type.",
+          "Target": "searchAlteration"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "searchAlterationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchAlterationOptions](https://docs.microsoft.com/en-us/graph/api/resources/searchAlterationOptions?view=graph-rest-1.0) resource type.",
+          "Target": "searchAlterationOptions"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplateId** property to [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-1.0) resource.",
+          "Target": "searchHit"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplateOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplateOptions** property to [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource.",
+          "Target": "searchRequest"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitsContainers",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **hitsContainers** property from [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryAlterationResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryAlterationResponse** property to [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Property",
+          "ChangedApiName": "searchTerms",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **searchTerms** property from [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Property",
+          "ChangedApiName": "value",
+          "ChangeType": "Addition",
+          "Description": "Added the **value** property to [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource.",
+          "Target": "searchResponse"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "searchResultSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchResultSet](https://docs.microsoft.com/en-us/graph/api/resources/searchResultSet?view=graph-rest-1.0) resource type.",
+          "Target": "searchResultSet"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Action",
+          "ChangedApiName": "query",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **query** method from the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-1.0) resource.",
+          "Target": "query"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Action",
+          "ChangedApiName": "query",
+          "ChangeType": "Addition",
+          "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-1.0) method to the [query](https://docs.microsoft.com/en-us/graph/api/query?view=graph-rest-1.0) resource.",
+          "Target": "query"
+        },
+        {
+          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
+          "ApiChange": "Schema",
+          "ChangedApiName": "Org.OData.Core.V1",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+          "Target": "Org.OData.Core.V1"
         }
       ],
       "Id": "2ee31212-251c-11eb-8461-5e37877ca705",
