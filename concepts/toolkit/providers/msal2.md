@@ -23,6 +23,7 @@ Initializing the MSAL 2 provider in HTML is the simplest way to create a new pro
                         login-type="redirect/popup" 
                         scopes="user.read,people.read" 
                         redirect-uri="https://my.redirect/uri" 
+                        login-hint="my@loginhint.com"
                         authority=""> 
     </mgt-msal2-provider> 
 ```
@@ -91,6 +92,7 @@ Or pass the boolean attribute `multi-account-disabled` in the HTML:
                       login-type="redirect/popup" 
                       scopes="user.read,people.read" 
                       redirect-uri="https://my.redirect/uri" 
+                      login-hint="my@loginhint.com"
                       authority=""
                       multi-account-disabled> 
     </mgt-msal2-provider> 
