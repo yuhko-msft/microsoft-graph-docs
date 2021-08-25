@@ -7,7 +7,7 @@ author: amrutha95
 
 # MSAL 2  provider
 
-The MSAL 2 provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+The MSAL 2 provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph. This provider supports multiple accounts to be signed in and the ability to switch between signed in accounts.
 To learn more, see [providers](./providers.md).
 
 ## Get started
@@ -34,6 +34,8 @@ Initializing the MSAL 2 provider in HTML is the simplest way to create a new pro
 | scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
+| login-hint   | Login hint string. Optional.                                                       |
+| domain-hint  | Domain hint string. Optional.                                                      |
 | prompt       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
 
 ### Initialize in JavaScript
@@ -55,6 +57,7 @@ You can provide more options by initializing the provider in JavaScript.
       sid?: string, // Session ID
       loginHint?: string,
       domainHint?: string,
+      isMultiAccountEnabled?: boolean // True by default, disables multiple account login if false
       options?: Configuration // msal js Configuration object
     });
 ```
@@ -64,9 +67,34 @@ You can provide more options by initializing the provider in JavaScript.
 For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
 
 ## Difference between Msal2Provider and MsalProvider
-Although the usage is very similar, MsalProvider and Msal2Provider are built on top of different OAuth flows. MsalProvider is built on top of MSAL.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
+* MsalProvider and Msal2Provider are built on top of different OAuth flows. MsalProvider is built on top of MSAL.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). Msal2Provider is built on top of [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
 Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, so we recommend usage of MSAL2Provider over MSALProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+* Msal2Provider supports multiple account logins and the ability to switch between accounts, while MsalProvider supports only single account logins.
 
+## Disable multiple account logins
+In case you want to disable the multiple login functionality that is enabled by default, you may pass the `isMultiAccountEnabled` property in the `Msal2Config` object:
+```ts
+    import {Providers, LoginType} from '@microsoft/mgt-element';
+    import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
+
+    // initialize the auth provider globally
+    Providers.globalProvider = new Msal2Provider({
+      clientId: 'clientId',
+      isMultiAccountEnabled?: false
+    });
+```
+Or pass the boolean attribute `multi-account-disabled` in the HTML:
+```html
+    <script type="module" src="../node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js" />
+
+    <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"
+                      login-type="redirect/popup" 
+                      scopes="user.read,people.read" 
+                      redirect-uri="https://my.redirect/uri" 
+                      authority=""
+                      multi-account-disabled> 
+    </mgt-msal2-provider> 
+```
 ## Migrating from MSAL Provider to MSAL 2 Provider
 To migrate an application that's using MSAL provider to the MSAL 2 Provider:
 1. Go to the Azure portal at https://portal.azure.com.
