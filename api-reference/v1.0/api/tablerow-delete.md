@@ -1,17 +1,17 @@
 ---
-title: "TableRow: delete"
-description: "Deletes the row from the table."
+title: "tableRow: delete"
+description: "Delete a row from a table."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# TableRow: delete
+# tableRow: delete
 
 Namespace: microsoft.graph
 
-Deletes the row from the table.
+Delete a row from a table.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,7 +33,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|nam
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines wheter changes are persisted. Optional.|
 
 ## Request body
 
@@ -42,8 +42,8 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|nam
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
+
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|
 ---
 
 
-##### Response
+### Response
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
