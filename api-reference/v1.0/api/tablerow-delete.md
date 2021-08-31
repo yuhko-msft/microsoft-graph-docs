@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# tableRow: delete
+# WorkbookTableRow: delete
 
 Namespace: microsoft.graph
 
