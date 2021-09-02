@@ -27,6 +27,7 @@ Initializing the MSAL 2 provider in HTML is the simplest way to create a new pro
                         authority=""> 
     </mgt-msal2-provider> 
 ```
+ Add the `incremental-consent-disabled` boolean attribute if you wish to disable incremental consent. 
 
 | Attribute    | Description                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -38,7 +39,9 @@ Initializing the MSAL 2 provider in HTML is the simplest way to create a new pro
 | login-hint   | Login hint string. Optional.                                                       |
 | domain-hint  | Domain hint string. Optional.                                                      |
 | prompt       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
-
+| multi-account-disabled | Disables multiple account sign in functionality. Optional, enabled by default. | 
+| incremental-consent-disabled | Disables incremental consent. Optional, enabled by default. |  
+ 
 ### Initialize in JavaScript
 
 You can provide more options by initializing the provider in JavaScript.
@@ -59,6 +62,7 @@ You can provide more options by initializing the provider in JavaScript.
       loginHint?: string,
       domainHint?: string,
       isMultiAccountEnabled?: boolean // True by default, disables multiple account login if false
+      isIncrementalConsentDisabled?: boolean, //Disable incremental consent, true by default
       options?: Configuration // msal js Configuration object
     });
 ```
