@@ -136,8 +136,7 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces(id='2e3c0fac-4
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.messageTrace",
-  "isCollection": true,
-  "truncated": true
+  "isCollection": false
 }
 -->
 ``` http
@@ -281,7 +280,7 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces(id='2e3c0fac-4
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.messageTrace",
-  "isCollection": true
+  "isCollection": false
 }
 -->
 ``` http
