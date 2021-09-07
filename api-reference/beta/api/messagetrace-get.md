@@ -146,29 +146,25 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces(recipients())",
-  "value": [
-    {
-      "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",
-      "senderEmail": "user@contoso.com",
-      "receivedDateTime": "2020-06-15T23:55:22.9557353",
-      "messageId": "<ea7d4b44435d4810a151eaca8d596958@CO2PR00MB0199.namprd00.prod.outlook.com>",
-      "subject": "Low-severity alert",
-      "size": 6677,
-      "sourceIPAddress": null,
-      "destinationIPAddress": null,
-      "recipients": [
-        {
-          "id": "06d86871-5488-45bd-ae5b-a94fae1c276f",
-          "recipientEmail": "user2@contoso.com",
-          "deliveryStatus": "Delivered"
-        },
-        {
-          "id": "53ab9941-8faf-423d-bb46-666f8d7caf4f",
-          "recipientEmail": "user3@contoso.com",
-          "deliveryStatus": "Delivered"
-        }
-      ]
-    }
+  "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",
+  "senderEmail": "user@contoso.com",
+  "receivedDateTime": "2020-06-15T23:55:22.9557353",
+  "messageId": "<ea7d4b44435d4810a151eaca8d596958@CO2PR00MB0199.namprd00.prod.outlook.com>",
+  "subject": "Low-severity alert",
+  "size": 6677,
+  "sourceIPAddress": null,
+  "destinationIPAddress": null,
+  "recipients": [
+	{
+	  "id": "06d86871-5488-45bd-ae5b-a94fae1c276f",
+	  "recipientEmail": "user2@contoso.com",
+	  "deliveryStatus": "Delivered"
+	},
+	{
+	  "id": "53ab9941-8faf-423d-bb46-666f8d7caf4f",
+	  "recipientEmail": "user3@contoso.com",
+	  "deliveryStatus": "Delivered"
+	}
   ]
 }
 ```
@@ -293,51 +289,47 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces(recipients(events()))",
-  "value": [
-    {
-      "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",
-      "senderEmail": "user@contoso.com",
-      "receivedDateTime": "2020-06-15T23:55:22.9557353",
-      "messageId": "<ea7d4b44435d4810a151eaca8d596958@CO2PR00MB0199.namprd00.prod.outlook.com>",
-      "subject": "Low-severity alert",
-      "size": 6677,
-      "sourceIPAddress": null,
-      "destinationIPAddress": null,
-      "recipients": [
-        {
-          "id": "6cb725fb-9ae0-4379-83b1-66885e5f82af",
-          "recipientEmail": "user2@contoso.com",
-          "deliveryStatus": "Delivered",
-          "events": [
-            {
-              "id": "cf6d257a-e898-4ae9-ba80-9c6485a3066c",
-              "dateTime": "2020-06-15T23:55:23.817",
-              "eventType": "receive",
-              "description": "Message received by: BL2SR01MB606"
-            },
-            {
-              "id": "92196e47-0a5b-4121-82ad-1dc4c912700c",
-              "dateTime": "2020-06-15T23:55:24.453",
-              "eventType": "spam",
-              "description": "Sent to Junk Folder"
-            },
-            {
-              "id": "1de0680e-71c3-422e-86e8-4becc1867804",
-              "dateTime": "2020-06-15T23:55:25.403",
-              "eventType": "deliver",
-              "description": "The message was successfully delivered."
-            },
-            {
-              "id": "0c9228c2-cced-469c-95df-4d60eb38ff12",
-              "dateTime": "2020-06-15T23:55:26.378",
-              "eventType": "send",
-              "description": "Message transferred."
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces(recipients(events()))/$entity",
+  "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",
+  "senderEmail": "user@contoso.com",
+  "receivedDateTime": "2020-06-15T23:55:22.9557353",
+  "messageId": "<ea7d4b44435d4810a151eaca8d596958@CO2PR00MB0199.namprd00.prod.outlook.com>",
+  "subject": "Low-severity alert",
+  "size": 6677,
+  "sourceIPAddress": null,
+  "destinationIPAddress": null,
+  "recipients": [
+	{
+	  "id": "6cb725fb-9ae0-4379-83b1-66885e5f82af",
+	  "recipientEmail": "user2@contoso.com",
+	  "deliveryStatus": "Delivered",
+	  "events": [
+		{
+		  "id": "cf6d257a-e898-4ae9-ba80-9c6485a3066c",
+		  "dateTime": "2020-06-15T23:55:23.817",
+		  "eventType": "receive",
+		  "description": "Message received by: BL2SR01MB606"
+		},
+		{
+		  "id": "92196e47-0a5b-4121-82ad-1dc4c912700c",
+		  "dateTime": "2020-06-15T23:55:24.453",
+		  "eventType": "spam",
+		  "description": "Sent to Junk Folder"
+		},
+		{
+		  "id": "1de0680e-71c3-422e-86e8-4becc1867804",
+		  "dateTime": "2020-06-15T23:55:25.403",
+		  "eventType": "deliver",
+		  "description": "The message was successfully delivered."
+		},
+		{
+		  "id": "0c9228c2-cced-469c-95df-4d60eb38ff12",
+		  "dateTime": "2020-06-15T23:55:26.378",
+		  "eventType": "send",
+		  "description": "Message transferred."
+		}
+	  ]
+	}
+  ] 
 }
 ```
