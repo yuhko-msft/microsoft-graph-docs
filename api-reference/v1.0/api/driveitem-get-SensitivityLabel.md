@@ -1,5 +1,5 @@
 ---
-author: Sanjoyan Mustafi
+author: SanjoyanM
 title: Get the sensitivity label attached to a file
 localization_priority: Priority
 ms.prod: "sharepoint"
@@ -82,7 +82,7 @@ GET /me/drive/items/01FDOCTF6NRS4HZTEUZFD2PSD57WXQSWOC?$select=sensitivitylabel
 ---
 
 
-## Response
+### Response
 
 Here is an example of the response.
 
