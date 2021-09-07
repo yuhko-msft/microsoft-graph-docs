@@ -2,7 +2,7 @@
 title: "messageEvent resource type"
 description: "Represents details of an event during delivery of a mail message to a recipient"
 author: "rsuven"
-localization_priority: Normal
+ms.localizationpriority: Normal
 ms.prod: ""
 doc_type: resourcePageType
 ---

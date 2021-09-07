@@ -2,7 +2,7 @@
 title: "Get messageTrace"
 description: "Read the properties and relationships of a messageTrace object."
 author: "rsuven"
-localization_priority: Normal
+ms.localizationpriority: Normal
 ms.prod: ""
 doc_type: apiPageType
 ---

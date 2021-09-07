@@ -2,7 +2,7 @@
 title: "messageRecipient resource type"
 description: "Represents a recipient of a message"
 author: "rsuven"
-localization_priority: Normal
+ms.localizationpriority: Normal
 ms.prod: ""
 doc_type: resourcePageType
 ---
