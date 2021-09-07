@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.messageTrace",
-  "isCollection": true
+  "isCollection": true,
+  "truncated": true
 }
 -->
 ``` http
@@ -136,7 +136,8 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces(id='2e3c0fac-4
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.messageTrace",
-  "isCollection": false
+  "isCollection": false,
+  "truncated": true
 }
 -->
 ``` http
@@ -225,9 +226,9 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces?$filter=receiv
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.messageTrace",
-  "isCollection": true
+  "isCollection": true,
+  "truncated": true
 }
 -->
 ``` http
@@ -280,7 +281,8 @@ GET https://graph.microsoft.com/beta/admin/exchange/messageTraces(id='2e3c0fac-4
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.messageTrace",
-  "isCollection": false
+  "isCollection": false,
+  "truncated": true
 }
 -->
 ``` http
