@@ -12,14 +12,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Message tracing is one of the tools used by administrators to monitor the email messages flowing through Office 365 for their organization. It provides the admin basic information about the messages:
+Message tracing is one of the tools used by administrators to monitor the email messages flowing through Microsoft 365 for their organization. It provides the admin basic information about the messages:
 - Message ID
 - Sender and Recipients
 - Subject
 - Message datetime
 - Message status
 
-This API allows the administrator to search for messages using various search criteria for messages for the past 10 days. It also provides detailed message trace event details for a specific message and recipient. The data is returned as a list of [messageTrace](../resources/messagetrace.md) objects.
+This API allows the administrator to search for messages using various search criteria for messages for the past 10 days. It also provides detailed message trace event details for a specific message and recipient. The data is returned as one or more [messageTrace](../resources/messagetrace.md) objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,9 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|MessageTrace.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|MessageTrace.Read.All|
-|
 
-This API is accessible only to Tenant Admin, Security Admin and Security Reader roles.
+**Note:** This API supports admin permissions. Global admins, Security admins, and users with the Security Reader role can access message trace information.
 
 ## HTTP request
 
@@ -46,20 +45,22 @@ GET /admin/exchange/messageTraces
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-
 | Parameter | Description |
 |------------|-------------|
 | $expand | Expand a navigation property. |
 | $filter | Specify the query filter. |
 | $top | Specify the page size. |
 | $skipToken | Specify the continuation token. |
-|
+
+### Paging
+Note that paging is consistent only when a start time and end time is specified or a specific condition is used such as query by a message ID. Without a bounded query, pages may return data that may look inconsistent since the data is changing.
+
+Records for a page are counted by recipients. So if page size is 10 and the first message has 15 recipients, only one message is returned in the first page.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|
 
 ## Request body
 Do not supply a request body for this method.
@@ -68,16 +69,10 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a list of [messageTrace](../resources/messagetrace.md) objects in the response body.
 
-## Paging
-Paging is supported via the @odata.nextLink property returned in the response. The next page of the result can be obtained by using the URL returned as @odata.nextLink. The last page is indicated when the returned @odata.nextLink parameter is empty.
-
-Note that paging is consistent only when a start time and end time is specified or a specific condition is used (such as query by a message id). Without a bounded query, pages may return data that may look inconsistent since the data is changing.
-
-Records for a page are counted by recipients. So if pagesize (value of $top) is 10 and the first message has 15 recipients, only one message is returned in the first page.
 
 ## Examples
 
-### Example 1. Get most recent message trace data
+### Example 1: Get most recent message trace data
 
 #### Request
 <!-- {
@@ -120,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2. Get message trace data for a specific message
+### Example 2: Get message trace data for a specific message
 
 #### Request
 <!-- {
@@ -169,7 +164,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3. Get message trace data for a given message Id
+### Example 3: Get message trace data for a given message ID
 
 #### Request
 <!-- {
@@ -210,7 +205,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4. Get message trace data for a given set of recipients in a date range
+### Example 4: Get message trace data for a given set of recipients in a date range
 
 #### Request
 <!-- {
@@ -265,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5. Get message trace event detail data for a given recipient
+### Example 5: Get message trace event detail data for a given recipient
 
 #### Request
 <!-- {
