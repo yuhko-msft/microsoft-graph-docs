@@ -1,8 +1,42 @@
 {
     "changelog": [
         {
-             "ChangeList": [
-                  {
+            "ChangeList": [
+                {
+                    "Id": "a89432ca-21c4-43b4-9fb3-ce04453efa09",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "Policy.ReadWrite.MobilityManagement",
+                    "ChangeType": "Addition",
+                    "Description": "Added new [Policy.ReadWrite.MobilityManagement](https://docs.microsoft.com/en-us/graph/permissions-reference#policy-permissions) application permission for policy APIs.",
+                    "Target": "policyRoot"
+                },
+                {
+                    "Id": "a89432ca-21c4-43b4-9fb3-ce04453efa09",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "mobileAppManagementPolicies",
+                    "ChangeType": "Update",
+                    "Description": "Updated the permission scopes to include application permission support and fixed permission scopes for delegated permissions on write APIs.",
+                    "Target": "mobileAppManagementPolicies"
+                },
+                {
+                    "Id": "a89432ca-21c4-43b4-9fb3-ce04453efa09",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "mobileAppManagementPolicies",
+                    "ChangeType": "Update",
+                    "Description": "Updated the permission scopes to include application permission support and fixed permission scopes for delegated permissions on write APIs.",
+                    "Target": "mobileAppManagementPolicies"
+                }
+            ],
+            "Id": "a89432ca-21c4-43b4-9fb3-ce04453efa09",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2020-09-10T00:00:00",
+            "WorkloadArea": "Identity and access",
+            "SubArea": ""
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobilityManagementPolicy",
@@ -48,7 +82,7 @@
             "Version": "beta",
             "CreatedDateTime": "2020-07-12T00:00:00",
             "WorkloadArea": "Identity and access",
-            "SubArea" : ""
+            "SubArea": ""
         },
         {
             "ChangeList": [
@@ -98,7 +132,7 @@
             "Version": "beta",
             "CreatedDateTime": "2020-05-12T00:00:00",
             "WorkloadArea": "Identity and access",
-            "SubArea" : ""
+            "SubArea": ""
         }
     ]
 }
