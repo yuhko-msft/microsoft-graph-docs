@@ -58,6 +58,12 @@ Often times apps have to store their data in an external data store and entail o
 
 If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#schema-extensions) discoverable and shareable.
 
+### Get message trace data (preview)
+
+Use the message trace API to track email messages as they flow through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status. The information from message trace helps to efficiently determine what happened to messages, troubleshoot mail flow issues, and validate policy changes.
+
+For more information on message trace, see [Message trace in the Microsoft 365 Defender portal](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/message-trace-scc?view=o365-worldwide) and [Message trace in the modern Exchange admin center](https://docs.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+
 ## Where is the data?
 
 [!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]

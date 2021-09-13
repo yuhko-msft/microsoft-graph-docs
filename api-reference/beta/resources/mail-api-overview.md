@@ -72,7 +72,8 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** collection of the message. |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
-
+| **Message trace (preview)** | | |
+|The message trace API allows to track email messages as they flow through your Exchange Online organization. The information from message trace helps to efficiently determine what happened to messages, troubleshoot mail flow issues, and validate policy changes.| [messageTrace](../resources/messageTrace.md) | [Get message trace](../api/messagetrace-get.md) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

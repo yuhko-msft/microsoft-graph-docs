@@ -63,6 +63,12 @@ Enable swift action to defend against new threats, such as actions to block file
 
 Use the Microsoft Secure Score (preview) to provide visibility into your organization’s security needs and get suggestions for how to improve it, and project an improved score after those suggestions are incorporated. Easily measure your progress over time and get insights on specific changes that led to improvement in your score.
 
+### Get message trace data (preview)
+
+Use the message trace API to track email messages as they flow through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status. The information from message trace helps to efficiently determine what happened to messages, troubleshoot mail flow issues, and validate policy changes.
+
+For more information on message trace, see [Message trace in the Microsoft 365 Defender portal](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/message-trace-scc?view=o365-worldwide) and [Message trace in the modern Exchange admin center](https://docs.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+
 ## Benefits of using the Microsoft Graph Security API
 
 The following table lists the benefits that different security solutions can access by integrating with the Microsoft Graph Security API.  
