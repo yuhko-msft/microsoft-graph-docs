@@ -1,9 +1,9 @@
 ---
 title: "messageTrace resource type"
-description: "Represents basic information about a message"
+description: "Represents basic information about a message."
 author: "rsuven"
-ms.localizationpriority: Normal
-ms.prod: ""
+ms.localizationpriority: medium
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 

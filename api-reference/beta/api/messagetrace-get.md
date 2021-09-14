@@ -2,8 +2,8 @@
 title: "Get messageTrace"
 description: "Read the properties and relationships of a messageTrace object."
 author: "rsuven"
-ms.localizationpriority: Normal
-ms.prod: ""
+ms.localizationpriority: medium
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
@@ -12,14 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Message tracing is one of the tools used by administrators to monitor the email messages flowing through Microsoft 365 for their organization. It provides the admin basic information about the messages:
+Message trace in Microsoft 365 allows administrators to monitor email messages as they flow through their Exchange Online organization. It provides the administrator information to determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
+
+The information from message trace can be used to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
+
+Admins can use various search criteria to search for messages in the past 10 days. The search result contains one or more [messageTrace](../resources/messagetrace.md) objects, each of which include basic information about a message:
 - Message ID
 - Sender and Recipients
 - Subject
 - Message datetime
 - Message status
 
-This API allows the administrator to search for messages using various search criteria for messages for the past 10 days. It also provides detailed message trace event details for a specific message and recipient. The data is returned as one or more [messageTrace](../resources/messagetrace.md) objects.
+With a message ID and a recipient, you can use the API to obtain details of all the events associated with the delivery of the message.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +34,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|MessageTrace.Read.All|
 
-**Note:** This API supports admin permissions. Global admins, Security admins, and users with the Security Reader role can access message trace information.
+>**Note** To access message trace information, you need to be member of one of the following rolegroups:
+>>- Global administrator
+>>- Security administrator
+>>- Security reader
 
 ## HTTP request
 
@@ -150,16 +157,16 @@ Content-type: application/json
   "sourceIPAddress": null,
   "destinationIPAddress": null,
   "recipients": [
-	{
-	  "id": "06d86871-5488-45bd-ae5b-a94fae1c276f",
-	  "recipientEmail": "user2@contoso.com",
-	  "deliveryStatus": "Delivered"
-	},
-	{
-	  "id": "53ab9941-8faf-423d-bb46-666f8d7caf4f",
-	  "recipientEmail": "user3@contoso.com",
-	  "deliveryStatus": "Delivered"
-	}
+    {
+      "id": "06d86871-5488-45bd-ae5b-a94fae1c276f",
+      "recipientEmail": "user2@contoso.com",
+      "deliveryStatus": "Delivered"
+    },
+    {
+      "id": "53ab9941-8faf-423d-bb46-666f8d7caf4f",
+      "recipientEmail": "user3@contoso.com",
+      "deliveryStatus": "Delivered"
+    }
   ]
 }
 ```
@@ -295,37 +302,37 @@ Content-type: application/json
   "sourceIPAddress": null,
   "destinationIPAddress": null,
   "recipients": [
-	{
-	  "id": "6cb725fb-9ae0-4379-83b1-66885e5f82af",
-	  "recipientEmail": "user2@contoso.com",
-	  "deliveryStatus": "Delivered",
-	  "events": [
-		{
-		  "id": "cf6d257a-e898-4ae9-ba80-9c6485a3066c",
-		  "dateTime": "2020-06-15T23:55:23.817",
-		  "eventType": "receive",
-		  "description": "Message received by: BL2SR01MB606"
-		},
-		{
-		  "id": "92196e47-0a5b-4121-82ad-1dc4c912700c",
-		  "dateTime": "2020-06-15T23:55:24.453",
-		  "eventType": "spam",
-		  "description": "Sent to Junk Folder"
-		},
-		{
-		  "id": "1de0680e-71c3-422e-86e8-4becc1867804",
-		  "dateTime": "2020-06-15T23:55:25.403",
-		  "eventType": "deliver",
-		  "description": "The message was successfully delivered."
-		},
-		{
-		  "id": "0c9228c2-cced-469c-95df-4d60eb38ff12",
-		  "dateTime": "2020-06-15T23:55:26.378",
-		  "eventType": "send",
-		  "description": "Message transferred."
-		}
-	  ]
-	}
+    {
+      "id": "6cb725fb-9ae0-4379-83b1-66885e5f82af",
+      "recipientEmail": "user2@contoso.com",
+      "deliveryStatus": "Delivered",
+      "events": [
+        {
+          "id": "cf6d257a-e898-4ae9-ba80-9c6485a3066c",
+          "dateTime": "2020-06-15T23:55:23.817",
+          "eventType": "receive",
+          "description": "Message received by: BL2SR01MB606"
+        },
+        {
+          "id": "92196e47-0a5b-4121-82ad-1dc4c912700c",
+          "dateTime": "2020-06-15T23:55:24.453",
+          "eventType": "spam",
+          "description": "Sent to Junk Folder"
+        },
+        {
+          "id": "1de0680e-71c3-422e-86e8-4becc1867804",
+          "dateTime": "2020-06-15T23:55:25.403",
+          "eventType": "deliver",
+          "description": "The message was successfully delivered."
+        },
+        {
+          "id": "0c9228c2-cced-469c-95df-4d60eb38ff12",
+          "dateTime": "2020-06-15T23:55:26.378",
+          "eventType": "send",
+          "description": "Message transferred."
+        }
+      ]
+    }
   ] 
 }
 ```
