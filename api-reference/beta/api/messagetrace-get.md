@@ -17,12 +17,12 @@ Message trace in Microsoft 365 allows administrators to monitor email messages a
 
 The information from message trace can be used to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
-Admins can use various search criteria to search for messages in the past 10 days. The search result contains one or more [messageTrace](../resources/messagetrace.md) objects, each of which include basic information about a message:
+Administrators can use various search criteria to search for messages in the past 10 days. The search result contains one or more [messageTrace](../resources/messagetrace.md) objects, each of which include basic information about a message such as:
 - Message ID
-- Sender and Recipients
+- Sender
+- Recipients
 - Subject
-- Message datetime
-- Message status
+- Message received datetime
 
 With a message ID and a recipient, you can use the API to obtain details of all the events associated with the delivery of the message.
 
@@ -35,10 +35,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|MessageTrace.Read.All|
 
->**Note** To access message trace information, you need to be member of one of the following rolegroups:
->>- Global administrator
->>- Security administrator
->>- Security reader
+>**Note:** To access message trace information, you need to be member of one of the following role groups:
+>- Global administrator
+>- Security admin
+>- Security reader
 
 ## HTTP request
 
@@ -63,7 +63,7 @@ This method supports some of the OData query parameters to help customize the re
 ### Paging
 Note that paging is consistent only when a start time and end time is specified or a specific condition is used such as query by a message ID. Without a bounded query, pages may return data that may look inconsistent since the data is changing.
 
-Records for a page are counted by recipients. So if page size is 10 and the first message has 15 recipients, only one message is returned in the first page.
+Records for a page are counted by recipients, so if page size is 10 and the first message has 15 recipients, only one message is returned in the first page.
 
 ## Request headers
 |Name|Description|
@@ -240,7 +240,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#messageTraces(recipients())",
-  "@odata.nextLink": "<url>",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/admin/exchange/messageTraces??$filter=receivedDateTime ge 2020-06-15T00:00:00Z and receivedDateTime le 2020-06-16T23:59:59Z&$expand=recipients($filter=recipientEmail in ('user2@contoso.com', 'user3@contoso.com'))&$skiptoken=8w1xSSxJDEhMT7UyAgA%253d",
   "value": [
     {
       "id": "2e3c0fac-4669-4e4a-2669-08d5dd529cbe",

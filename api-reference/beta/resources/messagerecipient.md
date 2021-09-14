@@ -24,10 +24,10 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Random ID for this recipient (not a unique key).|
+|id|String|Random ID for this recipient. Not a unique key.|
 |recipientEmail|String|Recipient email address.|
 |deliveryStatus|messageStatus|Message delivery status. Possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`.|
-|events|[messageEvent](../resources/messageevent.md) collection|details of events during delivery of a mail message to a recipient.|
+|events|[messageEvent](../resources/messageevent.md) collection|Details of events during delivery of a mail message to a recipient.|
 
 ### messageStatus values
 
