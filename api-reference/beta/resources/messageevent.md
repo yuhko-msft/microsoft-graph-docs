@@ -25,7 +25,7 @@ None.
 |:---|:---|:---|
 |id|String|Random ID for this event (not a unique key).|
 |dateTime|DateTimeOffset|Time of the event in UTC.|
-|eventType|[messageEventType](enums.md#messageeventtype-values)|Event type. Possible values are: `received`, `sent`, `delivered`, `failed`, `processingFailed`, `distributionGroupExpanded`, `submitted`, `delayed`, `redirected`, `resolved`, `dropped`, `recipientsAdded`, `malwareDetected`, `malwareDetectedInMessage`, `malwareDetectedInAttachment`, `ttZapped`, `ttDelivered`, `spamDetected`, `transportRuleTriggered`, `dlpRuleTriggered`, `journaled`.|
+|eventType|messageEventType|Event type. Possible values are: `received`, `sent`, `delivered`, `failed`, `processingFailed`, `distributionGroupExpanded`, `submitted`, `delayed`, `redirected`, `resolved`, `dropped`, `recipientsAdded`, `malwareDetected`, `malwareDetectedInMessage`, `malwareDetectedInAttachment`, `ttZapped`, `ttDelivered`, `spamDetected`, `transportRuleTriggered`, `dlpRuleTriggered`, `journaled`.|
 |description|String|Detailed information on the event.|
 
 ### messageEventType values

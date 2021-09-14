@@ -25,7 +25,7 @@ None.
 |:---|:---|:---|
 |id|String|Random ID for this recipient (not a unique key).|
 |recipientEmail|String|Recipient email address.|
-|deliveryStatus|[messageStatus](enums.md#messagestatus-values)|Message delivery status. Possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`.|
+|deliveryStatus|messageStatus|Message delivery status. Possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`.|
 |events|[messageEvent](../resources/messageevent.md) collection|details of events during delivery of a mail message to a recipient.|
 
 ### messageStatus values
