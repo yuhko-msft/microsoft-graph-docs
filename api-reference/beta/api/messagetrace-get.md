@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a messageTrace object."
 author: "rsuven"
 ms.localizationpriority: medium
 ms.prod: "security"
-ms.date: "09-14-2021"
+ms.date: "09/14/2021"
 doc_type: apiPageType
 ---
 
