@@ -9,7 +9,7 @@ Sets, updates or removes a [sensitivitylabel](../resources/sensitivitylabel.md) 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API.
 
 |Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:------------------------------------------- |
@@ -74,7 +74,7 @@ Defines what triggered the setSensitivityLabel action.
 
 If successful, this method returns a `200 OK` response code and a [sensitivitylabel](../resources/sensitivitylabel.md) object in the response body.
 
-## Example
+### Example
 
 This example updates label on the file.
 
@@ -108,7 +108,7 @@ Content-Type: application/json
 }
 ```
 
-## Example
+### Example
 
 This example removes label on the file.
 
