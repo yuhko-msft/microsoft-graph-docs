@@ -68,14 +68,6 @@
         },
         {
           "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
-          "ApiChange": "Schema",
-          "ChangedApiName": "graph",
-          "ChangeType": "Addition",
-          "Description": "Added the [graph](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "graph"
-        },
-        {
-          "Id": "1bdce93c-9c0e-47d0-b487-741168f03a79",
           "ApiChange": "EnumType",
           "ChangedApiName": "searchAlterationType",
           "ChangeType": "Addition",
