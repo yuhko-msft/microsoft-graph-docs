@@ -32,7 +32,8 @@
       "ms.prod",
       "doc_type",
       "ms.localizationpriority"
-    ]
+    ],
+    "validateEvolvableEnums": true
   },
   "schemaDiffConfig": {
     "dropElementsContaining": [

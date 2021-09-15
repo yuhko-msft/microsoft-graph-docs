@@ -32,7 +32,8 @@
       "readme.md",
       "license.md",
       "index.md"
-    ]
+    ],
+    "validateEvolvableEnums":  true
   },
   "schemaDiffConfig": {
     "dropElementsContaining": [
