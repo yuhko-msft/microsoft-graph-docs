@@ -1,19 +1,19 @@
 ---
 title: "Create externalGroupMember"
-description: "Create a new externalGroupMember object."
+description: "Create an identity object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Create externalGroupMember
+# Create identity
 
 Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object.
+Create an [identity](../resources/externalconnectors-externalgroupmember.md) object.
 
 ## Permissions
 
@@ -140,7 +140,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "externalGroup",
+  "type": "group",
 }
 ```
 # [C#](#tab/csharp)

@@ -1,19 +1,19 @@
 ---
-title: "Delete externalGroupMember"
-description: "Delete an externalGroupMember object."
+title: "Delete identity"
+description: "Delete an identity object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Delete externalGroupMember
+# Delete identity
 
 Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) object.
+Delete an [identity](../resources/externalconnectors-externalgroupmember.md) object.
 
 ## Permissions
 

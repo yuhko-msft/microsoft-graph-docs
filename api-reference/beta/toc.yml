@@ -13388,15 +13388,17 @@ items:
             href: resources/externalconnectors-externalgroup.md
           - name: Create external group
             href: api/externalconnectors-externalconnection-post-groups.md
+          - name: Get external group
+            href: api/externalconnectors-externalgroup-get.md
           - name: Delete external group
             href: api/externalconnectors-externalgroup-delete.md
         - name: External group member
           items:
-          - name: External group member
+          - name: Identity
             href: resources/externalconnectors-externalgroupmember.md
-          - name: Create external group member
+          - name: Create identity for member
             href: api/externalconnectors-externalgroup-post-members.md
-          - name: Delete external group member
+          - name: Delete identity of member
             href: api/externalconnectors-externalgroupmember-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
