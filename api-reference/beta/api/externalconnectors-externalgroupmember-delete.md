@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [identity](../resources/externalconnectors-externalgroupmember.md) object.
+Delete an [identity](../resources/externalconnectors-identity.md) object.
 
 ## Permissions
 
