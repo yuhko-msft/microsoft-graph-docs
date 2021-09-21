@@ -2266,6 +2266,14 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### plannerTaskContextType values 
+
+|Member|
+|:---|
+|meetingNotes|
+|other|
+|unknownFutureValue|
+
 ### policyScope values
 
 |Member|
