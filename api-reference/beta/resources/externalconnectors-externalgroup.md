@@ -27,7 +27,7 @@ Examples of external groups are business units and work teams.
 |:---|:---|:---|
 |[Create externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Create a new **externalGroup** object.|
 |[Delete externalGroup](../api/externalconnectors-externalgroup-delete.md)|None|Delete an **externalGroup** object.|
-|[Create member](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-identity.md)|Create a new **externalGroupMember** object.|
+|[Create member](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md)|Create a new **externalGroupMember** object.|
 
 ## Properties
 
@@ -41,7 +41,7 @@ Examples of external groups are business units and work teams.
 
 | Relationship | Type                                                                  | Description                                               |
 |:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
-| members      | [microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-identity.md) collection | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or other **externalGroups** as members. |
+| members      | [microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) collection | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or other **externalGroups** as members. |
 
 ## JSON representation
 
