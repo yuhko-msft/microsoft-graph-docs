@@ -71,6 +71,15 @@ Namespace: microsoft.graph.externalConnectors
 | html
 | unknownFutureValue
 
+### identityType values
+
+| Member
+|:--------------
+| user
+| group
+| externalGroup
+| unknownFutureValue
+
 ### identitySourceType values
 
 | Member
