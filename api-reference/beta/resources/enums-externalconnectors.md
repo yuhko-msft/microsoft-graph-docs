@@ -61,6 +61,7 @@ Namespace: microsoft.graph.externalConnectors
 | user
 | group
 | unknownFutureValue
+| identity
 
 
 ### externalItemContentType values
