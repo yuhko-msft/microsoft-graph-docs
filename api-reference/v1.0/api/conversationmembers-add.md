@@ -63,6 +63,8 @@ This API returns a `200` response that indicates all members supplied were added
 
 The following example shows a request to add multiple members to a team.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team"
@@ -87,6 +89,12 @@ Content-Type: application/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
@@ -129,6 +137,8 @@ Content-Type: application/json
 The following example shows a request to add multiple members to a team that results in a partial failure.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team_partial_failure"
@@ -153,6 +163,12 @@ Content-Type: application/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-partial-failure-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
