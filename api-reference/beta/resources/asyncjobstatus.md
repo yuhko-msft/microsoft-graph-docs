@@ -27,7 +27,7 @@ The following API calls return **AsyncJobStatus** resources:
 ```json
 {
   "percentageComplete": 100.0,
-  "status": "notStarted | inProgress | completed | updating | failed | deletePending | deleteFailed | waiting"
+  "status": "notStarted | inProgress | completed | failed | cancelled | waiting | cancelPending"
 }
 ```
 
@@ -37,6 +37,18 @@ The following API calls return **AsyncJobStatus** resources:
 |:-----------------------|:-------|:-------------------------------------------------------------------------------------------|
 | **percentageComplete** | Double | A value between 0 and 100 that indicates the percentage complete.                          |
 | **status**             | String | A string value that maps to an enumeration of possible values about the status of the job. |
+
+## status Meaning
+
+| String Value           | Description
+|:-----------------------|:-------------------------------------------
+| **notStarted**         | The work has been enqueued but not yet picked up.
+| **inProgress**         | The work is being actively processed.
+| **completed**          | The work has been completed.
+| **failed**             | The work failed.
+| **cancelled**          | The work was cancelled.
+| **waiting**            | The work was interrupted, but will be tried again.
+| **cancelPending**      | The work was cancelled, but processing has not yet aborted.
 
 <!--
 {
