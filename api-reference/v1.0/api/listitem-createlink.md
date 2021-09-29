@@ -114,9 +114,7 @@ Content-length: 212
   "scope": "anonymous",
   "password": "String",
   "recipients": [
-    {
-      "@odata.type": "microsoft.graph.driveRecipient"
-    }
+    { "@odata.type": "microsoft.graph.driveRecipient" }
   ]
 }
 
