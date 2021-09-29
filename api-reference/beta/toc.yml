@@ -9911,6 +9911,8 @@ items:
       - name: Permissions
         href: resources/permission.md
         items:
+        - name: "Shared driveItem"
+          href: resources/shareddriveitem.md
         - name: Create sharing link
           href: api/driveitem-createlink.md
         - name: Use sharing links
