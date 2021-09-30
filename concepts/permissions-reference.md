@@ -2459,6 +2459,70 @@ For an app to read or write all Windows update deployment settings with delegate
 |_Policy.ReadWrite.AuthenticationMethod_ (private preview)   |Read and write all authentication methods policies.    |Allows the app to read and write all authentication methods policies on an Azure AD tenant. |Yes|
 
 
+## Alerts permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Alerts.Read.All_ | Read alerts | Allows the app to read alerts, on behalf of the signed-in user. | Yes | No |
+| _Alerts.ReadWrite.All_ | Read and write to alerts | Allows the app to read and write alerts, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Alerts.Read.All_ | Read all alerts | Allows the app to read all alerts, without a signed-in user. | Yes | No |
+| _Alerts.ReadWrite.All_ | Read and write to all alerts | Allows the app to read and write to all alerts, without a signed-in user. | Yes | No |
+
+### Remarks
+
+Alerts permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _Alerts.Read.All_: Read alerts (`GET /security/m365Alerts`)
+* _Alerts.ReadWrite.All_: Read alerts (`GET /security/m365Alerts`)
+
+#### Application
+
+* m365Alerts.Read.All_: Read all alerts (`GET /security/m365Alerts`)
+* m365Alerts.ReadWrite.All_: Read all alerts (`GET /security/m365Alerts`)
+
+
+## Threat hunting permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, without a signed-in user. | Yes | No |
+
+### Remarks
+
+Threat hunting permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _ThreatHunting.Read.All_: Run hunting query (`POST /security/runHuntingQuery`)
+
+#### Application
+
+* _ThreatHunting.Read.All_: Run hunting query (`POST /security/runHuntingQuery`)
+
+
 ### Remarks
 
 Authentication methods policy permissions are used to manage settings in the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
