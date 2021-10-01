@@ -18,30 +18,27 @@ Ojbect that contains metadata for electronically stored information
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List files](../api/ediscovery-file-list.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md) collection|Get a list of the [file](../resources/ediscovery-file.md) objects and their properties.|
-|[Create file](../api/ediscovery-file-create.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md)|Create a new [file](../resources/ediscovery-file.md) object.|
+|[List files](../api/ediscovery-reviewset-list-files.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-reviewset-list-files.md) collection|Get a list of the [file](../resources/ediscovery-file.md) objects and their properties.|
 |[Get file](../api/ediscovery-file-get.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md)|Read the properties and relationships of a [file](../resources/ediscovery-file.md) object.|
-|[Update file](../api/ediscovery-file-update.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md)|Update the properties of a [file](../resources/ediscovery-file.md) object.|
-|[Delete file](../api/ediscovery-file-delete.md)|None|Deletes a [file](../resources/ediscovery-file.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |content|Stream                                     | The content stream of the original file.|
-|date|DateTimeOffset                                | See `date` at [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
-|extension|String                                   |See `InputFileExtension` at [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
-|extractedTextContent|String                        |See `Content` at [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|date|DateTimeOffset                                | See `date` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|extension|String                                   |See `InputFileExtension` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|extractedTextContent|String                        |See `Content` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
 |id|String                                          | File unique identifier. |
-|mediaType|String                                   | See `Extracted content type` at [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|mediaType|String                                   | See `Extracted content type` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
 |name|String                                        | File name or subject in case of email. |
-|otherProperties|[microsoft.graph.ediscovery.stringValueDictionary](../resources/ediscovery-stringvaluedictionary.md)| Bag of additional properties of the file like to, from, Bcc, created date, etc.  For the full list of supported fields, see [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|otherProperties|[microsoft.graph.ediscovery.stringValueDictionary](../resources/ediscovery-stringvaluedictionary.md)| Bag of additional properties of the file like to, from, Bcc, created date, etc.  For the full list of supported fields, see [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
 |processingStatus|microsoft.graph.ediscovery.fileProcessingStatus  | Processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidField`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`, `unknownFutureValue`.|
-|senderAuthor|String collection                     | See `SenderAuthor` at [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
-|size|Int64                                         | See `Size` at [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|senderAuthor|String collection                     | See `SenderAuthor` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|size|Int64                                         | See `Size` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
 |sourceType|microsoft.graph.ediscovery.sourceType   | The original source of the content. The possible values are: `mailbox`, `site`.|
-|subjectTitle|String                                | See `SubjectTitle` at [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|subjectTitle|String                                | See `SubjectTitle` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
 
-### fileProcessingStatus values 
+### fileProcessingStatus values
 
 |Member|Description|
 |:----|-----------|

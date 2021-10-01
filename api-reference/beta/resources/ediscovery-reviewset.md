@@ -15,7 +15,7 @@ Namespace: microsoft.graph.ediscovery
 
 Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
-Inherits from [entity](../resources/ediscovery-entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
