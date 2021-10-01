@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
+Inherits from [entity](../resources/ediscovery-entity.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -24,6 +26,7 @@ Represents static set of electronically stored information collected for use in 
 | [Get reviewSet](../api/ediscovery-reviewset-get.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
 | [List queries](../api/ediscovery-reviewsetquery-list.md)|[microsoft.graph.ediscovery.reviewSetQuery](../resources/ediscovery-reviewsetquery.md) collection|Get a list of **reviewSetQuery** resources.|
 | [export](../api/ediscovery-reviewset-export.md) | None | Initiate an export of data from the **reviewset**. |
+| [List files](../api/ediscovery-reviewset-list-files.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md) collection|Get the file resources from the files navigation property.|
 | [addToReviewSet](../api/ediscovery-reviewset-addtoreviewset.md)|None|Add data from a **sourceCollection** to a **reviewset**.|
 
 ## Properties
@@ -39,6 +42,7 @@ Represents static set of electronically stored information collected for use in 
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
+|files|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md) collection|**TODO: Add Description**|
 | queries |[microsoft.graph.ediscovery.reviewSetQuery](ediscovery-reviewsetquery.md) collection| Read-only. Nullable.|
 
 ## JSON representation
