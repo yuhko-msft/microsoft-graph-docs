@@ -18,7 +18,7 @@ Ojbect that contains metadata for electronically stored information
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List files](../api/ediscovery-reviewset-list-files.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-reviewset-list-files.md) collection|Get a list of the [file](../resources/ediscovery-file.md) objects and their properties.|
+|[List files](../api/ediscovery-reviewset-list-files.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md) collection|Get a list of the [file](../resources/ediscovery-file.md) objects and their properties.|
 |[Get file](../api/ediscovery-file-get.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md)|Read the properties and relationships of a [file](../resources/ediscovery-file.md) object.|
 
 ## Properties
