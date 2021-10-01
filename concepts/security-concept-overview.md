@@ -67,7 +67,7 @@ Use the Microsoft Secure Score (preview) to provide visibility into your organiz
 
 Use the message trace API to track email messages as they flow through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status. The information from message trace helps to efficiently determine what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
-For more information on message trace, see [Message trace in the Microsoft 365 Defender portal](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+For more information on message trace, see [Message trace in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/message-trace-scc) and [Message trace in the modern Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 
 ## Benefits of using the Microsoft Graph Security API
 

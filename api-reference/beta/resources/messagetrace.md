@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique ID for the message (the internal message id).|
+|id|String|Unique ID for the message. The internal message ID.|
 |senderEmail|String|Sender email address.|
 |receivedDateTime|DateTimeOffset|Message receive datetime in UTC.|
 |messageId|String|The Message-ID header field of the message.|
