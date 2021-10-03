@@ -2477,8 +2477,8 @@ Authentication methods policy permissions are used to manage settings in the aut
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Incidents.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes | No |
-| _Incidents.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes | No |
+| _Incidents.Read.All_ | Read all incidents | Allows the app to read all incidents, without a signed-in user. | Yes |
+| _Incidents.ReadWrite.All_ | Read and write to all incidents | Allows the app to read and write to all incidents, without a signed-in user. | Yes |
 
 ### Remarks
 
@@ -2488,13 +2488,13 @@ Incidents permissions are valid only on work or school accounts.
 
 #### Delegated
 
-* _Incidents.Read.All_: Read incidents (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: Read incidents (`GET /security/incidents`)
+* _Incidents.Read.All_: Read all incidents the user is allowed to read (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: Read and write to all incidents the user is allowed to read and write (`GET /security/incidents`)
 
 #### Application
 
 * _Incidents.Read.All_: Read all incidents (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: Read all incidents (`GET /security/incidents`)
+* _Incidents.ReadWrite.All_: Read and write to all incidents (`GET /security/incidents`)
 
 ---
 
