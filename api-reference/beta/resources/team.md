@@ -65,6 +65,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|tenantId |string | The ID of the Azure Active Directory tenant. |
 
 ### Instance attributes
 
@@ -81,6 +82,8 @@ For a POST request example, see [Request (create team in migration state)](/micr
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
+|incomingChannels|[channel](channel.md) collection|List of channels shared with the team.|
+|allChannels|[channel](channel.md) collection|List of channels either hosted in or shared with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
