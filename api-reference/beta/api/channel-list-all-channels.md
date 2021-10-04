@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# List channels
+# List all channels
 
 Namespace: microsoft.graph
 

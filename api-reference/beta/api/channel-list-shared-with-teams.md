@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# List channels
+# List teams shared with channel
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{team-id}/allChannels
+GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams
 ```
 
 ## Optional query parameters

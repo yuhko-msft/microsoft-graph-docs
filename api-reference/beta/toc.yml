@@ -539,6 +539,8 @@ items:
           href: resources/teamsappinstallation.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
+        - name: List associated teams for user
+          href: api/userteamwork-list-associatedteams
         - name: Add app for user
           href: api/userteamwork-post-installedapps.md
         - name: Get installed app for user
@@ -14055,12 +14057,18 @@ items:
           href: api/chatmessage-get.md
         - name: Get messages across all channels
           href: api/channel-getallmessages.md
+        - name: Get team shared with channel
+          href: api/channel-get-shared-with-team.md
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: List members
           href: api/channel-list-members.md
         - name: List message replies
           href: api/chatmessage-list-replies.md
+        - name: List teams shared with channel
+          href: api/channel-list-shared-with-teams.md
+        - name: List members of team shared with channel
+          href: api/channel-list-allowed-team-member.md
         - name: Provision email address
           href: api/channel-provisionemail.md
         - name: Remove email address
@@ -14075,6 +14083,8 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Unshare team from channel
+          href: api/channel-unshare-team.md          
       - name: Chat
         href: resources/chat.md
         items:
