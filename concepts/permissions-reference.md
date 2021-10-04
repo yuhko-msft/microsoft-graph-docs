@@ -2475,7 +2475,7 @@ Authentication methods policy permissions are used to manage settings in the aut
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, without a signed-in user. | Yes | No |
+| _ThreatHunting.Read.All_ | Run hunting queries | Allows the app to run hunting queries, without a signed-in user. | Yes |
 
 ### Remarks
 
