@@ -1,0 +1,46 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b89d5fdb-9741-42ed-9cf6-aa8a850152f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingQueryResults",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingQueryResults](https://docs.microsoft.com/en-us/graph/api/resources/huntingQueryResults?view=graph-rest-beta) resource type.",
+          "Target": "huntingQueryResults"
+        },
+        {
+          "Id": "b89d5fdb-9741-42ed-9cf6-aa8a850152f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingRowResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingRowResult](https://docs.microsoft.com/en-us/graph/api/resources/huntingRowResult?view=graph-rest-beta) resource type.",
+          "Target": "huntingRowResult"
+        },
+        {
+          "Id": "b89d5fdb-9741-42ed-9cf6-aa8a850152f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "singlePropertySchema",
+          "ChangeType": "Addition",
+          "Description": "Added the [singlePropertySchema](https://docs.microsoft.com/en-us/graph/api/resources/singlePropertySchema?view=graph-rest-beta) resource type.",
+          "Target": "singlePropertySchema"
+        },
+        {
+          "Id": "b89d5fdb-9741-42ed-9cf6-aa8a850152f3",
+          "ApiChange": "Method",
+          "ChangedApiName": "runHuntingQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [runHuntingQuery](https://docs.microsoft.com/en-us/graph/api/runHuntingQuery?view=graph-rest-beta) method to the [runHuntingQuery](https://docs.microsoft.com/en-us/graph/api/runHuntingQuery?view=graph-rest-beta) resource.",
+          "Target": "runHuntingQuery"
+        }
+      ],
+      "Id": "b89d5fdb-9741-42ed-9cf6-aa8a850152f3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-04T08:02:14.6583646Z",
+      "WorkloadArea": "Microsoft.M365.Defender",
+      "SubArea": ""
+    }
+  ]
+}
