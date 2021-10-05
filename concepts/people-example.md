@@ -973,6 +973,12 @@ Examples of public interaction include:
  
 The ranking doesn’t change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
  
-In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).
+In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory). 
  
 People external to the organization do not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, do not show up as people the owner works with either.
+
+#### Disabling Working-With
+There are two controls available to administrations:
+* Organization Wide Control - to help switch off Working-With for the whole organization
+* Azure AD Group Control - to help disable the control for a group of people.
+Read more on how to [Customize people insight privacy control](customize-people-insights-privacy.md)
