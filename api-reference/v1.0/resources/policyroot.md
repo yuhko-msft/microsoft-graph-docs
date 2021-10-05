@@ -1,8 +1,8 @@
 ---
 title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
-author: "shauliu1"
-ms.localizationpriority: medium
+author: "shauliu"
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "application: removeKey"
 description: "Remove a key credential from an application"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

@@ -1,7 +1,7 @@
 ---
 title: "verifiedPublisher resource type"
 description: "Represents the verified publisher of the application."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "jesakowi"

@@ -1,7 +1,7 @@
 ---
 title: "Create page"
 description: "Create a new page in the specified section."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

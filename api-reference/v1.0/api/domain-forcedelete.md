@@ -2,7 +2,7 @@
 title: "Force domain deletion"
 description: "Deletes a domain using an asynchronous long-running operation."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Domain.ReadWrite.All  |
+|Delegated (work or school account) | Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Domain.ReadWrite.All |
 

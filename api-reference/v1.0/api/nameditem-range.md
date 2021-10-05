@@ -1,7 +1,7 @@
 ---
 title: "NamedItem: Range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: List taskTriggers
 description: Retrieve a list of task triggers associated with the printer.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

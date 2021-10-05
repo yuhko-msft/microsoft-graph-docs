@@ -1,7 +1,7 @@
 ---
 title: "DriveItemVersion resource type"
 description: "The **DriveItemVersion** resource represents a specific version of a DriveItem."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 author: "JeremyKelley"
 doc_type: resourcePageType

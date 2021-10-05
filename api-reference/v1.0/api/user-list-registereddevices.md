@@ -1,7 +1,7 @@
 ---
 title: "List registeredDevices"
 description: "Get the list of user's registered devices."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType

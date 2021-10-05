@@ -2,7 +2,7 @@
 title: "externalItem resource type"
 description: "An item added to a Microsoft Graph connection."
 author: "mecampos"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "search"
 doc_type: resourcePageType
 ---

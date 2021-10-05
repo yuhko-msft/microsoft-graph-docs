@@ -1,7 +1,7 @@
 ---
 title: "List buckets"
 description: "Retrieve a list of **plannerbucket** objects contained by a plannerPlan object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "workbookRange: rowsBelow"
 description: "Gets certain number of rows below a given range."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

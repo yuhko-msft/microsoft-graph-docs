@@ -1,7 +1,7 @@
 ---
 title: "application: setVerifiedPublisher"
 description: "Set the verified publisher of an application."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jesakowi"
 ms.prod: "applications"
 doc_type: "apiPageType"

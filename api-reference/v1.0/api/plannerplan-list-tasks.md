@@ -1,7 +1,7 @@
 ---
 title: "List tasks"
 description: "Retrieve a list of **plannerTask** objects associated with a plannerPlan object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

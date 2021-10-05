@@ -2,7 +2,7 @@
 title: "cloudCommunications: getPresencesByUserId"
 description: "Get the presence information for multiple users."
 author: "mkhribech"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---

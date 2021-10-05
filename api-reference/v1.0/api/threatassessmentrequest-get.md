@@ -1,7 +1,7 @@
 ---
 title: "Get threatAssessmentRequest"
 description: "Retrieve the properties and relationships of a specified threatassessmentrequest object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "security"
 doc_type: "apiPageType"

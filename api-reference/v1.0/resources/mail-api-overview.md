@@ -1,7 +1,7 @@
 ---
 title: "Use the Outlook mail REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: conceptualPageType

@@ -2,7 +2,7 @@
 title: printDocument resource type
 description: Represents a document being printed.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

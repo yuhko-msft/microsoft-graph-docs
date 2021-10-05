@@ -1,7 +1,7 @@
 ---
 title: "Get open extension"
 description: "Get an open extension (openTypeExtension object) identified by name or fully qualified name."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: apiPageType

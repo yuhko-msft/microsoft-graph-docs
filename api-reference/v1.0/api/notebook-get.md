@@ -2,7 +2,7 @@
 title: "Get notebook"
 description: "Retrieve the properties and relationships of a notebook object."
 author: "jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "onenote"
 doc_type: apiPageType
 ---

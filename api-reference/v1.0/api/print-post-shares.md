@@ -2,7 +2,7 @@
 title: Create printerShare
 description: Creates a new printer share for the specified printer.
 author: nilakhan    
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

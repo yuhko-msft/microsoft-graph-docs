@@ -2,7 +2,7 @@
 title: Create printTaskDefinition
 description: Create a new task definition.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---

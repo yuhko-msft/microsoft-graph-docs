@@ -2,7 +2,7 @@
 title: "List teamsApp"
 description: "List Teams apps published in the tenant app catalog."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

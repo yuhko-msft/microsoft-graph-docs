@@ -1,7 +1,7 @@
 ---
 title: "message: reply"
 description: "Reply to the sender of a message using either JSON or MIME format. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

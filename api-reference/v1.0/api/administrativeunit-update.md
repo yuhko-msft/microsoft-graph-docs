@@ -2,7 +2,7 @@
 title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

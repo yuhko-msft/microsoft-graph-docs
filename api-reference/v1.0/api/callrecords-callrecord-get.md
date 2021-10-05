@@ -1,7 +1,7 @@
 ---
 title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "stephenjust"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"

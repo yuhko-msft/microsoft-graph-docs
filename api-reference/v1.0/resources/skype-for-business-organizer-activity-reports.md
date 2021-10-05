@@ -1,7 +1,7 @@
 ---
 title: "Skype for Business organizer activity reports"
 description: "You can use the Skype for Business organizer activity reports to get details on organized conferences activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType

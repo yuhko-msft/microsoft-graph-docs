@@ -1,8 +1,8 @@
 ---
 title: "List categories"
-description: "List all the categories associated with an assignment."
+description: "List all the categories associated with this assignment."
 author: "sharad-sharma-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all the categories associated with an [assignment](../resources/educationassignment.md).
+List all the categories associated with an assignment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,11 +48,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","9018ae7a-9953-4796-a152-4c54e0910922"],  
+  "sampleKeys": ["1fdf61ee-c129-4960-9b7c-8df159aa64b0"],
   "name": "get_assignment_categories"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/categories
+GET https://graph.microsoft.com/v1.0/education/classes/a17025d0-62a8-4450-9e6e-db31d8c8feb8/assignments/1fdf61ee-c129-4960-9b7c-8df159aa64b0/categories
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignment-categories-csharp-snippets.md)]
@@ -90,11 +90,11 @@ Content-type: application/json
 Content-length: 873
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('9018ae7a-9953-4796-a152-4c54e0910922')/categories",
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('a17025d0-62a8-4450-9e6e-db31d8c8feb8')/assignments('1fdf61ee-c129-4960-9b7c-8df159aa64b0')/categories",
     "value": [
         {
-            "displayName": "August Unit 2",
-            "id": "70563636-801f-440a-989e-14d417cc5c05"
+            "displayName": "Quizzes",
+            "id": "9b8f8f88-ddfc-4aad-9fe9-280513fffc74"
         }
     ]
 }

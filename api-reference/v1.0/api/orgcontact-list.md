@@ -1,7 +1,7 @@
 ---
 title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType

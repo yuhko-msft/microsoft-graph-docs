@@ -2,7 +2,7 @@
 title: "call: cancelMediaProcessing"
 description: "Cancels media processing for any in-progress playPrompt or recordResponse operations."
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---

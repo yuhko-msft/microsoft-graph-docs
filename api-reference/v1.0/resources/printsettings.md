@@ -2,7 +2,7 @@
 title: printSettings resource type
 description: Represents tenant-wide settings for the Universal Print service.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

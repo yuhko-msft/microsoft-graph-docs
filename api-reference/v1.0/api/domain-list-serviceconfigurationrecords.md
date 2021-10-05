@@ -2,7 +2,7 @@
 title: "List serviceConfigurationRecords"
 description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -22,14 +22,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
+|Delegated (work or school account) | Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
+|Application | Directory.Read.All, Domain.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{id}/serviceConfigurationRecords
+GET /domains/contoso.com/serviceConfigurationRecords
 ```
 
 ## Optional query parameters

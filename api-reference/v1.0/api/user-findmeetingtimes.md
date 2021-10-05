@@ -1,7 +1,7 @@
 ---
 title: "user: findMeetingTimes"
 description: "Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: apiPageType

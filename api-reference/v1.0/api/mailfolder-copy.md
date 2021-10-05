@@ -2,7 +2,7 @@
 title: "mailFolder: copy"
 description: "Copy a mailfolder and its contents to another mailfolder."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

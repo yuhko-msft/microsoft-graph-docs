@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: removeKey"
 description: "Remove a key credential from a servicePrincipal"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

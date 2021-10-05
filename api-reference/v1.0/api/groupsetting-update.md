@@ -2,7 +2,7 @@
 title: "Update a group setting"
 description: "Update the properties of a specific group setting object."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List serviceAnnouncement messages"
 description: "Retrieve the serviceUpdateMessage resources from the messages navigation property."
 author: "payiAzure"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---

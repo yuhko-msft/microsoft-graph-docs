@@ -2,7 +2,7 @@
 title: "Create User"
 description: "Use this API to create a new User."
 author: "jpettere"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
 ---

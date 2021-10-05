@@ -1,7 +1,7 @@
 ---
 title: "Create ContactFolder"
 description: "Create a new contactFolder under the user's default contacts folder."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType

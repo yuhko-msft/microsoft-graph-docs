@@ -3,7 +3,7 @@ title: "Remove member from channel"
 description: "Remove a member from a channel."
 author: "akjo"
 doc_type: "apiPageType"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 

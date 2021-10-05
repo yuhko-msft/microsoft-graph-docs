@@ -2,7 +2,7 @@
 title: "List userAttributeAssignments"
 description: "Get the identityUserFlowAttributeAssignment resources from the userAttributeAssignments navigation property."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

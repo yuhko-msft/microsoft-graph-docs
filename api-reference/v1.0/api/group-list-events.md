@@ -2,7 +2,7 @@
 title: "List events"
 description: "Retrieve a list of event objects."
 author: "Jordanndahl"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
 ---

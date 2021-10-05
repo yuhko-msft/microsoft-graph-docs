@@ -1,7 +1,7 @@
 ---
 title: "groupLifecyclePolicy resource type"
 description: "Represents a lifecycle policy for a Microsoft 365 group."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType

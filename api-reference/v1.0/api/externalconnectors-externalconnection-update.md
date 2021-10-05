@@ -2,7 +2,7 @@
 title: "Update externalConnection"
 description: "Update the properties of an externalConnection object."
 author: "mecampos"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
 ---

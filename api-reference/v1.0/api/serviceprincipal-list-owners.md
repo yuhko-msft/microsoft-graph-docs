@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipals: List owners"
 description: "Retrieve a list of owners of the servicePrincipal."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"

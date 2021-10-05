@@ -2,7 +2,7 @@
 title: "List sectionGroups"
 description: "Retrieve a list of sectionGroup objects."
 author: "jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "onenote"
 doc_type: apiPageType
 ---

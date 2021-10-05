@@ -2,7 +2,7 @@
 title: "Get conversation"
 description: "Get a conversation object."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Retrieve items from a SharePoint list
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "sharepoint"
 description: "Get the collection of items in a list."
 doc_type: apiPageType

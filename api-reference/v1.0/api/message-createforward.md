@@ -1,7 +1,7 @@
 ---
 title: "message: createForward"
 description: "Create a draft to forward an existing message, in either JSON or MIME format."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

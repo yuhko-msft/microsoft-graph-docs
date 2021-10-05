@@ -2,7 +2,7 @@
 title: List printServices
 description: Retrieve a list of printService objects that represent the services available to your tenant.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

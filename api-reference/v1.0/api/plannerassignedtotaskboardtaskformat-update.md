@@ -1,7 +1,7 @@
 ---
 title: "Update plannerAssignedToTaskBoardTaskFormat"
 description: "Update the properties of **plannerAssignedToTaskBoardTaskFormat** object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

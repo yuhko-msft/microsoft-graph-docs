@@ -2,7 +2,7 @@
 title: "set resource type"
 description: "Represents a set in a term store."
 author: vishriv
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "taxonomy"
 doc_type: resourcePageType
 ---

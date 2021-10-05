@@ -2,7 +2,7 @@
 title: "List joinedTeams"
 description: "Get the teams in Microsoft Teams that the user is a direct member of."
 author: "nkramer"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

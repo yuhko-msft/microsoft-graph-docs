@@ -2,7 +2,7 @@
 title: printJobConfiguration resource type
 description: A group of settings that a printer should use to print a job.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

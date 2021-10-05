@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
-ms.localizationpriority: high
+localization_priority: Priority
 description: "The Permission resource provides information about a sharing permission granted for a DriveItem resource."
 ms.prod: ""
 doc_type: resourcePageType

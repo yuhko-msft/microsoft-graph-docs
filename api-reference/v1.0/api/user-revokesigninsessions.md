@@ -1,7 +1,7 @@
 ---
 title: "user: revokeSignInSessions"
 description: "Invalidates all the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType

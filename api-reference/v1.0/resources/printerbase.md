@@ -2,7 +2,7 @@
 title: printerBase resource type
 description: Represents base type for printer and printer share
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

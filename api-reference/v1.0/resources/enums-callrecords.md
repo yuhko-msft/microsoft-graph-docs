@@ -2,7 +2,7 @@
 title: "Call records enum values"
 description: "Microsoft Graph call records enumeration values"
 doc_type: enumPageType
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 author: "gageames"
 ---
@@ -146,13 +146,6 @@ Namespace: microsoft.graph.callRecords
 | wifi80211ac
 | wifi80211ax
 | unknownFutureValue
-
-### pstnCallDurationSource values 
-
-|Member|
-|:---|
-|microsoft|
-|operator|
 
 <!--
 {

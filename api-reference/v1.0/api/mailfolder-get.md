@@ -2,7 +2,7 @@
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
 author: "abheek-das"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

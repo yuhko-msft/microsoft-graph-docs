@@ -1,7 +1,7 @@
 ---
 title: "Delete permissionGrantPolicy"
 description: "Delete a permissionGrantPolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: "apiPageType"
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

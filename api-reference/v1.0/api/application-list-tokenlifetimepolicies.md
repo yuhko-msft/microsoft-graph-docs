@@ -1,7 +1,7 @@
 ---
 title: "List assigned tokenLifetimePolicies"
 description: "List tokenLifetimePolicies that are assigned to an application."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

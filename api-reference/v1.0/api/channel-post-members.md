@@ -3,7 +3,7 @@ title: "Add member to channel"
 description: "Add member to channel."
 author: "akjo" 
 doc_type: apiPageType
-ms.localizationpriority: medium
+localization_priority: Normal 
 ms.prod: "microsoft-teams"
 ---
 

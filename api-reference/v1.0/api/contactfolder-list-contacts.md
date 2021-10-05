@@ -1,7 +1,7 @@
 ---
 title: "List contacts"
 description: "Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType

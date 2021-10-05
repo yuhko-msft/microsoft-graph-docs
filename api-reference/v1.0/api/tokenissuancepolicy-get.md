@@ -1,7 +1,7 @@
 ---
 title: "Get tokenIssuancePolicy"
 description: "Retrieve the properties and relationships of tokenIssuancePolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "luleonpla"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

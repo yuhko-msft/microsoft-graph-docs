@@ -1,7 +1,7 @@
 ---
 title: "Range: clear"
 description: "Clear range values, format, fill, border, etc."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: apiPageType

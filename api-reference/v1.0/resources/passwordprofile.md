@@ -1,7 +1,7 @@
 ---
 title: "passwordProfile resource type"
 description: "Contains the password profile associated with a user. The **passwordProfile** property of the user entity is a **passwordProfile** object."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "eketo-msft"
 ms.prod: "users"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "notebook: copyNotebook"
 description: "Copies a notebook to the Notebooks folder in the destination Documents library. The folder is created if it doesn't exist."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "identityUserFlowAttributeAssignment: getOrder"
 description: "Get the order of identityUserFlowAttributeAssignments being collected within a user flow."
 author: "jkdouglas"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List alerts"
 description: "Retrieve a list of alert objects."
 author: "preetikr"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "security"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "accessReviewApplyAction resource type"
 description: "Represents the action to take on reviewed users after an access review instance is completed."
 author: "isabelleatmsft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

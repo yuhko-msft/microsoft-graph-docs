@@ -1,7 +1,7 @@
 ---
 title: "Update place"
 description: "Update the properties of place object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "vrod9429"
 ms.prod: "Outlook"
 doc_type: "apiPageType"

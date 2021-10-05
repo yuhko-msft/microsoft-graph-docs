@@ -1,7 +1,7 @@
 ---
 title: "Remove member"
 description: "Use this API to remove a member from a group via the **members** navigation property."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

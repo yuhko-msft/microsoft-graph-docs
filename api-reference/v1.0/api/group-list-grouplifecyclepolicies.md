@@ -2,7 +2,7 @@
 title: "List groupLifecyclePolicies"
 description: "Retrieves a list of groupLifecyclePolicy objects to which a group belongs."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List transitiveMemberOf"
 description: "Get groups that the organizational contact is a member of. This API request is transitive, and will also return all groups the user is a nested member of."
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

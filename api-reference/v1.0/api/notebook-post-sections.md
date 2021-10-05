@@ -2,7 +2,7 @@
 title: "Create section"
 description: "Create a new onenoteSection in the specified notebook."
 author: "jewan-microsoft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "onenote"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete tokenLifetimePolicy"
 description: "Delete tokenLifetimePolicy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

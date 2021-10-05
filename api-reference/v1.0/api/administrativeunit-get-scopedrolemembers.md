@@ -2,7 +2,7 @@
 title: "Get a scopedRoleMember"
 description: "Retrieve a specific scopedRoleMembership resource."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

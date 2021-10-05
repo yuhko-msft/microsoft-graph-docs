@@ -2,7 +2,7 @@
 title: "connectionOperation resource type"
 description: "Describes status of an asynchronous request to create a Microsoft Search connection schema."
 author: "mecampos"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "search"
 doc_type: resourcePageType
 ---

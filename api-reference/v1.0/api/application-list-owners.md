@@ -2,7 +2,7 @@
 title: "List owners"
 description: "Retrieve a list of owners (directoryObject objects) for an application."
 author: "sureshja"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "applications"
 doc_type: apiPageType
 ---

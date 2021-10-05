@@ -1,7 +1,7 @@
 ---
 title: "timeStamp resource type"
 description: "Date and time information for a point in time."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "JeremyKelley"
 ms.prod: ""
 doc_type: resourcePageType

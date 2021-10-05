@@ -2,7 +2,7 @@
 title: "List threads"
 description: "Get all the threads in a group conversation."
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

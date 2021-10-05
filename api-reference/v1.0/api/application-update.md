@@ -2,7 +2,7 @@
 title: "Update application"
 description: "Update the properties of an application object."
 author: "sureshja"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "applications"
 doc_type: apiPageType
 ---

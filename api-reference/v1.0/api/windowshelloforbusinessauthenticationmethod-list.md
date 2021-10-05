@@ -2,7 +2,7 @@
 title: "List windowsHelloForBusinessAuthenticationMethods"
 description: "Get a list of the windowsHelloForBusinessAuthenticationMethod objects and their properties."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

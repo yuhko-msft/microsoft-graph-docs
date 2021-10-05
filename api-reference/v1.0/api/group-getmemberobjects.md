@@ -1,7 +1,7 @@
 ---
 title: "group: getMemberObjects"
 description: "Return all of the groups that this group is a member of."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

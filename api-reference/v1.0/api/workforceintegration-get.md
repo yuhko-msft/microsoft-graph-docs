@@ -1,7 +1,7 @@
 ---
 title: "Get workforceIntegration"
 description: "Retrieve the properties and relationships of workforceIntegration object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

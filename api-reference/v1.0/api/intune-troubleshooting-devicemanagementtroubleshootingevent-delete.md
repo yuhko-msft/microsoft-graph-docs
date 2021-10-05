@@ -2,7 +2,7 @@
 title: "Delete deviceManagementTroubleshootingEvent"
 description: "Deletes a deviceManagementTroubleshootingEvent."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

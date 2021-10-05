@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Send an invite to access an item
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 description: "Sends a sharing invitation for a driveItem."
 doc_type: apiPageType

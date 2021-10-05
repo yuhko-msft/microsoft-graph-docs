@@ -1,7 +1,7 @@
 ---
 title: "Delete agreement"
 description: "Delete an agreement object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "governance"
 author: "raprakasMSFT"

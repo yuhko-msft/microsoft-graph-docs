@@ -2,7 +2,7 @@
 title: "Delete tab from channel"
 description: "Removes (unpins) a tab from the specified channel within a team. "
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

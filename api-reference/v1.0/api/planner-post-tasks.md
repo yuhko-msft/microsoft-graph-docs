@@ -1,7 +1,7 @@
 ---
 title: "Create plannerTask"
 description: "Use this API to create a new **plannerTask**."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

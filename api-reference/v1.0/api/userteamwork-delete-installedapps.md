@@ -3,7 +3,7 @@ title: "Uninstall app for user"
 description: "Uninstall an app from the personal scope of the specified user."
 author: "akjo"
 doc_type: "apiPageType"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 

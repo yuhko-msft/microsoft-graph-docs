@@ -1,7 +1,7 @@
 ---
 title: "List b2xIdentityUserFlows"
 description: "Retrieve a list of b2xIdentityUserFlow objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"

@@ -2,7 +2,7 @@
 title: "Send replies to a message in a channel"
 description: "Reply to existing message in a channel."
 author: "RamjotSingh"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -126,6 +126,7 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
+        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -225,6 +226,7 @@ HTTP/1.1 200 OK
    "from":{
       "application":null,
       "device":null,
+      "conversation":null,
       "user":{
          "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
          "displayName":"Joh Doe",

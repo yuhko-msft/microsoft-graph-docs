@@ -1,7 +1,7 @@
 ---
 title: "Assign claimsMappingPolicy"
 description: "Assign a claimsMappingPolicy to a servicePrincipal."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "paulgarn"
 ms.prod: "applications"
 doc_type: "apiPageType"

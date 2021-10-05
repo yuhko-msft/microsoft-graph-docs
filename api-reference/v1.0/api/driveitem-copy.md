@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Copy a file or folder
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 description: "Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name."
 doc_type: apiPageType

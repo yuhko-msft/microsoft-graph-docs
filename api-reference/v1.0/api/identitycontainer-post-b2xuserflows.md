@@ -1,7 +1,7 @@
 ---
 title: "Create b2xIdentityUserFlow"
 description: "Create a new b2xIdentityUserFlow object."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"

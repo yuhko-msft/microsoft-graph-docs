@@ -1,7 +1,7 @@
 ---
 title: "chatMessageReaction resource type"
 description: "Represents a reaction to a chatMessage entity. "
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: resourcePageType
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"

@@ -2,7 +2,7 @@
 title: "Create educationUser"
 description: "Create a new educationUser object."
 author: "mlafleur"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

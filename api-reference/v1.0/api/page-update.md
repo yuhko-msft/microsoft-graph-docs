@@ -1,7 +1,7 @@
 ---
 title: "Update page"
 description: "Update the content of a OneNote page."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

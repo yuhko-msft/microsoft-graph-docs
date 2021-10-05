@@ -1,7 +1,7 @@
 ---
 title: 'List applicationTemplates'
 description: 'Retrieve a list of applicationtemplate objects.'
-ms.localizationpriority: medium
+localization_priority: Normal
 author: 'luleonpla'
 ms.prod: 'applications'
 doc_type: 'apiPageType'

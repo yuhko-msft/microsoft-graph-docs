@@ -2,7 +2,7 @@
 title: "List riskDetections"
 description: "Get a list of the riskDetection objects and their properties."
 author: "cloudhandler"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

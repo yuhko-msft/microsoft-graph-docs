@@ -2,7 +2,7 @@
 title: "accessReviewScheduleSettings resource type"
 description: "Represents the settings associated with an access review series."
 author: "isabelleatmsft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

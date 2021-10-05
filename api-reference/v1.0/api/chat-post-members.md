@@ -3,7 +3,7 @@ title: "Add member to a chat"
 description: "Add a conversationMember to a chat."
 author: "bhartono"
 doc_type: "apiPageType"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 

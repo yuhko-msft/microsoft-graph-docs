@@ -3,7 +3,7 @@ title: "List channels"
 description: "Retrieve the list of channels in this team."
 author: "nkramer"
 doc_type: "apiPageType"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 

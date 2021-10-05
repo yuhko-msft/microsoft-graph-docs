@@ -1,7 +1,7 @@
 ---
 title: "List identityProviders"
 description: "Retrieve all identityProviders"
-ms.localizationpriority: high
+localization_priority: Priority
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

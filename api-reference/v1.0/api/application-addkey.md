@@ -1,7 +1,7 @@
 ---
 title: "application: addKey"
 description: "Add a key credential to an application."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

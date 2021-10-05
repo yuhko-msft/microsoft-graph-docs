@@ -1,7 +1,7 @@
 ---
 title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType

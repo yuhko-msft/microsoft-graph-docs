@@ -1,7 +1,7 @@
 ---
 title: "message: createReply"
 description: "Create a draft to reply to a message, in either JSON or MIME format. "
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

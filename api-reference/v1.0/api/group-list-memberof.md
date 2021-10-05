@@ -2,7 +2,7 @@
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
 author: "Jordanndahl"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
 ---

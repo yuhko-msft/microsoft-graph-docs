@@ -2,7 +2,7 @@
 title: "workbookRangeView: range"
 description: "Return the range associated with the rangeView resource."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

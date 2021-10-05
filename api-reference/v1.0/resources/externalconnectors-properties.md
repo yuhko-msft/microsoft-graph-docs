@@ -2,7 +2,7 @@
 title: "properties resource type"
 description: "The properties defined for the items in the connection."
 author: "mecampos"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "search"
 doc_type: resourcePageType
 ---

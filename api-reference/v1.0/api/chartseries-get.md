@@ -2,7 +2,7 @@
 title: "Get ChartSeries"
 description: "Retrieve the properties and relationships of chartseries object."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

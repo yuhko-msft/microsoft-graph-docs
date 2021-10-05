@@ -2,7 +2,7 @@
 title: "Update team"
 description: "Update the properties of the specified team."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

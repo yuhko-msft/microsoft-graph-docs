@@ -2,7 +2,7 @@
 title: "List threads"
 description: "Get all the threads of a group."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -88,20 +88,33 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 288
+Content-length: 536
 
 {
   "value": [
     {
-      "id": "thread-id",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
+          }
+        }
+      ],
       "topic": "topic-value",
       "hasAttachments": true,
       "lastDeliveredDateTime": "datetime-value",
       "uniqueSenders": [
         "uniqueSenders-value"
       ],
-      "preview": "preview-value",
-      "isLocked": false
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "name-value",
+            "address": "address-value"
+          }
+        }
+      ]
     }
   ]
 }

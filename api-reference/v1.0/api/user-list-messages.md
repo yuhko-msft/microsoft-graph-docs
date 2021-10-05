@@ -1,7 +1,7 @@
 ---
 title: "List messages"
 description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders)."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

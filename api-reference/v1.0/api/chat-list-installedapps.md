@@ -2,7 +2,7 @@
 title: "List apps in chat"
 description: "List the apps installed in a chat."
 author: "subray"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

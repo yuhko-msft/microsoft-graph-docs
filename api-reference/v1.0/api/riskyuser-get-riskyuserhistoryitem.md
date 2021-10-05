@@ -2,7 +2,7 @@
 title: "Get history"
 description: "Read the properties and relationships of a riskyUserHistoryItem object."
 author: "cloudhandler"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
+|Application | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## HTTP request
 

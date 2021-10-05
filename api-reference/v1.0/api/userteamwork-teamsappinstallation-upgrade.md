@@ -3,7 +3,7 @@ title: "teamsAppInstallation in personal scope: upgrade"
 description: "Upgrade an app installation in the personal scope of a user"
 author: "akjo"
 doc_type: "apiPageType"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 

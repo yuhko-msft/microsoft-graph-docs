@@ -2,7 +2,7 @@
 title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

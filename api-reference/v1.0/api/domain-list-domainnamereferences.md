@@ -2,7 +2,7 @@
 title: "List domainNameReferences"
 description: "Retrieve a list of directoryObject with a reference to the domain."
 author: "adimitui"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -20,16 +20,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All |
+|Delegated (work or school account) | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.Read.All, Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{id}/domainNameReferences
+GET /domains/{domain-id}/domainNameReferences
 ```
 
 ## Optional query parameters

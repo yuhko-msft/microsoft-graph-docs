@@ -2,7 +2,7 @@
 title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

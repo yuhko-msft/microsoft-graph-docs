@@ -2,7 +2,7 @@
 title: "Create group"
 description: "Create a new group object in a term store."
 author: vishriv
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---

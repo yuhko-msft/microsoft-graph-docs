@@ -1,7 +1,7 @@
 ---
 title: 'Get applicationTemplate'
 description: 'Retrieve the properties and relationships of applicationtemplate object.'
-ms.localizationpriority: medium
+localization_priority: Normal
 author: 'luleonpla'
 ms.prod: 'applications'
 doc_type: 'apiPageType'

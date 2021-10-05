@@ -2,7 +2,7 @@
 title: Update printer
 description: Update the properties of a printer object.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

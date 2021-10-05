@@ -2,7 +2,7 @@
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
 author: "abhijeetsinha"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

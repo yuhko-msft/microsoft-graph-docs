@@ -2,7 +2,7 @@
 title: Get taskTrigger
 description: Get a task trigger from a printer.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

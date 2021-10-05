@@ -1,7 +1,7 @@
 ---
 title: "Get manager"
 description: "Get this organizational contact's manager."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType

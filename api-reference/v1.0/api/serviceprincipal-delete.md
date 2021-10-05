@@ -1,7 +1,7 @@
 ---
 title: "Delete servicePrincipal"
 description: "Delete servicePrincipal."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"

@@ -1,7 +1,7 @@
 ---
 title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "SumitParikh"
 ms.prod: "directory-management"
 doc_type: apiPageType

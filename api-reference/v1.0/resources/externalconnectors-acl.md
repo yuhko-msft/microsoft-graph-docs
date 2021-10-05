@@ -2,7 +2,7 @@
 title: "acl resource type"
 description: "An access control entry for an item indexed by a Microsoft Search externalConnection."
 author: "mecampos"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "search"
 doc_type: resourcePageType
 ---

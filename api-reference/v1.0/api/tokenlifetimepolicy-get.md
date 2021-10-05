@@ -1,7 +1,7 @@
 ---
 title: "Get tokenLifetimePolicy"
 description: "Retrieve the properties and relationships of tokenLifetimePolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

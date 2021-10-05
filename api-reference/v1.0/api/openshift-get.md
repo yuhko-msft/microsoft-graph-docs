@@ -1,7 +1,7 @@
 ---
 title: "Get openShift"
 description: "Retrieve the properties and relationships of openshift object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

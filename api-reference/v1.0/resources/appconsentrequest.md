@@ -2,7 +2,7 @@
 title: "appConsentRequest resource type"
 description: "A request that represents a collection of userConsentRequest objects for a specific application."
 author: "psignoret"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

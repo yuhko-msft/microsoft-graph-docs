@@ -1,7 +1,7 @@
 ---
 title: "Filter: apply"
 description: "Apply the given filter criteria on the given column."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType

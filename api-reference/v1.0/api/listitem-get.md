@@ -2,7 +2,7 @@
 author: JeremyKelley
 title: Get listItem
 description: Returns the metadata for an item in a SharePoint list.
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

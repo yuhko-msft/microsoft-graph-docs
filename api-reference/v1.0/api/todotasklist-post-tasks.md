@@ -2,7 +2,7 @@
 title: "Create todoTask"
 description: "Create a new task object in a specified todoTaskList."
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 author: learafa
 title: Grant permission
 description: Grant a list of users access to use the specified link
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

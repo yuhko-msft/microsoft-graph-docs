@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipals: List ownedObjects"
 description: "Retrieve a list of objects owned by the servicePrincipal.  This could include applications or groups."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

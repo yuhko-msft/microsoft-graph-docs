@@ -2,7 +2,7 @@
 title: "riskyUser: confirmCompromised"
 description: "Confirm a user as compromised"
 author: "cloudhandler"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

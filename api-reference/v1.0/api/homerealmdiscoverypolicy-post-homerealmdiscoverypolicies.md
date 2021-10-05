@@ -1,7 +1,7 @@
 ---
 title: "Create homeRealmDiscoveryPolicy"
 description: "Create a new homeRealmDiscoveryPolicy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hpsin"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

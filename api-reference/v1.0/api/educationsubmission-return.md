@@ -2,7 +2,7 @@
 title: "educationSubmission: return"
 description: "Make the grade and feedback associated with this submission available to the student."
 author: "sharad-sharma-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

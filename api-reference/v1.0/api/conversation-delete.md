@@ -2,7 +2,7 @@
 title: "Delete conversation"
 description: "Delete conversation."
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

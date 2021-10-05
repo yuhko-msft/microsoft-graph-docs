@@ -2,7 +2,7 @@
 title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "ananmishr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

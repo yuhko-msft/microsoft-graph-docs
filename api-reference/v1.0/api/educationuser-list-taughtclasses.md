@@ -2,7 +2,7 @@
 title: "List taughtClasses"
 description: "Get the educationClass resources from the taughtClasses navigation property."
 author: "mlafleur"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

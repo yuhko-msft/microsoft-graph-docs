@@ -2,7 +2,7 @@
 title: "List decisions"
 description: "Get the accessReviewInstanceDecisionItem resources from the decisions navigation property."
 author: "isabelleatmsft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---

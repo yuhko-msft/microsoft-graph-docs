@@ -2,7 +2,7 @@
 title: "post resource type"
 description: "Represents an individual Post item within a conversationThread entity."
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: resourcePageType
 ---

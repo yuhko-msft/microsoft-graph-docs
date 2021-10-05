@@ -1,7 +1,7 @@
 ---
 title: "Update claimsmappingpolicy"
 description: "Update the properties of claimsMappingPolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "paulgarn"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -70,7 +70,11 @@ PATCH https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}
 Content-type: application/json
 
 {
-    "displayName": "UpdateClaimsPolicy"
+  "definition": [
+    "definition-value"
+  ],
+  "displayName": "displayName-value",
+  "isOrganizationDefault": true
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -96,13 +100,26 @@ Content-type: application/json
 
 The following is an example of the response.
 
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.claimsMappingPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
+Content-type: application/json
+
+{
+  "definition": [
+    "definition-value"
+  ],
+  "displayName": "displayName-value",
+  "isOrganizationDefault": true,
+  "id": "id-value"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

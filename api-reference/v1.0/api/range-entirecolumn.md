@@ -2,7 +2,7 @@
 title: "Range: EntireColumn"
 description: "Gets an object that represents the entire column of the range."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

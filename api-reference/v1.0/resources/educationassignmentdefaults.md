@@ -2,7 +2,7 @@
 title: "educationAssignmentDefaults resource type"
 description: "Specifies class-level defaults respected by new assignments created in the class"
 author: "sharad-sharma-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

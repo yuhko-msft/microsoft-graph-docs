@@ -2,7 +2,7 @@
 title: "Get connectionOperation"
 description: "Read the properties and relationships of a connectionOperation object."
 author: "mecampos"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "Update settings"
 description: "Update the properties of the settings object. "
 author: "jpettere"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
 ---

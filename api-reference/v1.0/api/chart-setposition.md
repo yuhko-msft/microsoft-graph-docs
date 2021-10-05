@@ -2,7 +2,7 @@
 title: "Chart: setPosition"
 description: "Positions the chart relative to cells on the worksheet."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

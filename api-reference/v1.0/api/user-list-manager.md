@@ -1,7 +1,7 @@
 ---
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType

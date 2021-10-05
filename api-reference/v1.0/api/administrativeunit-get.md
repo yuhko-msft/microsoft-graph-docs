@@ -2,7 +2,7 @@
 title: "Get administrativeUnit"
 description: "Retrieve the properties and relationships of an administrativeUnit object."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

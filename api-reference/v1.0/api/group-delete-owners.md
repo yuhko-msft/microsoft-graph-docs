@@ -1,7 +1,7 @@
 ---
 title: "Remove group owner"
 description: "Use this API to remove an owner from a Microsoft 365 group, a security group, or a mail-enabled security group through the owners navigation property."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

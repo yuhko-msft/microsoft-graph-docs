@@ -1,7 +1,7 @@
 ---
 title: "orgContact resource type"
 description: "Represents an organizational contact"
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: resourcePageType

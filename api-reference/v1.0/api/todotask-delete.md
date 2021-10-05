@@ -2,7 +2,7 @@
 title: "Delete todoTask"
 description: "Deletes a todoTask object."
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

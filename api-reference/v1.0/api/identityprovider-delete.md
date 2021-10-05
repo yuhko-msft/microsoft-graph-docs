@@ -1,7 +1,7 @@
 ---
 title: "Delete identityProvider"
 description: "Delete an existing identityProvider"
-ms.localizationpriority: high
+localization_priority: Priority
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

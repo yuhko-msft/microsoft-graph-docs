@@ -2,7 +2,7 @@
 title: "resourceSpecificPermissionGrant resource type"
 description: "Specifies the permission that a specific Azure AD app has."
 author: "AkJo"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

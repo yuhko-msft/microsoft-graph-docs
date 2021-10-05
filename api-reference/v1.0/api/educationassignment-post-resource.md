@@ -1,7 +1,7 @@
 ---
 title: "Create educationAssignmentResource"
 description: "Create an education assignment resource."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: apiPageType

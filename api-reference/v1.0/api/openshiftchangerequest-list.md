@@ -1,7 +1,7 @@
 ---
 title: "List openShiftChangeRequests"
 description: "Retrieve a list of openShiftChangeRequest objects in a team."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

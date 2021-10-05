@@ -2,7 +2,7 @@
 title: "Remove a scopedRoleMember"
 description: "Remove a scoped-role member from an adminstrative unit."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

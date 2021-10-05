@@ -1,7 +1,7 @@
 ---
 title: "Create featureRolloutPolicy"
 description: "Create a new featureRolloutPolicy object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "madhavpatel6"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

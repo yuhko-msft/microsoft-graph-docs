@@ -2,7 +2,7 @@
 title: Delete taskDefinition
 description: Delete a task definition.
 author: nilakhan      
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

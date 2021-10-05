@@ -2,7 +2,7 @@
 title: "signIn resource type"
 description: "Details user and application sign-in activity for a tenant (directory)."
 author: "besiler"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---

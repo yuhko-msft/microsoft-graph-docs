@@ -2,7 +2,7 @@
 title: "List classes of an educationSchool"
 description: "Retrieve a list of classes owned by a school."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

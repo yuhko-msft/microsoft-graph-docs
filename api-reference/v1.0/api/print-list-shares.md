@@ -2,7 +2,7 @@
 title: List shares
 description: Retrieve a list of printer shares.
 author: braedenp-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

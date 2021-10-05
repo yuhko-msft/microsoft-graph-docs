@@ -2,7 +2,7 @@
 title: "Range: Column"
 description: "Gets a column contained in the range."
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

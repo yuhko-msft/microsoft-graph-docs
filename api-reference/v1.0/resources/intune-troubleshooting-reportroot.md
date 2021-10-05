@@ -2,7 +2,7 @@
 title: "reportRoot resource type"
 description: "The resource that represents an instance of Enrollment Failure Reports."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

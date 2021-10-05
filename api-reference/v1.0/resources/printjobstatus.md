@@ -2,7 +2,7 @@
 title: printJobStatus resource type
 description: Represents the current status of a print job.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

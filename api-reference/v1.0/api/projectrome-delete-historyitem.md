@@ -1,7 +1,7 @@
 ---
 title: "Delete a historyItem"
 description: "Delete an existing history item for an existing user activity."
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: apiPageType

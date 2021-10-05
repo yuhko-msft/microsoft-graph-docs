@@ -2,7 +2,7 @@
 title: "Get educationUser"
 description: "Read the properties and relationships of an educationUser object."
 author: "mlafleur"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

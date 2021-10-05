@@ -2,7 +2,7 @@
 title: "Get rule"
 description: "Get the properties and relationships of a messageRule object."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

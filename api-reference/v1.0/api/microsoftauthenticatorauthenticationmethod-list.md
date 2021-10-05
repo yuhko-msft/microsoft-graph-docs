@@ -2,7 +2,7 @@
 title: "List microsoftAuthenticatorAuthenticationMethods"
 description: "Get a list of the microsoftAuthenticatorAuthenticationMethod objects and their properties."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

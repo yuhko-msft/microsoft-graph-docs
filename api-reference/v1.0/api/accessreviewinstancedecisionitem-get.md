@@ -2,7 +2,7 @@
 title: "Get accessReviewInstanceDecisionItem"
 description: "Read the properties and relationships of an accessReviewInstanceDecisionItem object."
 author: "isabelleatmsft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---

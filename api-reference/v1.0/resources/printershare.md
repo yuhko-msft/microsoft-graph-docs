@@ -2,7 +2,7 @@
 title: printerShare resource type
 description: Represents a printer that is intended to be discoverable by users and printing applications.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 title: Get a SharePoint list
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "sharepoint"
 description: "Returns the metadata for a list."
 doc_type: apiPageType

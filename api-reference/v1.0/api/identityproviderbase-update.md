@@ -1,7 +1,7 @@
 ---
 title: "Update identityProvider"
 description: "Update properties of an identityProvider."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,9 @@ ms.prod: "identity-and-sign-in"
 # Update identityProvider
 Namespace: microsoft.graph
 
-Update the properties of the specified identity provider in a tenant.
+Update the properties of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-Among the types of providers derived from identityProviderBase, you can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md) resource.
+For Azure AD B2C, update the properties  of a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
 
 ## Permissions
 

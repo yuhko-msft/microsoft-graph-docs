@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "sharepoint"
 description: "Get a collection of subsites defined for a site."
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "Delete extensionProperty"
 description: "Delete an extensionProperty."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "Get windowsHelloForBusinessAuthenticationMethod"
 description: "Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

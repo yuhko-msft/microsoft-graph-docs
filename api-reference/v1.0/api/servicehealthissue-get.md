@@ -2,7 +2,7 @@
 title: "Get serviceHealthIssue"
 description: "Retrieve the properties and relationships of a serviceHealthIssue object."
 author: "payiAzure"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "service-communications"
 doc_type: apiPageType
 ---

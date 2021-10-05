@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Create a SharePoint List
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType

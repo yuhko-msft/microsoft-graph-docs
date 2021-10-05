@@ -2,7 +2,7 @@
 title: "post: reply"
 description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
 author: "dkershaw10"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

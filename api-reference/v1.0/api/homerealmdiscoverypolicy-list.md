@@ -1,7 +1,7 @@
 ---
 title: "List homeRealmDiscoveryPolicies"
 description: "Get a list of homeRealmDiscoveryPolicy objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "hpsin"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

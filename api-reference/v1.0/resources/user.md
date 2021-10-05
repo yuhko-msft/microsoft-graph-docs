@@ -2,7 +2,7 @@
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
 author: "jpettere"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "users"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory (Azure AD) user account. Inherits from [directoryObject](directoryobject.md).
+Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
 
@@ -187,7 +187,6 @@ This resource supports:
 |passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. **NOTE:** For Azure B2C tenants, the **forceChangePasswordNextSignIn** property should be set to `false` and instead use custom policies and user flows to force password reset at first logon. See [Force password reset at first logon](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon).<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `in`).|
 |pastProjects|String collection|A list for the user to enumerate their past projects. <br><br>Returned only on `$select`.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
-| preferredDataLocation | String | The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example `en-US`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`)|
 |preferredName|String|The preferred name for the user. <br><br>Returned only on `$select`.|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `NOT`, `ge`, `le`).|
@@ -446,74 +445,73 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "aboutMe": "String",
+  "aboutMe": "string",
   "accountEnabled": true,
-  "ageGroup": "String",
+  "ageGroup": "string",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
-  "businessPhones": ["String"],
-  "city": "String",
-  "companyName": "String",
-  "consentProvidedForMinor": "String",
-  "country": "String",
+  "businessPhones": ["string"],
+  "city": "string",
+  "companyName": "string",
+  "consentProvidedForMinor": "string",
+  "country": "string",
   "createdDateTime": "String (timestamp)",
-  "creationType": "String",
-  "department": "String",
-  "displayName": "String",
+  "creationType": "string",
+  "department": "string",
+  "displayName": "string",
   "employeeHireDate": "2020-01-01T00:00:00Z",
-  "employeeId": "String",
+  "employeeId": "string",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
-  "employeeType": "String",
-  "faxNumber" : "String",
-  "givenName": "String",
+  "employeeType": "string",
+  "faxNumber" : "string",
+  "givenName": "string",
   "hireDate": "String (timestamp)",
-  "id": "String (identifier)",
+  "id": "string (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
-  "imAddresses": ["String"],
-  "interests": ["String"],
+  "imAddresses": ["string"],
+  "interests": ["string"],
   "isResourceAccount": false,
-  "jobTitle": "String",
-  "legalAgeGroupClassification": "String",
+  "jobTitle": "string",
+  "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "lastPasswordChangeDateTime": "String (timestamp)",
-  "mail": "String",
+  "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
-  "mailNickname": "String",
-  "mobilePhone": "String",
-  "mySite": "String",
-  "officeLocation": "String",
-  "onPremisesDistinguishedName": "String",
-  "onPremisesDomainName": "String",
+  "mailNickname": "string",
+  "mobilePhone": "string",
+  "mySite": "string",
+  "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "onPremisesImmutableId": "String",
+  "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "String",
-  "onPremisesSecurityIdentifier": "String",
+  "onPremisesSamAccountName": "string",
+  "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "onPremisesUserPrincipalName": "String",
-  "otherMails": ["String"],
-  "passwordPolicies": "String",
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": ["string"],
+  "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  "pastProjects": ["String"],
-  "postalCode": "String",
-  "preferredDataLocation": "String",
-  "preferredLanguage": "String",
-  "preferredName": "String",
+  "pastProjects": ["string"],
+  "postalCode": "string",
+  "preferredLanguage": "string",
+  "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "proxyAddresses": ["String"],
-  "responsibilities": ["String"],
-  "schools": ["String"],
+  "proxyAddresses": ["string"],
+  "responsibilities": ["string"],
+  "schools": ["string"],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "String (timestamp)",
-  "skills": ["String"],
-  "state": "String",
-  "streetAddress": "String",
-  "surname": "String",
-  "usageLocation": "String",
-  "userPrincipalName": "String",
-  "userType": "String",
+  "skills": ["string"],
+  "state": "string",
+  "streetAddress": "string",
+  "surname": "string",
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string",
 
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
@@ -537,6 +535,7 @@ Here is a JSON representation of the resource
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
+
 ```
 
 ## See also

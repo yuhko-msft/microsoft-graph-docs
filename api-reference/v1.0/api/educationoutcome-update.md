@@ -1,7 +1,7 @@
 ---
 title: "Update educationOutcome"
 description: "Update the properties of educationOutcome object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sharad-sharma-msft"
 ms.prod: "education"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 title: "educationSubmission: unsubmit"
 description: "Indicate that a student wants to work on the submission of the assignment after it was turned in."
 author: "sharad-sharma-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

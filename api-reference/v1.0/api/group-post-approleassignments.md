@@ -1,7 +1,7 @@
 ---
 title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "groups"
 author: "psignoret"

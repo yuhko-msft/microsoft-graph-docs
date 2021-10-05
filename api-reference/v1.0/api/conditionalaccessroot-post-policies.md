@@ -1,7 +1,7 @@
 ---
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 description: "The DriveRecipient resource represents a person, group, or other recipient to share with using the invite action."
 doc_type: resourcePageType

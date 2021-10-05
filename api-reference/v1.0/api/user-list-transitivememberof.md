@@ -2,7 +2,7 @@
 title: "List user transitive memberOf"
 description: "Get groups, directory roles that the user is a member of. This API request is transitive, and will also return all groups the user is a nested member of."
 author: "jpettere"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
 ---

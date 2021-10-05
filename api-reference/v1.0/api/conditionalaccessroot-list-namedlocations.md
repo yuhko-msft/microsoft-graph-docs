@@ -1,7 +1,7 @@
 ---
 title: "List namedLocations"
 description: "Get a list of namedLocation objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "videor"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

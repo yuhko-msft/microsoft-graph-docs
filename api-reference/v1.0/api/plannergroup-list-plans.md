@@ -1,7 +1,7 @@
 ---
 title: "List plans"
 description: "Retrieve a list of **plannerPlan** objects owned by a group object."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

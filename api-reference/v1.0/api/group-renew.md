@@ -1,7 +1,7 @@
 ---
 title: "group: renew"
 description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "Delete enrollmentTroubleshootingEvent"
 description: "Deletes a enrollmentTroubleshootingEvent."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

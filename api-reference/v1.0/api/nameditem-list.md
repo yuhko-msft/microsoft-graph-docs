@@ -1,7 +1,7 @@
 ---
 title: "List NamedItemCollection"
 description: "Retrieve a list of nameditem objects."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType

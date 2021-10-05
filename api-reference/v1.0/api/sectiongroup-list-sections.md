@@ -1,7 +1,7 @@
 ---
 title: "List sections"
 description: "Retrieve a list of onenoteSection objects from the specified section group."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "Create application"
 description: "Create a new application."
 author: "sureshja"
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
 ---

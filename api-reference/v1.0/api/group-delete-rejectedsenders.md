@@ -2,7 +2,7 @@
 title: "Remove rejectedSender"
 description: "Remove a user or group from the rejected-senders list."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

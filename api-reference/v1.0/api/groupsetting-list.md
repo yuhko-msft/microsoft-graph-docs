@@ -2,7 +2,7 @@
 title: "List group settings"
 description: "Retrieve a list of group setting objects."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

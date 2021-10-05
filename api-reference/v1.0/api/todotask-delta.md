@@ -1,7 +1,7 @@
 ---
 title: "todoTask: delta"
 description: "Get a set of todoTask resources that have been added, deleted, or updated in a specified todoTaskList."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "avijityadav"
 ms.prod: "outlook"
 doc_type: apiPageType

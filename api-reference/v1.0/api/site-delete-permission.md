@@ -2,7 +2,7 @@
 title: "Delete permission"
 description: "Delete a permission object on a site."
 author: "BarrySh"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

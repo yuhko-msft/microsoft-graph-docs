@@ -1,7 +1,7 @@
 ---
 title: "Get swapShiftsChangeRequest"
 description: "Retrieve the properties and relationships of a swapShiftsChangeRequest object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"

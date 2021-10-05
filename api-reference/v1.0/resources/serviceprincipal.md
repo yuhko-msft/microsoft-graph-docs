@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal resource type"
 description: "Represents an instance of an application in a directory. Inherits from directoryObject."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"

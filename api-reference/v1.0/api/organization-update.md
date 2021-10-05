@@ -1,7 +1,7 @@
 ---
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType

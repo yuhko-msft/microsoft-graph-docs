@@ -2,7 +2,7 @@
 title: "Update authenticationFlowsPolicy"
 description: "Update the Boolean selfServiceSignUp property of an authenticationFlowsPolicy object."
 author: "linkhp"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

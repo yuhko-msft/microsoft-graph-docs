@@ -2,7 +2,7 @@
 title: List printConnectors
 description: Retrieve a list of connectors.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

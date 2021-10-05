@@ -2,7 +2,7 @@
 title: Create allowedGroup for printerShare
 description: Grant the specified group access to submit print jobs to the associated printer.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

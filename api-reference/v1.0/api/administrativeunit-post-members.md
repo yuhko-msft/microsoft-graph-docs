@@ -2,7 +2,7 @@
 title: "Add a member"
 description: "Use this API to add a member (user or group) to an administrative unit."
 author: "DougKirschner"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

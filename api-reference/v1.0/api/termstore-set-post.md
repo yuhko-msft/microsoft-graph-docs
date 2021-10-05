@@ -2,7 +2,7 @@
 title: "Create set"
 description: "Create a new set object."
 author: vishriv
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---

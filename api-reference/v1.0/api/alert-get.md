@@ -2,7 +2,7 @@
 title: "Get alert"
 description: " Retrieve the properties and relationships of an alert object."
 author: "preetikr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "security"
 doc_type: apiPageType
 ---

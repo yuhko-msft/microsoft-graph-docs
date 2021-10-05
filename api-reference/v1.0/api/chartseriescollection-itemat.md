@@ -2,7 +2,7 @@
 title: "ChartSeriesCollection: ItemAt"
 description: "Retrieves a series based on its position in the collection"
 author: "lumine2008"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---

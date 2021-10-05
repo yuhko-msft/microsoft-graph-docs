@@ -1,7 +1,7 @@
 ---
 title: "List sectionGroups"
 description: "Retrieve a list of section groups from the specified section group."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
 doc_type: apiPageType

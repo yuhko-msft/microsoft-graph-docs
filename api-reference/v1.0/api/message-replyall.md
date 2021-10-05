@@ -2,7 +2,7 @@
 title: "message: replyAll"
 description: "Reply to all recipients of a message using either JSON or MIME format."
 author: "abheek-das"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

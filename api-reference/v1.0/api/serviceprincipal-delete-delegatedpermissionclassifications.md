@@ -1,7 +1,7 @@
 ---
 title: "Delete delegatedPermissionClassification"
 description: "Delete a delegated permission classification from an API's service principal."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"

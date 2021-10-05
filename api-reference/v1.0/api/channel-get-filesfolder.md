@@ -2,7 +2,7 @@
 title: "Get filesFolder"
 description: "Retrieve the filesFolder of a channel."
 author: "nkramer"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---

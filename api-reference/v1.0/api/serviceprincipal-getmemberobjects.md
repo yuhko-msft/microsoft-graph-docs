@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: getMemberObjects"
 description: "Get the list of groups and directory roles that this service principal is a member of.  This check is transitive."
-ms.localizationpriority: high
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "applications"
 author: "sureshja"

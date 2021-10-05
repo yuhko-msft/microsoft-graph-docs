@@ -2,7 +2,7 @@
 title: "List acceptedSenders"
 description: "Get a list of users or groups that are in the accepted-senders list for this group."
 author: "Jordanndahl"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---

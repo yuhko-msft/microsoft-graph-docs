@@ -1,7 +1,7 @@
 ---
 title: "Create permissionGrantPolicy"
 description: "Creates a permissionGrantPolicy object that describes the conditions under which permissions may be granted."
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"

@@ -1,7 +1,7 @@
 ---
 title: "application: delta"
 description: "Get created, updated, or deleted applications without performing a full read of the entire resource collection."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "sureshja"
 ms.prod: "applications"
 doc_type: apiPageType

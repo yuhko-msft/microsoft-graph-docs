@@ -1,7 +1,7 @@
 ---
 title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "tariq-sharif"
 ms.prod: "outlook"
 doc_type: apiPageType

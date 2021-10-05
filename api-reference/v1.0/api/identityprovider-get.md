@@ -1,7 +1,7 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
-ms.localizationpriority: high
+localization_priority: Priority
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

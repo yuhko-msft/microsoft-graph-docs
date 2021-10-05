@@ -1,7 +1,7 @@
 ---
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
-ms.localizationpriority: high
+localization_priority: Priority
 author: "adimitui"
 ms.prod: "directory-management"
 doc_type: apiPageType

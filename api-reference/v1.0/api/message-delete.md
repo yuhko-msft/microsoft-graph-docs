@@ -1,7 +1,7 @@
 ---
 title: "Delete message"
 description: "Delete a message in the specified user's mailbox, or delete a relationship of the message."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType

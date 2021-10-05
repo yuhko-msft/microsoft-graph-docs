@@ -2,7 +2,7 @@
 title: "presence: clearPresence"
 description: "Clear the presence information for a user's application presence session."
 author: "jsandoval-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---

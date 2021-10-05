@@ -2,7 +2,7 @@
 title: "team: sendActivityNotification"
 description:  Send an activity feed notification in scope of a team.
 author: eddie-lee-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---
@@ -20,9 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
-
->**Note:** Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+|Application|TeamsActivity.Send|
 
 ## HTTP request
 

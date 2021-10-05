@@ -2,7 +2,7 @@
 title: List printerShares for a printer
 description: Retrieve a list of printerShares associated with the printer.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

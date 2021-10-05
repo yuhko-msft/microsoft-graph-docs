@@ -2,7 +2,7 @@
 title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
 author: "abheek-das"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

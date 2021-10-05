@@ -2,7 +2,7 @@
 title: "userTeamwork: sendActivityNotification"
 description:  Send an activity feed notification to a user.
 author: eddie-lee-msft
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ---

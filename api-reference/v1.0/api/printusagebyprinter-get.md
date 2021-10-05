@@ -2,7 +2,7 @@
 title: Get printUsageByPrinter
 description: Retrieve a printer's usage summary for a particular time period.
 author: nilakhan
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "List secureScores"
 description: "Retrieve a list of secureScore objects."
 author: "preetikr"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: ""
 doc_type: apiPageType
 ---

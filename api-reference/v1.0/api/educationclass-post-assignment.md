@@ -1,7 +1,7 @@
 ---
 title: "Create educationAssignment"
 description: "Create a new assignment."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType

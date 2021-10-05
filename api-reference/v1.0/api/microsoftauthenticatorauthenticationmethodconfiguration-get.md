@@ -2,7 +2,7 @@
 title: "Get microsoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mmcla"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

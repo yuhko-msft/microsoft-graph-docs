@@ -2,7 +2,7 @@
 title: "Get settings"
 description: "Read the user and organization settings object."
 author: "jpettere"
-ms.localizationpriority: high
+localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
 ---

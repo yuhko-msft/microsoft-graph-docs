@@ -2,7 +2,7 @@
 title: "Add a student"
 description: "Add a member to a class."
 author: "mmast-msft"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---

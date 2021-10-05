@@ -2,7 +2,7 @@
 title: "Update contactfolder"
 description: "Update the properties of contactfolder object."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

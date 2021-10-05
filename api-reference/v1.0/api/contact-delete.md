@@ -2,7 +2,7 @@
 title: "Delete contact"
 description: "Delete a contact."
 author: "kevinbellinger"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

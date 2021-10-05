@@ -2,7 +2,7 @@
 title: "Delete externalItem"
 description: "Deletes an externalItem object."
 author: "mecampos"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "search"
 doc_type: apiPageType
 ---

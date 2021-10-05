@@ -2,7 +2,7 @@
 title: "Delete eventMessage"
 description: "Delete eventMessage."
 author: "harini84"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

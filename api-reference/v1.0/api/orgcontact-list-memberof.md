@@ -1,7 +1,7 @@
 ---
 title: "List memberOf"
 description: "List the groups that this organizaitonal contact is a member of."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "directory-management"
 doc_type: apiPageType

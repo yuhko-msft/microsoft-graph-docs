@@ -2,7 +2,7 @@
 title: "Get todoTask"
 description: "Read the properties and relationships of a todoTask object."
 author: "avijityadav"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete plannerTask"
 description: "Delete **plannerTask**."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: apiPageType

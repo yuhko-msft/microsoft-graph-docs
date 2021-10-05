@@ -2,7 +2,7 @@
 title: "List sets"
 description: "Get a list of the set objects and their properties."
 author: vishriv
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "taxonomy"
 doc_type: apiPageType
 ---
