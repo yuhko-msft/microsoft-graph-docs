@@ -366,6 +366,8 @@ items:
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
+          - name: Customize people insights privacy (preview)
+            href: customize-people-insights-privacy.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
           - name: Item insights overview
@@ -444,7 +446,7 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
-          - name: Licenses for subscribing to chat messages
+          - name: Licensing and payment requirements
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
