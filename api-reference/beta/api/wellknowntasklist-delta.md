@@ -1,6 +1,6 @@
 ---
 title: "wellKnownTaskList: delta"
-description: "**TODO: Add Description**"
+description: "Get a set of wellKnownTaskList resources that have been added, deleted, or removed in Microsoft Tasks."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get a set of [wellKnownTaskList](../resources/wellKnownTaskList.md) resources that have been added, deleted, or removed in Microsoft Tasks.
+A **delta** function call for **wellKnownTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
+you can query for incremental changes in the **wellKnownTaskList**. This allows you to maintain and synchronize a local store of a user's **wellKnownTaskList** without having to fetch all the **wellKnownTaskList** from the server every time.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/lists/delta
+GET /me/tasks/lists/delta
+GET /users/{id|userPrincipalName}/tasks/lists/delta
 ```
 
 ## Request headers

@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/tasks/lists/{wellKnownTaskListId}
+GET /me/tasks/lists/{wellKnownTaskListId}
+GET /users/{id|userPrincipalName}/tasks/lists/{wellKnownTaskListId}
 ```
 
 ## Optional query parameters
@@ -76,9 +77,9 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.wellKnownTaskList",
-    "displayName": "String",
+    "displayName": "Monthly tasks",
     "id": "748857e3-57e3-7488-e357-8874e3578874",
-    "wellKnownListName": "String"
+    "wellKnownListName": "none"
   }
 }
 ```

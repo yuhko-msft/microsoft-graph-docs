@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /user/tasks/lists
+POST /me/tasks/lists
+POST /users/{id|userPrincipalName}/tasks/lists
 ```
 
 ## Request headers
@@ -46,9 +47,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md)|
-|id|String|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md)|
-|wellKnownListName|wellKnownListName_v2|**TODO: Add Description**. The possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|displayName|String|Field indicating title of the task list.|
 
 
 
@@ -65,14 +64,12 @@ If successful, this method returns a `201 Created` response code and a [wellKnow
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/user/tasks/lists
+POST https://graph.microsoft.com/beta/me/tasks/lists
 Content-Type: application/json
 Content-length: 121
 
 {
-  "@odata.type": "#microsoft.graph.wellKnownTaskList",
-  "displayName": "String",
-  "wellKnownListName": "String"
+  "displayName": "Travel items"
 }
 ```
 
@@ -91,9 +88,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.wellKnownTaskList",
-  "displayName": "String",
+  "displayName": "Travel items",
   "id": "748857e3-57e3-7488-e357-8874e3578874",
-  "wellKnownListName": "String"
+  "wellKnownListName": "none"
 }
 ```
 

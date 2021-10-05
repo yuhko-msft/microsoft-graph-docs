@@ -26,11 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "ignored",
+  "sampleKeys": ["AAMkADIyAAAhrbPWAAA="]
 }
 -->
 ``` http
-PATCH /user/tasks/lists/{wellKnownTaskListId}
+PATCH /me/tasks/lists/{wellKnownTaskListId}
+PATCH /users/{id|userPrincipalName}/tasks/lists/{wellKnownTaskListId}/tasks
 ```
 
 ## Request headers
@@ -46,10 +48,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md)|
-|id|String|**TODO: Add Description** Inherited from [baseTaskList](../resources/basetasklist.md)|
-|wellKnownListName|wellKnownListName_v2|**TODO: Add Description**. The possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
-
+|displayName|String|Field indicating updated title of the task list.|
 
 
 ## Response
@@ -61,18 +60,17 @@ If successful, this method returns a `200 OK` response code and an updated [well
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADIyAAAhrbPWAAA="],
   "name": "update_wellknowntasklist"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/tasks/lists/{wellKnownTaskListId}
+PATCH https://graph.microsoft.com/beta/user/tasks/lists/AAMkADIyAAAhrbPWAAA=
 Content-Type: application/json
 Content-length: 121
 
 {
-  "@odata.type": "#microsoft.graph.wellKnownTaskList",
-  "displayName": "String",
-  "wellKnownListName": "String"
+  "displayName": "Vacation Plan"
 }
 ```
 
@@ -90,9 +88,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.wellKnownTaskList",
-  "displayName": "String",
-  "id": "748857e3-57e3-7488-e357-8874e3578874",
-  "wellKnownListName": "String"
+  "displayName": "Vacation Plan",
+  "id": "AAMkADIyAAAhrbPWAAA=",
+  "wellKnownListName": "none"
 }
 ```
 

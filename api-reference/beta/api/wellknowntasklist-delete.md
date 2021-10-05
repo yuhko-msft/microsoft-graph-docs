@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /user/tasks/lists/{wellKnownTaskListId}
+DELETE /me/tasks/lists/{wellKnownTaskListId}
+DELETE /users/{id|userPrincipalName}/tasks/lists/{wellKnownTaskListId}
 ```
 
 ## Request headers
@@ -50,11 +51,12 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADIyAAAhrbPXAAA="],
   "name": "delete_wellknowntasklist"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/tasks/lists/{wellKnownTaskListId}
+DELETE https://graph.microsoft.com/beta/me/tasks/lists/AAMkADIyAAAhrbPXAAA=
 ```
 
 

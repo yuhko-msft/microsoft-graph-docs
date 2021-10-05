@@ -1,6 +1,6 @@
 ---
 title: "List tasks"
-description: "Get the task resources from the tasks navigation property."
+description: "Get the task resources from the tasks navigation property.of a specified wellKnownTaskList"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/tasks/lists/{wellKnownTaskListId}/tasks
+GET https://graph.microsoft.com/beta/user/tasks/lists/AAMkADIyAAAhrbPWAAA=/tasks
 ```
 
 
@@ -76,30 +76,22 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.task",
-      "body": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "bodyLastModifiedDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "dueDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "startDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
-      },
-      "importance": "String",
-      "recurrence": {
-        "@odata.type": "microsoft.graph.patternedRecurrence"
-      },
-      "displayName": "String",
-      "status": "String",
-      "personalProperties": {
-        "@odata.type": "microsoft.graph.personalTaskProperties"
-      },
-      "id": "f3371abc-1abc-f337-bc1a-37f3bc1a37f3"
+    "@odata.etag": "W/\"NfNMZdkc9UGM8NDmq56BTAABWTaniA==\"",
+    "completedDateTime": "2021-09-01T00:00:00Z",
+    "importance": "high",
+    "status": "completed",
+    "displayName": "Test task",
+    "createdDateTime": "2021-09-01T09:21:36.4465875Z",
+    "lastModifiedDateTime": "2021-09-01T09:22:11.5087579Z",
+    "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0ANfNMZdkc9UGM8NDmq56BTAABXUpnJwAA",
+    "body": {
+        "content": "",
+        "contentType": "text"
+    },
+    "parentList@odata.context": "https://graph.microsoft.com/testprodbetataskmeta/$metadata#users('todoservicetest2412201901%40outlook.com')/tasks/lists('AAMkADIyAAAhrbPWAAA%3D')/tasks('AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0ANfNMZdkc9UGM8NDmq56BTAABXUpnJwAA')/parentList/$entity",
+    "parentList": {
+        "id": "AAMkADIyAAAhrbPWAAA="
+    }
     }
   ]
 }
