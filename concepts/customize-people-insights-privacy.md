@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Customizing people insights privacy in Microsoft Graph  (preview)
 
-People insights feature or Working With allows users to view people most relevant to another user within the same organization. This is explained in the Implementation of the working with feature. People Insight depends on public relationships between the users to generate the list of relevant people.   
+People insights feature or Working With allows users to view people most relevant to another user within the same organization. This is explained in the [Implementation of the working with feature](people-example.md#implementation-of-the-working-with-feature). People Insight depends on public relationships between the users to generate the list of relevant people.   
 
 # Controls Available 
 
@@ -29,7 +29,7 @@ There are two ways to change the default People Insights Control:
 
 Disable People Insights for all users in the organization, by setting the **isEnabledInOrganization** property of the PeopleInsightsSettings resource to false. 
 
-Disable People Insights for a subset of users, by assigning these users in an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about creating a group and adding users as members. 
+Disable People Insights for a subset of users, by assigning these users in an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 Use the update operation to set the **isEnabledInOrganization** and **disabledForGroup** properties accordingly. 
 
