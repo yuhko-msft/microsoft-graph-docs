@@ -384,6 +384,8 @@ items:
         items:
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/userteamwork-list-associatedteams.md
         - name: List member of
           href: api/user-list-memberof.md
         - name: List transitive member of
@@ -620,6 +622,8 @@ items:
           href: api/group-list-endpoints.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/userteamwork-list-associatedteams.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
@@ -13969,6 +13973,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/userteamwork-list-associatedteams.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
         - name: Get team photo
@@ -13994,6 +14000,8 @@ items:
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/userteamwork-list-associatedteams.md
         - name: List members
           href: api/group-list-members.md
         - name: Add member

@@ -1,7 +1,7 @@
 ---
 title: "List associatedTeams"
 description: "Get the teams in Microsoft Teams that the user is associated with."
-author: "nkramer"
+author: "devjha"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/teamwork/associatedTeams
 GET /users/{id | user-principal-name}/teamwork/associatedTeams
 ```
-> **Note**: These APIs return the parent team of the shared channel that the user is a direct member of.
+> **Note**: These APIs also return the parent team of the shared channel that the user is a direct member of.
 
 ## Optional query parameters
 This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
@@ -60,25 +60,25 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_joinedteams"
+  "name": "get_associatedteams"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/joinedTeams
+GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-joinedteams-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-associatedteams--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-joinedteams-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-associatedteams--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-joinedteams-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-associatedteams--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-joinedteams-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-associatedteams--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -90,7 +90,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
+  "@odata.type": "microsoft.graph.associatedTeamInfo",
   "isCollection": true
 } -->
 ```http
@@ -117,7 +117,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List joinedTeams",
+  "description": "List associatedTeams",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
