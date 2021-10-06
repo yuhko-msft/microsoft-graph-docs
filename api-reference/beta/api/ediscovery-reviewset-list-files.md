@@ -95,5 +95,6 @@ Content-Type: application/json
             "processingStatus": "success",
             "otherProperties": {}
         }
+    ]
 }
 ```

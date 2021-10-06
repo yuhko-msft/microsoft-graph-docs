@@ -99,5 +99,6 @@ Content-Type: application/json
             "processingStatus": "fileTypeIsNotSupported",
             "otherProperties": {}
         }
+    ]
 }
 ```
