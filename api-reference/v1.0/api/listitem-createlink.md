@@ -2,7 +2,7 @@
 title: "listItem: createLink"
 description: "Create a link to share a listItem"
 author: "krtsoi"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 |scope|String|The scope of link to create. Either `anonymous`, `organization` or `users`. Optional. |
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
-|recipients|[driveRecipient][] collection|A collection of recipients who will receive access to the sharing link. Optional. |
+|recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
 
 [driveRecipient]: ../resources/driverecipient.md
 
