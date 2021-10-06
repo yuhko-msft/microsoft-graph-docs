@@ -27,6 +27,7 @@ Inherits from [entity](../resources/entity.md).
 | [List queries](../api/ediscovery-reviewsetquery-list.md)|[microsoft.graph.ediscovery.reviewSetQuery](../resources/ediscovery-reviewsetquery.md) collection|Get a list of **reviewSetQuery** resources.|
 | [export](../api/ediscovery-reviewset-export.md) | None | Initiate an export of data from the **reviewset**. |
 | [List files](../api/ediscovery-reviewset-list-files.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md) collection|Get the file resources from the files navigation property.|
+| [Get file](../api/ediscovery-reviewset-get-file.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md)|Get the file resources from the file navigation property.|
 | [addToReviewSet](../api/ediscovery-reviewset-addtoreviewset.md)|None|Add data from a **sourceCollection** to a **reviewset**.|
 
 ## Properties

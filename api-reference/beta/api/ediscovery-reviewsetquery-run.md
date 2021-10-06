@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # reviewSetQuery: run
+
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph.ediscovery
 Execute a review set query.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -29,16 +31,21 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /caseExportOperation/reviewSetQuery/run
 ```
 
+/compliance/ediscovery/cases/{caseId}}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}/run
+
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -53,12 +60,13 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
   "name": "reviewsetquery_run"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/caseExportOperation/reviewSetQuery/run
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c7158891-fb5d-422a-8f78-25f4028e9821/reviewSets/2ef821af-5899-4c56-bb0c-0d8d599a1c0d/queries/f089810f-af8a-4d14-82ec-0f76e4bdb85c/run
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -66,33 +74,30 @@ GET https://graph.microsoft.com/beta/caseExportOperation/reviewSetQuery/run
   "@odata.type": "Collection(microsoft.graph.ediscovery.file)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.ediscovery.file",
-      "id": "String (identifier)",
-      "date": "String (timestamp)",
-      "size": "Integer",
-      "name": "String",
-      "sourceType": "String",
-      "senderAuthor": [
-        "String"
-      ],
-      "subjectTitle": "String",
-      "extension": "String",
-      "mediaType": "String",
-      "processingStatus": "String",
-      "content": "Stream",
-      "extractedTextContent": "String",
-      "otherProperties": {
-        "@odata.type": "microsoft.graph.ediscovery.stringValueDictionary"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(file)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/compliance/ediscovery/cases('c7158891-fb5d-422a-8f78-25f4028e9821')/reviewSets('2ef821af-5899-4c56-bb0c-0d8d599a1c0d')/queries('f089810f-af8a-4d14-82ec-0f76e4bdb85c')/run?$skiptoken=1",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ediscovery.file",
+            "id": "00007841052b867f11d08d27b7791e2d7120085aff200b5e5f7b9e79dd677a46",
+            "date": "2021-02-19T19:57:04Z",
+            "size": 81029,
+            "name": "item.content",
+            "sourceType": "mailbox",
+            "senderAuthor": [
+                "Adele Vance <adelev@contoso.com>"
+            ],
+            "subjectTitle": "item.content",
+            "extension": "content",
+            "mediaType": "application/octet-stream",
+            "processingStatus": "fileTypeIsNotSupported",
+            "otherProperties": {}
+        }
 }
 ```
-

@@ -26,8 +26,8 @@ Ojbect that contains metadata for electronically stored information
 |:---|:---|:---|
 |content|Stream                                     | The content stream of the original file.|
 |date|DateTimeOffset                                | See `date` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
-|extension|String                                   |See `InputFileExtension` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
-|extractedTextContent|String                        |See `Content` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|extension|String                                   | See `InputFileExtension` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
+|extractedTextContent|Stream                        | See `Content` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
 |id|String                                          | File unique identifier. |
 |mediaType|String                                   | See `Extracted content type` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)|
 |name|String                                        | File name or subject in case of email. |
@@ -62,9 +62,11 @@ Ojbect that contains metadata for electronically stored information
 | ocrFileSizeExceedsLimit       | File size is not in limits for ocr processing                         |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -73,6 +75,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.ediscovery.file",
@@ -89,10 +92,9 @@ The following is a JSON representation of the resource.
   "mediaType": "String",
   "processingStatus": "String",
   "content": "Stream",
-  "extractedTextContent": "String",
+  "extractedTextContent": "Stream",
   "otherProperties": {
     "@odata.type": "microsoft.graph.ediscovery.stringValueDictionary"
   }
 }
 ```
-
