@@ -402,8 +402,8 @@ items:
             href: api/insights-list-used.md
         - name: Organization control (preview)
           items:
-          - name: Item insights settings
-            href: resources/iteminsightssettings.md
+          - name: Insights settings
+            href: resources/insightssettings.md
           - name: Get
             href: api/iteminsightssettings-get.md
           - name: Update
@@ -12961,8 +12961,8 @@ items:
               href: api/insights-list-used.md
           - name: Organization control (preview)
             items:
-            - name: Item insights settings
-              href: resources/iteminsightssettings.md
+            - name: Insights settings
+              href: resources/insightssettings.md
             - name: Get
               href: api/iteminsightssettings-get.md
             - name: Update
