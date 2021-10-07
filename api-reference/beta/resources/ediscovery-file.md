@@ -93,8 +93,6 @@ The following is a JSON representation of the resource.
   "extension": "String",
   "mediaType": "String",
   "processingStatus": "String",
-  "content": "Stream",
-  "extractedTextContent": "Stream",
   "otherProperties": {
     "@odata.type": "microsoft.graph.ediscovery.stringValueDictionary"
   }

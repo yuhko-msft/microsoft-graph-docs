@@ -96,6 +96,14 @@ Content-Type: application/json
     "extension": "content",
     "mediaType": "application/vnd.ms-outlook",
     "processingStatus": "success",
-    "otherProperties": {}
+    "otherProperties":
+    {
+        "Source": "adelev@contoso.com",
+        "Received": "2021-07-30T04:47:08Z",
+        "Sent": "2021-07-30T04:47:08Z",
+        "MessageType": "microsoftteams , im",
+        "EmailHasAttachment": true,
+        "EmailImportance": "Normal"
+    }
 }
 ```
