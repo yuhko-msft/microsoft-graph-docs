@@ -1,13 +1,13 @@
 ---
 title: "associatedTeamInfo resource type"
 description: "A associatedTeamInfo represents a team that is associated with a user."
-author: "AkJo"
+author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# team resource type
+# associatedTeamInfo resource type
 
 Namespace: microsoft.graph
 
@@ -19,11 +19,6 @@ Today, there are two types of association a user could have with a team:
   2. User can be a member of [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 
 
-## Methods
-
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-
 ## Properties
 
 | Property | Type | Description |
@@ -31,10 +26,6 @@ Today, there are two types of association a user could have with a team:
 |displayName|string| The name of the team. |
 |tenantId |string | The ID of the Azure Active Directory tenant. |
 
-## Relationships
-
-| Relationship | Type | Description |
-|:---------------|:--------|:----------|
 
 ## JSON representation
 

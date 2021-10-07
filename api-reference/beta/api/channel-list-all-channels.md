@@ -70,7 +70,7 @@ The following example shows a request to list all channels.
   "name": "list_channels"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels
+GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/allChannels
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-channels-csharp-snippets.md)]
@@ -144,7 +144,7 @@ The following example shows a request to list all shared channels.
   "name": "list_shared_channels"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'shared'
+GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/allChannels?$filter=membershipType eq 'shared'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-shared-channels-csharp-snippets.md)]
