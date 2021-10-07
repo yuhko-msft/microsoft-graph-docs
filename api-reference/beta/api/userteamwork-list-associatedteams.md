@@ -1,7 +1,7 @@
 ---
 title: "List associatedTeams"
 description: "Get the teams in Microsoft Teams that the user is associated with."
-author: "devjha"
+author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -66,19 +66,19 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-associatedteams--csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-associatedteams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-associatedteams--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-associatedteams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-associatedteams--objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-associatedteams-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-associatedteams--java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-associatedteams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -113,7 +113,7 @@ Content-type: application/json
 - [Get team](../api/team-get.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+2021-10-06 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",

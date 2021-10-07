@@ -1,7 +1,7 @@
 ---
 title: "List all channels"
 description: "Retrieve the list of channels either in this team or shared with this team."
-author: "akjo"
+author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -53,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body. Response will include `@odata.id` property which can be used to access the channel and do other operation on [Channel](../resources/channel.md) object.
 
 ## Examples
 
@@ -73,19 +73,19 @@ The following example shows a request to list all channels.
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-all-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-all-channels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-all-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-all-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -131,56 +131,37 @@ Content-length: 262
 }
 ```
 
-### Example 2: List all private channels
-
-#### Request
-
-The following example shows a request to list all private channels.
-
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_private_channels"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'private'
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-private-channels-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-private-channels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### Example 2: List all shared channels
 
 #### Request
 
 The following example shows a request to list all shared channels.
-> **Note:** Shared channels are only available in private preview.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_shared_channels"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels?$filter=membershipType eq 'shared'
+GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'shared'
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-all-shared-channels-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-all-shared-channels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-all-shared-channels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-all-shared-channels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
 
 
 
@@ -206,7 +187,7 @@ Content-length: 262
     "@odata.count": 1,
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-4627-96c6-25b18fa2c910/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2",
+            "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-4627-96c6-25b18fa2c910/teams/6a720ba5-f4bg-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2",
             "id": "19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2",
             "createdDateTime": null,
             "displayName": "shared channel-01",
@@ -221,7 +202,7 @@ Content-length: 262
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2021-10-04 14:57:30 UTC -->
+2021-10-05 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
