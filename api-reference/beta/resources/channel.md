@@ -48,7 +48,9 @@ where files are shared, and where tabs are added.
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
 |[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision an email address for the channel.|
 |[Remove channel email address](../api/channel-removeemail.md) | None | Remove the email address of the channel.|
-|[List teams shared with channel](../api/channel-list-shared-with-teams.md) | [sharedWithChannelTeamInfo](sharedWithChannelTeamInfo.md) collection| Get list of teams the channel is shared with.|
+|[List teams shared with channel](../api/channel-list-shared-with-teams.md) | [sharedWithChannelTeamInfo](sharedWithChannelTeamInfo.md) collection| Get the list of teams the channel is shared with.|
+|[Get team shared with channel](../api/channel-get-shared-with-team.md) | [sharedWithChannelTeamInfo](sharedWithChannelTeamInfo.md) collection| Get a team the channel is shared with.|
+|[List members of team shared with channel](../api/sharedwithchannelteaminfo-list-allowed-members) | [conversationMember](conversationMember.md) collection| Get the list members of a team the channel is shared with.|
 
 ## Properties
 

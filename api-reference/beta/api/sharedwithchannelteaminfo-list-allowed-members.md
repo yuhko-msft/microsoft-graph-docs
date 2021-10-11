@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of allowed [conversationMembers](../resources/conversationmember.md) from a [sharedWithChannelTeamInfo](../resources/sharedWithChannelTeamInfo.md).
+Retrieve a list of [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md) who can access the [channel](../resources/channel.md).
+This does not include below [conversationMembers](../resources/conversationmember.md) from [team](../resources/team.md):
+- Where roles is `Guest`
+- Who is an externally authenticated user in the tenant.
 
 > [!NOTE]
 > The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
@@ -40,7 +43,7 @@ GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-team-id}
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation supports `$select` and `$count` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 

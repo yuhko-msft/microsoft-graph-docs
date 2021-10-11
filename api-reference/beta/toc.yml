@@ -14076,7 +14076,7 @@ items:
         - name: List teams shared with channel
           href: api/channel-list-shared-with-teams.md
         - name: List members of team shared with channel
-          href: api/channel-list-allowed-team-member.md
+          href: api/sharedwithchannelteaminfo-list-allowed-members
         - name: Provision email address
           href: api/channel-provisionemail.md
         - name: Remove email address

@@ -28,7 +28,7 @@ A sharedWithChannelTeamInfo represents a [team](team.md) that is shared with a c
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |displayName|string| The name of the team. |
-|isHostTeam|Boolean|Whether the [team](team.md) is the host of the [channel](channnel.md).|
+|isHostTeam|Boolean|Whether the [team](team.md) is the host of the [channel](channel.md).|
 |tenantId |string | The ID of the Azure Active Directory tenant. |
 
 ## Relationships

@@ -1,7 +1,7 @@
 ---
 title: "Get team shared with channel"
 description: "Retrieve the teams shared with channel."
-author: "akjo"
+author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [team](../resources/sharedWithChannelTeamInfo.md) shared with this [channel](../resources/channel.md).
+Get a [sharedWithChannelTeamInfo](../resources/sharedWithChannelTeamInfo.md) shared with this [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [S
 
 ## Examples
 
-### Example 1: List a team the channel is shared with
+### Example 1: Get a team the channel is shared with
 
 #### Request
 
@@ -64,25 +64,25 @@ The following example shows a request to list all teams shared with the channel.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_channels"
+  "name": "get_sharedWithTeam"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/sharedWithTeams/893075dd-2487-5634-925f-022c42e20265
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-get-shared-with-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-get-shared-with-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-get-shared-with-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/channel-get-shared-with-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
