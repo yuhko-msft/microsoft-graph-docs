@@ -41,8 +41,6 @@ A sharedWithChannelTeamInfo represents a [team](team.md) that is shared with a c
 
 The following is a JSON representation of the resource.
 
->**Note:** If the team is of type class, a **classSettings** property is applied on the team.
-
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

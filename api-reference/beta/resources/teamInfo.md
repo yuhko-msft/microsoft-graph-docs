@@ -1,22 +1,19 @@
 ---
-title: "associatedTeamInfo resource type"
-description: "A associatedTeamInfo represents a team that is associated with a user."
+title: "teamInfo resource type"
+description: "A teamInfo represents a team with fewer properties."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# associatedTeamInfo resource type
+# teamInfo resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A associatedTeamInfo represents a [team](team.md) that is associated with a user. 
-Today, there are two types of association a user could have with a team:
-  1. User can be a direct member of a [team](../resources/team.md).
-  2. User can be a member of [shared channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
+A teamInfo represents a [team](team.md) with basic information.
 
 
 ## Properties
@@ -34,14 +31,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.associatedTeamInfo",
-  "baseType": "microsoft.graph.teamInfo",
+  "@odata.type": "microsoft.graph.teamInfo",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.associatedTeamInfo",
+  "@odata.type": "#microsoft.graph.teamInfo",
   "id": "string (identifier)",
   "displayName": "string",
   "tenantId": "string"
@@ -49,14 +45,14 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-- [List associated teams](../api/userteamwork-list-associatedteams.md)
-- [Get team](../api/team-get.md)
+- [associatedTeamInfo](associatedTeamInfo.md)
+- [sharedWithChannelTeamInfo](sharedWithChannelTeamInfo.md)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2021-10-04 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "associatedTeamInfo resource",
+  "description": "teamInfo resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
