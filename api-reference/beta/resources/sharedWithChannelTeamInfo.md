@@ -1,13 +1,13 @@
 ---
 title: "sharedWithChannelTeamInfo resource type"
 description: "A sharedWithChannelTeam represents a team that is shared with a channel."
-author: "AkJo"
+author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# team resource type
+# sharedWithChannelTeamInfo resource type
 
 Namespace: microsoft.graph
 
@@ -20,8 +20,8 @@ A sharedWithChannelTeamInfo represents a [team](team.md) that is shared with a c
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List allowed members](../api/sharedWithChannelTeam-list-allowedmembers.md)|[conversationMember](conversationmember.md) collection|Get the list of members in the team that has access to the channel this [team](team.md) is shared with.|
-|[Unshare channel from team](../api/channel-unshare-from-team.md) | None | Unshare a channel from team.|
+|[List allowed members](../api/sharedwithchannelteaminfo-list-allowed-members.md)|[conversationMember](conversationmember.md) collection|Get the list of members in the team that has access to the channel this [team](team.md) is shared with.|
+|[Unshare channel from team](../api/sharedwithchannelteaminfo-unshare-from-team.md) | None | Unshare a channel from team.|
 
 ## Properties
 

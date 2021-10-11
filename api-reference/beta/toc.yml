@@ -542,7 +542,7 @@ items:
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: List associated teams for user
-          href: api/userteamwork-list-associatedteams
+          href: api/userteamwork-list-associatedteams.md
         - name: Add app for user
           href: api/userteamwork-post-installedapps.md
         - name: Get installed app for user

@@ -21,8 +21,8 @@ where files are shared, and where tabs are added.
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List channels](../api/channel-list.md) | [channel](channel.md) collection | Get the list of channels in this team.|
-|[List incoming channels](../api/channel-list-incomingChannels.md)|[channel](channel.md) collection|List of channels shared with the team.|
-|[List all channels](../api/channel-list-allChannels.md)|[channel](channel.md) collection|List of channels either hosted in or shared with the team.|
+|[List incoming channels](../api/channel-list-incoming-channels.md)|[channel](channel.md) collection|List of channels shared with the team.|
+|[List all channels](../api/channel-list-all-channels.md)|[channel](channel.md) collection|List of channels either hosted in or shared with the team.|
 |[Create channel](../api/channel-post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
@@ -48,7 +48,7 @@ where files are shared, and where tabs are added.
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
 |[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision an email address for the channel.|
 |[Remove channel email address](../api/channel-removeemail.md) | None | Remove the email address of the channel.|
-|[List teams shared with channel](../api/channel-list-sharedWithTeams.md) | [sharedWithTeam](sharedWithChannelTeamInfo.md) collection| Get list of teams the channel is shared with.|
+|[List teams shared with channel](../api/channel-list-shared-with-teams.md) | [sharedWithChannelTeamInfo](sharedWithChannelTeamInfo.md) collection| Get list of teams the channel is shared with.|
 
 ## Properties
 
