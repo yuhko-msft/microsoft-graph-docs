@@ -31,11 +31,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{team-id}/allChannels
+GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-team-id}
 ```
 
 ## Optional query parameters
-This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method does not support [OData query parameters](/graph/query-parameters) to help customize the response.
 
 
 ## Request headers
@@ -98,7 +98,7 @@ The following is the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.channel",
-  "isCollection": true
+  "isCollection": false
 } -->
 ```http
 HTTP/1.1 200 OK
