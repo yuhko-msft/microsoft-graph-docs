@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unshared [team](../resources/sharedWithChannelTeamInfo.md) from this [channel](../resources/channel.md).
+Unshared a [sharedWithChannelTeamInfo](../resources/sharedWithChannelTeamInfo.md) from this [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## Permissions
 
@@ -51,35 +51,32 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Examples
 
-### Example 1: Unshare team from channel in same tenant as user/admin
+### Example 1: Unshare a team from channel - request by host team admin/user
 
 #### Request
-
-The following example shows a request to list all teams shared with the channel.
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_channels"
-}-->
-```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/sharedWithTeams/893075dd-2487-4122-925f-022c42e20265
+  "name": "sharedwithchannelteaminf_unshare-team-from-channel"
+} -->
+```http
+DELETE https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/sharedWithTeams/ece6f0a1-5g39-498b-be79-edf6c8fc4d82
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-sharedwithchannelteaminfo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-sharedwithchannelteaminfo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-sharedwithchannelteaminfo-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-sharedwithchannelteaminfo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -87,49 +84,39 @@ DELETE https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e202
 
 #### Response
 
-The following is the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel",
-  "isCollection": true
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
-
-### Example 2: Unshare team from channel in different tenant as user/admin
+### Example 2: Unshare a team from a channel / Delete incoming channel - request by invitee team admin/user
 
 #### Request
-
-The following example shows a request to list all teams shared with the channel.
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_channels"
-}-->
-```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/incomingChannels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/$ref
+  "name": "sharedwithchannelteaminf_delete-incoming-channel"
+} -->
+```http
+DELETE https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/incomingChannels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/$ref
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-incoming-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-incoming-channels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-incoming-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-incoming-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -137,27 +124,26 @@ DELETE https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e202
 
 #### Response
 
-The following is the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel",
-  "isCollection": true
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
+
+## See also
+
+- [Remove member from channel](channel-delete-members.md)
+- [Remove member from team](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2021-10-04 14:57:30 UTC -->
+2021-10-11 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "List teams shared with channel",
+  "description": "Channel_Unshare_Team",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -165,5 +151,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

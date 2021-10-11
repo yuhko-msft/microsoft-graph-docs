@@ -27,7 +27,6 @@ where files are shared, and where tabs are added.
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
-|[Unshare channel from team](../api/channel-unshare-from-team.md) | None | Unshare a channel from team.|
 |[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
@@ -50,7 +49,8 @@ where files are shared, and where tabs are added.
 |[Remove channel email address](../api/channel-removeemail.md) | None | Remove the email address of the channel.|
 |[List teams shared with channel](../api/channel-list-shared-with-teams.md) | [sharedWithChannelTeamInfo](sharedWithChannelTeamInfo.md) collection| Get the list of teams the channel is shared with.|
 |[Get team shared with channel](../api/channel-get-shared-with-team.md) | [sharedWithChannelTeamInfo](sharedWithChannelTeamInfo.md) collection| Get a team the channel is shared with.|
-|[List members of team shared with channel](../api/sharedwithchannelteaminfo-list-allowed-members) | [conversationMember](conversationMember.md) collection| Get the list members of a team the channel is shared with.|
+|[Unshare channel from team](../api/channel-unshare-team.md) | None | Unshare a channel from team.|
+|[List members of team shared with channel](../api/sharedwithchannelteaminfo-list-allowed-members.md) | [conversationMember](conversationMember.md) collection| Get the list members of a team the channel is shared with.|
 
 ## Properties
 

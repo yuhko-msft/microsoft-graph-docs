@@ -21,7 +21,7 @@ A sharedWithChannelTeamInfo represents a [team](team.md) that is shared with a c
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List allowed members](../api/sharedwithchannelteaminfo-list-allowed-members.md)|[conversationMember](conversationmember.md) collection|Get the list of members in the team that has access to the channel this [team](team.md) is shared with.|
-|[Unshare channel from team](../api/sharedwithchannelteaminfo-unshare-from-team.md) | None | Unshare a channel from team.|
+|[Unshare team from channel](../api/channel-unshare-team.md) | None | Unshare a team from channel.|
 
 ## Properties
 
