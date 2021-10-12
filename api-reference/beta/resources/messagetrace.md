@@ -14,9 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents basic information about a message.
+Represents basic information about an email message in Exchange Online.
 
-Inherits from [entity](../resources/entity.md).
+Message trace in Microsoft 365 allows administrators to monitor email messages as they flow through their Exchange Online organization. It provides the administrator information to determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
+
+The information from message trace can be used to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
+
+Administrators can use various search criteria to search for messages in the past 10 days. The search result contains one or more [messageTrace](../resources/messagetrace.md) objects, each of which include basic information about a message such as:
+- Message ID
+- Sender
+- Recipients
+- Subject
+- Message received datetime
+
+With a message ID and a recipient, you can use the API to obtain details of all the events associated with the delivery of the message.
 
 ## Methods
 |Method|Return type|Description|

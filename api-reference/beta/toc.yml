@@ -12496,8 +12496,12 @@ items:
           href: api/mailfolder-list-messages.md
         - name: List child folders
           href: api/mailfolder-list-childfolders.md
-      - name: Message trace
-        href: api/messagetrace-get.md
+      - name: Message trace (preview)
+        items:
+          - name: Message trace
+            href: resources/messagetrace.md
+          - name: Get
+            href: api/messagetrace-get.md
       - name: Rules
         href: resources/messagerule.md
         items:
@@ -13585,8 +13589,12 @@ items:
             href: api/informationprotection-post-threatassessmentrequests.md
           - name: Get
             href: api/threatassessmentrequest-get.md
-      - name: Message trace
-        href: api/messagetrace-get.md
+      - name: Message trace (preview)
+        items:
+          - name: Message trace
+            href: resources/messagetrace.md
+          - name: Get
+            href: api/messagetrace-get.md
       - name: Secure scores
         href: resources/securescores.md
         items:

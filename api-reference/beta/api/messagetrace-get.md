@@ -13,18 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Message trace in Microsoft 365 allows administrators to monitor email messages as they flow through their Exchange Online organization. It provides the administrator information to determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
-
-The information from message trace can be used to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
-
-Administrators can use various search criteria to search for messages in the past 10 days. The search result contains one or more [messageTrace](../resources/messagetrace.md) objects, each of which include basic information about a message such as:
-- Message ID
-- Sender
-- Recipients
-- Subject
-- Message received datetime
-
-With a message ID and a recipient, you can use the API to obtain details of all the events associated with the delivery of the message.
+Get details from tracing the status of one or more email messages that go through Exchange Online in a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,10 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|MessageTrace.Read.All|
 
->**Note:** To access message trace information, you need to be member of one of the following role groups:
->- Global administrator
->- Security admin
->- Security reader
+To call this API, the Azure AD tenant administrator must explicitly grant consent to your application, for user-delegated or application-level authorization.
+If you're using user-delegated authorization, the tenant administrator must have assigned the user to be a member of one of the following role groups:
+
+- Global administrator
+- Security admin
+- Security reader
 
 ## HTTP request
 
@@ -75,7 +66,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [messageTrace](../resources/messagetrace.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [messageTrace](../resources/messagetrace.md) objects in the response body.
 
 
 ## Examples
