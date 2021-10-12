@@ -9,8 +9,6 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Graph eDiscovery API
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The Microsoft Graph APIs for eDiscovery provide functionality for organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that might be required based on industry regulations. You can use the eDiscovery APIs to help with your legal needs.
 
 > [!IMPORTANT]
