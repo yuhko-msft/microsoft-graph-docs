@@ -52,9 +52,9 @@ This method supports some of the OData query parameters to help customize the re
 | $skipToken | Specify the continuation token. |
 
 ### Paging
-Note that paging is consistent only when a start time and end time is specified or a specific condition is used such as query by a message ID. Without a bounded query, pages may return data that may look inconsistent since the data is changing.
+Note that paging is consistent only when a start time and end time is specified or a specific condition is used such as query by **messageId**. Without a bounded query, pages may return data that may look inconsistent since the data normally changes as messages go through the server.
 
-Records for a page are counted by recipients, so if the page size is 10 and the first message has 15 recipients, only one message is returned in the first page.
+Records on a page are enumerated per recipient in the **recipients** navigation property. So as an example, if the page size is 10 and the first message has 15 recipients, the first page displays the **messageTrace** data for only the first message.
 
 ## Request headers
 |Name|Description|

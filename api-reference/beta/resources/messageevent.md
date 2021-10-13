@@ -26,7 +26,7 @@ None.
 |:---|:---|:---|
 |id|String|Random ID for this event. Not a unique key.|
 |dateTime|DateTimeOffset|Time of the event in UTC.|
-|eventType|messageEventType|Event type. Possible values are: `received`, `sent`, `delivered`, `failed`, `processingFailed`, `distributionGroupExpanded`, `submitted`, `delayed`, `redirected`, `resolved`, `dropped`, `recipientsAdded`, `malwareDetected`, `malwareDetectedInMessage`, `malwareDetectedInAttachment`, `ttZapped`, `ttDelivered`, `spamDetected`, `transportRuleTriggered`, `dlpRuleTriggered`, `journaled`.|
+|eventType|messageEventType|Event type. Possible values are: `received`, `sent`, `delivered`, `failed`, `processingFailed`, `distributionGroupExpanded`, `submitted`, `delayed`, `redirected`, `resolved`, `dropped`, `recipientsAdded`, `malwareDetected`, `malwareDetectedInMessage`, `malwareDetectedInAttachment`, `ttZapped`, `ttDelivered`, `spamDetected`, `transportRuleTriggered`, `dlpRuleTriggered`, `journaled`, `unknownFutureValue`.|
 |description|String|Detailed information on the event.|
 
 ### messageEventType values
@@ -54,6 +54,7 @@ None.
 | transportRuleTriggered | A transport rule event occurred. |
 | dlpRuleTriggered | A Data Loss Prevention (DLP) policy rule triggered. |
 | journaled | This event indicates the message was journaled via a journaling rule. Message journaling creates a copy and sends it to an alternate mailbox. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 None.

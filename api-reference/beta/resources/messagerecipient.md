@@ -26,7 +26,7 @@ None.
 |:---|:---|:---|
 |id|String|Random ID for this recipient. Not a unique key.|
 |recipientEmail|String|Recipient email address.|
-|deliveryStatus|messageStatus|Message delivery status. Possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`.|
+|deliveryStatus|messageStatus|Message delivery status. Possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`, `unknownFutureValue`.|
 |events|[messageEvent](../resources/messageevent.md) collection|Details of events during delivery of a mail message to a recipient.|
 
 ### messageStatus values
@@ -40,6 +40,7 @@ None.
 | expanded | There was no message delivery because the message was addressed to a distribution group and the membership of the distribution was expanded. |
 | quarantined | The message was quarantined. |
 | filteredAsSpam | The message was marked as spam. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 None.
