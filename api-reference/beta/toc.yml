@@ -509,6 +509,18 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
+        - name: People insights setting (preview)
+          items:
+          - name: People insights (preview)
+          - href: href: resources/peopleinsights.md
+          - name: People Insights - Organization control (preview)
+            items:
+            - name: People insights settings
+              href: resources/peopleinsightssettings.md
+            - name: Get
+              href: api/peopleinsightssettings-get.md
+            - name: Update
+              href: api/peopleinsightssettings-update.md
       - name: Photo
         href: resources/profilephoto.md
         items:
