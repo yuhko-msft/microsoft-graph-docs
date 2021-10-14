@@ -17,7 +17,7 @@ List properties and relationships of the [cloudPC](../resources/cloudpc.md) obje
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [permissions-standard-boilerplate](../../includes/permissions-standard-boilerplate.md)]
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
