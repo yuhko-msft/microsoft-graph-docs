@@ -12520,7 +12520,7 @@ items:
         items:
           - name: Message trace
             href: resources/messagetrace.md
-          - name: Get
+          - name: List
             href: api/exchangeadmin-list-messagetraces.md
       - name: Rules
         href: resources/messagerule.md
@@ -13613,7 +13613,7 @@ items:
         items:
           - name: Message trace
             href: resources/messagetrace.md
-          - name: Get
+          - name: List
             href: api/exchangeadmin-list-messagetraces.md
       - name: Secure scores
         href: resources/securescores.md
