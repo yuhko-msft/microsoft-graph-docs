@@ -9,6 +9,6 @@ ms.localizationpriority: medium
 
 - Choose one of the following permissions that is the [least privileged required](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) by your app.
 
-- In general, admin-consented [delegated or application permissions](/graph/auth/auth-concepts#delegated-and-application-permissions) grant data access for all users. User-consented delegated permissions limit data access to within that user's privileges. 
+- A delegated permission limits data access to within the signed-in user's privileges. An application permission provides the exact privileges it implies.
 
-- For more information, look up the permission in the [permissions reference](/graph/permissions-reference).
+- Learn more about [delegated and application permissions](/graph/auth/auth-concepts#delegated-and-application-permissions), and look up a permission in the [permissions reference](/graph/permissions-reference).
