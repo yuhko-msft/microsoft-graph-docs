@@ -393,7 +393,7 @@ items:
         - name: People insights setting (preview)
           items:
           - name: People insights (preview)
-          - href: href: resources/peopleinsights.md
+          - href: href: resources/peopleinsight.md
           - name: People Insights - Organization control (preview)
             items:
             - name: People insights settings
@@ -12967,7 +12967,7 @@ items:
         - name: People insights setting (preview)
           items:
           - name: People insights (preview)
-          - href: href: resources/peopleinsights.md
+          - href: href: resources/peopleinsight.md
           - name: People Insights - Organization control (preview)
             items:
             - name: People insights settings
