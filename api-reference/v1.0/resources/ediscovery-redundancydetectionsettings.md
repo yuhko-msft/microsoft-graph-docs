@@ -18,9 +18,9 @@ Redundancy (email threading and near duplicate detection) settings for an eDisco
 |Property|Type|Description|
 |:---|:---|:---|
 |isEnabled|Boolean|Indicates whether email threading and near duplicate detection are enabled.|
-|maxWords|Int32|See [Minimum/maximum number of words](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
-|minWords|Int32|See [Minimum/maximum number of words](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
-|similarityThreshold|Int32|See [Document and email similarity threshold](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
+|maxWords|Int32|See [Minimum/maximum number of words](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
+|minWords|Int32|See [Minimum/maximum number of words](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
+|similarityThreshold|Int32|See [Document and email similarity threshold](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) to learn more.|
 
 ## Relationships
 
