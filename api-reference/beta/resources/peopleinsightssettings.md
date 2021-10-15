@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents privacy settings for [peopleInsights](peopleinsights.md) also known as Working-With. Use this API to disable/enable generation and visibility of people insights. 
+Represents privacy settings for [peopleInsights](peopleinsight.md) also known as Working-With. Use this API to disable/enable generation and visibility of people insights. 
 - People insights: Calculates the relationship between users based on public relationships to create a list of people most relevant to a user.
 
 ## Methods
