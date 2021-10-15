@@ -32,7 +32,7 @@ With a message ID and a recipient, you can use the API to obtain details of all 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get messageTraces](../api/messagetrace-get.md)|[messageTrace](../resources/messagetrace.md) collection|Get a list of the [messageTrace](../resources/messagetrace.md) objects and their properties.|
+|[List messageTraces](../api/exchangeadmin-list-messagetraces.md)|[messageTrace](../resources/messagetrace.md) collection|Get a collection of [messageTrace](../resources/messagetrace.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
