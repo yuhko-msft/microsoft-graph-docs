@@ -18,7 +18,7 @@ Contains information about the origin of the [plannerTask](plannerTask.md). This
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|plannerExternalContext|[plannerTaskContext](../resources/plannertaskcontext.md)|Information about external contexts associated with this task. `null` value indicates that the task has no external context associated with it.|
+|plannerExternalSource|[plannerExternalSource](../resources/plannerexternalsource.md)|Information about external contexts associated with this task. `null` value indicates that the task has no external context associated with it.|
 |teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|Information about the publication process that created this task. `null` value indicates that the task was not created by a publication process.|
 
 ## Relationships
@@ -37,8 +37,8 @@ The following is a JSON representation of the resource.
   "teamsPublicationInfo": {
     "@odata.type": "microsoft.graph.plannerTeamsPublicationInfo"
   },
-  "plannerExternalContext": {
-    "@odata.type": "microsoft.graph.plannerTaskContext"
+  "plannerExternalSource": {
+    "@odata.type": "microsoft.graph.plannerExternalSource"
   }
 }
 ```
