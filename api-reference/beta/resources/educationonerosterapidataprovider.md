@@ -56,11 +56,6 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "providerName": "String",
   "schoolsIds": ["String"],
   "termIds": ["String"],
-  "connectionSettings": {
-    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
-    "clientId": "String",
-    "clientSecret": "String"
-  },
   "customizations": {
     "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
   }
