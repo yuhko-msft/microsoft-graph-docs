@@ -503,14 +503,14 @@ items:
           items:
           - name: People insights (preview)
           - href: href: resources/peopleinsights.md
-          - name: People Insights - Organization control (preview)
+          - name: Organization control (preview)
             items:
-            - name: People insights settings
-              href: resources/peopleinsightssettings.md
+            - name: Insights settings
+              href: resources/insightssettings.md
             - name: Get
-              href: api/peopleinsightssettings-get.md
+              href: api/insightssettings-get.md
             - name: Update
-              href: api/peopleinsightssettings-update.md
+              href: api/insightssettings-update.md
       - name: Photo
         href: resources/profilephoto.md
         items:
