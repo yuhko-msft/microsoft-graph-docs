@@ -34,6 +34,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.admin"
+  "@odata.type": "#microsoft.graph.exchangeAdmin"
 }
 ```
