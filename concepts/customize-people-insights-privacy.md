@@ -27,7 +27,7 @@ This release enables tenant admins to customize the control using REST APIs. The
 
 There are two ways to change the default People Insights Control: 
 
-Disable People Insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [PeopleInsightsSettings](/graph/api/resources/peopleinsightssettings?view=graph-rest-beta&preserve-view=true) resource to false. 
+Disable People Insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [InsightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource to false. 
 
 Disable People Insights for a subset of users, by assigning these users in an Azure AD group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
