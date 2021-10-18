@@ -25,7 +25,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 | providerName       | String                                       | The OneRoster Service Provider name as defined by the [OneRoster specification][oneroster].           |
 | schoolsIds         | String collection                            | The list of [School/Org][orgs] `sourcedId` to sync.                                                   |
 | termIds            | String collection                            | The list of [academic sessions][terms] to sync.                                                       |
-| connectionSettings | [educationSynchronizationConnectionSettings] | The [OAuth 1.0][onerosteroauth1] or [OAuth 2.0][onerosteroauth2] settings for the OneRoster instance. |
+| connectionSettings | educationSynchronizationConnectionSettings | The [OAuth 1.0][onerosteroauth1] or [OAuth 2.0][onerosteroauth2] settings for the OneRoster instance. |
 | customizations     | [educationSynchronizationCustomizations]    | Optional customization to be applied to the synchronization profile.                                  |
 
 > [!IMPORTANT]
