@@ -116,7 +116,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6256
+Content-length: 6135
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -245,7 +245,6 @@ Content-length: 6256
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
-    "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -253,9 +252,6 @@ Content-length: 6256
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
-    ],
-    "preferredKDCs": [
-      "Preferred KDCs value"
     ],
     "tlsForLDAPRequired": true
   },
@@ -312,7 +308,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+<<<<<<< HEAD
 Content-Length: 6428
+=======
+Content-Length: 6307
+>>>>>>> 4eb1b9a078a0c44c088187d156c23cb8cb547760
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -444,7 +444,10 @@ Content-Length: 6428
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
+<<<<<<< HEAD
     "usernameLabelCustom": "Username Label Custom value",
+=======
+>>>>>>> 4eb1b9a078a0c44c088187d156c23cb8cb547760
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -453,9 +456,12 @@ Content-Length: 6428
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
     ],
+<<<<<<< HEAD
     "preferredKDCs": [
       "Preferred KDCs value"
     ],
+=======
+>>>>>>> 4eb1b9a078a0c44c088187d156c23cb8cb547760
     "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,

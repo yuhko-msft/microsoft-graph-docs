@@ -22,9 +22,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
+<<<<<<< HEAD
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementManagedDevices.Read.All|
+=======
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+>>>>>>> 4eb1b9a078a0c44c088187d156c23cb8cb547760
 
 ## HTTP Request
 <!-- {

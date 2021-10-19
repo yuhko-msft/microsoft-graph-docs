@@ -210,7 +210,11 @@ Permissions sent by the [invite][] or [grant][] API can have additional informat
 
 After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:
 
+<<<<<<< HEAD
 <!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
+=======
+<!-- {"blockType": "example", truncated: true,"@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
+>>>>>>> 4eb1b9a078a0c44c088187d156c23cb8cb547760
 
 ```json
 {
