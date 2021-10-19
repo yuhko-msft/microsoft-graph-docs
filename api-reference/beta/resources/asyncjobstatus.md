@@ -2,34 +2,23 @@
 author: JeremyKelley
 description: "This resource provides information on the status of a asynchronous job progress."
 ms.date: 09/10/2017
-title: AsyncJobStatus
+title: asyncJobStatus
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---
 
-# AsyncJobStatus resource
+# asyncJobStatus resource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource provides information on the status of a asynchronous job progress.
+Provides information on the status of a asynchronous job progress.
 
-The following API calls return **AsyncJobStatus** resources:
+The following API calls return **asyncJobStatus** resources:
 
-* [Copy Item](../api/driveitem-copy.md)
-
-## JSON representation
-
-<!-- { "blockType": "resource", "@type": "microsoft.graph.asyncJobStatus", "@type.aka": "oneDrive.asyncOperationStatus" } -->
-
-```json
-{
-  "percentageComplete": 100.0,
-  "status": "notStarted | inProgress | completed | failed | cancelled | waiting | cancelPending"
-}
-```
+* [driveItem: copy](../api/driveitem-copy.md)
 
 ## Properties
 
@@ -38,9 +27,9 @@ The following API calls return **AsyncJobStatus** resources:
 | **percentageComplete** | Double | A value between 0 and 100 that indicates the percentage complete.                          |
 | **status**             | String | A string value that maps to an enumeration of possible values about the status of the job. |
 
-## status Meaning
+### status Meaning
 
-| String Value           | Description
+| String value           | Description
 |:-----------------------|:-------------------------------------------
 | **notStarted**         | The work has been enqueued but not yet picked up.
 | **inProgress**         | The work is being actively processed.
@@ -49,6 +38,18 @@ The following API calls return **AsyncJobStatus** resources:
 | **cancelled**          | The work was cancelled.
 | **waiting**            | The work was interrupted, but will be tried again.
 | **cancelPending**      | The work was cancelled, but processing has not yet aborted.
+
+## JSON representation
+
+<!-- { "blockType": "resource", "@type": "microsoft.graph.asyncJobStatus", "@type.aka": "oneDrive.asyncOperationStatus" } -->
+
+```json
+{
+  "percentageComplete": 100.0,
+  "status": "String"
+}
+```
+
 
 <!--
 {
