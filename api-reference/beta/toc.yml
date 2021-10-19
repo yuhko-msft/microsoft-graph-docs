@@ -9511,11 +9511,7 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-<<<<<<< HEAD
             - name: Create
-=======
-            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
->>>>>>> 4eb1b9a078a0c44c088187d156c23cb8cb547760
               href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
