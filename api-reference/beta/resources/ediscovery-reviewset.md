@@ -23,10 +23,8 @@ Represents static set of electronically stored information collected for use in 
 | [Create reviewSet](../api/ediscovery-case-post-reviewsets.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Create a new **reviewset**. |
 | [Get reviewSet](../api/ediscovery-reviewset-get.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
 | [List queries](../api/ediscovery-reviewsetquery-list.md)|[microsoft.graph.ediscovery.reviewSetQuery](../resources/ediscovery-reviewsetquery.md) collection|Get a list of **reviewSetQuery** resources.|
-<!--
 | [export](../api/ediscovery-reviewset-export.md) | None | Initiate an export of data from the **reviewset**. |
 | [addToReviewSet](../api/ediscovery-reviewset-addtoreviewset.md)|None|Add data from a **sourceCollection** to a **reviewset**.|
--->
 
 ## Properties
 

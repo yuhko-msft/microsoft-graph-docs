@@ -1447,6 +1447,10 @@ items:
             href: api/ediscovery-case-post-reviewsets.md
           - name: Get
             href: api/ediscovery-reviewset-get.md
+          - name: Export
+            href: api/ediscovery-reviewset-export.md
+          - name: Add to review set
+            href: api/ediscovery-reviewset-addtoreviewset.md
         - name: Review set query
           href: resources/ediscovery-reviewsetquery.md
           items:
