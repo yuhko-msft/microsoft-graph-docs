@@ -21,7 +21,7 @@ Represents the relationship of a [plannerTask](plannertask.md) to a user experie
 |Property|Type|Description|
 |:---|:---|:---|
 |contextScenarioId|String|Nullable. An identifier for the scenario associated with this external source. This will generally take the form of **com.contoso.myapp**.|
-|displayLinkType|plannerExternalSourceType|Specifies how an application should display the link to the associated **plannerExternalSource**. The possible values are: `none`, `meetingNotes`, `other`, `unknownFutureValue`.|
+|displayLinkType|plannerExternalTaskSourceType|Specifies how an application should display the link to the associated **plannerExternalSource**. The possible values are: `none`, `meetingNotes`, `other`, `unknownFutureValue`.|
 |externalObjectId|String|Nullable. The id of the entity that an external service associates with a task.|
 |externalObjectVersion|String|Nullable. The external Item Version for the object specified by the **externalObjectId**.|
 |ownerAppId|String|Read-only. The Id of the app where the task was created.|
