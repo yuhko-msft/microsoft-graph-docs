@@ -1,6 +1,6 @@
 ---
 title: "plannerExternalSource resource type"
-description: "The planner ExternalSource resource"
+description: "Represents the relationship of a plannerTask to a user experience outside of Microsoft Planner."
 author: "SudharsanSukumar"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerExternalSource** resource represents the relationship of a plannerTask to a user experience outside of Planner. Tasks in Planner can be surfaced in or synced with other experiences to track work in the context of that experience. Data in the plannerExternalSource can be displayed in a user interface, used for sync information utilized by external services, or used to simply point to where a task was created in an external service.
+Represents the relationship of a [plannerTask](plannertask.md) to a user experience outside of Microsoft Planner. 
+
+**Tasks** in Microsoft Planner can be surfaced in or synced with other experiences to track work in the context of that experience. Data in the **plannerExternalSource** can be displayed in a user interface, used for sync information utilized by external services, or used to simply point to where a task was created in an external service.
 
 ## Properties
 |Property|Type|Description|
