@@ -13,7 +13,7 @@ The Microsoft Graph APIs for compliance and privacy provide functionality for or
 
 The compliance and privacy APIs are intended to help deliver on the vision of helping organizations adapt and extend Microsoft 365 Compliance to their own specific requirements, enable integration for existing custom or third-party solutions, and accelerate and support the use of Microsoft 365 solutions across the enterprise digital estate.
 
-## Electronic discovery (eDiscovery) (preview)
+## Electronic discovery (eDiscovery)
 
 ### Develop applications that ensure a repeatable, predictable, and standard process
 
@@ -46,6 +46,8 @@ The Microsoft Graph APIs for subject rights request provide functionality for or
 ## API reference
 
 Looking for the API reference for these services?
+
+- [Use the Microsoft Graph eDiscovery API](/graph/api/resources/ediscovery-ediscoveryapioverview) in Microsoft Graph v1.0
 - [Use the Microsoft Graph eDiscovery API](/graph/api/resources/ediscovery-ediscoveryapioverview?view=graph-rest-beta&preserve-view=true) in Microsoft Graph beta
 - [Use the Microsoft Graph subject rights request API](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview) in Microsoft Graph v1.0
 - [Use the Microsoft Graph subject rights request API](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true) in Microsoft Graph beta

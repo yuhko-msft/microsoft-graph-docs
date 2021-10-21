@@ -15,9 +15,7 @@ The Microsoft Graph APIs for eDiscovery provide functionality for organizations 
 > The Microsoft Graph APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs should not be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
 
 > [!NOTE]
-> During the preview, usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
->
-> Currently, the eDiscovery APIs in Microsoft Graph only work with Advanced eDiscovery cases.
+> The Microsoft Graph APIs for eDiscovery only work with Advanced eDiscovery cases.
 
 The eDiscovery API is defined in the OData subnamespace, microsoft.graph.ediscovery. The API includes the following key entities.
 
