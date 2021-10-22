@@ -2457,7 +2457,7 @@ With these permissions, all authentication methods can be read and managed on a 
 
 All the permissions above are valid only for work or school accounts.
 
-For an app to read or write all Windows update deployment settings with delegated permissions, the signed-in user must be assigned the Global Administrator, Intune Administrator, or Windows Update Deployment Administrator role. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+For an app to read or write all Windows update deployment settings with delegated permissions, the signed-in user must be assigned the Global Administrator, Intune Administrator, or Windows Update Deployment Administrator role in Azure Active Directory, or the Policy and Profile Manager role in Intune. For more information about Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). For more information about Intune roles, see [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 ### Example usage
 
