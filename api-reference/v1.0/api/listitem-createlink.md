@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored",
-  "sampleKeys": ["contoso.sharepoint.com,2288913C-B09C-46C4-BD1D-AEBB3A6E08EB,133A857A-DC2E-4A41-BCF7-D2B9BBC016AF", "A90E03FB-8446-4E0F-82E7-810FA7595A66", "3"]
+  "blockType": "ignored"
 }
 -->
 ``` http
