@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 |scope|String|The scope of link to create. Either `anonymous`, `organization` or `users`. Optional. |
 |expirationDateTime|DateTimeOffset|A string with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. Optional. |
 |password|String|The password of the sharing link that is set by the creator. Optional. |
-|recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
+|recipients|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will receive access to the sharing link. Optional. |
 
 ### Link types
 
