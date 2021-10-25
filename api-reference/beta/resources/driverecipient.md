@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a person, group, or other recipient to share a drive item with using the [invite](../api/driveitem-invite.md) action.
+Represents a person, group, or other recipient to share a drive item with using the [invite](../api/driveitem-invite.md), [driveItem createLink](../api/driveitem-createLink.md) or [listItem createLink](../api/listItem-createLink.md) action.
 
-When using [invite](../api/driveitem-invite.md) to add permissions, the **driveRecipient** object can specify the **email**, **alias**, or **objectId** of the recipient.
+The **driveRecipient** object can specify the **email**, **alias**, or **objectId** of the recipient.
 Only one of these values is required; multiple values are not accepted.
 
 ## Properties
