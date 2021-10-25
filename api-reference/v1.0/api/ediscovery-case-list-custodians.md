@@ -66,15 +66,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians
 ```
 
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.custodian)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.custodian"
 }
 -->
 
