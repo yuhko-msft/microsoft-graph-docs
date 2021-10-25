@@ -112,9 +112,12 @@ Content-length: 212
   "scope": "anonymous",
   "password": "String",
   "recipients": [
-    { "@odata.type": "microsoft.graph.driveRecipient" }
+    {
+      "@odata.type": "microsoft.graph.driveRecipient"
+    }
   ]
 }
+```
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -166,6 +169,7 @@ Content-Type: application/json
   "type": "edit",
   "scope": "organization"
 }
+```
 
 #### Response
 
