@@ -57,8 +57,6 @@ The following table shows the parameters that can be used with this action.
 |password|String|The password of the sharing link that is set by the creator. Optional. |
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
 
-[driveRecipient]: ../resources/driverecipient.md
-
 ### Link types
 
 The following values are allowed for the **type** parameter.
