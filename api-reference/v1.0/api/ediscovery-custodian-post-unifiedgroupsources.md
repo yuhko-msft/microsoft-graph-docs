@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodian
 
 In the request body, supply a JSON representation of the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
-The following table shows the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
+The following table shows the properties that are required when you create a [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
 
 >**Note:** Either **group** or **group@odata.bind** is required in order to create a **unifiedGroupSource**.
 

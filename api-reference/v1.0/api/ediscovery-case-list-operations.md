@@ -1,6 +1,6 @@
 ---
 title: "List operations"
-description: "Get the list caseOperations from a case object."
+description: "Get the list of caseOperations from a case object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -65,15 +65,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/operations
 ```
 
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.caseOperation)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.caseOperation"
 }
 -->
 

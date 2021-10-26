@@ -66,15 +66,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.legalHold)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.legalHold"
 }
 -->
 

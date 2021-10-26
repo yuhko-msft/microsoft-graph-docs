@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 
 In the request body, supply a JSON representation of the [tag](../resources/ediscovery-tag.md) object.
 
-The following table shows the properties that are required when you create the [tag](../resources/ediscovery-tag.md).
+The following table shows the properties that are required when you create a [tag](../resources/ediscovery-tag.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

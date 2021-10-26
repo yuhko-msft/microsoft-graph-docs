@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 
 In the request body, supply a JSON representation of the [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
 
-The following table shows the properties that are required when you create the [sourceCollection](../resources/ediscovery-sourcecollection.md).
+The following table shows the properties that are required when you create a [sourceCollection](../resources/ediscovery-sourcecollection.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

@@ -39,7 +39,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets
 
 ## Request body
 
-In the request body, supply JSON representation of the [reviewSet](../resources/ediscovery-reviewset.md).  The following table lists the required properties.
+In the request body, supply a JSON representation of the [reviewSet](../resources/ediscovery-reviewset.md).  The following table lists the required properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

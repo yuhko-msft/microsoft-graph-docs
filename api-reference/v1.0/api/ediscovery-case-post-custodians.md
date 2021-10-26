@@ -45,12 +45,12 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 
 In the request body, supply a JSON representation of the [custodian](../resources/ediscovery-custodian.md) object.
 
-The following table shows the properties that are required when you create the [custodian](../resources/ediscovery-custodian.md).
+The following table shows the properties that are required when you create a [custodian](../resources/ediscovery-custodian.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|email|String|Custodian's primary SMTP address. Required.|
 |applyHoldToSources|Boolean|Indicates whether a hold is applied to the custodian's sources (such as mailboxes, sites, or Teams).|
+|email|String|Custodian's primary SMTP address. Required.|
 
 ## Response
 
@@ -76,9 +76,6 @@ Content-length: 279
     "applyHoldToSources":"true"
 }
 ```
-
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources
 
 In the request body, supply a JSON representation of the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) object.
 
-The following table shows the properties that are required when you create the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).
+The following table shows the properties that are required when you create a [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

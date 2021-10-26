@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [beta-disclaimer](../../includes/ediscovery-model-A-and-B-disclaimer.md)]
+[!INCLUDE [ediscovery-model-A-and-B-disclaimer](../../includes/ediscovery-model-A-and-B-disclaimer.md)]
 
 Start the process of adding a collection from Microsoft 365 services to a review set. After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewS
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
