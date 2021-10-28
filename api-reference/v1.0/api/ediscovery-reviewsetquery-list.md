@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
+GET /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries
 ```
 
 ## Optional query parameters

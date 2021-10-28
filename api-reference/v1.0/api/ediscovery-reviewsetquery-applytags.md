@@ -80,8 +80,6 @@ Content-length: 778
 }
 ```
 
----
-
 ### Response
 
 <!-- {

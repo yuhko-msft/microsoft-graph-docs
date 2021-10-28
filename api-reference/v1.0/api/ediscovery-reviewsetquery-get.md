@@ -1,6 +1,6 @@
 ---
 title: "Get reviewSetQuery"
-description: "Retrieve the properties and relationships of an eDiscovery reviewsetquery object."
+description: "Retrieve the properties and relationships of an eDiscovery reviewSetQuery object."
 ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
+GET /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}
 ```
 
 ## Optional query parameters

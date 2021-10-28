@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
+DELETE /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}
 ```
 
 ## Request headers
@@ -60,8 +60,6 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/reviewSets/b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8/queries/6b5358b0-2ce2-4369-b9cf-65392fe56807
 ```
 
----
-
 ### Response
 
 The following is an example of the response.
@@ -84,4 +82,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

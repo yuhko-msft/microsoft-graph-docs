@@ -59,7 +59,7 @@ If the estimate is started successfully, this action returns a `202 Accepted` re
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/estimateStatistics
+POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourcecollections/1a9b4145d8f84e39bc45a7f68c5c5119/estimateStatistics
 ```
 
 ---

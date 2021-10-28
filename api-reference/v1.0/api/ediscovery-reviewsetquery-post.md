@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
+POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of [reviewSetQuery](../resourc
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| displayName  | string      | The name of the review set query |
+| displayName  | string      | The name of the review set query. |
 
 ## Response
 

@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-DELETE /compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/unifiedGroupSources/33434233-3030-3739-3043-393039324633
+DELETE /compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/1a9b4145d8f84e39bc45a7f68c5c5119/unifiedGroupSources/90dd25c0-7a51-47fc-8881-953f8d13a052
 ```
 
 ## Request headers

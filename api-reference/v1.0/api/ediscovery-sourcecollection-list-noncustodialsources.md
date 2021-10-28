@@ -1,6 +1,6 @@
 ---
 title: "List noncustodialSources"
-description: "Get the noncustodialDataSource resources from the noncustodialSources navigation property."
+description: "Get the list of noncustodialDataSource resources from the noncustodialSources navigation property."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/noncustodialSources
+GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourcecollections/1a9b4145d8f84e39bc45a7f68c5c5119/noncustodialSources
 ```
 
 ---
@@ -74,7 +74,8 @@ GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.noncustodialDataSource)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSourceediscovery-tag-childtags.md"
 }
 -->
 

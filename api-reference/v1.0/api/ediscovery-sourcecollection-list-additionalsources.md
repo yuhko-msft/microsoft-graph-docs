@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/additionalSources
+GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/197e208f-cc2d-4b73-8f99-18b27be4c282/sourceCollections/1af92e75-bd60-4330-9d1e-e4ee8f3ea17f/additionalSources
 ```
 
 ---
@@ -74,7 +74,8 @@ GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.dataSource)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.dataSource"
 }
 -->
 
@@ -86,11 +87,15 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.ediscovery.dataSource",
-      "id": "0fb67fc5-7fc5-0fb6-c57f-b60fc57fb60f",
-      "displayName": "String",
-      "createdDateTime": "String (timestamp)",
+      "id": "1af92e75-bd60-4330-9d1e-e4ee8f3ea17f",
+      "displayName": "Quarterly Financials search",
+      "createdDateTime": "2021-01-12T18:09:03.417009Z",
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+          "user": {
+              "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
+              "displayName": "EDisco Admin",
+              "userPrincipalname": "admin@contoso.com"
+          }
       }
     }
   ]

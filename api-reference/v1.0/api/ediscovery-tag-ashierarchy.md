@@ -62,15 +62,14 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/asHierarchy
 ```
 
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.tag)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.tag"
 }
 -->
 
@@ -81,16 +80,20 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.ediscovery.tag",
-      "id": "String (identifier)",
-      "displayName": "String",
-      "description": "String",
-      "childSelectability": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)"
-    }
+        "displayName": "Yes",
+        "description": "The document is responsive",
+        "lastModifiedDateTime": "2021-01-11T19:32:22.4091161Z",
+        "childSelectability": "One",
+        "id": "081ff31e7324423186e01b549efe7033",
+        "createdBy": {
+            "user": {
+                "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
+                "displayName": "EDisco Admin",
+                "userPrincipalName": "admin@contoso.com"
+            }
+        },
+        "childTags": []
+    },
   ]
 }
 ```

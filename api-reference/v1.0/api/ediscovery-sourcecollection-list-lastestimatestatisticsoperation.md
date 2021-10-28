@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/sourceCollections/95bdbf84f02f4bdaafbbb2fe945a4962/lastEstimateStatisticsOperation
+GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/sourceCollections/95bdbf84f02f4bdaafbbb2fe945a4962/lastEstimateStatisticsOperation
 ```
 
 ---
@@ -76,7 +76,8 @@ GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/source
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.estimateStatisticsOperation)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.estimateStatisticsOperation"
 }
 -->
 
