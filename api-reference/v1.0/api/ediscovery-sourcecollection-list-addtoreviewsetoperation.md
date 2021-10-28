@@ -74,7 +74,8 @@ GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/47746044-fd0b-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.addToReviewSetOperation)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.ediscovery.addToReviewSetOperation"
 }
 -->
 
@@ -83,21 +84,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.ediscovery.addToReviewSetOperation",
-    "createdDateTime": "2021-10-06T19:47:48.0902976Z",
-    "completedDateTime": "2021-10-08T10:12:39Z",
-    "percentProgress": 0,
-    "status": "succeeded",
-    "action": "addToReviewSet",
-    "id": "9aab2c8fe3734347bc1241c4d192a594",
-    "resultInfo": null,
-    "createdBy": {
-        "application": null,
-        "user": {
-            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
-            "displayName": "Admin",
-            "userPrincipalName": "admin@contoso.onmicrosoft.com"
+  "value": [
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.ediscovery.addToReviewSetOperation",
+        "createdDateTime": "2021-10-06T19:47:48.0902976Z",
+        "completedDateTime": "2021-10-08T10:12:39Z",
+        "percentProgress": 0,
+        "status": "succeeded",
+        "action": "addToReviewSet",
+        "id": "9aab2c8fe3734347bc1241c4d192a594",
+        "resultInfo": null,
+        "createdBy": {
+            "application": null,
+            "user": {
+                "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
+                "displayName": "Admin",
+                "userPrincipalName": "admin@contoso.onmicrosoft.com"
         }
-    }
+      }
+    ]
 }
 ```
