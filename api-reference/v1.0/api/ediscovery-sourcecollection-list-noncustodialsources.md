@@ -74,8 +74,7 @@ GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/47746044-fd0b-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSourceediscovery-tag-childtags.md"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.noncustodialDataSource)"
 }
 -->
 

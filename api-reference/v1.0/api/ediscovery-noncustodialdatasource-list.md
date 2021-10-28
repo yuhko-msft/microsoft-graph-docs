@@ -72,10 +72,8 @@ GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/5b840b94-f821-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSource"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.noncustodialDataSource)"
 }
--->
 
 ``` http
 HTTP/1.1 200 OK

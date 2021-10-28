@@ -76,8 +76,7 @@ GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/47746044-fd0b-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.ediscovery.addToReviewSetOperation"
+  "@odata.type": "Collection(microsoft.graph.ediscovery.addToReviewSetOperation)"
 }
 -->
 
