@@ -76,8 +76,6 @@ Content-length: 295
 }
 ```
 
----
-
 ### Response
 
 <!-- {

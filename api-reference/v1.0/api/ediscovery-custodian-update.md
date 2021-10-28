@@ -73,8 +73,6 @@ Content-length: 254
 }
 ```
 
----
-
 ### Response
 
 <!-- {

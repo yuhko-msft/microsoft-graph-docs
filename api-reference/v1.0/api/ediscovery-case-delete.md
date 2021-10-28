@@ -58,7 +58,6 @@ If successful, this method returns a `204 No Content` response code.
 DELETE https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583
 ```
 
-
 ### Response
 
 The following is an example of the response.

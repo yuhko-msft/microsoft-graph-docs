@@ -84,10 +84,6 @@ Content-length: 219
 }
 ```
 
----
-
----
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -138,10 +134,6 @@ Content-length: 219
   "includedSources":  "mailbox, site"
 }
 ```
-
----
-
----
 
 #### Response
 

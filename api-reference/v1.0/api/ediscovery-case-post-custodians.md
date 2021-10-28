@@ -75,7 +75,9 @@ Content-length: 279
     "email":"AdeleV@contoso.com",
     "applyHoldToSources":"true"
 }
+
 ```
+
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

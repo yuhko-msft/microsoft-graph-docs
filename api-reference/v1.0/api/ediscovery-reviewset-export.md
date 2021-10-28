@@ -83,8 +83,6 @@ Content-length: 186
 }
 ```
 
----
-
 ### Response
 
 <!-- {

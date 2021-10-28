@@ -68,8 +68,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/sourceCollections/95bdbf84f02f4bdaafbbb2fe945a4962/lastEstimateStatisticsOperation
 ```
 
----
-
 ### Response
 
 > **Note:** The response object shown here might be shortened for readability.

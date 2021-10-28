@@ -66,8 +66,6 @@ If successful, this method returns a `200 OK` response code and a [noncustodialD
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources/8b69818bf6af4f8a9dede428401c71e7
 ```
 
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

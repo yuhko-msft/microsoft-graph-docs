@@ -66,8 +66,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/197e208f-cc2d-4b73-8f99-18b27be4c282/sourceCollections/1af92e75-bd60-4330-9d1e-e4ee8f3ea17f/additionalSources
 ```
 
----
-
 ### Response
 
 > **Note:** The response object shown here might be shortened for readability.

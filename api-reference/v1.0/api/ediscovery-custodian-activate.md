@@ -63,8 +63,6 @@ If successful, this action returns a `204 No Content` response code.
 POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239/activate
 ```
 
----
-
 ### Response
 
 <!-- {

@@ -66,8 +66,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239
 ```
 
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.

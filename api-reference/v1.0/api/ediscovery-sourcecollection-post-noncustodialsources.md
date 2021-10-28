@@ -75,8 +75,6 @@ Content-length: 206
 }
 ```
 
----
-
 ### Response
 
 <!-- {

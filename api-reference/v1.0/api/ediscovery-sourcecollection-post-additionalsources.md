@@ -81,10 +81,6 @@ Content-length: 179
 }
 ```
 
----
-
----
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -132,8 +128,6 @@ Content-length: 179
     }
 }
 ```
-
----
 
 #### Response
 

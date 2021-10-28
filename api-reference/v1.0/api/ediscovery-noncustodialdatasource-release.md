@@ -62,8 +62,6 @@ If successful, this action returns a `202 Accepted` response code.
 POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources/8e402dd7f3c94a3abc086e5d07db1c6d/release
 ```
 
----
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
