@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-[!INCLUDE [ediscovery-model-A-and-B-disclaimer](../../includes/ediscovery-model-A-and-B-disclaimer.md)]
-
 Initiate an export from a **reviewSet**.  For details, see [Export documents from a review set in Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
 
 ## Permissions

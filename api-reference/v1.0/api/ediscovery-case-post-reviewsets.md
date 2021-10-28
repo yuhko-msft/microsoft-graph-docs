@@ -65,11 +65,9 @@ POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/6f65a8e4-c6a0-
 Content-type: application/json
 
 {
-  "displayName": "My Reviewset 3",
+  "displayName": "My Reviewset 3"
 }
 ```
-
----
 
 ### Response
 

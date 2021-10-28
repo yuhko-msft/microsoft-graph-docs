@@ -66,27 +66,17 @@ If successful, this method returns a `201 Created` response code and a [microsof
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/legalHolds
+POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/636490b0-2563-46e0-841a-d57504a074d5/legalHolds
 Content-Type: application/json
 Content-length: 295
 
 {
-  "@odata.type": "#microsoft.graph.ediscovery.legalHold",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "isEnabled": "Boolean",
-  "status": "String",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ],
-  "displayName": "String"
+  "description": "New Legal Hold Description",
+  "isEnabled": "true",
+  "contentQuery": "subject:'Quarterly Financials'",
+  "displayName": "New Legal Hold"
 }
 ```
-
----
 
 ### Response
 
@@ -103,23 +93,27 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.ediscovery.legalHold",
-  "id": "700cd868-d868-700c-68d8-0c7068d80c70",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "isEnabled": "Boolean",
-  "status": "String",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ],
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#compliance/ediscovery/cases('197e208f-cc2d-4b73-8f99-18b27be4c282')/legalHolds/$entity",
+    "description": "New Legal Hold Description",
+    "lastModifiedDateTime": "2021-10-28T00:41:55.897Z",
+    "isEnabled": true,
+    "status": "Pending",
+    "contentQuery": "subject:'Quarterly Financials'",
+    "errors": [],
+    "id": "12bbe7d3-7e38-4bfb-9083-0dce440a16e6",
+    "displayName": "New Legal Holdd",
+    "createdDateTime": "2021-10-28T00:41:55.897Z",
+    "createdBy": {
+        "user": {
+            "id": null,
+            "displayName": "Edisco Admin"
+        }
+    },
+    "lastModifiedBy": {
+        "user": {
+            "id": null,
+            "displayName": "Edisco Admin"
+        }
+    }
 }
 ```

@@ -68,11 +68,9 @@ POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases
 Content-type: application/json
 
 {
-    "displayName": "My Case 1",
+    "displayName": "My Case 1"
 }
 ```
-
----
 
 ### Response
 

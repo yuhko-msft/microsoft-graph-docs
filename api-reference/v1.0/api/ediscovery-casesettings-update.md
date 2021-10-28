@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-Update the properties of a an eDiscovery [caseSettings](../resources/ediscovery-caseSettings.md) object.
+Update the properties of an eDiscovery [caseSettings](../resources/ediscovery-caseSettings.md) object.
 
 ## Permissions
 
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/settings
+PATCH https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/ec4fb7dd-e192-4e5c-abb7-5eed7096d556/settings
 Content-Type: application/json
 Content-length: 350
 
@@ -82,8 +82,6 @@ Content-length: 350
     }
 }
 ```
-
----
 
 ### Response
 

@@ -1,6 +1,6 @@
 ---
 title: "caseExportOperation: getDownloadUrl"
-description: "Returns the download URL "
+description: "Returns the download URL."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -59,8 +59,6 @@ If successful, this function returns a `200 OK` response code and a String in th
 ``` http
 GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/operations/63926d4779c243458902328d83f61f53/microsoft.graph.ediscovery.caseExportOperation/getDownloadUrl
 ```
-
----
 
 ### Response
 

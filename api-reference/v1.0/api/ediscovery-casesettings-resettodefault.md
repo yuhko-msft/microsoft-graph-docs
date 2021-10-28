@@ -59,7 +59,7 @@ If successful, this action returns a `200 OK` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/settings/resetToDefault
+POST https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/settings/resetToDefault
 ```
 
 ### Response
