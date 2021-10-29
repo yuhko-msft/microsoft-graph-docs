@@ -24,9 +24,11 @@ The external AAD users whose profile data is shared with the current tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+| id | String | ID of the entity. Should be treated as an opaque identifier. |
 | userId | String | Object ID of the external user whose profile data is shared with the current tenant. |
 | userPrincipalName | String | The user principal name (UPN) of the external user. |
-| externalTenantId | String | ID of the external tenant with user profile access. |
+| displayName | String | The name displayed in the address book for the external user at the time when the sharing record was created. |
+| homeTenantId | String | The external user's home tenant ID. |
 
 ## Relationships
 None.
