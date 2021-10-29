@@ -95,13 +95,13 @@ Content-Type: application/json
             "createdDateTime": "2021-09-28T15:57:47Z",
             "createdBy": {
                 "user": {
-                    "id": 8a0c4a12-8b20-4eb1-ae1e-3c8c3ed19afa,
+                    "id": "8a0c4a12-8b20-4eb1-ae1e-3c8c3ed19afa",
                     "displayName": "EDisco Admin"
                 }
             },
             "lastModifiedBy": {
                 "user": {
-                    "id": 8a0c4a12-8b20-4eb1-ae1e-3c8c3ed19afa,
+                    "id": "8a0c4a12-8b20-4eb1-ae1e-3c8c3ed19afa",
                     "displayName": "EDisco Admin"
                 }
             }
