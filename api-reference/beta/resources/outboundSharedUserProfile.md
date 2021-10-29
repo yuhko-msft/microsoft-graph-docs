@@ -1,25 +1,25 @@
 ---
-title: "inboundSharedUserProfile resource type"
-description: "The external AAD users whose profile data is shared with the current tenant."
+title: "outboundSharedUserProfile resource type"
+description: "From the users homed in the current tenant, the AAD users whose profile data is shared with external tenants."
 author: "adimitui"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# inboundSharedUserProfile resource type
+# outboundSharedUserProfile resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The external AAD users whose profile data is shared with the current tenant.
+From the users homed in the current tenant, the AAD users whose profile data is shared with external tenants.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inboundSharedUserProfile](../api/inboundSharedUserProfile-list.md)|[inboundSharedUserProfile](../resources/inboundSharedUserProfile.md) collection|List the external users whose profile data is shared with the current tenant.|
-|[Get inboundSharedUserProfile](../api/inboundSharedUserProfile-get.md)|[inboundSharedUserProfile](../resources/inboundSharedUserProfile.md)|Read the properties and relationships of a [inboundSharedUserProfile](../resources/inboundSharedUserProfile.md) object.|
+|[List outboundSharedUserProfile](../api/outboundSharedUserProfile-list.md)|[outboundSharedUserProfile](../resources/outboundSharedUserProfile.md) collection|List the AAD users whose profile data is shared with external tenants.|
+|[Get outboundSharedUserProfile](../api/outboundSharedUserProfile-get.md)|[outboundSharedUserProfile](../resources/outboundSharedUserProfile.md)|Read the properties and relationships of a [outboundSharedUserProfile](../resources/outboundSharedUserProfile.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,9 +42,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
+  "id":"ZAMkAAIAAAoZDOFAAA=",
   "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
-  "userPrincipalName":"Bob@contoso.onmicrosoft.com",
-  "displayName":"Bob",
   "externalTenantId":"62bfb458-9474-4c44-896b-b30942d055f0"
 }
 ```

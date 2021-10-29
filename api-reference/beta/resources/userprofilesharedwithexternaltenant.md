@@ -24,7 +24,7 @@ For an AAD user, represents the profile data that is shared with an external AAD
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | ID of the profile entity. Should be treated as an opaque identifier. |
+| id | String | ID of the entity. Should be treated as an opaque identifier. |
 | userId | String | Object ID of the user whose profile data is being shared. |
 | externalTenantId | String | ID of the external tenant with user profile access. |
 
@@ -45,7 +45,9 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantRelationshipRoot"
+  "id":"ZAMkAAIAAAoZDOFAAA=",
+  "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
+  "externalTenantId":"62bfb458-9474-4c44-896b-b30942d055f0"
 }
 ```
 
