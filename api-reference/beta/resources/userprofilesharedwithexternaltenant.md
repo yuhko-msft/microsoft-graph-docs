@@ -18,8 +18,8 @@ For an AAD user, represents the profile data that is shared with an external AAD
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userProfileSharedWithExternalTenant](../api/userprofilesharedwithexternaltenant-list.md)|[sharedUserProfile](../resources/userprofilesharedwithexternaltenant.md) collection|List the external users whose profile data is shared with the current tenant.|
-|[Get userProfileSharedWithExternalTenant](../api/userprofilesharedwithexternaltenant-get.md)|[sharedUserProfile](../resources/userprofilesharedwithexternaltenant.md)|Read the properties and relationships of a [sharedUserProfile](../resources/userprofilesharedwithexternaltenant.md) object.|
+|[List userProfileSharedWithExternalTenant](../api/userprofilesharedwithexternaltenant-list.md)|[userProfileSharedWithExternalTenant](../resources/userprofilesharedwithexternaltenant.md) collection|List the users whose profile data is shared with external tenants.|
+|[Get userProfileSharedWithExternalTenant](../api/userprofilesharedwithexternaltenant-get.md)|[userProfileSharedWithExternalTenant](../resources/userprofilesharedwithexternaltenant.md)|Read the properties and relationships of a [userProfileSharedWithExternalTenant](../resources/userprofilesharedwithexternaltenant.md) object.|
 
 ## Properties
 |Property|Type|Description|

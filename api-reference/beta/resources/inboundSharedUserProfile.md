@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# sharedUserProfile resource type
+# inboundSharedUserProfile resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ The external AAD users whose profile data is shared with the current tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sharedUserProfile](../api/sharedUserProfile-list.md)|[sharedUserProfile](../resources/sharedUserProfile.md) collection|List the external users whose profile data is shared with the current tenant.|
-|[Get sharedUserProfile](../api/sharedUserProfile-get.md)|[sharedUserProfile](../resources/sharedUserProfile.md)|Read the properties and relationships of a [sharedUserProfile](../resources/sharedUserProfile.md) object.|
+|[List inboundSharedUserProfile](../api/inboundSharedUserProfile-list.md)|[inboundSharedUserProfile](../resources/inboundSharedUserProfile.md) collection|List the external users whose profile data is shared with the current tenant.|
+|[Get inboundSharedUserProfile](../api/inboundSharedUserProfile-get.md)|[inboundSharedUserProfile](../resources/inboundSharedUserProfile.md)|Read the properties and relationships of a [inboundSharedUserProfile](../resources/inboundSharedUserProfile.md) object.|
 
 ## Properties
 |Property|Type|Description|
