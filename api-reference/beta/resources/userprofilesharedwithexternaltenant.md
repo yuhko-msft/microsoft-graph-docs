@@ -1,9 +1,9 @@
 ---
 title: "userProfileSharedWithExternalTenant resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "For an AAD user, represents the profile data that is shared with an external AAD tenant (other than the user's home tenant). This does not include profile sharing info for non-AAD users (for example, MSA users)."
+author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

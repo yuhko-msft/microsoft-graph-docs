@@ -1,6 +1,6 @@
 ---
-title: "sharedUserProfile resource type"
-description: "Represents an AAD user from an external AAD tenant whose profile data is shared with the current tenant."
+title: "inboundSharedUserProfile resource type"
+description: "The external AAD users whose profile data is shared with the current tenant."
 author: "adimitui"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an AAD user from an external AAD tenant whose profile data is shared with the current tenant.
+The external AAD users whose profile data is shared with the current tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,7 +24,6 @@ Represents an AAD user from an external AAD tenant whose profile data is shared 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | ID of the data sharing entity. |
 | userId | String | Object ID of the external user whose profile data is shared with the current tenant. |
 | userPrincipalName | String | The user principal name (UPN) of the external user. |
 | displayName | String | The name displayed in the address book for the external user at the time when the sharing record was created. |
@@ -44,7 +43,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "id":"ZAMkAAIAAAoZDOFAAA=",
   "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
   "userPrincipalName":"Bob@contoso.onmicrosoft.com",
   "displayName":"Bob",
