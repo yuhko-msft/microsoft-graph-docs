@@ -27,7 +27,7 @@ Represents an AAD user from an external AAD tenant whose profile data is shared 
 | id | String | ID of the data sharing entity. |
 | userId | String | Object ID of the external user whose profile data is shared with the current tenant. |
 | userPrincipalName | String | The user principal name (UPN) of the external user. |
-| displayName | String | The name displayed in the address book for the external user at the time when sharing record was created. |
+| displayName | String | The name displayed in the address book for the external user at the time when the sharing record was created. |
 | homeTenantId | String | The external user's home tenant ID. |
 
 ## Relationships
