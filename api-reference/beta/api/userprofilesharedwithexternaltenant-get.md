@@ -1,6 +1,6 @@
 ---
-title: "Get sharedUserProfile"
-description: "Read the properties and relationships of a sharedUserProfile object."
+title: "Get userProfileSharedWithExternalTenant"
+description: "Read the properties and relationships of a userProfileSharedWithExternalTenant object."
 author: "adimitui"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [sharedUserProfile](../resources/sharedUserProfile.md) object.
+Read the properties and relationships of a [userProfileSharedWithExternalTenant](../resources/sharedUserProfile.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/sharedUserProfile/{userId}
+GET /directory/userProfileSharedWithExternalTenant/{userId}
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [sharedUserProfile](../resources/sharedUserProfile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [userProfileSharedWithExternalTenant](../resources/userProfileSharedWithExternalTenant.md) object in the response body.
 
 ## Examples
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [sharedUserPro
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/sharedUserProfile/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
+GET https://graph.microsoft.com/beta/directory/userProfileSharedWithExternalTenant/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
 ```
 
 
@@ -75,12 +75,12 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.sharedUserProfile",
+    "@odata.type": "#Microsoft.DirectoryServices.userProfileSharedWithExternalTenant",
     "id":"ZAMkAAIAAAoZDOFAAA=",
     "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
     "userPrincipalName":"Bob@contoso.onmicrosoft.com",
     "displayName":"Bob",
-    "homeTenantId":"486fb458-9474-4c44-896b-b30942d055f0"
+    "externalTenantId":"62bfb458-9474-4c44-896b-b30942d055f0"
   }
 }
 ```
