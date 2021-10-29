@@ -43,6 +43,8 @@ Inherits from [entity](entity.md).
 |deleteditems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) collection| Nullable.|
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
+|inboundSharedUserProfiles|[inboundSharedUserProfiles](../resources/inboundshareduserprofiles.md) collection|The external AAD users whose profile data is shared with the current tenant.|
+|outboundSharedUserProfiles|[outboundSharedUserProfiles](../resources/outboundshareduserprofiles.md) collection|For users homed in the current tenant, the AAD users whose profile data is shared with external tenants.|
 
 ## JSON representation
 

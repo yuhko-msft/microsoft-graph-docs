@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For an AAD user, represents the user profile that is shared with an external AAD tenant (other than the user's home tenant). This does not include profile sharing info for non-AAD users (for example, MSA users).
+For an AAD user, represents the profile data that is shared with an external AAD tenant (other than the user's home tenant). This does not include profile sharing info for non-AAD users (for example, MSA users).
 
 ## Methods
 |Method|Return type|Description|
