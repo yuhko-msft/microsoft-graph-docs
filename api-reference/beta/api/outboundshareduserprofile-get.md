@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/outboundSharedUserProfile/{userId}
+GET /directory/outboundSharedUserProfiles/{userId}
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [outboundShare
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfile/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
+GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
 ```
 
 

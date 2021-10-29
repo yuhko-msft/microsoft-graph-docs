@@ -1,5 +1,5 @@
 ---
-title: "List inboundSharedUserProfile"
+title: "List inboundSharedUserProfiles"
 description: "List the external users whose profile data is shared with the current tenant."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List inboundSharedUserProfile
+# List inboundSharedUserProfiles
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
