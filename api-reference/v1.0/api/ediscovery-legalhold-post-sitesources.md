@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-Adds a siteSource to a legalHold object.
+Adds a [siteSource](../resources/ediscovery-sitesource.md) to a [legalHold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 

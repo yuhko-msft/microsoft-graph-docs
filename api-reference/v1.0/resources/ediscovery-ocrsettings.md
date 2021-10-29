@@ -1,6 +1,6 @@
 ---
 title: "ocrSettings resource type"
-description: "OCR settings for an eDiscovery case"
+description: "OCR settings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

@@ -1,6 +1,6 @@
 ---
 title: "addToReviewSetOperation resource type"
-description: "Adds the results of a sourceCollection to a reviewSet"
+description: "Represents an operation to add the results of a sourceCollection to a reviewSet."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.ediscovery
 
-Represents an operation to add a [sourceCollection](../resources/ediscovery-sourcecollection.md) to a [reviewSet](../resources/ediscovery-reviewset.md).
+Represents an operation to add the results of a [sourceCollection](../resources/ediscovery-sourcecollection.md) to a [reviewSet](../resources/ediscovery-reviewset.md).
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
@@ -44,7 +44,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |reviewSet|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)| The review set to which items matching the source collection query are added to. |
-|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourceCollection.md)| The sourceCollection that items are being added from. |
+|sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourceCollection.md)| The **sourceCollection** that items are being added from. |
 
 ## JSON representation
 

@@ -40,7 +40,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |displayName|String|Display name of the custodian.|
 |email|String|Email address of the custodian.|
 |id|String|The ID for the custodian in the specified case. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|Date and time the custodian object was last modified|
+|lastModifiedDateTime|DateTimeOffset|Date and time the custodian object was last modified.|
 |releasedDateTime|DateTimeOffset|Date and time the custodian was released from the case.|
 |status|microsoft.graph.ediscovery.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
 
@@ -57,7 +57,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |:---|:---|:---|
 |siteSources|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Data source entity for SharePoint sites associated with the custodian.|
 |unifiedGroupSources|[microsoft.graph.ediscovery.unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) collection|Data source entity for groups associated with the custodian.|
-|userSources|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Data source entity for a the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
+|userSources|[microsoft.graph.ediscovery.userSource](../resources/ediscovery-usersource.md) collection|Data source entity for the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|
 
 <!--|lastIndexOperation|[caseIndexOperation](../resources/caseindexoperation.md)|**TODO: Add Description**| -->
 

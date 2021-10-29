@@ -40,7 +40,7 @@ In the request URL, provide the following required query parameter.
 
 | Parameter     | Type    | Description                                                                              |
 |:--------------|:--------|:-----------------------------------------------------------------------------------------|
-| forcedelete   | Boolean | If set to true, the tag and children will be deleted, if false, and the tag has children, the delete will fail. |
+| forcedelete   | Boolean | If set to true, the tag and children will be deleted. If false and the tag has children, the delete will fail. |
 
 ## Request headers
 

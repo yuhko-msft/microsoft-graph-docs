@@ -1,6 +1,6 @@
 ---
 title: "List legalHold siteSources"
-description: "Get the list of siteSource objecs associated with a legal hold."
+description: "Get the list of siteSource objects associated with a legal hold."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-Get the list of [siteSource](../resources/ediscovery-sitesource.md) objecs associated with a legal hold.
+Get the list of [siteSource](../resources/ediscovery-sitesource.md) objects associated with a legal hold.
 
 ## Permissions
 

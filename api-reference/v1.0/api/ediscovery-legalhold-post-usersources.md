@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-Adds a userSource to a legalHold object.
+Adds a [userSource](../resources/ediscovery-usersource.md) to a [legalHold](../resources/ediscovery-legalhold.md) object.
 
 ## Permissions
 

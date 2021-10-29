@@ -27,10 +27,10 @@ The container for a [custodian's](ediscovery-custodian.md) mailbox and OneDrive 
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **userSource**.|
-|createdDateTime|DateTimeOffset|The date and time the **userSource** was created|
+|createdDateTime|DateTimeOffset|The date and time the **userSource** was created.|
 |displayName|String|The display name associated with the mailbox and site.|
 |email|String|Email address of the user's mailbox.|
-|id|String|The ID of the **userSource**. This is not the ID of the actual group|
+|id|String|The ID of the **userSource**. This is not the ID of the actual group.|
 |includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 ### sourceType values

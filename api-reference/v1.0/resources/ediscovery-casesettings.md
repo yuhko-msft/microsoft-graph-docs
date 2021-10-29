@@ -1,6 +1,6 @@
 ---
 title: "caseSettings resource type"
-description: "Contains ettings for an eDiscovery case."
+description: "Contains settings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

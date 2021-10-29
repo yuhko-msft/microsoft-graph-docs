@@ -15,7 +15,7 @@ The dataSource entity is an abstract base class used to identify sources of cont
 
 ## Methods
 
-None
+None.
 
 ## Properties
 

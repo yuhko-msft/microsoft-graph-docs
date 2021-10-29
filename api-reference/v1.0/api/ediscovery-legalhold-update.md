@@ -43,7 +43,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -67,7 +67,7 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
+PATCH https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/d558aac1-c40f-4bc7-ac06-2b64e601123a/legalHolds/a1eed6af-1762-4af2-8dca-63633c3deba2
 Content-Type: application/json
 Content-length: 295
 

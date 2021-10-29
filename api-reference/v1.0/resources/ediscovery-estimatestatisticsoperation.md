@@ -58,26 +58,24 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/operations/$entity",
-    "@odata.type": "#microsoft.graph.ediscovery.estimateStatisticsOperation",
-    "createdDateTime": "2021-01-12T18:47:23.3974907Z",
-    "completedDateTime": "2021-01-12T18:47:51.1461805Z",
-    "percentProgress": 100,
-    "status": "succeeded",
-    "action": "estimateStatistics",
-    "id": "82edd40e182a464fa02c24a36fa94873",
-    "indexedItemCount": 2,
-    "indexedItemsSize": 39276,
-    "unindexedItemCount": 0,
-    "unindexedItemsSize": 0,
-    "mailboxCount": 1,
-    "siteCount": 0,
-    "createdBy": {
-        "user": {
-            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
-            "displayName": null,
-            "userPrincipalName": "admin@contoso.com"
-        }
-    }
+  "@odata.type": "#microsoft.graph.ediscovery.estimateStatisticsOperation",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "completedDateTime": "String (timestamp)",
+  "percentProgress": "Integer",
+  "status": "String",
+  "action": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "resultInfo": {
+    "@odata.type": "microsoft.graph.resultInfo"
+  },
+  "indexedItemCount": "Integer",
+  "indexedItemsSize": "Integer",
+  "unindexedItemCount": "Integer",
+  "unindexedItemsSize": "Integer",
+  "mailboxCount": "Integer",
+  "siteCount": "Integer"
 }
 ```

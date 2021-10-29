@@ -1,6 +1,6 @@
 ---
 title: "topicModelingSettings resource type"
-description: "Topic modeling settings for an eDiscovery case"
+description: "Topic modeling settings for an eDiscovery case."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

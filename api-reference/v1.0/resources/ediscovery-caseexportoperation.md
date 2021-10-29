@@ -32,8 +32,8 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |createdDateTime|DateTimeOffset| The date and time the export was created. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
 |description|String| The description provided for the export. |
-|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. See [reviewSet: export](../api/ediscovery-reviewset-export.md) for more details. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided that specify the structure of the export. See [reviewSet: export](../api/ediscovery-reviewset-export.md) for more details. Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md)|
@@ -47,7 +47,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |originalFiles| Include copies of the original files - exclude this option when generating reports only |
 |text| Include raw extracted text files for each document. |
 |pdfReplacement| If redacted PDF files are generated during review, these files are available for export. You can choose to export the redacted PDFs instead of the original native files by including this option. |
-|fileInfo| Include the summery and load file - this should always be included. |
+|fileInfo| Include the summary and load file - this should always be included. |
 |tags| Include document tags that were applied during review in the load file. |
 
 ### exportFileStructure values

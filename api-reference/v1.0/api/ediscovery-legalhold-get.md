@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
+GET https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/10de56cd-1c9c-43a1-b39c-fd412f25cd42/legalholds
 ```
 
 ### Response
@@ -81,25 +81,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.ediscovery.legalHold",
-    "id": "700cd868-d868-700c-68d8-0c7068d80c70",
-    "description": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "isEnabled": "Boolean",
-    "status": "String",
-    "contentQuery": "String",
-    "errors": [
-      "String"
-    ],
-    "displayName": "String",
-    "createdDateTime": "String (timestamp)"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('10de56cd-1c9c-43a1-b39c-fd412f25cd42')/legalHolds",
+    "value": [
+        {
+            "description": null,
+            "lastModifiedDateTime": "2021-09-28T15:58:35Z",
+            "isEnabled": false,
+            "status": "Pending",
+            "contentQuery": null,
+            "errors": [],
+            "id": "8294d1c2-8d84-4dd9-ac33-cf13dab80d89",
+            "displayName": "CustodianHold-10de56cd1c9c43a1-0637684414664473464",
+            "createdDateTime": "2021-09-28T15:57:47Z",
+            "createdBy": {
+                "user": {
+                    "id": 8a0c4a12-8b20-4eb1-ae1e-3c8c3ed19afa,
+                    "displayName": "EDisco Admin"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "id": 8a0c4a12-8b20-4eb1-ae1e-3c8c3ed19afa,
+                    "displayName": "EDisco Admin"
+                }
+            }
+        }
+    ]
 }
 ```

@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-DELETE /compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/1a9b4145d8f84e39bc45a7f68c5c5119/unifiedGroupSources/90dd25c0-7a51-47fc-8881-953f8d13a052
+DELETE /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources/{unifiedGroupSourceId}
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources/{unifiedGroupSourceId}
+DELETE https://graph.microsoft.com/v1.0/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/1a9b4145d8f84e39bc45a7f68c5c5119/unifiedGroupSources/90dd25c0-7a51-47fc-8881-953f8d13a052
 ```
 
 ### Response

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-Return a list of [tag](../resources/ediscovery-tag.md) objects in hierarchial form
+Return a list of [tag](../resources/ediscovery-tag.md) objects in hierarchial form.
 
 ## Permissions
 

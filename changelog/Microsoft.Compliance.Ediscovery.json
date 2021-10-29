@@ -627,7 +627,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "caseAction",
 					"ChangeType": "Addition",
-					"Description": "Added the [caseAction](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-caseoperation?view=graph-rest-1.0) resource",
+					"Description": "Added the **caseAction** enumeration type.",
 					"Target": "caseAction"
 				},
 				{
@@ -635,7 +635,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "caseOperationStatus",
 					"ChangeType": "Addition",
-					"Description": "Added the [caseOperationStatus](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-caseoperation?view=graph-rest-1.0) resource",
+					"Description": "Added the **caseOperationStatus** enumeration type.",
 					"Target": "caseOperationStatus"
 				},
 				{
@@ -643,7 +643,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "caseStatus",
 					"ChangeType": "Addition",
-					"Description": "Added the [caseStatus](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-case?view=graph-rest-1.0) resource",
+					"Description": "Added the **caseStatus** enumeration type.",
 					"Target": "caseStatus"
 				},
 				{
@@ -651,7 +651,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "childSelectability",
 					"ChangeType": "Addition",
-					"Description": "Added the [childSelectability](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-tag?view=graph-rest-1.0) resource",
+					"Description": "Added the **childSelectability** enumeration type.",
 					"Target": "childSelectability"
 				},
 				{
@@ -659,7 +659,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "dataSourceContainerStatus",
 					"ChangeType": "Addition",
-					"Description": "Added the [dataSourceContainerStatus](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-datasourcecontainer?view=graph-rest-1.0) resource",
+					"Description": "Added the **dataSourceContainerStatus** enumeration type.",
 					"Target": "dataSourceContainerStatus"
 				},
 				{
@@ -667,7 +667,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "dataSourceScopes",
 					"ChangeType": "Addition",
-					"Description": "Added the [dataSourceScopes](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-1.0) resource",
+					"Description": "Added the **dataSourceScopes** enumeration type.",
 					"Target": "dataSourceScopes"
 				},
 				{
@@ -675,7 +675,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "exportFileStructure",
 					"ChangeType": "Addition",
-					"Description": "Added the [exportFileStructure](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-caseexportoperation?view=graph-rest-1.0) resource",
+					"Description": "Added the **exportFileStructure** enumeration type.",
 					"Target": "exportFileStructure"
 				},
 				{
@@ -683,7 +683,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "exportOptions",
 					"ChangeType": "Addition",
-					"Description": "Added the [exportOptions](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-caseexportoperation?view=graph-rest-1.0) resource",
+					"Description": "Added the **exportOptions** enumeration type.",
 					"Target": "exportOptions"
 				},
 				{
@@ -691,7 +691,7 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "legalHoldStatus",
 					"ChangeType": "Addition",
-					"Description": "Added the [legalHoldStatus](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-legalhold?view=graph-rest-1.0) resource",
+					"Description": "Added the **legalHoldStatus** enumeration type.",
 					"Target": "legalHoldStatus"
 				},
 				{
@@ -699,8 +699,16 @@
 					"ApiChange": "EnumType",
 					"ChangedApiName": "sourceType",
 					"ChangeType": "Addition",
-					"Description": "Added the [sourceType](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-unifiedgroupsource?view=graph-rest-1.0) resource",
+					"Description": "Added the **sourceType** enumeration type.",
 					"Target": "sourceType"
+				},
+				{
+					"Id": "35ff0fb4-03a4-4b0a-bf85-59a5274d9dca",
+					"ApiChange": "EnumType",
+					"ChangedApiName": "custodianStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **custodianStatus** enumeration type.",
+					"Target": "custodianStatus"
 				},
 				{
 					"Id": "35ff0fb4-03a4-4b0a-bf85-59a5274d9dca",
@@ -749,14 +757,6 @@
 					"ChangeType": "Addition",
 					"Description": "Added the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-1.0) resource",
 					"Target": "caseExportOperation"
-				},
-				{
-					"Id": "35ff0fb4-03a4-4b0a-bf85-59a5274d9dca",
-					"ApiChange": "Resource",
-					"ChangedApiName": "caseIndexOperation",
-					"ChangeType": "Addition",
-					"Description": "Added the [caseIndexOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseIndexOperation?view=graph-rest-1.0) resource",
-					"Target": "caseIndexOperation"
 				},
 				{
 					"Id": "35ff0fb4-03a4-4b0a-bf85-59a5274d9dca",
