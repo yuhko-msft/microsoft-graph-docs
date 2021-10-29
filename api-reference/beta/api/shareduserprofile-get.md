@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [tenantReference](../resources/tenantreference.md) object.
+Read the properties and relationships of a [sharedUserProfile](../resources/sharedUserProfile.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|CrossTenantUserProfileSharing.Read, CrossTenantUserProfileSharing.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/outboundSharedUserProfiles/{outboundSharedUserProfileId}/tenants/{tenantReferenceId}
+GET /directory/sharedUserProfile/{userId}
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [tenantReference](../resources/tenantreference.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [sharedUserProfile](../resources/tenantreference.md) object in the response body.
 
 ## Examples
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [tenantReferen
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/{outboundSharedUserProfileId}/tenants/{tenantReferenceId}
+GET https://graph.microsoft.com/beta/directory/sharedUserProfile/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
 ```
 
 
@@ -75,10 +75,12 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.tenantReference",
-    "id": "50fd28f1-28f1-50fd-f128-fd50f128fd50",
-    "deletedDateTime": "String (timestamp)",
-    "tenantId": "String"
+    "@odata.type": "#Microsoft.DirectoryServices.sharedUserProfile",
+    "id":"ZAMkAAIAAAoZDOFAAA=",
+    "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
+    "userPrincipalName":"Bob@contoso.onmicrosoft.com",
+    "displayName":"Bob",
+    "homeTenantId":"486fb458-9474-4c44-896b-b30942d055f0"
   }
 }
 ```
