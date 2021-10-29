@@ -3,6 +3,50 @@
     {
       "ChangeList": [
         {
+          "Id": "dabe55c7-a608-45cf-934f-878cb2a5c63c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "routingMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **routingMode** enumeration type.",
+          "Target": "routingMode"
+        }
+      ],
+      "Id": "dabe55c7-a608-45cf-934f-878cb2a5c63c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-28T23:56:52.2293374Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f6456ed2-2c6e-4c76-9d55-36f901c69ebf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioRoutingGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [audioRoutingGroup](https://docs.microsoft.com/en-us/graph/api/resources/audioRoutingGroup?view=graph-rest-1.0) resource",
+          "Target": "audioRoutingGroup"
+        },
+        {
+          "Id": "f6456ed2-2c6e-4c76-9d55-36f901c69ebf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioRoutingGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **audioRoutingGroups** relationship to [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "f6456ed2-2c6e-4c76-9d55-36f901c69ebf",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-10-28T23:56:52.2299959Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "db13b114-ad8b-42c0-95fd-d03d3b102d09",
           "ApiChange": "Property",
           "ChangedApiName": "participantId",
