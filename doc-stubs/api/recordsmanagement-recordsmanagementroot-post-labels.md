@@ -1,9 +1,9 @@
 ---
 title: "Create retentionLabel"
 description: "Create a new retentionLabel object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|**recordsManagement.ReadWrite.All**|
+|Delegated (personal Microsoft account)|**Not supported**|
+|Application|**recordsManagement.ReadWrite.All**|
 
 ## HTTP request
 
@@ -46,19 +46,19 @@ You can specify the following properties when creating a **retentionLabel**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|**TODO: Add Description**. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`. Optional.|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod|**TODO: Add Description**. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. Optional.|
-|retentionTrigger|retentionTrigger|**TODO: Add Description**. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`. Optional.|
-|retentionDurationInDays|Int32|**TODO: Add Description** Optional.|
-|isInUse|Boolean|**TODO: Add Description** Optional.|
-|descriptionForAdmins|String|**TODO: Add Description** Optional.|
-|descriptionForUsers|String|**TODO: Add Description** Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|**TODO: Add Description** Optional.|
+|displayName|String|**Unique string defining the name of the label** Optional.|
+|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|**Specifies the behaviour of a document that has been labeled with this label during the retention period**. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`. Optional.|
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod|**Specifies the action of a document that has been labeled with this label after the retention period**. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. Optional.|
+|retentionTrigger|retentionTrigger|**Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date**. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`. Optional.|
+|retentionDurationInDays|Int32|**Specifies the number of days to retain the content** Optional.|
+|isInUse|Boolean|**Specifies if the label is currently being used** Optional.|
+|descriptionForAdmins|String|**Optional information about the label for the Admin** Optional.|
+|descriptionForUsers|String|**Optional information about the label for the User** Optional.|
+|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The user who created the entity.** Optional.|
+|createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The latest user who modified the entity.** Optional.|
+|lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified.** Optional.|
+|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|**A multi stage collection of reviewers that will be notified and have to approve before an item is deleted** Optional.|
 
 
 

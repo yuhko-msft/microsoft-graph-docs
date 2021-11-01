@@ -1,27 +1,27 @@
 ---
-title: "List retentionEventTypes"
-description: "Get a list of the retentionEventType objects and their properties."
-author: "sseth"
+title: "List retentionEventType"
+description: "Get the retentionEventType resources from the eventType navigation property."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
-ms.prod: "compliance"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# List retentionEventTypes
+# List retentionEventType
 Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) objects and their properties.
+Get the retentionEventType resources from the eventType navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**recordsManagement.Read.All, recordsManagement.ReadWrite.All**|
-|Delegated (personal Microsoft account)|**Not Supported**|
-|Application|**recordsManagement.Read.All, recordsManagement.ReadWrite.All**|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/recordsManagement/eventTypes
+GET /compliance/recordsManagement/labels/{retentionLabelId}/eventType
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/recordsManagement/eventTypes
+GET https://graph.microsoft.com/beta/compliance/recordsManagement/labels/{retentionLabelId}/eventType
 ```
 
 

@@ -1,9 +1,9 @@
 ---
 title: "eventPropagationResult resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,8 @@ Namespace: microsoft.graph.recordsManagement
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|error|[microsoft.graph.recordsManagement.publicError](../resources/recordsmanagement-synchronization-publicerror.md)|**TODO: Add Description**|
-|status|eventPropagationStatus|**TODO: Add Description**. The possible values are: `pending`, `error`, `success`, `notAvaliable`.|
+|error|[microsoft.graph.recordsManagement.publicError](../resources/recordsmanagement-synchronization-publicerror.md)|The error if the status is not successful.|
+|status|eventPropagationStatus|The Status of the distribution. The possible values are: `pending`, `error`, `success`, `notAvaliable`.|
 
 ## Relationships
 None.

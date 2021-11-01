@@ -1,9 +1,9 @@
 ---
 title: "retentionEventStatus resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph.recordsManagement
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|location|String|**TODO: Add Description**|
-|status|retentionEventStatusType|**TODO: Add Description**. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
-|statusInformation|String|**TODO: Add Description**|
-|workload|String|**TODO: Add Description**|
+|location|String|Location in the workload|
+|status|retentionEventStatusType|Is the event completed. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
+|statusInformation|String|Additional infroamtion about the status|
+|workload|String|Workload being targetted by the event|
 
 ## Relationships
 None.

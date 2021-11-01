@@ -1,9 +1,9 @@
 ---
 title: "retentionLabel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A retentionLabel allows a user to retain or delete content and configure additional settings and actions"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -32,25 +32,25 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod|**TODO: Add Description**. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
-|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|**TODO: Add Description**. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|descriptionForAdmins|String|**TODO: Add Description**|
-|descriptionForUsers|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/recordsmanagement-entity.md).|
-|isInUse|Boolean|**TODO: Add Description**|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|retentionDurationInDays|Int32|**TODO: Add Description**|
-|retentionTrigger|retentionTrigger|**TODO: Add Description**. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod|Specifies the action of a document that has been labeled with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
+|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies the behaviour of a document that has been labeled with this label during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
+|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The user who created the entity|
+|createdDateTime|DateTimeOffset|The date time when the entity was created|
+|descriptionForAdmins|String|Optional information about the label for the Admin|
+|descriptionForUsers|String|Optional information about the label for the User|
+|displayName|String|Unique string defining the name of the label|
+|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|A multi stage collection of reviewers that will be notified and have to approve before an item is deleted|
+|id|String|Id of the label Inherited from [entity](../resources/recordsmanagement-entity.md).|
+|isInUse|Boolean|Specifies if the label is currently being used|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The latest user who modified the entity|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified|
+|retentionDurationInDays|Int32|Specifies the number of days to retain the content|
+|retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|eventType|[retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|**TODO: Add Description**|
+|eventType|[retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type|
 
 ## JSON representation
 The following is a JSON representation of the resource.

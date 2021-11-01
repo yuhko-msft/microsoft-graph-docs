@@ -1,9 +1,9 @@
 ---
 title: "Update retentionEventType"
 description: "Update the properties of a retentionEventType object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|**recordsManagement.ReadWrite.All**|
+|Delegated (personal Microsoft account)|**Not supported**|
+|Application|**recordsManagement.ReadWrite.All**|
 
 ## HTTP request
 
@@ -46,14 +46,12 @@ PATCH /compliance/recordsManagement/labels/{retentionLabelId}/eventType
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|description|String|**TODO: Add Description** Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
-
+|displayName|String|**Name of the event type** Optional.|
+|description|String|**Optional information about the event type** Optional.|
+|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The user who created the entity.** Optional.|
+|createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**The latest user who modified the entity.** Optional.|
+|lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified** Optional.|
 
 ## Response
 

@@ -1,9 +1,9 @@
 ---
 title: "retentionEventType resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Provides infromation for event type. An event type is a generic desription for similar events that you want to associate with a label."
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+When an event is created, it is associated to a specific event type. The creation of this event then triggers all retentuon labels which have the same event type chosen in the label wizard. Only content with retention labels applied to it of that event type will have its retention period triggered. For more information, read [Start retention when an event occurs](https://docs.microsoft.com/en-us/microsoft-365/compliance/event-driven-retention?view=o365-worldwide).
 
 
 Inherits from [entity](../resources/recordsmanagement-entity.md).
@@ -30,13 +30,13 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/recordsmanagement-entity.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|createdBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The user who created the entity.|
+|createdDateTime|DateTimeOffset|The date time when the entity was created.|
+|description|String|Optional information about the event type|
+|displayName|String|Name of the event type|
+|id|String|Id of the EventType Inherited from [entity](../resources/recordsmanagement-entity.md).|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/recordsmanagement-intune-identityset.md)|The latest user who modified the entity.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
 
 ## Relationships
 None.

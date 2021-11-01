@@ -1,9 +1,9 @@
 ---
 title: "dispositionReviewStage resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "**Provides details about the reviewer and the review stage for a label set for a disposition review**"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+For content that has a label set for a disposition review at the end of a retetnion period, the 'dispositionReviewStage' resource type can be used to retrieve details about the reviewer and review stage. To read more about disposition of data, see [Disposition of content](https://docs.microsoft.com/en-us/microsoft-365/compliance/disposition?view=o365-worldwide).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reviewers|String collection|**TODO: Add Description**|
-|stageName|String|**TODO: Add Description**|
+|reviewers|String collection|**A collection of reviewers at each stage**|
+|stageName|String|**Unique name for each stage**|
 
 ## Relationships
 None.
