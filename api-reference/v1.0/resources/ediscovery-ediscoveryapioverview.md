@@ -16,7 +16,7 @@ The Microsoft Graph APIs for eDiscovery provide functionality for organizations 
 
 > [!NOTE]
 > The Microsoft Graph APIs for eDiscovery only work with Advanced eDiscovery cases, which require E5 or equivalent licensing. Microsoft may require you or your customer pay additional fees.
-OK
+
 The eDiscovery API is defined in the OData subnamespace, microsoft.graph.ediscovery. The API includes the following key entities.
 
 | Name | Type       | Use case |
