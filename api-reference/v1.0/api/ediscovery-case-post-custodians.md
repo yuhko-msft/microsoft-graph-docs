@@ -73,7 +73,7 @@ Content-length: 279
 
 {
     "email":"AdeleV@contoso.com",
-    "applyHoldToSources":"true"
+    "applyHoldToSources":"false"
 }
 
 ```
