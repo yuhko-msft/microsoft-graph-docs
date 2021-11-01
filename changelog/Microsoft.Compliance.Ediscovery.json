@@ -713,6 +713,14 @@
 				{
 					"Id": "35ff0fb4-03a4-4b0a-bf85-59a5274d9dca",
 					"ApiChange": "Resource",
+					"ChangedApiName": "estimateStatisticsOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [estimateStatisticsOperation](https://docs.microsoft.com/en-us/graph/api/resources/estimateStatisticsOperation) resource.",
+					"Target": "estimateStatisticsOperation"
+				},
+				{
+					"Id": "35ff0fb4-03a4-4b0a-bf85-59a5274d9dca",
+					"ApiChange": "Resource",
 					"ChangedApiName": "ocrSettings",
 					"ChangeType": "Addition",
 					"Description": "Added the [ocrSettings](https://docs.microsoft.com/en-us/graph/api/resources/ocrSettings?view=graph-rest-1.0) resource",
