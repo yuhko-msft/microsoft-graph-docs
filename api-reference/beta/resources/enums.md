@@ -2301,8 +2301,7 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |none|
-|meetingNotes|
-|other|
+|default|
 |unknownFutureValue|
 
 ### policyScope values

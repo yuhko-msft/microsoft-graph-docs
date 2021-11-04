@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "d1b229fe-6635-4a7e-bbd6-3d95339dff2e",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "plannerExternalTaskSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerExternalTaskSourceType** enumeration type.",
+          "Target": "plannerExternalTaskSourceType"
+        },
+        {
+          "Id": "d1b229fe-6635-4a7e-bbd6-3d95339dff2e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerExternalSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerExternalSource](https://docs.microsoft.com/en-us/graph/api/resources/plannerExternalSource?view=graph-rest-beta) resource type.",
+          "Target": "plannerExternalSource"
+        },
+        {
+          "Id": "d1b229fe-6635-4a7e-bbd6-3d95339dff2e",
+          "ApiChange": "Property",
+          "ChangedApiName": "plannerExternalSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerExternalSource** property to [plannerTaskCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskCreation?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskCreation"
+        }
+      ],
+      "Id": "d1b229fe-6635-4a7e-bbd6-3d95339dff2e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-03T21:50:28.8591563Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read",
