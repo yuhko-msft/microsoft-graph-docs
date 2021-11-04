@@ -50,4 +50,3 @@ The following is a JSON representation of the resource.
   "externalTenantId":"62bfb458-9474-4c44-896b-b30942d055f0"
 }
 ```
-
