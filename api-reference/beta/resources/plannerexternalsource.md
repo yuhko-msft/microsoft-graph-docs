@@ -25,8 +25,8 @@ You can surface Microsoft Planner **Tasks** in external experiences. Using **pla
 |displayNameSegments|String collection|The segments of the name of the external experience. Segments represent a hierarchical structure that allows other apps to display the relationship. This is required unless displayLinkType is `none` in which case it can be omitted.|
 |externalContextId|String|Nullable. The id of the external entity's containing entity or context.|
 |externalObjectId|String|Nullable. The id of the entity that an external service associates with a task.|
-|externalObjectVersion|String|Nullable. The external Item Version for the object specified by the **externalObjectId**.|
-|ownerAppId|String|Read-only. The Id of the app where the task was created.|
+|externalObjectVersion|String|Nullable. The external item version for the object specified by the **externalObjectId**.|
+|ownerAppId|String|Read-only. The id of the app where the task was created.|
 |webUrl|String|Nullable. URL of the user experience represented by the associated **plannerExternalSource**.|
 
 ## Relationships
