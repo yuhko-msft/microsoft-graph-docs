@@ -49,14 +49,13 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
-he request should be a JSON object with the following properties.
 
 |   Property                 |  Type  |                                 Description                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|type|String|Optional.The type of sharing link to create.   |
+|type|String|Optional. The type of sharing link to create.   |
 |scope|String|Optional. The scope of link to create. Either anonymous, organization or users.|
 |expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
-|password|String|Optional.The password of the sharing link that is set by the creator.|
+|password|String|Optional. The password of the sharing link that is set by the creator.|
 |recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
 
 ### Link types
