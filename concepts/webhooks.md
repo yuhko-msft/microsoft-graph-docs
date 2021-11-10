@@ -43,7 +43,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chat][]
 - Teams [chatMessage][]
 - Teams [conversationMember][]
-- Teams [presence][] (preview)
+- Teams [presence][] 
 - Teams [team][]
 - [todoTask][] (preview)
 - [user][]
