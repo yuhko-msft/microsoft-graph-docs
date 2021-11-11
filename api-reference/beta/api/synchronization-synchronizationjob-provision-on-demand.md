@@ -1,6 +1,6 @@
 ---
 title: "synchronizationJob: provisionOnDemand"
-description: "Select a user and provision the account on-demand."
+description: "Provision a user or group on-demand."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.prod: "applications"
