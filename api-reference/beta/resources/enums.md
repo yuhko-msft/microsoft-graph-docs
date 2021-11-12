@@ -2064,6 +2064,40 @@ Possible values for user account types (group membership), per Windows definitio
 |High|1|
 |Low|2|
 
+### recommendationCategory values
+| Member | Value | Description             |
+|:-------|:------|:------------------------|
+| usageAndCompliance|0|Category of recommendations that address best practices related to usage and compliance.|
+| security|1|Category of recommendations that address best practices related to security.|
+| productivity|2|Category of recommendations that address best practices related to productivity.|
+| health|3|Category of recommendations that address best practices related to health.|
+| configuration|4|Category of recommendations that address best practices related to configuration.|
+| unknownFutureValue|5|Placeholder value for future improvements.|
+
+### implementationCost values
+| Member | Value | Description             |
+|:-------|:------|:------------------------|
+| low|0|Indicates low effort to implement recommendation.|
+| moderate|1|Indicates moderate effort to implement recommendation.|
+| high|2|Indicates high effort to implement recommendation.|
+
+### recommendationPriority
+| Member | Value | Description             |
+|:-------|:------|:------------------------|
+| low | 0 | The recommendation is of low priority to address. |
+| medium | 1 | The recommendation is of medium priority to address. |
+| high | 2 | The recommendation is of high priority to address. |
+
+### recommendationStatus
+| Member | Value | Description             |
+|:-------|:------|:------------------------|
+| active | 0 | The recommendation is active. |
+| completedBySystem | 1 | Microsoft detected the recommendation as completed. |
+| completedByUser | 2 | A user completed the recommendation. |
+| dismissed | 3 | The recommendation is dismissed. |
+| postponed | 4 | The recommendation was postponed to a specified date and time. |
+| unknownFutureValue | 5 | Placeholder for future improvements. |
+
 ### threatAssessmentContentType values
 
 | Member | Value | Description             |
