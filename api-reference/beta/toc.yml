@@ -11092,6 +11092,19 @@ items:
             href: api/mobileappmanagementpolicies-post-includedgroups.md
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
+        - name: Recommendations (Preview)
+          href: api/recommendation.md
+          items:
+          - name: List recommendations
+            href: api/recommendation-list.md
+          - name: Get recommendation
+            href: api/recommendation-get.md
+          - name: Update recommendation
+            href: api/recommendation-update.md
+          - name: List impacted resources
+            href: api/recommendation-list-impactedresources.md
+          - name: Update impacted resources
+            href: api/recommendation-post-impactedresources.md
         - name: Role management
           href: resources/rolemanagement.md
           items:

@@ -1,5 +1,151 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "implementationCost",
+          "ChangeType": "Addition",
+          "Description": "Added the **implementationCost** enumeration type.",
+          "Target": "implementationCost"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "recommendationCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **recommendationCategory** enumeration type.",
+          "Target": "recommendationCategory"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "recommendationPriority",
+          "ChangeType": "Addition",
+          "Description": "Added the **recommendationPriority** enumeration type.",
+          "Target": "recommendationPriority"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "recommendationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **recommendationStatus** enumeration type.",
+          "Target": "recommendationStatus"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionStep",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionStep](https://docs.microsoft.com/en-us/graph/api/resources/actionStep?view=graph-rest-beta) resource type.",
+          "Target": "actionStep"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionUrl](https://docs.microsoft.com/en-us/graph/api/resources/actionUrl?view=graph-rest-beta) resource type.",
+          "Target": "actionUrl"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directory",
+          "ChangeType": "Addition",
+          "Description": "Added the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource",
+          "Target": "directory"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendation",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendation](https://docs.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationResource](https://docs.microsoft.com/en-us/graph/api/resources/recommendationResource?view=graph-rest-beta) resource",
+          "Target": "recommendationResource"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "complete",
+          "ChangeType": "Addition",
+          "Description": "Added the [complete](https://docs.microsoft.com/en-us/graph/api/complete?view=graph-rest-beta) method to the [complete](https://docs.microsoft.com/en-us/graph/api/complete?view=graph-rest-beta) resource.",
+          "Target": "complete"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "complete",
+          "ChangeType": "Addition",
+          "Description": "Added the [complete](https://docs.microsoft.com/en-us/graph/api/complete?view=graph-rest-beta) method to the [complete](https://docs.microsoft.com/en-us/graph/api/complete?view=graph-rest-beta) resource.",
+          "Target": "complete"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/dismiss?view=graph-rest-beta) method to the [dismiss](https://docs.microsoft.com/en-us/graph/api/dismiss?view=graph-rest-beta) resource.",
+          "Target": "dismiss"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/dismiss?view=graph-rest-beta) method to the [dismiss](https://docs.microsoft.com/en-us/graph/api/dismiss?view=graph-rest-beta) resource.",
+          "Target": "dismiss"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "postpone",
+          "ChangeType": "Addition",
+          "Description": "Added the [postpone](https://docs.microsoft.com/en-us/graph/api/postpone?view=graph-rest-beta) method to the [postpone](https://docs.microsoft.com/en-us/graph/api/postpone?view=graph-rest-beta) resource.",
+          "Target": "postpone"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "postpone",
+          "ChangeType": "Addition",
+          "Description": "Added the [postpone](https://docs.microsoft.com/en-us/graph/api/postpone?view=graph-rest-beta) method to the [postpone](https://docs.microsoft.com/en-us/graph/api/postpone?view=graph-rest-beta) resource.",
+          "Target": "postpone"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "reactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [reactivate](https://docs.microsoft.com/en-us/graph/api/reactivate?view=graph-rest-beta) method to the [reactivate](https://docs.microsoft.com/en-us/graph/api/reactivate?view=graph-rest-beta) resource.",
+          "Target": "reactivate"
+        },
+        {
+          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+          "ApiChange": "Method",
+          "ChangedApiName": "reactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [reactivate](https://docs.microsoft.com/en-us/graph/api/reactivate?view=graph-rest-beta) method to the [reactivate](https://docs.microsoft.com/en-us/graph/api/reactivate?view=graph-rest-beta) resource.",
+          "Target": "reactivate"
+        }
+      ],
+      "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-09T18:57:28.0163572Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
       {
         "ChangeList": [
           {
