@@ -11099,12 +11099,26 @@ items:
             href: api/recommendation-list.md
           - name: Get recommendation
             href: api/recommendation-get.md
-          - name: Update recommendation
-            href: api/recommendation-update.md
+          - name: Complete a recommendation
+            href: api/recommendation-complete.md
+          - name: Dismiss a recommendation
+            href: api/recommendation-dismiss.md
+          - name: Postpone a recommendation
+            href: api/recommendation-postpone.md
+          - name: Reactivate a recommendation
+            href: api/recommendation-reactivate.md
           - name: List impacted resources
             href: api/recommendation-list-impactedresources.md
-          - name: Update impacted resources
-            href: api/recommendation-post-impactedresources.md
+          - name: Get a recommendationResource
+            href: api/recommendationresource-get.md
+          - name: Complete a recommendationResource
+            href: api/recommendationresource-complete.md
+          - name: Dismiss a recommendationResource
+            href: api/recommendationresource-dismiss.md
+          - name: Postpone a recommendationResource
+            href: api/recommendationresource-postpone.md
+          - name: Reactivate a recommendationResource
+            href: api/recommendationresource-reactivate.md
         - name: Role management
           href: resources/rolemanagement.md
           items:

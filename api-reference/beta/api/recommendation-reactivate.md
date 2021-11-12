@@ -1,27 +1,27 @@
 ---
-title: "Get recommendation"
-description: "Read the properties and relationships of a recommendation object."
+title: "Reactivate a recommendation"
+description: "Updates the status of a recommendation to active"
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get a recommendation
+# Reactivate a recommendation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [recommendation](../resources/recommendation.md) object.
+Updates the status of a [recommendation](../resources/recommendation.md) to `active`. By default, a recommendation's status is set to `active` when the recommendation is first generated. This method is only relevant if a recommendation status is `completedByUser`, `dismissed`, or `postponed`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Reports.Read.All|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
 
@@ -30,11 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/recommendations/{recommendationId}
+POST /directory/recommendations/{recommendationId}/reactivate
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -46,18 +43,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [recommendation](../resources/recommendation.md) object in the response body.
+If successful, this action returns a `200 OK` response code and a [recommendation](../resources/recommendation.md) in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_recommendation"
+  "name": "recommendationthis.reactivate"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}
+POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/reactivate
 ```
 
 
@@ -76,7 +73,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.recommendation",
-    "id": "d98332df-8837-eece-3036-9e0c3579ad01",
+    "id": "String (identifier)",
     "actionSteps": [
       {
         "@odata.type": "microsoft.graph.actionStep"

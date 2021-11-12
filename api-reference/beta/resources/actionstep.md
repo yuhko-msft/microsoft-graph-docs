@@ -1,9 +1,9 @@
 ---
 title: "actionStep resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents a single action to take toward completing a recommendation"
+author: "hafowler"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Represents a single action to take toward completing a [recommendation](../resources/recommendation.md).**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionUrl|[actionUrl](../resources/actionurl.md)|**TODO: Add Description**|
-|stepNumber|Int64|**TODO: Add Description**|
-|text|String|**TODO: Add Description**|
+|actionUrl|[actionUrl](../resources/actionurl.md)|Link to documentation or Azure Active Directory portal page associated with the action step.|
+|stepNumber|Int64|Indicates the order in which the action should be taken.|
+|text|String|Describes the action to take.|
 
 ## Relationships
 None.

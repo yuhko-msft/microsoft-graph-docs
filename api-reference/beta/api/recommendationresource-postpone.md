@@ -1,18 +1,18 @@
 ---
-title: "Get recommendationResource"
-description: "Read the properties and relationships of a recommendationResource object."
+title: "Postpone a recommendationResource"
+description: "**Updates the status of a recommendationResource to postponed to a specified date and time"
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get recommendationResource
+# Postpone a recommendationResource
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [recommendationResource](../resources/recommendationresource.md) object.
+Updates the status of a [recommendationResource](../resources/recommendationresource.md) to `postponed` to a specified date and time. On the provided date and time, the recommendationResource status will update to `active`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,34 +30,46 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/impactedResources/{recommendationResourceId}
+POST /directory/impactedResources/{recommendationResourceId}/postpone
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|postponeUntilDateTime|DateTimeOffset|The date and time at which a recommendationResource status will be updated to `active`.|
+
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [recommendationResource](../resources/recommendationresource.md) object in the response body.
+If successful, this action returns a `200 OK` response code and a [recommendationResource](../resources/recommendationresource.md) in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_recommendationresource"
+  "name": "recommendationresourcethis.postpone"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/impactedResources/{recommendationResourceId}
+POST https://graph.microsoft.com/beta/directory/impactedResources/{recommendationResourceId}/postpone
+Content-Type: application/json
+Content-length: 53
+
+{
+  "postponeUntilDateTime": "String (timestamp)"
+}
 ```
 
 
@@ -76,7 +88,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.recommendationResource",
-    "id": "4ce28e9b-3260-5d4e-0b4f-860d5ff18fa2",
+    "id": "String (identifier)",
     "recommendationId": "String",
     "addedDateTime": "String (timestamp)",
     "portalUrl": "String",

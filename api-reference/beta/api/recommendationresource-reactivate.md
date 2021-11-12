@@ -1,18 +1,18 @@
 ---
-title: "Get recommendationResource"
-description: "Read the properties and relationships of a recommendationResource object."
+title: "Reactivate a recommendationResource"
+description: "Updates the status of a recommendationResource to active"
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get recommendationResource
+# Reactivate a recommendationResource
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [recommendationResource](../resources/recommendationresource.md) object.
+Updates the status of a [recommendationResource](../resources/recommendationresource.md) to `active`. This method is relevant only if the recommendationResource status is `dismissed`, `postponed`, or `completedByUser`. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,11 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/impactedResources/{recommendationResourceId}
+POST /directory/impactedResources/{recommendationResourceId}/reactivate
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -46,18 +43,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [recommendationResource](../resources/recommendationresource.md) object in the response body.
+If successful, this action returns a `200 OK` response code and a [recommendationResource](../resources/recommendationresource.md) in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_recommendationresource"
+  "name": "recommendationresourcethis.reactivate"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/impactedResources/{recommendationResourceId}
+POST https://graph.microsoft.com/beta/directory/impactedResources/{recommendationResourceId}/reactivate
 ```
 
 
@@ -76,7 +73,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.recommendationResource",
-    "id": "4ce28e9b-3260-5d4e-0b4f-860d5ff18fa2",
+    "id": "String (identifier)",
     "recommendationId": "String",
     "addedDateTime": "String (timestamp)",
     "portalUrl": "String",
