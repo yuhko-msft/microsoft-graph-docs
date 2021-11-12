@@ -21,9 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List recommendationResources](../api/recommendationresource-list.md)|[recommendationResource](../resources/recommendationresource.md) collection|Get a list of the [recommendationResource](../resources/recommendationresource.md) objects and their properties.|
+|[List recommendationResources](../api/recommendation-list-impactedresources.md)|[recommendationResource](../resources/recommendationresource.md) collection|Get a list of the [recommendationResource](../resources/recommendationresource.md) objects and their properties.|
 |[Get recommendationResource](../api/recommendationresource-get.md)|[recommendationResource](../resources/recommendationresource.md)|Read the properties and relationships of a [recommendationResource](../resources/recommendationresource.md) object.|
-|[Update recommendationResource](../api/recommendationresource-update.md)|[recommendationResource](../resources/recommendationresource.md)|Update the properties of a [recommendationResource](../resources/recommendationresource.md) object.|
 |[Postpone recommendationResource](../api/recommendationresource-postpone.md)|[recommendationResource](../resources/recommendationresource.md)|Marks a [recommendationResource](../resources/recommendationresource.md) status as `postponed` to a specified date and time.|
 |[Dismiss recommendationResource](../api/recommendationresource-dismiss.md)|[recommendationResource](../resources/recommendationresource.md)|Marks a [recommendationResource](../resources/recommendationresource.md) status as `dismissed`.|
 |[Complete recommendationResource](../api/recommendationresource-complete.md)|[recommendationResource](../resources/recommendationresource.md)|Marks a [recommendationResource](../resources/recommendationresource.md) status as `completedByUser`.|
@@ -33,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |addedDateTime|DateTimeOffset|The date and time the [recommendationResource](../resources/recommendationresource.md) was initally associated with a [recommendation](../resources/recommendation.md).|
-|additionalDetails|[keyValue](../resources/intune-keyvalue.md) collection|Additional information unique per [recommendation](../resources/recommendation.md) to help complete the recommendation.|
+|additionalDetails|[keyValue](../resources/keyvalue.md) collection|Additional information unique per [recommendation](../resources/recommendation.md) to help complete the recommendation.|
 |apiUrl|String|The URL link to the corresponding directory object.|
 |displayName|String|Friendly name of the directory object.|
 |id|String|The unique identifier of the resource. Inherited from [entity](../resources/entity.md).|

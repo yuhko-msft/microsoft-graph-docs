@@ -11093,7 +11093,7 @@ items:
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Recommendations (Preview)
-          href: api/recommendation.md
+          href: resources/recommendation.md
           items:
           - name: List recommendations
             href: api/recommendation-list.md
