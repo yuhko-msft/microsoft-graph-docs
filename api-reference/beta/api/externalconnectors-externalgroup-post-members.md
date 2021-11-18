@@ -140,7 +140,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
+  "type": "externalGroup",
 }
 ```
 # [C#](#tab/csharp)
@@ -178,7 +178,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
+  "type": "externalGroup",
 }
 ```
 

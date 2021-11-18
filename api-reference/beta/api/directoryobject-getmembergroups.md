@@ -1,5 +1,5 @@
 ---
-title: "Get member groups"
+title: "directoryObject: getMemberGroups"
 description: "Return all the groups that the specified user, group, service principal or directory object is a member of. This function is transitive."
 ms.localizationpriority: medium
 author: "keylimesoda"
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get member groups
+# directoryObject: getMemberGroups
 
 Namespace: microsoft.graph
 
@@ -45,9 +45,9 @@ POST /servicePrincipals/{id}/getMemberGroups
 POST /directoryObjects/{id}/getMemberGroups
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 | Content-Type  | application/json  |
 
 ## Request body
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmembergroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmembergroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
