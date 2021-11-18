@@ -101,7 +101,7 @@ Namespace: microsoft.graph.externalConnectors
 <!--
 {
   "type": "#page.annotation",
-  "namespace": "microsoft.graph.externalConnectors.identity"
+  "namespace": "microsoft.graph.externalConnectors"
 }
 -->
 
