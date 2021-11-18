@@ -721,6 +721,24 @@
       "CreatedDateTime": "2021-07-19T17:11:41.609Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+          {
+              "Id": "e1972a45-5986-409c-b978-9e44093bd487",
+              "ApiChange": "Resource",
+              "ChangedApiName": "externalGroupMember",
+              "ChangeType": "Deletion",
+              "Description": "Removed the [externalGroupMember](https://docs.microsoft.com/en-us/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource.",
+              "Target": "externalGroupMember"
+          }
+      ],
+      "Id": "e1972a45-5986-409c-b978-9e44093bd487",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-18T10:11:41.609Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
