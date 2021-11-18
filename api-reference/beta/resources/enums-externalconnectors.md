@@ -58,10 +58,10 @@ Namespace: microsoft.graph.externalConnectors
 
 | Member
 |:--------------
+| identity
 | user
 | group
 | unknownFutureValue
-| identity
 
 
 ### externalItemContentType values
