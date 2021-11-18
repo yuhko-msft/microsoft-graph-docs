@@ -1,16 +1,18 @@
 ---
-title: "List endpoints"
-description: "Get the endpoint resources from the endpoints navigation property."
+title: "Create endpoint"
+description: "Create a new endpoint object."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# List endpoints
+# Create endpoint
 Namespace: microsoft.graph
 
-Get the endpoint resources from the endpoints navigation property.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new endpoint object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,34 +30,57 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /servicePrincipals/{servicePrincipalsId}/endpoints
+POST /servicePrincipals/{servicePrincipalsId}/endpoints
+POST /servicePrincipals/appId={servicePrincipalAppId}/endpoints
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of the [endpoint](../resources/endpoint.md) object.
+
+You can specify the following properties when creating an **endpoint**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|capability|String|**TODO: Add Description** Required.|
+|providerId|String|**TODO: Add Description** Optional.|
+|providerName|String|**TODO: Add Description** Optional.|
+|uri|String|**TODO: Add Description** Required.|
+|providerResourceId|String|**TODO: Add Description** Optional.|
+
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [endpoint](../resources/endpoint.md) objects in the response body.
+If successful, this method returns a `201 Created` response code and an [endpoint](../resources/endpoint.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_endpoint"
+  "name": "create_endpoint_from_"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalsId}/endpoints
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/endpoints
+Content-Type: application/json
+Content-length: 244
+{
+  "@odata.type": "#Microsoft.DirectoryServices.endpoint",
+  "deletedDateTime": "String (timestamp)",
+  "capability": "String",
+  "providerId": "String",
+  "providerName": "String",
+  "uri": "String",
+  "providerResourceId": "String"
+}
 ```
 
 
@@ -64,24 +89,20 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalsId}/end
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.DirectoryServices.endpoint)"
+  "@odata.type": "Microsoft.DirectoryServices.endpoint"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 {
-  "value": [
-    {
-      "@odata.type": "#Microsoft.DirectoryServices.endpoint",
-      "id": "73e3eb32-eb32-73e3-32eb-e37332ebe373",
-      "deletedDateTime": "String (timestamp)",
-      "capability": "String",
-      "providerId": "String",
-      "providerName": "String",
-      "uri": "String",
-      "providerResourceId": "String"
-    }
-  ]
+  "@odata.type": "#Microsoft.DirectoryServices.endpoint",
+  "id": "73e3eb32-eb32-73e3-32eb-e37332ebe373",
+  "deletedDateTime": "String (timestamp)",
+  "capability": "String",
+  "providerId": "String",
+  "providerName": "String",
+  "uri": "String",
+  "providerResourceId": "String"
 }
 ```
