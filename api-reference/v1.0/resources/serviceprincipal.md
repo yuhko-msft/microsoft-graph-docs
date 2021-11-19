@@ -45,6 +45,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Remove delegated permission classification](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | None | Remove a permission classification for a delegated permission exposed by this service principal.|
 |**Delegated permission grants**| | |
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get the delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.|
+|**Endpoints**| | |
+|[List endpoints](../api/serviceprincipal-list-endpoints.md) |[endpoint](endpoint.md) collection| |
+|[Get endpoint](../api/endpoint-get.md) |[endpoint](endpoint.md) collection| |
 |**Membership**| | |
 |[List memberOf](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this service principal is a direct member of from the memberOf navigation property.|
 |[List transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this service principal is a member of. This operation is transitive and includes the groups that this service principal is a nested member of. |
