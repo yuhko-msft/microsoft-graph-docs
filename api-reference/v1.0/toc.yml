@@ -917,6 +917,13 @@ items:
             href: api/serviceprincipal-post-delegatedpermissionclassifications.md
           - name: Delete
             href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
+        - name: Endpoints
+          href: resources/endpoint.md
+          items:
+          - name: List
+            href: api/serviceprincipal-list-endpoints.md
+          - name: Get
+            href: api/endpoint-get.md
         - name: Membership
           items:
           - name: List member of
