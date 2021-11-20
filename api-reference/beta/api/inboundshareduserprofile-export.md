@@ -1,25 +1,25 @@
 ---
-title: "Remove personalData (inboundSharedUserProfile)"
-description: "Creates a request to remove all personal data associated with an inbound shared user. If approved, the external user's personal data will be removed from the resource tenant (the tenant from which this API was invoked)."
+title: "Export personalData (inboundSharedUserProfile)"
+description: "Creates a request to export all personal data associated with an inbound shared user. If approved, the external user's personal data will be exported from the resource tenant."
 author: "adimitui"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Remove personalData (inboundSharedUserProfile)
+# Export personalData (inboundSharedUserProfile)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a request to remove all personal data associated with an inbound shared user. If approved, the external user's personal data will be removed from the resource tenant (the tenant from which this API was invoked).
+Creates a request to export all personal data associated with an inbound shared user. If approved, the external user's personal data will be exported from the resource tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CrossTenantUserProfileSharing.ReadWrite.All|
+|Delegated (work or school account)|CrossTenantUserProfileSharing.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/inboundSharedUserProfiles/{inboundSharedUserProfileId}/removePersonalData
+POST /directory/inboundSharedUserProfiles/{inboundSharedUserProfileId}/exportPersonalData
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ Note that resource tenant ID is inferred from the caller identity.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -69,6 +69,9 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
+{
+  Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
+  Retry-After: 60
+}
 ```
-
