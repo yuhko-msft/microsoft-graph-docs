@@ -20,7 +20,7 @@ From the users homed in the current tenant, the AAD users whose profile data is 
 |:---|:---|:---|
 |[List outboundSharedUserProfile](../api/outboundSharedUserProfile-list.md)|[outboundSharedUserProfile](../resources/outboundSharedUserProfile.md) collection|List the AAD users whose profile data is shared with external tenants.|
 |[Get outboundSharedUserProfile](../api/outboundSharedUserProfile-get.md)|[outboundSharedUserProfile](../resources/outboundSharedUserProfile.md)|Read the properties and relationships of a [outboundSharedUserProfile](../resources/outboundSharedUserProfile.md) object.|
-|[Remove personalData](../api/outboundSharedUserProfile-remove.md)|None|Creates a request to remove all personal data associated with an outbound shared user. If approved, the personal data will be removed from the external tenant.|
+|[Remove personalData](../api/outboundSharedUserProfile-remove.md)|None|Creates a request to remove all personal data associated with an outbound shared user. If approved, the user's personal data will be removed from external tenants.|
 
 
 ## Properties
