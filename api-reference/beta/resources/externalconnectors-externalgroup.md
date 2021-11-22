@@ -41,7 +41,7 @@ Examples of external groups are business units and work teams.
 
 | Relationship | Type                                                                  | Description                                               |
 |:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
-| members      | [microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) collection | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or other **externalGroups** as members. |
+| members      | [microsoft.graph.externalConnectors.identityType](../resources/externalconnectors-identity.md) collection | A member added to an **externalGroup**. You can add Azure Active Directory users, Azure Active Directory groups, or other **externalGroups** as members. |
 
 ## JSON representation
 
