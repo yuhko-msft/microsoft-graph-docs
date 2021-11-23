@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.ediscovery
 
-Start the process that adds a collection from Microsoft 365 services to a review set. After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [caseExportOperation](../resources/ediscovery-caseexportoperation.md).
+Start the process of adding a collection from Microsoft 365 services to a review set. After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [addToReviewsetOperation](../resources/ediscovery-addtoreviewsetoperation.md).
 
 ## Permissions
 
