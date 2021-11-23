@@ -731,6 +731,22 @@
               "ChangeType": "Deletion",
               "Description": "Removed the [externalGroupMember](https://docs.microsoft.com/en-us/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource.",
               "Target": "externalGroupMember"
+          },
+          {
+            "Id": "e1972a45-5986-409c-b978-9e44093bd487",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "externalGroupMemberType",
+            "ChangeType": "Deletion",
+            "Description": "Removed the **externalGroupMemberType** enumeration type.",
+            "Target": "externalGroupMemberType"
+          },
+          {
+            "Id": "e1972a45-5986-409c-b978-9e44093bd487",
+            "ApiChange": "Resource",
+            "ChangedApiName": "members",
+            "ChangeType": "Deletion",
+            "Description": "Removed the **members** relationship from [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalGroup?view=graph-rest-beta) resource.",
+            "Target": "externalGroup"
           }
       ],
       "Id": "e1972a45-5986-409c-b978-9e44093bd487",
