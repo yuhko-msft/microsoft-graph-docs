@@ -605,6 +605,24 @@
 		{
 			"ChangeList": [
 				{
+					"Id": "1ca6e223-8e4d-4f4c-bd4e-2d2c5da12506",
+					"ApiChange": "Resource",
+					"ChangedApiName": "settings",
+					"ChangeType": "Change",
+					"Description": "Changed the name of the **settings** resource type to [caseSettings](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery-casesettings?view=graph-rest-beta).",
+					"Target": "caseSettings"
+				}
+			],
+			"Id": "1ca6e223-8e4d-4f4c-bd4e-2d2c5da12506",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-10-12T16:54:33.510Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
+		},
+		{
+			"ChangeList": [
+				{
 					"Id": "ec3b1669-2154-11ec-bd5a-a13d1ed8c60f",
 					"ApiChange": "Relationship",
 					"ChangedApiName": "files",
