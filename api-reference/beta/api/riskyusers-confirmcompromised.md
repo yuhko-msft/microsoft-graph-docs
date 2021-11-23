@@ -39,7 +39,7 @@ POST /riskyUsers/confirmCompromised
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Specify the risky user IDs to dismiss in the request body.
+Specify the risky user IDs to confirm as compromised in the request body.
 
 ## Response
 
