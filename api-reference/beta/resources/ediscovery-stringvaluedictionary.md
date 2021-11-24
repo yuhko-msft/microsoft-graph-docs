@@ -1,6 +1,6 @@
 ---
 title: "stringValueDictionary resource type"
-description: "Name value pair collection used for electronically stored information metadata"
+description: "Represents a name value pair collection used for electronically stored information metadata."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Name value pair collection used for electronically stored information metadata
+Represents a name value pair collection used for electronically stored information metadata.
 
 ## Properties
 |Property|Type|Description|

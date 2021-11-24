@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the file resources from the files navigation property.
+Get the **file** resources from the files navigation property.
 
 ## Permissions
 
@@ -68,7 +68,8 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c7158891-fb5d-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.file)"
+  "isCollection": true,
+"@odata.type": "microsoft.graph.ediscovery.file"
 }
 -->
 

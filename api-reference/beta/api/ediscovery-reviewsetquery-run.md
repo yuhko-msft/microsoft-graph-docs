@@ -33,10 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /caseExportOperation/reviewSetQuery/run
+GET /compliance/ediscovery/cases/{caseId}}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}/run
 ```
-
-/compliance/ediscovery/cases/{caseId}}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}/run
 
 ## Request headers
 
