@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```typescript
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+const graphServiceClient = new GraphServiceClient(requestAdapter);
+
+const requestBody = new AuthenticationMethodsPolicy()
+requestBody.registrationEnforcement = new RegistrationEnforcement();
+requestBody.registrationEnforcement.authenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
+requestBody.registrationEnforcement.authenticationMethodsRegistrationCampaign.snoozeDurationInDays = 1;
+requestBody.registrationEnforcement.authenticationMethodsRegistrationCampaign.state = "enabled";
+requestBody.registrationEnforcement.authenticationMethodsRegistrationCampaign.excludeTargets = [
+				]
+			],
+requestBody.registrationEnforcement.authenticationMethodsRegistrationCampaign.includeTargets = [
+					new AuthenticationMethodsRegistrationCampaignIncludeTarget();
+requestBody.registrationEnforcement.authenticationMethodsRegistrationCampaign.includeTargets.additionalData = new Map([
+							["id", "3ee3a9de-0a86-4e12-a287-9769accf1ba2"];
+							["targetType", "group"];
+							["targetedAuthenticationMethod", "microsoftAuthenticator"];
+						]);
+				]
+			],
+async () => {
+	await graphServiceClient.policies.authenticationMethodsPolicy.patch(requestBody);
+}
+
+
+```

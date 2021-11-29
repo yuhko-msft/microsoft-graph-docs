@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 [!INCLUDE [sample-code](../includes/snippets/go/get-resource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-resource-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

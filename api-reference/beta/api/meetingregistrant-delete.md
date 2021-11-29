@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa814
 [!INCLUDE [sample-code](../includes/snippets/go/delete-registratrant-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/delete-registratrant-user-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

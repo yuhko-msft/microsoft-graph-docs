@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 [!INCLUDE [sample-code](../includes/snippets/go/get-businessflowtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-businessflowtemplate-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/settings/itemInsights
 [!INCLUDE [sample-code](../includes/snippets/go/get-userinsightssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-userinsightssettings-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

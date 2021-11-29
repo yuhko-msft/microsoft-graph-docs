@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 [!INCLUDE [sample-code](../includes/snippets/go/delete-domain-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/delete-domain-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

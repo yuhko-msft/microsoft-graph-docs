@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-privilegedroles-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

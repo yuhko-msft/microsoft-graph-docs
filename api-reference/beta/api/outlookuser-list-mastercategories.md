@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories
 [!INCLUDE [sample-code](../includes/snippets/go/get-mastercategories-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-mastercategories-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

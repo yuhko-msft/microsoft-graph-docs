@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 [!INCLUDE [sample-code](../includes/snippets/go/get-conversations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-conversations-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

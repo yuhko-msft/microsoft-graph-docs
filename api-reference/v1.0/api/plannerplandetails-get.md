@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 [!INCLUDE [sample-code](../includes/snippets/go/get-plannerplandetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-plannerplandetails-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

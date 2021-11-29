@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies
 [!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-featurerolloutpolicies-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

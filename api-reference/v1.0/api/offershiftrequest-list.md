@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/offerShiftRequests
 [!INCLUDE [sample-code](../includes/snippets/go/get-offershiftrequest-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-offershiftrequest-2-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---

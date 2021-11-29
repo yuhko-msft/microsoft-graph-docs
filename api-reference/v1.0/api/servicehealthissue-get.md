@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues/MO226784
 [!INCLUDE [sample-code](../includes/snippets/go/get-servicehealthissue-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-servicehealthissue-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

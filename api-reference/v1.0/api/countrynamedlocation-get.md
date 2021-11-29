@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/1
 [!INCLUDE [sample-code](../includes/snippets/go/get-countrynamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-countrynamedlocation-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

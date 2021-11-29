@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/profile/educationalActivities
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationalactivities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-educationalactivities-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

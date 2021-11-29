@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/me/planner/tasks
 [!INCLUDE [sample-code](../includes/snippets/go/planneruser-get-tasks-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/planneruser-get-tasks-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

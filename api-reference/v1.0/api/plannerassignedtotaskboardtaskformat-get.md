@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoard
 [!INCLUDE [sample-code](../includes/snippets/go/get-plannerassignedtotaskboardtaskformat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-plannerassignedtotaskboardtaskformat-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

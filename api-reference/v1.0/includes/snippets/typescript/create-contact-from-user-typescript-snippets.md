@@ -1,0 +1,30 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```typescript
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+const graphServiceClient = new GraphServiceClient(requestAdapter);
+
+const requestBody = new Contact()
+requestBody.givenName = "Pavel";
+requestBody.surname = "Bansky";
+requestBody.emailAddresses = [
+			new EmailAddress();
+requestBody.emailAddresses.additionalData = new Map([
+					["address", "pavelb@fabrikam.onmicrosoft.com"];
+					["name", "Pavel Bansky"];
+				]);
+		]
+	],
+requestBody.businessPhones = [
+			"+1 732 555 0102";
+		]
+	],
+const result = async () => {
+	await graphServiceClient.me.contacts.post(requestBody);
+}
+
+
+```

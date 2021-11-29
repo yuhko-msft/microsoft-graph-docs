@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/profile
 [!INCLUDE [sample-code](../includes/snippets/go/get-profile-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-profile-1-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -319,6 +323,10 @@ GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-profile-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-profile-2-typescript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

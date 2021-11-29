@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
 [!INCLUDE [sample-code](../includes/snippets/go/get-printer-tasktriggers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-printer-tasktriggers-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations
 [!INCLUDE [sample-code](../includes/snippets/go/get-workforceintegrations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-workforceintegrations-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

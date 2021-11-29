@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints/{
 [!INCLUDE [sample-code](../includes/snippets/go/get-printserviceendpoint-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-printserviceendpoint-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

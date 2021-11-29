@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/profile/websites/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-personwebsite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-personwebsite-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

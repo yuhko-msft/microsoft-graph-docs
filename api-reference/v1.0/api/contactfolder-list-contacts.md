@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
 [!INCLUDE [sample-code](../includes/snippets/go/contactfolder-get-contacts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/contactfolder-get-contacts-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

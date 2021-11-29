@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments/my
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedroleassignment-my-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/privilegedroleassignment-my-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 [!INCLUDE [sample-code](../includes/snippets/go/get-filesfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-filesfolder-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

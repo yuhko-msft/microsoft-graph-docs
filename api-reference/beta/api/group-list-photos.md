@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/photos
 [!INCLUDE [sample-code](../includes/snippets/go/get-photos-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-photos-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

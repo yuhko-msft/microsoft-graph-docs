@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers
 [!INCLUDE [sample-code](../includes/snippets/go/get-allowedusers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-allowedusers-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

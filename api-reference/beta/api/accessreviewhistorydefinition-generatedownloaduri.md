@@ -82,6 +82,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDe
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewhistorydefinition-generatedownloaduri-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/accessreviewhistorydefinition-generatedownloaduri-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

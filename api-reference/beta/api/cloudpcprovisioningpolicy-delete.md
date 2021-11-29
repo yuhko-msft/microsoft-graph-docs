@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisi
 [!INCLUDE [sample-code](../includes/snippets/go/delete-provisioningpolicies-from-virtualendpoint-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/delete-provisioningpolicies-from-virtualendpoint-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

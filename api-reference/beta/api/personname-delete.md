@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/names/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/delete-personname-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/delete-personname-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

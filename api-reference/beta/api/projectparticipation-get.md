@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/profile/projects/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-projectparticipation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-projectparticipation-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
