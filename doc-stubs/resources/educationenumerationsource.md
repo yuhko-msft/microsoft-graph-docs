@@ -1,0 +1,46 @@
+---
+title: "educationEnumerationSource resource type"
+description: "Abstract base type for education-specific classes to define a subset of data in the canonical store to enumerate."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: resourcePageType
+---
+
+# educationEnumerationSource resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Abstract base type for education-specific classes to define a subset of data in the canonical store to enumerate.
+This is an abstract type.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|gradeLevelFilters|String collection|**TODO: Add Description**|
+|organizationFilters|String collection|**TODO: Add Description**|
+
+## Relationships
+None.
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.educationEnumerationSource"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.educationEnumerationSource",
+  "organizationFilters": [
+    "String"
+  ],
+  "gradeLevelFilters": [
+    "String"
+  ]
+}
+```
+

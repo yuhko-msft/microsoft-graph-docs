@@ -1,0 +1,94 @@
+---
+title: "List sftpFileDataConnectors"
+description: "Get a list of the sftpFileDataConnector objects and their properties."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: apiPageType
+---
+
+# List sftpFileDataConnectors
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get a list of the [sftpFileDataConnector](../resources/sftpfiledataconnector.md) objects and their properties.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET ** Collection URI for microsoft.industryData.sftpFileDataConnector not found
+```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [sftpFileDataConnector](../resources/sftpfiledataconnector.md) objects in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_sftpfiledataconnector"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta** Collection URI for microsoft.industryData.sftpFileDataConnector not found
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.industryData.sftpFileDataConnector)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.industryData.sftpFileDataConnector",
+      "id": "d3f64b54-4b54-d3f6-544b-f6d3544bf6d3",
+      "eTag": "String",
+      "displayName": "String",
+      "credential": {
+        "@odata.type": "microsoft.graph.credential"
+      },
+      "sftpAddress": "String",
+      "formatSettings": {
+        "@odata.type": "microsoft.graph.fileFormatSettings"
+      }
+    }
+  ]
+}
+```
+
