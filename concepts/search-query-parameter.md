@@ -125,12 +125,13 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 * **Spaces**: `hello world` => `hello`, `world`
 * **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
 * **Symbols**⁽²⁾: `hello.world` => `hello`, `.`, `world`, `helloworld`
+* **Symbols**⁽²⁾: `董毅(Martin Dong)` => '董毅', `(`, `Martin`, `Dong`, `)`
 * **Numbers**: `hello123world` => `hello`, `123`, `world`
 
 ⁽¹⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`. 
 ⁽²⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
 
-> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
+> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, `董毅(Martin Dong)` will match search strings `董毅(Martin Dong)`, `董毅`, `Martin`, `Dong`, `Martin)`, `(董毅`, `Dong 董毅`.
 
 The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior. For example:
 
