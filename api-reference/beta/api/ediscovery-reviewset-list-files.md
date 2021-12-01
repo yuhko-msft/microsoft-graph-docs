@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the **file** resources from the files navigation property.
+Get the [file](../resources/ediscovery-file.md) resources from the **files** navigation property.
 
 ## Permissions
 

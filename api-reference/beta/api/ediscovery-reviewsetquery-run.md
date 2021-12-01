@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{caseId}}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}/run
+GET /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{reviewSetQueryId}/run
 ```
 
 ## Request headers
@@ -69,7 +69,8 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c7158891-fb5d-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.ediscovery.file)"
+  @odata.type": "microsoft.graph.ediscovery.file
+  "isCollection": true
 }
 -->
 

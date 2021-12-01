@@ -16,22 +16,24 @@ Namespace: microsoft.graph.ediscovery
 Represents a name value pair collection used for electronically stored information metadata.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ediscovery.stringValueDictionary"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.ediscovery.stringValueDictionary"
 }
 ```
-
