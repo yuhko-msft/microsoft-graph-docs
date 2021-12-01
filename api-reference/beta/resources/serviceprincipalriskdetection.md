@@ -1,9 +1,9 @@
 ---
 title: "servicePrincipalRiskDetection resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents information about a detected workload identity risk in an Azure AD tenant, including risk for applications, service principals and Managed Identities."
+author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

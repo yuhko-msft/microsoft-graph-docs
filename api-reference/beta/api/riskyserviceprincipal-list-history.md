@@ -1,9 +1,9 @@
 ---
 title: "List history of riskyServicePrincipal"
 description: "Get the riskyServicePrincipalHistoryItem resources from the history navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -71,27 +71,20 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/{
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.riskyServicePrincipalHistoryItem",
-      "id": "fd6ec3bb-c3bb-fd6e-bbc3-6efdbbc36efd",
-      "accountEnabled": "Boolean",
-      "isProcessing": "Boolean",
-      "riskLastUpdatedDateTime": "String (timestamp)",
-      "riskLevel": "String",
-      "riskState": "String",
-      "riskDetail": "String",
-      "displayName": "String",
-      "appId": "String",
-      "servicePrincipalType": "String",
-      "servicePrincipalId": "String",
-      "initiatedBy": "String",
-      "activity": {
-        "@odata.type": "microsoft.graph.riskServicePrincipalActivity"
-      }
-    }
-  ]
+        {
+            "id": "0fbef39d-9e8c-460b-444e-8ae5abcdffd7",
+            "accountEnabled": true,
+            "isProcessing": false,
+            "riskLastUpdatedDateTime": "2021-10-20T01:14:37.7214159Z",
+            "riskState": "atRisk",
+            "riskDetail": "none",
+            "riskLevel": "high",
+            "displayName": "Contoso App",
+            "appId": "ede08db0-9492-4a0c-8ae3-8ggg056c5d75",
+            "servicePrincipalType": "Application",
+            "servicePrincipalId": "0fbef39d-9e8c-777b-860e-8ae5abcdffd7",
+            "initiatedBy": null,
+            "activity": null
+        }
+    ]
 }
-```
-

@@ -1,9 +1,9 @@
 ---
 title: "riskyServicePrincipal resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents Azure AD workload identities that are at risk, including risk for applications, service principals and Managed Identities. We have combined these various account types into a single collection here. Azure AD continually evaluates workload identity risk based on various signals and machine learning. This API provides programmatic access to all at-risk workload identities in your Azure AD tenant."
+author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

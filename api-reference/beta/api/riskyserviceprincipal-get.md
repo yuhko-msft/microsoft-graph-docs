@@ -1,9 +1,9 @@
 ---
 title: "Get riskyServicePrincipal"
 description: "Read the properties and relationships of a riskyServicePrincipal object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -98,7 +98,7 @@ The following example shows how to use `$filter` to get the collection of riskyS
   "name": "get_riskyserviceprincipal"
 }
 -->
-# NEEDS CORRECTION
+
  ``` http
 GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals$filter=riskLevel eq microsoft.graph.riskLevel'high'
 ```

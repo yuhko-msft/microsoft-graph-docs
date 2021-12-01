@@ -1,9 +1,9 @@
 ---
 title: "List servicePrincipalRiskDetections"
 description: "Get the servicePrincipalRiskDetection resources from the servicePrincipalRiskDetections navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -181,7 +181,7 @@ The following example shows how to use `$filter` to get the collection of servic
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections$filter=riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'
+GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections?$filter=riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'
 ```
 
 #### Response

@@ -1,9 +1,9 @@
 ---
 title: "Get servicePrincipalRiskDetection"
 description: "Read the properties and relationships of a servicePrincipalRiskDetection object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [servicePrinci
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections}
+GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections
 ```
 
 
