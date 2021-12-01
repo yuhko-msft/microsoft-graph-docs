@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/c7158891-fb5d-4
 <!-- {
   "blockType": "response",
   "truncated": true,
-  @odata.type": "microsoft.graph.ediscovery.file
+  "@odata.type": "microsoft.graph.ediscovery.file",
   "isCollection": true
 }
 -->
