@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.ChannelRequestBuilderGetQueryParameters{
-	Filter: "lastModifiedDateTime%20gt%202019-11-01T00:00:00Z%20and%20lastModifiedDateTime%20lt%202021-11-01T00:00:00Z",
+	Filter: "lastModifiedDateTime+gt+2019-11-01T00:00:00Z+and%20lastModifiedDateTime+lt+2021-11-01T00:00:00Z",
 }
 options := &msgraphsdk.ChannelRequestBuilderGetOptions{
 	Q: requestParameters,

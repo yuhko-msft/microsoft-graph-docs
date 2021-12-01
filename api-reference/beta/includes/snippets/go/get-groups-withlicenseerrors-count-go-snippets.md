@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
 	Count: true,
-	Filter: "hasMembersWithLicenseErrors%20eq%20true",
+	Filter: "hasMembersWithLicenseErrors+eq+true",
 	Select: "id,displayName",
 }
 headers := map[string]string{

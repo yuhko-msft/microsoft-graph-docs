@@ -9,9 +9,9 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 ChatInfo chatInfo = new ChatInfo();
 chatInfo.threadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2";
 
-OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 01:49:21");
+OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("2/6/2020 1:49:21 AM");
 
-OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 02:19:21");
+OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("2/6/2020 2:19:21 AM");
 
 String externalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56";
 

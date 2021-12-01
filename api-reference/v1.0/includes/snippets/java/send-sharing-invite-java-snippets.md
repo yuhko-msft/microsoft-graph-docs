@@ -23,7 +23,7 @@ rolesList.add("write");
 
 String password = "password123";
 
-String expirationDateTime = "07/15/2018 14:00:00";
+String expirationDateTime = "7/15/2018 2:00:00 PM";
 
 graphClient.me().drive().items("{item-id}")
 	.invite(DriveItemInviteParameterSet

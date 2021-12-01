@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 01:49:21");
+OffsetDateTime startDateTime = OffsetDateTimeSerializer.deserialize("2/6/2020 1:49:21 AM");
 
-OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("02/06/2020 02:19:21");
+OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("2/6/2020 2:19:21 AM");
 
 String subject = "Create a meeting with customId provided";
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetQueryParameters{
-	Filter: "name%20eq%20'Project'%20and%20status%20eq%20'Available'",
+	Filter: "name+eq+'Project'%20and%20status+eq+'Available'",
 }
 options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetOptions{
 	Q: requestParameters,

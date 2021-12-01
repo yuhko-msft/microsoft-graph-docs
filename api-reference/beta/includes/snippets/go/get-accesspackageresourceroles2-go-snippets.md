@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetQueryParameters{
-	Filter: "(originSystem%20eq%20'SharePointOnline'%20and%20accessPackageResource/id%20eq%20'53c71803-a0a8-4777-aecc-075de8ee3991')",
+	Filter: "(originSystem+eq+%27SharePointOnline%27+and+accessPackageResource/id+eq+%2753c71803-a0a8-4777-aecc-075de8ee3991%27)",
 	Select: "displayName,originId",
 }
 options := &msgraphsdk.AccessPackageResourceRolesRequestBuilderGetOptions{

@@ -11,7 +11,7 @@ user.id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2";
 
 String tenantId = "2a690434-97d9-4eed-83a6-f5f13600199a";
 
-OffsetDateTime lastMessageReadDateTime = OffsetDateTimeSerializer.deserialize("05/27/2021 22:13:01");
+OffsetDateTime lastMessageReadDateTime = OffsetDateTimeSerializer.deserialize("5/27/2021 10:13:01 PM");
 
 graphClient.chats("19:7d898072-792c-4006-bb10-5ca9f2590649_8ea0e38b-efb3-4757-924a-5f94061cf8c2@unq.gbl.spaces")
 	.markChatUnreadForUser(ChatMarkChatUnreadForUserParameterSet
