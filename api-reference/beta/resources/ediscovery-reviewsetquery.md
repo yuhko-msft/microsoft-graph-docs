@@ -25,7 +25,7 @@ Represents a review set query, which is used to query and cull data stored in an
 | [Update reviewSetQuery](../api/ediscovery-reviewsetquery-update.md) | None | Update a review set query. |
 | [Delete reviewSetQuery](../api/ediscovery-reviewsetquery-delete.md) | None | Delete review set query. |
 | [applyTags](../api/ediscovery-reviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query.|
-| [export](../api/ediscovery-reviewsetquery-export.md)|None| Exports the results of the **reviewSetQuery**. This method is similar to the [review set export](../api/ediscovery-reviewset-export.md).|
+| [export](../api/ediscovery-reviewsetquery-export.md)|None| Exports the results of the **reviewSetQuery**. This method is similar to the [reviewSet: export](../api/ediscovery-reviewset-export.md).|
 | [run](../api/ediscovery-reviewsetquery-run.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md) collection| Executes a *reviewSetQuery**.|
 
 ## Properties

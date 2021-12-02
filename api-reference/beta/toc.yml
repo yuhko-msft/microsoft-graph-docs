@@ -1697,13 +1697,13 @@ items:
             href: api/ediscovery-reviewset-get.md
           - name: List queries
             href: api/ediscovery-reviewsetquery-list.md
-          - name: export
+          - name: Export
             href: api/ediscovery-reviewset-export.md
           - name: List files
             href: api/ediscovery-reviewset-list-files.md
           - name: Get file
             href: api/ediscovery-reviewset-get-file.md
-          - name: addToReviewSet
+          - name: Add to review set
             href: api/ediscovery-reviewset-addtoreviewset.md
         - name: Review set query
           href: resources/ediscovery-reviewsetquery.md
@@ -1722,7 +1722,7 @@ items:
             href: api/ediscovery-reviewsetquery-applytags.md
           - name: export
             href: api/ediscovery-reviewsetquery-export.md
-          - name: run
+          - name: Run
             href: api/ediscovery-reviewsetquery-run.md
         - name: Source collection
           href: resources/ediscovery-sourcecollection.md

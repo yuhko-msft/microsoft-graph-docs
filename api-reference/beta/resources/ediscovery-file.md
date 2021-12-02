@@ -32,9 +32,9 @@ Represents an object that contains metadata for electronically stored informatio
 |extractedTextContent|Stream                        | See `Content` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
 |id|String                                          | File unique identifier. |
 |mediaType|String                                   | See `Extracted content type` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
-|name|String                                        | File name or subject in case of email. |
-|otherProperties|[microsoft.graph.ediscovery.stringValueDictionary](../resources/ediscovery-stringvaluedictionary.md)| Bag of additional properties of the file like **to**, **from**, **Bcc**, **createdDate**.  For the full list of supported fields, see [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
-|processingStatus|microsoft.graph.ediscovery.fileProcessingStatus  | Processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidField`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`, `unknownFutureValue`.|
+|name|String                                        | The file name or the subject in case of an email. |
+|otherProperties|[microsoft.graph.ediscovery.stringValueDictionary](../resources/ediscovery-stringvaluedictionary.md)| A container for additional **file** properties like **to**, **from**, **bcc**, and **createdDate**.  For the full list of supported fields, see [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
+|processingStatus|[microsoft.graph.ediscovery.fileProcessingStatus](../resources/ediscovery-file.md#fileprocessingstatus-values)| Processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidField`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`, `unknownFutureValue`.|
 |senderAuthor|String collection                     | See `SenderAuthor` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
 |size|Int64                                         | See `Size` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
 |sourceType|microsoft.graph.ediscovery.sourceType   | The original source of the content. The possible values are: `mailbox`, `site`.|
@@ -46,22 +46,22 @@ Represents an object that contains metadata for electronically stored informatio
 |:----|-----------|
 | success                       | Success.                                                                   |
 | internalError                 | Unhandled exception.                                                       |
-| unknownError                  | Status of processing comes as null/empty.                                  |
+| unknownError                  | The processing status is unknown.                                          |
 | processingTimeout             | Timeout while processing.                                                  |
-| invalidField                  | Failure in creating unique fileId hash for file from nativeFilePath.       |
-| fileSizeIsZero                | File size is zero or negative.                                             |
-| fileSizeIsTooLarge            | File size is larger than the limit.                                        |
+| invalidField                  | An error occurred during the creation of the unique **fileId** hash for the **file** from the **nativeFilePath** |
+| fileSizeIsZero                | The file size is zero or negative.                                         |
+| fileSizeIsTooLarge            | The file size is larger than the limit.                                    |
 | fileDepthLimitExceeded        | Over 30 levels of embedded files.                                          |
-| fileBodyIsTooLong             | Text in the document exceeds the maximum length.                           |
+| fileBodyIsTooLong             | The text in the document exceeds the maximum length.                       |
 | fileTypeIsUnknown             | MimeType not supported.                                                    |
-| fileTypeIsNotSupported        | File format not supported.                                                 |
-| malformedFile                 | File is malformed.                                                         |
-| protectedFile                 | Email is rights protected or document is encrypted.                        |
+| fileTypeIsNotSupported        | The file format not supported.                                             |
+| malformedFile                 | The file is malformed.                                                     |
+| protectedFile                 | The email is rights protected or the document is encrypted.                |
 | poisonFile                    | File already processed.                                                    |
-| noReviewSetSummaryGenerated   | Failure was encountered while generating review set summary.               |
-| extractionException           | Extracting embedded documents failure.                                     |
-| ocrProcessingTimeout          | Timeout while OCR (Optical Character Recognition) processing of the file.  |
-| ocrFileSizeExceedsLimit       | File size is not in limits for OCR processing.                             |
+| noReviewSetSummaryGenerated   | An error occurred during the generation of the review set summary.         |
+| extractionException           | An error occurred during the extraction of the embedded documents.|
+| ocrProcessingTimeout          | Timeout while OCR (Optical Character Recognition) processing the file.  |
+| ocrFileSizeExceedsLimit       | The file size is not in limits for OCR processing.                             |
 
 ## Relationships
 | Relationship | Type        | Description |
