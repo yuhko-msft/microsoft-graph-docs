@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|manager|[synchronizationJobSubject](../resources/synchronizationjobsubject.md)|Manager of the user being synchronized.|
-|members|[synchronizationJobSubject](../resources/synchronizationjobsubject.md) collection|Member of the group being synchronized.|
-|owners|[synchronizationJobSubject](../resources/synchronizationjobsubject.md) collection|Owner of the group being synchronized.|
+|manager|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md)|Manager of the user being synchronized.|
+|members|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) collection|Member of the group being synchronized.|
+|owners|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) collection|Owner of the group being synchronized.|
 
 ## Relationships
 None.
