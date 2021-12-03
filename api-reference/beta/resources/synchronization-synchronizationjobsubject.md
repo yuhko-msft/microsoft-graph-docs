@@ -1,6 +1,6 @@
 ---
 title: "synchronizationJobSubject resource type"
-description: "Represents the objects that will be provisioned during on-demand provisioning."
+description: "Definition of the subject to be provisioned on demand."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -11,13 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the objects that will be provisioned during on-demand provisioning.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|objectId|String|The identifier of an object to which a synchronizationJob  is to be applied.|
-|objectTypeName|String|The type of the object to which a synchronizationJob  is to be applied.|
+|links|[synchronizationLinkedObjects](../resources/synchronizationlinkedobjects.md)|Links to synchronize such as the manager of a user or a member of a group.|
+|objectId|String|Identifier of the object in the source system. when provisioning a user from Azure AD into an application, this is the objectId of the user.|
+|objectTypeName|String|Type of object being provisioned. Possible values are: `user` and `group`.|
 
 ## Relationships
 None.
@@ -33,8 +36,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.synchronizationJobSubject",
   "objectId": "String",
-  "objectTypeName": "String"
+  "objectTypeName": "String",
+  "links": {
+    "@odata.type": "microsoft.graph.synchronizationLinkedObjects"
+  }
 }
 ```
-
-
