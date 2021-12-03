@@ -1720,7 +1720,7 @@ items:
             href: api/ediscovery-reviewsetquery-delete.md
           - name: Apply tags
             href: api/ediscovery-reviewsetquery-applytags.md
-          - name: export
+          - name: Export
             href: api/ediscovery-reviewsetquery-export.md
           - name: Run
             href: api/ediscovery-reviewsetquery-run.md

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
+Represents the static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -25,10 +25,10 @@ Inherits from [entity](../resources/entity.md).
 | [Create reviewSet](../api/ediscovery-case-post-reviewsets.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Create a new **reviewset**. |
 | [Get reviewSet](../api/ediscovery-reviewset-get.md) | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
 | [List queries](../api/ediscovery-reviewsetquery-list.md)|[microsoft.graph.ediscovery.reviewSetQuery](../resources/ediscovery-reviewsetquery.md) collection|Get a list of **reviewSetQuery** resources.|
-| [export](../api/ediscovery-reviewset-export.md) | None | Initiate an export of data from the **reviewset**. |
+| [Export](../api/ediscovery-reviewset-export.md) | None | Initiate an export of data from the **reviewSet**. |
 | [List files](../api/ediscovery-reviewset-list-files.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md) collection|Get the **file** resources from the **files** navigation property.|
 | [Get file](../api/ediscovery-reviewset-get-file.md)|[microsoft.graph.ediscovery.file](../resources/ediscovery-file.md)|Get the **file** resources from the **files** navigation property.|
-| [Add to review set](../api/ediscovery-reviewset-addtoreviewset.md)|None|Add data from a **sourceCollection** to a **reviewset**.|
+| [Add to review set](../api/ediscovery-reviewset-addtoreviewset.md)|None|Add data from a **sourceCollection** to a **reviewSet**.|
 
 ## Properties
 

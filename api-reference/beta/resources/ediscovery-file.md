@@ -30,7 +30,7 @@ Represents an object that contains metadata for electronically stored informatio
 |date|DateTimeOffset                                | See `date` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
 |extension|String                                   | See `InputFileExtension` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
 |extractedTextContent|Stream                        | See `Content` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
-|id|String                                          | File unique identifier. |
+|id|String                                          | The unique identifier for the file. |
 |mediaType|String                                   | See `Extracted content type` at [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
 |name|String                                        | The file name or the subject in case of an email. |
 |otherProperties|[microsoft.graph.ediscovery.stringValueDictionary](../resources/ediscovery-stringvaluedictionary.md)| A container for additional **file** properties like **to**, **from**, **bcc**, and **createdDate**.  For the full list of supported fields, see [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
@@ -48,7 +48,7 @@ Represents an object that contains metadata for electronically stored informatio
 | internalError                 | Unhandled exception.                                                       |
 | unknownError                  | The processing status is unknown.                                          |
 | processingTimeout             | Timeout while processing.                                                  |
-| invalidField                  | An error occurred during the creation of the unique **fileId** hash for the **file** from the **nativeFilePath** |
+| invalidField                  | An error occurred during the creation of the unique **fileId** hash for the **file** from the **nativeFilePath**. |
 | fileSizeIsZero                | The file size is zero or negative.                                         |
 | fileSizeIsTooLarge            | The file size is larger than the limit.                                    |
 | fileDepthLimitExceeded        | Over 30 levels of embedded files.                                          |
@@ -56,7 +56,7 @@ Represents an object that contains metadata for electronically stored informatio
 | fileTypeIsUnknown             | MimeType not supported.                                                    |
 | fileTypeIsNotSupported        | The file format not supported.                                             |
 | malformedFile                 | The file is malformed.                                                     |
-| protectedFile                 | The email is rights protected or the document is encrypted.                |
+| protectedFile                 | The email is either rights protected or the document is encrypted.         |
 | poisonFile                    | File already processed.                                                    |
 | noReviewSetSummaryGenerated   | An error occurred during the generation of the review set summary.         |
 | extractionException           | An error occurred during the extraction of the embedded documents.|
