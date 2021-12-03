@@ -1,5 +1,5 @@
 ---
-title: "Export personalData (inboundSharedUserProfile)"
+title: "exportPersonalData (inboundSharedUserProfile)"
 description: "Creates a request to export all personal data associated with an inbound shared user. If approved, the external user's personal data will be exported from the resource tenant."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Export personalData (inboundSharedUserProfile)
+# exportPersonalData (inboundSharedUserProfile)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -57,7 +57,7 @@ If successful, this method returns a `202 Accepted` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/removePersonalData
+POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/exportPersonalData
 ```
 
 

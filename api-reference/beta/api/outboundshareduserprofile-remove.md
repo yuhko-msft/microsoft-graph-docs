@@ -1,5 +1,5 @@
 ---
-title: "Remove personalData (outboundSharedUserProfile)"
+title: "removePersonalData (outboundSharedUserProfile)"
 description: "Creates a request to remove all personal data associated with an outbound shared user. If approved, the user's personal data will be removed from external tenants."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Remove personalData (outboundSharedUserProfile)
+# removePersonalData (outboundSharedUserProfile)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/outboundSharedUserProfiles/{outboundSharedUserProfileId}/removePersonalData
+POST /directory/outboundSharedUserProfiles/{outboundSharedUserProfileId}/tenants/{tenantId}/removePersonalData
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/removePersonalData
+POST https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/ZAMkAAIAAAoZDOFAAA=/tenants/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/removePersonalData
 ```
 
 

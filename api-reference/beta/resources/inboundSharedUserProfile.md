@@ -20,8 +20,8 @@ The external AAD users whose profile data is shared with the current tenant.
 |:---|:---|:---|
 |[List inboundSharedUserProfile](../api/inboundSharedUserProfile-list.md)|[inboundSharedUserProfile](../resources/inboundSharedUserProfile.md) collection|List the external users whose profile data is shared with the current tenant.|
 |[Get inboundSharedUserProfile](../api/inboundSharedUserProfile-get.md)|[inboundSharedUserProfile](../resources/inboundSharedUserProfile.md)|Read the properties and relationships of a [inboundSharedUserProfile](../resources/inboundSharedUserProfile.md) object.|
-|[Remove personalData](../api/inboundSharedUserProfile-remove.md)|None|Creates a request to remove all personal data associated with an inbound shared user. If approved, the external user's personal data will be removed from the resource tenant (the tenant from which this API was invoked).|
-|[Export personalData](../api/inboundSharedUserProfile-export.md)|None|Creates a request to export all personal data associated with an inbound shared user. If approved, the external user's personal data will be exported from the resource tenant.|
+|[removePersonalData](../api/inboundSharedUserProfile-remove.md)|None|Creates a request to remove all personal data associated with an inbound shared user. If approved, the external user's personal data will be removed from the resource tenant (the tenant from which this API was invoked).|
+|[exportPersonalData](../api/inboundSharedUserProfile-export.md)|None|Creates a request to export all personal data associated with an inbound shared user. If approved, the external user's personal data will be exported from the resource tenant.|
 
 ## Properties
 |Property|Type|Description|

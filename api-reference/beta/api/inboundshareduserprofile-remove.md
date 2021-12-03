@@ -1,5 +1,5 @@
 ---
-title: "Remove personalData (inboundSharedUserProfile)"
+title: "removePersonalData (inboundSharedUserProfile)"
 description: "Creates a request to remove all personal data associated with an inbound shared user. If approved, the external user's personal data will be removed from the resource tenant (the tenant from which this API was invoked)."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Remove personalData (inboundSharedUserProfile)
+# removePersonalData (inboundSharedUserProfile)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
