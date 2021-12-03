@@ -16,6 +16,7 @@ Represents the objects that will be provisioned during on-demand provisioning.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|links|[synchronizationLinkedObjects](../resources/synchronizationlinkedobjects.md)|Links to synchronize such as the manager of a user or a member of a group.|
 |objectId|String|The identifier of an object to which a synchronizationJob  is to be applied.|
 |objectTypeName|String|The type of the object to which a synchronizationJob  is to be applied.|
 
