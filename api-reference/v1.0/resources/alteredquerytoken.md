@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents changed segments with respect to original user query.
 
 ## Properties
@@ -38,8 +36,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "offset": 0,
-  "length": 6,
+  "offset": "Int32",
+  "length": "Int32",
   "suggestion": "String"
 }
 ```

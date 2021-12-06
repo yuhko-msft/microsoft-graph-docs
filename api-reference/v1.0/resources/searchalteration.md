@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provides the details of search alteration for spelling correction.
 
 ## Properties
@@ -20,7 +18,7 @@ Provides the details of search alteration for spelling correction.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |alteredQueryString|String| Defines the altered query string with spelling correction.|
-|alteredHighlightedQueryString|String| Defines the altered highlighted query string with spelling correction. The annotation around the corrected segment is (\ue000, \ue001)|
+|alteredHighlightedQueryString|String| Defines the altered highlighted query string with spelling correction. The annotation around the corrected segment is `\ue000, \ue001`.|
 |alteredQueryTokens|[alteredQueryToken](alteredquerytoken.md) collection| Represents changed segments with respect to original query.|
 
 ## JSON representation

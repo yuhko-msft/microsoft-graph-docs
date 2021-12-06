@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provides information related to spelling corrections in the alteration response.
 
 ## Properties
@@ -39,7 +37,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "originalQueryString": "String",
-  "queryAlteration": "String",
-  "queryAlterationType": "suggestion"
+  "queryAlteration": {"@odata.type": "microsoft.graph.searchAlteration"},
+  "queryAlterationType": "String"
 }
 ```

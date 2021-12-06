@@ -1,6 +1,6 @@
 ---
 title: "searchResultSet resource type"
-description: "Description of the searchResultSet"
+description: "Represents results from a search query, the terms used for the query, and the resultTemplates used to render results."
 ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents results from a search query, the terms used for the query, and the resultTemplates used to render results. 
+Represents results from a search query, the terms used for the query, and the **resultTemplates** used to render results. 
 
 ## Properties
 
@@ -19,7 +19,7 @@ Represents results from a search query, the terms used for the query, and the re
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
 |searchTerms|String collection|Contains the search terms sent in the initial search query.|
-|resultTemplates|[resultTemplate](resultTemplate.md) collection|A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates.
+|resultTemplates|[resultTemplate](resultTemplate.md) collection|A dictionary of **resultTemplateIds** and associated values, which include the name and JSON schema of the result templates.
 
 ## JSON representation
 

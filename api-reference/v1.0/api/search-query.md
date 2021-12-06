@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
-|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags to for spelling correction. Optional. |
+|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags for spelling correction. Optional. |
 
 ## Response
 
@@ -158,11 +158,11 @@ Content-type: application/json
 ```
 
 ## See also
+- Enable [spell corrections](/graph/search-concept-speller) in search results
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
-- Enable [spell corrections](/graph/search-concept-speller) in search results
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
 
