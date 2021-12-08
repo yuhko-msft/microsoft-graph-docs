@@ -1,6 +1,6 @@
 ---
 title: "reviewSetQuery: run"
-description: "Execute a review set query."
+description: "Run a review set query."
 ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Execute a review set query.
+Run a review set query.
 
 ## Permissions
 
