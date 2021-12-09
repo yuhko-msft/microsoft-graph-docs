@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/outboundSharedUserProfiles/{outboundSharedUserProfileId}/tenants/{tenantId}/removePersonalData
+POST /directory/outboundSharedUserProfiles/{userId}/tenants/{tenantId}/removePersonalData
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/ZAMkAAIAAAoZDOFAAA=/tenants/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/removePersonalData
+POST https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/tenants/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/removePersonalData
 ```
 
 
