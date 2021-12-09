@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/inboundSharedUserProfiles/{inboundSharedUserProfileId}/exportPersonalData
+POST /directory/inboundSharedUserProfiles/{userId}/exportPersonalData
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 ``` http
 HTTP/1.1 202 Accepted
 {
-  Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
+  Location: https://graph.microsoft.com/beta/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
 }
 ```
