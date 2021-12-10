@@ -106,7 +106,7 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 Content-type: application/json
 
 {
-  "newPassword": "newPassword-value",
+  "newPassword": "newPassword-value"
 }
 ```
 # [C#](#tab/csharp)
