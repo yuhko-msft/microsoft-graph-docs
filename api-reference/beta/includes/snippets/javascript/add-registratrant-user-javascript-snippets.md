@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const meetingRegistrant = {
+  '@odata.type': '#microsoft.graph.meetingRegistrant',
   firstName: 'Frederick',
   lastName: 'Cormier',
   email: 'frederick.cormier@contoso.com',
