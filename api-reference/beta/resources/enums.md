@@ -627,6 +627,8 @@ Namespace: microsoft.graph
 |adminConfirmedSigninCompromised|
 |hidden|
 |adminConfirmedUserCompromised|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 |unknownFutureValue|
 
 ### riskEventType values
@@ -1833,6 +1835,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |signin|
 |user|
+|servicePrincipal|
 |unknownFutureValue|
 
 ### chatMessagePolicyViolationUserActionType values
