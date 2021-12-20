@@ -1,0 +1,91 @@
+---
+title: "Get hardwareConfigurationDeviceState"
+description: "Read the properties and relationships of a hardwareConfigurationDeviceState object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: apiPageType
+---
+
+# Get hardwareConfigurationDeviceState
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the properties and relationships of a [hardwareConfigurationDeviceState](../resources/intune-hardwareconfigurationdevicestate.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceRunStates/{hardwareConfigurationDeviceStateId}
+```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [hardwareConfigurationDeviceState](../resources/intune-hardwareconfigurationdevicestate.md) object in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_hardwareconfigurationdevicestate"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceRunStates/{hardwareConfigurationDeviceStateId}
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.hardwareConfigurationDeviceState"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.hardwareConfigurationDeviceState",
+    "id": "c518dda2-dda2-c518-a2dd-18c5a2dd18c5",
+    "deviceName": "String",
+    "osVersion": "String",
+    "upn": "String",
+    "internalVersion": "Integer",
+    "lastStateUpdateDateTime": "String (timestamp)",
+    "configurationState": "String",
+    "configurationOutput": "String",
+    "configurationError": "String"
+  }
+}
+```
+
