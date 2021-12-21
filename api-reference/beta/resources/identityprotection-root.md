@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Identity Protection is a tool that allows organizations to discover, investigate, and remediate identity-based risks in their environment. You can use the following Microsoft Graph APIs to query risks detected by Identity Protection: 
 
+## For users
+
 * [riskDetection](riskdetection.md) - Query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection. Risk detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory.
 
 * [riskyUsers](riskyuser.md) - Query Microsoft Graph for information about users that Identity Protection detected as risky. User risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
@@ -24,6 +26,12 @@ Identity Protection is a tool that allows organizations to discover, investigate
 
 >[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+## For service principals
+
+* [servicePrincipalRiskDetection](serviceprincipalriskdetection.md) - Query Microsoft Graph for a list of risk detections and associated information about the detection. Risk detections in Azure AD Identity Protection include any identified suspicious actions related to service principal accounts in the directory.
+
+* [riskyServicePrincipals](riskyserviceprincipal.md) - Query Microsoft Graph for information about service principals that Identity Protection detected as risky. Service principal risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
 ## See also
 
