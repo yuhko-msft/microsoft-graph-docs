@@ -170,6 +170,10 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"invoiceStatus@odata.type": "#microsoft.graph.bookingInvoiceStatus",
 	"priceType@odata.type": "#microsoft.graph.bookingPriceType",
 	"reminders@odata.type": "#Collection(microsoft.graph.bookingReminder)",
+	"maximumAttendeesCount": ,
+	"filledAttendeesCount": ,
+	"customers":  []Object {
+	}
 }
 options := &msgraphsdk.AppointmentsRequestBuilderPostOptions{
 	Body: requestBody,
