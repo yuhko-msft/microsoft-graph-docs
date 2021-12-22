@@ -26,6 +26,9 @@ requestBody.SetCustomQuestionAnswers( []CustomQuestionAnswer {
 		"value": "Internet",
 	}
 }
+requestBody.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.meetingRegistrant",
+}
 options := &msgraphsdk.RegistrantsRequestBuilderPostOptions{
 	Body: requestBody,
 }
