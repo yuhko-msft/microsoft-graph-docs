@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # cloudPcDevice resource type
 
-Namespace: microsoft.graph.managedDevice
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,7 +18,7 @@ Represents cloud PC bulk remote action result.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Bulk restore cloudPC](../api/manageddevice-bulkrestorecloudpc.md)|[microsoft.graph.managedDevice.cloudPcBulkRemoteActionResult](../resources/manageddevice-cloudPcBulkRemoteActionResult.md)|Read the properties and relationships of a [cloudPcBulkRemoteActionResult](../resources/manageddevice-cloudPcBulkRemoteActionResult.md) object.|
+|[Bulk restore cloudPC](../api/manageddevice-bulkrestorecloudpc.md)|[microsoft.graph.cloudPcBulkRemoteActionResult](../resources/manageddevice-cloudPcBulkRemoteActionResult.md)|Read the properties and relationships of a [cloudPcBulkRemoteActionResult](../resources/manageddevice-cloudPcBulkRemoteActionResult.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,14 +36,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedDevice.cloudPcBulkRemoteActionResult",
+  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
   "baseType": "microsoft.graph.entity",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedDevice.cloudPcBulkRemoteActionResult",
+  "@odata.type": "#microsoft.graph.cloudPcBulkRemoteActionResult",
   "successfulDeviceIds": "Collection(String)",
   "failedDeviceIds": "Collection(String)",
   "notFoundDeviceIds": "Collection(String)",

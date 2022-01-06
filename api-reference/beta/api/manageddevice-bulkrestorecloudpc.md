@@ -53,7 +53,7 @@ The following table shows the properties that are required when you bulk restore
 |:---|:---|:---|
 |managedDeviceIds|Collection(String)|The IDs of the Cloud PC devices.|
 |restorePointDateTime|DateTimeOffset|The UTC time point for selected Cloud PCs to restore to. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
-|timeRange|[restoreTimeRange](#restoreTimeRange-values)|The time range of restore point.|
+|timeRange|[restoreTimeRange](#restoretimerange-values)|The time range of restore point.|
 
 ### restoreTimeRange values
 
