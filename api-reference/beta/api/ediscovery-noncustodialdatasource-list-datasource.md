@@ -118,8 +118,8 @@ Content-Type: application/json
         "includedSources": "mailbox",
         "createdBy": {
             "user": {
-                "id": "ediscovery admin",
-                "displayName": "c1db6f13-332a-4d84-b111-914383ff9fc9"
+                "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
+                "displayName": "ediscovery admin"
             }
         }
       }
