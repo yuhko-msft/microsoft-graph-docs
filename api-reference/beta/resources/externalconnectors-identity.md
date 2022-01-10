@@ -1,5 +1,5 @@
 ---
-title: "Identity resource type"
+title: "identity resource type"
 description: "Represents a member of an externalGroup used to set permissions on external content added to Microsoft Graph."
 author: "snlraju-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: resourcePageType
 ---
 
-# Identity resource type
+# identity resource type
 
 Namespace: microsoft.graph.externalConnectors
 
