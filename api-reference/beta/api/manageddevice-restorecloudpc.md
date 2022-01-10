@@ -30,9 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/managedDevices/{managedDeviceId}/restoreCloudPc
 POST /deviceManagement/managedDevices/{managedDeviceId}/restoreCloudPc
-POST /deviceManagement/comanagedDevices/{managedDeviceId}/restoreCloudPc
 ```
 
 ## Request headers

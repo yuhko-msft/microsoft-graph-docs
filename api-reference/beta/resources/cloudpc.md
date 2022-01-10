@@ -69,6 +69,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |failed|The operation on Cloud PC has failed.|
 |provisionedWithWarnings|The Cloud PC is provisioned and can be accessed by end users but with some warnings. The user can continue to use this Cloud PC.|
 |resizing|The Cloud PC is resizing.|
+|restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
