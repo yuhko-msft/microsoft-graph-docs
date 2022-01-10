@@ -6172,7 +6172,7 @@ items:
       items:
       - name: Overview
         href: resources/security-api-overview.md
-      - name: Alerts
+      - name: Alerts (deprecated)
         href: resources/alert.md
         items:
         - name: List alerts

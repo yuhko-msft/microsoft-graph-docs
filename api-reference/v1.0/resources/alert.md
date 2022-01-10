@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# alert resource type
+# alert resource type (deprecated)
 
 Namespace: microsoft.graph
 
