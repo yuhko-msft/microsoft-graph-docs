@@ -125,7 +125,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
-            "displayName": "Jing Jing GuTwo"
+            "displayName": "John Doe"
         }
     },
     "clockInEvent": {
@@ -155,7 +155,7 @@ Content-type: application/json
         "conversation": null,
         "user": {
             "id": "70e47528-2fae-42b5-9d8e-ee73ccd90603",
-            "displayName": "Jing Jing GuTwo"
+            "displayName": "John Doe"
         }
     }
 }
