@@ -11,6 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+  > [!CAUTION] 
+  > The Alerts API is deprecated and will stop returning data on August 20, 2022. Please use the new [To Do API](https://docs.microsoft.com/en-us/graph/api/resources/todo-overview?view=graph-rest-1.0).
+
 Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Alerts can be retrieved from different security providers listed in the [Microsoft Graph Security Overview](security-api-overview.md).
