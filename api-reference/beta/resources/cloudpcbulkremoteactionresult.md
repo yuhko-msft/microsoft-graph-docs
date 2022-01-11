@@ -18,10 +18,10 @@ Represents cloud PC bulk remote action result.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedDeviceIds|String collection|A list of all the managedDevice DeviceID's that completed the bulk action successfully.|
-|notFoundDeviceIds|String collection|A list of all the managedDevice DeviceID's that completed the bulk action with a failure.|
-|notSupportedDeviceIds|String collection|A list of all the managedDevice DeviceID's that were not found when the bulk action was attempted.|
-|successfulDeviceIds|String collection|A list of all the managedDevice DeviceID's that were identified as unsupported for the bulk action.|
+|successfulDeviceIds|String collection|A list of all the managed devices id that completed the bulk action successfully.|
+|failedDeviceIds|String collection|A list of all the managed devices id that completed the bulk action with a failure.|
+|notFoundDeviceIds|String collection|A list of all the managed devices id that were not found when the bulk action was attempted.|
+|notSupportedDeviceIds|String collection|A list of all the managed devices id that were identified as unsupported for the bulk action.|
 
 ## Relationships
 None.

@@ -30,10 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/managedDevices/bulkRestoreCloudPc
-POST /users/{usersId}/managedDevices/bulkRestoreCloudPc
 POST /deviceManagement/managedDevices/bulkRestoreCloudPc
-POST /deviceManagement/comanagedDevices/bulkRestoreCloudPc
 ```
 
 ## Request headers
@@ -60,7 +57,7 @@ The following table shows the parameters that can be used with this action.
 |before|Choose closest snapshot before selected time point.|
 |after|Choose closest snapshot after selected time point.|
 |beforeOrAfter|Choose closest snapshot around selected time point.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Unknown future value.|
 
 ## Response
 
