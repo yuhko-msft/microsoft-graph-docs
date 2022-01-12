@@ -273,21 +273,31 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Directory management
             items:
-              - name: Assign custom security attributes (preview)
-                href: custom-security-attributes-examples.md
-              - name: Use PIM for Azure AD to assign roles
-                href: tutorial-assign-azureadroles.md
+              - name: Custom security attributes (preview)
+                items:
+                  - name: Assign custom security attributes (preview)
+                    href: custom-security-attributes-examples.md
+              - name: Privileged identity management
+                items:
+                  - name: Use PIM for Azure AD to assign roles
+                    href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
-                href: authenticationmethods-get-started.md
-              - name: Identify and remediate risk
-                href: tutorial-riskdetection-api.md
+                items:
+                  - name: Authentication methods
+                    href: authenticationmethods-get-started.md
+              - name: Identity protection
+                items:
+                  - name: Identify and remediate risk
+                    href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Manage access to resources
-                href: tutorial-access-package-api.md
-              - name: Review access to your resources
+              - name: Entitlement management
+                items:
+                  - name: Manage access to resources
+                    href: tutorial-access-package-api.md
+              - name: Access reviews
                 items:
                   - name: Overview of the access reviews API
                     href: accessreviews-overview.md
@@ -295,8 +305,10 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
-              - name: Use PIM for Azure AD to assign roles
-                href: tutorial-assign-azureadroles.md
+              - name: Privileged identity management (PIM)
+                items:
+                  - name: Use PIM for Azure AD to assign roles
+                    href: tutorial-assign-azureadroles.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
