@@ -174,7 +174,7 @@ largeFileUploadTask.upload(0, null, callback);
 
 ## Resuming a file upload
 
-The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload). If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.
+The Microsoft Graph SDKs support [resuming in-progress uploads](/api-reference/v1.0/api/driveitem-createuploadsession.md#resuming-an-in-progress-upload). If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload. https://github.com/microsoftgraph/microsoft-graph-docs/blob/main
 
 <!-- markdownlint-disable MD024 -->
 ### [C#](#tab/csharp)
