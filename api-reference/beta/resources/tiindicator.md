@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
   > [!CAUTION] 
-  > For Microsoft 365 services please refer to [Microsoft 365 indicator resource type](microsoft-365/security/defender-endpoint/ti-indicator.md).
+  > For Microsoft 365 services please refer to [Microsoft 365 indicator resource type](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/ti-indicator?view=o365-worldwide).
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
