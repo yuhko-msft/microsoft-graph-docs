@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
-# caseExportOperation resource type
+# caseHoldOperation resource type
 
 Namespace: microsoft.graph.ediscovery
 
