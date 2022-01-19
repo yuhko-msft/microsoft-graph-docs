@@ -621,114 +621,110 @@
 			"SubArea": "eDiscovery"
 		},
 		{
-			"changelog": [
+			"ChangeList": [
 				{
-				  "ChangeList": [
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "EnumType",
-					  "ChangedApiName": "dataSourceHoldStatus",
-					  "ChangeType": "Addition",
-					  "Description": "Added the **dataSourceHoldStatus** enumeration type.",
-					  "Target": "dataSourceHoldStatus"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Resource",
-					  "ChangedApiName": "caseHoldOperation",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [caseHoldOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseHoldOperation?view=graph-rest-beta) resource",
-					  "Target": "caseHoldOperation"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Property",
-					  "ChangedApiName": "holdStatus",
-					  "ChangeType": "Addition",
-					  "Description": "Added the **holdStatus** property to [dataSource](https://docs.microsoft.com/en-us/graph/api/resources/dataSource?view=graph-rest-beta) resource.",
-					  "Target": "dataSource"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Property",
-					  "ChangedApiName": "holdStatus",
-					  "ChangeType": "Addition",
-					  "Description": "Added the **holdStatus** property to [dataSourceContainer](https://docs.microsoft.com/en-us/graph/api/resources/dataSourceContainer?view=graph-rest-beta) resource.",
-					  "Target": "dataSourceContainer"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "applyHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the custodian resource.",
-					  "Target": "applyHold"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "applyHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the custodians resource collection.",
-					  "Target": "applyHold"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "applyHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the non custodial data source resource.",
-					  "Target": "applyHold"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "applyHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the non custodial data source resource collection.",
-					  "Target": "applyHold"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "removeHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the custodian resource.",
-					  "Target": "removeHold"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "removeHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the custodian resource collection.",
-					  "Target": "removeHold"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "removeHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the non custodial data source resource.",
-					  "Target": "removeHold"
-					},
-					{
-					  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-					  "ApiChange": "Method",
-					  "ChangedApiName": "removeHold",
-					  "ChangeType": "Addition",
-					  "Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the non custodial data source resource collection.",
-					  "Target": "removeHold"
-					}
-				  ],
-				  "Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
-				  "Cloud": "Prod",
-				  "Version": "beta",
-				  "CreatedDateTime": "2022-01-14T15:58:14.3142538Z",
-				  "WorkloadArea": "Compliance",
-				  "SubArea": "eDiscovery"
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "EnumType",
+					"ChangedApiName": "dataSourceHoldStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **dataSourceHoldStatus** enumeration type.",
+					"Target": "dataSourceHoldStatus"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Resource",
+					"ChangedApiName": "caseHoldOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [caseHoldOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseHoldOperation?view=graph-rest-beta) resource",
+					"Target": "caseHoldOperation"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Property",
+					"ChangedApiName": "holdStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **holdStatus** property to [dataSource](https://docs.microsoft.com/en-us/graph/api/resources/dataSource?view=graph-rest-beta) resource.",
+					"Target": "dataSource"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Property",
+					"ChangedApiName": "holdStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **holdStatus** property to [dataSourceContainer](https://docs.microsoft.com/en-us/graph/api/resources/dataSourceContainer?view=graph-rest-beta) resource.",
+					"Target": "dataSourceContainer"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "applyHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the custodian resource.",
+					"Target": "applyHold"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "applyHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the custodians resource collection.",
+					"Target": "applyHold"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "applyHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the non custodial data source resource.",
+					"Target": "applyHold"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "applyHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [applyHold](https://docs.microsoft.com/en-us/graph/api/applyHold?view=graph-rest-beta) method to the non custodial data source resource collection.",
+					"Target": "applyHold"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "removeHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the custodian resource.",
+					"Target": "removeHold"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "removeHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the custodian resource collection.",
+					"Target": "removeHold"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "removeHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the non custodial data source resource.",
+					"Target": "removeHold"
+				},
+				{
+					"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+					"ApiChange": "Method",
+					"ChangedApiName": "removeHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [removeHold](https://docs.microsoft.com/en-us/graph/api/removeHold?view=graph-rest-beta) method to the non custodial data source resource collection.",
+					"Target": "removeHold"
 				}
-			  ]
+			],
+			"Id": "bd4ce6c3-840b-4f4d-a728-93223ef3bdb2",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-01-14T15:58:14.3142538Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
 		},
 		{
 			"ChangeList": [
