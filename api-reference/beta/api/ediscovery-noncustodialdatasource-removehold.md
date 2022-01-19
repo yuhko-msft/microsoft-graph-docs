@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
+POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialDataSourceId}/removeHold
 POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/removeHold
 ```
 

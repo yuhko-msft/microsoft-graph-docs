@@ -1690,7 +1690,7 @@ items:
           - name: List review sets
             href: api/ediscovery-case-list-reviewsets.md
           - name: Create review set
-            href: /api/ediscovery-case-post-reviewsets.md
+            href: api/ediscovery-case-post-reviewsets.md
           - name: Get settings
             href: api/ediscovery-casesettings-get.md
           - name: Update settings
@@ -1700,11 +1700,11 @@ items:
           - name: List source collections
             href: api/ediscovery-case-list-sourcecollections.md
           - name: Create source collection
-            href: /api/ediscovery-case-post-sourcecollections.md
+            href: api/ediscovery-case-post-sourcecollections.md
           - name: List tags
-            href: /api/ediscovery-case-list-tags.md
+            href: api/ediscovery-case-list-tags.md
           - name: Create tag
-            href: /api/ediscovery-case-post-tags.md
+            href: api/ediscovery-case-post-tags.md
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
@@ -1720,6 +1720,10 @@ items:
             href: api/ediscovery-custodian-activate.md
           - name: Release
             href: api/ediscovery-custodian-release.md
+          - name: Apply hold
+            href: api/ediscovery-custodian-applyhold.md
+          - name: Remove hold
+            href: api/ediscovery-custodian-removehold.md
         - name: Legal hold
           href: resources/ediscovery-legalhold.md
           items:
@@ -1746,6 +1750,10 @@ items:
             href: api/ediscovery-noncustodialdatasource-list-datasource.md
           - name: Release
             href: api/ediscovery-noncustodialdatasource-release.md
+          - name: Apply hold
+            href: api/ediscovery-noncustodialdatasource-applyhold.md
+          - name: Remove hold
+            href: api/ediscovery-noncustodialdatasource-removehold.md
         - name: Review set
           href: resources/ediscovery-reviewset.md
           items:
