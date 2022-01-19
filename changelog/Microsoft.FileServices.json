@@ -3,6 +3,14 @@
     {
       "ChangeList": [
         {
+          "Id": "1f43945c-f422-4eb8-a8fb-cd55349c3732",
+          "ApiChange": "Property",
+          "ChangedApiName": "deleted",
+          "ChangeType": "Addition",
+          "Description": "Added the **deleted** property to [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-beta) resource.",
+          "Target": "listItem"
+        },
+        {
           "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
           "ApiChange": "Resource",
           "ChangedApiName": "",
