@@ -11004,6 +11004,26 @@ items:
             href: api/featurerolloutpolicy-post-appliesto.md
           - name: Delete appliesTo
             href: api/featurerolloutpolicy-delete-appliesto.md
+        - name: Inbound shared user profile
+          href: resources/inboundshareduserprofile.md
+          items:
+          - name: List
+            href: api/inboundshareduserprofile-list.md
+          - name: Get
+            href: api/inboundshareduserprofile-get.md
+          - name: Remove personal data
+            href: api/inboundshareduserprofile-removepersonaldata.md
+          - name: Export personal data
+            href: api/inboundshareduserprofile-exportpersonaldata.md
+        - name: Outbound shared user profile
+          href: resources/outboundshareduserprofile.md
+          items:
+          - name: List
+            href: api/outboundshareduserprofile-list.md
+          - name: Get
+            href: api/outboundshareduserprofile-get.md
+          - name: Remove personal data
+            href: api/outboundshareduserprofile-removepersonaldata.md
         - name: Organization
           href: resources/organization.md
           items:
