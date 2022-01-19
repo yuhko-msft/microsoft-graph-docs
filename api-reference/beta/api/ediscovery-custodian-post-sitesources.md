@@ -121,6 +121,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/custodians('8904528fef4d4578b44f71a80188f400')/siteSources/$entity",
     "@odata.id": "https://graph.microsoft.com/v1.0/sites/2493b4eb-1a48-4cac-b0d0-aad05e6b9df0",
     "displayName": "Human resources site",
+    "holdStatus": "notApplied",
     "createdDateTime": "2021-08-10T18:25:48.6441363Z",
     "id": "42393244-3838-4636-3437-453030334136",
     "createdBy": {

@@ -58,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -91,7 +90,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
@@ -111,6 +109,7 @@ Content-Type: application/json
     "email": "AdeleV@contoso.com",
     "applyHoldToSources": true,
     "status": "active",
+    "holdStatus": "applied",
     "createdDateTime": "2020-10-30T20:59:54.9900703Z",
     "lastModifiedDateTime": "2020-10-30T20:59:55.1400013Z",
     "releasedDateTime": null,

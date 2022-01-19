@@ -1,19 +1,19 @@
 ---
-title: "custodian: applyHold"
-description: "Apply a legal hold to a custodian"
+title: "custodian: removeHold"
+description: "Removes all holds from the specified custodians"
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# custodian: applyHold
+# custodian: removeHold
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply a legal hold to a custodian. This method can be used to place all custodians or a subset of custodians on hold. If a source is added or removed from a custodian who is already on hold, this method should be included to synchronize the list of added or removed locations.
+Removes all holds from the specified custodians
 
 ## Permissions
 
@@ -31,9 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/custodians/applyHold
+POST /compliance/ediscovery/cases/{caseId}/custodians/removeHold
 ```
 
 ## Request headers
@@ -51,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|String collection|List of custodian Ids for whom to apply holds to.|
+|ids|String collection|List of custodian Ids for whom to remove holds from.|
 
 ## Response
 
@@ -63,12 +62,12 @@ If successful, this action returns a `204 No Content` response code.
 
 <!-- {
   "blockType": "request",
-  "name": "custodianthis.applyhold"
+  "name": "custodianthis.removehold"
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/03ffe31b-73bb-44b5-9b7d-f27f33c6a303/custodians/applyHold
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/03ffe31b-73bb-44b5-9b7d-f27f33c6a303/custodians/removeHold
 Content-Type: application/json
 Content-length: 35
 
@@ -82,6 +81,7 @@ Content-length: 35
 
 ### Response
 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

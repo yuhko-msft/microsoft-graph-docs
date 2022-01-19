@@ -109,6 +109,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/noncustodialDataSources/$entity",
     "status": "Active",
+    "holdStatus": "applied",
     "lastModifiedDateTime": "2021-02-17T19:41:28.8714643Z",
     "releasedDateTime": "0001-01-01T00:00:00Z",
     "id": "8b69818bf6af4f8a9dede428401c71e7",

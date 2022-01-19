@@ -108,9 +108,6 @@ Content-Type: application/json
 
 ---
 
-
----
-
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -129,6 +126,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/custodians('8904528fef4d4578b44f71a80188f400')/unifiedGroupSources/$entity",
     "@odata.id": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
     "displayName": "Secret Group",
+    "holdStatus": "notApplied",
     "createdDateTime": "2021-03-31T21:22:57.0108027Z",
     "id": "33434233-3030-3739-3043-393039324633",
     "includedSources": "mailbox,site",

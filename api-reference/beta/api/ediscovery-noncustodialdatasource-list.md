@@ -111,6 +111,7 @@ Content-Type: application/json
     "value": [
         {
             "status": "Active",
+            "holdStatus": "applied",
             "lastModifiedDateTime": "2021-02-17T19:41:28.9144454Z",
             "releasedDateTime": "0001-01-01T00:00:00Z",
             "id": "8e402dd7f3c94a3abc086e5d07db1c6d",
@@ -120,6 +121,7 @@ Content-Type: application/json
         },
         {
             "status": "Active",
+            "holdStatus": "applied",
             "lastModifiedDateTime": "2021-02-17T19:41:28.8714643Z",
             "releasedDateTime": "0001-01-01T00:00:00Z",
             "id": "8b69818bf6af4f8a9dede428401c71e7",

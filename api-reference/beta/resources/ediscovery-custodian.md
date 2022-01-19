@@ -44,7 +44,8 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |id|String|The ID for the custodian in the specified case. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time the custodian object was last modified|
 |releasedDateTime|DateTimeOffset|Date and time the custodian was released from the case.|
-|status|microsoft.graph.ediscovery.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
+|status|[microsoft.graph.ediscovery.custodianStatus](../resources/ediscovery-custodian.md#custodianstatus-values)|Status of the custodian. Possible values are: `active`, `released`.|
+|holdStatus|[microsoft.graph.ediscovery.dataSourceHoldStatus](../resources/ediscovery-custodian.md#datasourceholdstatus-values)|Status of the custodian's hold. Possible values are: `applied`, `applying`, `notApplied`, `partial`, `removing`.|
 
 ### custodianStatus values
 
@@ -52,6 +53,16 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |:----|-----------|
 |active|Custodian is an active part of the case. |
 |released|Custodian is released from the case.|
+
+### dataSourceHoldStatus values
+
+|Member|Description|
+|:----|-----------|
+|applied|The data sources are on hold.|
+|applying|The data sources are in the process of being placed on hold.|
+|notApplied|The data sources are not on hold.|
+|partial|Some of the data sources are on hold and some are not on hold.|
+|removing|The data sources are in the process of being removed from hold.|
 
 ## Relationships
 
@@ -80,6 +91,7 @@ The following is a JSON representation of the resource.
   "email": "String",
   "applyHoldToSources": "Boolean",
   "status": "String",
+  "holdStatus": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "releasedDateTime": "String (timestamp)",

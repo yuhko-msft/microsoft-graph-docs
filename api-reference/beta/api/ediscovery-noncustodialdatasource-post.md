@@ -124,6 +124,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/noncustodialDataSources/$entity",
     "status": "0",
+    "holdStatus": "notApplied",
     "lastModifiedDateTime": "2021-02-19T07:02:45.7732516Z",
     "releasedDateTime": "0001-01-01T00:00:00Z",
     "id": "39374346363831303741353341373443",
@@ -199,6 +200,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/noncustodialDataSources/$entity",
     "status": "Active",
+    "holdStatus": "notApplied",
     "lastModifiedDateTime": "2021-08-11T22:43:45.1079425Z",
     "releasedDateTime": "0001-01-01T00:00:00Z",
     "id": "35393843394546413031353146334134",

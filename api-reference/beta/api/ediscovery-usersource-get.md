@@ -109,6 +109,7 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians('2192ca408ea2410eba3bec8ae873be6b')/userSources",
     "displayName": "Megan Bowen",
+    "holdStatus": "applied",
     "createdDateTime": "2020-08-21T13:20:01.3430206Z",
     "id": "46384443-4137-3032-3437-363939433735",
     "email": "megan@contoso.com",
