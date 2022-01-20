@@ -1056,8 +1056,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _IdentityRiskEvent.Read.All_ |   Read identity risk event information | Allows the app to read identity risk event information for all users in your organization without a signed-in user. | Yes |
 | _IdentityRiskyUser.Read.All_ |   Read identity user risk  information | Allows the app to read identity user risk information for all users in your organization without a signed-in user. | Yes |
 | _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information | Allows the app to read and update identity user risk information for all users in your organization without a signed-in user. | Yes |
-| _IdentityRiskyServicePrincipal.Read.All_ |   Read identity service principal risk  information  | Allows the app to read identity service principal risk information for all service principals in your organization on behalf of the signed-in account. | Yes | No |
-| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Read and update identity service principal risk  information  | Allows the app to read and update identity service principal risk information for all service principals in your organization on behalf of the signed-in account. | Yes | No |
+| _IdentityRiskyServicePrincipal.Read.All_ |   Read all identity risky service principal information  | Allows the app to read all risky service principal information for your organization, without a signed-in user. | Yes |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Read and write all identity risky service principal information  | Allows the app to read and update identity risky service principal for your organization, without a signed-in user.| Yes |
 
 All identity risk permissions are valid only for work or school accounts. For an app with delegated permissions to read identity risk information, the signed-in user must be a member of one of the following [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference): Global Administrator, Security Administrator, or Security Reader.
 
