@@ -1,3 +1,12 @@
+---
+title: "Working with Microsoft Teams messaging"
+description: "Working with Microsoft Teams messaging"
+author: "RamjotSingh"
+ms.localizationpriority: high
+ms.prod: "microsoft-teams"
+ms.custom: scenarios:getting-started
+---
+
 # Working with Microsoft Teams messaging
 
 Microsoft Teams has a comprehensive set of APIs for performing messaging operations on Microsoft Teams using Microsoft Graph. This document lists the various schema elements used by these APIs and makes suggestions on the APIs to use based on the scenario being targetted by the caller. The list of scenarios is in no way comprehensive but should guide the callers which API to invoke based on high level scenarios.
@@ -582,4 +591,44 @@ Subject of the message. This is valid only for messages sent in channel.
 
 Url pointing to the message in Microsoft Teams UI. This url can be used to open the message directly in Microsoft Teams UI in a browser.
 
+## Choosing the right API for your scenarios
+
+Choosing the right API is essential for getting the best experience. Additionally, using the right set of APIs will allow you to fetch data without hitting throttling.
+
+Messaging APIs in Microsoft Teams are divided in 3 major categories
+
+- APIs focused on the way Microsoft Teams UI works. Any changes are instantly visible
+- Slow sync APIs focused on users and teams. Any changes can take up to 24 hours to be available
+- Change notifications based APIs to get notified in real time
+
+### Microsoft Teams UI aligned APIs
+
+These APIs allow you to get older methods similar to how Microsoft Teams UI does. These APIs are built to allow 'once in a while' sync to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited or deleted) are instantly visible through these APIs.
+
+Following APIs belong to this set
+
+- [List messages in a chat](/graph/api/chat-list-messages?preserve-view=true)
+- [List messages in a channel](/graph/api/channel-list-messages?preserve-view=true)
+- [List replies to a message in a channel](/graph/api/chatmessage-list-replies?preserve-view=true)
+- [Send message in a chat](/graph/api/chat-post-messages?preserve-view=true)
+- [Send message in a channel](/graph/api/chatmessage-post?preserve-view=true)
+- [Reply to a message in a channel](/graph/api/chatmessage-post-replies?preserve-view=true)
+- [List hostedContents associated with a message](/graph/api/chatmessage-list-hostedcontents?preserve-view=true)
+- [Get hostedContent associated with a message](/graph/api/chatmessagehostedcontent-get?preserve-view=true)
+
+Additionally, following APIs act along with the APIs above to serve specific scenarios regarding fetching specific instances or changing order of traversal
+
+- [Get a message or reply in a channel or a chat](/graph/api/chatmessage-get?preserve-view=true)
+- [Continuous sync using /delta for channel messages](/graph/api/chatmessage-delta?preserve-view=true)
+
+### APIs for exporting data from Microsoft Teams
+
+These APIs typically work at a higher granularity than UI aligned APIs. These APIs focus on allowing fetching large amount of data. It might take a while (upto 24 hours in certain cases) for data to get synced and being available through these APIs.
+
+- [List messages across a user's chats](/graph/api/chats-getallmessages?preserve-view=true)
+- [List messages across channels in a team](/graph/api/channel-getallmessages?preserve-view=true)
+
+### Realtime APIs
+
+Realtime APIs allow caller to get notified as soon as a change is made (message sent, edited, deleted etc). These APIs are suitable for realtime applications like rendering messages outside of Microsoft Teams UI. Additionally, these APIs allow creating subscriptions and thus allow receving large amount of data without hitting throttling. Refer to [this](/graph/teams-changenotifications-chatmessage) document for more details.
 
