@@ -111,7 +111,6 @@ Content-Type: application/json
     "value": [
         {
             "email": "meganb@contoso.com",
-            "applyHoldToSources": false,
             "status": "released",
             "holdStatus": "applied",
             "createdDateTime": "2020-10-27T15:55:43.4971108Z",
@@ -123,7 +122,6 @@ Content-Type: application/json
         },
         {
             "email": "AdeleV@contoso.com",
-            "applyHoldToSources": true,
             "status": "active",
             "holdStatus": "applied",
             "createdDateTime": "2020-08-21T13:20:02.0117254Z",

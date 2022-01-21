@@ -22,7 +22,6 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |[List custodians](../api/ediscovery-case-list-custodians.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) collection|Get a list of **custodian** objects and their properties.|
 |[Create custodian](../api/ediscovery-case-post-custodians.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Create a new **custodian** object.|
 |[Get custodian](../api/ediscovery-custodian-get.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Read the properties and relationships of a **custodian** object.|
-|[Update custodian](../api/ediscovery-custodian-update.md)|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)|Update the properties of a **custodian** object.|
 |[release](../api/ediscovery-custodian-release.md)|None|Release a custodian from a case.|
 |[activate](../api/ediscovery-custodian-activate.md)|None|Reactivate a custodian that has been released from a case and make them part of the case again.|
 |[List siteSources](../api/ediscovery-custodian-list-sitesources.md)|[microsoft.graph.ediscovery.siteSource](../resources/ediscovery-sitesource.md) collection|Get the **siteSource** resources associated with the custodian.|
@@ -37,7 +36,6 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |Property|Type|Description|
 |:---|:---|:---|
 |acknowledgedDateTime|DateTimeOffset|Date and time the custodian acknowledged a hold notification.|
-|applyHoldToSources|Boolean|Identifies whether a custodian's sources were placed on hold during creation.|
 |createdDateTime|DateTimeOffset|Date and time when the custodian was added to the case.|
 |displayName|String|Display name of the custodian.|
 |email|String|Email address of the custodian.|
@@ -89,7 +87,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.ediscovery.custodian",
   "email": "String",
-  "applyHoldToSources": "Boolean",
   "status": "String",
   "holdStatus": "String",
   "createdDateTime": "String (timestamp)",

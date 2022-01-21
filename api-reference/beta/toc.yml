@@ -1714,8 +1714,6 @@ items:
             href: api/ediscovery-case-post-custodians.md
           - name: Get
             href: api/ediscovery-custodian-get.md
-          - name: Update
-            href: api/ediscovery-custodian-update.md
           - name: Activate
             href: api/ediscovery-custodian-activate.md
           - name: Release

@@ -52,7 +52,6 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|Custodian's primary SMTP address. Required.|
-|applyHoldToSources|Boolean|Indicates whether a hold is applied to the custodian's sources (such as mailboxes, sites, or Teams).|
 
 ## Response
 
@@ -75,7 +74,6 @@ Content-Type: application/json
 
 {
     "email":"AdeleV@contoso.com",
-    "applyHoldToSources":"true"
 }
 ```
 
@@ -118,7 +116,6 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians/$entity",
     "email": "AdeleV@contoso.com",
-    "applyHoldToSources": false,
     "status": "active",
     "createdDateTime": "2020-10-30T20:47:01.7724531Z",
     "lastModifiedDateTime": "2020-10-30T20:47:02.2512381Z",

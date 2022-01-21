@@ -107,7 +107,6 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians/$entity",
     "email": "AdeleV@contoso.com",
-    "applyHoldToSources": true,
     "status": "active",
     "holdStatus": "applied",
     "createdDateTime": "2020-10-30T20:59:54.9900703Z",
