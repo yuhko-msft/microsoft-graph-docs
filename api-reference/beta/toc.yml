@@ -10212,6 +10212,8 @@ items:
               href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
       - name: Multi-tenant management (preview)
         items:
+        - name: Overview
+          href: resources/managed-tenants-api-overview.md
         - name: Managed tenant
           href: resources/managedtenants-managedtenant.md
         - name: Aggregated policy compliance
