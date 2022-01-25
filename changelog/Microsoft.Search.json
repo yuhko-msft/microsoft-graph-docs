@@ -758,6 +758,80 @@
     },
     {
       "ChangeList": [
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Property",
+            "ChangedApiName": "connectorId",
+            "ChangeType": "Addition",
+            "Description": "Added the **connectorId** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Property",
+            "ChangedApiName": "searchSettings",
+            "ChangeType": "Addition",
+            "Description": "Added the **searchSettings** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "displayTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [displayTemplate](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-displayTemplate?view=graph-rest-beta) resource type.",
+            "Target": "displayTemplate"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "propertyRule",
+            "ChangeType": "Addition",
+            "Description": "Added the [propertyRule](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-propertyRule?view=graph-rest-beta) resource type.",
+            "Target": "propertyRule"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "searchSettings",
+            "ChangeType": "Addition",
+            "Description": "Added the [searchSettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-searchSettings?view=graph-rest-beta) resource type.",
+            "Target": "searchSettings"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "binaryOperator",
+            "ChangeType": "Addition",
+            "Description": "Added the **binaryOperator** enumeration type.",
+            "Target": "binaryOperator"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "ruleOperation",
+            "ChangeType": "Addition",
+            "Description": "Added the **ruleOperation** enumeration type.",
+            "Target": "ruleOperation"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "groups",
+            "ChangeType": "Addition",
+            "Description": "Added the **groups** relationship to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-1.0) resource.",
+            "Target": "externalConnection"
+          }
+      ],
+      "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-05T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "b0cf779b-1461-4e8e-afd7-2896bf5bfd29",
           "ApiChange": "Method",
