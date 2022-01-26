@@ -31,7 +31,9 @@ From the users homed in the current tenant, the AAD users whose profile data is 
 | externalTenantId | String | ID of the external tenant with user profile access. |
 
 ## Relationships
-None.
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|tenants|[tenantReference](tenantreference.md) collection| External tenants that AAD user profile data is being shared with. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
