@@ -75,7 +75,7 @@ Content-Type: application/json
 {
     "value": [
         {
-            "@odata.type": "#Microsoft.DirectoryServices.inboundSharedUserProfiles",
+            "@odata.type": "#Microsoft.DirectoryServices.outboundSharedUserProfiles",
             "id":"ZAMkAAIAAAoZDOFAAA=",
             "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
             "userPrincipalName":"Bob@contoso.onmicrosoft.com",
@@ -83,7 +83,7 @@ Content-Type: application/json
             "externalTenantId":"62bfb458-9474-4c44-896b-b30942d055f0"
         ,
         {
-            "@odata.type": "#Microsoft.DirectoryServices.inboundSharedUserProfiles",
+            "@odata.type": "#Microsoft.DirectoryServices.outboundSharedUserProfiles",
             "id":"TTAkAAIAAAoZDOFAAD=",
             "userId":"5586b2ae-c4fb-4eda-9620-7e73dddd1cac",
             "userPrincipalName":"Alice@microsoft.com",
