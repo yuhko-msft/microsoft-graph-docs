@@ -1,16 +1,14 @@
 ---
 title: "Microsoft 365 Lighthouse API overview"
-description: "Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium."
+description: "Microsoft 365 Lighthouse helps managed service providers secure and manage data, devices, and users for SMBs who are using Microsoft 365 Business Premium."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 ---
 
-# Overview for multi-tenant management using the Microsoft 365 Lighthouse API
+# Overview for Microsoft 365 Lighthouse on Microsoft Graph
 
-Microsoft 365 Lighthouse is an admin portal that lets Managed Service Providers (MSPs) remotely manage multiple customer tenants. It helps MSPs secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium.
-
-Microsoft 365 Lighthouse helps MSPs simplify onboarding of Microsoft 365 Business Premium customer tenants. It offers an MSP the convenience of multi-tenant views across all its customer tenant environments. It can recommend security configuration baselines tailored to the MSP's SMB customers. With Microsoft 365 Lighthouse, MSPs can scale the management of their customer tenants, focus on what's most important, quickly find and investigate risks, and take action to help get their customer tenants to a healthy and secure state.
+Microsoft 365 Lighthouse is used by managed service providers, who are apart of the Cloud Solution Provider program, to secure and manage data, devices, and users at scale for small and medium sized customers who are using Microsoft 365 Business Premium or Microsoft 365 E3. Microsoft Graph provides APIs that enable these managed services providers to gain insights for their customers and react accordingly based on the response.
 
 > [!NOTE]  
 > This documentation is about the Microsoft 365 Lighthouse API available on _Microsoft Graph_. A similar offering, Azure Lighthouse, helps service providers deliver managed services for Azure services by using comprehensive and robust management tooling built into the _Azure_ platform. To learn more, see [What is Azure Lighthouse](/azure/lighthouse/overview).
@@ -21,7 +19,7 @@ As an MSP, you can use the Microsoft 365 Lighthouse API in Microsoft Graph to ga
 
 ### Devices
 
-You can use the Lighthouse API to perform the following device tasks:
+You can use the Microsoft 365 Lighthouse APIs to perform the following device tasks:
 
 - Analyze [device compliance trends](/graph/api/resources/managedtenants-manageddevicecompliancetrend?view=graph-rest-beta&preserve-view=true) to better understand how device compliance is evolving over time for your customers.
 - Understand what [device compliance policies](/graph/api/resources/managedtenants-manageddevicecompliance) have been created across your customers and the status of the policies.
@@ -49,9 +47,8 @@ See [Microsoft 365 Lighthouse API in Microsoft Graph (preview)](/graph/api/resou
 > [!NOTE]
 > The Microsoft 365 Lighthouse API is defined in the OData subnamespace, `microsoft.graph.managedTenants`.
 
-
 ## Next steps
 
 - Learn more about the [Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide&preserve-view=true) portal.
-- Find out about the [latest new features and updates](/graph/whats-new-overview) for the Lighthouse API.
+- Find out about the [latest new features and updates](/graph/whats-new-overview) for the Microsoft 365 Lighthouse API.
 - Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.

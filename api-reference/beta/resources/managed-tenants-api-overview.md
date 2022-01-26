@@ -14,7 +14,11 @@ doc_type: resourcePageType
 Microsoft 365 Lighthouse is used by managed service providers, who are apart of the Cloud Solution Provider program, to secure and manage data, devices, and users at scale for small and medium sized customers who are using Microsoft 365 Business Premium or Microsoft 365 E3. Microsoft Graph provides APIs that enable these managed services providers to gain insights for their customers and react accordingly based on the response.
 
 > [!IMPORTANT]
-> Accessing the Microsoft Graph APIs for Microsoft 365 Lighthouse only supports delegated permissions and requires multi-factor authentication. Use of the secure application model will be needed if you are looking to utilize these APIs non-interactively. See [Enabling the secure application model](../../../concepts/auth-cloudsolutionprovider.md) for more information.
+> Accessing the Microsoft Graph APIs for Microsoft 365 Lighthouse only supports delegated permissions and requires multi-factor authentication. Use of the secure application model will be needed if you are looking to utilize these APIs non-interactively. See [Enabling the secure application model](/graph/auth-cloudsolutionprovider) for more information.
+
+## Using Microsoft Graph permissions
+
+Microsoft Graph controls access to resources through permissions. As a developer, you must specify the permissions you need to access Microsoft 365 Lighthouse resources. Typically, you specify the permissions in the Azure Active Directory portal. See [Microsoft Graph permissions reference](/graph/permissions-reference) for more information and navigate to the [Managed tenant permissions](/graph/permissions-reference#managed-tenant-permissions) section.
 
 ## Common use cases
 
@@ -31,3 +35,8 @@ The following are common requests for interacting with the Microsoft 365 Lightho
 ## What's new
 
 Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
+
+## Next steps
+
+- Check out the [overview for Microsoft 365 Lighthouse on Microsoft Graph](/graph/managedtenants-concept-overview).
+- Try out the Microsoft 365 Lighthouse APIs by using the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
