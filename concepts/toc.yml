@@ -141,28 +141,6 @@ items:
             href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
-      - name: Cloud communications
-        items:
-          - name: Overview
-            href: cloud-communications-concept-overview.md
-          - name: Get started
-            href: cloud-communications-get-started.md
-          - name: Calls
-            href: cloud-communications-calls.md
-          - name: Media
-            href: cloud-communications-media.md
-          - name: Online meetings
-            href: cloud-communications-online-meetings.md
-          - name: Choose an online meeting API
-            href: choose-online-meeting-api.md
-          - name: Configure application access
-            href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Call records
-            href: cloud-communications-callrecords.md
-          - name: Manage phone numbers for bots
-            href: cloud-communications-phone-number.md
-          - name: Online meeting artifacts and permissions
-            href: cloud-communications-online-meeting-artifacts.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -448,28 +426,52 @@ items:
         items:
           - name: Overview
             href: teams-concept-overview.md
-          - name: Create a group and team
-            href: teams-create-group-and-team.md
-          - name: List all teams
-            href: teams-list-all-teams.md
-          - name: Choose an online meeting API
-            href: choose-online-meeting-api.md
-          - name: Configuring built-in tabs
-            href: teams-configuring-builtin-tabs.md
-          - name: Protected APIs
-            href: teams-protected-apis.md
-          - name: Licensing and payment requirements
-            href: teams-licenses.md
-          - name: Send proactive messages with a bot
-            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Activity feed notifications
+          - name: Messages
             items:
-              - name: Send activity feed notifications
-                href: teams-send-activityfeednotifications.md
-              - name: Best practices 
-                href: teams-activity-feed-notifications-best-practices.md  
-          - name: System messages
-            href: system-messages.md
+              - name: Create a group and team
+                href: teams-create-group-and-team.md
+              - name: List all teams
+                href: teams-list-all-teams.md
+              - name: Protected APIs
+                href: teams-protected-apis.md
+              - name: Licensing and payment requirements
+                href: teams-licenses.md
+              - name: Send proactive messages with a bot
+                href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+              - name: Activity feed notifications
+                items:
+                  - name: Send activity feed notifications
+                    href: teams-send-activityfeednotifications.md
+                  - name: Best practices 
+                    href: teams-activity-feed-notifications-best-practices.md  
+              - name: System messages
+                href: system-messages.md
+          - name: Calling and meetings
+            items:
+              - name: Overview
+                href: cloud-communications-concept-overview.md
+              - name: Get started
+                href: cloud-communications-get-started.md
+              - name: Calls
+                href: cloud-communications-calls.md
+              - name: Media
+                href: cloud-communications-media.md
+              - name: Online meetings
+                href: cloud-communications-online-meetings.md
+              - name: Choose an online meeting API
+                href: choose-online-meeting-api.md
+              - name: Configure application access
+                href: cloud-communication-online-meeting-application-access-policy.md
+              - name: Call records
+                href: cloud-communications-callrecords.md
+              - name: Manage phone numbers for bots
+                href: cloud-communications-phone-number.md
+              - name: Online meeting artifacts and permissions
+                href: cloud-communications-online-meeting-artifacts.md
+          - name: Apps
+            items:
+              - name: Configuring built-in tabs
+                href: teams-configuring-builtin-tabs.md
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
