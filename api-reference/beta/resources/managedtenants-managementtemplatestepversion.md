@@ -19,8 +19,8 @@ Namespace: microsoft.graph.managedTenants
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managementTemplateStepVersions](../api/managedtenants-managedtenant-list-managementtemplatestepversions.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|Get a list of the [managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) objects and their properties.|
-|[Get managementTemplateStepVersion](../api/managedtenants-managementtemplatestepversion-get.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md)|Read the properties and relationships of a [managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) object.|
+|[List managementTemplateStepVersions](../api/managedtenants-managedtenant-list-managementtemplatestepversions.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|Get a list of the [microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) objects and their properties.|
+|[Get managementTemplateStepVersion](../api/managedtenants-managementtemplatestepversion-get.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md)|Read the properties and relationships of a [microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) object.|
 |[deploy](../api/managedtenants-managementtemplatestepversion-deploy.md)|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md)|**TODO: Add Description**|
 |[List deployments](../api/managedtenants-managementtemplatestepversion-list-deployments.md)|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md) collection|Get the managementTemplateStepDeployment resources from the deployments navigation property.|
 |[List managementTemplateStep](../api/managedtenants-managementtemplatestepversion-list-templatestep.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|Get the managementTemplateStep resources from the templateStep navigation property.|
@@ -37,7 +37,7 @@ Namespace: microsoft.graph.managedTenants
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deployments|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md) collection|**TODO: Add Description**|
-|templateStep|[managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|**TODO: Add Description**|
+|templateStep|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.

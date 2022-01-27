@@ -27,7 +27,7 @@ Namespace: microsoft.graph.managedTenants
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|licenses|[licenseDetails](../resources/managedtenants-licensedetails.md)|**TODO: Add Description**|
+|licenses|[licenseDetails](../resources/licensedetails.md)|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.

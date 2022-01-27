@@ -19,8 +19,8 @@ Namespace: microsoft.graph.managedTenants
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managementTemplateSteps](../api/managedtenants-managedtenant-list-managementtemplatesteps.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|Get a list of the [managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) objects and their properties.|
-|[Get managementTemplateStep](../api/managedtenants-managementtemplatestep-get.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|Read the properties and relationships of a [managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) object.|
+|[List managementTemplateSteps](../api/managedtenants-managedtenant-list-managementtemplatesteps.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|Get a list of the [microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) objects and their properties.|
+|[Get managementTemplateStep](../api/managedtenants-managementtemplatestep-get.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|Read the properties and relationships of a [microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) object.|
 |[List managementTemplate](../api/managedtenants-managementtemplatestep-list-managementtemplate.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get the managementTemplate resources from the managementTemplate navigation property.|
 |[List stepVersions](../api/managedtenants-managementtemplatestep-list-stepversions.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|Get the managementTemplateStepVersion resources from the stepVersions navigation property.|
 
