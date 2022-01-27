@@ -1,9 +1,9 @@
 ---
 title: "managementAction resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -15,17 +15,12 @@ Namespace: microsoft.graph.managedTenants
 
 **TODO: Add Description**
 
-
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managementActions](../api/managedtenants-managementaction-list.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md) collection|Get a list of the [managementAction](../resources/managedtenants-managementaction.md) objects and their properties.|
-|[Create managementAction](../api/managedtenants-managedtenant-post-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Create a new [managementAction](../resources/managedtenants-managementaction.md) object.|
+|[List managementActions](../api/managedtenants-managedtenant-list-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md) collection|Get a list of the [managementAction](../resources/managedtenants-managementaction.md) objects and their properties.|
 |[Get managementAction](../api/managedtenants-managementaction-get.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Read the properties and relationships of a [managementAction](../resources/managedtenants-managementaction.md) object.|
-|[Update managementAction](../api/managedtenants-managementaction-update.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Update the properties of a [managementAction](../resources/managedtenants-managementaction.md) object.|
-|[Delete managementAction](../api/managedtenants-managementaction-delete.md)|None|Deletes a [managementAction](../resources/managedtenants-managementaction.md) object.|
 |[apply](../api/managedtenants-managementaction-apply.md)|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|**TODO: Add Description**|
 
 ## Properties
@@ -34,7 +29,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |category|managementCategory|**TODO: Add Description**.The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`.|
 |description|String|**TODO: Add Description**|
 |displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|**TODO: Add Description**|
 |referenceTemplateId|String|**TODO: Add Description**|
 |referenceTemplateVersion|Int32|**TODO: Add Description**|
 |workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|**TODO: Add Description**|

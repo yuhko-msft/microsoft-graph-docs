@@ -1,9 +1,9 @@
 ---
 title: "workloadActionDeploymentStatus resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.managedTenants
 |:---|:---|:---|
 |actionId|String|**TODO: Add Description**|
 |deployedPolicyId|String|**TODO: Add Description**|
-|error|[microsoft.graph.genericError](../resources/managedtenants-genericerror.md)|**TODO: Add Description**|
+|error|[microsoft.graph.genericError](../resources/genericerror.md)|**TODO: Add Description**|
 |excludeGroups|String collection|**TODO: Add Description**|
 |includeAllUsers|Boolean|**TODO: Add Description**|
 |includeGroups|String collection|**TODO: Add Description**|
@@ -56,4 +56,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-
