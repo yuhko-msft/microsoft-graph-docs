@@ -34,12 +34,22 @@ Namespace: microsoft.graph.managedTenants
 |managementPortal|String|**TODO: Add Description**|
 |portalLink|String|**TODO: Add Description**|
 |priority|Int32|**TODO: Add Description**|
-|provider|managementProvider|**TODO: Add Description**.The possible values are: `microsoft`, `community`, `indirectProvider`, `self`, `unknownFutureValue`.|
+|provider|[microsoft.graph.managedTenants.managementProvider](#managementprovider-values)|**TODO: Add Description**.The possible values are: `microsoft`, `community`, `indirectProvider`, `self`, `unknownFutureValue`.|
+
+### managementProvider values
+
+|Member|Description|
+|:---|:---|
+|microsoft|**TODO: Add Description**|
+|community|**TODO: Add Description**|
+|indirectProvider|**TODO: Add Description**|
+|self|**TODO: Add Description**|
+|unknownFutureValue|**TODO: Add Description**|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managementTemplate|[managementTemplate](../resources/managedtenants-managementtemplate.md)|**TODO: Add Description**|
+|managementTemplate|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|**TODO: Add Description**|
 |stepVersions|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|**TODO: Add Description**|
 
 ## JSON representation
