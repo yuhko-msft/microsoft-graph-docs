@@ -1,9 +1,9 @@
 ---
 title: "managementTemplate resource type"
-description: "Represents a group of actions and setting that can be performed against a managed tenant."
-author: "idwilliams"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,26 +13,40 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group of actions and setting that can be performed against a managed tenant.
+**TODO: Add Description**
+
+
+Inherits from [entity](../resources/managedtenants-entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managementTemplates](../api/managedtenants-managedtenant-list-managementtemplates.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get a list of the [managementTemplate](../resources/managedtenants-managementtemplate.md) objects and their properties.|
+|[List managementTemplates](../api/managedtenants-managementtemplate-list.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get a list of the [managementTemplate](../resources/managedtenants-managementtemplate.md) objects and their properties.|
+|[Create managementTemplate](../api/managedtenants-managedtenant-post-managementtemplates.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|Create a new [managementTemplate](../resources/managedtenants-managementtemplate.md) object.|
 |[Get managementTemplate](../api/managedtenants-managementtemplate-get.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|Read the properties and relationships of a [managementTemplate](../resources/managedtenants-managementtemplate.md) object.|
+|[Update managementTemplate](../api/managedtenants-managementtemplate-update.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|Update the properties of a [managementTemplate](../resources/managedtenants-managementtemplate.md) object.|
+|[Delete managementTemplate](../api/managedtenants-managementtemplate-delete.md)|None|Deletes a [managementTemplate](../resources/managedtenants-managementtemplate.md) object.|
+|[List managementTemplateCollections](../api/managedtenants-managementtemplate-list-managementtemplatecollections.md)|[microsoft.graph.managedTenants.managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) collection|Get the managementTemplateCollection resources from the managementTemplateCollections navigation property.|
+|[Add managementTemplateCollection](../api/managedtenants-managementtemplate-post-managementtemplatecollections.md)|[microsoft.graph.managedTenants.managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md)|Add managementTemplateCollections by posting to the managementTemplateCollections collection.|
+|[List managementTemplateSteps](../api/managedtenants-managementtemplate-list-managementtemplatesteps.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|Get the managementTemplateStep resources from the managementTemplateSteps navigation property.|
+|[Add managementTemplateStep](../api/managedtenants-managementtemplate-post-managementtemplatesteps.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|Add managementTemplateSteps by posting to the managementTemplateSteps collection.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only.|
-|description|String|The description for the management template. Optional. Read-only.|
-|displayName|String|The display name for the management template. Required. Read-only.|
-|id|String|The unique identifier for the management template. Required. Read-only.|
-|parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|The collection of parameters used by the management template. Optional. Read-only.|
-|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management template. Optional. Read-only.|
+|category|managementCategory|**TODO: Add Description**.The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`.|
+|description|String|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md).|
+|parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|**TODO: Add Description**|
+|version|Int32|**TODO: Add Description**|
+|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|**TODO: Add Description**|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|managementTemplateCollections|[microsoft.graph.managedTenants.managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) collection|**TODO: Add Description**|
+|managementTemplateSteps|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -50,6 +64,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
+  "version": "Integer",
   "category": "String",
   "parameters": [
     {
@@ -63,3 +78,4 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+

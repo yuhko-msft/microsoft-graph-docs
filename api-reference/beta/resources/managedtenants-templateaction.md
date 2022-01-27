@@ -1,5 +1,5 @@
 ---
-title: "setting resource type"
+title: "templateAction resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo
 doc_type: resourcePageType
 ---
 
-# setting resource type
+# templateAction resource type
 
 Namespace: microsoft.graph.managedTenants
 
@@ -18,30 +18,36 @@ Namespace: microsoft.graph.managedTenants
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|description|String|**TODO: Add Description**|
 |displayName|String|**TODO: Add Description**|
-|jsonValue|String|**TODO: Add Description**|
-|overwriteAllowed|Boolean|**TODO: Add Description**|
-|settingId|String|**TODO: Add Description**|
-|valueType|managementParameterValueType|**TODO: Add Description**.The possible values are: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`.|
+|service|String|**TODO: Add Description**|
+|settings|[microsoft.graph.managedTenants.setting](../resources/managedtenants-setting.md) collection|**TODO: Add Description**|
+|templateActionId|String|**TODO: Add Description**|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|licenses|[licenseDetails](../resources/managedtenants-licensedetails.md)|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.managedTenants.setting"
+  "@odata.type": "microsoft.graph.managedTenants.templateAction"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedTenants.setting",
-  "settingId": "String",
+  "@odata.type": "#microsoft.graph.managedTenants.templateAction",
+  "templateActionId": "String",
   "displayName": "String",
-  "overwriteAllowed": "Boolean",
-  "valueType": "String",
-  "jsonValue": "String"
+  "description": "String",
+  "service": "String",
+  "settings": [
+    {
+      "@odata.type": "microsoft.graph.managedTenants.setting"
+    }
+  ]
 }
 ```
 

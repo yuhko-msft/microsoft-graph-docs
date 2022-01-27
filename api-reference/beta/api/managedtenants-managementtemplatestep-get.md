@@ -1,18 +1,18 @@
 ---
-title: "Get managementTemplate"
-description: "Read the properties and relationships of a managementTemplate object."
+title: "Get managementTemplateStep"
+description: "Read the properties and relationships of a managementTemplateStep object."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# Get managementTemplate
+# Get managementTemplateStep
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [managementTemplate](../resources/managedtenants-managementtemplate.md) object.
+Read the properties and relationships of a [managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}
-GET /tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}/managementTemplateSteps/{managementTemplateStepId}/managementTemplate
-GET /tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}/managementTemplateCollections/{managementTemplateCollectionId}/managementTemplates/{managementTemplateId}
+GET /tenantRelationships/managedTenants/managementTemplateSteps/{managementTemplateStepId}
+GET /tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}/managementTemplateSteps/{managementTemplateStepId}
+GET /tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}/managementTemplateSteps/{managementTemplateStepId}/stepVersions/{managementTemplateStepVersionId}/templateStep
 ```
 
 ## Optional query parameters
@@ -48,18 +48,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [managementTemplate](../resources/managedtenants-managementtemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_managementtemplate"
+  "name": "get_managementtemplatestep"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementTemplateSteps/{managementTemplateStepId}
 ```
 
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managementTemplate"
+  "@odata.type": "microsoft.graph.managedTenants.managementTemplateStep"
 }
 -->
 ``` http
@@ -77,23 +77,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.managementTemplate",
-    "id": "4ebaa327-22a9-927b-b2a1-7b0ac1a46e22",
+    "@odata.type": "#microsoft.graph.managedTenants.managementTemplateStep",
+    "id": "62159df4-07df-01f4-56c9-c610f94506f1",
     "displayName": "String",
     "description": "String",
-    "version": "Integer",
+    "priority": "Integer",
     "category": "String",
-    "parameters": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.templateParameter"
-      }
-    ],
-    "workloadActions": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.workloadAction"
-      }
-    ]
+    "provider": "String",
+    "managementPortal": "String",
+    "portalLink": "String"
   }
 }
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "managementIntentInfo resource type"
-description: "Represents relationship information for a management intent."
-author: "idwilliams"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents relationship information for a management intent.
+**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|managementIntentDisplayName|String|The display name for the management intent. Optional. Read-only.|
-|managementIntentId|String|The identifier for the management intent. Required. Read-only.|
-|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|The collection of management template information associated with the management intent. Optional. Read-only.|
+|managementIntentDisplayName|String|**TODO: Add Description**|
+|managementIntentId|String|**TODO: Add Description**|
+|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -44,3 +44,4 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+

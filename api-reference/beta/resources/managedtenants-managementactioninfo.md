@@ -1,9 +1,9 @@
 ---
 title: "managementActionInfo resource type"
-description: "Represents reference information for a management action."
-author: "idwilliams"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents reference information for a management action.
+**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|managementActionId|String|The identifier for the management action. Required. Read-only.|
-|managementTemplateId|String|The identifier for the management template. Required. Read-only.|
+|managementActionId|String|**TODO: Add Description**|
+|managementTemplateId|String|**TODO: Add Description**|
+|managementTemplateVersion|Int32|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -35,6 +36,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedTenants.managementActionInfo",
   "managementTemplateId": "String",
+  "managementTemplateVersion": "Integer",
   "managementActionId": "String"
 }
 ```
+

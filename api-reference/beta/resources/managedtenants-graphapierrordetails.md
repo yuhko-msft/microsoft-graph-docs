@@ -1,5 +1,5 @@
 ---
-title: "setting resource type"
+title: "graphAPIErrorDetails resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo
 doc_type: resourcePageType
 ---
 
-# setting resource type
+# graphAPIErrorDetails resource type
 
 Namespace: microsoft.graph.managedTenants
 
@@ -18,11 +18,8 @@ Namespace: microsoft.graph.managedTenants
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|jsonValue|String|**TODO: Add Description**|
-|overwriteAllowed|Boolean|**TODO: Add Description**|
-|settingId|String|**TODO: Add Description**|
-|valueType|managementParameterValueType|**TODO: Add Description**.The possible values are: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`.|
+|code|String|**TODO: Add Description**|
+|message|String|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -31,17 +28,14 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.managedTenants.setting"
+  "@odata.type": "microsoft.graph.managedTenants.graphAPIErrorDetails"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedTenants.setting",
-  "settingId": "String",
-  "displayName": "String",
-  "overwriteAllowed": "Boolean",
-  "valueType": "String",
-  "jsonValue": "String"
+  "@odata.type": "#microsoft.graph.managedTenants.graphAPIErrorDetails",
+  "code": "String",
+  "message": "String"
 }
 ```
 

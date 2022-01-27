@@ -1,9 +1,9 @@
 ---
 title: "managementActionDeploymentStatus resource type"
-description: "Represents the deployment status for a given managed tenant."
-author: "idwilliams"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,16 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the deployment status for a given managed tenant.
+**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|managementActionId|String|The identifier for the management action. Required. Read-only.|
-|managementTemplateId|String|The management template identifier that was used to generate the management action. Required. Read-only.|
-|status|managementActionStatus|The status of the management action. Possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, `riskAccepted`, `unknownFutureValue`. Required.|
-|workloadActionDeploymentStatuses|[microsoft.graph.managedTenants.workloadActionDeploymentStatus](../resources/managedtenants-workloadactiondeploymentstatus.md) collection|The collection of workload action deployment statues for the given management action. Optional.|
+|managementActionId|String|**TODO: Add Description**|
+|managementTemplateId|String|**TODO: Add Description**|
+|managementTemplateVersion|Int32|**TODO: Add Description**|
+|status|managementActionStatus|**TODO: Add Description**.The possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, `riskAccepted`, `unknownFutureValue`.|
+|workloadActionDeploymentStatuses|[microsoft.graph.managedTenants.workloadActionDeploymentStatus](../resources/managedtenants-workloadactiondeploymentstatus.md) collection|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -37,6 +38,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedTenants.managementActionDeploymentStatus",
   "managementTemplateId": "String",
+  "managementTemplateVersion": "Integer",
   "managementActionId": "String",
   "status": "String",
   "workloadActionDeploymentStatuses": [
@@ -46,3 +48,4 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+

@@ -1,5 +1,5 @@
 ---
-title: "managementAction: apply"
+title: "managementTemplateStepDeployment: changeDeploymentStatus"
 description: "**TODO: Add Description**"
 author: "idwilliams"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# managementAction: apply
+# managementTemplateStepDeployment: changeDeploymentStatus
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
+POST /tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}/managementTemplateSteps/{managementTemplateStepId}/stepVersions/{managementTemplateStepVersionId}/deployments/{managementTemplateStepDeploymentId}/changeDeploymentStatus
 ```
 
 ## Request headers
@@ -47,50 +47,39 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |tenantId|String|**TODO: Add Description**|
-|tenantGroupId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|includeAllUsers|Boolean|**TODO: Add Description**|
-|includeGroups|String collection|**TODO: Add Description**|
-|excludeGroups|String collection|**TODO: Add Description**|
+|managementTemplateStepId|String|**TODO: Add Description**|
+|status|String|**TODO: Add Description**|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md) in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "managementactionthis.apply"
+  "name": "managementtemplatestepdeploymentthis.changedeploymentstatus"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
+POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}/managementTemplateSteps/{managementTemplateStepId}/stepVersions/{managementTemplateStepVersionId}/deployments/{managementTemplateStepDeploymentId}/changeDeploymentStatus
 Content-Type: application/json
-Content-length: 212
+Content-length: 92
 
 {
   "tenantId": "String",
-  "tenantGroupId": "String",
-  "managementTemplateId": "String",
-  "includeAllUsers": "Boolean",
-  "includeGroups": [
-    "String"
-  ],
-  "excludeGroups": [
-    "String"
-  ]
+  "managementTemplateStepId": "String",
+  "status": "String"
 }
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+  "@odata.type": "microsoft.graph.managedTenants.managementTemplateStepDeployment"
 }
 -->
 ``` http
@@ -99,7 +88,18 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+    "@odata.type": "#microsoft.graph.managedTenants.managementTemplateStepDeployment",
+    "id": "String (identifier)",
+    "tenantId": "String",
+    "settings": [
+      {
+        "@odata.type": "microsoft.graph.managedTenants.setting"
+      }
+    ],
+    "status": "String",
+    "error": {
+      "@odata.type": "microsoft.graph.managedTenants.graphAPIErrorDetails"
+    }
   }
 }
 ```

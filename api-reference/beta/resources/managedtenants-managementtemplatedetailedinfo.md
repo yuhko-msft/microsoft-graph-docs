@@ -1,9 +1,9 @@
 ---
 title: "managementTemplateDetailedInfo resource type"
-description: "Represents detailed information for the management template."
-author: "idwilliams"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,15 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detailed information for the management template.
+**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only.|
-|displayName|String|The display name for the management template. Required. Read-only.|
-|managementTemplateId|String|The unique identifier for the management template. Required. Read-only.|
+|category|managementCategory|**TODO: Add Description**.The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`.|
+|displayName|String|**TODO: Add Description**|
+|managementTemplateId|String|**TODO: Add Description**|
+|version|Int32|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -37,6 +38,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedTenants.managementTemplateDetailedInfo",
   "managementTemplateId": "String",
   "displayName": "String",
+  "version": "Integer",
   "category": "String"
 }
 ```
+

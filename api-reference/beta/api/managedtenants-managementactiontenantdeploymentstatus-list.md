@@ -1,18 +1,18 @@
 ---
-title: "Get managementActionTenantDeploymentStatus"
-description: "Read the properties and relationships of a managementActionTenantDeploymentStatus object."
+title: "List managementActionTenantDeploymentStatus"
+description: "Get a list of the managementActionTenantDeploymentStatus objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# Get managementActionTenantDeploymentStatus
+# List managementActionTenantDeploymentStatus
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) object.
+Get a list of the [managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/{managementActionTenantDeploymentStatusId}
+GET /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_managementactiontenantdeploymentstatus"
+  "name": "list_managementactiontenantdeploymentstatus"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/{managementActionTenantDeploymentStatusId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.managementActionTenantDeploymentStatus"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.managementActionTenantDeploymentStatus)"
 }
 -->
 ``` http
@@ -74,16 +74,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.managementActionTenantDeploymentStatus",
-    "id": "1df7e125-3c5a-a658-bac4-1084e333c821",
-    "tenantGroupId": "String",
-    "tenantId": "String",
-    "statuses": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
-      }
-    ]
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.managedTenants.managementActionTenantDeploymentStatus",
+      "id": "1df7e125-3c5a-a658-bac4-1084e333c821",
+      "tenantGroupId": "String",
+      "tenantId": "String",
+      "statuses": [
+        {
+          "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
+        }
+      ]
+    }
+  ]
 }
 ```
+

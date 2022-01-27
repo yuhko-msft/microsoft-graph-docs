@@ -1,9 +1,9 @@
 ---
 title: "managementAction resource type"
-description: "Represents a baseline management action for a given managed tenant."
-author: "idwilliams"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 ms.localizationpriority: medium
-ms.prod: "microsoft-365-lighthouse"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,24 +13,31 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a baseline management action for a given managed tenant. Examples of management actions are device encryption, perform configurations to allow Azure Active Directory device enrollment, and require multi-factor authentication for admins.
+**TODO: Add Description**
+
+
+Inherits from [entity](../resources/managedtenants-entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managementActions](../api/managedtenants-managedtenant-list-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md) collection|Get a list of the [managementAction](../resources/managedtenants-managementaction.md) objects and their properties.|
+|[List managementActions](../api/managedtenants-managementaction-list.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md) collection|Get a list of the [managementAction](../resources/managedtenants-managementaction.md) objects and their properties.|
+|[Create managementAction](../api/managedtenants-managedtenant-post-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Create a new [managementAction](../resources/managedtenants-managementaction.md) object.|
 |[Get managementAction](../api/managedtenants-managementaction-get.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Read the properties and relationships of a [managementAction](../resources/managedtenants-managementaction.md) object.|
-|[apply](../api/managedtenants-managementaction-apply.md)|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|Applies the management actions against the managed tenant.|
+|[Update managementAction](../api/managedtenants-managementaction-update.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Update the properties of a [managementAction](../resources/managedtenants-managementaction.md) object.|
+|[Delete managementAction](../api/managedtenants-managementaction-delete.md)|None|Deletes a [managementAction](../resources/managedtenants-managementaction.md) object.|
+|[apply](../api/managedtenants-managementaction-apply.md)|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|**TODO: Add Description**|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|The category for the management action. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Optional. Read-only.|
-|description|String|The description for the management action. Optional. Read-only.|
-|displayName|String|The display name for the management action. Optional. Read-only.|
-|id|String|The unique identifier for the management action. Required. Read-only.|
-|referenceTemplateId|String|The reference for the management template used to generate the management action. Required. Read-only.|
-|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management action. Required. Read-only.|
+|category|managementCategory|**TODO: Add Description**.The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`.|
+|description|String|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md).|
+|referenceTemplateId|String|**TODO: Add Description**|
+|referenceTemplateVersion|Int32|**TODO: Add Description**|
+|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -50,6 +57,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedTenants.managementAction",
   "id": "String (identifier)",
   "referenceTemplateId": "String",
+  "referenceTemplateVersion": "Integer",
   "displayName": "String",
   "description": "String",
   "category": "String",
@@ -60,3 +68,4 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+
