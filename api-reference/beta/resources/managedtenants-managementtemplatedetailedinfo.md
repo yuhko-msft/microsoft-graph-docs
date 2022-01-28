@@ -1,6 +1,6 @@
 ---
 title: "managementTemplateDetailedInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents detailed information for the management template."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents detailed information for the management template.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|**TODO: Add Description**.The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`.|
-|displayName|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|version|Int32|**TODO: Add Description**|
+|category|managementCategory|The management category for the management template. The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`. Required. Read-only.|
+|displayName|String|The display name for the management template. Required. Read-only.|
+|managementTemplateId|String|The unique identifier for the management template. Required. Read-only.|
+|version|Int32|The version for the management template.|
 
 ## Relationships
 None.
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "category": "String"
 }
 ```
-

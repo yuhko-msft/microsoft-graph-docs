@@ -1,6 +1,6 @@
 ---
 title: "managementTemplate resource type"
-description: "**TODO: Add Description**"
+description: "Represents a group of actions and setting that can be performed against a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a group of actions and setting that can be performed against a managed tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,19 +26,19 @@ Namespace: microsoft.graph.managedTenants
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|**TODO: Add Description**.The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`.|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|**TODO: Add Description**|
-|version|Int32|**TODO: Add Description**|
-|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|**TODO: Add Description**|
+|category|managementCategory|The management category for the management template. The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`. Required. Read-only.|
+|description|String|The description for the management template. Optional. Read-only|
+|displayName|String|The display name for the management template. Required. Read-only.|
+|id|String|The unique identifier for the management template. Required. Read-only.|
+|parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|The collection of parameters used by the management template. Optional. Read-only.|
+|version|Int32|The version of the management template. Required. Read-only.|
+|workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|The collection of workload actions associated with the management template. Optional. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managementTemplateCollections|[microsoft.graph.managedTenants.managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) collection|**TODO: Add Description**|
-|managementTemplateSteps|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|**TODO: Add Description**|
+|managementTemplateCollections|[microsoft.graph.managedTenants.managementTemplateCollection](../resources/managedtenants-managementtemplatecollection.md) collection|The collection of available management templates.|
+|managementTemplateSteps|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|The collection of available management template steps.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

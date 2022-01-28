@@ -1,6 +1,6 @@
 ---
 title: "managementIntentInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents relationship information for a management intent."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents relationship information for a management intent.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|managementIntentDisplayName|String|**TODO: Add Description**|
-|managementIntentId|String|**TODO: Add Description**|
-|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|**TODO: Add Description**|
+|managementIntentDisplayName|String|The display name for the management intent. Optional. Read-only.|
+|managementIntentId|String|	The identifier for the management intent. Required. Read-only.|
+|managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|The collection of management template information associated with the management intent. Optional. Read-only.|
 
 ## Relationships
 None.
@@ -44,4 +44,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

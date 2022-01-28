@@ -1,6 +1,6 @@
 ---
 title: "managementTemplateStep resource type"
-description: "**TODO: Add Description**"
+description: "Represents the settings that can be used to configure Microsoft 365 services."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the settings that can be used to configure Microsoft 365 services.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,30 +26,30 @@ Namespace: microsoft.graph.managedTenants
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|**TODO: Add Description**.The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`.|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|managementPortal|String|**TODO: Add Description**|
-|portalLink|String|**TODO: Add Description**|
-|priority|Int32|**TODO: Add Description**|
-|provider|[microsoft.graph.managedTenants.managementProvider](#managementprovider-values)|**TODO: Add Description**.The possible values are: `microsoft`, `community`, `indirectProvider`, `self`, `unknownFutureValue`.|
+|category|managementCategory|The category for the management template. The possible values are: `custom`, `devices`, `identity`, `data`, `unknownFutureValue`. Required. Read-only.|
+|description|String|The description for the management template step. Optional. Read-only.|
+|displayName|String|The display name for the management template step. Optional. Read-only.|
+|id|String|The unique identifier for the management template step. Required. Read-only.|
+|managementPortal|String|The display name for the management portal where further actions can be taken. Required.|
+|portalLink|String|The link for the management where further actions can be taken. Required.|
+|priority|Int32|The position in the sequence where the management template should be applied. Required.|
+|provider|[microsoft.graph.managedTenants.managementProvider](#managementprovider-values)|The provider for the management template step..The possible values are: `microsoft`, `community`, `indirectProvider`, `self`, `unknownFutureValue`. Required. Read-only.|
 
 ### managementProvider values
 
 |Member|Description|
 |:---|:---|
-|microsoft|**TODO: Add Description**|
-|community|**TODO: Add Description**|
-|indirectProvider|**TODO: Add Description**|
-|self|**TODO: Add Description**|
-|unknownFutureValue|**TODO: Add Description**|
+|microsoft|Represents that Microsoft is the provider.|
+|community|Represents the community is the provider.|
+|indirectProvider|Represents that an indirect provider is the provider.|
+|self|Represents the managing entity is the provider.|
+|unknownFutureValue|Represent a future or unknown value is the provider.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managementTemplate|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|**TODO: Add Description**|
-|stepVersions|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|**TODO: Add Description**|
+|managementTemplate|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|The management template associated with the management template step.|
+|stepVersions|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|The collection of management template step versions.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -75,4 +74,3 @@ The following is a JSON representation of the resource.
   "portalLink": "String"
 }
 ```
-

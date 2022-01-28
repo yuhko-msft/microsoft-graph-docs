@@ -1,6 +1,6 @@
 ---
 title: "managementTemplateCollection resource type"
-description: "**TODO: Add Description**"
+description: "Represent a collection of management templates that can be used to configure Microsoft 365 services."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represent a collection of management templates that can be used to configure Microsoft 365 services.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,14 +25,14 @@ Namespace: microsoft.graph.managedTenants
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
+|description|String|The description for the management template connection. Optional. Read-only.|
+|displayName|String|The display name for the management template collection. Required. Read-only.|
+|id|String|The unique identifier for the management template collection. Required. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managementTemplates|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|**TODO: Add Description**|
+|managementTemplates|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|A collection of management templates that can be used to configure Microsoft 365 services.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

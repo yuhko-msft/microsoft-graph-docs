@@ -1,6 +1,6 @@
 ---
 title: "managementActionTenantDeploymentStatus resource type"
-description: "**TODO: Add Description**"
+description: "Represents tenant level deployment status for the management action."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents tenant level deployment status for the management action.
 
 ## Methods
 |Method|Return type|Description|
