@@ -1,6 +1,6 @@
 ---
 title: "managementAction: apply"
-description: "**TODO: Add Description**"
+description: "Applies a management action against a specific managed tenant. By performing this operation the appropriate configurations will be made and policies created. As example when applying the require multi-factor authentication for admins management action will create an Azure Active Directory conditional access policy that requires multi-factor authentication for all users that have been assigned an administrative directory role."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Applies a management action against a specific managed tenant. By performing this operation the appropriate configurations will be made and policies created. As example when applying the require multi-factor authentication for admins management action will create an Azure Active Directory conditional access policy that requires multi-factor authentication for all users that have been assigned an administrative directory role.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
+|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -46,12 +46,12 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description**|
-|tenantGroupId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|includeAllUsers|Boolean|**TODO: Add Description**|
-|includeGroups|String collection|**TODO: Add Description**|
-|excludeGroups|String collection|**TODO: Add Description**|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|tenantGroupId|String|The identifier for the tenant group.|
+|managementTemplateId|The identifier of the [management template](../resources/managedtenants-managementtemplate.md).|
+|includeAllUsers|Boolean|A flag indicating whether or not all users should be included when applying the management action if supported.|
+|includeGroups|String collection|A collection of identifiers for Azure Active Directory groups that will be used for the inclusion assignment if supported.|
+|excludeGroups|String collection|A collection of identifiers for Azure Active Directory groups that will be used for the exclusion assignment if supported.|
 
 ## Response
 
@@ -71,19 +71,14 @@ Content-Type: application/json
 Content-length: 212
 
 {
-  "tenantId": "String",
-  "tenantGroupId": "String",
-  "managementTemplateId": "String",
-  "includeAllUsers": "Boolean",
-  "includeGroups": [
-    "String"
-  ],
-  "excludeGroups": [
-    "String"
-  ]
+  "tenantId": "6b0e46f8-4e82-4e58-8c0e-c9fe934c011d",
+  "tenantGroupId": "afddf5fe-42b1-461f-9472-91507eb71486",
+  "managementTemplateId": "b2d6d189-ea31-4cf8-b75e-41210c583127",
+  "includeAllUsers": false,
+  "includeGroups": [],
+  "excludeGroups": []
 }
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -98,8 +93,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/managedTenants/$metadata#managementActionDeploymentStatus",
+  "managementTemplateId": "b2d6d189-ea31-4cf8-b75e-41210c583127",
+  "managementTemplateVersion": 1,
+  "managementActionId": "759fb1b5-b1f4-4789-964b-bb8ce5a9f0e6",
+  "status": "completed",
+  "workloadActionDeploymentStatuses": [
+    {
+      "actionId": "4a1c5d34-c2f7-4fd5-a7b5-4bedd95bb8f9",
+      "status": "completed",
+      "deployedPolicyId": "cd57047b-c93c-48d4-81f8-97f2a5c84434",
+      "lastDeploymentDateTime": "2021-05-14T17:46:54.2140431Z",
+      "includeAllUsers": true
+    }
+  ]
 }
 ```

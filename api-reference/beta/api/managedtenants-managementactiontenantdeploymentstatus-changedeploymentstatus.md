@@ -1,6 +1,6 @@
 ---
 title: "managementActionTenantDeploymentStatus: changeDeploymentStatus"
-description: "**TODO: Add Description**"
+description: "Changes the tenant level deployment status for the management action. This information is used to provide insights into what management actions are in a specific state. As example there might be a plan to apply the require multi-factor authentication for admins, so it would be ideal to change the status to planned to reflect the appropriate status."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,14 +12,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Changes the tenant level deployment status for the management action. This information is used to provide insights into what management actions are in a specific state. As example there might be a plan to apply the require multi-factor authentication for admins, so it would be ideal to change the status to planned to reflect the appropriate status.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
+|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -46,14 +46,12 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantGroupId|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|managementActionId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|managementTemplateVersion|Int32|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
-
-
+|tenantGroupId|String|The identifier for the tenant group.|
+|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|managementActionId|String|The identifier for the [management action](../resources/managedtenants-managementaction.md).|
+|managementTemplateId|String|The identifier for the [management template](../resources/managedtenants-managementtemplate.md).|
+|managementTemplateVersion|Int32|The version for the management template.|
+|status|String|The updated status for the [management action](../resources/managedtenants-managementaction.md) tenant deployment. Possible values include: `toAddress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, and `riskAccepted`.|
 
 ## Response
 
@@ -73,12 +71,12 @@ Content-Type: application/json
 Content-length: 196
 
 {
-  "tenantGroupId": "String",
-  "tenantId": "String",
-  "managementActionId": "String",
-  "managementTemplateId": "String",
-  "managementTemplateVersion": "Integer",
-  "status": "String"
+  "tenantGroupId": "b430d510-c940-49d8-beac-9bf8b9a7b0b7",
+  "tenantId": "15b5e82f-b10d-4709-81b6-c74660993a35",
+  "managementActionId": "c08be1d8-eaee-4af4-bfe7-4ef6dd5e56d0",
+  "managementTemplateId": "e5834405-43d2-4815-867d-3dd600308d1c",
+  "managementTemplateVersion": 1,
+  "status": "toAddress"
 }
 ```
 
@@ -95,8 +93,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/managedTenants/$metadata#managementActionDeploymentStatus",
+  "managementTemplateId": "e5834405-43d2-4815-867d-3dd600308d1c",
+  "managementTemplateVersion": 1,
+  "managementActionId": "c08be1d8-eaee-4af4-bfe7-4ef6dd5e56d0",
+  "status": "toAddress",
+  "managementActionDeploymentStatuses": []
 }
 ```

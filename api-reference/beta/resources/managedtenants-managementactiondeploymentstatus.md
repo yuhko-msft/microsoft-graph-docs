@@ -1,6 +1,6 @@
 ---
 title: "managementActionDeploymentStatus resource type"
-description: "**TODO: Add Description**"
+description: "Represents the deployment status for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the deployment status for a given managed tenant.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|managementActionId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|managementTemplateVersion|Int32|**TODO: Add Description**|
-|status|managementActionStatus|**TODO: Add Description**.The possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, `riskAccepted`, `unknownFutureValue`.|
-|workloadActionDeploymentStatuses|[microsoft.graph.managedTenants.workloadActionDeploymentStatus](../resources/managedtenants-workloadactiondeploymentstatus.md) collection|**TODO: Add Description**|
+|managementActionId|String|The identifier for the management action. Required. Read-only.|
+|managementTemplateId|String|The management template identifier that was used to generate the management action. Required. Read-only.|
+|managementTemplateVersion|Int32|The version for the management template.|
+|status|managementActionStatus|The status of the management action. .The possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, `riskAccepted`, `unknownFutureValue`. Required.|
+|workloadActionDeploymentStatuses|[microsoft.graph.managedTenants.workloadActionDeploymentStatus](../resources/managedtenants-workloadactiondeploymentstatus.md) collection|The collection of workload action deployment statues for the given management action. Optional.|
 
 ## Relationships
 None.
@@ -48,4 +48,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

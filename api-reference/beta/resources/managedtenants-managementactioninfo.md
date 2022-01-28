@@ -1,6 +1,6 @@
 ---
 title: "managementActionInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents reference information for a management action."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents reference information for a management action.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|managementActionId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|managementTemplateVersion|Int32|**TODO: Add Description**|
+|managementActionId|String|The identifier for the management action. Required. Read-only.|
+|managementTemplateId|String|The identifier for the management template. Required. Read-only.|
+|managementTemplateVersion|Int32|The version for the management template. Required. Read-only.|
 
 ## Relationships
 None.
@@ -40,4 +40,3 @@ The following is a JSON representation of the resource.
   "managementActionId": "String"
 }
 ```
-

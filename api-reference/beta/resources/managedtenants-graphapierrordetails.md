@@ -1,6 +1,6 @@
 ---
 title: "graphAPIErrorDetails resource type"
-description: "**TODO: Add Description**"
+description: "Represents an error from Microsoft Graph that could happen when performing a managed tenant operation."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an error from Microsoft Graph that could happen when performing a managed tenant operation.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|code|String|**TODO: Add Description**|
-|message|String|**TODO: Add Description**|
+|code|String|The error code from the Microsoft Graph error that was encountered.|
+|message|String|The message from the Microsoft Graph error that was encountered.|
 
 ## Relationships
 None.
