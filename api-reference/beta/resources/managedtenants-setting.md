@@ -1,6 +1,6 @@
 ---
 title: "setting resource type"
-description: "**TODO: Add Description**"
+description: "Represents the configuration information for a setting used to configure a Microsoft 365 service."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the configuration information for a setting used to configure a Microsoft 365 service.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|jsonValue|String|**TODO: Add Description**|
-|overwriteAllowed|Boolean|**TODO: Add Description**|
-|settingId|String|**TODO: Add Description**|
-|valueType|managementParameterValueType|**TODO: Add Description**.The possible values are: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`.|
+|displayName|String|The display name for the setting. Required. Read-only.|
+|jsonValue|String|The value for the setting serialized as a JSON string. Required. Read-only.|
+|overwriteAllowed|Boolean|A flag indicating whether the setting can overwrite existing configurations. Required. Read-only.|
+|settingId|String|The unique identifier for the setting. Required. Read-only.|
+|valueType|managementParameterValueType|The data type for the setting. The possible values are: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`. Required. Read-only.|
 
 ## Relationships
 None.

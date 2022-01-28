@@ -1,6 +1,6 @@
 ---
 title: "managementTemplateStepVersion resource type"
-description: "**TODO: Add Description**"
+description: "Represents actions and settings used to configure Microsoft 365 services."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents actions and settings used to configure Microsoft 365 services.
 
 ## Methods
 
@@ -21,23 +21,23 @@ Namespace: microsoft.graph.managedTenants
 |:---|:---|:---|
 |[List managementTemplateStepVersions](../api/managedtenants-managedtenant-list-managementtemplatestepversions.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) collection|Get a list of the [microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) objects and their properties.|
 |[Get managementTemplateStepVersion](../api/managedtenants-managementtemplatestepversion-get.md)|[microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md)|Read the properties and relationships of a [microsoft.graph.managedTenants.managementTemplateStepVersion](../resources/managedtenants-managementtemplatestepversion.md) object.|
-|[deploy](../api/managedtenants-managementtemplatestepversion-deploy.md)|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md)|**TODO: Add Description**|
+|[deploy](../api/managedtenants-managementtemplatestepversion-deploy.md)|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md)|Deploys the actions and settings to the specific tenant configuring the Microsoft 365 services represented by the management template step version.|
 |[List deployments](../api/managedtenants-managementtemplatestepversion-list-deployments.md)|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md) collection|Get the managementTemplateStepDeployment resources from the deployments navigation property.|
 |[List managementTemplateStep](../api/managedtenants-managementtemplatestepversion-list-templatestep.md)|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md) collection|Get the managementTemplateStep resources from the templateStep navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configurationAction|[microsoft.graph.managedTenants.templateAction](../resources/managedtenants-templateaction.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|validationAction|[microsoft.graph.managedTenants.templateAction](../resources/managedtenants-templateaction.md)|**TODO: Add Description**|
-|version|Int32|**TODO: Add Description**|
+|configurationAction|[microsoft.graph.managedTenants.templateAction](../resources/managedtenants-templateaction.md)|The actions and settings used to configure a specific Microsoft 365 service. Required. Read-only.|
+|id|String|The unique identifier for the management template step version. Required. Read-only.|
+|validationAction|[microsoft.graph.managedTenants.templateAction](../resources/managedtenants-templateaction.md)|The manage action used to measure if the actions or configurations completed.|
+|version|Int32|The version of the management template step. Required. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deployments|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md) collection|**TODO: Add Description**|
-|templateStep|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|**TODO: Add Description**|
+|deployments|[microsoft.graph.managedTenants.managementTemplateStepDeployment](../resources/managedtenants-managementtemplatestepdeployment.md) collection|The collection of deployments associated with the management template step version.|
+|templateStep|[microsoft.graph.managedTenants.managementTemplateStep](../resources/managedtenants-managementtemplatestep.md)|The details for what should be configured or performed when the management template step version is deployed.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
