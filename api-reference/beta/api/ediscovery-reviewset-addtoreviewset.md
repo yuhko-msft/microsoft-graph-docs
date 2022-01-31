@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**.|
-|additionalData|[microsoft.graph.ediscovery.dataCollectionScope](../resources/ediscovery-addtoreviewsetoperation.md#datacollectionscope-values)|The **dataCollectionScope** that will be included with the collection.|
+|additionalDataOptions|[microsoft.graph.ediscovery.dataCollectionScope](../resources/ediscovery-addtoreviewsetoperation.md#datacollectionscope-values)|The **dataCollectionScope** that will be included with the collection.|
 
 ## Response
 
@@ -78,7 +78,7 @@ Content-Type: application/json
     "sourceCollection": {
         "id": "1a9b4145d8f84e39bc45a7f68c5c5119"
     },
-    "additionalData": "linkedFiles"
+    "additionalDataOptions": "linkedFiles"
 }
 ```
 # [C#](#tab/csharp)
