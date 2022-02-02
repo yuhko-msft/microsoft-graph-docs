@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |sourceCollection|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|The ID of the **sourceCollection**.|
-|additionalDataOptions|[microsoft.graph.ediscovery.additionalDataOptions](../resources/ediscovery-additionalDataOptions.md#additionalDataOptions-values)|The **dataCollectionScope** that will be included with the collection.|
+|additionalDataOptions|[microsoft.graph.ediscovery.additionalDataOptions](../resources/ediscovery-addtoreviewsetoperation.md#additionalDataOptions-values)|The **dataCollectionScope** that will be included with the collection.|
 
 ## Response
 
