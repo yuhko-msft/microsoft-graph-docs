@@ -365,6 +365,32 @@
 		{
 			"ChangeList": [
 				{
+					"Id": "686ee244-200a-47ac-afa0-f621da6879c4",
+					"ApiChange": "Method",
+					"ChangedApiName": "addToReviewSet",
+					"ChangeType": "Deletion",
+					"Description": "Removed the **addToReviewSet** method from the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/addToReviewSet?view=graph-rest-beta) resource.",
+					"Target": "addToReviewSet"
+				},
+				{
+					"Id": "686ee244-200a-47ac-afa0-f621da6879c4",
+					"ApiChange": "Method",
+					"ChangedApiName": "addToReviewSet",
+					"ChangeType": "Addition",
+					"Description": "Added the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/addToReviewSet?view=graph-rest-beta) method to the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/addToReviewSet?view=graph-rest-beta) resource.",
+					"Target": "addToReviewSet"
+				}
+			],
+			"Id": "686ee244-200a-47ac-afa0-f621da6879c4",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-01-24T05:22:18.768915Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": ""
+		},
+		{
+			"ChangeList": [
+				{
 					"Id": "7830257c-17be-11eb-baa1-5b13c31fb2cd",
 					"ApiChange": "Relationship",
 					"ChangedApiName": "custodians",
