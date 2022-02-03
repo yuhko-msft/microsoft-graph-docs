@@ -46,8 +46,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
+  "id":"ZAMkAAIAAAoZDOFAAA=",
   "userId":"c228b2ae-c4fb-4eda-9620-7e73dddd1cac",
-  "userPrincipalName": "Bob@contoso.onmicrosoft.com",
   "externalTenantId":"62bfb458-9474-4c44-896b-b30942d055f0"
 }
 ```
