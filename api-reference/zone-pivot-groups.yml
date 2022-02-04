@@ -10,11 +10,11 @@ groups:
     title: C#
   - id: programming-language-browserjs
     title: JavaScript
-  - id: programming-languages-objectivec
+  - id: programming-language-objectivec
     title: Objective-C
-  - id: programming-languages-java
+  - id: programming-language-java
     title: Java
-  - id: programming-languages-go
+  - id: programming-language-go
     title: Go
   - id: programming-language-powershell
     title: PowerShell
