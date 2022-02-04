@@ -1,8 +1,8 @@
 # YamlMime:ZonePivotGroups
 groups:
 - id: graph-sdk-languages
-  title:
-  prompt:
+  title: SDK Languages
+  prompt: Choose your preferred language
   pivots:
   - id: programming-language-curl
     title: REST
