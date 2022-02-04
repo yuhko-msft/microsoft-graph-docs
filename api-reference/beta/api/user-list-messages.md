@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "abheek-das"
 ms.prod: "outlook"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # List messages

@@ -1,0 +1,20 @@
+# YamlMime:ZonePivotGroups
+groups:
+- id: graph-sdk-languages
+  title:
+  prompt:
+  pivots:
+  - id: programming-language-curl
+    title: REST
+  - id: programming-language-csharp
+    title: C#
+  - id: programming-language-browserjs
+    title: JavaScript
+  - id: programming-languages-objectivec
+    title: Objective-C
+  - id: programming-languages-java
+    title: Java
+  - id: programming-languages-go
+    title: Go
+  - id: programming-language-powershell
+    title: PowerShell
