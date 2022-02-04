@@ -34,6 +34,8 @@ For a service that will call Microsoft Graph under its own identity, you need to
 - A Redirect URL for your service to receive token responses.
 - A Redirect URL for your service to receive admin consent responses if your app implements functionality to request administrator consent.  
 
+> **Important**: Apps that support only personal Microsoft accounts cannot be configured with application permissions. Supported `signInAudience` values for app-only access are `AzureADMyOrg`, `AzureADMultipleOrgs`, and `AzureADandPersonalMicrosoftAccount`. The app's `signInAudience` can be seen in the app manifest.
+
 For steps on how to configure an app using the Azure app registration portal, see [Register your app](./auth-register-app-v2.md).
 
 With the OAuth 2.0 client credentials grant flow, your app authenticates directly at the Microsoft identity platform `/token` endpoint using the Application ID assigned by Azure AD and the Application Secret that you create using the portal.
