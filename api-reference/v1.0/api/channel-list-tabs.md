@@ -11,7 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
 ## Permissions
@@ -47,6 +46,8 @@ Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.
+
+> **Note**: Files tab is native to channel or chat, and is not part of the list tabs API.
 
 ## Examples
 
@@ -94,7 +95,8 @@ GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -186,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
