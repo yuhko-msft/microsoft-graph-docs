@@ -47,14 +47,17 @@ This method supports the $filter, $select, and $expand [OData query parameters](
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.
+
+> **Note:** Files tab is native to channel/chat and is not part of the list tabs API.
 
 ## Examples
 
 ### Example 1: List all the tabs in the channel along with associated Teams app
 #### Request
-The following is an example of the request.
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +98,8 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. 
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -145,8 +149,8 @@ Content-type: application/json
 
 ### Example 2: List all the tabs belonging to a specific app in a channel
 #### Request
-The following is an example of the request.
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -187,7 +191,8 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. 
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
