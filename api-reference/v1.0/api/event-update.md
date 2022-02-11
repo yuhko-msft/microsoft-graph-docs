@@ -127,7 +127,6 @@ Content-type: application/json
     "time": "datetime-value"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
@@ -156,6 +155,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD024 -->
@@ -182,7 +185,6 @@ Content-type: application/json
     "time": "datetime-value"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
