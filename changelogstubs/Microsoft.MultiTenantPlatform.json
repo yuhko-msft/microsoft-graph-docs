@@ -1,0 +1,454 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "columnTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **columnTypes** enumeration type.",
+          "Target": "columnTypes"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionUrl](https://docs.microsoft.com/graph/api/resources/actionUrl?view=graph-rest-beta) resource type.",
+          "Target": "actionUrl"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknown",
+          "ChangeType": "Addition",
+          "Description": "Added the **unknown** member to the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "toAddress",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **toAddress** member from the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "error",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **error** member from the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "failed",
+          "ChangeType": "Addition",
+          "Description": "Added the **failed** member to the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "timeOut",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **timeOut** member from the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "ineligible",
+          "ChangeType": "Addition",
+          "Description": "Added the **ineligible** member to the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "planned",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **planned** member from the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "resolvedBy3rdParty",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resolvedBy3rdParty** member from the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "resolvedThroughAlternateMitigation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resolvedThroughAlternateMitigation** member from the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Member",
+          "ChangedApiName": "riskAccepted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **riskAccepted** member from the **managementTemplateDeploymentStatus** enumeration.",
+          "Target": "managementTemplateDeploymentStatus"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByUserId** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "informationLinks",
+          "ChangeType": "Addition",
+          "Description": "Added the **informationLinks** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionByUserId** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionDateTime** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "priority",
+          "ChangeType": "Addition",
+          "Description": "Added the **priority** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "provider",
+          "ChangeType": "Addition",
+          "Description": "Added the **provider** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "userImpact",
+          "ChangeType": "Addition",
+          "Description": "Added the **userImpact** property to [managementTemplate](https://docs.microsoft.com/graph/api/resources/managementTemplate?view=graph-rest-beta) resource.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByUserId** property to [managementTemplateCollection](https://docs.microsoft.com/graph/api/resources/managementTemplateCollection?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateCollection"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [managementTemplateCollection](https://docs.microsoft.com/graph/api/resources/managementTemplateCollection?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateCollection"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionByUserId** property to [managementTemplateCollection](https://docs.microsoft.com/graph/api/resources/managementTemplateCollection?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateCollection"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionDateTime** property to [managementTemplateCollection](https://docs.microsoft.com/graph/api/resources/managementTemplateCollection?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateCollection"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByUserId** property to [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionByUserId** property to [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionDateTime** property to [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "managementPortal",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **managementPortal** property from [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "provider",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **provider** property from [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Resource",
+          "ChangedApiName": "acceptedVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **acceptedVersion** relationship to [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stepVersions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **stepVersions** relationship from [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Resource",
+          "ChangedApiName": "versions",
+          "ChangeType": "Addition",
+          "Description": "Added the **versions** relationship to [managementTemplateStep](https://docs.microsoft.com/graph/api/resources/managementTemplateStep?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStep"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "appliedSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **appliedSettings** property to [managementTemplateStepDeployment](https://docs.microsoft.com/graph/api/resources/managementTemplateStepDeployment?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepDeployment"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByUserId** property to [managementTemplateStepDeployment](https://docs.microsoft.com/graph/api/resources/managementTemplateStepDeployment?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepDeployment"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [managementTemplateStepDeployment](https://docs.microsoft.com/graph/api/resources/managementTemplateStepDeployment?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepDeployment"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionByUserId** property to [managementTemplateStepDeployment](https://docs.microsoft.com/graph/api/resources/managementTemplateStepDeployment?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepDeployment"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionDateTime** property to [managementTemplateStepDeployment](https://docs.microsoft.com/graph/api/resources/managementTemplateStepDeployment?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepDeployment"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **settings** property from [managementTemplateStepDeployment](https://docs.microsoft.com/graph/api/resources/managementTemplateStepDeployment?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepDeployment"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "configurationAction",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **configurationAction** property from [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentMarkdown",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentMarkdown** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByUserId** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "deploymentAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **deploymentAction** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionByUserId",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionByUserId** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastActionDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastActionDateTime** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "name",
+          "ChangeType": "Addition",
+          "Description": "Added the **name** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "requiredSkuRules",
+          "ChangeType": "Addition",
+          "Description": "Added the **requiredSkuRules** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Property",
+          "ChangedApiName": "versionInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **versionInformation** property to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Resource",
+          "ChangedApiName": "acceptedFor",
+          "ChangeType": "Addition",
+          "Description": "Added the **acceptedFor** relationship to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Resource",
+          "ChangedApiName": "statuses",
+          "ChangeType": "Addition",
+          "Description": "Added the **statuses** relationship to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Resource",
+          "ChangedApiName": "validations",
+          "ChangeType": "Addition",
+          "Description": "Added the **validations** relationship to [managementTemplateStepVersion](https://docs.microsoft.com/graph/api/resources/managementTemplateStepVersion?view=graph-rest-beta) resource.",
+          "Target": "managementTemplateStepVersion"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Method",
+          "ChangedApiName": "deploy",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploy](https://docs.microsoft.com/graph/api/deploy?view=graph-rest-beta) method to the [deploy](https://docs.microsoft.com/graph/api/deploy?view=graph-rest-beta) resource.",
+          "Target": "deploy"
+        },
+        {
+          "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+          "ApiChange": "Method",
+          "ChangedApiName": "deploy",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deploy** method from the [deploy](https://docs.microsoft.com/graph/api/deploy?view=graph-rest-beta) resource.",
+          "Target": "deploy"
+        }
+      ],
+      "Id": "c632cc3d-1013-4e7f-a16e-085efc7f0186",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-11T23:19:00.281423Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Multi-tenant management"
+    }
+  ]
+}
