@@ -25,7 +25,7 @@ Represents the risk history of an Azure AD user as determined by Azure AD Identi
 
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
-| userId         | string  | The id of the user. |
+| id         | string  | The id of the user. |
 | initiatedBy    | bool    | The id of actor that does the operation. |
 | activity       | [riskUserActivity](riskuseractivity.md)| The activity related to user risk level change. | 
 
@@ -40,7 +40,7 @@ Represents the risk history of an Azure AD user as determined by Azure AD Identi
 
 ```json
 {
-    "userId": "string",
+    "id": "string",
     "initiatedBy": "string",
     "activity": {"@odata.type": "microsoft.graph.riskUserActivity"}
 }
