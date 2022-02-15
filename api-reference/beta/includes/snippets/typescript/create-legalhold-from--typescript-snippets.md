@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```typescript
+
+//THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+const graphServiceClient = new GraphServiceClient(requestAdapter);
+
+const requestBody = new LegalHold()
+requestBody.description = "String";
+requestBody.createdBy = new IdentitySet();
+requestBody.createdBy.additionalData = new Map([
+			["@odata.type", "microsoft.graph.identitySet"];
+		]);
+requestBody.isEnabled = "Boolean";
+requestBody.status = "String";
+requestBody.contentQuery = "String";
+requestBody.errors = [
+			"String";
+		]
+	],
+requestBody.displayName = "String";
+requestBody.additionalData = new Map([
+		["@odata.type", "#microsoft.graph.ediscovery.legalHold"];
+	]);
+const result = async () => {
+	await graphServiceClient.compliance.ediscovery.casesById("case-id").legalHolds.post(requestBody);
+}
+
+
+```

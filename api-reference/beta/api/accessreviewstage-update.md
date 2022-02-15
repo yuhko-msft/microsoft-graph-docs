@@ -65,6 +65,8 @@ Attempting to remove existing **fallbackReviewers** returns a `409 Conflict` res
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessreviewstage"
@@ -94,6 +96,12 @@ Content-Type: application/json
   ]
 }
 ```
+# [TypeScript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/update-accessreviewstage-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
