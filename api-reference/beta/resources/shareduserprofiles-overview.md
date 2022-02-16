@@ -87,7 +87,7 @@ For more information, see the [cross-tenant user profile sharing permissions](/g
 
 The shared user profiles APIs return the basic information about the outbound or inbound users, including a tenant identifier for their home tenant.
 
-The following sample shows an example of a response object when you call the [List inboundSharedUserProfiles](../api/directory-list-inboundshareduserprofile.md) method.
+The following sample shows an example of a response object when you call the [List inboundSharedUserProfiles](../api/directory-list-inboundshareduserprofiles.md) method.
 
 ```http
 HTTP/1.1 200 OK
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 ```
 
-The following sample shows an example of a response object when you call the [List outboundSharedUserProfiles](../api/directory-list-outboundshareduserprofile.md) method.
+The following sample shows an example of a response object when you call the [List outboundSharedUserProfiles](../api/directory-list-outboundshareduserprofiles.md) method.
 
 ```http
 HTTP/1.1 200 OK
