@@ -23,7 +23,6 @@ Represents the capabilities reported by a printer/printerShare.
 |qualities|[printQuality](enums.md#printquality-values) collection|The print qualities supported by the printer.|
 |dpis|Int32 collection|The list of print resolutions in DPI that are supported by the printer.|
 |duplexModes|[printDuplexMode](enums.md#printduplexmode-values) collection|The list of duplex modes that are supported by the printer. Valid values are described in the following table.|
-|queueBufferSizeInBytes|Int32|The maximum print job queue size that can be stored by the printer.|
 |copiesPerJob|[integerRange](integerrange.md)|The range of copies per job supported by the printer.|
 |finishings|[printFinishing](enums.md#printfinishing-values) collection|Finishing processes the printer supports for a printed document.|
 |mediaColors|String collection|The media (i.e., paper) colors supported by the printer.|

@@ -36,6 +36,7 @@ A group of settings that a printer should use to print a job.
 |multipageLayout|printMultipageLayout|The direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|
 |collate|Boolean|Whether the printer should collate pages wehen printing multiple copies of a multi-page document.|
 |scaling|printScaling|Specifies how the printer should scale the document data to fit the requested media. Valid values are described in the following table.|
+|fitPdfToPage|Boolean|If true, PDF pages are scaled to match the print media size.|
 
 ### printQuality values
 

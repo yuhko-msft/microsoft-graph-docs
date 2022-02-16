@@ -22,7 +22,7 @@ Represents the physical and hierarchical location of a printer.
 |longitude|Double|The longitude that the printer is located at.|
 |altitudeInMeters|Int32|The altitude, in meters, that the printer is located at.|
 |streetAddress|String|The street address where the printer is located.|
-|subUnit|String collection|The subunit hierarchy where the printer is located. The elements should be in hierarchical order. For example, if a campus is divided into different sections, the hierarchy might look like this: `["East Wing", "Block A"]`|
+|subunit|String collection|The subunit hierarchy where the printer is located. The elements should be in hierarchical order. For example, if a campus is divided into different sections, the hierarchy might look like this: `["East Wing", "Block A"]`|
 |city|String|The city that the printer is located in.|
 |postalCode|String|The postal code that the printer is located in.|
 |countryOrRegion|String|The country or region that the printer is located in.|

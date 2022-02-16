@@ -37,11 +37,11 @@ Represents a print job that has been queued for a printer.
 |isFetchable|Edm.Boolean|If true, document can be fetched by printer.|
 |redirectedFrom|Edm.String|Contains the source job URL, if the job has been redirected from another printer.|
 |redirectedTo|Edm.String|Contains the destination job URL, if the job has been redirected to another printer.|
+|createdBy|[userIdentity](useridentity.md)| Read-only. Nullable.|
 
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|createdBy|[userIdentity](useridentity.md)| Read-only. Nullable.|
 |documents|[printDocument](printdocument.md) collection| Read-only.|
 |tasks|[printTask](printtask.md) collection|A list of [printTasks](printtask.md) that were triggered by this print job.|
 

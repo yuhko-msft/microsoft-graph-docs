@@ -42,6 +42,8 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 |printers|[printer](printer.md) collection|The list of printers registered in the tenant.|
 |shares|[printerShare](printershare.md) collection|The list of printer shares registered in the tenant.|
 |connectors|[printConnector](printconnector.md) collection|The list of available print connectors.|
+|operations|[printOperation](../resources/printoperation.md) collection|The list of print long running operations.|
+|taskDefinitions|[printTaskDefinition](../resources/printtaskdefinition.md) collection|List of abstract definition for a task that can be triggered when various events occur within Universal Print.|
 
 ## JSON representation
 

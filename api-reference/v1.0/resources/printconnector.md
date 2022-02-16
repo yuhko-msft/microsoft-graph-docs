@@ -31,7 +31,6 @@ Represents a print connector that has been registered by using a Universal Print
 |appVersion|String|The connector's version.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the connector.|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
-|registeredBy|[userIdentity](useridentity.md)|The user who registered the connector.|
 
 ## Relationships
 None.

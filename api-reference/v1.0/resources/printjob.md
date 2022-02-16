@@ -31,7 +31,7 @@ Represents a print job that has been queued for a printer.
 |id|String|The printer's GUID. Read-only.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the job was created. Read-only.|
 |status|[printJobStatus](printjobstatus.md)|The status of the print job. Read-only.|
-|configuration|[printJobConfiguration](printJobConfiguration.md)|A group of settings that a printer should use to print a job.|
+|configuration|[printJobConfiguration](printjobconfiguration.md)|A group of settings that a printer should use to print a job.|
 |isFetchable|Edm.Boolean|If true, document can be fetched by printer.|
 |redirectedFrom|Edm.String|Contains the source job URL, if the job has been redirected from another printer.|
 |redirectedTo|Edm.String|Contains the destination job URL, if the job has been redirected to another printer.|
