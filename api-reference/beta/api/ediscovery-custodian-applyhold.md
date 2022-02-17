@@ -1,6 +1,6 @@
 ---
 title: "custodian: applyHold"
-description: "Apply a legal hold to a custodian"
+description: "Apply a legal hold to a custodian."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -46,13 +46,13 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/applyHold
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|String collection|List of custodian Ids for whom to apply holds to.|
+|ids|String collection|List of custodian IDs for whom to apply holds to.|
 
 ## Response
 
@@ -61,6 +61,8 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is a an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -80,6 +82,8 @@ Content-length: 35
   ]
 }
 ```
+
+The following is a an example of the response.
 
 ### Response
 

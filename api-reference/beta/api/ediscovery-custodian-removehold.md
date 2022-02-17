@@ -1,6 +1,6 @@
 ---
 title: "custodian: removeHold"
-description: "Removes all holds from the specified custodians"
+description: "Removes all holds from the specified custodians."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes all holds from the specified custodians
+Removes all holds from the specified custodians.
 
 ## Permissions
 
@@ -46,13 +46,13 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/removeHold
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|String collection|List of custodian Ids for whom to remove holds from.|
+|ids|String collection|List of custodian IDs for whom to remove holds from.|
 
 ## Response
 
@@ -61,6 +61,8 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is a an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -80,6 +82,8 @@ Content-length: 35
   ]
 }
 ```
+
+The following is a an example of the response.
 
 ### Response
 
