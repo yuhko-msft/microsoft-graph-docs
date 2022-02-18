@@ -252,6 +252,8 @@ Content-Type: application/json
     ]
 }
 ```
+>**Note:** User principal name is not the same as email.
+
 
 
 #### Response

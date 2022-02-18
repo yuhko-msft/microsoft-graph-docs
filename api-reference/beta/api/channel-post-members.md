@@ -216,6 +216,8 @@ Content-type: application/json
     "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
 }
 ```
+>**Note:** User principal name is not the same as email.
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

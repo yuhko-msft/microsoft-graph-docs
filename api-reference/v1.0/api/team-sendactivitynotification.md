@@ -240,6 +240,8 @@ Content-Type: application/json
     ]
 }
 ```
+>**Note:** User principal name is not the same as email.
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-upn-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
