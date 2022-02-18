@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-grouplifecyclepolicy-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-grouplifecyclepolicy-2-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
