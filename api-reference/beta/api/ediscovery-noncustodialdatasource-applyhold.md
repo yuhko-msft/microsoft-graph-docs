@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply a legal hold to a list of [noncustodialDataSources](../resources/ediscovery-noncustodialdatasource.md)s.
+Apply a legal hold to a list of [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)s.
 
 ## Permissions
 
@@ -62,7 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-The following is a an example of a request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -85,7 +85,7 @@ Content-length: 35
 
 ### Response
 
-The following is a an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

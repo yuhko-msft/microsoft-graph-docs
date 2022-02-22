@@ -1,6 +1,6 @@
 ---
 title: "noncustodialDataSource: removeHold"
-description: "Remove a legal hold to a list of noncustodialDataSources"
+description: "Remove a legal hold from a list of noncustodialDataSources."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a legal hold to a list of [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)s.
+Remove a legal hold from a list of [noncustodialDataSources](../resources/ediscovery-noncustodialdatasource.md).
 
 ## Permissions
 
@@ -45,13 +45,13 @@ POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/removeHold
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|String collection|List of non-custodial data source ids Ids for whom to apply holds to.|
+|ids|String collection|List of non-custodial data source IDs for whom to remove holds from.|
 
 ## Response
 
@@ -60,6 +60,8 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -81,6 +83,8 @@ Content-length: 35
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 ---
 title: "custodian: removeHold"
-description: "Removes all holds from the specified custodians."
+description: "Remove all holds from the specified custodians."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes all holds from the specified custodians.
+Remove all holds from the specified custodians.
 
 ## Permissions
 
@@ -62,7 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-The following is a an example of a request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -83,7 +83,7 @@ Content-length: 35
 }
 ```
 
-The following is a an example of the response.
+The following is an example of the response.
 
 ### Response
 
