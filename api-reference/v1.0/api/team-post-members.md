@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE] 
 > * Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> * Guest users can't be invited as Team Owners, however, you can invite them as Members only.
+> * Guest users can't be invited as Team Owners, however, you can invite guest users as Members only.
 
 ## HTTP request
 
