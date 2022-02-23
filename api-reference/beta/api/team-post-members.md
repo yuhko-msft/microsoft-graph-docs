@@ -23,6 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application| TeamMember.ReadWrite.All |
 
+> [!NOTE] 
+> Guest users can't be invited as Team Owners, you can invite guest users as Members only.
+
 ## HTTP request
 
 <!-- {
