@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewCredentialsRequestBody()
 requestBody.SetCredentials( []SynchronizationSecretKeyStringValuePair {
 	msgraphsdk.NewSynchronizationSecretKeyStringValuePair(),
 	SetAdditionalData(map[string]interface{}{

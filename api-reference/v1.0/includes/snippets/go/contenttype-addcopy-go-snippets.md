@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewContentTypeRequestBody()
 contentType := "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 requestBody.SetContentType(&contentType)
 options := &msgraphsdk.AddCopyRequestBuilderPostOptions{
