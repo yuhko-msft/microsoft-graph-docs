@@ -1589,6 +1589,40 @@
       "CreatedDateTime": "2021-02-04T09:55:05.981Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
-    }
+    },
+    {
+        "ChangeList": [
+            {
+              "Id": "8b4dc9a2-838c-4861-b127-f25e9b927985",
+              "ApiChange": "method",
+              "ChangedApiName": "getTeamsTeamActivityCounts",
+              "ChangeType": "Addition",
+              "Description": "Added the [getTeamsTeamActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsteamactivitycounts?view=graph-rest-beta) method.",
+              "Target": "getTeamsTeamActivityCounts"
+            },
+            {
+              "Id": "8b4dc9a2-838c-4861-b127-f25e9b927985",
+              "ApiChange": "method",
+              "ChangedApiName": "getTeamsTeamActivityDetail",
+              "ChangeType": "Addition",
+              "Description": "Added the [getTeamsTeamActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsteamactivitydetail?view=graph-rest-beta) method.",
+              "Target": "getTeamsTeamActivityDetail"
+            },
+            {
+              "Id": "8b4dc9a2-838c-4861-b127-f25e9b927985",
+              "ApiChange": "method",
+              "ChangedApiName": "getTeamsTeamActivityDistributionCounts",
+              "ChangeType": "Addition",
+              "Description": "Added the [getTeamsTeamActivityDistributionCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsteamactivitydistributioncounts?view=graph-rest-beta) method.",
+              "Target": "getTeamsTeamActivityDistributionCounts"
+            }
+          ],
+          "Id": "8b4dc9a2-838c-4861-b127-f25e9b927985",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-02-25T03:46:16.421Z",
+          "WorkloadArea": "Reports",
+          "SubArea": "Microsoft 365 usage reports"
+        }
   ]
 }
