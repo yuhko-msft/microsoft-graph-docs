@@ -1688,6 +1688,23 @@ For an app with delegated permissions to read programs and program controls, the
 
 ---
 
+## Recommendations permissions
+
+### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DirectoryRecommendations.Read.All_ |   Read all recommendations | Allows the app to read recommendations on behalf of a signed-in user. | Yes | No |
+| _DirectoryRecommendations.ReadWrite.All_ |   Read and update the status of recommendations and their resources | Allows the app to read and write recommendations on behalf of a signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _DirectoryRecommendations.Read.All_ |   Read all recommendations | Allows the app to read recommendations without a signed-in user. | Yes |
+| _DirectoryRecommendations.ReadWrite.All_ |   Read and update the status of recommendations and their resources | Allows the app to read and write recommendations without a signed-in user. | Yes |
+
+
 ## Reports permissions
 
 #### Delegated permissions
