@@ -1,5 +1,5 @@
 ---
-title: "List impactedResources"
+title: "List impactedResources for a given recommendation"
 description: "List the recommendationResource resources from the impactedResources navigation property."
 author: "hafowler"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List impactedResources
+# List impactedResources for a given recommendation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Reports.Read.All|
+|Delegated (work or school account)|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /directory/recommendations/{recommendationId}/impactedResources
+GET /directory/recommendations/{recommendationId}?$expand=impactedResources
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/impactedResources
+GET https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}?$expand=impactedResources
 ```
 
 
@@ -74,26 +74,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.recommendationResource",
-      "id": "4ce28e9b-3260-5d4e-0b4f-860d5ff18fa2",
-      "recommendationId": "String",
-      "addedDateTime": "String (timestamp)",
-      "portalUrl": "String",
-      "apiUrl": "String",
-      "displayName": "String",
-      "resourceType": "String",
-      "owner": "String",
-      "rank": "Integer",
-      "status": "String",
-      "additionalDetails": [
-        {
-          "@odata.type": "microsoft.graph.keyValue"
-        }
-      ]
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.recommendation",
+    "id": "d98332df-8837-eece-3036-9e0c3579ad01",
+    "createdDateTime": "String (timestamp)", 
+    "impactStartDateTime": "String (timestamp)",
+    "postponeUntilDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",
+    "lastModifiedBy": "String",
+    "displayName": "String",
+    "insights": "String",
+    "benefits": "String",
+    "category": "String",
+    "status": "String",
+    "priority": "String",
+    "impactType": "String",   
+    "actionSteps": [
+      {
+        "@odata.type": "microsoft.graph.actionStep"
+      }
+    ],
+    "impactedResources@odata.context" : "String",
+    "impactedResources" : [],
+    "currentScore": "Double",
+    "featureArea": "String",
+    "implementationCost": "String",
+    "lastCheckedDateTime": "String (timestamp)",
+    "maxScore": "Double",
+    "provider": "String",
+  }
 }
-```
-

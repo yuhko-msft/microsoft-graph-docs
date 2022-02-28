@@ -25,24 +25,24 @@ Inherits from [entity](../resources/entity.md).
 |[Complete](../api/recommendation-complete.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `completedByUser` after completing all [action steps](../resources/actionstep.md).|
 |[Postpone](../api/recommendation-postpone.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `postponed` to a specified date and time.|
 |[Dismiss](../api/recommendation-dismiss.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `dismissed`.|
-|[reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `active`.|
+|[Reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `active`.|
 |[List impactedResources](../api/recommendation-list-impactedresources.md)|[recommendationResource](../resources/recommendationresource.md) collection|List the recommendationResource resources from the impactedResources navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSteps|[actionStep](../resources/actionstep.md) collection|List of actions to take to complete a [recommendation](../resources/recommendation.md).|
-|benefits|String|Describes the value provided by completing a [recommendation](../resources/recommendation.md).|
+|benefits|String|Describes the value provided by completing a [recommendation](../resources/recommendation.md). Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
 |category|recommendationCategory|Indicates the type of [recommendation](../resources/recommendation.md). The possible values are: `usageAndCompliance`, `security`, `productivity`, `health`, `configuration`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The DateTime that the recommendation was detected as applicable to your directory.|
 |currentScore|Double|Attained score if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
 |displayName|String|The title of the [recommendation](../resources/recommendation.md).|
 |featureArea|String|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
-|id|String|The unique identifer for the recommendation. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifer for the recommendation. Inherited from [entity](../resources/entity.md). This is a concatenation of your tenant id and the recommendation's nickname.|
 |impactStartDateTime|DateTimeOffset|The future DateTime that a [recommendation](../resources/recommendation.md) should be completed by. |
-|impactType|String|Indicates the scope of impact of a [recommendation](../resources/recommendation.md).|
+|impactType|String|Indicates the scope of impact of a [recommendation](../resources/recommendation.md). `Tenant level` indicates that the recommendation impacts the whole tenant. Other possible values include `users`, `applications`, `devices`, and `groups`.|
 |implementationCost|implementationCost|Indicates the level of effort required to complete a [recommendation](../resources/recommendation.md). The possible values are: `low`, `moderate`, `high`.|
-|insights|String|Describes how a [recommendation](../resources/recommendation.md) uniquely applies to your directory.|
+|insights|String|Describes how a [recommendation](../resources/recommendation.md) uniquely applies to your directory. Corresponds to the *Description* section of a recommendation shown in the Azure AD portal.|
 |lastCheckedDateTime|DateTimeOffset|The most recent date and time a [recommendation](../resources/recommendation.md) was deemed applicable to your directory.|
 |lastModifiedBy|String|Name of the user who last updated the [recommendation](../resources/recommendation.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) was last updated.|

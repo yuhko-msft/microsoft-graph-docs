@@ -32,16 +32,16 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |addedDateTime|DateTimeOffset|The date and time the [recommendationResource](../resources/recommendationresource.md) was initally associated with a [recommendation](../resources/recommendation.md).|
-|additionalDetails|[keyValue](../resources/keyvalue.md) collection|Additional information unique per [recommendation](../resources/recommendation.md) to help complete the recommendation.|
+|additionalDetails|[keyValue](../resources/keyvalue.md) collection|Additional information unique per [recommendation](../resources/recommendation.md) to help contextualize the recommendation.|
 |apiUrl|String|The URL link to the corresponding directory object.|
 |displayName|String|Friendly name of the directory object.|
 |id|String|The unique identifier of the resource. Inherited from [entity](../resources/entity.md).|
-|owner|String|The user responsible for the resource.|
-|portalUrl|String|URL link to the corresponding Azure AD portal page of the resource.|
-|rank|Int32|Indicates the importance of the resource.|
+|owner|String|The user responsible for maintaining the resource.|
+|portalUrl|String|The URL link to the corresponding Azure AD portal page of the resource.|
+|rank|Int32|Indicates the importance of the resource. A resource with a rank equal to 1 is of the highest importance.|
 |recommendationId|String|The unique identifier of the [recommendation](../resources/recommendation.md) that the resource is associated with.|
 |resourceType|String|Indicates the type of directory object. Examples include `user`, `application`, etc.|
-|status|recommendationStatus|Indicates whether a [recommendation](../resources/recommendation.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
+|status|recommendationStatus|Indicates whether a [resource](../resources/recommendationresource.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
 
 ## Relationships
 None.

@@ -11168,7 +11168,7 @@ items:
             href: api/recommendation-postpone.md
           - name: Reactivate a recommendation
             href: api/recommendation-reactivate.md
-          - name: List impacted resources
+          - name: List impacted resources for a recommendation
             href: api/recommendation-list-impactedresources.md
           - name: Get a recommendationResource
             href: api/recommendationresource-get.md

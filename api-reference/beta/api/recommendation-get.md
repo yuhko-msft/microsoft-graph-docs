@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All|
+|Delegated (work or school account)|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Reports.Read.All|
+|Application|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
 
 ## HTTP request
 
@@ -50,7 +50,10 @@ If successful, this method returns a `200 OK` response code and a [recommendatio
 
 ## Examples
 
-### Request
+### Example 1
+Get a recommendation object without its associated resources.
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_recommendation"
@@ -61,7 +64,7 @@ GET https://graph.microsoft.com/beta/directory/recommendations/{recommendationId
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -104,3 +107,61 @@ Content-Type: application/json
 }
 ```
 
+### Example 2
+Get a recommendation object with its associated resources.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_recommendation"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}?$expand=impactedResources
+```
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.recommendation"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.recommendation",
+    "id": "d98332df-8837-eece-3036-9e0c3579ad01",
+    "createdDateTime": "String (timestamp)", 
+    "impactStartDateTime": "String (timestamp)",
+    "postponeUntilDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",
+    "lastModifiedBy": "String",
+    "displayName": "String",
+    "insights": "String",
+    "benefits": "String",
+    "category": "String",
+    "status": "String",
+    "priority": "String",
+    "impactType": "String",   
+    "actionSteps": [
+      {
+        "@odata.type": "microsoft.graph.actionStep"
+      }
+    ],
+    "impactedResources@odata.context" : "String",
+    "impactedResources" : [],
+    "currentScore": "Double",
+    "featureArea": "String",
+    "implementationCost": "String",
+    "lastCheckedDateTime": "String (timestamp)",
+    "maxScore": "Double",
+    "provider": "String",
+  }
+}
+```
