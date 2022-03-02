@@ -33,7 +33,7 @@ A group of settings that a printer should use to print a job.
 |pagesPerSheet|Int32|The number of document pages to print on each sheet.
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|The direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|
 |collate|Boolean|Whether the printer should collate pages wehen printing multiple copies of a multi-page document.|
-|scaling|[printScaling](enums.md#printscaling-values)|Specifies how the printer should scale the document data to fit the requested media. Valid values are described in the following table.|]
+|scaling|[printScaling](enums.md#printscaling-values)|Specifies how the printer should scale the document data to fit the requested media. Valid values are described in the following table.|
 |fitPdfToPage|Boolean|If true, PDF pages are scaled to match the print media size.|
 
 ## Relationships
