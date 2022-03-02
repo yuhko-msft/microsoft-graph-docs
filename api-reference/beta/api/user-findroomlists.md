@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-get-room-lists-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/user-get-room-lists-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

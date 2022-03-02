@@ -59,6 +59,8 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 
 # [HTTP](#tab/http)
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewhistorydefinition"
@@ -68,6 +70,12 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-accessreviewhistorydefinition-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

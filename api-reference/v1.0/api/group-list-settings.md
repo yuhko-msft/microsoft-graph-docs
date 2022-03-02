@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-groupsettings-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -188,6 +192,8 @@ Content-type: application/json
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groupsettings_for_a_group"
@@ -195,6 +201,12 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-groupsettings-for-a-group-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response

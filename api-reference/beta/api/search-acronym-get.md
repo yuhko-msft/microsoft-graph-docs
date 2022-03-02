@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and an [acronym](../
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_acronym"
@@ -59,6 +61,12 @@ If successful, this method returns a `200 OK` response code and an [acronym](../
 ``` http
 GET https://graph.microsoft.com/beta/search/acronyms/{acronymsId}
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-acronym-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

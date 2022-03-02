@@ -67,6 +67,8 @@ If successful, this method returns a `201 Created` response code with the ID of 
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_qna_from_qnas"
@@ -92,6 +94,12 @@ Content-Type: application/json
   "state": "published"
 }
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/create-qna-from-qnas-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 Here is an example of the response.

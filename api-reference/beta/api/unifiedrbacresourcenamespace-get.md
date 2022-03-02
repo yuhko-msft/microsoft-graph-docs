@@ -53,6 +53,8 @@ If successful, this method returns a `200 OK` response code and an [unifiedRbacR
 The following example gets the resource namespace with the identifier of `microsoft.aad.b2c`.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedrbacresourcenamespace"
@@ -61,6 +63,12 @@ The following example gets the resource namespace with the identifier of `micros
 ``` http
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.aad.b2c
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-unifiedrbacresourcenamespace-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

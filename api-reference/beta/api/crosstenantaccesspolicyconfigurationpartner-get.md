@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9
 [!INCLUDE [sample-code](../includes/snippets/go/get-crosstenantaccesspolicyconfigurationpartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-crosstenantaccesspolicyconfigurationpartner-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

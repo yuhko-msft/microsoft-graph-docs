@@ -86,6 +86,8 @@ The following example shows how to create an access review history definition sc
 ### Request
 
 # [HTTP](#tab/http)
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessreviewhistorydefinition_from_"
@@ -135,6 +137,12 @@ Content-Type: application/json
   ]
 }
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/create-accessreviewhistorydefinition-from--typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

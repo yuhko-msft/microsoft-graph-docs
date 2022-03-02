@@ -60,6 +60,8 @@ If successful, this method returns a `201 Created` response code and a [customAc
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customaccesspackageworkflowextension_from_"
@@ -84,6 +86,12 @@ Content-Type: application/json
     } 
 } 
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/create-customaccesspackageworkflowextension-from--typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

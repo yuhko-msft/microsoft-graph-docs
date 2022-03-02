@@ -57,6 +57,8 @@ The following example gets the actions for the resource namespace with the ident
 This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_unifiedrbacresourceaction_directory"
@@ -65,6 +67,12 @@ This method returns a maximum of 100 actions. If there are more actions, you can
 ``` http
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/list-unifiedrbacresourceaction-directory-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
@@ -113,6 +121,8 @@ Content-Type: application/json
 The following example gets the actions for the resource namespace with the identifier of `microsoft.insights`.
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_unifiedrbacresourceaction_insights"
@@ -121,6 +131,12 @@ The following example gets the actions for the resource namespace with the ident
 ``` http
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.insights/resourceActions
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/list-unifiedrbacresourceaction-insights-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response

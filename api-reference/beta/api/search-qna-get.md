@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and a [qna](../resou
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_qna"
@@ -59,6 +61,12 @@ If successful, this method returns a `200 OK` response code and a [qna](../resou
 ``` http
 GET https://graph.microsoft.com/beta/search/qnas/{qnaId}
 ```
+# [Typescript](#tab/typescript)
+[!INCLUDE [sample-code](../includes/snippets/typescript/get-qna-typescript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
