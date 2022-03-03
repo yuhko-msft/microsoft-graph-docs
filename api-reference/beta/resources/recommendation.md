@@ -1,6 +1,6 @@
 ---
 title: "recommendation resource type"
-description: "Represents an Azure AD best practice or improvement action recommended by Microsoft"
+description: "Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
