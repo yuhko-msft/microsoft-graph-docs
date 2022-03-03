@@ -18,8 +18,8 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Text to indicate where the link will navigate to.|
-|url|String|The URL of the actionURL.|
+|displayName|String|Brief title for the page that the links directs to.|
+|url|String|The URL to the documentation or Azure portal page.|
 
 ## Relationships
 None.
