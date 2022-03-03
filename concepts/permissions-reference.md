@@ -1722,7 +1722,7 @@ For an app with delegated permissions to read programs and program controls, the
 
 ---
 
-## Recommendations permissions
+## Azure AD recommendations permissions
 
 ### Delegated permissions
 
