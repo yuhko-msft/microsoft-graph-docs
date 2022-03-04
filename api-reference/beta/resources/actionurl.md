@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**The link associated with an [actionStep](../resources/actionStep.md).**
+The link to the documentation or Azure portal page that provides more information about an [actionStep](../resources/actionStep.md).
 
 ## Properties
 |Property|Type|Description|
