@@ -1,6 +1,6 @@
 ---
 title: "recommendation resource type"
-description: "Represents an Azure AD best practice or improvement action recommended by Microsoft"
+description: "Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,26 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Represents an Azure AD best practice or improvement action recommended by Microsoft.**
+Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List recommendations](../api/recommendation-list.md)|[recommendation](../resources/recommendation.md) collection|Get a list of [recommendation](../resources/recommendation.md) objects and their properties.|
+|[List recommendations](../api/directory-list-recommendations.md)|[recommendation](../resources/recommendation.md) collection|Get a list of [recommendation](../resources/recommendation.md) objects and their properties.|
 |[Get recommendation](../api/recommendation-get.md)|[recommendation](../resources/recommendation.md)|Read the properties and relationships of a [recommendation](../resources/recommendation.md) object.|
 |[Complete](../api/recommendation-complete.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `completedByUser` after completing all [action steps](../resources/actionstep.md).|
 |[Postpone](../api/recommendation-postpone.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `postponed` to a specified date and time.|
 |[Dismiss](../api/recommendation-dismiss.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `dismissed`.|
-|[Reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `active`.|
+|[Reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark an accidentally dismissed, completed, or postponed [recommendation](../resources/recommendation.md) object as `active`. |
 |[List impactedResources](../api/recommendation-list-impactedresources.md)|[recommendationResource](../resources/recommendationresource.md) collection|List the recommendationResource resources from the impactedResources navigation property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSteps|[actionStep](../resources/actionstep.md) collection|List of actions to take to complete a [recommendation](../resources/recommendation.md).|
-|benefits|String|Describes the value provided by completing a [recommendation](../resources/recommendation.md). Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
+|benefits|String|An explanation of why [completing the recommendation](../api/recommendation-complete.md) will benefit you. Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
 |category|recommendationCategory|Indicates the type of [recommendation](../resources/recommendation.md). The possible values are: `usageAndCompliance`, `security`, `productivity`, `health`, `configuration`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The DateTime that the recommendation was detected as applicable to your directory.|
 |currentScore|Double|Attained score if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
