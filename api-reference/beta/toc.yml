@@ -11394,30 +11394,33 @@ items:
         - name: Recommendations (Preview)
           href: resources/recommendation.md
           items:
-          - name: List recommendations
-            href: api/recommendation-list.md
-          - name: Get recommendation
+          - name: List
+            href: api/directory-list-recommendations.md
+          - name: Get
             href: api/recommendation-get.md
-          - name: Complete a recommendation
+          - name: Complete
             href: api/recommendation-complete.md
-          - name: Dismiss a recommendation
+          - name: Dismiss
             href: api/recommendation-dismiss.md
-          - name: Postpone a recommendation
+          - name: Postpone
             href: api/recommendation-postpone.md
-          - name: Reactivate a recommendation
+          - name: Reactivate
             href: api/recommendation-reactivate.md
-          - name: List impacted resources for a recommendation
-            href: api/recommendation-list-impactedresources.md
-          - name: Get a recommendationResource
-            href: api/recommendationresource-get.md
-          - name: Complete a recommendationResource
-            href: api/recommendationresource-complete.md
-          - name: Dismiss a recommendationResource
-            href: api/recommendationresource-dismiss.md
-          - name: Postpone a recommendationResource
-            href: api/recommendationresource-postpone.md
-          - name: Reactivate a recommendationResource
-            href: api/recommendationresource-reactivate.md
+          - name: Impacted resources
+            href: resources/recommendationresource.md
+            items:
+            - name: List
+               href: api/recommendation-list-impactedresources.md
+            - name: Get
+               href: api/recommendationresource-get.md
+             - name: Complete
+               href: api/recommendationresource-complete.md
+             - name: Dismiss
+               href: api/recommendationresource-dismiss.md
+             - name: Postpone
+               href: api/recommendationresource-postpone.md
+             - name: Reactivate
+               href: api/recommendationresource-reactivate.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
