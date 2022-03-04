@@ -685,7 +685,8 @@
 			"CreatedDateTime": "2021-12-08T18:41:56.575Z",
 			"WorkloadArea": "Compliance",
 			"SubArea": ""
-{
+		},
+			{
 			"ChangeList": [
 				{
 					"Id": "792eb04f-bca0-4a40-b2f5-ea71082d69a4",
@@ -702,7 +703,6 @@
 			"CreatedDateTime": "2022-01-14T06:26:50.7387609Z",
 			"WorkloadArea": "Compliance",
 			"SubArea": "eDiscovery"
-		}
 		}
 	]
 }
