@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Represents an Azure AD best practice or improvement action recommended by Microsoft.**
+Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant.
 
 Inherits from [entity](../resources/entity.md).
 
