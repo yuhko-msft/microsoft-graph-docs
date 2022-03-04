@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSteps|[actionStep](../resources/actionstep.md) collection|List of actions to take to complete a [recommendation](../resources/recommendation.md).|
-|benefits|String|Describes the value provided by completing a [recommendation](../resources/recommendation.md). Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
+|benefits|String|An explanation of why [completing the recommendation](../api/recommendation-complete.md) will benefit you. Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
 |category|recommendationCategory|Indicates the type of [recommendation](../resources/recommendation.md). The possible values are: `usageAndCompliance`, `security`, `productivity`, `health`, `configuration`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|The DateTime that the recommendation was detected as applicable to your directory.|
 |currentScore|Double|Attained score if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
