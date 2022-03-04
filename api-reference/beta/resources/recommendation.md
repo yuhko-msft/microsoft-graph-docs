@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List recommendations](../api/recommendation-list.md)|[recommendation](../resources/recommendation.md) collection|Get a list of [recommendation](../resources/recommendation.md) objects and their properties.|
+|[List recommendations](../api/directory-list-recommendations.md)|[recommendation](../resources/recommendation.md) collection|Get a list of [recommendation](../resources/recommendation.md) objects and their properties.|
 |[Get recommendation](../api/recommendation-get.md)|[recommendation](../resources/recommendation.md)|Read the properties and relationships of a [recommendation](../resources/recommendation.md) object.|
 |[Complete](../api/recommendation-complete.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `completedByUser` after completing all [action steps](../resources/actionstep.md).|
 |[Postpone](../api/recommendation-postpone.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `postponed` to a specified date and time.|
