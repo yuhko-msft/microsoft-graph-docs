@@ -1,6 +1,6 @@
 ---
-title: "Postpone a recommendationResource"
-description: "**Updates the status of a recommendationResource to postponed to a specified date and time"
+title: "recommendationResource: postpone"
+description: "Postpone action on a recommendationResource object to a specified future date and time."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendationResource](../resources/recommendationresource.md) to `postponed` to a specified date and time. On the provided date and time, the recommendationResource status will update to `active`.
+
+Postpone action on a [recommendationResource](../resources/recommendationresource.md) object to a specified future date and time by marking its **status** as `postponed`. On the specified date and time, Azure AD will automatically mark the status of the **recommendationResource** object to `active`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|postponeUntilDateTime|DateTimeOffset|The date and time at which a recommendationResource status will be updated to `active`.|
+|postponeUntilDateTime|DateTimeOffset|The date and time when the **status** of the **recommendationResource** will be updated to `active`.|
 
 
 

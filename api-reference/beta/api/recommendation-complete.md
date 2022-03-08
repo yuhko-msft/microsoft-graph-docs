@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendation](../resources/recommendation.md) to `completedByUser`.
+Complete a [recommendation](../resources/recommendation.md) object and update its **status** to `completedByUser`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

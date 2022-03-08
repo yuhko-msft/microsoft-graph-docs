@@ -1,18 +1,18 @@
 ---
 title: "recommendationResource: complete"
-description: "Update a recommendationResource status to completedByUser"
+description: "Complete a recommendationResource object and update its status to completedByUser."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Complete a recommendationReosurce
+# recommendationResource: reactivate
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendationResource](../resources/recommendationresource.md) to `completedByUser`.
+Complete a [recommendationResource](../resources/recommendationresource.md) object and update its status to `completedByUser`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

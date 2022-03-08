@@ -1,6 +1,6 @@
 ---
 title: "List recommendations"
-description: "Get a list of the recommendation objects and their properties."
+description: "Get a list of Azure AD recommendations for your tenant."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [recommendation](../resources/recommendation.md) objects and their properties.
+Get a list of Azure AD [recommendations](../resources/recommendation.md) for your tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /directory/recommendations
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,8 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1
-Get a list of available recommendations
+### Example 1: Get a list of available recommendations
 
 #### Request
 <!-- {

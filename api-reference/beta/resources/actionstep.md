@@ -1,6 +1,6 @@
 ---
 title: "actionStep resource type"
-description: "Represents a single action to take toward completing a recommendation"
+description: "Represents a single action to take toward completing a recommendation."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Represents a single action to take toward completing a [recommendation](../resources/recommendation.md).**
+Represents a single action to take toward completing a [recommendation](../resources/recommendation.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionUrl|[actionUrl](../resources/actionurl.md)|Link to documentation or Azure Active Directory portal page associated with the action step.|
-|stepNumber|Int64|Indicates the order in which the action should be taken.|
-|text|String|Describes the action to take.|
+|actionUrl|[actionUrl](../resources/actionurl.md)|A link to the documentation or Azure portal page that is associated with the action step.|
+|stepNumber|Int64|Indicates the position for this action in the order of the collection of actions to be taken.|
+|text|String|Friendly description of the action to take.|
 
 ## Relationships
 None.

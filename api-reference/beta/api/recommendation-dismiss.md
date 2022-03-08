@@ -1,18 +1,18 @@
 ---
-title: "Dismiss a recommendation"
-description: "Updates the status of a recommendation to dismissed"
+title: "recommendation: dismiss"
+description: "Dismiss a recommendation object and updates its status to dismissed."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Dismiss a recommendation
+# recommendation: dismiss
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendation](../resources/recommendation.md) to `dismissed` if you deem the recommendation inapplicable.
+Dismiss a [recommendation](../resources/recommendation.md) object that you consider to be inapplicable to your tenant and update its **status** to `dismissed` .
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|dismissReason|String|Audited reason for deeming a recommendation inapplicable to you.|
+|dismissReason|String|Audited reason for deeming a recommendation inapplicable to you and the tenant.|
 
 
 

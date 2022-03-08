@@ -1,6 +1,6 @@
 ---
 title: "recommendationResource resource type"
-description: "Represents a directory object associated with a recommendation"
+description: "Represents an Azure AD resource in your tenant that's associated with an Azure AD recommendation."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a directory object associated with a [recommendation](../resources/recommendation.md).
+Represents an Azure AD resource in your tenant that's associated with an Azure AD [recommendation](../resources/recommendation.md).
 
 
 Inherits from [entity](../resources/entity.md).
@@ -21,27 +21,27 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List recommendationResources](../api/recommendation-list-impactedresources.md)|[recommendationResource](../resources/recommendationresource.md) collection|Get a list of the [recommendationResource](../resources/recommendationresource.md) objects and their properties.|
+|[List impactedResources](../api/recommendation-list-impactedresources.md)|[recommendationResource](../resources/recommendationresource.md) collection|Get a list of the [recommendationResource](../resources/recommendationresource.md) objects and their properties.|
 |[Get recommendationResource](../api/recommendationresource-get.md)|[recommendationResource](../resources/recommendationresource.md)|Read the properties and relationships of a [recommendationResource](../resources/recommendationresource.md) object.|
-|[Postpone recommendationResource](../api/recommendationresource-postpone.md)|[recommendationResource](../resources/recommendationresource.md)|Marks a [recommendationResource](../resources/recommendationresource.md) status as `postponed` to a specified date and time.|
-|[Dismiss recommendationResource](../api/recommendationresource-dismiss.md)|[recommendationResource](../resources/recommendationresource.md)|Marks a [recommendationResource](../resources/recommendationresource.md) status as `dismissed`.|
-|[Complete recommendationResource](../api/recommendationresource-complete.md)|[recommendationResource](../resources/recommendationresource.md)|Marks a [recommendationResource](../resources/recommendationresource.md) status as `completedByUser`.|
-|[Reactivate recommendationResource](../api/recommendationresource-reactivate.md)|[recommendationResource](../resources/recommendationresource.md)|Marks a [recommendationResource](../resources/recommendationresource.md) status as `active`.|
+|[Postpone](../api/recommendationresource-postpone.md)|[recommendationResource](../resources/recommendationresource.md)|Mark the **status** of a [recommendationResource](../resources/recommendationresource.md) object as `postponed` to a specified date and time.|
+|[Dismiss](../api/recommendationresource-dismiss.md)|[recommendationResource](../resources/recommendationresource.md)|Mark the **status** of a [recommendationResource](../resources/recommendationresource.md) object as `dismissed`.|
+|[Complete](../api/recommendationresource-complete.md)|[recommendationResource](../resources/recommendationresource.md)|Mark the **status** of a [recommendationResource](../resources/recommendationresource.md) object as `completedByUser`.|
+|[Reactivate](../api/recommendationresource-reactivate.md)|[recommendationResource](../resources/recommendationresource.md)|Mark the **status** of a [recommendationResource](../resources/recommendationresource.md) object as `active`.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addedDateTime|DateTimeOffset|The date and time the [recommendationResource](../resources/recommendationresource.md) was initally associated with a [recommendation](../resources/recommendation.md).|
-|additionalDetails|[keyValue](../resources/keyvalue.md) collection|Additional information unique per [recommendation](../resources/recommendation.md) to help contextualize the recommendation.|
-|apiUrl|String|The URL link to the corresponding directory object.|
-|displayName|String|Friendly name of the directory object.|
-|id|String|The unique identifier of the resource. Inherited from [entity](../resources/entity.md).|
+|addedDateTime|DateTimeOffset|The date and time when the [recommendationResource](../resources/recommendationresource.md) object was initially associated with a [recommendation](../resources/recommendation.md).|
+|additionalDetails|[keyValue](../resources/keyvalue.md) collection|Additional information unique to the [recommendationResource](../resources/recommendationresource.md) to help contextualize the recommendation. |
+|apiUrl|String|The URL link to the corresponding Azure AD resource.|
+|displayName|String|Friendly name of the Azure AD resource.|
+|id|String|A unique identifier of the impacted Azure AD resource. Inherited from [entity](../resources/entity.md).|
 |owner|String|The user responsible for maintaining the resource.|
 |portalUrl|String|The URL link to the corresponding Azure AD portal page of the resource.|
 |rank|Int32|Indicates the importance of the resource. A resource with a rank equal to 1 is of the highest importance.|
 |recommendationId|String|The unique identifier of the [recommendation](../resources/recommendation.md) that the resource is associated with.|
-|resourceType|String|Indicates the type of directory object. Examples include `user`, `application`, etc.|
-|status|recommendationStatus|Indicates whether a [resource](../resources/recommendationresource.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
+|resourceType|String|Indicates the type of Azure AD resource. Examples include `user`, `application`.|
+|status|recommendationStatus|Indicates whether a [resource](../resources/recommendationresource.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's status is set to `active` when the recommendation is first generated.|
 
 ## Relationships
 None.

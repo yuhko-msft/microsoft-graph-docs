@@ -1,6 +1,6 @@
 ---
-title: "Dismiss a recommendationResource"
-description: "Update the status of a recommendationResource to dismissed"
+title: "recommendationResource: dismiss"
+description: "Dismiss a recommendationResource object and update its status to dismissed."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendationResource](../resources/recommendationresource.md) to `dismissed`.
+Dismiss a [recommendationResource](../resources/recommendationresource.md) object and update its status to `dismissed`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
