@@ -1,6 +1,6 @@
 ---
 title: "recommendation: complete"
-description: "Mark a recommendation status as completedByUser"
+description: "Complete a recommendation object and update its status to completedByUser."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
