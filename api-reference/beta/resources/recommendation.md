@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The title of the [recommendation](../resources/recommendation.md).|
 |featureArea|String|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
 |id|String|The unique identifer for the recommendation. Inherited from [entity](../resources/entity.md). This is a concatenation of your tenant id and the recommendation's nickname.|
-|impactStartDateTime|DateTimeOffset|The future DateTime that a [recommendation](../resources/recommendation.md) should be completed by. |
+|impactStartDateTime|DateTimeOffset|The future date and time when a [recommendation](../resources/recommendation.md) should be completed. |
 |impactType|String|Indicates the scope of impact of a [recommendation](../resources/recommendation.md). `Tenant level` indicates that the recommendation impacts the whole tenant. Other possible values include `users`, `applications`, `devices`, and `groups`.|
 |implementationCost|implementationCost|Indicates the level of effort required to complete a [recommendation](../resources/recommendation.md). The possible values are: `low`, `moderate`, `high`.|
 |insights|String|Describes how a [recommendation](../resources/recommendation.md) uniquely applies to your directory. Corresponds to the *Description* section of a recommendation shown in the Azure AD portal.|
