@@ -504,7 +504,7 @@
         },
         {
           "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "recommendationCategory",
           "ChangeType": "Addition",
           "Description": "Added the **recommendationCategory** enumeration type.",
