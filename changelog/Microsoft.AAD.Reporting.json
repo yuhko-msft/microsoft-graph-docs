@@ -555,7 +555,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recommendation",
           "ChangeType": "Addition",
-          "Description": "Added the [recommendation](https://docs.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource",
+          "Description": "Added the [recommendation](https://docs.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource and related methods. Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant. You can complete, postpone, reactivate, or dismiss an Azure AD recommendation.",
           "Target": "recommendation"
         },
         {
