@@ -496,15 +496,7 @@
       "ChangeList": [
         {
           "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "implementationCost",
-          "ChangeType": "Addition",
-          "Description": "Added the **implementationCost** enumeration type.",
-          "Target": "implementationCost"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "recommendationCategory",
           "ChangeType": "Addition",
           "Description": "Added the **recommendationCategory** enumeration type.",
@@ -512,7 +504,7 @@
         },
         {
           "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "recommendationPriority",
           "ChangeType": "Addition",
           "Description": "Added the **recommendationPriority** enumeration type.",
@@ -520,7 +512,7 @@
         },
         {
           "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "recommendationStatus",
           "ChangeType": "Addition",
           "Description": "Added the **recommendationStatus** enumeration type.",
@@ -545,17 +537,9 @@
         {
           "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
           "ApiChange": "Resource",
-          "ChangedApiName": "directory",
-          "ChangeType": "Addition",
-          "Description": "Added the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource",
-          "Target": "directory"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Resource",
           "ChangedApiName": "recommendation",
           "ChangeType": "Addition",
-          "Description": "Added the [recommendation](https://docs.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource",
+          "Description": "Added the [recommendation](https://docs.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource and related methods. Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant. You can complete, postpone, reactivate, or dismiss an Azure AD recommendation.",
           "Target": "recommendation"
         },
         {
@@ -563,72 +547,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "recommendationResource",
           "ChangeType": "Addition",
-          "Description": "Added the [recommendationResource](https://docs.microsoft.com/en-us/graph/api/resources/recommendationResource?view=graph-rest-beta) resource",
+          "Description": "Added the [recommendationResource](https://docs.microsoft.com/en-us/graph/api/resources/recommendationResource?view=graph-rest-beta) resource and related methods. Represents an Azure AD resource in your tenant that's associated with an Azure AD. You can complete, postpone, reactivate, or dismiss actions for an Azure AD resource that is associated with a recommendation.",
           "Target": "recommendationResource"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "complete",
-          "ChangeType": "Addition",
-          "Description": "Added the [complete](../beta/api/recommendation-complete.md) method to the [recommendation](../beta/resources/recommendation.md) resource.",
-          "Target": "complete"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "complete",
-          "ChangeType": "Addition",
-          "Description": "Added the [complete](..beta/api/recommendationresource-complete.md) method to the [recommendationResource](../beta/resources/recommendationresource.md) resource.",
-          "Target": "complete"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "dismiss",
-          "ChangeType": "Addition",
-          "Description": "Added the [dismiss](../beta/api/recommendation-dismiss) method to the [recommendation](../beta/resources/recommendation.md) resource.",
-          "Target": "dismiss"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "dismiss",
-          "ChangeType": "Addition",
-          "Description": "Added the [dismiss](../beta/api/recommendationresource-dismiss) method to the [recommendationResource](../beta/resources/recommendationresource.md) resource.",
-          "Target": "dismiss"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "postpone",
-          "ChangeType": "Addition",
-          "Description": "Added the [postpone](../beta/api/recommendation-postpone.md) method to the [recommendation](../beta/resources/recommendation.md) resource.",
-          "Target": "postpone"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "postpone",
-          "ChangeType": "Addition",
-          "Description": "Added the [postpone](../beta/api/recommendationresource-postponed.md) method to the [recommendationResource](../beta/resources/recommendationresource.md) resource.",
-          "Target": "postpone"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "reactivate",
-          "ChangeType": "Addition",
-          "Description": "Added the [reactivate](../beta/api/recommendation-reactivate.md) method to the [recommendation](../beta/resources/recommendation.md) resource.",
-          "Target": "reactivate"
-        },
-        {
-          "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",
-          "ApiChange": "Method",
-          "ChangedApiName": "reactivate",
-          "ChangeType": "Addition",
-          "Description": "Added the [reactivate](../beta/api/recommendationresource-reactivate.md) method to the [recommendationResource](../beta/resources/recommendationresource.md) resource.",
-          "Target": "reactivate"
         }
       ],
       "Id": "be9f19b8-9546-4de9-a556-87f2667a1840",

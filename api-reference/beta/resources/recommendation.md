@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[Postpone](../api/recommendation-postpone.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `postponed` to a specified date and time.|
 |[Dismiss](../api/recommendation-dismiss.md)|[recommendation](../resources/recommendation.md)|Mark a [recommendation](../resources/recommendation.md) status as `dismissed`.|
 |[Reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark an accidentally dismissed, completed, or postponed [recommendation](../resources/recommendation.md) object as `active`. |
-|[List impactedResources](../api/recommendation-list-impactedresources.md)|[recommendationResource](../resources/recommendationresource.md) collection|List the recommendationResource resources from the impactedResources navigation property.|
+|[List impactedResources](../api/recommendation-list-impactedresources.md)|[recommendationResource](../resources/recommendationresource.md) collection|Retrieve the Azure AD resources that are associated with a recommendation.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,8 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |actionSteps|[actionStep](../resources/actionstep.md) collection|List of actions to take to complete a [recommendation](../resources/recommendation.md).|
 |benefits|String|An explanation of why [completing the recommendation](../api/recommendation-complete.md) will benefit you. Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
 |category|recommendationCategory|Indicates the type of [recommendation](../resources/recommendation.md). The possible values are: `usageAndCompliance`, `security`, `productivity`, `health`, `configuration`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|The DateTime that the recommendation was detected as applicable to your directory.|
-|currentScore|Double|Attained score if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
+|createdDateTime|DateTimeOffset|The date and time when the recommendation was detected as applicable to your directory.|
 |displayName|String|The title of the [recommendation](../resources/recommendation.md).|
 |featureArea|String|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
 |id|String|The unique identifer for the recommendation. Inherited from [entity](../resources/entity.md). This is a concatenation of your tenant id and the recommendation's nickname.|
@@ -48,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) was last updated.|
 |maxScore|Double|Maximum possible score to attain if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
 |postponeUntilDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) is postponed to if its status is `postponed`.|
-|priority|recommendationPriority|Indicates the time sensitivity for a [recommendation](../resources/recommendation.md) to be completed.The possible values are: `low`, `medium`, `high`.|
+|priority|recommendationPriority|Indicates the time sensitivity for a [recommendation](../resources/recommendation.md) to be completed. Microsoft auto assigns this value. The possible values are: `low`, `medium`, `high`. Read-only|
 |provider|String|The service that generated the [recommendation](../resources/recommendation.md).|
 |status|recommendationStatus|Indicates whether a [recommendation](../resources/recommendation.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
 
