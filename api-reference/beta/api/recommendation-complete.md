@@ -1,5 +1,5 @@
 ---
-title: "Complete a recommendation"
+title: "recommendation: complete"
 description: "Mark a recommendation status as completedByUser"
 author: "hafowler"
 ms.localizationpriority: medium
