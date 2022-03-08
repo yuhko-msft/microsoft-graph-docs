@@ -34,8 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |actionSteps|[actionStep](../resources/actionstep.md) collection|List of actions to take to complete a [recommendation](../resources/recommendation.md).|
 |benefits|String|An explanation of why [completing the recommendation](../api/recommendation-complete.md) will benefit you. Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
 |category|recommendationCategory|Indicates the type of [recommendation](../resources/recommendation.md). The possible values are: `usageAndCompliance`, `security`, `productivity`, `health`, `configuration`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|The DateTime that the recommendation was detected as applicable to your directory.|
-|currentScore|Double|Attained score if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
+|createdDateTime|DateTimeOffset|The date and time when the recommendation was detected as applicable to your directory.|
 |displayName|String|The title of the [recommendation](../resources/recommendation.md).|
 |featureArea|String|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
 |id|String|The unique identifer for the recommendation. Inherited from [entity](../resources/entity.md). This is a concatenation of your tenant id and the recommendation's nickname.|
