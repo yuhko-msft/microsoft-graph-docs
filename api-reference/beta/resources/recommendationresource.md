@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |rank|Int32|Indicates the importance of the resource. A resource with a rank equal to 1 is of the highest importance.|
 |recommendationId|String|The unique identifier of the [recommendation](../resources/recommendation.md) that the resource is associated with.|
 |resourceType|String|Indicates the type of Azure AD resource. Examples include `user`, `application`.|
-|status|recommendationStatus|Indicates whether a [resource](../resources/recommendationresource.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's status is set to `active` when the recommendation is first generated.|
+|status|recommendationStatus|Indicates whether a [resource](../resources/recommendationresource.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's status is set to `active` when the recommendation is first generated. Status is set to `completedBySystem` when our service detects that a resource which was once `active` no longer applies.|
 
 ## Relationships
 None.

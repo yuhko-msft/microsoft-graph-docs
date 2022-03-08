@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/recommendations/{recommendationId}/reactivate
+POST https://graph.microsoft.com/beta/directory/recommendations/7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ThirdPartyApps/reactivate
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this action returns a `200 OK` response code and a [recommendatio
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/reactivate
+POST https://graph.microsoft.com/beta/directory/recommendations/7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ThirdPartyApps/reactivate
 ```
 
 
@@ -72,32 +72,39 @@ Content-Type: application/json
 
 {
   "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#recommendation",
     "@odata.type": "#microsoft.graph.recommendation",
-    "id": "String (identifier)",
+    "id": "7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ThirdPartyApps",
+    "createdDateTime": "2022-02-26T00:02:54Z",
+    "impactStartDateTime": "2022-02-26T00:02:54Z",
+    "postponeUntilDateTime": null,
+    "lastModifiedDateTime": "2022-03-08T05:39:03.6654897Z",
+    "lastModifiedBy": "131a8fea-5507-4ae4-90bf-20dbf1b6f1b5",
+    "displayName": "Integrate your 3rd party apps with Azure AD",
+    "insights": "No users are currently authenticating to any pre-integrated, custom app (BYOA) or SaaS app.",
+    "benefits": "Integrating 3rd party apps with Azure AD allows you to leverage Azure AD's security features, which enables seamless, more productive and more secure sign-ins. You can add an additional security layer to your 3rd party app sign-ins by using conditional access.",
+    "category": "configuration",
+    "status": "active",
+    "priority": "medium",
+    "impactType": "tenantLevel",
     "actionSteps": [
-      {
-        "@odata.type": "microsoft.graph.actionStep"
-      }
-    ],
-    "benefits": "String",
-    "category": "String",
-    "createdDateTime": "String (timestamp)",
-    "currentScore": "Double",
-    "displayName": "String",
-    "featureArea": "String",
-    "impactType": "String",
-    "impactStartDateTime": "String (timestamp)",
-    "implementationCost": "String",
-    "insights": "String",
-    "lastCheckedDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": "String",
-    "maxScore": "Double",
-    "postponeUntilDateTime": "String (timestamp)",
-    "priority": "String",
-    "provider": "String",
-    "status": "String"
+        {
+            "stepNumber": 1,
+            "text": "1. Review your apps",
+            "actionUrl": {
+                "displayName": "Enterprise applications",
+                "url": "https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/"
+            }
+        },
+        {
+            "stepNumber": 2,
+            "text": "2. For each eligible apps, integrate your 3rd party app with Azure AD",
+            "actionUrl": {
+                "displayName": "Tutorials for integrating SaaS applications with Azure AD",
+                "url": "https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list"
+            }
+        }
+    ]
   }
 }
 ```
-

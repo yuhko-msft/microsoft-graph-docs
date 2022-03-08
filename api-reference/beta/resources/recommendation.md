@@ -13,7 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant.
+Represents an Azure AD best practice or improvement action recommended by Microsoft for your Azure AD tenant. Our service runs on a daily basis to check your tenant against predefined conditions for every recommendation. If we detect that a recommendation applies, the corresponding recommendation object is generated and its status is set to `active`.
+
+There are currently 5 possible recommendations you may see:
+
+1.	Integrate 3rd party apps with Azure AD
+2.	Convert from per user MFA to Conditional Access MFA
+3.	Minimize MFA prompts for users signing in from known devices
+4.	Migrate apps from AD FS to Azure AD
+5.	Migrate eligible users from SMS and voice call to use the Authenticator app
+
 
 Inherits from [entity](../resources/entity.md).
 
@@ -33,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |actionSteps|[actionStep](../resources/actionstep.md) collection|List of actions to take to complete a [recommendation](../resources/recommendation.md).|
 |benefits|String|An explanation of why [completing the recommendation](../api/recommendation-complete.md) will benefit you. Corresponds to the *Value* section of a recommendation shown in the Azure AD portal.|
-|category|recommendationCategory|Indicates the type of [recommendation](../resources/recommendation.md). The possible values are: `usageAndCompliance`, `security`, `productivity`, `health`, `configuration`, `unknownFutureValue`.|
+|category|recommendationCategory|Indicates the type of [recommendation](../resources/recommendation.md). The possible values are: `usageAndCompliance`, `security`, `productivity`, `health`, `configuration`, `unknownFutureValue`. To be deprecated.|
 |createdDateTime|DateTimeOffset|The date and time when the recommendation was detected as applicable to your directory.|
 |displayName|String|The title of the [recommendation](../resources/recommendation.md).|
 |featureArea|String|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
@@ -46,7 +55,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|The date and time the **status** of a [recommendation](../resources/recommendation.md) was last updated.|
 |postponeUntilDateTime|DateTimeOffset|The future date and time when the **status** of a postponed [recommendation](../resources/recommendation.md) will be `active` again.|
 |priority|recommendationPriority|Indicates the time sensitivity for a [recommendation](../resources/recommendation.md) to be completed. Microsoft auto assigns this value. The possible values are: `low`, `medium`, `high`. Read-only|
-|status|recommendationStatus| Indicates the status of the [recommendation](../resources/recommendation.md) based on user or system action.  The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's status is set to `active` when the recommendation is first generated. |
+|status|recommendationStatus| Indicates the status of the [recommendation](../resources/recommendation.md) based on user or system action.  The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's status is set to `active` when the recommendation is first generated. Status is set to `completedBySystem` when our service detects that a recommendation which was once `active` no longer applies.|
 
 ## Relationships
 |Relationship|Type|Description|
