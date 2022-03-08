@@ -1,6 +1,6 @@
 ---
 title: "Get recommendationResource"
-description: "Read the properties and relationships of a recommendationResource object."
+description: "Read the properties and relationships of an Azure AD resource that's associated with a recommendation."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [recommendationResource](../resources/recommendationresource.md) object.
+Read the properties and relationships of an Azure AD [resource](../resources/recommendationresource.md) that's associated with a [recommendation](../resources/recommendation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /directory/impactedResources/{recommendationResourceId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

@@ -1,6 +1,6 @@
 ---
 title: "actionUrl resource type"
-description: "The link associated with an actionStep"
+description: "The link to the documentation or Azure portal page that provides more information about an actionStep."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"

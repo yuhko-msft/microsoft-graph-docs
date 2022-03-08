@@ -1,18 +1,18 @@
 ---
-title: "Postpone a recommendation"
-description: "Updates a recommendation to a specified date and time"
+title: "recommendation: postpone"
+description: "Postpone action on a recommendation object to a specified future date and time."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Postpone a recommendation
+# recommendation: postpone
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendation](../resources/recommendation.md) to `postponed` to a specified date and time. On the date and time provided, the recommendation status will update to `active` again.
+Postpone action on a [recommendation](../resources/recommendation.md) object to a specified future date and time by marking its **status** as `postponed`. On the date and time provided, Azure AD will automatically update the **status** of the **recommendation** object to `active` again.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|postponeUntilDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) status will update to `active` again.|
+|postponeUntilDateTime|DateTimeOffset|The date and time when Azure AD should automatically update the status of the postponed [recommendation](../resources/recommendation.md) to `active` again.|
 
 
 
@@ -65,7 +65,6 @@ If successful, this action returns a `200 OK` response code and a [recommendatio
 ``` http
 POST https://graph.microsoft.com/beta/directory/recommendations/{recommendationId}/postpone
 Content-Type: application/json
-Content-length: 53
 
 {
   "postponeUntilDateTime": "String (timestamp)"

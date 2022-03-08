@@ -1,6 +1,6 @@
 ---
-title: "List impactedResources for a given recommendation"
-description: "List the recommendationResource resources from the impactedResources navigation property."
+title: "List impactedResources"
+description: "List the details of the Azure AD resources that are associated with a recommendation."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the recommendationResource resources from the impactedResources navigation property.
+List the details of the Azure AD resources that are associated with a [recommendation](recommendation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /directory/recommendations/{recommendationId}?$expand=impactedResources
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$skip`, `$top`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

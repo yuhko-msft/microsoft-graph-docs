@@ -1,6 +1,6 @@
 ---
 title: "Get recommendation"
-description: "Read the properties and relationships of a recommendation object."
+description: "Retrieve a single Azure AD recommendation object."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [recommendation](../resources/recommendation.md) object.
+Retrieve a single Azure AD [recommendation](../resources/recommendation.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /directory/recommendations/{recommendationId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,8 +50,7 @@ If successful, this method returns a `200 OK` response code and a [recommendatio
 
 ## Examples
 
-### Example 1
-Get a recommendation object without its associated resources.
+### Example 1: Get a recommendation object without its associated resources
 
 #### Request
 <!-- {
@@ -107,13 +106,12 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
-Get a recommendation object with its associated resources.
+### Example 2: Get a recommendation object with its associated resources
 
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "get_recommendation"
+  "name": "get_recommendation_expand_impactedresources"
 }
 -->
 ``` http

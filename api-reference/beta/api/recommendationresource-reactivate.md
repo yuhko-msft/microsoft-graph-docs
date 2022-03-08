@@ -1,18 +1,18 @@
 ---
-title: "Reactivate a recommendationResource"
-description: "Updates the status of a recommendationResource to active"
+title: "recommendationResource: reactivate"
+description: "Reactivate an accidentally dismissed, completed, or postponed recommendationResource object."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Reactivate a recommendationResource
+# recommendationResource: reactivate
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendationResource](../resources/recommendationresource.md) to `active`. This method is relevant only if the recommendationResource status is `dismissed`, `postponed`, or `completedByUser`. 
+Reactivate an accidentally dismissed, completed, or postponed **recommendationResource** object. This action updates the **status** of the resource to `active`. This method is relevant only if the status of the **recommendationResource** object is `dismissed`, `postponed`, or `completedByUser`. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

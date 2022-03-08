@@ -38,23 +38,20 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The title of the [recommendation](../resources/recommendation.md).|
 |featureArea|String|The directory feature that the [recommendation](../resources/recommendation.md) is related to.|
 |id|String|The unique identifer for the recommendation. Inherited from [entity](../resources/entity.md). This is a concatenation of your tenant id and the recommendation's nickname.|
-|impactStartDateTime|DateTimeOffset|The future DateTime that a [recommendation](../resources/recommendation.md) should be completed by. |
+|impactStartDateTime|DateTimeOffset|The future date and time when a [recommendation](../resources/recommendation.md) should be completed. |
 |impactType|String|Indicates the scope of impact of a [recommendation](../resources/recommendation.md). `Tenant level` indicates that the recommendation impacts the whole tenant. Other possible values include `users`, `applications`, `devices`, and `groups`.|
-|implementationCost|implementationCost|Indicates the level of effort required to complete a [recommendation](../resources/recommendation.md). The possible values are: `low`, `moderate`, `high`.|
-|insights|String|Describes how a [recommendation](../resources/recommendation.md) uniquely applies to your directory. Corresponds to the *Description* section of a recommendation shown in the Azure AD portal.|
+|insights|String|Describes how a [recommendation](../resources/recommendation.md) uniquely applies to your directory. Corresponds to the *Description* section of a recommendation shown in the Azure AD portal. This is based on background information about your tenant including usage statistics and insights related to resource distribution and resource state. |
 |lastCheckedDateTime|DateTimeOffset|The most recent date and time a [recommendation](../resources/recommendation.md) was deemed applicable to your directory.|
-|lastModifiedBy|String|Name of the user who last updated the [recommendation](../resources/recommendation.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) was last updated.|
-|maxScore|Double|Maximum possible score to attain if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
-|postponeUntilDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) is postponed to if its status is `postponed`.|
+|lastModifiedBy|String|Name of the user who last updated the **status** of the [recommendation](../resources/recommendation.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time the **status** of a [recommendation](../resources/recommendation.md) was last updated.|
+|postponeUntilDateTime|DateTimeOffset|The future date and time when the **status** of a postponed [recommendation](../resources/recommendation.md) will be `active` again.|
 |priority|recommendationPriority|Indicates the time sensitivity for a [recommendation](../resources/recommendation.md) to be completed. Microsoft auto assigns this value. The possible values are: `low`, `medium`, `high`. Read-only|
-|provider|String|The service that generated the [recommendation](../resources/recommendation.md).|
-|status|recommendationStatus|Indicates whether a [recommendation](../resources/recommendation.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
+|status|recommendationStatus| Indicates the status of the [recommendation](../resources/recommendation.md) based on user or system action.  The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`. By default, a recommendation's status is set to `active` when the recommendation is first generated. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|impactedResources|[recommendationResource](../resources/recommendationresource.md) collection|List of directory resources associated with a recommendation.|
+|impactedResources|[recommendationResource](../resources/recommendationresource.md) collection|List of directory resources associated with a recommendation. Supports `$expand` including a nested `$select` query.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -78,20 +75,15 @@ The following is a JSON representation of the resource.
   "benefits": "String",
   "category": "String",
   "createdDateTime": "String (timestamp)",
-  "currentScore": "Double",
   "displayName": "String",
-  "featureArea": "String",
   "impactType": "String",
   "impactStartDateTime": "String (timestamp)",
-  "implementationCost": "String",
   "insights": "String",
   "lastCheckedDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": "String",
-  "maxScore": "Double",
   "postponeUntilDateTime": "String (timestamp)",
   "priority": "String",
-  "provider": "String",
   "status": "String"
 }
 ```

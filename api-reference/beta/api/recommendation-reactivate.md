@@ -1,6 +1,6 @@
 ---
-title: "Reactivate a recommendation"
-description: "Updates the status of a recommendation to active"
+title: "recommendation: reactivate"
+description: "Reactivate a completed, dismissed, or postponed recommendation object."
 author: "hafowler"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the status of a [recommendation](../resources/recommendation.md) to `active`. By default, a recommendation's status is set to `active` when the recommendation is first generated. This method is only relevant if a recommendation status is `completedByUser`, `dismissed`, or `postponed`.
+Reactivate a completed, dismissed, or postponed recommendation object. This action updates the **status** of the [recommendation](../resources/recommendation.md) to `active`. This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
