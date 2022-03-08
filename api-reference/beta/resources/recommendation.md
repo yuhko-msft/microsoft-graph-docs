@@ -48,7 +48,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) was last updated.|
 |maxScore|Double|Maximum possible score to attain if the [recommendation](../resources/recommendation.md) is a Secure Score for Identity improvement action.|
 |postponeUntilDateTime|DateTimeOffset|The date and time a [recommendation](../resources/recommendation.md) is postponed to if its status is `postponed`.|
-|priority|recommendationPriority|Indicates the time sensitivity for a [recommendation](../resources/recommendation.md) to be completed.The possible values are: `low`, `medium`, `high`.|
+|priority|recommendationPriority|Indicates the time sensitivity for a [recommendation](../resources/recommendation.md) to be completed. Microsoft auto assigns this value. The possible values are: `low`, `medium`, `high`. Read-only|
 |provider|String|The service that generated the [recommendation](../resources/recommendation.md).|
 |status|recommendationStatus|Indicates whether a [recommendation](../resources/recommendation.md) needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`.|
 
