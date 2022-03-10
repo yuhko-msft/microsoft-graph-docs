@@ -11408,19 +11408,18 @@ items:
             href: api/recommendation-reactivate.md
           - name: Impacted resources
             href: resources/recommendationresource.md
-            items:
-            - name: List
-               href: api/recommendation-list-impactedresources.md
-            - name: Get
-               href: api/recommendationresource-get.md
-             - name: Complete
-               href: api/recommendationresource-complete.md
-             - name: Dismiss
-               href: api/recommendationresource-dismiss.md
-             - name: Postpone
-               href: api/recommendationresource-postpone.md
-             - name: Reactivate
-               href: api/recommendationresource-reactivate.md
+          - name: List
+            href: api/recommendation-list-impactedresources.md
+          - name: Get
+            href: api/recommendationresource-get.md
+          - name: Complete
+            href: api/recommendationresource-complete.md
+          - name: Dismiss
+            href: api/recommendationresource-dismiss.md
+          - name: Postpone
+            href: api/recommendationresource-postpone.md
+          - name: Reactivate
+            href: api/recommendationresource-reactivate.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
