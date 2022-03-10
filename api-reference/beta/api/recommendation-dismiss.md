@@ -65,7 +65,6 @@ If successful, this action returns a `200 OK` response code and a [recommendatio
 ``` http
 POST https://graph.microsoft.com/beta/directory/recommendations/7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ThirdPartyApps/dismiss
 Content-Type: application/json
-Content-length: 33
 
 {
   "dismissReason": "Recommendation does not apply to this tenant."

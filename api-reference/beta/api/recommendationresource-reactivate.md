@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /directory/impactedResources/{recommendationResourceId}/reactivate
+POST /directory/recommendations/{recommendationId}/impactedResources/{recommendationResourceId}/reactivate
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this action returns a `200 OK` response code and a [recommendatio
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/impactedResources/{recommendationResourceId}/reactivate
+POST https://graph.microsoft.com/beta/directory/recommendations/7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ApplicationCredentialExpiry/impactedResources/3ba3165c-2a6e-4a21-8046-3b4d461a63fb/reactivate
 ```
 
 
@@ -71,24 +71,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#recommendationResource",
     "@odata.type": "#microsoft.graph.recommendationResource",
-    "id": "String (identifier)",
-    "recommendationId": "String",
-    "addedDateTime": "String (timestamp)",
-    "portalUrl": "String",
-    "apiUrl": "String",
-    "displayName": "String",
-    "resourceType": "String",
-    "owner": "String",
-    "rank": "Integer",
-    "status": "String",
+    "id": "3ba3165c-2a6e-4a21-8046-3b4d461a63fb",
+    "recommendationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ApplicationCredentialExpiry",
+    "resourceType": "app",
+    "addedDateTime": "2022-02-28T06:26:13.9349146Z",
+    "displayName": "Contoso IWA App Tutorial",
+    "owner": null,
+    "rank": 1,
+    "portalUrl": "https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/Credentials/appId/3ba3165c-2a6e-4a21-8046-3b4d461a63fb",
+    "apiUrl": null,
+    "status": "active",
     "additionalDetails": [
-      {
-        "@odata.type": "microsoft.graph.keyValue"
-      }
+        {
+            "key": "ExpiringCredentialsCount",
+            "value": "1"
+        }
     ]
-  }
 }
 ```
 

@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [recommendatio
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/impactedResources/{recommendationResourceId}
+GET https://graph.microsoft.com/beta/directory/impactedResources/3ba3165c-2a6e-4a21-8046-3b4d461a63fb
 ```
 
 
@@ -74,24 +74,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.recommendationResource",
-    "id": "4ce28e9b-3260-5d4e-0b4f-860d5ff18fa2",
-    "recommendationId": "String",
-    "addedDateTime": "String (timestamp)",
-    "portalUrl": "String",
-    "apiUrl": "String",
-    "displayName": "String",
-    "resourceType": "String",
-    "owner": "String",
-    "rank": "Integer",
-    "status": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/impactedResources/$entity",
+    "id": "3ba3165c-2a6e-4a21-8046-3b4d461a63fb",
+    "recommendationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ApplicationCredentialExpiry",
+    "resourceType": "app",
+    "addedDateTime": "2022-02-28T06:26:13.9349146Z",
+    "displayName": "Contoso IWA App Tutorial",
+    "owner": null,
+    "rank": 1,
+    "portalUrl": "https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/Credentials/appId/3ba3165c-2a6e-4a21-8046-3b4d461a63fb",
+    "apiUrl": null,
+    "status": "active",
     "additionalDetails": [
-      {
-        "@odata.type": "microsoft.graph.keyValue"
-      }
+        {
+            "key": "ExpiringCredentialsCount",
+            "value": "1"
+        }
     ]
-  }
 }
 ```
 
