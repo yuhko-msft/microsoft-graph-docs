@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the details of the Azure AD resources that are associated with a [recommendation](/../resources/recommendation.md).
+List the details of the Azure AD resources that are associated with a [recommendation](../resources/recommendation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
