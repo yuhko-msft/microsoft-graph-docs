@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# recommendationResource: reactivate
+# recommendationResource: complete
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
