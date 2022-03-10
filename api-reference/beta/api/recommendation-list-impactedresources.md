@@ -74,7 +74,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/recommendations(impactedResources())/$entity",
     "id": "7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ThirdPartyApps",
     "createdDateTime": "2022-02-26T00:02:54Z",
@@ -109,6 +108,5 @@ Content-Type: application/json
     ],
     "impactedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/recommendations('7918d4b5-0442-4a97-be2d-36f9f9962ece_Microsoft.Identity.IAM.Insights.ThirdPartyApps')/impactedResources",
     "impactedResources": []
-  }
 }
 ```
