@@ -1,9 +1,9 @@
 ---
 title: "userFlowPageLayout resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Representation of identity user flow page layout, as is shown in Azure portal in "Azure AD B2C" > "User flows" > {USERFLOW} > "Page Layouts". The amount of page layouts can be modified, only the present set of entities allows updated for "pageUri" and "version"."
+author: "almars"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
