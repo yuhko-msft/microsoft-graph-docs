@@ -470,7 +470,8 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "removeFromDefaultAudioGroup": false
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 
@@ -537,7 +538,8 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "removeFromDefaultAudioGroup": false
-  }
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
 
