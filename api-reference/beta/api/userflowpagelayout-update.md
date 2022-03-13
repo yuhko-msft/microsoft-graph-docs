@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|IdentityUserFlow.ReadWrite.All|
 
 ## HTTP request
 
@@ -45,10 +45,10 @@ PATCH /identity/b2cUserFlows/{b2cIdentityUserFlowId}/pageLayouts/{userFlowPageLa
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|isCustomPageUri|Boolean|**TODO: Add Description** Required.|
-|pageUri|String|**TODO: Add Description** Optional.|
-|version|String|**TODO: Add Description** Optional.|
+|displayName|String|Page name used to provide more description. Optional.|
+|isCustomPageUri|Boolean|If the page has a custom page uri, for query purpose. Required.|
+|pageUri|String|Location for the ".html" resource used to load the custom content, as show in [documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html?pivots=b2c-user-flow#4-update-the-user-flow). Optional.|
+|version|String|Version of the page layout. Optional.|
 
 
 

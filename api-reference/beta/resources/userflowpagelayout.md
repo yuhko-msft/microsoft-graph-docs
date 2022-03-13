@@ -13,7 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains details about the user flow's page layout.
+
+Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and fixes with each new page layout version. Organizations can browse available AD B2C user flow page layouts and update them to the latest versions.
+
+> [!IMPORTANT]
+> We highly recommend you keep your page layout versions up-to-date so that all page elements reflect the latest security enhancements, accessibility standards, and your feedback.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,17 +28,17 @@ Namespace: microsoft.graph
 |[Get userFlowPageLayout](../api/userflowpagelayout-get.md)|[userFlowPageLayout](../resources/userflowpagelayout.md)|Read the properties and relationships of a [userFlowPageLayout](../resources/userflowpagelayout.md) object.|
 |[Update userFlowPageLayout](../api/userflowpagelayout-update.md)|[userFlowPageLayout](../resources/userflowpagelayout.md)|Update the properties of a [userFlowPageLayout](../resources/userflowpagelayout.md) object.|
 |[Delete userFlowPageLayout](../api/userflowpagelayout-delete.md)|None|Deletes a [userFlowPageLayout](../resources/userflowpagelayout.md) object.|
-|[availableVersions](../api/userflowpagelayout-availableversions.md)|String collection|**TODO: Add Description**|
-|[restoreDefaultPageUri](../api/userflowpagelayout-restoredefaultpageuri.md)|None|**TODO: Add Description**|
+|[availableVersions](../api/userflowpagelayout-availableversions.md)|String collection|Show the supported version of page layout to provide admins and developers the exact values allowed to use.|
+|[restoreDefaultPageUri](../api/userflowpagelayout-restoredefaultpageuri.md)|None|Restore the default value of the "pageUri" property.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|isCustomPageUri|Boolean|**TODO: Add Description**|
-|pageUri|String|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
+|displayName|String|Page name used to provide more description.|
+|id|String|ID of the page layout, as used in the service.|
+|isCustomPageUri|Boolean|If the page has a custom page uri, for query purpose.|
+|pageUri|String|Location for the ".html" resource used to load the custom content, as show in [documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html?pivots=b2c-user-flow#4-update-the-user-flow).|
+|version|String|Version of the page layout.|
 
 ## Relationships
 None.

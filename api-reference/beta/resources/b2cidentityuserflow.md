@@ -44,6 +44,8 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md) (deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
 |[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md) (deprecated)|None|Add an identity provider to a B2C user flow.|
 |[Delete identity provider](../api/b2cidentityuserflow-delete-identityproviders.md) (deprecated)|None|Remove an identity provider from a B2C user flow|
+|[List pageLayouts](../api/b2cidentityuserflow-list-pagelayouts.md)|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|Get the userFlowPageLayout resources from the pageLayouts navigation property.|
+|[Create userFlowPageLayout](../api/b2cidentityuserflow-post-pagelayouts.md)|[userFlowPageLayout](../resources/userflowpagelayout.md)|Create a new userFlowPageLayout object.|
 
 ## Properties
 
@@ -52,6 +54,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2C_1_` after creation.|
 |userFlowType|userFlowType|The [type of user flow](/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`.|
 |userFlowTypeVersion|Single|The version of the user flow.|
+|isJavaScriptEnabled|Boolean|The property that determines whether JavaScript customization is enabled within the B2C user flow page layouts.|
 |isLanguageCustomizationEnabled|Boolean|The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.|
 |defaultLanguageTag|String|Indicates the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
 |tokenClaimsConfiguration|[userFlowTokenClaimsConfiguration](../resources/userflowtokenclaimsconfiguration.md)|**TODO: Add Description**|
@@ -65,6 +68,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 |identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.|
+|pageLayouts|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|The page layout used within the user flow.|
 
 ## JSON representation
 
