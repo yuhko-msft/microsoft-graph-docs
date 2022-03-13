@@ -1,6 +1,6 @@
 ---
 title: "userFlowPageLayout resource type"
-description: "Representation of identity user flow page layout, as is shown in Azure portal in "Azure AD B2C" > "User flows" > "Page Layouts". The amount of page layouts can be modified, only the present set of entities allows updated for "pageUri" and "version"."
+description: The amount of page layouts can be modified, only the present set of entities allows updated for "pageUri" and "version"."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
