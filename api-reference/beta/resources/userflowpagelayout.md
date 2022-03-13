@@ -1,6 +1,6 @@
 ---
 title: "userFlowPageLayout resource type"
-description: "Representation of identity user flow page layout, as is shown in Azure portal in "Azure AD B2C" > "User flows" > {USERFLOW} > "Page Layouts". The amount of page layouts can be modified, only the present set of entities allows updated for "pageUri" and "version"."
+description: "Representation of identity user flow page layout, as is shown in Azure portal in "Azure AD B2C" > "User flows" > "Page Layouts". The amount of page layouts can be modified, only the present set of entities allows updated for "pageUri" and "version"."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -37,7 +37,7 @@ Azure Active Directory B2C (Azure AD B2C) periodically releases improvements and
 |displayName|String|Page name used to provide more description.|
 |id|String|ID of the page layout, as used in the service.|
 |isCustomPageUri|Boolean|If the page has a custom page uri, for query purpose.|
-|pageUri|String|Location for the ".html" resource used to load the custom content, as show in [documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html?pivots=b2c-user-flow#4-update-the-user-flow).|
+|pageUri|String|Location for the ".html" resource used to load the custom content, as show in [documentation](https://docs.microsoft.com/azure/active-directory-b2c/customize-ui-with-html?pivots=b2c-user-flow#4-update-the-user-flow).|
 |version|String|Version of the page layout.|
 
 ## Relationships

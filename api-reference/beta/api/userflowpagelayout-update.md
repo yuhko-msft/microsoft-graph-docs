@@ -47,7 +47,7 @@ PATCH /identity/b2cUserFlows/{b2cIdentityUserFlowId}/pageLayouts/{userFlowPageLa
 |:---|:---|:---|
 |displayName|String|Page name used to provide more description. Optional.|
 |isCustomPageUri|Boolean|If the page has a custom page uri, for query purpose. Required.|
-|pageUri|String|Location for the ".html" resource used to load the custom content, as show in [documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/customize-ui-with-html?pivots=b2c-user-flow#4-update-the-user-flow). Optional.|
+|pageUri|String|Location for the ".html" resource used to load the custom content, as show in [documentation](https://docs.microsoft.com/azure/active-directory-b2c/customize-ui-with-html?pivots=b2c-user-flow#4-update-the-user-flow). Optional.|
 |version|String|Version of the page layout. Optional.|
 
 
