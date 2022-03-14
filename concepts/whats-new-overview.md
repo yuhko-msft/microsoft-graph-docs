@@ -14,10 +14,12 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ## March 2022: New and generally available
 
-### Graph Toolkit
+### Microsoft Graph Toolkit
 
-- When using the [Person](graph/toolkit/components/person) components, Set flag to disable fetching of person image with `disable-image-fetch`. This can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
-- With the [People picker](graph/toolkit/components/people-picker), you can now Set whether to disable fetching and display of person images with `disable-images`. When set to true, user initials are displayed instead. There was also an introduction of new capibilities enabling developers to Specify a filter criteria for users, groups or people with `user-filters`, `group-filters` and `people-filters`.
+- Optimize refreshing of people's images in the [Person](graph/toolkit/components/person) component and use `disable-image-fetch` to control unnecessary fetching where appropriate
+- Avoid unncessary loading of people's images in the [People picker](graph/toolkit/components/people-picker) component by using the `disable-images`. 
+- Filter the available users, groups and list of people on the [People picker](graph/toolkit/components/people-picker) component by using the newly introduced `user-filters`, `group-filters` and `people-filters` properties.
+
 For more information, see [v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0).
 
 
