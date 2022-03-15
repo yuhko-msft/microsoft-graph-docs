@@ -224,6 +224,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Notify a user about a channel tab using user principal name
+>**Note:** User principal name is not the same as email.
 
 Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md). The tab hosts a page showing the user the status of their hotel reservation. Selecting the notification will take the user to the tab, where they can check their reservation.
 
@@ -263,7 +264,6 @@ Content-Type: application/json
     ]
 }
 ```
->**Note:** User principal name is not the same as email.
 
 
 #### Response

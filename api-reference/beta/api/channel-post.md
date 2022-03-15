@@ -360,6 +360,7 @@ Content-type: application/json
 ```
 
 ### Example 5: Create private channel on behalf of user using user principal name
+>**Note:** User principal name is not the same as email.
 
 #### Request
 
@@ -391,7 +392,6 @@ Content-type: application/json
      ]
 }
 ```
->**Note:** User principal name is not the same as email.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-private-channel-upn-csharp-snippets.md)]

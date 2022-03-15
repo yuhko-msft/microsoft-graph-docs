@@ -239,6 +239,7 @@ Content-Type: application/json
 ```
 
 ### Example 3: Add members in bulk to a team using user principal name
+>**Note:** User principal name is not the same as email.
 
 #### Request
 
@@ -270,7 +271,6 @@ Content-Type: application/json
     ]
 }
 ```
->**Note:** User principal name is not the same as email.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-upn-csharp-snippets.md)]

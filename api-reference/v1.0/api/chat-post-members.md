@@ -249,6 +249,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 ```
 
 ### Example 4: Add a single member to a chat using user principal name
+>**Note:** User principal name is not the same as email.
 
 #### Request
 
@@ -271,7 +272,6 @@ content-type: application/json
     "roles": ["owner"]
 }
 ```
->**Note:** User principal name is not the same as email.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-member-upn-csharp-snippets.md)]

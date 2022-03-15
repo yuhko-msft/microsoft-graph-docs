@@ -297,6 +297,7 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 ```
 
 ### Example 4: Create private channel on behalf of user using user principal name
+>**Note:** User principal name is not the same as email.
 
 #### Request
 
@@ -328,7 +329,6 @@ Content-type: application/json
      ]
 }
 ```
->**Note:** User principal name is not the same as email.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-private-channel-upn-csharp-snippets.md)]

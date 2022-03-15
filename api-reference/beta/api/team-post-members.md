@@ -123,6 +123,7 @@ Content-type: application/json
 ```
 
 ### Example 2: Add a member to a team using user principal name
+>**Note:** User principal name is not the same as email.
 
 #### Request
 
@@ -143,7 +144,6 @@ Content-type: application/json
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
 }
 ```
->**Note:** User principal name is not the same as email.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationmember-upn-csharp-snippets.md)]

@@ -223,6 +223,7 @@ Content-Type: application/json
 ```
 
 ### Example 3: Create a one-on-one chat using user principal name
+>**Note:** User principal name is not the same as email.
 
 #### Request
 
@@ -253,7 +254,6 @@ Content-Type: application/json
   ]
 }
 ```
->**Note:** User principal name is not the same as email.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-upn-csharp-snippets.md)]

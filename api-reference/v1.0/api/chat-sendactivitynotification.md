@@ -186,6 +186,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Notify a user about an approval needed in a chat message using user principal name
+>**Note:** User principal name is not the same as email.
 
 Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
 
@@ -223,7 +224,6 @@ Content-Type: application/json
     ]
 }
 ```
->**Note:** User principal name is not the same as email.
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-upn-csharp-snippets.md)]
