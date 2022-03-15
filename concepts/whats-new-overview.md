@@ -16,9 +16,9 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ### Microsoft Graph Toolkit
 
-- Optimize refreshing of people's images in the [Person](graph/toolkit/components/person) component and use `disable-image-fetch` to control unnecessary fetching where appropriate
-- Avoid unncessary loading of people's images in the [People picker](graph/toolkit/components/people-picker) component by using the `disable-images`. 
-- Filter the available users, groups and list of people on the [People picker](graph/toolkit/components/people-picker) component by using the newly introduced `user-filters`, `group-filters` and `people-filters` properties.
+- Optimize refreshing of people's images in the [Person](/graph/toolkit/components/person) component and use `disable-image-fetch` to control unnecessary fetching where appropriate
+- Avoid unncessary loading of people's images in the [People picker](/graph/toolkit/components/people-picker) component by using the `disable-images`. 
+- Filter the available users, groups and list of people on the [People picker](/graph/toolkit/components/people-picker) component by using the newly introduced `user-filters`, `group-filters` and `people-filters` properties.
 
 For more information, see [v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0).
 
