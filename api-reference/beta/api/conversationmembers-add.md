@@ -261,12 +261,12 @@ Content-Type: application/json
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
             "roles":[],
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+            "user@odata.bind": "https://graph.microsoft.com/beta/users('markuslong@contoso.com')"
         },
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
             "roles":["owner"],
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+            "user@odata.bind": "https://graph.microsoft.com/beta/users('oscarward@contoso.com')"
         }
     ]
 }
