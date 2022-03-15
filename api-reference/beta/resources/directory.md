@@ -45,6 +45,8 @@ Inherits from [entity](entity.md).
 |deleteditems|[directoryObject](directoryobject.md) collection| Recently deleted items. Read-only. Nullable.|
 |featureRolloutPolicies|[featureRolloutPolicy](featurerolloutpolicy.md) collection| Nullable.|
 |federationConfigurations|[identityProviderBase](../resources/identityproviderbase.md) collection|Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.|
+|impactedResources|[recommendationResource](../resources/recommendationresource.md) collection|Azure AD resources that are associated with Azure AD recommendations.|
+|recommendations|[recommendation](../resources/recommendation.md) collection|Azure AD recommendations for your tenant.|
 
 ## JSON representation
 

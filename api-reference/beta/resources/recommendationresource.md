@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents an Azure AD resource in your tenant that's associated with an Azure AD [recommendation](../resources/recommendation.md).
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods

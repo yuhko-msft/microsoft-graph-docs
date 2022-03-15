@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|dismissReason|String|Audited reason for deeming a [recommendation](../resources/recommendation.md) inapplicable to you.|
+|dismissReason|String|Audited reason for deeming an [impacted resource](../resources/recommendationresource.md) inapplicable to you.|
 
 
 
