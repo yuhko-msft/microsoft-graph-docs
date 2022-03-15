@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlowI
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.Cpim.Api.DataModels.userFlowPageLayout)"
+  "@odata.type": "Collection(microsoft.graph.userFlowPageLayout)"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.Cpim.Api.DataModels.userFlowPageLayout",
+      "@odata.type": "#microsoft.graph.userFlowPageLayout",
       "id": "8073a745-debc-c577-dfc9-e5b451c6b227",
       "displayName": "String",
       "isCustomPageUri": "Boolean",

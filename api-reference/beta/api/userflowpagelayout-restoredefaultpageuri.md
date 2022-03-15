@@ -1,6 +1,6 @@
 ---
 title: "userFlowPageLayout: restoreDefaultPageUri"
-description: "**TODO: Add Description**"
+description: "Restore the default value of the "pageUri" property."
 author: "almars"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

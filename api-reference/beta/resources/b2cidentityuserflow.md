@@ -44,8 +44,6 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md) (deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
 |[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md) (deprecated)|None|Add an identity provider to a B2C user flow.|
 |[Delete identity provider](../api/b2cidentityuserflow-delete-identityproviders.md) (deprecated)|None|Remove an identity provider from a B2C user flow|
-|[List pageLayouts](../api/b2cidentityuserflow-list-pagelayouts.md)|[userFlowPageLayout](../resources/userflowpagelayout.md) collection|Get the userFlowPageLayout resources from the pageLayouts navigation property.|
-|[Create userFlowPageLayout](../api/b2cidentityuserflow-post-pagelayouts.md)|[userFlowPageLayout](../resources/userflowpagelayout.md)|Create a new userFlowPageLayout object.|
 
 ## Properties
 
