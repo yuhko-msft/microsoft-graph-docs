@@ -132,7 +132,7 @@ The following is an example of the request with the `$expand` query parameter.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_unifiedroleassignment"
+  "name": "get_unifiedroleassignment_with_expanded_relationships"
 }-->
 
 ```msgraph-interactive
