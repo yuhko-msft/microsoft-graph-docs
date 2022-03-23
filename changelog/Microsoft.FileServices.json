@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+      "ChangeList":[
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationalUrls",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationalUrls](https://docs.microsoft.com/en-us/graph/api/resources/informationalUrls?view=graph-rest-beta) resource.",
+          "Target": "informationalUrls"
+        },
+        {
+          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "ApiChange": "Property",
+          "ChangedApiName": "informationalUrls",
+          "ChangeType": "Addition",
+          "Description": "Added the **informationalUrls** property to the [applicationtemplate](https://docs.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationtemplate"
+        }
+      ],
+      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-23T06:40:12.000Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
   "ChangeList":[
     {
       "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
