@@ -3,7 +3,7 @@
     {
       "ChangeList":[
         {
-          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "Id": "dc862722-d6a7-4d4c-bf9c-4a58c45a06c5",
           "ApiChange": "Resource",
           "ChangedApiName": "informationalUrls",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "informationalUrls"
         },
         {
-          "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+          "Id": "1dc862722-d6a7-4d4c-bf9c-4a58c45a06c5",
           "ApiChange": "Property",
           "ChangedApiName": "informationalUrls",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "applicationtemplate"
         }
       ],
-      "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
+      "Id": "dc862722-d6a7-4d4c-bf9c-4a58c45a06c5",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-03-23T06:40:12.000Z",

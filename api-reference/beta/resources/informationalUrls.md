@@ -1,5 +1,5 @@
 ---
-title: "informationalUrls resource type"
+title: "informationalurls resource type"
 description: "Resources to help configure the application, including documentation and sign-up links."
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -7,7 +7,7 @@ ms.prod: "applications"
 author: "alamaral"
 ---
 
-# informationalUrls resource type
+# informationalurls resource type
 
 Namespace: microsoft.graph
 
