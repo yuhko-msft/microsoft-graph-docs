@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create a **b
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Field indicating title of the task list.|
+|displayName|String|Field that indicates the title of the task list.|
 
 
 

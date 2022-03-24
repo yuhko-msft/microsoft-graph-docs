@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a task, such as a piece of work or personal item, that can be tracked and completed. A **Task** is always contained in a [task list](basetasklist.md). 
+Represents a task, such as a piece of work or personal item, that can be tracked and completed. A **task** is always contained in a [task list](basetasklist.md). 
 
 This resource supports the following:
 * Adding your data as custom properties in [open extensions](/graph/extensibility-overview).
 * Subscribing to [change notifications](/graph/webhooks).
-* Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
+* Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates.
 
 Inherits from [baseTask](../resources/basetask.md).
 
@@ -49,16 +49,16 @@ Inherits from [baseTask](../resources/basetask.md).
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'. Inherited from [baseTask](../resources/basetask.md).|
 |viewpoint|[taskViewpoint](../resources/taskviewpoint.md)|Properties that are personal to a user such as reminderDateTime. Inherited from [baseTask](../resources/basetask.md).|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task. Inherited from [baseTask](../resources/basetask.md).|
-|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone when the task is to begin. Inherited from [baseTask](../resources/basetask.md).|
-|status|taskStatus_v2|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`,`unknownFutureValue`. Inherited from [baseTask](../resources/basetask.md).|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone when the task starts. Inherited from [baseTask](../resources/basetask.md).|
+|status|taskStatus_v2|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Inherited from [baseTask](../resources/basetask.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of checklistItems linked to a task. Inherited from [baseTask](../resources/basetask.md)|
-|extensions|[extension](../resources/extension.md) collection|The collection of open extensions defined for the task . Inherited from [baseTask](../resources/basetask.md)|
-|linkedResources|[linkedResource_v2](../resources/linkedresource_v2.md) collection|A collection of resources linked to the task. Inherited from [baseTask](../resources/basetask.md)|
-|parentList|[baseTaskList](../resources/basetasklist.md)|The list which contains the task. Inherited from [baseTask](../resources/basetask.md)|
+|checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of checklistItems linked to a task. Inherited from [baseTask](../resources/basetask.md).|
+|extensions|[extension](../resources/extension.md) collection|The collection of open extensions defined for the task . Inherited from [baseTask](../resources/basetask.md).|
+|linkedResources|[linkedResource_v2](../resources/linkedresource_v2.md) collection|A collection of resources linked to the task. Inherited from [baseTask](../resources/basetask.md).|
+|parentList|[baseTaskList](../resources/basetasklist.md)|The list which contains the task. Inherited from [baseTask](../resources/basetask.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.

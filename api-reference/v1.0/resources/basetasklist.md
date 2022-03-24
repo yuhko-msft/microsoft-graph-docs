@@ -15,27 +15,27 @@ Namespace: microsoft.graph
 
 Contains one or more [task](./basetask.md) resources.
 
-This is the base resource for the following derived types of task lists.
+This is the base resource for the following derived types of the task lists.
 * Built-in task list ([wellKnownTaskList](../resources/wellknowntasklist.md) resource)
 * User created task list ([taskList](../resources/tasklist.md) resource) 
 
 This is an abstract type.
 
 ## Methods
-The following method apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**taskList**)
+The following method apply to any of the derived types of the **baseTaskList** (**wellKnownTaskList**, **taskList**)
 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List baseTaskLists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get a list of the [baseTaskList](../resources/basetasklist.md) objects and their properties.|
 |[Get baseTaskList](../api/basetasklist-get.md)|[baseTaskList](../resources/basetasklist.md)|Read the properties and relationships of a [baseTaskList](../resources/basetasklist.md) object.|
-|[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
-|[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
+|[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the **baseTask** resources from the **tasks** navigation property.|
+|[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new **baseTask** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the task list.|
-|id|String|The identifier of the task list, unique in the user's mailbox. Read-only.|
+|id|String|The identifier of the task list that is unique in the user's mailbox. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

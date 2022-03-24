@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a list created by a user in Microsoft To Do that contains one or more [Task](./task.md) resources. 
+Represents a list created by a user in Microsoft To Do that contains one or more [Task](./task.md) resources.
 
-This resource supports
-* Adding your data to custom properties as [open extensions](/graph/extensibility-overview)
-* Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
+This resource supports:
+* Adding your data to custom properties as [open extensions](/graph/extensibility-overview).
+* Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates.
 
 Inherits from [baseTaskList](../resources/basetasklist.md).
 
@@ -35,13 +35,13 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the task list. Inherited from [baseTaskList](../resources/basetasklist.md).|
-|id|String|The identifier of the task list, unique in the user's mailbox. Read-only. Inherited from [baseTaskList](../resources/basetasklist.md).|
+|id|String|The identifier of the task list that is unique in the user's mailbox. Read-only. Inherited from [baseTaskList](../resources/basetasklist.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|extensions|[extension](../resources/extension.md) collection|The collection of open extensions defined for the task list. Nullable. Inherited from [baseTaskList](../resources/basetasklist.md)|
-|tasks|[baseTask](../resources/basetask.md) collection|The tasks in this task list. Read-only. Nullable. Inherited from [baseTaskList](../resources/basetasklist.md)|
+|extensions|[extension](../resources/extension.md) collection|The collection of open extensions defined for the task list. Nullable. Inherited from [baseTaskList](../resources/basetasklist.md).|
+|tasks|[baseTask](../resources/basetask.md) collection|The tasks in this task list. Read-only. Nullable. Inherited from [baseTaskList](../resources/basetasklist.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.

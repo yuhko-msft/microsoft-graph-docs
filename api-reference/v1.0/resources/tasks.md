@@ -16,8 +16,8 @@ Represents the To Do tasks services available to a user.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the baseTaskList resources from the lists navigation property.|
-|[Create taskList](../api/tasks-post-lists.md)|[taskList](../resources/basetasklist.md)|Create a new baseTaskList object.|
+|[List lists](../api/tasks-list-lists.md)|[baseTaskList](../resources/basetasklist.md) collection|Get the **baseTaskList** resources from the **lists** navigation property.|
+|[Create taskList](../api/tasks-post-lists.md)|[taskList](../resources/basetasklist.md)|Create a new **baseTaskList** object.|
 
 ## Properties
 None.
@@ -25,8 +25,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|alltasks|[baseTask](../resources/basetask.md) collection|All tasks in the users mailbox.|
-|lists|[baseTaskList](../resources/basetasklist.md) collection|The task lists in the users mailbox.|
+|alltasks|[baseTask](../resources/basetask.md) collection|All tasks in the user's mailbox.|
+|lists|[baseTaskList](../resources/basetasklist.md) collection|The task lists in the user's mailbox.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
