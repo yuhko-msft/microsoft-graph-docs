@@ -45,7 +45,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Field indicating updated title of the task list.|
+|displayName|String|Field that indicates the updated title of the task list.|
 
 
 

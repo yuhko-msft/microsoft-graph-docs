@@ -46,9 +46,9 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationName|String|Field indicating the app name of the source that is sending the **linkedResource**.|
-|displayName|String|Field indicating the title of the **linkedResource**.|
-|externalId|String|Id of the object that is associated with this task on the third-party/partner system.|
+|applicationName|String|Field that indicates the app name of the source that sends the **linkedResource**.|
+|displayName|String|Field that indicates the title of the **linkedResource**.|
+|externalId|String|ID of the object that is associated with this task on the third-party/partner system.|
 |webUrl|String|Deep link to the **linkedResource**.|
 
 

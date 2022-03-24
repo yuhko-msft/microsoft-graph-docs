@@ -48,8 +48,8 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was created.|
-|displayName|String|Field indicating the title of **checklistItem**.|
-|isChecked|Boolean|State indicating whether the item is checked off or not.|
+|displayName|String|Field that indicates the title of the **checklistItem**.|
+|isChecked|Boolean|State that indicates whether the item is checked off or not.|
 
 
 
