@@ -11,6 +11,38 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### labelKind values 
+
+
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### permissionKind values 
+
+
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|allPermissionsOnResourceApp|
+|unknownFutureValue|
+
+### resourceScopeType values 
+
+
+
+|Member|
+|:---|
+|group|
+|chat|
+|tenant|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionHandlerStatus values 
 
 |Member|
