@@ -5,6 +5,7 @@ author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # accessReviewInstanceDecisionItem: filterByCurrentUser
@@ -60,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser"
@@ -69,29 +70,33 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/1234ea1c-8d12-457b-1234-a37dc59e54e0/instances/7070ea1c-8d12-457b-bd35-a37dc59e54e0/decisions/filterByCurrentUser(on='reviewer')
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstancedecisionitem-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewinstancedecisionitem-filterbycurrentuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/accessreviewinstancedecisionitem-filterbycurrentuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstancedecisionitem-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstancedecisionitem-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

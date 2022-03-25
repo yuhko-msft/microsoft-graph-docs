@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # contactFolder: delta
@@ -20,7 +21,6 @@ a local store of a user's contact folders without having to fetch all the contac
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -79,8 +79,7 @@ You can find a similar example that shows how to use the state tokens to track c
 between tracking contact folders and tracking messages in a folder are in the delta query request URLs, and the query responses 
 returning **contactFolder** rather than **message** collections.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "contactfolder_delta"
@@ -89,32 +88,38 @@ returning **contactFolder** rather than **message** collections.
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
 Prefer: odata.maxpagesize=2
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/contactfolder-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/contactfolder-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/contactfolder-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/contactfolder-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ##### Response
 

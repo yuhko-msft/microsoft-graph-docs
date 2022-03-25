@@ -5,6 +5,7 @@ author: "lumine2008"
 ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # workbookWorksheetProtection: unprotect
@@ -48,8 +49,7 @@ If successful, this method returns `200 OK` response code. It does not return an
 ### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "workbookworksheetprotection_unprotect"
@@ -57,24 +57,28 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookworksheetprotection-unprotect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookworksheetprotection-unprotect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookworksheetprotection-unprotect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/workbookworksheetprotection-unprotect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 The following is an example of the response. 
@@ -98,5 +102,4 @@ HTTP/1.1 200 OK
   ]
 }
 -->
-
 

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessReviewScheduleDefinition accessReviewScheduleDefinition = new AccessReviewScheduleDefinition();
@@ -54,7 +54,6 @@ settings.autoApplyDecisionsEnabled = true;
 accessReviewScheduleDefinition.settings = settings;
 
 graphClient.identityGovernance().accessReviews().definitions()
-	.buildRequest()
-	.post(accessReviewScheduleDefinition);
-
+    .buildRequest()
+    .post(accessReviewScheduleDefinition);
 ```

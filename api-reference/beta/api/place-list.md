@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: "apiPageType"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # List places
@@ -94,7 +95,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows how to get all the [room](../resources/room.md) objects in the tenant.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get_all_rooms"
@@ -103,32 +104,38 @@ The following example shows how to get all the [room](../resources/room.md) obje
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-rooms-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/get-all-rooms-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-all-rooms-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 
@@ -224,7 +231,7 @@ Content-type: application/json
 
 The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get_all_roomlists"
@@ -233,32 +240,38 @@ The following example shows how to get all the [roomList](../resources/roomlist.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-roomlists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-roomlists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/get-all-roomlists-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-all-roomlists-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 
@@ -319,7 +332,7 @@ Content-type: application/json
 
 The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**. 
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist"
@@ -328,24 +341,28 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rooms-in-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rooms-in-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 
@@ -415,5 +432,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
 

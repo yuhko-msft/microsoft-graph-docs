@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Create attributeSet
@@ -52,7 +53,6 @@ The following table shows the properties that you can configure when you create 
 |id|String|Identifier for the attribute set that is unique within a tenant. Can be up to 32 characters long and include Unicode characters. Cannot contain spaces or special characters. Cannot be changed later. Case insensitive. Required.|
 |maxAttributesPerSet|Int32|Maximum number of custom security attributes that can be defined in this attribute set. Default value is `null`. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later. Optional.|
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [attributeSet](../resources/attributeset.md) object in the response body.
@@ -65,7 +65,7 @@ The following example adds a new attribute set named `Engineering`.
 
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "create_attributeset"
@@ -81,33 +81,38 @@ Content-Type: application/json
     "maxAttributesPerSet":25
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-attributeset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-attributeset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/create-attributeset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/create-attributeset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/create-attributeset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-attributeset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 ### Response
 <!-- {

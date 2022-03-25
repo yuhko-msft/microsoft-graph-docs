@@ -5,6 +5,7 @@ author: "harini84"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Create event
@@ -59,7 +60,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 #### Request
 The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
@@ -98,32 +99,38 @@ Content-type: application/json
   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/create-event-from-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-calendar-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 Here is an example of the response. 
@@ -228,7 +235,7 @@ Content-type: application/json
 #### Request
 The following example creates an event in the specified calendar of the signed-in user's and enables it as an online meeting.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU9zAAAAAGtlAAA="],
@@ -268,32 +275,38 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-with-online-meeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-with-online-meeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/create-event-from-calendar-with-online-meeting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-calendar-with-online-meeting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 Here is an example of the response. 

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Create a new list
 
@@ -39,8 +40,7 @@ In the request body, supply a JSON representation of the [list][] resource to cr
 
 Here is an example of how to create a new generic list.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -64,32 +64,38 @@ Content-Type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/create-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/create-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-list-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 **Note:** Custom columns are optional.
 

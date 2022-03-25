@@ -5,11 +5,11 @@ author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Get externalGroup
 Namespace: microsoft.graph.externalConnectors
-
 
 Get an [externalGroup](../resources/externalconnectors-externalgroup.md) object.
 
@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Not supported                               |
 | Delegated (personal Microsoft account) | Not supported                               |
 | Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
-
 
 ## HTTP request
 
@@ -51,7 +50,7 @@ If successful, this method returns a `200 OK` response code with the **externalG
 
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get_externalgroup"
@@ -61,24 +60,28 @@ If successful, this method returns a `200 OK` response code with the **externalG
 ``` http
 GET https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-externalgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-externalgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-externalgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-externalgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 <!-- markdownlint-disable MD024 -->
 ### Response

@@ -5,6 +5,7 @@ author: "subray"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Delete tab from chat
@@ -23,7 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
-
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,8 +47,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 ### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "delete_tab_in_chat"
@@ -56,33 +55,38 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/tabs/d731fca0-0f14-4537-971a-0ef9101ff13d
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-tab-in-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-tab-in-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-tab-in-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tab-in-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/delete-tab-in-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-tab-in-chat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 ### Response
 The following is an example of the response. 
@@ -111,5 +115,4 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
-
 

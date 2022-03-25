@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 BookingBusiness bookingBusiness = new BookingBusiness();
@@ -23,7 +23,6 @@ bookingBusiness.webSiteUrl = "https://www.fourthcoffee.com";
 bookingBusiness.defaultCurrencyIso = "USD";
 
 graphClient.bookingBusinesses()
-	.buildRequest()
-	.post(bookingBusiness);
-
+    .buildRequest()
+    .post(bookingBusiness);
 ```

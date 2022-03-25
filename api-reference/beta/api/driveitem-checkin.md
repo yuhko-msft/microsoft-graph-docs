@@ -5,6 +5,7 @@ title: "driveItem: checkin"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # driveItem: checkin
 
@@ -40,7 +41,6 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 In the request body, provide a JSON object with the following parameters.
 
-
 |   Name    | Value  |                                                Description                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
 | checkInAs | string | Optional. The status of the document after the check-in operation is complete. Can be `published` or unspecified. |
@@ -50,8 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 This example checks in a file identified by `{item-id}`.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -62,24 +61,28 @@ Content-Type: application/json
   "comment": "Updating the latest guidelines"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/checkin-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ## Response
 
@@ -92,7 +95,6 @@ HTTP/1.1 204 No content
 ```
 
 ### Remarks
-
 
 [item-resource]: ../resources/driveitem.md
 
@@ -107,5 +109,4 @@ HTTP/1.1 204 No content
   ]
 }
 -->
-
 

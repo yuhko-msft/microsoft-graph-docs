@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
 author: "carolinetempleton"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Delete privilegedRoleAssignment
@@ -21,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 The requestor needs to have _Privileged Role Administrator_ role.
  
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.AccessAsUser.All    |
@@ -53,7 +53,7 @@ Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forb
 ##### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "delete_privilegedroleassignment"
@@ -61,31 +61,38 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-privilegedroleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-privilegedroleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-privilegedroleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/delete-privilegedroleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/delete-privilegedroleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-privilegedroleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+::: zone-end
 
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
@@ -110,5 +117,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
 

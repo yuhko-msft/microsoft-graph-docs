@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Update accessPackageAssignmentPolicy
@@ -54,19 +55,15 @@ The following table shows the properties that are required when you update an [a
 |requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Who must approve requests for access package in this policy.|
 |accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required.|
 
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.
-
-
 
 ## Examples
 
 ### Request
 In this policy update, one of the options for the multiple choice question was removed. Future requestors will no longer have the removed option available to them.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -155,29 +152,33 @@ Content-Type: application/json
     }]
 }
 ```
-# [Java](#tab/java)
+
+::: zone-end
+
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [C#](#tab/csharp)
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 ### Response
 > **Note:** The response object shown here might be shortened for readability.
@@ -260,5 +261,4 @@ Content-Type: application/json
   ]
 }
 -->
-
 

@@ -5,6 +5,7 @@ author: "Harini84"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "apiPageType"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Update calendarPermission
@@ -69,7 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [cale
 
 The following example changes the permission level of the sharee, Adele, to `write`.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "sampleKeys": ["RGVmYXVsdA=="],
@@ -84,30 +85,36 @@ Content-type: application/json
   "role": "write"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-calendarpermission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-calendarpermission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+::: zone-end
 
 ### Response
 
@@ -153,5 +160,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

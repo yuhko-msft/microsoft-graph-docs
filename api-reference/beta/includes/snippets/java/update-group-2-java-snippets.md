@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Group group = new Group();
@@ -14,7 +14,6 @@ assignedLabelsList.add(assignedLabels);
 group.assignedLabels = assignedLabelsList;
 
 graphClient.groups("{id}")
-	.buildRequest()
-	.patch(group);
-
+    .buildRequest()
+    .patch(group);
 ```

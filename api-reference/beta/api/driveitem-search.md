@@ -6,6 +6,7 @@ title: Search for files
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Search for a DriveItems within a drive
 
@@ -56,30 +57,34 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 The following example searches for a match for "Contoso Project" across several fields in the signed-in user's drive items.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
 GET /me/drive/root/search(q='Contoso Project')
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-search-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/item-search-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 
@@ -121,31 +126,34 @@ To broaden the search scope, use the **search** method on the [Drive](../resourc
 
 ### Example
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```msgraph-interactive
 GET /me/drive/search(q='Contoso Project')
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-search-all-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-all-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/item-search-all-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 

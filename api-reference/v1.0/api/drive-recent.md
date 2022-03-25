@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "List a set of items that have been recently used by the signed in user."
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # List recent files
 
@@ -26,8 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
@@ -37,24 +37,28 @@ One of the following permissions is required to call this API. To learn more, in
 ```msgraph-interactive
 GET /me/drive/recent
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/view-recent-files-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ## Response
 

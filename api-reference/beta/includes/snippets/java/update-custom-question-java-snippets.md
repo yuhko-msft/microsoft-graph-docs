@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 MeetingRegistrationQuestion meetingRegistrationQuestion = new MeetingRegistrationQuestion();
@@ -17,7 +17,6 @@ answerOptionsList.add("Other");
 meetingRegistrationQuestion.answerOptions = answerOptionsList;
 
 graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ").registration().customQuestions("MSNhYjc5NWI4MC119zX3gwMDIwX3lvdXJfeDAwMjBfam8=")
-	.buildRequest()
-	.patch(meetingRegistrationQuestion);
-
+    .buildRequest()
+    .patch(meetingRegistrationQuestion);
 ```

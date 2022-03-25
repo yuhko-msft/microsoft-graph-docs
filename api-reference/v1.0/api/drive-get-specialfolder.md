@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Use the special collection to access a special folder by name."
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Get a special folder by name
 
@@ -49,7 +50,6 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 | App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
 | Music       | `music`      | The Music folder.                                                        |
 
-
 ### Optional query parameters
 
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
@@ -83,31 +83,34 @@ collection or use the [expand](/graph/query-parameters) option to expand the chi
 
 ### HTTP request
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/special/{special-folder-name}/children
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-special-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 

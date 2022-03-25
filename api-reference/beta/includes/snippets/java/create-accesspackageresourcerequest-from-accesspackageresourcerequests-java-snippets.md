@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageResourceRequest accessPackageResourceRequest = new AccessPackageResourceRequest();
@@ -20,7 +20,6 @@ accessPackageResource.originSystem = "SharePointOnline";
 accessPackageResourceRequest.accessPackageResource = accessPackageResource;
 
 graphClient.identityGovernance().entitlementManagement().accessPackageResourceRequests()
-	.buildRequest()
-	.post(accessPackageResourceRequest);
-
+    .buildRequest()
+    .post(accessPackageResourceRequest);
 ```

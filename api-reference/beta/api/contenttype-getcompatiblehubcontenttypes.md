@@ -5,6 +5,7 @@ author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # contentType: getCompatibleHubContentTypes
@@ -52,7 +53,7 @@ If successful, this function returns a `200 OK` response code and a [contentType
 
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "contenttype_getcompatiblehubcontenttypes"
@@ -61,33 +62,38 @@ If successful, this function returns a `200 OK` response code and a [contentType
 ``` http
 GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-getcompatiblehubcontenttypes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-getcompatiblehubcontenttypes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/contenttype-getcompatiblehubcontenttypes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-getcompatiblehubcontenttypes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-getcompatiblehubcontenttypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-getcompatiblehubcontenttypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

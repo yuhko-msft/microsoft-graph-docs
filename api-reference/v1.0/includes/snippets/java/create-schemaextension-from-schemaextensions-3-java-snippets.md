@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SchemaExtension schemaExtension = new SchemaExtension();
@@ -29,7 +29,6 @@ propertiesList.add(properties2);
 schemaExtension.properties = propertiesList;
 
 graphClient.schemaExtensions()
-	.buildRequest()
-	.post(schemaExtension);
-
+    .buildRequest()
+    .post(schemaExtension);
 ```

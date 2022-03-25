@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Team team = new Team();
@@ -24,7 +24,6 @@ discoverySettings.showInTeamsSearchAndSuggestions = true;
 team.discoverySettings = discoverySettings;
 
 graphClient.teams("{id}")
-	.buildRequest()
-	.patch(team);
-
+    .buildRequest()
+    .patch(team);
 ```

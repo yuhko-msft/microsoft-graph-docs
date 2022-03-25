@@ -5,6 +5,7 @@ description: "List columns in a site."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # List columns in a site
@@ -13,15 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Get the collection of columns, represented as [columnDefinition][columnDefinition] resources, in a [site][site].
 
-  
-
 ## Permissions
 
-  
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-  
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
@@ -29,11 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 
-  
-
 ## HTTP request
 
-  
 <!-- {
   "blockType": "ignored"
 }
@@ -42,7 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /sites/{site-id}/columns
 ```
 
-  
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -58,46 +49,48 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [columnDefinition][] objects in the response body.
 
-  
-
 ## Example
 
 ### Request
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "get_columns_from_site" } -->
  
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/columns
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-columns-from-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-columns-from-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-columns-from-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-columns-from-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -148,8 +141,6 @@ Content-type: application/json
    ]
 }
 ```
-
-  
 
 [columnDefinition]: ../resources/columnDefinition.md
 [site]: ../resources/site.md

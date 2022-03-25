@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Update calendar
@@ -22,7 +23,6 @@ Depending on the type of calendar that the event is in and the permission type (
 |:-----|:-----|:-----|:-----|
 | user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | group calendar | Group.ReadWrite.All | Not supported. | Not supported. |
-
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and updated [calenda
 ##### Request
 The following example updates the name of the signed-in user's default calendar.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -77,27 +77,33 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/update-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+::: zone-end
 
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
@@ -150,5 +156,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

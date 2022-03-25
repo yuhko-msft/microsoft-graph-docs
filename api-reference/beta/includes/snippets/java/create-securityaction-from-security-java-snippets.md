@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 SecurityAction securityAction = new SecurityAction();
@@ -21,7 +21,6 @@ vendorInformation.vendor = "Microsoft";
 securityAction.vendorInformation = vendorInformation;
 
 graphClient.security().securityActions()
-	.buildRequest()
-	.post(securityAction);
-
+    .buildRequest()
+    .post(securityAction);
 ```

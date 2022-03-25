@@ -6,6 +6,7 @@ title: Send an invite to access an item
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Send a sharing invitation
 
@@ -76,8 +77,7 @@ The invitation grants Ryan read-write access to the file.
 
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -98,24 +98,28 @@ Content-type: application/json
   "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 
@@ -241,7 +245,6 @@ Apps are not required to handle these.
 Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
 
-
 [error-response]: /graph/errors
 
 <!--
@@ -255,5 +258,4 @@ how errors are returned.
   ]
 }
 -->
-
 

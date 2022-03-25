@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
@@ -14,7 +14,6 @@ PlannerProgressTaskBoardTaskFormat plannerProgressTaskBoardTaskFormat = new Plan
 plannerProgressTaskBoardTaskFormat.orderHint = "A6673H Ejkl!";
 
 graphClient.planner().tasks("{task-id}").progressTaskBoardFormat()
-	.buildRequest( requestOptions )
-	.patch(plannerProgressTaskBoardTaskFormat);
-
+    .buildRequest( requestOptions )
+    .patch(plannerProgressTaskBoardTaskFormat);
 ```

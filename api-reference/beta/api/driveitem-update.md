@@ -6,6 +6,7 @@ title: Update a file or folder
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Update DriveItem properties
 
@@ -60,8 +61,7 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 This example renames the DriveItem resource to "new-file-name.docx".
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "update-item" } -->
 
 ```http
@@ -72,24 +72,28 @@ Content-type: application/json
   "name": "new-file-name.docx"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/update-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 
@@ -126,5 +130,4 @@ See [Error Responses][error-response] for details about how errors are returned.
   ]
 }
 -->
-
 

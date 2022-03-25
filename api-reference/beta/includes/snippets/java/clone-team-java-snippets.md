@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String displayName = "Library Assist";
@@ -17,16 +17,15 @@ EnumSet<ClonableTeamParts> partsToClone = EnumSet.of(ClonableTeamParts.APPS,Clon
 TeamVisibilityType visibility = TeamVisibilityType.PUBLIC;
 
 graphClient.teams("{id}")
-	.clone(TeamCloneParameterSet
-		.newBuilder()
-		.withDisplayName(displayName)
-		.withDescription(description)
-		.withMailNickname(mailNickname)
-		.withClassification(null)
-		.withVisibility(visibility)
-		.withPartsToClone(partsToClone)
-		.build())
-	.buildRequest()
-	.post();
-
+    .clone(TeamCloneParameterSet
+        .newBuilder()
+        .withDisplayName(displayName)
+        .withDescription(description)
+        .withMailNickname(mailNickname)
+        .withClassification(null)
+        .withVisibility(visibility)
+        .withPartsToClone(partsToClone)
+        .build())
+    .buildRequest()
+    .post();
 ```

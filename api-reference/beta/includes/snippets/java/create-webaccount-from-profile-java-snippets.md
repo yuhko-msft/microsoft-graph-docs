@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WebAccount webAccount = new WebAccount();
@@ -15,7 +15,6 @@ service.webUrl = "https://github.com";
 webAccount.service = service;
 
 graphClient.me().profile().webAccounts()
-	.buildRequest()
-	.post(webAccount);
-
+    .buildRequest()
+    .post(webAccount);
 ```

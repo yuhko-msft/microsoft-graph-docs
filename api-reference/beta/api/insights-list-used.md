@@ -5,6 +5,7 @@ author: "simonhult"
 ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # List used
@@ -20,7 +21,6 @@ For the signed-in user:
 - Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
 
 For other users, this method includes only documents that the user has modified.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,6 @@ One of the following permissions is required to call this API. To learn more, in
   ```
   >**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**. **lastAccessedDateTime** is then set to **lastModifiedDateTime**.
 
-
 - Expand the resource referenced by a **used** insight:
   <!-- { "blockType": "ignored" } -->
   
@@ -56,7 +55,6 @@ One of the following permissions is required to call this API. To learn more, in
   GET /me/insights/used/{id}/resource
   GET /users/{id | userPrincipalName}/insights/used/{id}/resource
   ```
-
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response:
@@ -77,7 +75,6 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
   >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
-
 
 ## Request headers
 | Header       |  Value|
@@ -115,7 +112,7 @@ For more details, see [customize insights privacy](/graph/insights-customize-ite
 
 #### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get_mymodifieddocuments"
@@ -124,24 +121,28 @@ For more details, see [customize insights privacy](/graph/insights-customize-ite
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mymodifieddocuments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mymodifieddocuments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifieddocuments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-mymodifieddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 
@@ -189,7 +190,7 @@ Content-type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get_mymodifiedandvieweddocuments"
@@ -198,24 +199,28 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mymodifiedandvieweddocuments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mymodifiedandvieweddocuments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifiedandvieweddocuments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-mymodifiedandvieweddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 <!-- {
@@ -255,5 +260,4 @@ Content-type: application/json
     ]
 }
 ```
-
 

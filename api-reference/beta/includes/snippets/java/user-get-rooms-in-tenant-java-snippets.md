@@ -1,14 +1,13 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UserFindRoomsCollectionPage findRooms = graphClient.me()
-	.findRooms()
-	.buildRequest()
-	.get();
-
+    .findRooms()
+    .buildRequest()
+    .get();
 ```

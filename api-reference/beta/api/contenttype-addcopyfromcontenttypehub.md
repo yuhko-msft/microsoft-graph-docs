@@ -5,6 +5,7 @@ author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # contentType: addCopyFromContentTypeHub
@@ -23,7 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Manage.All, Sites.FullControl.All |
-
 
 ## HTTP request
 
@@ -51,8 +51,6 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |contentTypeId|String| ID of the content type in the content type hub that is to be added to the target site or a list.|
 
-
-
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) object in the response body if the content type is added synchronously, or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richLongRunningOperation.md) that was created to handle the copy/sync.
@@ -64,7 +62,7 @@ In case of an asynchronous operation, it can take up to 70 minutes to sync or ad
 
 #### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopyfromcontenttypehub"
@@ -79,33 +77,38 @@ Content-length: 33
   "contentTypeId": "0x0101"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-addcopyfromcontenttypehub-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-addcopyfromcontenttypehub-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/contenttype-addcopyfromcontenttypehub-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopyfromcontenttypehub-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopyfromcontenttypehub-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-addcopyfromcontenttypehub-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -146,7 +149,6 @@ Content-length: 33
   "contentTypeId": "String"
 }
 ```
-
 
 #### Response
 

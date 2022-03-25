@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookWorksheetProtectionOptions options = new WorkbookWorksheetProtectionOptions();
@@ -20,11 +20,10 @@ options.allowAutoFilter = true;
 options.allowPivotTables = true;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").protection()
-	.protect(WorkbookWorksheetProtectionProtectParameterSet
-		.newBuilder()
-		.withOptions(options)
-		.build())
-	.buildRequest()
-	.post();
-
+    .protect(WorkbookWorksheetProtectionProtectParameterSet
+        .newBuilder()
+        .withOptions(options)
+        .build())
+    .buildRequest()
+    .post();
 ```

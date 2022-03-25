@@ -6,6 +6,7 @@ title: Download a previous version
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Download contents of a DriveItemVersion resource (preview)
 
@@ -26,7 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
-
 
 ## HTTP request
 
@@ -55,31 +55,34 @@ This example retrieves a version of a file in the current user's drive.
 
 ### Request
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-version-contents-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-version-contents-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 
@@ -91,7 +94,6 @@ This returns a redirect to where the contents of the version can be downloaded.
 HTTP/1.1 302 Redirect
 Location: https://onedrive.com/34FF49D6...
 ```
-
 
 ## Remarks
 
@@ -110,5 +112,4 @@ When your app retrieves the list of available versions for a file, a [driveItemV
   ]
 }
 -->
-
 

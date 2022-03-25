@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the file property can be downloaded."
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Download the contents of a DriveItem
 
@@ -49,32 +50,34 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 Here is an example to download a complete file.
 
-
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/download-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/download-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/download-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 

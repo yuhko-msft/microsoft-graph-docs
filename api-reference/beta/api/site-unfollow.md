@@ -5,6 +5,7 @@ description: Unfollow a user's site
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Unfollow site 
 
@@ -36,7 +37,6 @@ POST /users/{user-id}/followedSites/remove
 
 In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
 
-
 | Name                 | Value  | Description                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
 |   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
@@ -52,8 +52,7 @@ The following example shows how to unfollow multiple sites.
 
 ### Request
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -72,23 +71,28 @@ Content-Type: application/json
     ] 
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/unfollow-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+::: zone-end
 
 ### Response
 
@@ -138,5 +142,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-
 

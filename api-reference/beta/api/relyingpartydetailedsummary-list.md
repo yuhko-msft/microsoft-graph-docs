@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # List relyingPartyDetailedSummary
@@ -47,7 +48,6 @@ This method supports some of the OData query parameters to help customize the re
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
-
 ## Request headers
 
 | Name      |Description|
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and the requested [r
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get_relyingpartydetailedsummary"
@@ -77,24 +77,28 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(period='period_value')
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-relyingpartydetailedsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-relyingpartydetailedsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-relyingpartydetailedsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-relyingpartydetailedsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 
@@ -144,5 +148,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

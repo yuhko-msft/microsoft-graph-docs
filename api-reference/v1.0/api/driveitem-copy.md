@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name."
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # driveItem: copy
 
@@ -50,7 +51,6 @@ This method supports the `@microsoft.graph.conflictBehavior` query parameter to 
 
 In the request body, provide a JSON object with the following parameters.
 
-
 | Name            | Value                                          | Description                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
@@ -67,10 +67,9 @@ Returns details about how to [monitor the progress](/graph/long-running-actions-
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The new copy of the file will be named `contoso plan (copy).txt`.
 
-
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
@@ -85,23 +84,28 @@ Content-Type: application/json
   "name": "contoso plan (copy).txt"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/copy-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+::: zone-end
 
 ### Response
 

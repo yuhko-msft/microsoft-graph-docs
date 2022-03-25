@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UpdateCategory updateCategory = UpdateCategory.FEATURE;
@@ -18,12 +18,11 @@ updatableAssetCollectionResponse.value = assetsList;
 UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
 
 graphClient.admin().windows().updates().updatableAssets()
-	.unenrollAssets(UpdatableAssetUnenrollAssetsParameterSet
-		.newBuilder()
-		.withUpdateCategory(updateCategory)
-		.withAssets(assetsList)
-		.build())
-	.buildRequest()
-	.post();
-
+    .unenrollAssets(UpdatableAssetUnenrollAssetsParameterSet
+        .newBuilder()
+        .withUpdateCategory(updateCategory)
+        .withAssets(assetsList)
+        .build())
+    .buildRequest()
+    .post();
 ```

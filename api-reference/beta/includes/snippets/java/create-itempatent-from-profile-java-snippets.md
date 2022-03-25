@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemPatent itemPatent = new ItemPatent();
@@ -14,7 +14,6 @@ itemPatent.number = "USPTO-3954432633";
 itemPatent.webUrl = "https://patents.gov/3954432633";
 
 graphClient.me().profile().patents()
-	.buildRequest()
-	.post(itemPatent);
-
+    .buildRequest()
+    .post(itemPatent);
 ```

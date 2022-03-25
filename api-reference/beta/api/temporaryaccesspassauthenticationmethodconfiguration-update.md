@@ -5,6 +5,7 @@ author: "inbarckms"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Update temporaryAccessPassAuthenticationMethodConfiguration
@@ -27,7 +28,6 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 
 * Authentication Policy Administrator
 * Global Administrator
-
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
@@ -88,22 +88,24 @@ Content-Type: application/json
     ]
 }
 
-
 ```
-# [JavaScript](#tab/javascript)
+
+::: zone-end
+
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-temporaryaccesspassauthenticationmethodconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/update-temporaryaccesspassauthenticationmethodconfiguration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/update-temporaryaccesspassauthenticationmethodconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ### Response
 <!-- {

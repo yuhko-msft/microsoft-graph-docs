@@ -328,7 +328,6 @@ Content-type: application/json
 ### Example 3: Create a new message draft using MIME format
 #### Request
 
-
 <!-- {
   "blockType": "ignored",
   "name": "message_create_draft_mime_v1"
@@ -341,7 +340,6 @@ Content-type: text/plain
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
 
 ```
-
 
 #### Response
 Here is an example of the response.
@@ -436,7 +434,6 @@ Content-type: application/json
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

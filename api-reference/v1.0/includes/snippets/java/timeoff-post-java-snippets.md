@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TimeOff timeOff = new TimeOff();
@@ -22,7 +22,6 @@ draftTimeOff.theme = ScheduleEntityTheme.PINK;
 timeOff.draftTimeOff = draftTimeOff;
 
 graphClient.teams("{teamId}").schedule().timesOff()
-	.buildRequest()
-	.post(timeOff);
-
+    .buildRequest()
+    .post(timeOff);
 ```

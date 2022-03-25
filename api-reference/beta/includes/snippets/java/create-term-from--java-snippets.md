@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Term term = new Term();
@@ -16,7 +16,6 @@ labelsList.add(labels);
 term.labels = labelsList;
 
 graphClient.termStore().sets("{setId}").children()
-	.buildRequest()
-	.post(term);
-
+    .buildRequest()
+    .post(term);
 ```

@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "cloud-communications"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # cloudCommunications: getPresencesByUserId
@@ -36,7 +37,6 @@ POST /communications/getPresencesByUserId
 | Authorization | Bearer {token}. Required. |
 |Content-type | application/json. Required. |
 
-
 ## Request body
 
 In the request body, provide a JSON object with the following parameter.
@@ -49,14 +49,12 @@ In the request body, provide a JSON object with the following parameter.
 
 If successful, this method returns a `200 OK` response code and a collection of [presence](../resources/presence.md) objects in the response body.
 
-
 ## Examples
 
 ### Request
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "get-presence-multiple-users"
@@ -70,31 +68,38 @@ Content-Type: application/json
   "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-presence-multiple-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-presence-multiple-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-presence-multiple-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-presence-multiple-users-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+::: zone-end
 
 ### Response
 The following example shows the response.
@@ -150,5 +155,4 @@ Content-Length: 1574
   ]
 }
 -->
-
 

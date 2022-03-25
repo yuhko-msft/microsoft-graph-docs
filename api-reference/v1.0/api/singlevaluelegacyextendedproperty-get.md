@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Get singleValueLegacyExtendedProperty
@@ -190,7 +191,6 @@ Get instances of the **message** or **event** resource that have a string-typed 
 [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon,
 forward slash, and space.
 
-
 Get **message** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -267,8 +267,7 @@ The first example gets and expands the specified message by including a single-v
 extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`
 (with URL encoding removed here for ease of reading).
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGE1M2_bs88AACHsLqWAAA="],
@@ -277,31 +276,38 @@ extended property that has its **id** matching the string `String {66f5a359-4659
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-singlevaluelegacyextendedproperty-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-singlevaluelegacyextendedproperty-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-singlevaluelegacyextendedproperty-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-singlevaluelegacyextendedproperty-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/get-singlevaluelegacyextendedproperty-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-singlevaluelegacyextendedproperty-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
+::: zone-end
 
 #### Response 1
 The response body includes all the properties of the specified message and extended property returned from the filter.
@@ -369,7 +375,6 @@ the properties of the messages that have the extended property matching the filt
 similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
 
-
 #### Request 3
 
 The third example gets messages that have the string-typed single-value extended property specified in the filter. The filter
@@ -395,7 +400,6 @@ the **value** `Light green`, would match the filter and be included in the respo
 The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
 
-
 #### Request 4
 
 The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they do not
@@ -406,7 +410,6 @@ The following example shows a filter that looks for the extended property that h
 - Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.
 
 - Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`. To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.
-
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -419,12 +422,10 @@ The next example shows a filter that looks for the extended property that has:
 
 - Its **value** equal to the integer 12. To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.
 
-
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
 ```
-
 
 #### Response 4
 

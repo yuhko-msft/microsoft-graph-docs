@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Use this API to retrieve the contents of an item in a specific format."
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 # Download a file in another format
 
@@ -37,7 +38,6 @@ GET /drive/root:/{path and filename}:/content?format={format}
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | string | Specify the format the item's content should be downloaded as. |
 
-
 ### Format options
 
 The following values are valid for the **format** parameter:
@@ -54,31 +54,34 @@ The following values are valid for the **format** parameter:
 
 ## Example
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/content?format={format}
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 ## Response
 

@@ -1,9 +1,9 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
@@ -30,12 +30,11 @@ message.ccRecipients = ccRecipientsList;
 boolean saveToSentItems = false;
 
 graphClient.me()
-	.sendMail(UserSendMailParameterSet
-		.newBuilder()
-		.withMessage(message)
-		.withSaveToSentItems(saveToSentItems)
-		.build())
-	.buildRequest()
-	.post();
-
+    .sendMail(UserSendMailParameterSet
+        .newBuilder()
+        .withMessage(message)
+        .withSaveToSentItems(saveToSentItems)
+        .build())
+    .buildRequest()
+    .post();
 ```

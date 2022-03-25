@@ -1,14 +1,13 @@
 ---
 description: "Automatically generated file. DO NOT MODIFY"
 ---
+<!-- markdownlint-disable MD041 -->
 
 ```java
-
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ManagedDeviceGetCloudPcRemoteActionResultsCollectionPage getCloudPcRemoteActionResults = graphClient.deviceManagement().managedDevices("{managedDeviceId}")
-	.getCloudPcRemoteActionResults()
-	.buildRequest()
-	.get();
-
+    .getCloudPcRemoteActionResults()
+    .buildRequest()
+    .get();
 ```

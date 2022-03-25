@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 author: "JeremyKelley"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Get a DriveItemVersion resource (preview)
@@ -25,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-
 ## HTTP request
 
 <!-- { "blockType": "ignored"} -->
@@ -42,7 +42,6 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 
 If successful, this method returns a `200 OK` response code and a [DriveItemVersion](../resources/driveitemversion.md) object in the response body.
 
-
 ## Examples
 
 ### Example 1: Get specified version of a file
@@ -51,31 +50,34 @@ This example retrieves a version of a file in the current user's drive.
 
 #### Request
 
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-single-version-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-single-version-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-single-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+::: zone-end
 
 #### Response
 
@@ -100,40 +102,40 @@ Content-Type: application/json
 }
 ```
 
-
 ### Example 2: Get current version of a file
 
 This example retrieves the current version of a file in the current user's drive.
 
 #### Request
 
-
-
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- { "blockType": "request", "name": "get-current-version", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/current
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-current-version-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-current-version-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-current-version-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/get-current-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 #### Response
 
@@ -164,7 +166,6 @@ OneDrive does not preserve the complete metadata for previous versions of a file
 
 When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -176,5 +177,4 @@ When your app retrieves the list of available versions for a file, a [DriveItemV
   ]
 }
 -->
-
 

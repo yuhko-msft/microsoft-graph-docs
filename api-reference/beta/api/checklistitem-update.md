@@ -5,6 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # Update checklistItem
@@ -43,15 +44,12 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|The date and time when the **checklistItem** was finished.|
 |createdDateTime|DateTimeOffset|The date and time when the **checklistItem** was created.|
 |displayName|String|Field indicating the title of **checklistItem**.|
 |isChecked|Boolean|State indicating whether the item is checked off or not.|
-
-
 
 ## Response
 
@@ -61,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [chec
 
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "update_checklistitem"
@@ -75,29 +73,33 @@ Content-Type: application/json
     "displayName": "buy cake"
 }
 ```
-# [JavaScript](#tab/javascript)
+
+::: zone-end
+
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-checklistitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [C#](#tab/csharp)
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-checklistitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/update-checklistitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/update-checklistitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/update-checklistitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+::: zone-end
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

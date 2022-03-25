@@ -5,6 +5,7 @@ description: "Copy a file to a default content location in a content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
+zone_pivot_groups: graph-sdk-languages
 ---
 
 # contentType: copyToDefaultContentLocation
@@ -17,15 +18,11 @@ Copy a file to a default content location in a [content type][contentType]. The 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-  
-
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
-
-  
 
 ## HTTP request
 
@@ -49,7 +46,6 @@ In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-
 |Parameter|Type|Description|
 |-|-|-|
 |sourceFile| [itemReference](../resources/itemreference.md) |Metadata about the source file that needs to be copied to the default content location. Required.|
@@ -57,14 +53,13 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-
 If successful, this call returns a `204 No Content` response.
 
 ## Example
 
 ### Request
 
-# [HTTP](#tab/http)
+::: zone pivot="programming-language-curl"
 <!-- {
   "blockType": "request",
   "name": "contenttype_copytodefaultcontentlocation"
@@ -84,44 +79,45 @@ Content-Type: application/json
    "destinationFileName":"newname.txt"
 }
 ```
-# [C#](#tab/csharp)
+
+::: zone-end
+
+::: zone pivot="programming-language-csharp"
 [!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-copytodefaultcontentlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [JavaScript](#tab/javascript)
+::: zone pivot="programming-language-browserjs"
 [!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-copytodefaultcontentlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Objective-C](#tab/objc)
+::: zone pivot="programming-language-objectivec"
 [!INCLUDE [sample-code](../includes/snippets/objc/contenttype-copytodefaultcontentlocation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Java](#tab/java)
+::: zone pivot="programming-language-java"
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [Go](#tab/go)
+::: zone pivot="programming-language-go"
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+::: zone-end
 
-# [PowerShell](#tab/powershell)
+::: zone pivot="programming-language-powershell"
 [!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-copytodefaultcontentlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
+::: zone-end
 
 ### Response
-
 
 <!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
-
-  
 
 [contentType]: ../resources/contentType.md
