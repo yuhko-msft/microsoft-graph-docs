@@ -1,27 +1,27 @@
 ---
-title: "Create permissionGrantPreApprovalPolicy"
-description: "Create a new permissionGrantPreApprovalPolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+title: "Retrieve permissionGrantPreApprovalPolicy from serviceprincipal"
+description: "Retrieve the permissionGrantPreApprovalPolicy object from serviceprincipal."
+author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Create permissionGrantPreApprovalPolicy
+# servicePrincipal: List permissionGrantPreApprovalPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.
+Retrieve the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object of the [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant|
+|Delegated (work or school account)|Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant|
+|Application|Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ## HTTP request
 
@@ -40,13 +40,7 @@ GET /servicePrincipals/{servicePrincipalsId}/permissionGrantPreApprovalPolicies
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.
-
-You can specify the following properties when creating a **permissionGrantPreApprovalPolicy**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|**TODO: Add Description** Optional.|
+Do not supply a request body for this method.
 
 
 
@@ -64,19 +58,8 @@ If successful, this method returns a `201 Created` response code and a [permissi
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
-Content-Type: application/json
-Content-length: 215
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 
-{
-  "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "deletedDateTime": "String (timestamp)",
-  "conditions": [
-    {
-      "@odata.type": "microsoft.graph.preApprovalDetail"
-    }
-  ]
-}
 ```
 
 
@@ -89,16 +72,30 @@ Content-length: 215
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
+HTTP/1.1 200 OK
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "id": "93066ff9-3ce7-7dc8-f9d6-ed83206c528f",
-  "deletedDateTime": "String (timestamp)",
+  "id": "{id}",
   "conditions": [
     {
-      "@odata.type": "microsoft.graph.preApprovalDetail"
+      "scopeType": "Group",
+      "scopeSensitivityLabels": {
+        "@odata.type": "microsoft.graph.enumeratedSensitivityLabels",
+        "labelKind": "enumerated",
+        "sensitivityLabels": [
+          "{id}"
+        ]
+      },
+      "permissions": {
+        "@odata.type": "microsoft.graph.enumeratedPreApprovedPermissions",
+        "permissionKind": "enumerated",
+        "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
+        "permissionType": "application",
+        "permissionids": [
+          "{id}"
+        ]
+      }
     }
   ]
 }

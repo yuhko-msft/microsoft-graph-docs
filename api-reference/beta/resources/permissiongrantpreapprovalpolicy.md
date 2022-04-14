@@ -1,6 +1,6 @@
 ---
 title: "permissionGrantPreApprovalPolicy resource type"
-description: "**TODO: Add Description**"
+description: "control which user can consent to which applications under what conditions"
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"

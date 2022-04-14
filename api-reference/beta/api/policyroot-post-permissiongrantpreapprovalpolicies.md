@@ -3,7 +3,7 @@ title: "Create permissionGrantPreApprovalPolicy"
 description: "Create a new permissionGrantPreApprovalPolicy object."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211756/Metadata?anchor=topic-level-metadata)**"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -69,7 +69,6 @@ Content-length: 215
 
 {
   "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "deletedDateTime": "String (timestamp)",
   "conditions": [
     {
       "@odata.type": "microsoft.graph.preApprovalDetail"
@@ -94,7 +93,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
   "id": "93066ff9-3ce7-7dc8-f9d6-ed83206c528f",
-  "deletedDateTime": "String (timestamp)",
   "conditions": [
     {
       "@odata.type": "microsoft.graph.preApprovalDetail"

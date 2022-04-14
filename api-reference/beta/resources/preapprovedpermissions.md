@@ -1,6 +1,6 @@
 ---
 title: "preApprovedPermissions resource type"
-description: "**TODO: Add Description**"
+description: "A preApprovedPermissions describes the collection of permission that has been preApproved"
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description Ask dev**
-This is an abstract type.
+A preApprovedPermissions describes the collection of permission that has been pre-approved.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionKind|permissionKind| It indicates what kind of permissions has been icnludes in the condition sets. Possible values: `all` for all  permissions are allowed, or `enumerated` for a selected set of permissions from a signle resource application are allowed. The value `allPermissionsOnResourceApp` indicates all permissions from the specific resource application are allowed. Required.|
-|permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions (e.g. app roles), or `delegated` for delegated permissions. The value `delegatedUserConsentable` indicates delegated permissions which have not been configured by the API publisher to require admin consent—this value may be used in built-in permission grant policies, but cannot be used in custom permission grant policies. Required.|
+|permissionKind|permissionKind| It indicates what kind of permissions has been icnluded in the condition sets. Possible values: `all` for all  permissions are allowed, or `enumerated` for a selected set of permissions from a signle resource application are allowed. The value `allPermissionsOnResourceApp` indicates all permissions from the specific resource application are allowed. Required.|
+|permissionType|Microsoft.DirectoryServices.permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions, or `delegated` for delegated permissions. Required.|
 
 ## Relationships
 None.

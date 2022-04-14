@@ -1,7 +1,7 @@
 ---
 title: "Delete permissionGrantPreApprovalPolicy"
 description: "Deletes a permissionGrantPreApprovalPolicy object."
-author: ""yuhko-msft""
+author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

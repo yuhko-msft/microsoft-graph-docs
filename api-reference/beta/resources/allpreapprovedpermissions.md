@@ -1,6 +1,6 @@
 ---
 title: "allPreApprovedPermissions resource type"
-description: "**TODO: Add Description**"
+description: "When this type is used, if the client application requests more permissions after the policy is created, the policy will still apply"
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -19,7 +19,7 @@ The derived type when all permissions from any resource app are pre-approved for
 |Property|Type|Description|
 |:---|:---|:---|
 |permissionKind|permissionKind| It indicates what kind of permissions has been icnludes in the condition sets. Possible values: `all` for all  permissions are allowed, or `enumerated` for a selected set of permissions from a signle resource application are allowed. The value `allPermissionsOnResourceApp` indicates all permissions from the specific resource application are allowed. Required.|
-|permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions (e.g. app roles), or `delegated` for delegated permissions. The value `delegatedUserConsentable` indicates delegated permissions which have not been configured by the API publisher to require admin consent—this value may be used in built-in permission grant policies, but cannot be used in custom permission grant policies. Required.|
+|permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions (e.g. app roles), or `delegated` for delegated permissions. Required.|
 
 ## Relationships
 None.

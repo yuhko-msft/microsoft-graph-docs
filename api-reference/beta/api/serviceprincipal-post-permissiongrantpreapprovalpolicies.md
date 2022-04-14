@@ -1,27 +1,27 @@
 ---
-title: "Create permissionGrantPreApprovalPolicy"
-description: "Create a new permissionGrantPreApprovalPolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+title: "servicePrincipal: Assign permissionGrantPreApprovalPolicy"
+description: "Assign a permissionGrantPreApprovalPolicy to servicePrincipal."
+author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Create permissionGrantPreApprovalPolicy
+# ServicePrincipal: Assign permissionGrantPreApprovalPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.
+Assign a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object to [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.PermissionGrant|
+|Delegated (work or school account)|Application.ReadWrite.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.PermissionGrant|
+|Application|Application.ReadWrite.All, Directory.ReadWrite.All|
 
 ## HTTP request
 
@@ -47,7 +47,7 @@ You can specify the following properties when creating a **permissionGrantPreApp
 
 |Property|Type|Description|
 |:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|**TODO: Add Description** Optional.|
+|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|A list of conditions that tenant admin has pre-approved for the given service principal. Optional. Optional.|
 
 
 

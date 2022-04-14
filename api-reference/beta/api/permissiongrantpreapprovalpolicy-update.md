@@ -45,7 +45,7 @@ PATCH /policies/permissionGrantPreApprovalPolicies/{permissionGrantPreApprovalPo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|**TODO:** conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that tenant admin has pre-approved for the given service principal.	Required.|
+|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that tenant admin has pre-approved for the given service principal.	Required.|
 
 
 
@@ -67,11 +67,26 @@ Content-Type: application/json
 Content-length: 215
 
 {
-  "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "deletedDateTime": "String (timestamp)",
+  "id": "{permissionGrantPreApprovalPolicyId}",
   "conditions": [
     {
-      "@odata.type": "microsoft.graph.preApprovalDetail"
+      "scopeType": "Group",
+      "scopeSensitivityLabels": {
+        "@odata.type": "microsoft.graph.enumeratedSensitivityLabels",
+        "labelKind": "enumerated",
+        "sensitivityLabels": [
+          "{sensitivityLabelsId}"
+        ]
+      },
+      "permissions": {
+        "@odata.type": "microsoft.graph.enumeratedPreApprovedPermissions",
+        "permissionKind": "enumerated",
+        "permissionType": "application",
+        "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
+        "permissionids": [
+          "{permissionId}"
+        ]
+      }
     }
   ]
 }
@@ -86,18 +101,6 @@ Content-length: 215
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "id": "93066ff9-3ce7-7dc8-f9d6-ed83206c528f",
-  "deletedDateTime": "String (timestamp)",
-  "conditions": [
-    {
-      "@odata.type": "microsoft.graph.preApprovalDetail"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 

@@ -74,16 +74,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-    "id": "93066ff9-3ce7-7dc8-f9d6-ed83206c528f",
-    "deletedDateTime": "String (timestamp)",
-    "conditions": [
-      {
-        "@odata.type": "microsoft.graph.preApprovalDetail"
+  "id": "{permissionGrantPreApprovalPolicyId}",
+  "conditions": [
+    {
+      "scopeType": "Group",
+      "scopeSensitivityLabels": {
+        "@odata.type": "microsoft.graph.enumeratedSensitivityLabels",
+        "labelKind": "enumerated",
+        "sensitivityLabels": [
+          "{sensitivityLabelsId}"
+        ]
+      },
+      "permissions": {
+        "@odata.type": "microsoft.graph.enumeratedPreApprovedPermissions",
+        "permissionKind": "enumerated",
+        "permissionType": "application",
+        "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
+        "permissionids": [
+          "{permissionId}"
+        ]
       }
-    ]
-  }
+    }
+  ]
 }
 ```
 
