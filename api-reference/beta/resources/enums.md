@@ -11,7 +11,6 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-
 ### labelKind values 
 
 |Member|
@@ -22,8 +21,6 @@ Namespace: microsoft.graph
 
 ### permissionKind values 
 
-
-
 |Member|
 |:---|
 |all|
@@ -33,14 +30,35 @@ Namespace: microsoft.graph
 
 ### resourceScopeType values 
 
-
-
 |Member|
 |:---|
 |group|
 |chat|
 |tenant|
 |unknownFutureValue|
+
+#### authenticationProtocol values
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+|unknownFutureValue|
+
+#### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
 
 ### bookingsAvailabilityStatus values
 
@@ -143,6 +161,7 @@ Namespace: microsoft.graph
 |saml11|
 |saml20|
 |unknownFutureValue|
+|remoteDesktopToken|
 
 ### protocolType values 
 
@@ -596,6 +615,22 @@ Namespace: microsoft.graph
 |alternateMobilePhone|
 |mobilePhoneAndSMS|
 |unknownFutureValue|
+
+
+### clientCredentialType values 
+
+
+
+|Member|
+|:---|
+|none|
+|clientSecret|
+|clientAssertion|
+|federatedIdentityCredential|
+|managedIdentity|
+|certificate|
+|unknownFutureValue|
+
 
 ### azureADLicenseType values
 
