@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A scopeSensitivityLabels describes a sensitivity level **ONLY** for the group. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
+A scopeSensitivityLabels describes a sensitivity level **ONLY** for the group. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
 
 
 ## Properties
