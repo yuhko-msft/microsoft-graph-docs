@@ -19,7 +19,7 @@ The derived type when only sepcific sensitivity labels on a resource app are pre
 |Property|Type|Description|
 |:---|:---|:---|
 |labelKind|labelKind|It indicates what kind of sensitivity label has been icnluded. Possible values: `all` for all sensitivity labels are allowed, or `enumerated` for a selected set of sensitivity labels from a signle resource application are allowed.  Required.|
-|sensitivityLabels|[scopeSensitivityLabels](../resources/scopesensitivitylabels.md)|The sensitivity labels that are applicable to the scope type and has been pre-approved. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](/microsoft-365/compliance/sensitivity-labels) 
+|sensitivityLabels|String collection|The sensitivity labels that are applicable to the scope type and has been pre-approved. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](/microsoft-365/compliance/sensitivity-labels) 
 > **Note:** Chat resource **does not** support sensitivityLabels yet. Please set labelKind to `all` for all sensitivity labels are allowed.
 
 ## Relationships

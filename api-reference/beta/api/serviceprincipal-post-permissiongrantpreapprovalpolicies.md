@@ -70,7 +70,6 @@ Content-length: 215
 
 {
   "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "deletedDateTime": "String (timestamp)",
   "conditions": [
     {
       "@odata.type": "microsoft.graph.preApprovalDetail"
@@ -94,8 +93,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "id": "93066ff9-3ce7-7dc8-f9d6-ed83206c528f",
-  "deletedDateTime": "String (timestamp)",
+  "id": "{id}",
   "conditions": [
     {
       "@odata.type": "microsoft.graph.preApprovalDetail"

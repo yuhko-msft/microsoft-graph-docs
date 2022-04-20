@@ -77,7 +77,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-      "id": "93066ff9-3ce7-7dc8-f9d6-ed83206c528f",
+      "id": "{id}",
       "deletedDateTime": "String (timestamp)",
       "conditions": [
         {
