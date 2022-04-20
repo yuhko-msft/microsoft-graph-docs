@@ -20,7 +20,7 @@ A preApprovalDetail describes a list of conditions that has pre-approved for con
 |:---|:---|:---|
 |permissions|[preApprovedPermissions](../resources/preapprovedpermissions.md)|The collection for permission settings related to taeget resource. Required.|
 |scopeType|resourceScopeType|It indicates what resource scope this permission is requested. Possible values: `group` represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, or a security group, `chat` is a collection of [chatMessages](../../v1.0/resources/chatmessage.md) between one or more participants. Participants can be users or apps., `tenant` for all resources in the tenant. Required.|
-|sensitivityLabels|[scopeSensitivityLabels](../resources/scopesensitivitylabels.md)|The sensitivity labels that are applicable to the scope type and has been pre-approved. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) 
+|sensitivityLabels|[scopeSensitivityLabels](../resources/scopesensitivitylabels.md)|The sensitivity labels that are applicable to the scope type and has been pre-approved. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](/microsoft-365/compliance/sensitivity-labels) 
 > **Note:** Chat resource **does not** support sensitivityLabels yet. Please set labelKind to `all` for all sensitivity labels are allowed.
 
 
