@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Application.ReadWrite.All, Directory.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.PermissionGrant|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.ReadWrite.All, Directory.ReadWrite.All|
+|Application|Policy.ReadWrite.PermissionGrant|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /policies/permissionGrantPreApprovalPolicies
-POST /servicePrincipals/{servicePrincipalsId}/permissionGrantPreApprovalPolicies
+POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies
 ```
 
 ## Request headers

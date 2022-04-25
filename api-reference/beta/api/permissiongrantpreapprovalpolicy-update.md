@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /policies/permissionGrantPreApprovalPolicies/{permissionGrantPreApprovalPolicyId}
+PATCH /policies/permissionGrantPreApprovalPolicies/{id}
 ```
 
 ## Request headers
@@ -62,12 +62,12 @@ If successful, this method returns a `200 OK` response code and an updated [perm
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/{permissionGrantPreApprovalPolicyId}
+PATCH https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/{id}
 Content-Type: application/json
 Content-length: 215
 
 {
-  "id": "{permissionGrantPreApprovalPolicyId}",
+  "id": "{id}",
   "conditions": [
     {
       "scopeType": "Group",
@@ -75,7 +75,7 @@ Content-length: 215
         "@odata.type": "microsoft.graph.enumeratedSensitivityLabels",
         "labelKind": "enumerated",
         "sensitivityLabels": [
-          "{sensitivityLabelsId}"
+          "{id}"
         ]
       },
       "permissions": {
@@ -84,7 +84,7 @@ Content-length: 215
         "permissionType": "application",
         "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
         "permissionids": [
-          "{permissionId}"
+          "{id}"
         ]
       }
     }

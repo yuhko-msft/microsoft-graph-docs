@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Delegated (work or school account)|Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Application|Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /servicePrincipals/{servicePrincipalsId}/permissionGrantPreApprovalPolicies
+GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
+GET /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/{id}
 
 ```
 

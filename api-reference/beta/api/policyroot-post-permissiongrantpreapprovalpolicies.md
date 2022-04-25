@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
+POST /policies/permissionGrantPreApprovalPolicies
 Content-Type: application/json
 Content-length: 215
 
