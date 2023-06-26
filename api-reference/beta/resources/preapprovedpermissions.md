@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A preApprovedPermissions describes the collection of permission that has been pre-approved.
+A preApprovedPermissions describes the list of permission that has been pre-approved.
 
 ## Properties
 |Property|Type|Description|
