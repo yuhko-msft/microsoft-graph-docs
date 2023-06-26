@@ -1,6 +1,6 @@
 ---
 title: "permissionGrantPreApprovalPolicy resource type"
-description: "control which user can consent to which applications under what conditions"
+description: "Policies which specify the conditions under which consent can be granted to a specific application"
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A permission grant pre-approval policy is used to help tenant admin granularly control which user can consent to which applications under what conditions.
+A permission grant pre-approval policy is used to help tenant admin granularly control which specify the conditions under which consent can be granted to a specific application.
 
 A permission grant pre-approval policy consists of a list of condition sets.
 
