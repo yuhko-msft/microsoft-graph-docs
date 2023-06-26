@@ -21,7 +21,6 @@ A preApprovalDetail describes a list of conditions that has pre-approved for con
 |permissions|[preApprovedPermissions](../resources/preapprovedpermissions.md)|The conditions relating to permissions being granted for the pre-approved application. The list of **id** values for the specific permissions to match with, or a list with the single value `all` to match with any permission. The **id** of delegated permissions can be found in the **oauth2PermissionScopes** property of the API's [**servicePrincipal**](serviceprincipal.md) object. The **id** of resource-specific application permissions can be found in the **resourceSpecificApplicationPermissions** property of the API's [**servicePrincipal**](serviceprincipal.md) object. Default is the single value `all`. Required.|
 |scopeType|String| The resource scope type the pre-approval applies to. Possible values: `group` for [groups](../resources/group.md) and [teams](../resources/team.md), `chat` for [chats](../resources/chat.md),  or `tenant` for tenant-wide access. Required.|
 |sensitivityLabels|[scopeSensitivityLabels](../resources/scopesensitivitylabels.md)|Conditions on the [sensitivity labels](/microsoftteams/sensitivity-labels) the pre-approval applies to. The list of **id** values for the specific sensitivity labels to match with. [Learn more](security-informationprotection-list-sensitivitylabels.md) on how to get id. Required.
-> **Note:** Chat resource **does not** support sensitivityLabels yet. Please set labelKind to `all` for all sensitivity labels are allowed.
 
 
 
