@@ -27,6 +27,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get activities by interval][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
 | [List pages][]                                    | GET /sites/{site-id}/pages                                  |
 | [List root sites][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
+| [List root sites across geographies][]            | GET /site/getAllSites                                      |
 | [Search for sites][]                              | GET /sites?search={query}                                   |
 | [Follow site][]                                   | POST /users/{user-id}/followedSites/add                     |
 | [Unfollow site][]                                 | POST /users/{user-id}/followedSites/remove                  |
@@ -51,6 +52,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [List pages]: ../api/sitepage-list.md
 [List root sites]: ../api/site-list.md
+[List root sites across geographies]: ../api/site-getallsites.md
 [Search for sites]: ../api/site-search.md
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
@@ -78,7 +80,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string             | The name / title of the item.                                                                  |
 | **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.            |
-| **settings**             | [siteSettings]     | The settings on this site. Returned only on $select. Read-only.                                |
+| **settings**             | [siteSettings]     | The settings on this site. Read-only.                                |
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.                                          |

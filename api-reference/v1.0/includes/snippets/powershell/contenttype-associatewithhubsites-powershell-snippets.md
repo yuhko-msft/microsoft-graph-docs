@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	HubSiteUrls = @(
+	hubSiteUrls = @(
 		"https://graph.microsoft.com/v1.0/sites/{site-id}"
 	)
-	PropagateToExistingLists = $false
+	propagateToExistingLists = $false
 }
 
-Join-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+Join-MgSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
 ```

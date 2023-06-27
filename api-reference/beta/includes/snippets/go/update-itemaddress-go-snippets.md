@@ -4,20 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewItemAddress()
-allowedAudiences := "me"
-requestBody.SetAllowedAudiences(&allowedAudiences)
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewItemAddress()
+allowedAudiences := graphmodels.ME_ALLOWEDAUDIENCES 
+requestBody.SetAllowedAudiences(&allowedAudiences) 
 displayName := "Secret Hideout"
-requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ItemAddressRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-itemAddressId := "itemAddress-id"
-graphClient.UsersById(&userId).Profile().AddressesById(&itemAddressId).Patch(options)
+requestBody.SetDisplayName(&displayName) 
+
+result, err := graphClient.Users().ByUserId("user-id").Profile().Addresses().ByAddresseId("itemAddress-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

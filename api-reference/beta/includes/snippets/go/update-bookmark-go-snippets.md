@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewBookmark()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelssearch "github.com/microsoftgraph/msgraph-beta-sdk-go/models/search"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodelssearch.NewBookmark()
 description := "Book a fancy vacation in Tuscany or browse museums in Florence."
-requestBody.SetDescription(&description)
-options := &msgraphsdk.BookmarkRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-bookmarkId := "bookmark-id"
-graphClient.Search().BookmarksById(&bookmarkId).Patch(options)
+requestBody.SetDescription(&description) 
+
+result, err := graphClient.Search().Bookmarks().ByBookmarkId("bookmark-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

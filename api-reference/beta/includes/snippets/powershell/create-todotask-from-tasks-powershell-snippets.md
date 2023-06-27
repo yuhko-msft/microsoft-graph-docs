@@ -7,12 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	Title = "A new task"
-	LinkedResources = @(
+	title = "A new task"
+	categories = @(
+		"Important"
+	)
+	linkedResources = @(
 		@{
-			WebUrl = "http://microsoft.com"
-			ApplicationName = "Microsoft"
-			DisplayName = "Microsoft"
+			webUrl = "http://microsoft.com"
+			applicationName = "Microsoft"
+			displayName = "Microsoft"
 		}
 	)
 }

@@ -7,7 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	DisplayName = "CrossTenantAccessPolicy"
+	allowedCloudEndpoints = @(
+		"microsoftonline.us"
+		"partner.microsoftonline.cn"
+	)
 }
 
 Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params

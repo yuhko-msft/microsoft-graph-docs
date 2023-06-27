@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetQueryParameters{
-	Expand: "instance($expand=definition)",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
+	Expand: [] string {"instance($expand=definition)"},
 }
-options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetOptions{
-	Q: requestParameters,
+configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById(&accessReviewInstanceDecisionItemId).Get(options)
+
+result, err := graphClient.IdentityGovernance().AccessReviews().Decisions().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
 
 
 ```

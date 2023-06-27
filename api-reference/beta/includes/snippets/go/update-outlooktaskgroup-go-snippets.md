@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewOutlookTaskGroup()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphmodels.NewOutlookTaskGroup()
 name := "Personal Tasks"
-requestBody.SetName(&name)
-options := &msgraphsdk.OutlookTaskGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-outlookTaskGroupId := "outlookTaskGroup-id"
-graphClient.Me().Outlook().TaskGroupsById(&outlookTaskGroupId).Patch(options)
+requestBody.SetName(&name) 
+
+result, err := graphClient.Me().Outlook().TaskGroups().ByTaskGroupId("outlookTaskGroup-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,14 +1,13 @@
 ---
-author: JeremyKelley
-description: This resource represents an item in a SharePoint list.
-ms.date: 09/11/2017
-title: ListItem
+author: "JeremyKelley"
+description: "Represents an item in a SharePoint list."
+title: "listItem resource" 
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# ListItem resource
+# listItem resource
 
 Namespace: microsoft.graph
 
@@ -20,7 +19,7 @@ All items in a SharePoint document library can be represented as a **listItem** 
 
 Column values in the list are available through the `fieldValueSet` dictionary.
 
-## Tasks on a listItem
+## Methods
 
 The following tasks are available for **listItem** resources.
 All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
@@ -36,6 +35,10 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}                       |
 | [Update column values][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
+| [List documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+| [Create documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+| [Restore documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [Get delta][item-changes]    | GET /items/{item-id}/delta
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -44,43 +47,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 [CreateLink]: ../api/listitem-createlink.md
-
-## JSON representation
-
-Here is a JSON representation of a **listItem** resource.
-
-<!--{
-  "blockType": "resource",
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
-}-->
-
-```json
-{
-  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
-  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of resource",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of resource",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
-}
-```
+[item-changes]: ../api/listitem-delta.md
 
 ## Properties
 
@@ -113,10 +80,49 @@ The following properties are inherited from **[baseItem][]**.
 | Relationship | Type                           | Description                                                                                        |
 | :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | activities   | [itemActivity][] collection    | The list of recent activities that took place on this item.                                        |
-| analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.                                  |
+| analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.|
+|documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for a document set version created by a user.|
 | driveItem    | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
 | fields       | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |
 | versions     | [listItemVersion][] collection | The list of previous versions of the list item.                                                    |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
+
+```json
+{
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "documentSetVersions": [{"@odata.type": "microsoft.graph.documentSetVersion"}],
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of resource",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of resource",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "url"
+}
+```
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
