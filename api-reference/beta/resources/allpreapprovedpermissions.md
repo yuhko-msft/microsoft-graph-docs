@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.allPreApprovedPermissions",
-  "permissionKind": "String",
+  "permissionKind": "all",
   "permissionType": "String"
 }
 ```
