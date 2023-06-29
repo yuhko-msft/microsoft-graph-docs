@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A preApprovedPermissions describes the list of permission that has been pre-approved.
+A preApproved describes the list of permission that has been pre-approved. This is an abstract base type that's inherited by the following derived types: [allPreApprovedPermissions](allPreApprovedPermissions.md), [allPreApprovedPermissionsOnResourceApp](allPreApprovedPermissionsOnResourceApp.md), [enumeratedPreApprovedPermissions](enumeratedPreApprovedPermissions.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionKind|permissionKind| It indicates what kind of permissions has been icnluded in the condition sets. Possible values: `all` for all  permissions are allowed, or `enumerated` for a selected set of permissions from a signle resource application are allowed. The value `allPermissionsOnResourceApp` indicates all permissions from the specific resource application are allowed. Required.|
+|permissionKind|permissionKind| It indicates what kind of permissions has been included in the condition sets. Possible values: `all` for all  permissions is allowed, `enumerated` for a selected set of permissions from a single resource application are allowed, or `allPermissionsOnResourceApp` for all permissions from the specific resource application are allowed. Required.|
 |permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions, or `delegated` for delegated permissions. Required.|
 
 ## Relationships
