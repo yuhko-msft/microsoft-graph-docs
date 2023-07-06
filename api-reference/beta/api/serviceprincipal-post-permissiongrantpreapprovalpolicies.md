@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /policies/permissionGrantPreApprovalPolicies
 POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies
 ```
 
@@ -64,17 +63,11 @@ If successful, this method returns a `201 Created` response code and a [permissi
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
+POST https://graph.microsoft.com/beta/servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPolicies/$ref
 Content-Type: application/json
-Content-length: 215
 
 {
-  "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "conditions": [
-    {
-      "@odata.type": "microsoft.graph.preApprovalDetail"
-    }
-  ]
+    "@odata.id": "https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/{{ permissionGrantPreApprovalPolicies id }}"
 }
 ```
 
@@ -88,17 +81,6 @@ Content-length: 215
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
-  "id": "{id}",
-  "conditions": [
-    {
-      "@odata.type": "microsoft.graph.preApprovalDetail"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
