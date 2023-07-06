@@ -65,7 +65,6 @@ If successful, this method returns a `201 Created` response code and a [permissi
 ``` http
 POST /policies/permissionGrantPreApprovalPolicies
 Content-Type: application/json
-Content-length: 215
 
 {
   "@odata.type": "#microsoft.graph.permissionGrantPreApprovalPolicy",
