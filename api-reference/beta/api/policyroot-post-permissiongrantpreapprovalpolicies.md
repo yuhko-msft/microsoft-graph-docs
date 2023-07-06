@@ -74,7 +74,7 @@ Content-Type: application/json
                 "@odata.type": "microsoft.graph.enumeratedScopeSensitivityLabels",
                 "labelKind": "enumerated",
                 "sensitivityLabels": [
-                    {ids}
+                    "{ ids }"
                 ]
             },
             "permissions": {
@@ -93,9 +93,9 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
                 "permissionKind": "enumerated",
                 "permissionType": "application",
-                "resourceApplicationId": "{id}",
+                "resourceApplicationId": "{ id }",
                 "permissionIds": [
-                    {ids}
+                    "{ ids }"
                 ]
             }
         }
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
-    "id": "{id}",
+    "id": "{ id }",
     "deletedDateTime": null,
     "conditions": [
         {
@@ -127,7 +127,7 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.enumeratedScopeSensitivityLabels",
                 "labelKind": "enumerated",
                 "sensitivityLabels": [
-                    {ids}
+                    "{ ids }"
                 ]
             },
             "permissions": {
@@ -145,9 +145,9 @@ Content-Type: application/json
             "permissions": {
                 "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
                 "permissionKind": "enumerated",
-                "resourceApplicationId": "{id}",
+                "resourceApplicationId": "{ id }",
                 "permissionIds": [
-                    {ids}
+                    "{ ids }"
                 ],
                 "permissionType": "application"
             }
