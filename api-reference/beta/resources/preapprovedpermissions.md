@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A preApproved describes the list of permission that has been pre-approved. This is an abstract base type that's inherited by the following derived types: [allPreApprovedPermissions](/allPreApprovedPermissions.md), [allPreApprovedPermissionsOnResourceApp](/allPreApprovedPermissionsOnResourceApp.md), [enumeratedPreApprovedPermissions](/enumeratedPreApprovedPermissions.md)
+A preApproved describes the list of permission that has been pre-approved. This is an abstract base type that's inherited by the following derived types: [allPreApprovedPermissions](allPreApprovedPermissions.md), [allPreApprovedPermissionsOnResourceApp](allPreApprovedPermissionsOnResourceApp.md), [enumeratedPreApprovedPermissions](enumeratedPreApprovedPermissions.md)
 
 ## Properties
 |Property|Type|Description|
