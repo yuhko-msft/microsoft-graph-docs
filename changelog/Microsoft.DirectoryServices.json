@@ -13903,7 +13903,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "allPreApprovedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added the [allPreApprovedPermissions](https://docs.microsoft.com/en-us/graph/api/resources/allPreApprovedPermissions?view=graph-rest-beta) resource type.",
+          "Description": "Added the [allPreApprovedPermissions](https://learn.microsoft.com/en-us/graph/api/resources/allPreApprovedPermissions?view=graph-rest-beta) resource type.",
           "Target": "allPreApprovedPermissions"
         },
         {
@@ -13911,7 +13911,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "allPreApprovedPermissionsOnResourceApp",
           "ChangeType": "Addition",
-          "Description": "Added the [allPreApprovedPermissionsOnResourceApp](https://docs.microsoft.com/en-us/graph/api/resources/allPreApprovedPermissionsOnResourceApp?view=graph-rest-beta) resource type.",
+          "Description": "Added the [allPreApprovedPermissionsOnResourceApp](https://learn.microsoft.com/en-us/graph/api/resources/allPreApprovedPermissionsOnResourceApp?view=graph-rest-beta) resource type.",
           "Target": "allPreApprovedPermissionsOnResourceApp"
         },
         {
@@ -13919,7 +13919,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "allScopeSensitivityLabels",
           "ChangeType": "Addition",
-          "Description": "Added the [allScopeSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/resources/allScopeSensitivityLabels?view=graph-rest-beta) resource type.",
+          "Description": "Added the [allScopeSensitivityLabels](https://learn.microsoft.com/en-us/graph/api/resources/allScopeSensitivityLabels?view=graph-rest-beta) resource type.",
           "Target": "allScopeSensitivityLabels"
         },
         {
@@ -13927,7 +13927,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enumeratedPreApprovedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added the [enumeratedPreApprovedPermissions](https://docs.microsoft.com/en-us/graph/api/resources/enumeratedPreApprovedPermissions?view=graph-rest-beta) resource type.",
+          "Description": "Added the [enumeratedPreApprovedPermissions](https://learn.microsoft.com/en-us/graph/api/resources/enumeratedPreApprovedPermissions?view=graph-rest-beta) resource type.",
           "Target": "enumeratedPreApprovedPermissions"
         },
         {
@@ -13935,7 +13935,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enumeratedScopeSensitivityLabels",
           "ChangeType": "Addition",
-          "Description": "Added the [enumeratedScopeSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/resources/enumeratedScopeSensitivityLabels?view=graph-rest-beta) resource type.",
+          "Description": "Added the [enumeratedScopeSensitivityLabels](https://learn.microsoft.com/en-us/graph/api/resources/enumeratedScopeSensitivityLabels?view=graph-rest-beta) resource type.",
           "Target": "enumeratedScopeSensitivityLabels"
         },
         {
@@ -13943,7 +13943,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "preApprovalDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [preApprovalDetail](https://docs.microsoft.com/en-us/graph/api/resources/preApprovalDetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the [preApprovalDetail](https://learn.microsoft.com/en-us/graph/api/resources/preApprovalDetail?view=graph-rest-beta) resource type.",
           "Target": "preApprovalDetail"
         },
         {
@@ -13951,7 +13951,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "preApprovedPermissions",
           "ChangeType": "Addition",
-          "Description": "Added the [preApprovedPermissions](https://docs.microsoft.com/en-us/graph/api/resources/preApprovedPermissions?view=graph-rest-beta) resource type.",
+          "Description": "Added the [preApprovedPermissions](https://learn.microsoft.com/en-us/graph/api/resources/preApprovedPermissions?view=graph-rest-beta) resource type.",
           "Target": "preApprovedPermissions"
         },
         {
@@ -13959,7 +13959,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "scopeSensitivityLabels",
           "ChangeType": "Addition",
-          "Description": "Added the [scopeSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/resources/scopeSensitivityLabels?view=graph-rest-beta) resource type.",
+          "Description": "Added the [scopeSensitivityLabels](https://learn.microsoft.com/en-us/graph/api/resources/scopeSensitivityLabels?view=graph-rest-beta) resource type.",
           "Target": "scopeSensitivityLabels"
         },
         {
@@ -13967,7 +13967,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permissionGrantPreApprovalPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [permissionGrantPreApprovalPolicy](https://docs.microsoft.com/en-us/graph/api/resources/permissionGrantPreApprovalPolicy?view=graph-rest-beta) resource",
+          "Description": "Added the [permissionGrantPreApprovalPolicy](https://learn.microsoft.com/en-us/graph/api/resources/permissionGrantPreApprovalPolicy?view=graph-rest-beta) resource",
           "Target": "permissionGrantPreApprovalPolicy"
         },
         {
@@ -13975,7 +13975,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permissionGrantPreApprovalPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         }
       ],
