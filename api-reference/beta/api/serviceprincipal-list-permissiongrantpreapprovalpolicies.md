@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [permissionGra
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_permissiongrantpreapprovalpolicy_from_"
+  "name": "serviceprincipal_get_permissionGrantPreApprovalPolicies"
 }
 -->
 ``` http
