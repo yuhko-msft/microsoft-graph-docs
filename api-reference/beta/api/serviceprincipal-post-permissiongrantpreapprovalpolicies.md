@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies
+POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/$ref
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ You can specify the following properties when creating a **permissionGrantPreApp
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
