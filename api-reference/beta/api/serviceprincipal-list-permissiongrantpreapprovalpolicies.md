@@ -76,28 +76,42 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "{id}",
-  "conditions": [
-    {
-      "scopeType": "Group",
-      "scopeSensitivityLabels": {
-        "@odata.type": "microsoft.graph.enumeratedSensitivityLabels",
-        "labelKind": "enumerated",
-        "sensitivityLabels": [
-          "{id}"
-        ]
-      },
-      "permissions": {
-        "@odata.type": "microsoft.graph.enumeratedPreApprovedPermissions",
-        "permissionKind": "enumerated",
-        "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
-        "permissionType": "application",
-        "permissionids": [
-          "{id}"
-        ]
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
+    "id": "{ id }",
+    "deletedDateTime": null,
+    "conditions": [
+        {
+            "scopeType": "chat",
+            "sensitivityLabels": {
+                "@odata.type": "#microsoft.graph.enumeratedScopeSensitivityLabels",
+                "labelKind": "enumerated",
+                "sensitivityLabels": [
+                    "{ ids }"
+                ]
+            },
+            "permissions": {
+                "@odata.type": "#microsoft.graph.allPreApprovedPermissions",
+                "permissionKind": "all",
+                "permissionType": "application"
+            }
+        },
+        {
+            "scopeType": "group",
+            "sensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
+            },
+            "permissions": {
+                "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
+                "permissionKind": "enumerated",
+                "resourceApplicationId": "{ id }",
+                "permissionIds": [
+                    "{ ids }"
+                ],
+                "permissionType": "application"
+            }
+        }
+    ]
 }
 ```
 
