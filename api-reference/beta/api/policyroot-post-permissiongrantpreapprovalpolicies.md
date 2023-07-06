@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_permissiongrantpreapprovalpolicy_from_"
+  "name": "create_permissiongrantpreapprovalpolicy"
 }
 -->
 ``` http
