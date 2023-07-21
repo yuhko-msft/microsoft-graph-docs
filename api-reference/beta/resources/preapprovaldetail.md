@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType
 ---
-
+ 
 # preApprovalDetail resource type
 
 Namespace: microsoft.graph
