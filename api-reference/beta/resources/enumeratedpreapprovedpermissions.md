@@ -13,13 +13,13 @@ Namespace: microsoft.graph.enumeratedPreApprovedPermissions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The derived type when all permissions from any resource app are pre-approved for consent. When this type is used, if the client application requests more permissions after the policy is created, the policy will still apply.
+The derived type is when only permissions explicitly preapproved will be allowed for consent. When this type is used, if the client application requests more permissions after the policy is created, the policy will still apply.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |permissionIds|String collection|The list of **id** values for the specific permissions to match with. The **id** of resource-specific application permissions can be found in the **resourceSpecificApplicationPermissions** property of the API's [**servicePrincipal**](serviceprincipal.md) object.|
-|permissionKind|permissionKind| It indicates what kind of permissions has been icnludes in the condition sets. Possible values: `all` for all  permissions are allowed, or `enumerated` for a selected set of permissions from a signle resource application are allowed. The value `allPermissionsOnResourceApp` indicates all permissions from the specific resource application are allowed. Required.|
+|permissionKind|permissionKind| It indicates what kind of permissions has been included in the condition sets. Possible values: `all` for all  permissions are allowed, or `enumerated` for a selected set of permissions from a single resource application are allowed. The value `allPermissionsOnResourceApp` indicates all permissions from the specific resource application are allowed. Required.|
 |permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions (e.g. app roles), or `delegated` for delegated permissions.  Required.|
 |resourceApplicationId|String|The resource application id. Required.|
 
