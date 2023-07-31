@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The derived type is when all permissions from any resource app are pre-approved for consent. When this type is used, if the client application requests more permissions after the policy is created, the policy will still apply.
+This type is used in a [preApprovalDetail](preapprovaldetail.md) resource to indicate that all permissions for all APIs are included in the pre-approval.
 
 ## Properties
 |Property|Type|Description|
