@@ -1,6 +1,6 @@
 ---
 title: "scopeSensitivityLabels resource type"
-description: "Allow admins to protect and regulate access to sensitive organizational content."
+description: "A scopeSensitivityLabels describes when consent is allowed for what sensitivity labels are specified in the policy"
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A scopeSensitivityLabels describes a sensitivity level **ONLY** for the group. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
-
+A scopeSensitivityLabels type describes a sensitivity level **ONLY** for the group. It allows you to protect sensitive organizational data based on sensitivity labels. This is an abstract base type and cannot be used directly. Instead, use one of the following derived types:
+* [allscopesensitivitylabels](allscopesensitivitylabels.md) for indicating all sensitivity labels are pre-approved
+* [enumeratedscopesensitivitylabels](enumeratedscopesensitivitylabels.md) for indicating that only the specified sensitivity labels have been pre-approved
 
 ## Properties
 |Property|Type|Description|
