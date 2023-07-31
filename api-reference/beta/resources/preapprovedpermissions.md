@@ -1,6 +1,6 @@
 ---
 title: "preApprovedPermissions resource type"
-description: "A preApprovedPermissions describes the collection of permission that has been preApproved"
+description: "A preApprovedPermissions describes the permissions that has been pre-approved"
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
