@@ -19,7 +19,7 @@ The derived type is when only specific sensitivity labels on a resource app are 
 |Property|Type|Description|
 |:---|:---|:---|
 |labelKind|labelKind|It indicates what kind of sensitivity label has been included. Possible value: `enumerated` for a selected set of sensitivity labels from a single resource application is allowed.  Required.|
-|sensitivityLabels|String collection|The sensitivity labels that are applicable to the scope type and has been pre-approved. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](/microsoft-365/compliance/sensitivity-labels) 
+|sensitivityLabels|String collection|The sensitivity labels that are applicable to the scope type and has been pre-approved. It allows you to protect sensitive organizational data. Learn about how to get id of  [sensitivity labels](/microsoft-365/compliance/sensitivity-labels) 
 
 ## Relationships
 None.
