@@ -18,7 +18,7 @@ The derived type is when all specific sensitivity labels from any resource app a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|labelKind|labelKind|It indicates what kind of sensitivity label has been included. Possible values: `all` for all sensitivity labels are allowed. Required.|
+|labelKind|labelKind|It indicates what kind of sensitivity label has been included. Only `all` for all sensitivity labels are allowed. Required.|
 
 ## Relationships
 None.
