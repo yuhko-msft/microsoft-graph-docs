@@ -18,7 +18,7 @@ A preApproved describes the list of permission that has been pre-approved. This 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionKind|permissionKind| It indicates what kind of permissions has been included in the condition sets. Possible values: `all` for all  permissions is allowed, `enumerated` for a selected set of permissions from a single resource application are allowed, or `allPermissionsOnResourceApp` for all permissions from the specific resource application are allowed. Required.|
+|permissionKind|[permissionKind](enums.md#permissionKind-values)| Indicates how permissions are being included in this condition set. Possible values: `all` for all permissions, `enumerated` for a given list of permissions, or `allPermissionsOnResourceApp` for all permissions from a given API. Required.|
 |permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions, or `delegated` for delegated permissions. Required.|
 
 ## Relationships
