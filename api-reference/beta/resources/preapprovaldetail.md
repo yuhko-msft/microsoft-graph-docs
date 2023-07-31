@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A preApprovalDetail describes a list of conditions that has pre-approved for consent. The conditions include permissions, resource scope type, and sensitivity labels that has been tagged for the resource scope.
+A preApprovalDetail describes a list of conditions under which the app has been pre-approved for consent. The conditions include permissions, resource scope type, and sensitivity labels that has been tagged for the resource scope.
 
 ## Properties
 |Property|Type|Description|
