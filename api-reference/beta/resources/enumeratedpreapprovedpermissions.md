@@ -13,7 +13,7 @@ Namespace: microsoft.graph.enumeratedPreApprovedPermissions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The derived type is when only permissions explicitly preapproved will be allowed for consent. When this type is used, if the client application requests more permissions after the policy is created, the policy will still apply.
+The derived type is when only specific permissions on a resource app are pre-approved for consent. When this type is used, consent is allowed ONLY for permissions that are specified in the policy. If the client application requests more permissions after the policy is created, the policy will not apply.
 
 ## Properties
 |Property|Type|Description|
