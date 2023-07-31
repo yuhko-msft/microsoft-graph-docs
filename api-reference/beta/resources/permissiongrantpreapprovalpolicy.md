@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A permission grant pre-approval policy is used to help tenant admin granularly control which specify the conditions under which consent can be granted to a specific application.
+A permission grant pre-approval policy is used to help administrators granularly control the conditions under which consent can be granted to a specific application.
 
 A permission grant pre-approval policy consists of a list of condition sets.
 
