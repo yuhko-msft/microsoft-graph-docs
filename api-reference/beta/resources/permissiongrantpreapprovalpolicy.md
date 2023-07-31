@@ -31,7 +31,7 @@ A permission grant pre-approval policy consists of a list of condition sets. An 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|A list of conditions that tenant admin has pre-approved for the given service principal.|
+|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|A list of condition sets describing the conditions under which the permission to grant consent for the app has been pre-approved.|
 |id|String|The unique identifier for the permission grant pre-approval policy.|
 
 ## Relationships
