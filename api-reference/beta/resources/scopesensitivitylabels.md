@@ -23,7 +23,7 @@ A scopeSensitivityLabels type describes a sensitivity level **ONLY** for the gro
 |:---|:---|:---|
 |labelKind|String|Indicates what kind of sensitivity label has been included. Possible values: `all` for all sensitivity labels are allowed, or `enumerated` for a selected set of sensitivity labels from a single resource application are allowed.  Required.|
 
-> **Note:** Chat resource **does not** support scopeSensitivityLabels yet. Please set labelKind to `all` for all sensitivity labels are allowed.
+> **Note:** Since chat resources don't support sensitivity labels, this type should not be used when the preApprovalDetail resource's scopeType is "chat".
 
 ## Relationships
 None.
