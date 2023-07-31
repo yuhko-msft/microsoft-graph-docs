@@ -1,6 +1,6 @@
 ---
 title: "enumeratedPreApprovedPermissions resource type"
-description: "microsoft.graph.enumeratedPreApprovedPermissions"
+description: "The derived type is when only permissions explicitly preapproved will be allowed for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
