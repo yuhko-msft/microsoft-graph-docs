@@ -1,6 +1,6 @@
 ---
 title: "allScopeSensitivityLabels resource type"
-description: "Namespace: microsoft.graph.allScopeSensitivityLabels"
+description: "The derived type is when all sensitivity labels from any resource app are pre-approved for consent"
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.allScopeSensitivityLabels
 
-The derived type is when all sensitivity labels from any resource app are pre-approved for consent. When this type is used, if the client application requests more sensitivity labels after the policy is created, the policy will still apply.
+The derived type is when all specific sensitivity labels from any resource app are pre-approved for consent. When this type is used, consent is allowed for all sensitivity labels that are specified in the policy. If the client application requests access to more resource scopes after the policy is created, the policy will still apply.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
