@@ -18,7 +18,7 @@ This type is used in a [preApprovalDetail](preapprovaldetail.md) resource to ind
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionKind|permissionKind| It indicates what kind of permissions has been included in the condition sets. Possible value: `all` for all  permissions are allowed. Required.|
+|permissionKind|permissionKind| It indicates what kind of permissions has been included in the condition sets. Possible value: `all` to indicate all permissions for all APIs are included. Required.|
 |permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions (e.g. app roles), or `delegated` for delegated permissions. Required.|
 
 ## Relationships
