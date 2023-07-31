@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A permission grant pre-approval policy is used to help administrators granularly control the conditions under which consent can be granted to a specific application.
 
-A permission grant pre-approval policy consists of a list of condition sets.
+A permission grant pre-approval policy consists of a list of condition sets. An event matches a permission grant pre-approval policy if it matches _at least one_ of the condition sets in the **conditions** list.
 
 
 ## Methods
