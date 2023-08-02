@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# ServicePrincipal: Assign permissionGrantPreApprovalPolicy
+# ServicePrincipal: Unassign permissionGrantPreApprovalPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,23 +30,16 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/$ref
+DELETE /servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPolicies/{{ policy id }}/$ref
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.
-
-You can specify the following properties when creating a **permissionGrantPreApprovalPolicy**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|A list of conditions that tenant admin has pre-approved for the given service principal. Optional. Optional.|
+Do not supply a request body for this method.
 
 
 
@@ -63,12 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPolicies/$ref
-Content-Type: application/json
-
-{
-    "@odata.id": "https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/{{ permissionGrantPreApprovalPolicies id }}"
-}
+  DELETE https://graph.microsoft.com/beta/servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPolicies/{{ policy id }}/$ref
 ```
 
 
