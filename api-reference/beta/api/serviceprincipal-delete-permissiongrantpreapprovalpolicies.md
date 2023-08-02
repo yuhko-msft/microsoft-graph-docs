@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-  DELETE https://graph.microsoft.com/beta/servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPolicies/{{ policy id }}/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPolicies/{{ policy id }}/$ref
 ```
 
 
