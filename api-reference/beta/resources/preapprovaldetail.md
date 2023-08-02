@@ -18,7 +18,7 @@ A preApprovalDetail describes a list of conditions under which the app has been 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissions|[preApprovedPermissions](../resources/preapprovedpermissions.md)|The conditions relating to permissions being granted for the pre-approved application. Three possible values: [allPreApprovedPermissions](allPreApprovedPermissions.md) for indicating all permissions for all APIs are pre-approved, [allPreApprovedPermissionsOnResourceApp](allPreApprovedPermissionsOnResourceApp.md) for indicating all permissions for a specified API are pre-approved, or [enumeratedPreApprovedPermissions](enumeratedPreApprovedPermissions.md) for indicating that only the specified permissions have been pre-approved. Required.|
+|permissions|[preApprovedPermissions](../resources/preapprovedpermissions.md)|Specifies the permissions being preapproved for consent. Required.|
 |scopeType|resourceScopeType| The resource scope type the pre-approval applies to. Possible values: `group` for [groups](../resources/group.md) and [teams](../resources/team.md), or `chat` for [chats](../resources/chat.md) Required.|
 |sensitivityLabels|[scopeSensitivityLabels](../resources/scopesensitivitylabels.md)|Conditions on the [sensitivity labels](/microsoftteams/sensitivity-labels) of the target resource scope the pre-approval applies to. Required.
 
