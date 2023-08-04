@@ -1,6 +1,6 @@
 ---
 title: "permissionGrantPreApprovalPolicy resource type"
-description: "Policies which specify the conditions under which consent can be granted to a specific application"
+description: "Policies which specify the conditions under which consent can be granted to a specific application."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
