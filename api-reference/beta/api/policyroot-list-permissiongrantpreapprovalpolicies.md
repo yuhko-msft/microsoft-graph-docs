@@ -1,6 +1,6 @@
 ---
 title: "List permissionGrantPreApprovalPolicies"
-description: "Get the permissionGrantPreApprovalPolicy resources from the permissionGrantPreApprovalPolicies navigation property."
+description: "Get the permissionGrantPreApprovalPolicy objects in the tenant."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
