@@ -1,6 +1,6 @@
 ---
 title: "preApprovalDetail resource type"
-description: "A preApprovalDetail describes a list of conditions under which the app has been pre-approved for consent"
+description: "A preApprovalDetail describes a list of conditions under which an app can be pre-approved for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
