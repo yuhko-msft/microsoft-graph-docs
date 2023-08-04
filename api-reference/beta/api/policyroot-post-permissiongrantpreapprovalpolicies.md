@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.PermissionGrant|
 
+[!INCLUDE rbac-global-secure-access-apis-read]
+
 ## HTTP request
 
 <!-- {
@@ -54,7 +56,10 @@ You can specify the following properties when creating a **permissionGrantPreApp
 
 If successful, this method returns a `201 Created` response code and a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object in the response body.
 
-## Examples
+## Example 1  - Create a pre-approval policy for both group and chat scope.
+Under the first collection that scopeType is `chat`, it shows how to use "enumerated" for sensitivity labels and how to use "all" to include all permissions.
+
+Under the seconde collection that scopeType is `group`, it shows how to use "all" for sensitivity labels and how to use "enumerated" to include a given list of permissions.
 
 ### Request
 <!-- {
@@ -74,7 +79,8 @@ Content-Type: application/json
                 "@odata.type": "microsoft.graph.enumeratedScopeSensitivityLabels",
                 "labelKind": "enumerated",
                 "sensitivityLabels": [
-                    "{ ids }"
+                    "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
+                    "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
                 ]
             },
             "permissions": {
@@ -93,9 +99,10 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
                 "permissionKind": "enumerated",
                 "permissionType": "application",
-                "resourceApplicationId": "{ id }",
+                "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
                 "permissionIds": [
-                    "{ ids }"
+                    "134483aa-3dda-4d65-ac91-b8dda1417875",
+                    "9d33613d-f855-483b-bca7-ea63ac9f5485"
                 ]
             }
         }
@@ -118,7 +125,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
-    "id": "{ id }",
+    "id": "71ba13dc-5947-4e59-bcc5-0ad5c339a853",
     "deletedDateTime": null,
     "conditions": [
         {
@@ -127,7 +134,8 @@ Content-Type: application/json
                 "@odata.type": "#microsoft.graph.enumeratedScopeSensitivityLabels",
                 "labelKind": "enumerated",
                 "sensitivityLabels": [
-                    "{ ids }"
+                    "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
+                    "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
                 ]
             },
             "permissions": {
@@ -145,9 +153,10 @@ Content-Type: application/json
             "permissions": {
                 "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
                 "permissionKind": "enumerated",
-                "resourceApplicationId": "{ id }",
+                "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
                 "permissionIds": [
-                    "{ ids }"
+                    "134483aa-3dda-4d65-ac91-b8dda1417875",
+                    "9d33613d-f855-483b-bca7-ea63ac9f5485"
                 ],
                 "permissionType": "application"
             }
@@ -156,3 +165,68 @@ Content-Type: application/json
 }
 ```
 
+## Example 2  - Create a pre-approval policy for only group scope with only for all permissions from a given API.
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_permissiongrantpreapprovalpolicy"
+}
+-->
+``` http
+POST /policies/permissionGrantPreApprovalPolicies
+Content-Type: application/json
+
+{
+    "conditions": [
+        {
+            "scopeType": "group",
+            "sensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
+            },
+            "permissions": {
+                "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
+                "permissionKind": "allPermissionsOnResourceApp",
+                "permissionType": "application",
+                "resourceApplicationId": "00000003-0000-0000-c000-000000000000"
+            }
+        }
+    ]
+}
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permissionGrantPreApprovalPolicy"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies/$entity",
+    "id": "81cc4c53-1333-47b3-9fa5-1963876e0c5c",
+    "deletedDateTime": null,
+    "conditions": [
+        {
+            "scopeType": "group",
+            "sensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
+            },
+            "permissions": {
+                "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
+                "permissionKind": "allPermissionsOnResourceApp",
+                "permissionType": "application",
+                "resourceApplicationId": "00000003-0000-0000-c000-000000000000"
+            }
+        }
+    ]
+}
+```

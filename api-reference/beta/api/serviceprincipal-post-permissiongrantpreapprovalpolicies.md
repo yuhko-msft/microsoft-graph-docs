@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Application.ReadWrite.All and Policy.ReadWrite.PermissionGrant|
 
+[!INCLUDE rbac-global-secure-access-apis-read]
+
 ## HTTP request
 
 <!-- {
@@ -40,15 +42,7 @@ POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/$ref
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.
-
-You can specify the following properties when creating a **permissionGrantPreApprovalPolicy**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|A list of conditions that tenant admin has pre-approved for the given service principal. Optional. Optional.|
-
-
+In the request body, supply a JSON object and pass an @odata.id parameter with a single policy object from the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) collection.
 
 ## Response
 
@@ -63,11 +57,11 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPolicies/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/37d4ba51-cc54-4762-9ff7-deb5c9438cc7/permissionGrantPreApprovalPolicies/$ref
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/{{ permissionGrantPreApprovalPolicies id }}"
+    "@odata.id": "https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/71ba13dc-5947-4e59-bcc5-0ad5c339a853"
 }
 ```
 

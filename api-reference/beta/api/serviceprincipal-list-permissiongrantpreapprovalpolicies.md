@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Application.Read.All and Policy.Read.PermissionGrant, Application.Read.All and Policy.ReadWrite.PermissionGrant|
 
+[!INCLUDE rbac-global-secure-access-apis-read]
+
 ## HTTP request
 
 <!-- {
@@ -86,7 +88,8 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.enumeratedScopeSensitivityLabels",
                 "labelKind": "enumerated",
                 "sensitivityLabels": [
-                    "{ ids }"
+                    "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
+                    "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
                 ]
             },
             "permissions": {
@@ -104,9 +107,10 @@ Content-type: application/json
             "permissions": {
                 "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
                 "permissionKind": "enumerated",
-                "resourceApplicationId": "{ id }",
+                "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
                 "permissionIds": [
-                    "{ ids }"
+                    "134483aa-3dda-4d65-ac91-b8dda1417875",
+                    "9d33613d-f855-483b-bca7-ea63ac9f5485"
                 ],
                 "permissionType": "application"
             }
