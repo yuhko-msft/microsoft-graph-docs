@@ -32,7 +32,8 @@ A permission grant pre-approval policy consists of a list of condition sets. An 
 |Property|Type|Description|
 |:---|:---|:---|
 |conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection|A list of condition sets describing the conditions under which the permission to grant consent for the app has been pre-approved.|
-|id|String|The unique identifier for the permission grant pre-approval policy.|
+|deletedDateTime|DateTimeOffset|Null. Inherited from [directoryobject](../resources/directoryobject.md).|
+|id|String|The unique identifier for the permission grant pre-approval policy. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
