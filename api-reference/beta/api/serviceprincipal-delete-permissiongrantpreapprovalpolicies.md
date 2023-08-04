@@ -1,6 +1,6 @@
 ---
-title: "servicePrincipal: Unassign permissionGrantPreApprovalPolicy"
-description: "Unassign a permissionGrantPreApprovalPolicy to servicePrincipal."
+title: "Unassign a permissionGrantPreApprovalPolicy from a servicePrincipal"
+description: "Unassign a permissionGrantPreApprovalPolicy from servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
