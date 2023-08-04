@@ -1,5 +1,5 @@
 ---
-title: "Retrieve permissionGrantPreApprovalPolicy from serviceprincipal"
+title: "Get permissionGrantPreApprovalPolicy for a serviceprincipal"
 description: "Retrieve the permissionGrantPreApprovalPolicy object from serviceprincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium

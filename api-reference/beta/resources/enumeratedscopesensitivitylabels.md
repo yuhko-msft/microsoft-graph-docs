@@ -1,6 +1,6 @@
 ---
 title: "enumeratedScopeSensitivityLabels resource type"
-description: "microsoft.graph.enumeratedScopeSensitivityLabels"
+description: "Specifies that only specific sensitivity labels on a resource app in a permissionGrantPreApprovalPolicy are pre-approved for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph.enumeratedScopeSensitivityLabels
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The derived type is when only specific sensitivity labels on a resource app are pre-approved for consent. When this type is used, consent is allowed **ONLY** for sensitivity labels that are specified in the policy. If the client application requests more sensitivity labels after the policy is created, the policy will not apply.
+Specifies that only specific sensitivity labels on a resource app in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) are pre-approved for consent. If the client application requests access to more resource scopes after the policy is created, the policy will still apply.
+
+Inherits from [scopeSensitivityLabels](../resources/scopesensitivitylabels.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|labelKind|labelKind|It indicates what kind of sensitivity label has been included. Possible value: `enumerated` for a selected set of sensitivity labels from a single resource application is allowed.  Required.|
-|sensitivityLabels|String collection|The sensitivity labels that are applicable to the scope type and has been pre-approved. It allows you to protect sensitive organizational data. Learn about how to get id of  [sensitivity labels](/microsoft-365/compliance/sensitivity-labels) 
+|labelKind|labelKind|Indicates the kind of sensitivity label that is included. Only `enumerated` is supported to indicate that a selected set of sensitivity labels from a single resource application is allowed. Required.|
+|sensitivityLabels|String collection|The sensitivity labels that are applicable to the scope type and have been pre-approved. Required. |
 
 ## Relationships
 None.

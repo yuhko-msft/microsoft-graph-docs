@@ -1,6 +1,6 @@
 ---
 title: "preApprovedPermissions resource type"
-description: "A preApprovedPermissions describes the permissions that has been pre-approved"
+description: "Describes the set of permissions that are pre-approved for a resource."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **preApprovedPermissions** type describes the set of permission that has been pre-approved. This is an abstract base type and cannot be used directly. Instead, use one of the following derived types: 
+A **preApprovedPermissions** type describes the set of permissions that are pre-approved for the resource. This is an abstract base type from which the following types are derived: 
 
-* [allPreApprovedPermissions](allPreApprovedPermissions.md) for indicating all permissions for all APIs are pre-approved
-* [allPreApprovedPermissionsOnResourceApp](allPreApprovedPermissionsOnResourceApp.md) for indicating all permissions for a specified API are pre-approved
-* [enumeratedPreApprovedPermissions](enumeratedPreApprovedPermissions.md) for indicating that only the specified permissions have been pre-approved
+* [allPreApprovedPermissions](allPreApprovedPermissions.md) indicates all permissions for all APIs are pre-approved
+* [allPreApprovedPermissionsOnResourceApp](allPreApprovedPermissionsOnResourceApp.md) indicates all permissions for a specified API are pre-approved
+* [enumeratedPreApprovedPermissions](enumeratedPreApprovedPermissions.md) indicates that only the specified permissions have been pre-approved
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionKind|[permissionKind](enums.md#permissionKind-values)| Indicates how permissions are being included in this condition set. Possible values: `all` for all permissions, `enumerated` for a given list of permissions, or `allPermissionsOnResourceApp` for all permissions from a given API. Required.|
-|permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions, or `delegated` for delegated permissions. Required.|
+|permissionKind|permissionKind| Indicates the scope of permissions that are included in this condition set. Possible values: `all` for all permissions, `enumerated` for a given list of permissions, or `allPermissionsOnResourceApp` for all permissions from a given API. Required.|
+|permissionType|permissionType|The type of permission being granted. Possible values: `application` for application permissions, or `delegated` for delegated permissions. Required.|
 
 ## Relationships
 None.

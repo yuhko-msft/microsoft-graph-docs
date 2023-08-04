@@ -7,12 +7,12 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# ServicePrincipal: Unassign permissionGrantPreApprovalPolicy
+# Unassign a permissionGrantPreApprovalPolicy from a servicePrincipal
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unassign a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object to [servicePrincipal](../resources/serviceprincipal.md).
+Unassign a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object from a [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +61,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{{ servicePrincipal id
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

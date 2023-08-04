@@ -1,6 +1,6 @@
 ---
 title: "allPreApprovedPermissionsOnResourceApp resource type"
-description: "When this type is used, consent are allowed **ONLY** for permissions on the resource app that is specified in the policy"
+description: "Indicates that only permissions on the resource app that is specified in the permissionGrantPreApprovalPolicy are pre-approved for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This type is used in a [preApprovalDetail](preapprovaldetail.md) resource to indicate that all permissions for a specific API are included in the pre-approval. When this type is used, the pre-approval only includes for permissions for the specified resource app (API).
+This type is used in the conditions of a [permissionGrantPreApprovalPolicy](permissiongrantpreapprovalpolicy.md) to indicate that only permissions on the resource app (API) specified in the policy are pre-approved for consent.
+
+Inherits from [preApprovePermissions](../resources/preapprovedpermissions.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|permissionKind|permissionKind| It indicates what kind of permissions has been included in the condition sets. It only accepts the value `allPermissionsOnResourceApp` indicates all permissions from the specific resource application are allowed. Required.|
-|permissionType|permissionType|The permission type of the permission being granted. Possible values: `application` for application permissions (e.g. app roles), or `delegated` for delegated permissions. Required.|
+|permissionKind|permissionKind| Inherited from [preapprovedpermissions](../resources/preapprovedpermissions.md). Indicates the scope of permissions that are included in this condition set. Possible values: `all` for all permissions, `enumerated` for a given list of permissions, or `allPermissionsOnResourceApp` for all permissions from a given API. Only `allPermissionsOnResourceApp` is supported for the **allPreApprovedPermissionsOnResourceApp ** object type. Required.|
+|permissionType|permissionType|The type of permission being granted. Possible values: `application` for application permissions (app roles), or `delegated` for delegated permissions. Inherited from [preapprovedpermissions](../resources/preapprovedpermissions.md). Required.|
 |resourceApplicationId|String|The **appId** of the resource application (the API). Required.|
 
 ## Relationships

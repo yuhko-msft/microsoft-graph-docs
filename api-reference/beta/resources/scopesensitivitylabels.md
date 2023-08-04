@@ -1,6 +1,6 @@
 ---
 title: "scopeSensitivityLabels resource type"
-description: "A scopeSensitivityLabels describes when consent is allowed for what sensitivity labels are specified in the policy"
+description: "Defines the sensitivity labels for groups that are included in a permissionGrantPreApprovalPolicy."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,17 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A scopeSensitivityLabels describes a sensitivity level **ONLY** for the group. It allows you to protect sensitive organizational data. Learn about [sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
-A scopeSensitivityLabels type describes a sensitivity level **ONLY** for the group. It allows you to protect sensitive organizational data based on sensitivity labels. This is an abstract base type and cannot be used directly. Instead, use one of the following derived types:
-* [allscopesensitivitylabels](allscopesensitivitylabels.md) for indicating all sensitivity labels are pre-approved
-* [enumeratedscopesensitivitylabels](enumeratedscopesensitivitylabels.md) for indicating that only the specified sensitivity labels have been pre-approved
+Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md). Since **chat** resources don't support sensitivity labels, do not use this type when the **scopeType** of [preApprovalDetail](../resources/preapprovaldetail.md) is `chat`. For more information about sensitivity labels, see [sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
+
+
+
+This is an abstract base type from which the following types are derived:
+* [allscopesensitivitylabels](allscopesensitivitylabels.md) indicate all sensitivity labels are pre-approved
+* [enumeratedscopesensitivitylabels](enumeratedscopesensitivitylabels.md) indicate that only the specified sensitivity labels are pre-approved
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|labelKind|String|Indicates what kind of sensitivity label has been included. Possible values: `all` for all sensitivity labels are allowed, or `enumerated` for a selected set of sensitivity labels from a single resource application are allowed.  Required.|
+|labelKind|String|Indicates the kind of sensitivity label that is included. Possible values: `all` means all sensitivity labels are allowed, or `enumerated` means a selected set of sensitivity labels from a single resource application are allowed. Required.|
 
-> **Note:** Since chat resources don't support sensitivity labels, this type should not be used when the preApprovalDetail resource's scopeType is "chat".
 
 ## Relationships
 None.

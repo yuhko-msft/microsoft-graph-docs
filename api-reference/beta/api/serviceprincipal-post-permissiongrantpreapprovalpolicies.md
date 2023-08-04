@@ -1,13 +1,13 @@
 ---
-title: "servicePrincipal: Assign permissionGrantPreApprovalPolicy"
-description: "Assign a permissionGrantPreApprovalPolicy to servicePrincipal."
+title: "Assign a permissionGrantPreApprovalPolicy to a servicePrincipal"
+description: "Assign a permissionGrantPreApprovalPolicy to a servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# ServicePrincipal: Assign permissionGrantPreApprovalPolicy
+# Assign a permissionGrantPreApprovalPolicy to a servicePrincipal
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -73,7 +73,6 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->
