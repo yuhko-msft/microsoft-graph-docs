@@ -45,7 +45,7 @@ PATCH /policies/permissionGrantPreApprovalPolicies/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that tenant admin has pre-approved for the given service principal.	Required.|
+|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that are pre-approved in the policy.	Required.|
 
 
 
