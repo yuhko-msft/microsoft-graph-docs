@@ -1,13 +1,13 @@
 ---
-title: "Unassign a permissionGrantPreApprovalPolicy from a servicePrincipal"
-description: "Unassign a permissionGrantPreApprovalPolicy from servicePrincipal."
+title: "Remove a permissionGrantPreApprovalPolicy from a servicePrincipal"
+description: "Remove a permissionGrantPreApprovalPolicy from servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# Unassign a permissionGrantPreApprovalPolicy from a servicePrincipal
+# Remove a permissionGrantPreApprovalPolicy from a servicePrincipal
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Application.ReadWrite.All and Policy.ReadWrite.PermissionGrant|
 
-[!INCLUDE rbac-global-secure-access-apis-read]
+[!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
 ## HTTP request
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_permissiongrantpreapprovalpolicy_from_"
+  "name": "delete_permissiongrantpreapprovalpolicy_from_"
 }
 -->
 ``` http
