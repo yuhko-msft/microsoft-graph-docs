@@ -76,10 +76,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
 |[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
 |[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
-|[List permissionGrantPreApprovalPolicy](../beta/api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Get permissionGrantPreApprovalPolicy assigned to this object.|
-|[Assign permissionGrantPreApprovalPolicy](../beta/api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Assign a permissionGrantPreApprovalPolicy to this object.|
-|[Remove permissionGrantPreApprovalPolicy](../beta/api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Remove a permissionGrantPreApprovalPolicy from this object.|
-
+|[List permissionGrantPreApprovalPolicy](../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Get permissionGrantPreApprovalPolicy assigned to this object.|
+|[Assign permissionGrantPreApprovalPolicy](../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Assign a permissionGrantPreApprovalPolicy to this object.|
+|[Remove permissionGrantPreApprovalPolicy](../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md)| [permissionGrantPreApprovalPolicy](permissionGrantPreApprovalPolicy.md) collection| Remove a permissionGrantPreApprovalPolicy from this object.|
 |**Single sign on**| | |
 |[createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Create a credential set for the user or group specified in the body.|
 |[getPasswordSingleSignOnCredentials](../api/serviceprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Get a credential set for the user or group specified in the body.|
