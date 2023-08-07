@@ -170,7 +170,7 @@ Content-Type: application/json
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_permissiongrantpreapprovalpolicy"
+  "name": "create_permissiongrantpreapprovalpolicy_only_group"
 }
 -->
 ``` http

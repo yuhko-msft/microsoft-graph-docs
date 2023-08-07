@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_permissiongrantpreapprovalpolicy_from_"
+  "name": "serviceprincipal_remove_permissionGrantPreApprovalPoliciesdelete"
 }
 -->
 ``` http

@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_permissiongrantpreapprovalpolicy_from_"
+  "name": "serviceprincipal_assign_permissionGrantPreApprovalPolicies"
 }
 -->
 ``` http
