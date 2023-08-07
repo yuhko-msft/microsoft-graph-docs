@@ -1275,6 +1275,14 @@ items:
                     href: api/serviceprincipal-post-owners.md
                   - name: Remove owner
                     href: api/serviceprincipal-delete-owners.md
+              - name: Permission Grant Pre-Approval Policy
+                items:
+                  - name: List permission grant pre-approval policy
+                    href: api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
+                  - name: Assign permission grant pre-approval policy
+                    href: api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
+                  - name: Remove permission grant pre-approval policy
+                    href: api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
               - name: Policies
                 items:
                   - name: Claims mapping policy
